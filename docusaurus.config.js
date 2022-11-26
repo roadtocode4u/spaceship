@@ -57,10 +57,31 @@ const config = {
         },
         items: [
           {
+            to: '/docs/category/c-programming',
+            position: 'left',
+            label: 'C Programming',
+          },
+          {
+            to: '/docs/category/cpp-programming',
+            position: 'left',
+            label: 'C++ Programming',
+          },
+          {
+            to: '/docs/category/python-programming',
+            position: 'left',
+            label: 'Python',
+          },
+          {
             type: 'doc',
             docId: 'index',
             position: 'left',
-            label: 'Home',
+            label: 'Data Structures',
+          },
+          {
+            type: 'doc',
+            docId: 'index',
+            position: 'left',
+            label: 'ICP',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {

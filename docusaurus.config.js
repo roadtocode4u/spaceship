@@ -72,14 +72,12 @@ const config = {
             label: 'Python',
           },
           {
-            type: 'doc',
-            docId: 'index',
+            to: '/docs/category/data-structures',
             position: 'left',
             label: 'Data Structures',
           },
           {
-            type: 'doc',
-            docId: 'index',
+            to: '/docs/category/icp',
             position: 'left',
             label: 'ICP',
           },

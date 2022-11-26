@@ -77,7 +77,7 @@ const config = {
             label: 'Data Structures',
           },
           {
-            to: '/docs/category/icp',
+            to: '/docs/category/internship-cohort-program',
             position: 'left',
             label: 'ICP',
           },

@@ -8,10 +8,10 @@
 
  **Two Types of Comments :**
 
-1. single line comments <br>
+1. single line comments <br/>
 // comment text
 
-2. multiple text <br>
+2. multiple text <br/>
 /* ------- */
 
 ```

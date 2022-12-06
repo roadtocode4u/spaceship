@@ -1,4 +1,4 @@
-# Functions
+## Functions
 
 **A function in C++ refers to a group of statements that takes input, processes it, and returns an output.**
 

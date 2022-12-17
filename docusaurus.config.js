@@ -10,6 +10,7 @@ const config = {
   tagline: 'Handbook by Road To Code for Programming Courses',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
+  staticDirectories: ['public', 'static', 'docs/icp/assets'],
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',

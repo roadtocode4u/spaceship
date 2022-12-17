@@ -1,51 +1,52 @@
+---
+title: Introduction to HTML
+description: "Introduction to HTML"
+hide_table_of_contents: true
+---
 # Introduction to HTML
 
-**📝 Use of Browser**
+### What is HTML
 
-<img src="./chrome.png" alt="chrome" width="50px"/> <br/>
+>**HTML** is the language are used to create website structure.
 
-<img src="./firefox.png" alt="firefox" width="50px"/>
+HTML stands for **Hyper Text Markup Language**. HTML is the standard markup language and is used to create Web pages. It was created by `Tim Berners Lee` and released in 1993.
+
+Mainly we will be using two type of softwares while developing webpages.
+
+1. Editor: for writing code.
+2. Browser: for checking output from the code.
+
+### Browser
+
+<img src="/icp/01/chrome.png" alt="chrome" width="50px"/>
 
 There are many different web browsers, like Google Chrome, Safari, and Mozilla Firefox. Browsers are used to visit websites. Browser are send request to server (computer) and server give response to browser then browser will show content.
 
-**📝 Use of HTML**
-```
-HTML is the language are used to create website structure.
-```
+### Editor
 
-**💁🏻‍♀️ Introduction to HTML**
+<img src="/icp/01/vs-code.png" alt="chrome" width="50px"/>
 
-HTML is **Hyper Text Markup Language**.
-HTML is the standard markup language and is used to create Web pages.
+Editor is a simple software where we can create and edit files. We will be using VS Code editor in this course.
 
-It was created by Tim Berners Lee and released in 1993.
+### Steps to download VS Code
 
-### 🤔 How to download and install VS code?
+  1. Download the latest version of VS Code from the official website: https://code.visualstudio.com/download
+  2. Double-click the downloaded file to start the installation process.
+  3. Follow the prompts to complete the installation. This may include accepting the license agreement and choosing the location to install VS Code.
+  4. Once the installation is complete, you can launch VS Code by clicking on its icon or by searching for it in your operating system's Start menu.
 
-  👉 [Click Here to download VS code ](https://code.visualstudio.com/download#)
+### Tag in HTML
 
-  **Steps to download VS code**
+Tags are used to provide meaning/effect to content.Also it provides special information about content.
 
-  1. Click the above Link to download VS code👆 .
-  2. Set up VS code by accepting the agreement and clicking “next.”
-  3. Accept all the Agreements, then press the finish button.
+`<tagname>` 👈 Opening Tag
 
-## Tag in HTML
+`</tagname>` 👈 Closing Tag
 
-Tag are used to provide meaning / effect to content.
-
-To provide special information about content.
+### First Webpage
 
 ```html
-    <tagname> 👈 Opening Tag
-
-    </tagname> 👈 Closing Tag
-```
-
-## 💻 Code Blocks
-
-```HTML
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>
@@ -60,28 +61,18 @@ To provide special information about content.
 </html>
 ```
 
-**📝 Example Explanation**
+### Explanation of the above example
 
-```html
-<!DOCTYPE html>  Declaration for html5
-```
-```html
-<html> </html>  It is root element . It defines the Html page.
-```
+`<!DOCTYPE html>`: This is not a tag but it is the declaration for browser that we are using HTML5.
 
-```html
-<head> </head> Webpage Identity
-```
+`<html> </html>`: It is root element . It defines the Html page.
 
-```html
-<title> </title> This element specifies a title for the HTML page
-```
+`<head> </head>`: In head tag we describe the identity of webpage.
 
-```html
-<body> </body> Define the Program body
-```
+`<title> </title>`: This tag specifies a title for the HTML page.
 
-**⚙️Output**
+`<body> </body>`: Define the body of webpage and content of this body will be visible on browser's content area.
+
+### Output
 
 ![Output](output-1.png)
-

@@ -76,3 +76,7 @@ Tags are used to provide meaning/effect to content.Also it provides special info
 ### Output
 
 ![Output](output-1.png)
+
+Cheers you have create your first webpage 🍻
+
+<img src="/icp/01/minion.gif" alt="Cheers you have create your first webpage 🍻" />

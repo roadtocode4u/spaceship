@@ -1,12 +1,12 @@
 # Introduction to HTML
 
-**📝 Use of Browser**  
- 
+**📝 Use of Browser**
+
 <img src="./chrome.png" alt="chrome" width="50px"/> <br/>
 
 <img src="./firefox.png" alt="firefox" width="50px"/>
 
-There are many different web browsers, like Google Chrome, Safari, and Mozilla Firefox. Browers are used to visit websites. Browser are send request to server (computer) and server give response to browser then browser will show content.
+There are many different web browsers, like Google Chrome, Safari, and Mozilla Firefox. Browsers are used to visit websites. Browser are send request to server (computer) and server give response to browser then browser will show content.
 
 **📝 Use of HTML**
 ```
@@ -26,7 +26,7 @@ It was created by Tim Berners Lee and released in 1993.
 
   **Steps to download VS code**
 
-  1. Click the above Link to download VS code👆 . 
+  1. Click the above Link to download VS code👆 .
   2. Set up VS code by accepting the agreement and clicking “next.”
   3. Accept all the Agreements, then press the finish button.
 
@@ -37,9 +37,9 @@ Tag are used to provide meaning / effect to content.
 To provide special information about content.
 
 ```html
-    <tagname> 👈 Opening Tag 
+    <tagname> 👈 Opening Tag
 
-    </tagname> 👈 Closing Tag 
+    </tagname> 👈 Closing Tag
 ```
 
 ## 💻 Code Blocks
@@ -54,7 +54,7 @@ To provide special information about content.
     </head>
     <body>
         Hello Students 👋
-        Good Evening, 
+        Good Evening,
         Welcome to ICP 4.0 💫❤️
     </body>
 </html>
@@ -62,9 +62,9 @@ To provide special information about content.
 
 **📝 Example Explanation**
 
-```html 
+```html
 <!DOCTYPE html>  Declaration for html5
-```  
+```
 ```html
 <html> </html>  It is root element . It defines the Html page.
 ```
@@ -83,5 +83,5 @@ To provide special information about content.
 
 **⚙️Output**
 
-![Output](output-1.png) 
+![Output](output-1.png)
 

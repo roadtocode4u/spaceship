@@ -3,6 +3,7 @@
 **📝 Use of Browser**  
  
 <img src="./chrome.png" alt="chrome" width="50px"/> <br/>
+
 <img src="./firefox.png" alt="firefox" width="50px"/>
 
 There are many different web browsers, like Google Chrome, Safari, and Mozilla Firefox. Browers are used to visit websites. Browser are send request to server (computer) and server give response to browser then browser will show content.
@@ -83,11 +84,4 @@ To provide special information about content.
 **⚙️Output**
 
 ![Output](output-1.png) 
-
-## 🏠 HomeWork
-
->1️⃣ Install VS Code 
-
->2️⃣ Create a Webpage For Showing Your basic details Like the full name, College name, etc.
-
 

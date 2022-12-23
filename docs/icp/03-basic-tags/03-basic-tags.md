@@ -223,19 +223,19 @@ Superscript is a number or letter that written above the normal text.
   </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
 ![Output](output-9.png)
 
-## Subscript
+### Subscript
 
 Subscript is a number or letter that written below the normal text.
 
 ```html
 H<sub>2</sub>O
-
 ```
-**💻Example :**
+
+**Example :**
 
 ```html
 <!Doctype html>
@@ -249,7 +249,74 @@ H<sub>2</sub>O
   </body>
 </html>
 ```
-**⚙️ Output :**
+
+**Output :**
 
 ![Output](output-10.png)
+
+
+### ```<hr />``` Tag
+
+```<hr />``` Tag is Horizontal Rule that is used to sepreate content.
+
+
+**💻Example :**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Tag</title>
+</head>
+<body>
+   <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi culpa, eveniet cum est quis atque possimus rerum officia perferendis quidem mollitia ab, nulla animi, praesentium excepturi dolore illo iusto suscipit.
+   </p>
+
+      <hr/>
+
+   <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi culpa, eveniet cum est quis atque possimus rerum officia perferendis quidem mollitia ab, nulla animi, praesentium excepturi dolore illo iusto suscipit.
+   </p>
+</body>
+</html>
+```
+**Output :**
+
+![Output](output-11.png)
+
+### Span Tag 
+
+```html
+<span>
+
+</span>
+```
+
+Span Tag is a text inline selector it is used to select a particular Text. Span tag does not have any own effect.
+
+
+**💻Example :**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Tag</title>
+</head>
+<body>
+   <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi culpa, eveniet cum est quis atque possimus rerum officia perferendis quidem mollitia ab, nulla animi, praesentium excepturi dolore illo iusto suscipit.
+   </p>
+
+   <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi culpa, eveniet cum est quis atque possimus rerum officia perferendis quidem mollitia ab, nulla animi, <span>praesentium excepturi dolore illo iusto suscipit.</span>
+   </p>
+</body>
+</html>
+```
+
+**⚙️ Output :**
+
+![Output](output-12.png)
 

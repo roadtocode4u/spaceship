@@ -331,7 +331,7 @@ int main() {
 
    int b = 8;
    
-   int res =  a==5 &&b==a;
+   int res =  a==5 && b==a;
 
    cout<<res;
 

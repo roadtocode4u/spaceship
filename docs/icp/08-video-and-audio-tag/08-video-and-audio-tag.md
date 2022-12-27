@@ -1,3 +1,8 @@
+---
+title: Video Tag and Audio Tag
+description: "Video Tag and Audio Tag"
+hide_table_of_contents: true
+---
 # Video Tag and Audio Tag
 
 Video tag is used to show a video on web page in html.

@@ -92,3 +92,60 @@ int main() {
 0x7ffde4e1252c<br />
 10
 
+**💻Example 4:**
+
+```cpp
+#include <iostream>
+using namespace std;
+
+void make_double(int a, int b)
+{
+    a = a * 2;
+    b = b * 2;
+    cout<<"Inside func call => a:"<<a<<" b:"<<b<<endl;
+}
+int main() {
+    
+    int a = 2, b = 3;
+    cout<<"Before func call => a:"<<a<<" b:"<<b<<endl;
+    make_double(a, b);
+    cout<<"After func call => a:"<<a<<" b:"<<b<<endl;
+    
+    return 0;
+}
+  
+```
+**⚙️ Output :**
+
+>Before func call => a:2 b:3<br/>
+Inside func call => a:4 b:6<br/>
+After func call => a:2 b:3
+
+
+**💻Example 5:**
+
+```cpp
+#include <iostream>
+using namespace std;
+
+void make_double(int *a, int *b)
+{
+    *a = *a + 2;
+    *b = *b + 2;
+    cout<<"Inside func call => a:"<<*a<<" b:"<<*b<<endl;
+}
+int main() {
+    
+    int a = 2, b = 3;
+    cout<<"Before func call => a:"<<a<<" b:"<<b<<endl;
+    make_double(&a, &b);
+    cout<<"After func call => a:"<<a<<" b:"<<b<<endl;
+    
+    return 0;
+}
+```
+**⚙️ Output :**
+
+>Before func call => a:2 b:3<br/>
+Inside func call => a:4 b:5<br/>
+After func call => a:4 b:5

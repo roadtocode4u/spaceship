@@ -48,3 +48,7 @@ the home for the home page, the image of the phone for the contact page, etc...
 1. Create a webpage and show at least two video using video tag.
 
 2. Create a webpage and add your 2 favourite songs with info of singer / creator etc. 
+
+### Homework-6
+
+1. Create a webpage to implement simple navigation system using iframe. 

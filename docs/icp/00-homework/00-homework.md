@@ -52,3 +52,7 @@ the home for the home page, the image of the phone for the contact page, etc...
 ### Homework-6
 
 1. Create a webpage to implement simple navigation system using iframe. 
+
+### Homework-7
+
+1. Create a webpage to design simple registration form. Include the fields full name, email, password, date of birth.

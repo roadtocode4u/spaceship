@@ -1,6 +1,6 @@
 # Reference
 
-**💻Example 1️:**
+**Example :**
 ```cpp
     #include <iostream>
     using namespace std;

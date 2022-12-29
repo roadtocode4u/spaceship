@@ -56,3 +56,7 @@ the home for the home page, the image of the phone for the contact page, etc...
 ### Homework-7
 
 1. Create a webpage to design simple registration form. Include the fields full name, email, password, date of birth.
+
+### Homework-8
+
+1. Create a webpage and implement simple booking system for Hotel / Train / Bus .

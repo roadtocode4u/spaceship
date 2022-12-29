@@ -109,7 +109,7 @@ The email Attribute is used to validates the text for correct email address. You
 ```
 **⚙️ Output :**
 
-![Output](output-4.png) 
+![Output](output-11.png) 
 
 📝Note:-  If we do not enter the proper email address then  it will display error like this
 

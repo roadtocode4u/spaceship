@@ -1,3 +1,8 @@
+---
+title: Introduction to C++ 
+description: "Introduction to C++"
+hide_table_of_contents: true
+---
 # Introduction to C++
 
 ![C++](cpplogo.png) 

@@ -60,3 +60,9 @@ the home for the home page, the image of the phone for the contact page, etc...
 ### Homework-8
 
 1. Create a webpage and implement simple booking system for Hotel / Train / Bus .
+
+### Homework-9
+
+1. Create a time table using table tag as given below.
+
+<img src="/static/icp/00/homework-8.png" alt="homework-8" height="200px"/>

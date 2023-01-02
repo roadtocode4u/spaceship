@@ -437,4 +437,52 @@ Radio Button is used to Single selection.
 
 ![Output](output-17.png)
 
+### File
+
+```<input>``` elements with ```type="file"``` it is used to user choose files from their device storage.
+
+**Syntax :**
+
+```html
+<form>
+	<input type="file">
+</form>
+```
+
+```accept="application/pdf"```
+
+The accept attribute specifies what type of file user can pick from their device storage.
+
+The accept attribute can only be used with file tag.
+
+Different accept attribute value :
+
+```image/*```  = image files <br/>
+```audio/*```  = audio files <br/>
+```video/*```  = video files <br/>
+```application/*``` = all type application <br/>
+```application/pdf``` = pdf file <br/>
+```image/png``` = only png extension images <br/>
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Picker</title>
+</head>
+<body>
+    <form>
+       <label for="fileInput"> Upload Your Marksheet :</label>
+        <input type="file" id="fileInput" accept="application/pdf" />
+    </form>
+</body>
+</html>
+```
+**Output :**
+
+![Output](output-18.png)
+
+
 

@@ -66,3 +66,8 @@ the home for the home page, the image of the phone for the contact page, etc...
 1. Create a time table using table tag as given below.
 
 <img src="/static/icp/00/homework-8.png" alt="homework-8" height="200px"/>
+
+
+### Homework-10
+
+1. Implement a CSS Properties that is color, font-size & background-color in webpage that you already created for displaying basic info. 

@@ -84,7 +84,7 @@ int main() {
 ```
 
 *⚙️ Output :*
->123<br>
+>123<br/>
 Suraj
 
 *💻Example 2:*
@@ -122,10 +122,10 @@ int main() {
 
 *⚙️ Output :*
 
->123<br>
-Suraj<br>
-456<br>
-Vaibhavi<br>
+>123<br/>
+Suraj<br/>
+456<br/>
+Vaibhavi<br/>
 
 **This**
 
@@ -168,12 +168,12 @@ int main() {
 ```
 
 *⚙️ Output :*
->Student detail is: <br>
-Name: Suraj <br>
-Roll: 123 <br> <br>
-Student detail is:  <br>
-Name: Vaibhavi <br>
-Roll: 456 <br>
+>Student detail is: <br/>
+Name: Suraj <br/>
+Roll: 123 <br/> <br/>
+Student detail is:  <br/>
+Name: Vaibhavi <br/>
+Roll: 456 <br/>
 
 
 *💻Example 4:*
@@ -213,10 +213,10 @@ int main() {
 
 *⚙️ Output :*
 
->Please Enter Name & Roll no: Vaibhavi 123<br>
-Student detail is: <br>
-Name: Vaibhavi<br>
-Roll: 123<br>
+>Please Enter Name & Roll no: Vaibhavi 123<br/>
+Student detail is: <br/>
+Name: Vaibhavi<br/>
+Roll: 123<br/>
 
 
 *💻Example 5:*
@@ -259,12 +259,12 @@ int main() {
 
 *⚙️ Output :*
 
->Please Enter Name & Roll no: A 1<br>
-Please Enter Name & Roll no: B 2<br>
-Student detail is: <br>
-Name: A<br>
-Roll: 1<br>
-<br>
-Student detail is: <br>
-Name: B<br>
-Roll: 2<br>
+>Please Enter Name & Roll no: A 1<br/>
+Please Enter Name & Roll no: B 2<br/>
+Student detail is: <br/>
+Name: A<br/>
+Roll: 1<br/>
+<br/>
+Student detail is: <br/>
+Name: B<br/>
+Roll: 2<br/>

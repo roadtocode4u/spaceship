@@ -71,3 +71,8 @@ the home for the home page, the image of the phone for the contact page, etc...
 ### Homework-10
 
 1. Implement a CSS Properties that is color, font-size & background-color in webpage that you already created for displaying basic info. 
+
+
+### Homework-11
+
+1. Create a webpage and implement border and border radius to create different shapes from div or image. 

@@ -76,3 +76,7 @@ the home for the home page, the image of the phone for the contact page, etc...
 ### Homework-11
 
 1. Create a webpage and implement border and border radius to create different shapes from div or image. 
+
+### Homework-12
+
+1. Add CSS to foodie woodie website that we already created in previous classes and make it more beautiful.

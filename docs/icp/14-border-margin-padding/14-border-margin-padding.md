@@ -242,3 +242,107 @@ First value applies to top-left corner, second value applies to top-right cornar
 
 ![Output](output-7.png)
 
+### Padding 
+
+Padding is used to create distance inside the elements.
+
+**All side Padding**
+
+```html
+  padding: 20px
+```
+
+**Padding at specific Location**
+
+```html
+    padding: 20px   40px   60px   80px;
+              |      |      |      |
+             top   right  bottom  left
+```
+
+**💻Example :**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        .box{
+            background-color: yellow;
+            width: 400px;
+            border: 5px solid black;
+            padding: 20px 40px 60px 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur corrupti odio fugiat sunt quisquam, accusantium aspernatur deserunt laboriosam pariatur ex repudiandae minus accusamus, repellendus est itaque nostrum! Voluptatibus, illum soluta.
+    </div>
+</body>
+</html>
+```
+**⚙️ Output :**
+
+![Output](output-8.png)
+
+### Margin 
+
+Margin is used to create Distance outside of the elements.
+
+**All side Margin**
+
+```html
+  margin: 20px
+```
+**Margin at specific Location**
+
+```html
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-bottom: 100px'
+```
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        .box{
+            background-color: yellow;
+            width: 400px;
+            border: 5px solid black;
+            padding: 20px 40px 60px 80px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .new-box{
+            width: 300px;
+            background-color: tomato;
+            border: 5px solid black;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    </div>
+    <div class="new-box">
+     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </div>
+</body>
+</html>
+```
+
+**Output :**
+
+![Output](output-9.png)
+
+

@@ -1,6 +1,6 @@
 ---
-title: There are three ways to add CSS
-description: "There are three ways to add CSS"
+title: Three ways to add CSS
+description: Inline, Internal and External CSS
 hide_table_of_contents: true
 ---
 # There are three ways to add CSS
@@ -11,7 +11,7 @@ hide_table_of_contents: true
 
 
 ### Document level
- 
+
 Document level CSS used ```<style>``` element in the ```<head>``` section.
 
 
@@ -54,12 +54,12 @@ Document level CSS used ```<style>``` element in the ```<head>``` section.
      .box-2{
         background-color: yellow;
      }
-     
+
     </style>
 </head>
 <body>
     <div class="box box-1">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
     </div>
     <div class="box box-2">
      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -120,7 +120,7 @@ External CSS are using a ```<link>``` element to link to an external CSS file. W
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-   
+
     <div class="app-header">Home Page</div>
 
 </body>
@@ -139,7 +139,7 @@ External CSS are using a ```<link>``` element to link to an external CSS file. W
 <body>
 
     <div class="app-header"> About Page</div>
-   
+
 </body>
 </html>
 ```

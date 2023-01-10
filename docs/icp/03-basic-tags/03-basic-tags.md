@@ -26,7 +26,7 @@ Whitespace means empty space around the content of a page. You can Give Multiple
 
 **Output:**
 
-![output-1](output-1.png)
+<img src="/icp/03/output-1.png" alt="output-1" width="600px"/>
 
 
 ### Manually Add Spaces in HTML Code
@@ -48,7 +48,7 @@ If you can Manually add empty spaces in your HTML code then you can use one Spec
 ```
 **Output:**
 
-![Output](output-2.png)
+<img src="/icp/03/output-2.png" alt="output-2" width="600px"/>
 
 ### HTML **```<br>```** Tag
 
@@ -93,7 +93,7 @@ In HTML **```<b>```** tag defines bold text.
 ```
 **⚙️ Output :**
 
-![Output](output-4.png) 
+<img src="/icp/03/output-4.png" alt="output-4" width="600px"/>
 
 
 ## Italic Tag
@@ -121,7 +121,7 @@ In HTML **```<i>```** tag defines Italic text.
 
 **⚙️ Output :**
 
-![output](output-5.png)
+<img src="/icp/03/output-5.png" alt="output-5" width="600px"/>
 
 ### Nested Tags
 
@@ -148,7 +148,7 @@ OR
 
 **output :**
 
-![output](output-6.png)
+<img src="/icp/03/output-6.png" alt="output-6" width="600px"/>
 
 ## Underline Tag
 
@@ -174,7 +174,7 @@ In HTML **```<u>```** tag are used to underline a text.
 ```
 **Output :**
 
-![output](output-7.png)
+<img src="/icp/03/output-7.png" alt="output-7" width="600px"/>
 
 
 ### Delete Tag
@@ -198,7 +198,7 @@ It is used to mark a portion of text which has been deleted from the document.
 ```
 **⚙️ Output :**
 
-![Output](output-8.png)
+<img src="/icp/03/output-8.png" alt="output-8" width="600px"/>
 
 
 ### Superscript
@@ -225,8 +225,7 @@ Superscript is a number or letter that written above the normal text.
 ```
 **Output :**
 
-![Output](output-9.png)
-
+<img src="/icp/03/output-9.png" alt="output-9" width="600px"/>
 ### Subscript
 
 Subscript is a number or letter that written below the normal text.
@@ -252,7 +251,7 @@ H<sub>2</sub>O
 
 **Output :**
 
-![Output](output-10.png)
+<img src="/icp/03/output-10.png" alt="output-10" width="600px"/>
 
 
 ### ```<hr />``` Tag
@@ -283,7 +282,7 @@ H<sub>2</sub>O
 ```
 **Output :**
 
-![Output](output-11.png)
+<img src="/icp/03/output-11.png" alt="output-11" width="600px"/>
 
 ### Span Tag 
 
@@ -318,5 +317,5 @@ Span Tag is a text inline selector it is used to select a particular Text. Span 
 
 **⚙️ Output :**
 
-![Output](output-12.png)
+<img src="/icp/03/output-12.png" alt="output-12" width="600px"/>
 

@@ -27,7 +27,7 @@ hide_table_of_contents: true
 ```
 **Output :**
 
-![Heading Example](output-1.png) 
+<img src="/icp/02/output-1.png" alt="output-1" width="600px"/>
 
 
 

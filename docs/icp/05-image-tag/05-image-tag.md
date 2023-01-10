@@ -46,7 +46,7 @@ Attributes are used to describe tag or to provide more info to tag.
 
 **Output :**
 
-![output](output-1.png)
+<img src="/icp/05/output-1.png" alt="output-1" width="600px"/>
 
 2. **```height``` and ```width``` Attribute :**
 
@@ -75,7 +75,7 @@ The Height attribute are used to give Height of an image, in pixels.
 ```
 **Output :**
 
-![output](output-5.png)
+<img src="/icp/05/output-5.png" alt="output-5" width="600px"/>
 
 
 When you give both height and width to the image then image might lose its aspect ratio. You can preserve the aspect ratio by specifying only width or only height.
@@ -95,7 +95,7 @@ When you give both height and width to the image then image might lose its aspec
 ```
 **Output :**
 
-![output](output-2.png)
+<img src="/icp/05/output-2.png" alt="output-2" width="600px"/>
 
 
 
@@ -118,7 +118,7 @@ When you give both height and width to the image then image might lose its aspec
 ```
 **Output :**
 
-![output](output-3.png)
+<img src="/icp/05/output-3.png" alt="output-3" width="600px"/>
 
 **Local Image**
 
@@ -140,4 +140,4 @@ You can add a local image to your HTML page and then the first download or save 
 
 **Output :**
 
-![output](output-4.png)
+<img src="/icp/05/output-4.png" alt="output-4" width="600px"/>

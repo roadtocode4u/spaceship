@@ -75,7 +75,7 @@ Tags are used to provide meaning/effect to content.Also it provides special info
 
 ### Output
 
-![Output](output-1.png)
+<img src="/icp/01/output-1.png" alt="chrome" width="600px"/>
 
 Cheers you have create your first webpage 🍻
 

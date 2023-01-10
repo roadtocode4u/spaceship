@@ -75,3 +75,9 @@ different pages and also add an anchor tag to return back to home page
 ### Homework-12
 
 1. Add CSS to foodie woodie website that we already created in previous classes and make it more beautiful.
+
+### Homework-13
+
+1. Create 3 web pages and implement display properties inline, block and inline-block on each page.
+
+2. Create a course cards similar to cards shown on RTC website using display, height, width, text-align, box-shadow, margin, padding, hover, etc.

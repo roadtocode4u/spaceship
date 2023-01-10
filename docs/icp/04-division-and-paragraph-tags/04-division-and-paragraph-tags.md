@@ -38,7 +38,7 @@ Paragraph tag is used to define a block of text in paragraph.
 
 **Output :**
 
-![output](output-1.png)
+<img src="/icp/04/output-1.png" alt="output-1" width="600px" height="300px"/>
 
 ### Align
 
@@ -72,7 +72,7 @@ We can provide align by three types Left, Center, Right.
 
 **Output :**
 
-![output](output-2.png)
+<img src="/icp/04/output-2.png" alt="output-2" width="600px"/>
 
 ### Division Tags 
 
@@ -115,4 +115,4 @@ We can use paragraph tag in div tag but we cannot use div tag in paragraph tag.
 
 **Output :**
 
-![output](output-3.png)
+<img src="/icp/04/output-3.png" alt="output-3" width="600px"/>

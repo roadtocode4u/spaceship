@@ -15,7 +15,7 @@ hide_table_of_contents: true
 Document level CSS used ```<style>``` element in the ```<head>``` section.
 
 
-**Example :**
+**Code :**
 
 ```css
 <head>
@@ -31,7 +31,7 @@ Document level CSS used ```<style>``` element in the ```<head>``` section.
 </head>
 ```
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -67,8 +67,9 @@ Document level CSS used ```<style>``` element in the ```<head>``` section.
 </body>
 </html>
 ```
+**Output :**
 
-![output](output-1.png)
+<img src="/icp/15/output-1.png" alt="output-1" width="600px"/>
 
 
 ### Inline CSS
@@ -76,13 +77,13 @@ Document level CSS used ```<style>``` element in the ```<head>``` section.
 Inline CSS are using the style attribute inside HTML elements.It is used to give CSS for individual HTML tags.
 
 
-**Example :**
+**Code :**
 
 ```css
  <h1 style="background-color: tomato; color: white;">Hello Students</h1>
 ```
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -96,7 +97,9 @@ Inline CSS are using the style attribute inside HTML elements.It is used to give
 </html>
 ```
 
-![output](output-2.png)
+**Output :**
+
+<img src="/icp/15/output-2.png" alt="output-2" width="600px"/>
 
 ### External CSS
 
@@ -108,7 +111,7 @@ External CSS are using a ```<link>``` element to link to an external CSS file. W
 <link rel="stylesheet" href="style.css"/>
 ```
 
-**Example :**
+**Code :**
 
 **File Name : index.html**
 
@@ -158,8 +161,8 @@ External CSS are using a ```<link>``` element to link to an external CSS file. W
 
 <b>index.html file output </b>
 
-![output](output-3.png)
+<img src="/icp/15/output-3.png" alt="output-3" width="600px"/>
 
 <b>about.html file output </b>
 
-![output](output-4.png)
+<img src="/icp/15/output-4.png" alt="output-4" width="600px"/>

@@ -33,7 +33,7 @@ Table tag allow us to arrange data into rows and columns.
 </table>
 ```
 
-**💻Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -71,10 +71,9 @@ Table tag allow us to arrange data into rows and columns.
 
 **Output :**
 
-![output](output-1.png)
+<img src="/icp/11/output-1.png" alt="output-1" width="600px"/>
 
-
-**💻Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -115,15 +114,15 @@ Table tag allow us to arrange data into rows and columns.
 </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
-![Output](output-2.png) 
+<img src="/icp/11/output-2.png" alt="output-2" width="600px"/>
 
 ## Colspan 
 
 Colspan attribute we use for represents the number of columns in cell span.
 
-**💻Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -163,15 +162,15 @@ Colspan attribute we use for represents the number of columns in cell span.
 </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
-![Output](output-3.png)
+<img src="/icp/11/output-3.png" alt="output-3" width="600px"/>
 
 ### Rowspan 
 
 Rowspan attribute we use for represents the number of rows in cell span.
 
-**💻Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -221,6 +220,6 @@ Rowspan attribute we use for represents the number of rows in cell span.
 </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
-![Output](output-4.png)
+<img src="/icp/11/output-4.png" alt="output-4" width="600px"/>

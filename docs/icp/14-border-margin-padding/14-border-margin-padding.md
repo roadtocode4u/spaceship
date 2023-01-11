@@ -7,7 +7,8 @@ hide_table_of_contents: true
 
 ### Height, Width For Image 
 
-**💻Example :**
+**Code :**
+
 ```html
 <!DOCTYPE html>
 <html >
@@ -25,13 +26,14 @@ hide_table_of_contents: true
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-1.png)
+**Output :**
+
+<img src="/icp/14/output-1.png" alt="output-1" width="600px"/>
 
 ### How to provide height and width to div tag ?
 
-**💻Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -63,9 +65,10 @@ hide_table_of_contents: true
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-2.png)
+**Output :**
+
+<img src="/icp/14/output-2.png" alt="output-2" width="600px"/>
 
 ## Border
 
@@ -88,7 +91,8 @@ selector{
 }
 ```
 
-**💻Example :**
+**Code :**
+
 ```html
 <!DOCTYPE html>
 <html >
@@ -112,12 +116,13 @@ selector{
 </body>
 </html>
 ```
+
 **Output :**
 
-![Output](output-3.png)
+<img src="/icp/14/output-3.png" alt="output-3" width="600px"/>
 
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -144,12 +149,12 @@ selector{
 ```
 **Output :**
 
-![Output](output-4.png)
+<img src="/icp/14/output-4.png" alt="output-4" width="600px"/>
 
 
  We Can also Provide Border properties like this ```border: solid black 2px;```
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -174,9 +179,10 @@ selector{
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-5.png)
+**Output :**
+
+<img src="/icp/14/output-5.png" alt="output-5" width="600px"/>
 
 ## Border Radius
 
@@ -190,7 +196,8 @@ Example:
 
 First value applies to top-left corner, second value applies to top-right cornar, third value applies to bottom-right corner, and fourth value applies to bottom-left corner.
 
-**💻Example :**
+**Code :**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -212,11 +219,13 @@ First value applies to top-left corner, second value applies to top-right cornar
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-6.png)
+**Output :**
 
-**💻Example :**
+<img src="/icp/14/output-6.png" alt="output-6" width="600px"/>
+
+**Code :**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -238,9 +247,10 @@ First value applies to top-left corner, second value applies to top-right cornar
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-7.png)
+**Output :**
+
+<img src="/icp/14/output-7.png" alt="output-7" width="600px"/>
 
 ### Padding 
 
@@ -260,7 +270,8 @@ Padding is used to create distance inside the elements.
              top   right  bottom  left
 ```
 
-**💻Example :**
+**Code :**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -282,9 +293,10 @@ Padding is used to create distance inside the elements.
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-8.png)
+**Output :**
+
+<img src="/icp/14/output-8.png" alt="output-8" width="600px"/>
 
 ### Margin 
 
@@ -304,7 +316,7 @@ Margin is used to create Distance outside of the elements.
   margin-bottom: 100px'
 ```
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -343,6 +355,6 @@ Margin is used to create Distance outside of the elements.
 
 **Output :**
 
-![Output](output-9.png)
+<img src="/icp/14/output-9.png" alt="output-9" width="600px"/>
 
 

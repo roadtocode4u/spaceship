@@ -18,7 +18,7 @@ You can Add CSS in Html elements then use this style tag. 👇
  </style>
 ```
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -52,9 +52,9 @@ You can Add CSS in Html elements then use this style tag. 👇
 ```;``` = End of value <br/>
 ```}``` = End <br/>
 
-**⚙️ Output :**
+**Output :**
 
-![Output](output-1.png) 
+<img src="/icp/12/output-1.png" alt="output-1" width="600px"/>
 
 ### Background-color & font-size
 
@@ -63,7 +63,7 @@ You can Add CSS in Html elements then use this style tag. 👇
  font-size: 50px;
 ```
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -89,7 +89,7 @@ You can Add CSS in Html elements then use this style tag. 👇
 </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
-![Output](output-2.png)
+<img src="/icp/12/output-2.png" alt="output-2" width="600px"/>
 

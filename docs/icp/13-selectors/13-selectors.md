@@ -64,7 +64,7 @@ The ```.class``` selector selects elements with a specific class attribute.
 
 ```
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -91,15 +91,15 @@ The ```.class``` selector selects elements with a specific class attribute.
 </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
-![Output](output-3.png)
+<img src="/icp/13/output-3.png" alt="output-3" width="600px"/>
 
 ### Priority in CSS Selectors
 When we can provide same effect (like id, class, tag) on particular element then the selector priority as given below. 
 In the CSS selector priority of a selector is  High priority for ID, middle priority for class, & low priority for tag.
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -130,5 +130,5 @@ In the CSS selector priority of a selector is  High priority for ID, middle prio
 ```
 **Output :**
 
-![Output](output-4.png)
+<img src="/icp/13/output-4.png" alt="output-4" width="600px"/>
 

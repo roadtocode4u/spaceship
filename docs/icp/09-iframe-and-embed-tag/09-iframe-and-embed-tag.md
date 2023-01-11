@@ -18,7 +18,8 @@ width= " "
 </iframe>
 ```
 
-**💻Example :**
+**Code :**
+
 ```html
 <!DOCTYPE html>
 <html >
@@ -32,11 +33,11 @@ width= " "
 </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
-![Output](output-1.png) 
+<img src="/icp/09/output-1.png" alt="output-1" width="600px"/>
 
-**💻Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -52,9 +53,9 @@ width= " "
 </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
-![Output](output-2.png)
+<img src="/icp/09/output-2.png" alt="output-2" width="600px"/>
 
 
 ## Target Attribute 
@@ -66,7 +67,7 @@ Target attribute are used to a name or a keyword that indicates where to display
 Target _blank attribute are used to opens the linked document in a new tab.
 
 
-**💻Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -87,13 +88,15 @@ Target _blank attribute are used to opens the linked document in a new tab.
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-3.png)
+**Output :**
+
+<img src="/icp/09/output-3.png" alt="output-3" width="600px"/>
 
 ## Video 
 
-**💻Example :**
+**Code :**
+
 ```html
 <!DOCTYPE html>
 <html >
@@ -105,13 +108,15 @@ Target _blank attribute are used to opens the linked document in a new tab.
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-8.png)
+**Output :**
+
+<img src="/icp/09/output-8.png" alt="output-8" width="600px"/>
 
 ## Map
 
-**💻Example :**
+**Code :**
+
 ```html
 <!DOCTYPE html>
 <html >
@@ -123,9 +128,10 @@ Target _blank attribute are used to opens the linked document in a new tab.
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-6.png)
+**Output :**
+
+<img src="/icp/09/output-6.png" alt="output-6" width="600px"/>
 
 
 ## Embed 
@@ -138,7 +144,7 @@ Embed tag are used to open non html content like pdf file.
 <embed src="" />
 ```
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -152,6 +158,6 @@ Embed tag are used to open non html content like pdf file.
 </html>
 ```
 
-**⚙️ Output :**
+**Output :**
 
-![Output](output-7.png)
+<img src="/icp/09/output-7.png" alt="output-7" width="600px"/>

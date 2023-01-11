@@ -23,7 +23,8 @@ Unordered list used to create a list of related items which have no specific ord
 </ul>
 ```
 
-**💻Example :**
+**Code :**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -43,9 +44,9 @@ Unordered list used to create a list of related items which have no specific ord
 </html>
 ```
 
-**⚙️ Output :**
+**Output :**
 
-![Output](output-1.png) 
+<img src="/icp/07/output-1.png" alt="output-1" width="600px"/>
 
 ### Types
 
@@ -65,7 +66,8 @@ Unordered list used to create a list of related items which have no specific ord
 </ul>
 ```
 
-**💻Example :**
+**Code :**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -84,11 +86,12 @@ Unordered list used to create a list of related items which have no specific ord
 </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
-![Output](output-2.png) 
+<img src="/icp/07/output-2.png" alt="output-2" width="600px"/>
 
-**💻Example :**
+**Code :**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -107,9 +110,9 @@ Unordered list used to create a list of related items which have no specific ord
 </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
-![Output](output-3.png) 
+<img src="/icp/07/output-3.png" alt="output-3" width="600px"/>
 
 ### Ordered List
 
@@ -126,7 +129,7 @@ Example :
 5. i, ii, iii, iv,.....
 
 
-**💻Syntax :**
+**Syntax :**
 ```html
 <ol>
     <li>list Item 1</li>
@@ -135,7 +138,8 @@ Example :
 </ol>
 ```
 
-**💻Example :**
+**Code :**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -153,15 +157,16 @@ Example :
 </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
-![Output](output-4.png) 
+<img src="/icp/07/output-4.png" alt="output-4" width="600px"/>
 
 ### Types 
 
 >**type="1"**	It defines the list items in number.This is the default value.
 
-**💻Example :**
+**Code :**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -179,13 +184,14 @@ Example :
 </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
-![Output](output-4.png) 
+<img src="/icp/07/output-4.png" alt="output-4" width="600px"/>
 
 >**type="A"** It defines the list items in alphabetically ordered Capital Letter.
 
-**💻Example :**
+**Code :**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -203,9 +209,9 @@ Example :
 </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
-![Output](output-5.png) 
+<img src="/icp/07/output-5.png" alt="output-5" width="600px"/>
 
 >**type="a"** It defines list items in alphabetically ordered lowercase letters.
 
@@ -217,13 +223,14 @@ Example :
 
 We can start the list at a specific point then you can use the start type it accepts a particular position to start the list. Start always accepting numbers.
 
-**💻Syntax :**
+**Syntax :**
 
 ```html
 <ol type="a" start="3">
 ```
 
-**💻Example :**
+**Code :**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -241,6 +248,6 @@ We can start the list at a specific point then you can use the start type it acc
 </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
-![Output](output-6.png)
+<img src="/icp/07/output-6.png" alt="output-6" width="600px"/>

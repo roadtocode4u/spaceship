@@ -19,7 +19,8 @@ The anchor tag used to give a hyperlink, which is used to link from one page to 
 
  **href** 👉 hyperlink reference
 
- **💻Example :**
+ **Code :**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -37,9 +38,9 @@ The anchor tag used to give a hyperlink, which is used to link from one page to 
 ```
 **Output :**
 
-![output](output-1.png)
+<img src="/icp/06/output-1.png" alt="output-1" width="600px"/>
 
- **💻Example :**
+ **Code :**
 
  **File Name : homepage.html**
 
@@ -105,15 +106,15 @@ The anchor tag used to give a hyperlink, which is used to link from one page to 
 ```
 **Output homepage.html**
 
-![Output](output-2.png)
+<img src="/icp/06/output-2.png" alt="output-2" width="600px"/>
 
 **Output aboutpage.html**
 
-![Output](output-3.png)
+<img src="/icp/06/output-3.png" alt="output-3" width="600px"/>
 
 **Output contactpage.html**
 
-![Output](output-4.png)
+<img src="/icp/06/output-4.png" alt="output-4" width="600px"/>
 
 **Using Anchor Tag Open Mail Address :**
 
@@ -125,7 +126,7 @@ The anchor tag used to give a hyperlink, which is used to link from one page to 
  </a>
  ```
 
-**Example :**
+ **Code :**
 
 ```html
 
@@ -146,8 +147,8 @@ The anchor tag used to give a hyperlink, which is used to link from one page to 
 
 **Output :**
 
-![Output](output-5.png)
-![Output](output-6.png)
+<img src="/icp/06/output-5.png" alt="output-5" width="600px"/>
+<img src="/icp/06/output-6.png" alt="output-6" width="600px"/>
 
 **Add a Clickable Telephone using Anchor Tag :**
 
@@ -159,7 +160,7 @@ The anchor tag used to give a hyperlink, which is used to link from one page to 
  </a>
  ```
 
-**Example :**
+ **Code :**
 
 ```html
 <!Doctype html>
@@ -179,4 +180,4 @@ The anchor tag used to give a hyperlink, which is used to link from one page to 
 
 **Output :**
 
-![Output](output-7.png)
+<img src="/icp/06/output-7.png" alt="output-7" width="600px"/>

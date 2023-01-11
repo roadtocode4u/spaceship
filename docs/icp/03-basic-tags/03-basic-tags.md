@@ -10,7 +10,7 @@ hide_table_of_contents: true
 
 Whitespace means empty space around the content of a page. You can Give Multiple spaces in your HTML code but By default, HTML is Considered only one single space. The browser ignores whitespace.
 
-**Example:**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -24,7 +24,7 @@ Whitespace means empty space around the content of a page. You can Give Multiple
 </html>
 ```
 
-**Output:**
+**Output :**
 
 <img src="/icp/03/output-1.png" alt="output-1" width="600px"/>
 
@@ -33,7 +33,7 @@ Whitespace means empty space around the content of a page. You can Give Multiple
 
 If you can Manually add empty spaces in your HTML code then you can use one Special Character **```&nbsp;```** . **```&nbsp;```** means Non-breaking Space. If you write 5 spaces in your code, the browser will remove them. To add empty spaces manually to your code, you can use the **```&nbsp;```** special character. 
  
-**Example:**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -46,7 +46,7 @@ If you can Manually add empty spaces in your HTML code then you can use one Spec
     </body>
 </html>
 ```
-**Output:**
+**Output :**
 
 <img src="/icp/03/output-2.png" alt="output-2" width="600px"/>
 
@@ -77,7 +77,8 @@ In HTML **```<b>```** tag defines bold text.
 ```html
 <b>Bold Text</b>
 ```
-**💻Example :**
+**Code :**
+
 ```html
 <!Doctype html>
 <html>
@@ -91,7 +92,7 @@ In HTML **```<b>```** tag defines bold text.
 
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
 <img src="/icp/03/output-4.png" alt="output-4" width="600px"/>
 
@@ -105,7 +106,8 @@ In HTML **```<i>```** tag defines Italic text.
 ```html
 <i>Text</i>
 ```
-**💻Example :**
+**Code :**
+
 ```html
 <!Doctype html>
 <html>
@@ -119,7 +121,7 @@ In HTML **```<i>```** tag defines Italic text.
 </html>
 ```
 
-**⚙️ Output :**
+**Output :**
 
 <img src="/icp/03/output-5.png" alt="output-5" width="600px"/>
 
@@ -131,7 +133,7 @@ OR
 <b><i>Sample Text</i></b>
 ```
 
-**Example :**
+**Code :**
 
 ```html
 <!Doctype html>
@@ -159,7 +161,8 @@ In HTML **```<u>```** tag are used to underline a text.
 ```html
 <u>Underline Text</u>
 ```
-**💻Example :**
+**Code :**
+
 ```html
 <!Doctype html>
 <html>
@@ -172,6 +175,7 @@ In HTML **```<u>```** tag are used to underline a text.
   </body>
 </html>
 ```
+
 **Output :**
 
 <img src="/icp/03/output-7.png" alt="output-7" width="600px"/>
@@ -184,7 +188,8 @@ It is used to mark a portion of text which has been deleted from the document.
 ```html
 <del>Delete Text</del>
 ```
-**💻Example :**
+**Code :**
+
 ```html
 <!Doctype html>
 <html>
@@ -196,7 +201,7 @@ It is used to mark a portion of text which has been deleted from the document.
   </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
 <img src="/icp/03/output-8.png" alt="output-8" width="600px"/>
 
@@ -205,7 +210,7 @@ It is used to mark a portion of text which has been deleted from the document.
 
 Superscript is a number or letter that written above the normal text.
 
-**Syntax :**
+**Code :**
 
 ```html
 10<sup>th</sup>
@@ -223,6 +228,7 @@ Superscript is a number or letter that written above the normal text.
   </body>
 </html>
 ```
+
 **Output :**
 
 <img src="/icp/03/output-9.png" alt="output-9" width="600px"/>
@@ -234,7 +240,7 @@ Subscript is a number or letter that written below the normal text.
 H<sub>2</sub>O
 ```
 
-**Example :**
+**Code :**
 
 ```html
 <!Doctype html>
@@ -259,7 +265,7 @@ H<sub>2</sub>O
 ```<hr />``` Tag is Horizontal Rule that is used to sepreate content.
 
 
-**💻Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -295,7 +301,7 @@ H<sub>2</sub>O
 Span Tag is a text inline selector it is used to select a particular Text. Span tag does not have any own effect.
 
 
-**💻Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -315,7 +321,7 @@ Span Tag is a text inline selector it is used to select a particular Text. Span 
 </html>
 ```
 
-**⚙️ Output :**
+**Output :**
 
 <img src="/icp/03/output-12.png" alt="output-12" width="600px"/>
 

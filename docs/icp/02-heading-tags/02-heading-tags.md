@@ -7,7 +7,7 @@ hide_table_of_contents: true
 
  In HTML, headings are titles or subtitles used to display on a webpage. There are six heading Tags. These Tags are **```<h1>,<h2>,<h3>,<h4>,<h5>,<h6>```**.  **```<h1>```** is the biggest, and **```<h6>```** is the smallest. Heading is always start from new line.
  
-**Example:**
+**Code :**
 
 ```html
 <!DOCTYPE html>

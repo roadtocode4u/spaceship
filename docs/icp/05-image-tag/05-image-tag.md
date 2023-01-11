@@ -30,7 +30,7 @@ Attributes are used to describe tag or to provide more info to tag.
 <img src="url"/>
 ```
 
-**Example:**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -60,7 +60,7 @@ The Height attribute are used to give Height of an image, in pixels.
 <img src="url" height="" width=""/>
 ```
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -73,6 +73,7 @@ The Height attribute are used to give Height of an image, in pixels.
 </body>
 </html>
 ```
+
 **Output :**
 
 <img src="/icp/05/output-5.png" alt="output-5" width="600px"/>
@@ -80,7 +81,7 @@ The Height attribute are used to give Height of an image, in pixels.
 
 When you give both height and width to the image then image might lose its aspect ratio. You can preserve the aspect ratio by specifying only width or only height.
 
-**Example:**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -93,6 +94,7 @@ When you give both height and width to the image then image might lose its aspec
 </body>
 </html>
 ```
+
 **Output :**
 
 <img src="/icp/05/output-2.png" alt="output-2" width="600px"/>
@@ -103,7 +105,7 @@ When you give both height and width to the image then image might lose its aspec
 
 ```alt``` tag are used to provide alternative text of the image, if the image is cannot displayed for some reasons or we can provide wrong source of the image. 
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -116,6 +118,7 @@ When you give both height and width to the image then image might lose its aspec
 </body>
 </html>
 ```
+
 **Output :**
 
 <img src="/icp/05/output-3.png" alt="output-3" width="600px"/>
@@ -124,7 +127,7 @@ When you give both height and width to the image then image might lose its aspec
 
 You can add a local image to your HTML page and then the first download or save the image in the same folder and then provide the source of the image. Ex: ```src= "imageName.png"```
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>

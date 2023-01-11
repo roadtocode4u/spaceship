@@ -17,7 +17,8 @@ Paragraph tag is used to define a block of text in paragraph.
 </p>
 ```
 
-**Example:**
+**Code :**
+
 ```html
 <!Doctype html>
 <html>
@@ -53,7 +54,7 @@ We can provide align by three types Left, Center, Right.
 <p align="right"> Text </p>
 ```
 
-**Example :**
+**Code :**
 
 ```html
 <!Doctype html>
@@ -88,7 +89,8 @@ We can use paragraph tag in div tag but we cannot use div tag in paragraph tag.
 </div>
 ```
 
-**Example:**
+**Code :**
+
 ```html
 <!Doctype html>
 <html>

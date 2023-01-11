@@ -73,7 +73,7 @@ Tags are used to provide meaning/effect to content.Also it provides special info
 
 `<body> </body>`: Define the body of webpage and content of this body will be visible on browser's content area.
 
-### Output
+**Output :**
 
 <img src="/icp/01/output-1.png" alt="output-1" width="600px"/>
 

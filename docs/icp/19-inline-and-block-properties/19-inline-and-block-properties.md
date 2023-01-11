@@ -231,3 +231,35 @@ Now we will make display property of division to `inline-block` and let's create
 **Output:**
 
 ![Output](output-6.png)
+
+## Change Display Property of Elements
+
+We can change the display property of the elements using CSS. For example, we can change the display property of `<span>` element to `block` using CSS.
+
+```css
+span{
+  display: block;
+}
+```
+
+In the same way we can change the display property of `<div>` element to `inline` using CSS.
+
+```css
+div{
+  display: inline;
+}
+```
+
+:::tip
+We can change the display property of any element to any other display property. As per the need you should change the display property of the elements.
+:::
+
+## Summary
+
+Here is the quick summary of the display properties of the elements, we have seen in this tutorial:
+
+| Inline | Block | Inline-Block |
+| --- | --- | --- |
+| Start from new line | Start from new line | Start from same line |
+| Take minimum space | Take complete space horizontaly | Take minimum space |
+| We can't provide height and width | We can provide height and width | We can provide height and width |

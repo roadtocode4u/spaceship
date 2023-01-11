@@ -5,37 +5,30 @@ hide_table_of_contents: true
 ---
 # Inline and Block Properties
 
-## Display
+`display` property is used to to control the layout. In this guide we will learn about the following display properties:
 
-Display is used to To Control the Layout.
-
-**Display 3 Properties**
-
-1. Block
-2. Inline
-3. inline-block
-
+1. `block`
+2. `inline`
+3. `inline-block`
 
 ## Inline Elements
 
-Properties of inline elements
+Inline elements follow the following properties:
 
-1. Does not Start from new line.
-2. Occupies space required for content only.
-3. We can not specify height and width. (only we can give height and width for image in inline element.)
+1. Inline elements start from same line.
+2. `height` and `width` property is not applicable to inline elements.
+3. Inline elements take a minimum space required by the content.
 
-```html
-1. <span>
-2.  <a>
-3. <img>
-```
+Here are some of the inline elements:
+`<span>`, `<a>`, `<img>`, `<sub>`, `<sup>`,  `<label>`
 
-**Example :**
-```html
+**Code:**
+
+```html title="index.html" showLineNumbers="true"
 <!DOCTYPE html>
 <html >
 <head>
-    <title> Inline </title>
+    <title> Inline Elements </title>
     <style>
         .span-a{
             background-color: aqua;
@@ -45,25 +38,27 @@ Properties of inline elements
         }
     </style>
 </head>
-<body> 
+<body>
    <span class="span-a">First Span</span>
 
    <span class="span-b">Second Span</span>
 </body>
 </html>
 ```
-**⚙️ Output :**
+
+**Output:**
 
 ![Output](output-1.png)
 
+In the following example we are providing `height` and `width` to the inline elements using CSS. But in the output we can see no change in the height and width of the elements.
 
-**Example :**
+**Code:**
 
-```html
+```html title="index.html" showLineNumbers="true"
 <!DOCTYPE html>
 <html >
 <head>
-    <title> Inline </title>
+    <title> Inline Elements </title>
     <style>
         .span-a{
             background-color: aqua;
@@ -77,40 +72,38 @@ Properties of inline elements
         }
     </style>
 </head>
-<body> 
+<body>
    <span class="span-a">First Span</span>
 
    <span class="span-b">Second Span</span>
 </body>
 </html>
 ```
-**⚙️ Output :**
+
+**Output :**
 
 ![Output](output-2.png)
 
 
-# Block elements
+## Block Elements
 
-Properties of block elements
+Block elements follow the following properties:
 
 1. Start From new line.
 2. These elements try to occupy complete space horizontaly.
 3. We can specify height and width.
 
-```html
-1. <div>
-2. <h1>, <h2>, <h3>, <h4>, <h5>, <h6>
-3. <p>
-4. <form>
-```
+Here are some of the block elements:
+`<div>`, `<p>`, `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`, `<ul>`, `<ol>`, `<li>`,
 
-**💻Example :**
-```html
+**Code:**
+
+```html title="index.html" showLineNumbers="true"
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title> Inline </title>
+    <title> Block Elements </title>
     <style>
         .div-a {
             background-color: aqua;
@@ -133,17 +126,20 @@ Properties of block elements
 
 </html>
 ```
-**⚙️ Output :**
+
+In the output we can see that both division are starting from new line. And they are occupying complete space horizontaly. (In the next example we will see how to provide the height and width to the division.)
+
+**Output :**
 
 ![Output](output-3.png)
 
-**💻Example :**
-```html
+Now let's see how to provide height and width to the division. We can provide height and width to the division using CSS.
+
+```html title="index.html" showLineNumbers="true"
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title> Inline </title>
+    <title> Block Elements </title>
     <style>
         .div-a {
             background-color: aqua;
@@ -168,56 +164,35 @@ Properties of block elements
 
 </html>
 ```
-**⚙️ Output :**
+
+In the output we can see that the height of the first division is 50px and the width of the second division is 100px.
+
+**Output :**
 
 ![Output](output-4.png)
 
-```html
+You might be wondering how to make div elements to start from the same line, also we should be able to provide height and width to the div elements. For this we can use `display: inline-block` property.
+
+## Inline-Block Elements
+
+Elements having display property `inline-block` follows the property of both `inline` and `block` elements. It follows the following properties:
+
+1. `inline-block` elements starts from same line.
+2. We can provide height and width to the `inline-block` elements.
+3. `inline-block` elements take a minimum space required by the content of this element.
+
+Some inline-block elements are `<button>`, `<input>`
+
+Now we will make display property of division to `inline-block` and let's create two simple cards that are displayed in the same line.
+
+**Code :**
+
+```html title="index.html" showLineNumbers="true"
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title> Inline </title>
-    <style>
-        .box {
-            background-color: aqua;
-            margin-top: 10px;
-            height: 30px;
-            width: 200px;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="box">
-        This is Division
-    </div>
-    <div class="box">
-        This is Division
-    </div>
-</body>
-
-</html>
-```
-
-**⚙️ Output :**
-
-![Output](output-5.png)
-
-## Inline-Block Property
-
-1. You can give Height + width.
-2. Start with same line.
-3. It will occupy required space.
-
-**💻Example :**
-
-```html
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title> Inline </title>
+    <title> Inline Block Elements</title>
     <style>
         .card {
             background-color: tomato;
@@ -252,12 +227,7 @@ Properties of block elements
 
 </html>
 ```
-**⚙️ Output :**
+
+**Output:**
 
 ![Output](output-6.png)
-
-
-
-
-
-

@@ -159,10 +159,10 @@ External CSS are using a ```<link>``` element to link to an external CSS file. W
 }
 ```
 
-<b>index.html file output </b>
+<b>index.html file output </b> <br/>
 
-<img src="/icp/15/output-3.png" alt="output-3" width="600px"/>
+<img src="/icp/15/output-3.png" alt="output-3" width="600px"/> <br/>
 
-<b>about.html file output </b>
+<b>about.html file output </b> <br/>
 
 <img src="/icp/15/output-4.png" alt="output-4" width="600px"/>

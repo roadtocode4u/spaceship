@@ -19,7 +19,7 @@ selector:hover{
 }
 ```
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -46,13 +46,13 @@ selector:hover{
 </html>
 ```
 
-**⚙️ Output :**
+**Output :**
 
-![Output](output-1.png)
+<img src="/icp/18/output-1.png" alt="output-1" width="600px"/>
 
-![Output](output-2.png)
+<img src="/icp/18/output-2.png" alt="output-2" width="600px"/>
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -83,11 +83,11 @@ selector:hover{
 </html>
 ```
 
-**⚙️ Output :**
+**Output :**
 
-![Output](output-3.png)
+<img src="/icp/18/output-3.png" alt="output-3" width="600px"/>
 
-![Output](output-4.png)
+<img src="/icp/18/output-4.png" alt="output-4" width="600px"/>
 
 
 ## Text-align
@@ -127,4 +127,4 @@ The ```text-align``` CSS property are used to give alignment of text.
 
 **Output :**
 
-![Output](output-5.png)
+<img src="/icp/18/output-5.png" alt="output-5" width="600px"/>

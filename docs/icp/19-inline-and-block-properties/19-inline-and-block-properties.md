@@ -48,7 +48,7 @@ Here are some of the inline elements:
 
 **Output:**
 
-![Output](output-1.png)
+<img src="/icp/19/output-1.png" alt="output-1" width="600px"/>
 
 In the following example we are providing `height` and `width` to the inline elements using CSS. But in the output we can see no change in the height and width of the elements.
 
@@ -82,7 +82,7 @@ In the following example we are providing `height` and `width` to the inline ele
 
 **Output :**
 
-![Output](output-2.png)
+<img src="/icp/19/output-2.png" alt="output-2" width="600px"/>
 
 
 ## Block Elements
@@ -131,7 +131,7 @@ In the output we can see that both division are starting from new line. And they
 
 **Output :**
 
-![Output](output-3.png)
+<img src="/icp/19/output-3.png" alt="output-3" width="600px"/>
 
 Now let's see how to provide height and width to the division. We can provide height and width to the division using CSS.
 
@@ -169,7 +169,7 @@ In the output we can see that the height of the first division is 50px and the w
 
 **Output :**
 
-![Output](output-4.png)
+<img src="/icp/19/output-4.png" alt="output-4" width="600px"/>
 
 You might be wondering how to make div elements to start from the same line, also we should be able to provide height and width to the div elements. For this we can use `display: inline-block` property.
 
@@ -230,7 +230,7 @@ Now we will make display property of division to `inline-block` and let's create
 
 **Output:**
 
-![Output](output-6.png)
+<img src="/icp/19/output-6.png" alt="output-6" width="600px"/>
 
 ## Change Display Property of Elements
 

@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 ## Hexadecimal 
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -24,9 +24,10 @@ hide_table_of_contents: true
 </body>
 </html>
 ```
+
 **Output :**
 
-![Output](output-1.png) 
+<img src="/icp/16/output-1.png" alt="output-1" width="600px"/> 
 
 # Box-shadow and Card design
 
@@ -47,7 +48,7 @@ Explanation:
 box-shadow: 5px    5px     5px    2px   #808080;
 ```
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -70,11 +71,12 @@ box-shadow: 5px    5px     5px    2px   #808080;
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-2.png) 
+**Output :**
 
-**Example :**
+<img src="/icp/16/output-2.png" alt="output-2" width="600px"/>  
+
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -97,11 +99,12 @@ box-shadow: 5px    5px     5px    2px   #808080;
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-3.png) 
+**Output :**
 
-**Example :**
+<img src="/icp/16/output-3.png" alt="output-3" width="600px"/>  
+
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -126,7 +129,8 @@ box-shadow: 5px    5px     5px    2px   #808080;
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-4.png)
+**Output :**
+
+<img src="/icp/16/output-4.png" alt="output-4" width="600px"/> 
 

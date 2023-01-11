@@ -21,7 +21,7 @@ type => attribute
 
 ### How to take input from user
 
-**💻Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -36,9 +36,10 @@ type => attribute
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-1.png) 
+**Output :**
+
+<img src="/icp/10/output-1.png" alt="output-1" width="600px"/> 
 
 ### Label 
 
@@ -46,7 +47,7 @@ The label is a normal text, its show information about your input element & its 
 
 The ```<label>``` tag is used to specify a label for an ```<input>``` element.
 
-**💻Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -62,16 +63,17 @@ The ```<label>``` tag is used to specify a label for an ```<input>``` element.
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-2.png) 
+**Output :**
+
+<img src="/icp/10/output-2.png" alt="output-2" width="600px"/> 
 
 
 ### Password
 
 Password is attribute which is invisible to the user in password field.
 
-**💻Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -87,15 +89,16 @@ Password is attribute which is invisible to the user in password field.
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-4.png) 
+**Output :**
+
+<img src="/icp/10/output-4.png" alt="output-4" width="600px"/> 
 
 ### Email
 
 The email Attribute is used to validates the text for correct email address. You must use `@` and `.` in this field.
 
-**💻Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -111,13 +114,14 @@ The email Attribute is used to validates the text for correct email address. You
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-11.png) 
+**Output :**
+
+<img src="/icp/10/output-11.png" alt="output-11" width="600px"/> 
 
 📝Note:-  If we do not enter the proper email address then  it will display error like this
 
-**💻Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -147,9 +151,9 @@ The email Attribute is used to validates the text for correct email address. You
 </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
-![Output](output-7.png) 
+<img src="/icp/10/output-7.png" alt="output-7" width="600px"/>
 
 ## Button
 
@@ -157,7 +161,7 @@ There are two type of button <br />
 1. Submit button :- it is used to submit form data.
 2. Button :- it is used to trigger action.
 
-**💻Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -173,16 +177,17 @@ There are two type of button <br />
 </html>
 ```
 
-**⚙️ Output :**
+**Output :**
 
-![Output](output-5.png) 
+<img src="/icp/10/output-5.png" alt="output-5" width="600px"/>
 
 
 ### required 
 
 It is specifies that the element is mandatory to filled out before submitting the form.
 
-**💻Example :**
+**Code :**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -207,15 +212,16 @@ It is specifies that the element is mandatory to filled out before submitting th
 </html>
 ```
 
-**⚙️ Output :**
+**Output :**
 
-![Output](output-6.png) 
+<img src="/icp/10/output-6.png" alt="output-6" width="600px"/> 
 
 ### Placeholder
 
 Placeholder is a attribute which is used to set a short hint that describes the value of an input field. 
 
-**💻Example :**
+**Code :**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -229,13 +235,13 @@ Placeholder is a attribute which is used to set a short hint that describes the 
 </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
-![Output](output-8.png) 
+<img src="/icp/10/output-8.png" alt="output-8" width="600px"/> 
 
 ### Date and Time
 
-**💻Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -254,9 +260,10 @@ Placeholder is a attribute which is used to set a short hint that describes the 
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-9.png)
+**Output :**
+
+<img src="/icp/10/output-9.png" alt="output-9" width="600px"/>
 
 ### Dropdown 
 
@@ -272,7 +279,7 @@ We can create drop-down list using ```<select>``` tag. ```<select>``` Tag are co
 </select>
 ```
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -295,13 +302,13 @@ We can create drop-down list using ```<select>``` tag. ```<select>``` Tag are co
 ```
 **Output :**
 
-![Output](output-12.png)
+<img src="/icp/10/output-12.png" alt="output-12" width="600px"/>
 
 ### Value
 
 The value attribute are used specifies the value of an ```<input>``` element. Value attribute represent the default value for the input element.
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -317,16 +324,17 @@ The value attribute are used specifies the value of an ```<input>``` element. Va
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-13.png)
+**Output :**
+
+<img src="/icp/10/output-13.png" alt="output-13" width="600px"/>
 
 ### Data List
 
 Data list it is a Searchable list option.
 It can help the user, the user does not need to type the whole text data list have predefined suggestions so it can suggest to the user.
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -351,15 +359,15 @@ It can help the user, the user does not need to type the whole text data list ha
 </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
-![Output](output-14.png)
+<img src="/icp/10/output-14.png" alt="output-14" width="600px"/>
 
 ### Checkbox 
  
 Checkbox is used to multiple selection.
 
-**💻Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -381,11 +389,14 @@ Checkbox is used to multiple selection.
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-15.png)
+**Output :**
+
+<img src="/icp/10/output-15.png" alt="output-15" width="600px"/>
 
 Checkbox have one ```Checked = true``` attribute & this attribute specifies input  element should be pre-selected or checked.
+
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -407,15 +418,17 @@ Checkbox have one ```Checked = true``` attribute & this attribute specifies inpu
 </body>
 </html>
 ```
-**⚙️ Output :**
 
-![Output](output-16.png)
+**Output :**
+
+<img src="/icp/10/output-16.png" alt="output-16" width="600px"/>
 
 ## Radio Button
 
 Radio Button is used to Single selection.
 
-**💻Example :**
+**Code :**
+
 ```html
 <!DOCTYPE html>
 <html >
@@ -433,9 +446,9 @@ Radio Button is used to Single selection.
 </body>
 </html>
 ```
-**⚙️ Output :**
+**Output :**
 
-![Output](output-17.png)
+<img src="/icp/10/output-17.png" alt="output-17" width="600px"/>
 
 ### File
 
@@ -464,7 +477,7 @@ Different accept attribute value :
 ```application/pdf``` = pdf file <br/>
 ```image/png``` = only png extension images <br/>
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -482,7 +495,7 @@ Different accept attribute value :
 ```
 **Output :**
 
-![Output](output-18.png)
+<img src="/icp/10/output-18.png" alt="output-18" width="600px"/>
 
 
 

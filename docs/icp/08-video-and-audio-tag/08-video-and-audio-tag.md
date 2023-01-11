@@ -15,7 +15,7 @@ Video tag is used to show a video on web page in html.
 </video>
 ```
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -32,7 +32,8 @@ Video tag is used to show a video on web page in html.
 ```
 
 **Output :**
-![output](output-1.png)
+
+<img src="/icp/08/output-1.png" alt="output-1" width="600px"/>
 
 ### There are Some Attributes available for video tag 
 
@@ -51,7 +52,7 @@ Controls attributes are used to show controls on video like Play, Pause, Volume,
 
 Height and Width Attribute are used to provide height and width for video.
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -69,7 +70,7 @@ Height and Width Attribute are used to provide height and width for video.
 
 **Output :**
 
-![output](output-2.png)
+<img src="/icp/08/output-2.png" alt="output-2" width="600px"/>
 
 ### Auto Play
 
@@ -79,7 +80,7 @@ AutoPlay Attribute are used to the video will automatically start when you visit
 
 The muted attribute specifies the audio of your video is muted.
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -97,13 +98,13 @@ The muted attribute specifies the audio of your video is muted.
 
 **Output :**
 
-![output](output-3.png)
+<img src="/icp/08/output-3.png" alt="output-3" width="600px"/>
 
 ### Poster 
 
 The poster attribute are used to show image to your video. 
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -121,7 +122,7 @@ The poster attribute are used to show image to your video.
 
 **Output :**
 
-![output](output-4.png)
+<img src="/icp/08/output-4.png" alt="output-4" width="600px"/>
 
 ### Audio Tag
 
@@ -135,7 +136,7 @@ Audio tag is used to show a audio on web page in html.
 </audio>
 ```
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -153,9 +154,9 @@ Audio tag is used to show a audio on web page in html.
 
 **Output :**
 
-![output](output-5.png)
+<img src="/icp/08/output-5.png" alt="output-5" width="600px"/>
 
-**Example :**
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -173,7 +174,7 @@ Audio tag is used to show a audio on web page in html.
 
 **Output :**
 
-![output](output-6.png)
+<img src="/icp/08/output-6.png" alt="output-6" width="600px"/>
 
 
 ### 🔊▶️ Audio and Video URLs

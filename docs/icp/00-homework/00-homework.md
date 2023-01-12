@@ -81,3 +81,7 @@ different pages and also add an anchor tag to return back to home page
 1. Create 3 web pages and implement display properties inline, block and inline-block on each page.
 
 2. Create a course cards similar to cards shown on RTC website using display, height, width, text-align, box-shadow, margin, padding, hover, etc.
+
+### Homework-14
+
+1. Create a Collage ID card or Bank Card (add fake details) using position & other CSS properties.

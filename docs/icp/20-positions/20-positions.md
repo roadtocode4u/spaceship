@@ -5,7 +5,7 @@ hide_table_of_contents: true
 ---
 # Positions
 
-To position element based on ```left```, ```right```, ```top```, ```bottom``` properties. In which ```left``` and ```top``` properties are more dominant.
+CSS position properties are used to apply left, right, top, and bottom properties to set the position to the CSS element accordingly.
 
 
 There are five different types of positions in css

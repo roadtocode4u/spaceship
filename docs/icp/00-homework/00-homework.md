@@ -85,3 +85,9 @@ different pages and also add an anchor tag to return back to home page
 ### Homework-14
 
 1. Create a Collage ID card or Bank Card (add fake details) using position & other CSS properties.
+
+
+### Homework-15
+
+Implement all justify-content properties on a flexbox div. place images of bird or animal as a flex-item.
+

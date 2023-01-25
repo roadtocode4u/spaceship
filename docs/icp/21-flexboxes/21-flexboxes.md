@@ -605,3 +605,174 @@ Child items are evenly distributed in the line.It does not provide space in side
 **Output :**
 
 <img src="/icp/21/output-11.png" alt="output-11" width="600px"/>
+
+
+## align-items
+
+> When the **flex-direction** is a **row** then **justify-content** control **horizontally**. This means the X axis but you can control the opposite axis Which means the Y axis then you use the property align-items. Align items are used to control items on the opposite axis.
+
+1. ```align-items: flex-start```;
+
+Items are placed at the start of the Opposite ( Y axis ) axis.
+
+<img src="/icp/21/img-12.png" alt="img-12" width="400px" />
+
+**Code :**
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Flex Box </title>
+    <style>
+        .item {
+            background-color: tomato;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            font-size: 50px;
+            padding: 10px;
+        }
+        .conatiner{
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="conatiner">
+
+        <div class="item"> 1 </div>
+        <div class="item"> 2 </div>
+        <div class="item"> 3 </div>
+
+    </div>
+
+</body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/21/output-14.png" alt="output-14" width="600px"/>
+
+2. ```align-item: flex-end```;
+
+Items are placed at the end of the Opposite ( Y axis ) axis.
+
+<img src="/icp/21/img-14.png" alt="img-14" width="400px" />
+
+**Code :**
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Flex Box </title>
+    <style>
+        .item {
+            background-color: tomato;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            font-size: 50px;
+            padding: 10px;
+        }
+        .conatiner{
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="conatiner">
+
+        <div class="item"> 1 </div>
+        <div class="item"> 2 </div>
+        <div class="item"> 3 </div>
+
+    </div>
+
+</body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/21/output-13.png" alt="output-13" width="600px"/>
+
+3. ```align-item: center```;
+
+Items are centered in the Opposite axis.
+
+<img src="/icp/21/img-13.png" alt="img-13" width="400px" />
+
+**Code :**
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Flex Box </title>
+    <style>
+        .item {
+            background-color: tomato;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            font-size: 50px;
+            padding: 10px;
+        }
+        .conatiner{
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="conatiner">
+
+        <div class="item"> 1 </div>
+        <div class="item"> 2 </div>
+        <div class="item"> 3 </div>
+
+    </div>
+
+</body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/21/output-12.png" alt="output-12" width="600px"/>
+
+
+
+> When the **flex-direction** is a **column** then **justify-content** control **vertically**. This means the Y axis but you can control the item's opposite axis Which means the X axis then you use the property align-item.
+
+<img src="/icp/21/img-15.png" alt="img-15" width="400px" />
+
+<img src="/icp/21/img-16.png" alt="img-16" width="400px" />
+
+<img src="/icp/21/img-17.png" alt="img-17" width="400px" />

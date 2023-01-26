@@ -91,3 +91,6 @@ different pages and also add an anchor tag to return back to home page
 
 Implement all justify-content properties on a flexbox div. place images of bird or animal as a flex-item.
 
+### Homework-16
+
+Create a Calculator design using flexbox & other CSS property. 

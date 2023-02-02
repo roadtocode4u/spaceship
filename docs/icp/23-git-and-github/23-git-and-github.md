@@ -11,7 +11,7 @@ hide_table_of_contents: true
 
 ## GitHub  
 
- Github is designed for developers. Github is a code hosting platform that hosts projects in different programming languages and keep track of changes made. GitHub are useful for To store Codebase. Other can also review your code. Most importantly, it is free and open source.
+ GitHub is designed for developers. GitHub is a code hosting platform that hosts projects in different programming languages and keep track of changes made. GitHub are useful for To store Codebase. Other can also review your code. Most importantly, it is free and open source.
 
 ## Steps to Create Account in GitHub 
 
@@ -57,3 +57,72 @@ It is a Folder where we can upload Code for specific Project.
 7. Click Commit Changes Button. 
 
 <img src="/icp/23/img-7.png" alt="img-7" width="600px"/>
+
+
+##  Account Setup credentials 
+
+1. Globally Set User = ```git config --global user.name "RTC 4U"```
+
+2. Globally Set Email =  ```git config --global user.email "email"```
+
+## Git commands
+
+1. ```git init```
+
+```git init``` command are used to Initialize Git repository to in your normal folder.  To create a new repo, you use the ```git init``` command. This command is one-time you use during a new repository initial setup.
+
+>```.git ``` File =  It stores all the history related to your repo. 
+
+2. ```git status```
+
+```git status``` command display the status of your working project. 
+
+3. ```git add <filename>```
+
+The  ```git add <filename>``` command adds new or changed files in your working project to the Git staging area. 
+
+4. ```git commit```
+
+```git commit``` command are used to record the changes in the repository. Every commit contain commit message. 
+
+**Syntax :**
+
+```git commit -m "<commit message>"```
+
+5. ```git push```
+
+```git push``` command are used to uploads all local branch commit to GitHub.
+
+
+## How to push your code to GitHub using git commands?
+
+Step 1 - Create a new GitHub Repository
+
+Step 2 - Initialize Git repository
+
+```
+git init
+```
+Step 3 - Add files in your local repository. 
+
+```
+git add <filename>
+```
+
+Step 4 - Commit the file that you have add in your repository.
+
+```
+git commit -m "first commit"
+```
+
+Step 5 - Add remote origin
+
+```
+git remote add origin https://github.com/prajaktadharpure28/my-portfolio.git
+```
+
+Step 6 - Push to GitHub
+
+```
+git push -u origin main
+```

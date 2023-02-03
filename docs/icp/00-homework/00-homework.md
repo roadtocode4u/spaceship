@@ -100,3 +100,6 @@ Create a Calculator design using flexbox & other CSS property.
 Create a GitHub account & send a profile URL to your Teaching Assistant. 
 
 ## Homework-18
+
+Re-create the foodie woodie website and push it on GitHub with at least 5 commits.
+

@@ -105,5 +105,9 @@ Re-create the foodie woodie website and push it on GitHub with at least 5 commit
 
 ## Homework-19
 
-Host Calculator Project on Netlify & Share url. 
+Host Calculator Project on Netlify & Share url.
+
+## Homework-20
+
+Create a fork of icp-4-first-fork repo from rtc account and make commits by reading comments in index.html. 
 

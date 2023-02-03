@@ -103,3 +103,7 @@ Create a GitHub account & send a profile URL to your Teaching Assistant.
 
 Re-create the foodie woodie website and push it on GitHub with at least 5 commits.
 
+## Homework-19
+
+Host Calculator Project on Netlify & Share url. 
+

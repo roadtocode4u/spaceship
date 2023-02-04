@@ -67,7 +67,7 @@ Your URL looks random now, but you can edit it by clicking the Site Settings but
 
 17. 🤔 How to change site name ?
 
-**Click Site Setting**
+**Click On Site Setting**
 
 <img src="/icp/24/img-12.png" alt="img-12" width="600px"/>
 
@@ -80,4 +80,5 @@ Your URL looks random now, but you can edit it by clicking the Site Settings but
 <img src="/icp/24/img-14.png" alt="img-14" width="600px"/>
 
 **Congratulations 🏆🏆, your first website is published now!**
+
 <img src="/icp/24/img-15.png" alt="img-15" width="600px"/>

@@ -100,29 +100,20 @@ Step 1 - Create a new GitHub Repository
 
 Step 2 - Initialize Git repository
 
-```
-git init
-```
+```git init```
+
 Step 3 - Add files in your local repository. 
 
-```
-git add <filename>
-```
+```git add <filename>```
 
 Step 4 - Commit the file that you have add in your repository.
 
-```
-git commit -m "first commit"
-```
+```git commit -m "first commit"```
 
 Step 5 - Add remote origin
 
-```
-git remote add origin https://github.com/prajaktadharpure28/my-portfolio.git
-```
+```git remote add origin https://github.com/vaibhavihole31/my-portfolio.git```
 
 Step 6 - Push to GitHub
 
-```
-git push -u origin main
-```
+```git push -u origin main```

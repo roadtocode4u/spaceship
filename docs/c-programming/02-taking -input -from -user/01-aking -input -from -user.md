@@ -10,6 +10,8 @@ hide_table_of_contents: true
 
 **Example : write a c program to take input from user and print it.**
 
+**code**
+
 ``` c
  #include <stdio.h>
 
@@ -25,12 +27,14 @@ hide_table_of_contents: true
     return 0;
 }
 ```
-⚙️ **Output :**
+ **Output :**
 
 >Enter value of val:10  
 >output is 10
 
-**Example : Write a C program to calculate Sum of two numbers.**
+**Write a C program to calculate Sum of two numbers.**
+
+**code**
 
 ``` c
  #include <stdio.h>
@@ -55,7 +59,7 @@ hide_table_of_contents: true
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 >Enter Value of num1 :20  
 >Enter Value of num2 :30  
@@ -63,8 +67,9 @@ hide_table_of_contents: true
 
 ## Taking input from user
 
-**Example : Write a C program to calculate the sum of two numbers.**
+**Write a C program to calculate the sum of two numbers.**
 
+**code**
 ``` c
  #include <stdio.h>
 
@@ -83,13 +88,14 @@ hide_table_of_contents: true
     return 0;
 }
 ```
-**⚙️ Output :**
+**Output :**
 >Enter value of num1 :30    
 >Enter value of num1 :10  
 >sum of num1 and num2 =40 
 
-**Example : Write a C program to print input marks of 3 subjects**
+**Write a C program to print input marks of 3 subjects**
 
+**code**
 ```c
 #include <stdio.h>
 
@@ -109,15 +115,16 @@ int main() {
     
     return 0;
 ```
-**⚙️ Output :**
+**Output :**
 
 >Enter marks of Marathi :75  
 >Enter marks of Hindi :85  
 >Enter marks of English :70  
 M=75 H=85 E=70
 
-**Example : write a c program to print input marks of 3 subjects**
+**write a c program to print input marks of 3 subjects**
 
+**code**
 ```c
 #include <stdio.h>
 
@@ -133,13 +140,14 @@ int main() {
     return 0;
 }
 ```
-**⚙️ Output :**
+**Output :**
 
 >Enter marks of Marathi ,Hindi,and English :75 85 70
 >M=75 H=85 E=70
 
-**Example : Write a C program to take input from user and print sum and percentage**
+**Write a C program to take input from user and print sum and percentage**
 
+**code**
 ```c
 
 #include <stdio.h>
@@ -160,13 +168,14 @@ int main() {
     return 0;
 }
 ```
-⚙️ Output :
+**Output :**
 
 >Enter marks of Marathi ,Hindi,and English :75 85 70  
 >Sum=230,Percentage=76 %
 
-**Example : Write a C program to calculate Simple Interest**
+**Write a C program to calculate Simple Interest**
 
+**code**
 ```c
 #include <stdio.h>
 
@@ -185,14 +194,15 @@ int main() {
     return 0;
 }
 ```
-**⚙️ Output :**
+**Output :**
 
 >Enter Principle,Rate and Time:5000 300 2
 >Simple Interest :30000.000000
 >Payable Amount:35000.000000
 
-**Example : Write a C Program to convert temperature from celsius to fahrenheit**
+**Write a C Program to convert temperature from celsius to fahrenheit**
 
+**code**
 ```c
 #include <stdio.h>
 
@@ -210,7 +220,7 @@ int main() {
     return 0;
 }
 ```
-**⚙️ Output :**
+**Output :**
 
 >Enter Temperature in Celsius :36
 >Temperature in Fahrenheit =96.800003

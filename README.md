@@ -1,6 +1,6 @@
 # Spaceship 🛸
 
-<img src="./static/img/homepage_screenshot.png" />
+<img src="./static/img/homepage_screenshot.png?id=1" />
 
 ## Contributors 🫶
 

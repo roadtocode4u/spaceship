@@ -17,16 +17,21 @@ It was created by Guido van Rossum, and released in 1991
 
 ###  Here is our first program
 
-Python Program to print "Hello World".
-
-```python
+```python title="hello world.py" showLineNumbers="true
  print("Hello World !!")
 ```
 
-You can pass any text and print functions will print it on the screen
+**Output**
+> Hello World !!
 
-```python
+*In the above example, we can write python program to print "Hello World". You can pass any text and print functions will print it on the screen.*
+
+```python title="sample.py" showLineNumbers="true
 print("Hii \n Good Evening \n Welcome To Python Programming!!")
 ```
+**Output**
+> Hii<br/>
+>Good Evening<br/>
+>Welcome To Python Programming!!<br/>
 
 

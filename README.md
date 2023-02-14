@@ -1,5 +1,7 @@
 # Spaceship 🛸
 
+<img src="./static/img/homepage_screenshot.png" />
+
 ## Contributors 🫶
 
 <a href="https://github.com/roadtocode4u/spaceship/graphs/contributors" target="_blank">

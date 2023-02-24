@@ -450,7 +450,7 @@ int main() {
 **Output**
 
 >4
->4
+
 
 ## Assignment Operators, Comparison Operators and Ternary Operator in C Programming
 

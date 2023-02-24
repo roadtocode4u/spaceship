@@ -31,6 +31,7 @@ print(age)
 ```
 
 **Output**
+
 >21
 
 In the above example, In the First line we can create one variable and name of that variable is `age`. In this variable, we store the `21` value And In 2 line we can print the value of that variable.

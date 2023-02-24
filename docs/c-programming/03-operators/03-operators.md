@@ -4,7 +4,7 @@ description: "Operators"
 hide_table_of_contents: true
 ---
 
-## Operators and Comments in C Programming
+## Operators 
 
 **Operators**    
 Operators are used to perform operations on variables and values.

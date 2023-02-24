@@ -18,6 +18,8 @@ console.log("Hello World")
 
 >Hello World
 
+ `console.log()` are used just print any message that needs to be displayed to the user.
+
 **Example :**
 ```js
 alert("Are you sure?")
@@ -26,6 +28,7 @@ alert("Are you sure?")
 
 <img src="/icp/25/output-1.png" alt="output-1" width="600px"/>  
 
+The `alert()` method is like a pop-up message that shows up on a website or program with a message and a button to click. It's used to give important information to the user.
 
 **You can Add JavaScript in Html elements then use this script tag. 👇**
 

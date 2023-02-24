@@ -5,7 +5,8 @@ hide_table_of_contents: true
 ---
 
  ### End Variable In Python
- 
+
+ In python, every end function value is by default `\n`.
 
  ``` python showLineNumbers="true"
  print("Good Evening" , end="\n")
@@ -27,7 +28,8 @@ hide_table_of_contents: true
  >Good Evening 
  >Hello Everyone
 
- In the above example, In the First line, we print `Good Evening` and apply the end variable `" "`. which is provide  the space between words. In the second line, we  print `Hello Everyone`.
+ In above example, we can give end variable value is space so thats why the output is `Good Evening Hello Everyone`.
+ >Hello Everyone
 
  ### What is the format () function in Python?
 
@@ -47,7 +49,7 @@ print("Hello {} .Your Age is {} .Your DOB is {}". format(x,y,dob))
 In the above example, In the 1st line we can create 1st variable  `x`, In this variable, store the `Sakshi` value . In 2nd line create 2nd variable `y`, In this variable, store the `21` value and In 3rd line create 3rd variable `dob`, In this variable, store the `07/10/2001` value . <br/><br/>
 In 4th line we print one message using a `format()` function in the message we can give `{}` for inject or fit our variables and in the `format()` function we can pass particular variable name. 1st `{}` will inject the variable `x` , 2nd `{}` will inject the variable `y` and 3rd `{}` will inject the variable `dob`.
 
-If position mismatched :
+if in the format function  variable sequence is mismatch then output is also change.
 
  ```python showLineNumbers="true"
 x="Sakshi"
@@ -58,8 +60,8 @@ print("Hello {} .Your Age is {} .Your DOB is {}". format(y,dob,x))
  **Output**
  >Hello 21. Your Age is 07/10/2001. Your DOB is Sakshi .
 
-In the above example, it is clear that the Position of varibles `x`, `y` and `dob` are mismatched inside the `format()` function. So, output also gets mismatched. <br/>
-The solution for this problem is given below,
+In the above example  in a format function the variable sequence is mismatch we can give a first x variable ,y variable and dob variable is also change and mismatch . <br/>
+The solution for this problem is given below.
 
 ``` python showLineNumbers="true"
 x="Sakshi"
@@ -90,7 +92,7 @@ print(name)
  >Enter Yourname : Sakshi <br/>
  >Sakshi
 
- In above example, we are taking input from user with the help of `input` keyword and assign to the variable `name` and print `name` using `print()` function. That `name` value is Sakshi.
+ In above example, we are taking input from user with the help of `input` function and assign to the variable `name` and print `name` using `print()` function. That `name` value is Sakshi.
 
  Formatting Output
 
@@ -102,7 +104,7 @@ print("Good Evening {}".format(name))
  >Enter Yourname : Sakshi <br/>
  >Good Evening Sakshi .
 
- In the above example, we are taking input from the user with the help of the `input` keyword and assign to the variable `name` and print a message `Good Evening` `{}`, this `{}` means `format()` function. We are assign `name` variable in `format()` function. So output is Good Evening Sakshi.
+ In the above example, we are taking input from the user with the help of the `input` function and assign to the variable `name` and print a message `Good Evening` `{}`, this `{}` means `format()` function. We are assign `name` variable in `format()` function. So output is Good Evening Sakshi.
 
  ### Type Casting
 
@@ -120,7 +122,7 @@ print(sum)
  >Enter val2: 10 <br/>
  >24
 
- In the above example, In 1st line, we are taking input from the user with the help of the `input` keyword and type casting this input into the `int` data type and assign to the variable `val1`. In the 2nd line, we typecast the input into the `int` data type and assign it to the variable `val2`. <br/>
+ In the above example, In 1st line, we are taking input from the user with the help of the `input` function and type casting this input into the `int` data type and assign to the variable `val1`. In the 2nd line, we typecast the input into the `int` data type and assign it to the variable `val2`. <br/>
 In the 3rd line, we are adding both the variables `val1` and `val2` and assign them to the variable `sum`. In the 4th line we print the variable `sum`. 
 
 ```python showLineNumbers="true"
@@ -134,7 +136,7 @@ print(sum)
  >Enter val2: 5 <br/>
  >17
 
-  In the above example, we are taking two inputs from the user with the help of the `input` keyword and assigning them to the variable `val1` and `val2` respectively. After that, we are adding both the variables `val1` and `val2` by typecasting them into the `int` data type and assigning it to the variable `sum`. 
+  In the above example, we are taking two inputs from the user with the help of the `input` function and assigning them to the variable `val1` and `val2` respectively. After that, we are adding both the variables `val1` and `val2` by typecasting them into the `int` data type and assigning it to the variable `sum`. 
   Now we print the variable `sum`.
 
  Formatting Output
@@ -149,5 +151,5 @@ print("sum of {} and {} is {}".format(val1,val2,sum))
 >Enter val2: 15 <br/>
 >sum of 5 and 15 is 20 .
 
- In the above example, we are taking two inputs from the user with the help of the `input` keyword and assigning them to the variable `val1` and `val2` respectively. After that, we are adding both the variables `val1` and `val2` by typecasting them into the `int` data type and assigning it to the variable `sum`. 
+ In the above example, we are taking two inputs from the user with the help of the `input` function and assigning them to the variable `val1` and `val2` respectively. After that, we are adding both the variables `val1` and `val2` by typecasting them into the `int` data type and assigning it to the variable `sum`. 
 Now we print sum of `{}` and `{}` is `{}` . That `{}` means `format()` function.

@@ -24,32 +24,33 @@ tuples are indexed, they can have items with the same value.
 ### Manipulation of Tuple Example
 
 ```python showLineNumbers='true'
-MyBasket=('Apple', 'Banana', 'Grapes', 'Oranges')
-ListMyBasket=list(MyBasket)
-ListMyBasket[0]='Cherry'
-MyBasket=tuple(ListMyBasket)
-print(MyBasket)
+color = ("Red","Pink","Sky","orange","Black")
+listColor = list(color)
+listColor[1] = "Green"
+color = tuple(listColor)
+print(color)
 ```
 **Output**
->('Cherry', 'Apple', 'Banana', 'Grapes', 'Oranges')
+>('Red', 'Green', 'Sky', 'orange', 'Black')
 
+In above the example, we create the color `tuple` and in that `tuple` store multiple data. we convert the color `tuple` into `list` so, in the 2nd line create one variable listColor and store the list of color `tuple`. in the 3rd line listColour variable will be changing in their pass 1 index no.`[1]`. and change to `Green` color. <br/> we are again the listColour list convert into `tuple` and stored in color `tuple`. In the last line, we print this color `tuple`.
 
 ### Index Position
 
 ```python showLineNumbers='true'
-PythonStudent=('Neha','Gauri','Vaibhavi','Meghana')
-print(PythonStudent.index("Neha"))
+myBasket = ("Apple","Banana","Orange","Grapes","Apple","Apple")
+print(myBasket.index("Banana"))
 ```
 **Output**
->0
+>1
 
 
 ### Count()
 The count() method returns the number of times the specified element appears in the list.
 
 ```python showLineNumbers='true'
-PythonStudent=('Neha','Gauri','Vaibhavi','Gauri','Meghana','Gauri')
-print(PythonStudent.count("Gauri"))
+myBasket = ("Apple","Banana","Orange","Grapes","Apple","Apple")
+print(myBasket.count("Apple"))
 ```
 **Output**
 >3
@@ -64,4 +65,4 @@ c = a + b
 print(c)
 ```
 **Output**
->Hello World
+>HelloWorld

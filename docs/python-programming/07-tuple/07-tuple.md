@@ -33,7 +33,7 @@ print(color)
 **Output**
 >('Red', 'Green', 'Sky', 'orange', 'Black')
 
-In above the example, we create the color `tuple` and in that `tuple` store multiple data. we convert the color `tuple` into `list` so, in the 2nd line create one variable listColor and store the list of color `tuple`. in the 3rd line listColour variable will be changing in their pass 1 index no.`[1]`. and change to `Green` color. <br/> we are again the listColour list convert into `tuple` and stored in color `tuple`. In the last line, we print this color `tuple`.
+In above the example, we create the color `tuple` and in that `tuple` store multiple data. we convert the color `tuple` into `list` so, in the 2nd line create one variable listColor and store the list of color `tuple`. in the 3rd line listColour variable will be changed, in their pass 1 index no.`[1]`. and change to `Green` color. we are again the listColour list convert into `tuple` and stored in color `tuple`. In the last line, we print this color `tuple`.
 
 ### Index Position
 

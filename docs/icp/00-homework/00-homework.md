@@ -111,3 +111,14 @@ Host Calculator Project on Netlify & Share url.
 
 Create a fork of icp-4-first-fork repo from rtc account and make commits by reading comments in index.html. 
 
+## Homework-21
+
+Create a webpage and use following JS concepts.
+
+ 1. alert
+ 2. document.write
+ 3. console.log
+
+## Homework No-22
+
+WAP to calculate sum of marks of 5 subjects. Use prompt to take input from user.

@@ -1,5 +1,5 @@
 ---
-title: Switch Case
-description: "Switch Case"
+title: Loops
+description: "Loops"
 hide_table_of_contents: true
 ---

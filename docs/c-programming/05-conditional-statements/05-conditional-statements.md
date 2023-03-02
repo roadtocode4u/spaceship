@@ -142,5 +142,32 @@ int main() {
 
 **Output :**
 
+>Enter your age :18  
+>Your are eligible for voting
+
+
+**if-else-ladder**
+if else ladder check condition in sequentional manner. if first condition gets true it will not check further conditions.if non of the condition gets true it will run the else block.
+
+**syntax**
+
+```c
+   if (condition)
+   {
+    // Statement
+   }   
+   else if (condition)
+   {
+    // Statement
+   }
+   else if (condition)
+   {
+    // Statement
+   }
+   else{
+
+   }
+```
+
 > Enter your age :18  
 > Your are eligible for voting

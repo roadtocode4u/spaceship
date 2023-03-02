@@ -56,8 +56,9 @@ int main() {
 ```
 
 **⚙️ Output :**
->Enter value of n: 1 <br/>
-One
+
+> Enter value of n: 1 <br/>
+> One
 
 ## Switch case without using break statement
 
@@ -89,9 +90,11 @@ int main() {
     return 0;
 }
 ```
+
 **⚙️ Output :**
->Enter value of n: 1 <br/>
-OneTwoThree
+
+> Enter value of n: 1 <br/>
+> OneTwoThree
 
 **💻Example :**
 
@@ -117,9 +120,14 @@ int main(){
 }
 
 ```
+
 **⚙️ Output :**
->Enter Alphabet : a<br/>
-Vowel<br/>
-Enter Alphabet : b<br/>
-Consonant
+
+> Enter Alphabet : a<br/>
+> Vowel<br/>
+> Enter Alphabet : b<br/>
+> Consonant
+
+```
+
 ```

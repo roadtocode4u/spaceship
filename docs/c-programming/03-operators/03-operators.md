@@ -4,19 +4,19 @@ description: "Operators"
 hide_table_of_contents: true
 ---
 
-## Operators 
+## Operators
 
-**Operators**    
+**Operators**  
 Operators are used to perform operations on variables and values.
 
-**Types of Operators** 
+**Types of Operators**
 
-1)  Arithmetic operators (+,-,*,/,%)  
-2)  Increment Decrement Operators(++,--)  
-3)  Assignment operators (=,+=,-=,*=,/=,%=)  
-4)  Relational Operators (<,<=,>,>=,==,!=)  
-5)  Logical operators (&&,||,!)  
-6)  Bitwise operators (&,<<,>>,^,|,~)
+1.  Arithmetic operators (+,-,\*,/,%)
+2.  Increment Decrement Operators(++,--)
+3.  Assignment operators (=,+=,-=,\*=,/=,%=)
+4.  Relational Operators (<,<=,>,>=,==,!=)
+5.  Logical operators (&&,||,!)
+6.  Bitwise operators (&,<<,>>,^,|,~)
 
 **Arithmetic Operators**
 
@@ -30,20 +30,20 @@ Adds together two values.
 #include <stdio.h>
 
 int main() {
-    
+
     int val1=20;
     int val2=30;
     int sum=val1+val2;
-    
+
     printf("%d",sum);
-    
+
     return 0;
 }
 ```
 
 **Output**
->50
 
+> 50
 
 Substraction (-)
 
@@ -55,21 +55,22 @@ Subtracts one value from another.
 #include <stdio.h>
 
 int main() {
-    
+
     int val1=30;
     int val2=20;
     int sum=val1-val2;
-    
+
     printf("%d",sum);
-    
+
     return 0;
 }
 ```
+
 **Output**
 
->10
+> 10
 
-Multiplication (*)
+Multiplication (\*)
 
 Multiplies two values.
 
@@ -79,19 +80,20 @@ Multiplies two values.
 #include <stdio.h>
 
 int main() {
-    
+
     int val1=20;
     int val2=30;
     int sum=val1*val2;
-    
+
     printf("%d",sum);
-    
+
     return 0;
 }
 ```
 
 **Output**
->600
+
+> 600
 
 Division (/)
 
@@ -99,96 +101,100 @@ Divides one value by another.
 
 **Example**
 
- ```c
- #include <stdio.h>
+```c
+#include <stdio.h>
 
 int main() {
-    
-    int val1=30;
-    int val2=20;
-    int sum=val1/val2;
-    
-    printf("%d",sum);
-    
-    return 0;
+
+   int val1=30;
+   int val2=20;
+   int sum=val1/val2;
+
+   printf("%d",sum);
+
+   return 0;
 }
- ```
+```
 
- **Output**
- > 1
+**Output**
 
- Modulus (%)
+> 1
 
- Returns the division remainder
+Modulus (%)
 
- **Example**
+Returns the division remainder
 
- ```c
- #include <stdio.h>
+**Example**
+
+```c
+#include <stdio.h>
 
 int main() {
-    
-    int result=11 % 4;
-    
-    printf("%d",result);
-    
-    return 0;
+
+   int result=11 % 4;
+
+   printf("%d",result);
+
+   return 0;
 }
- ```
- **Output**
+```
 
- >3
+**Output**
 
- ## Increment, Decrement Operator
+> 3
 
- **Example**
+## Increment, Decrement Operator
 
- ```c
- #include <stdio.h>
+**Example**
+
+```c
+#include <stdio.h>
 
 int main() {
-   
-   int count=5;
-   
+
+  int count=5;
+
+  count=count + 1;
+
+   printf("%d",count);
+
+   return 0;
+}
+```
+
+**Output**
+
+> 6
+
+value Increase
+
+**Example**
+
+```c
+#include <stdio.h>
+
+int main() {
+
+  int count=5;
+  //count => 5
+  printf("\n%d",count);
+
+  count=count + 1;
+  //count => 6
+  printf("\n%d",count);
+
    count=count + 1;
-   
-    printf("%d",count);
-    
-    return 0;
-}
- ```
- **Output**
-
- >6
-
- value Increase
-
- **Example**
-
- ```c
- #include <stdio.h>
-
-int main() {
-   
-   int count=5;
-   //count => 5
+   //count => 7
    printf("\n%d",count);
-   
-   count=count + 1;
-   //count => 6
-   printf("\n%d",count);
-    
-    count=count + 1;
-    //count => 7
-    printf("\n%d",count);
-    return 0;
+   return 0;
 }
- ```
- **Output**
+```
 
->5  
->6  
->7
+**Output**
+
+> 5  
+> 6  
+> 7
 
 value Decrease
 
@@ -199,15 +205,15 @@ value Decrease
 #include <stdio.h>
 
 int main() {
-   
+
    int count=5;
    //count => 5
    printf("\n%d",count);
-   
+
    count=count - 1;
    //count => 4
    printf("\n%d",count);
-    
+
     count=count - 1;
     //count => 3
     printf("\n%d",count);
@@ -217,9 +223,9 @@ int main() {
 
 **Output**
 
->5  
->4  
->3
+> 5  
+> 4  
+> 3
 
 **Increment Operator (++)**
 
@@ -234,15 +240,15 @@ By Default, the value is incremented by 1.
 #include <stdio.h>
 
 int main() {
-   
+
    int count=5;
    //count => 5
    printf("\n%d",count);
-   
+
    count++;
    //count => 6
    printf("\n%d",count);
-    
+
     count++;
     //count => 7
     printf("\n%d",count);
@@ -252,9 +258,9 @@ int main() {
 
 **Output**
 
->5
->6
->7
+> 5
+> 6
+> 7
 
 **Example**
 
@@ -262,7 +268,7 @@ int main() {
 #include <stdio.h>
 
 int main() {
-   
+
    int count=5;
    count =count+2;
     printf("\n%d",count);
@@ -272,7 +278,7 @@ int main() {
 
 **Output**
 
->7
+> 7
 
 Type of Increment Operator
 Pre-Increment (++var)
@@ -283,24 +289,24 @@ Post-Increment (var++)
 #include <stdio.h>
 
 int main() {
-   
+
    int val1 = 0;
-   val1++; //Post Increment 
+   val1++; //Post Increment
    printf("\n%d",val1);
-   
-   
+
+
    int val2 = 0;
-   ++val2; //Pre Increment 
+   ++val2; //Pre Increment
    printf("\n%d",val2);
-   
+
     return 0;
 }
 ```
 
 **Output**
 
->1
->1
+> 1
+> 1
 
 **Example**
 
@@ -308,11 +314,11 @@ int main() {
 #include <stdio.h>
 
 int main() {
-   
+
    int val1 = 0;
-   
+
    int result = val1++;
-   
+
    printf("\n%d",result);
 
    printf("\n%d",val1);
@@ -322,9 +328,8 @@ int main() {
 
 **Output**
 
->0
->1
-
+> 0
+> 1
 
 **Example**
 
@@ -332,13 +337,13 @@ int main() {
 #include <stdio.h>
 
 int main() {
-   
+
    int val1 = 0;
-   
+
    int result = ++val1;
-   
+
    printf("\n%d",result);
-   
+
    printf("\n%d",val1);
     return 0;
 }
@@ -346,8 +351,8 @@ int main() {
 
 **Output**
 
->1
->1
+> 1
+> 1
 
 **Decrement Operator (--)**
 This Operator are used to decrease the value of variable.
@@ -360,15 +365,15 @@ By Default, the value is Decremented by 1.
 #include <stdio.h>
 
 int main() {
-   
+
    int count=5;
    //count => 5
    printf("\n%d",count);
-   
+
    count--;
    //count => 4
    printf("\n%d",count);
-    
+
     count--;
     //count => 3
     printf("\n%d",count);
@@ -378,10 +383,9 @@ int main() {
 
 **Output**
 
->5
->4
->3
-
+> 5
+> 4
+> 3
 
 **Example**
 
@@ -389,7 +393,7 @@ int main() {
 #include <stdio.h>
 
 int main() {
-   
+
    int count=5;
    count--;
    count--;
@@ -401,7 +405,7 @@ int main() {
 
 **Output**
 
->2
+> 2
 
 Type of Decrement Operator
 Pre-Decrement (--var)
@@ -412,13 +416,13 @@ Post-Decrement (var--)
 #include <stdio.h>
 
 int main() {
-   
+
    int val1 = 5;
-   
+
    int result = val1--;
-   
+
    printf("\n%d",result);
-   
+
    printf("\n%d",val1);
     return 0;
 }
@@ -426,8 +430,8 @@ int main() {
 
 **Output**
 
->5
->4
+> 5
+> 4
 
 **Example**
 
@@ -435,13 +439,13 @@ int main() {
 #include <stdio.h>
 
 int main() {
-   
+
    int val1 = 5;
-   
+
    int result = --val1;
-   
+
    printf("\n%d",result);
-   
+
    printf("\n%d",val1);
     return 0;
 }
@@ -449,11 +453,9 @@ int main() {
 
 **Output**
 
->4
-
+> 4
 
 ## Assignment Operators, Comparison Operators and Ternary Operator in C Programming
-
 
 **Assignment operators**
 
@@ -467,19 +469,20 @@ Assignment operators applied to assign the result of an expression to a variable
  #include <stdio.h>
 
 int main() {
-    
+
     int a = 10;
-    
+
     printf("%d",a);
-    
+
     return 0;
 }
 ```
+
 **Output :**
->10
 
+> 10
 
-**Add then assign (+=)**  
+**Add then assign (+=)**
 
 **Example:**
 
@@ -487,22 +490,20 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int a =5;
-    
+
     a += 3; //a = a + 3;
-    
+
     printf("%d",a);
-    
+
     return 0;
 }
 ```
 
-
 **Output :**
 
->8
-
+> 8
 
 **Substract then assign (-=)**
 
@@ -512,22 +513,22 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int a =5;
-    
+
     a -= 3; //a = a - 3;
-    
+
     printf("%d",a);
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->2
+> 2
 
-**Multiplies then assign (*=)**
+**Multiplies then assign (\*=)**
 
 **Example:**
 
@@ -535,19 +536,20 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int a =5;
-    
+
     a *= 3; //a = a * 3;
-    
+
     printf("%d",a);
-    
+
     return 0;
 }
 ```
+
 **Output :**
 
->15
+> 15
 
 **Divides then assign(/=)**
 
@@ -557,20 +559,20 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int a =10;
-    
+
     a /= 2; //a = a / 2;
-    
+
     printf("%d",a);
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->5
+> 5
 
 **Modulus then assign(%=)**
 
@@ -580,20 +582,20 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int a =7;
-    
+
     a %= 2; //a = a % 2;
-    
+
     printf("%d",a);
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->1
+> 1
 
 **Comparison Operators**
 
@@ -608,21 +610,21 @@ Equal to are used to compare to object.
 #include <stdio.h>
 
 int main() {
-    
+
     int a = 5;
     int b = 10;
-    
+
     int ans = (a==b);
-    
+
     printf("%d",ans);
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->0
+> 0
 
 **Example:**
 
@@ -632,21 +634,21 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int a = 10;
     int b = 10;
-    
+
     int ans = (a==b);
-    
+
     printf("%d",ans);
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->1
+> 1
 
 **Greater than (>)**
 
@@ -656,21 +658,21 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int a = 5;
     int b = 10;
-    
+
     int ans = (a>b);
-    
+
     printf("%d",ans);
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->0
+> 0
 
 **Example:**
 
@@ -680,21 +682,21 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int a = 5;
     int b = 2;
-    
+
     int ans = (a>b);
-    
+
     printf("%d",ans);
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->1
+> 1
 
 **Less than (<)**
 
@@ -704,21 +706,21 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int a = 20;
     int b = 10;
-    
+
     int ans = (a<b);
-    
+
     printf("%d",ans);
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->0
+> 0
 
 **Example:**
 
@@ -728,21 +730,21 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int a = 10;
     int b = 20;
-    
+
     int ans = (a,b);
-    
+
     printf("%d",ans);
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->1
+> 1
 
 **Less than or equal to (<=)**
 
@@ -754,21 +756,21 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int a = 100;
     int b = 10;
-    
+
     int ans = (a<=b);
-    
+
     printf("%d",ans);
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->0
+> 0
 
 **Example:**
 
@@ -778,47 +780,47 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int a = 10;
     int b = 10;
-    
+
     int ans = (a<=b);
-    
+
     printf("%d",ans);
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->1
+> 1
 
 **greater than or equal to (>=)**
 
 **Example:**
 
-// a is greater  than or equal to b then true otherwise false.
+// a is greater than or equal to b then true otherwise false.
 
 ```c
 #include <stdio.h>
 
 int main() {
-    
+
     int a = 1;
     int b = 10;
-    
+
     int ans = (a<=b);
-    
+
     printf("%d",ans);
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->0
+> 0
 
 **Example:**
 
@@ -828,21 +830,21 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int a = 100;
     int b = 10;
-    
+
     int ans = (a<=b);
-    
+
     printf("%d",ans);
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->1
+> 1
 
 **not equal to (!=)**
 
@@ -854,21 +856,21 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int a = 10;
     int b = 10;
-    
+
     int ans = (a!=b);
-    
+
     printf("%d",ans);
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->0
+> 0
 
 **Example:**
 
@@ -878,21 +880,21 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int a = 20;
     int b = 10;
-    
+
     int ans = (a!=b);
-    
+
     printf("%d",ans);
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->1
+> 1
 
 **Ternary Operator**
 
@@ -906,21 +908,21 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int a = 100;
     int b = 10;
-    
+
     int ans = (a>b?a:b);
-    
+
     printf("%d",ans);
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->100
+> 100
 
 **Example:**
 
@@ -928,21 +930,20 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int num;
     printf("Enter Number :");
     scanf("%d",&num);
-    
+
     int ans = (num%2==0)?printf("Even"):printf("odd");
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->Even
-
+> Even
 
 ## Logical Operators C Programming
 
@@ -958,13 +959,13 @@ Logical Not (!)
 
 Result True, if both operand condition are true otherwise false.
 
-**Example:** 
+**Example:**
 
 ```c
 #include <stdio.h>
 
 int main() {
-   
+
    int maths = 80;
    int english = 70;
 
@@ -977,8 +978,7 @@ int main() {
 
 **Output :**
 
->1
-
+> 1
 
 **Logical OR (||)**
 
@@ -990,7 +990,7 @@ Result True if both operand condition are true and one of the condition is true 
 #include <stdio.h>
 
 int main() {
-   
+
    int maths = 80;
    int english = 70;
 
@@ -1000,8 +1000,10 @@ int main() {
    return 0;
 }
 ```
+
 **Output**
->1
+
+> 1
 
 **Logical Not (!)**
 
@@ -1009,7 +1011,7 @@ int main() {
 #include <stdio.h>
 
 int main() {
-   
+
    int maths = 80;
    int english = 70;
 
@@ -1022,4 +1024,4 @@ int main() {
 
 **Output**
 
->0
+> 0

@@ -1,35 +1,36 @@
 ---
-title: Table Tag 
+title: Table Tag
 description: "Table Tag"
 hide_table_of_contents: true
 ---
+
 # Table Tag
 
-The ```<table>``` tag is used to create & Represents HTML table.
+The `<table>` tag is used to create & Represents HTML table.
 
 Table tag allow us to arrange data into rows and columns.
 
- ### Table Row
+### Table Row
 
-```<tr>```	Represents a row in a table
+`<tr>` Represents a row in a table
 
 ### Table Cell
 
-```<td>```  Represents a cell in a table
+`<td>` Represents a cell in a table
 
-### Header Cell 
+### Header Cell
 
-```<th>``` Defines a header cell in a table
+`<th>` Defines a header cell in a table
 
 **Syntax :**
 
 ```html
- <table>
-    <tr>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-    </tr>
+<table>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
 </table>
 ```
 
@@ -38,34 +39,34 @@ Table tag allow us to arrange data into rows and columns.
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Table</title>
-</head>
-<body>
+  </head>
+  <body>
     <table border="1">
-       <thead>
-         <tr>
-            <th>Sr. No</th>
-            <th>Name</th> 
-            <th>Roll No</th>
-        </tr>
-        </thead>
-
-        <tbody>
+      <thead>
         <tr>
-            <td>1</td>
-            <td>Vinayk</td>
-            <td>123</td>
+          <th>Sr. No</th>
+          <th>Name</th>
+          <th>Roll No</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Vinayk</td>
+          <td>123</td>
         </tr>
 
         <tr>
-            <td>2</td>
-            <td>Suyash</td>
-            <td>124</td>
+          <td>2</td>
+          <td>Suyash</td>
+          <td>124</td>
         </tr>
-         </tbody>
+      </tbody>
     </table>
-</body>
+  </body>
 </html>
 ```
 
@@ -78,47 +79,48 @@ Table tag allow us to arrange data into rows and columns.
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Table</title>
-</head>
-<body>
+  </head>
+  <body>
     <table border="1">
-       <thead>
-         <tr>
-            <th>Sr. No</th>
-            <th>Fist Name</th>
-            <th>Last Name</th> 
-            <th>Roll No</th>
-            <th>Mobile</th>
-        </tr>
-        </thead>
-
-        <tbody>
+      <thead>
         <tr>
-            <td>1</td>
-            <td>Vinayk</td>
-            <td>Shelake</td>
-            <td>123</td>
-            <td>9898984</td>
+          <th>Sr. No</th>
+          <th>Fist Name</th>
+          <th>Last Name</th>
+          <th>Roll No</th>
+          <th>Mobile</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Vinayk</td>
+          <td>Shelake</td>
+          <td>123</td>
+          <td>9898984</td>
         </tr>
 
         <tr>
-            <td>2</td>
-            <td>Suyash</td>
-            <td>Sagalgile</td>
-            <td>124</td>
-            <td>83742873</td>
+          <td>2</td>
+          <td>Suyash</td>
+          <td>Sagalgile</td>
+          <td>124</td>
+          <td>83742873</td>
         </tr>
-         </tbody>
+      </tbody>
     </table>
-</body>
+  </body>
 </html>
 ```
+
 **Output :**
 
 <img src="/icp/11/output-2.png" alt="output-2" width="600px"/>
 
-## Colspan 
+## Colspan
 
 Colspan attribute we use for represents the number of columns in cell span.
 
@@ -127,46 +129,47 @@ Colspan attribute we use for represents the number of columns in cell span.
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Table</title>
-</head>
-<body>
+  </head>
+  <body>
     <table border="1">
-       <thead>
-         <tr>
-            <th>Sr. No</th>
-            <th colspan="2">Fist Name</th> 
-            <th>Roll No</th>
-            <th>Mobile</th>
-        </tr>
-        </thead>
-
-        <tbody>
+      <thead>
         <tr>
-            <td>1</td>
-            <td>Vinayk</td>
-            <td>Shelake</td>
-            <td>123</td>
-            <td>9898984</td>
+          <th>Sr. No</th>
+          <th colspan="2">Fist Name</th>
+          <th>Roll No</th>
+          <th>Mobile</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Vinayk</td>
+          <td>Shelake</td>
+          <td>123</td>
+          <td>9898984</td>
         </tr>
 
         <tr>
-            <td>2</td>
-            <td>Suyash</td>
-            <td>Sagalgile</td>
-            <td>124</td>
-            <td>83742873</td>
+          <td>2</td>
+          <td>Suyash</td>
+          <td>Sagalgile</td>
+          <td>124</td>
+          <td>83742873</td>
         </tr>
-         </tbody>
+      </tbody>
     </table>
-</body>
+  </body>
 </html>
 ```
+
 **Output :**
 
 <img src="/icp/11/output-3.png" alt="output-3" width="600px"/>
 
-### Rowspan 
+### Rowspan
 
 Rowspan attribute we use for represents the number of rows in cell span.
 
@@ -175,51 +178,52 @@ Rowspan attribute we use for represents the number of rows in cell span.
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Table</title>
-</head>
-<body>
+  </head>
+  <body>
     <table border="1">
-       <thead>
-         <tr>
-            <th>Sr. No</th>
-            <th colspan="2">Fist Name</th> 
-            <th>Roll No</th>
-            <th>Mobile</th>
-            <th>Passing Year</th>
-        </tr>
-        </thead>
-
-        <tbody>
+      <thead>
         <tr>
-            <td>1</td>
-            <td>Vinayk</td>
-            <td>Shelake</td>
-            <td>123</td>
-            <td>9898984</td>
-            <td rowspan="3">2023</td>
+          <th>Sr. No</th>
+          <th colspan="2">Fist Name</th>
+          <th>Roll No</th>
+          <th>Mobile</th>
+          <th>Passing Year</th>
         </tr>
+      </thead>
 
+      <tbody>
         <tr>
-            <td>2</td>
-            <td>Suyash</td>
-            <td>Sagalgile</td>
-            <td>124</td>
-            <td>83742873</td>
+          <td>1</td>
+          <td>Vinayk</td>
+          <td>Shelake</td>
+          <td>123</td>
+          <td>9898984</td>
+          <td rowspan="3">2023</td>
         </tr>
 
         <tr>
-            <td>3</td>
-            <td>Sauabh</td>
-            <td>Jaykar</td>
-            <td>125</td>
-            <td>88474873</td>
+          <td>2</td>
+          <td>Suyash</td>
+          <td>Sagalgile</td>
+          <td>124</td>
+          <td>83742873</td>
         </tr>
-         </tbody>
+
+        <tr>
+          <td>3</td>
+          <td>Sauabh</td>
+          <td>Jaykar</td>
+          <td>125</td>
+          <td>88474873</td>
+        </tr>
+      </tbody>
     </table>
-</body>
+  </body>
 </html>
 ```
+
 **Output :**
 
 <img src="/icp/11/output-4.png" alt="output-4" width="600px"/>

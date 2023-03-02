@@ -3,13 +3,14 @@ title: Netlify Hosting
 description: Netlify Hosting
 hide_table_of_contents: true
 ---
+
 ## 🤔 How to host or publish Website on Netlify ?
 
-### 📝 Steps to Create Account in Netlify 
+### 📝 Steps to Create Account in Netlify
 
-1. Open Netlify Website 👉 [Click Here to Open  Netlify Website](https://www.netlify.com/)
+1. Open Netlify Website 👉 [Click Here to Open Netlify Website](https://www.netlify.com/)
 
-2. Click on Sign up 
+2. Click on Sign up
 
 3. Click on sign up with GitHub
 
@@ -25,7 +26,7 @@ hide_table_of_contents: true
 
 <img src="/icp/24/img-3.png" alt="img-3" width="600px"/>
 
-7. Import from Git 
+7. Import from Git
 
 <img src="/icp/24/img-4.png" alt="img-4" width="600px"/>
 
@@ -53,7 +54,7 @@ hide_table_of_contents: true
 
 <img src="/icp/24/img-10.png" alt="img-10" width="600px"/>
 
-14. Step of deploying site 
+14. Step of deploying site
 
 <img src="/icp/24/img-11.png" alt="img-11" width="600px"/>
 

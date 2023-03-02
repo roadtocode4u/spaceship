@@ -17,15 +17,13 @@ hide_table_of_contents: true
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Hello JS 💛</title>
-   <script>
-    confirm("Do you want to cancel this order?")
-   </script>
-</head>
-<body>
-    
-</body>
+  <head>
+    <title>Hello JS 💛</title>
+    <script>
+      confirm("Do you want to cancel this order?");
+    </script>
+  </head>
+  <body></body>
 </html>
 ```
 
@@ -38,16 +36,14 @@ hide_table_of_contents: true
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Hello JS 💛</title>
-   <script>
-   const response = confirm("Do you want to cancel this order?")
-   document.write(response)
-   </script>
-</head>
-<body>
-    
-</body>
+  <head>
+    <title>Hello JS 💛</title>
+    <script>
+      const response = confirm("Do you want to cancel this order?");
+      document.write(response);
+    </script>
+  </head>
+  <body></body>
 </html>
 ```
 
@@ -59,22 +55,21 @@ hide_table_of_contents: true
 
 ## prompt()
 
-`prompt()` are used to take input from user. in prompt we pass one message that message show in prompt popup. 
+`prompt()` are used to take input from user. in prompt we pass one message that message show in prompt popup.
 
 **Code**
 
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Hello JS 💛</title>
-   <script>
-   const age = prompt("Enter Your Age: ");
-   document.write(age)
-   </script>
-</head>
-<body>
-</body>
+  <head>
+    <title>Hello JS 💛</title>
+    <script>
+      const age = prompt("Enter Your Age: ");
+      document.write(age);
+    </script>
+  </head>
+  <body></body>
 </html>
 ```
 
@@ -89,15 +84,14 @@ hide_table_of_contents: true
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Hello JS 💛</title>
-   <script>
-   const age = prompt("Enter Your Age: ");
-   document.write("You are "+age+" years old.");
-   </script>
-</head>
-<body>
-</body>
+  <head>
+    <title>Hello JS 💛</title>
+    <script>
+      const age = prompt("Enter Your Age: ");
+      document.write("You are " + age + " years old.");
+    </script>
+  </head>
+  <body></body>
 </html>
 ```
 
@@ -111,21 +105,20 @@ In the above program we can create a `age` variable. In that variable we store p
 
 **Syntax :**
 
-```prompt(text, defaultText)```
+`prompt(text, defaultText)`
 
 **Code**
 
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Hello JS 💛</title>
-   <script>
-   const motherToungue = prompt("Enter your mother toungue", "marathi")
-   </script>
-</head>
-<body>
-</body>
+  <head>
+    <title>Hello JS 💛</title>
+    <script>
+      const motherToungue = prompt("Enter your mother toungue", "marathi");
+    </script>
+  </head>
+  <body></body>
 </html>
 ```
 
@@ -134,32 +127,30 @@ In the above program we can create a `age` variable. In that variable we store p
 <img src="/icp/27/output-6.png" alt="output-6" width="600px"/>
 
 In the above program in prompt we pass to argument first is message or text and second is default value so in the output we it will show the default
-value. 
+value.
 
 **Code**
 
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Hello JS 💛</title>
-   <script>
-   const name = prompt("Enter Your Name : ")
-   const email = prompt("Enter Your email : ")
-   const mobile = prompt("Enter Your mobile : ")
+  <head>
+    <title>Hello JS 💛</title>
+    <script>
+      const name = prompt("Enter Your Name : ");
+      const email = prompt("Enter Your email : ");
+      const mobile = prompt("Enter Your mobile : ");
 
-   document.write("Name: "+name+"<br/>");
-   document.write("Email: "+email+"<br/>");
-   document.write("Mobile: "+mobile+"<br/>");
-   </script>
-</head>
-<body>
-</body>
+      document.write("Name: " + name + "<br/>");
+      document.write("Email: " + email + "<br/>");
+      document.write("Mobile: " + mobile + "<br/>");
+    </script>
+  </head>
+  <body></body>
 </html>
 ```
 
 **Output**
-
 
 <img src="/icp/27/output-7.png" alt="output-7" width="600px"/>
 

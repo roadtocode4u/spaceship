@@ -3,11 +3,12 @@ title: Introduction to HTML
 description: "Introduction to HTML"
 hide_table_of_contents: true
 ---
+
 # Introduction to HTML
 
 ### What is HTML
 
->**HTML** is the language are used to create website structure.
+> **HTML** is the language are used to create website structure.
 
 HTML stands for **Hyper Text Markup Language**. HTML is the standard markup language and is used to create Web pages. It was created by `Tim Berners Lee` and released in 1993.
 
@@ -30,10 +31,10 @@ Editor is a simple software where we can create and edit files. We will be using
 
 ### Steps to download VS Code
 
-  1. Download the latest version of VS Code from the official website: https://code.visualstudio.com/download
-  2. Double-click the downloaded file to start the installation process.
-  3. Follow the prompts to complete the installation. This may include accepting the license agreement and choosing the location to install VS Code.
-  4. Once the installation is complete, you can launch VS Code by clicking on its icon or by searching for it in your operating system's Start menu.
+1. Download the latest version of VS Code from the official website: https://code.visualstudio.com/download
+2. Double-click the downloaded file to start the installation process.
+3. Follow the prompts to complete the installation. This may include accepting the license agreement and choosing the location to install VS Code.
+4. Once the installation is complete, you can launch VS Code by clicking on its icon or by searching for it in your operating system's Start menu.
 
 ### Tag in HTML
 
@@ -48,16 +49,12 @@ Tags are used to provide meaning/effect to content.Also it provides special info
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            My Frist Webpage
-        </title>
-    </head>
-    <body>
-        Hello Students 👋
-        Good Evening,
-        Welcome to ICP 4.0 💫❤️
-    </body>
+  <head>
+    <title>My Frist Webpage</title>
+  </head>
+  <body>
+    Hello Students 👋 Good Evening, Welcome to ICP 4.0 💫❤️
+  </body>
 </html>
 ```
 

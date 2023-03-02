@@ -103,8 +103,10 @@ colorSets2 = {"green","pink","white","orange"}
 allColors = colorSets1.union(colorSets2)
 print(allColors)
 ```
+
 **Output**
->{'orange', 'pink', 'tomato', 'black', 'white', 'sky', 'yellow', 'green'}
+
+> {'orange', 'pink', 'tomato', 'black', 'white', 'sky', 'yellow', 'green'}
 
 ## Intersection of Sets
 
@@ -116,9 +118,10 @@ colorSets2 = {"green","pink","white","orange","sky"}
 colors = colorSets1.intersection(colorSets2)
 print(colors)
 ```
-**Output**
->{'pink', 'sky'}
 
+**Output**
+
+> {'pink', 'sky'}
 
 ## Symmetric Differnce
 
@@ -128,7 +131,9 @@ colorSets2 = {"green","pink","white","orange","sky"}
 allcolors = colorSets1.symmetric_difference(colorSets2)
 print(allcolors)
 ```
+
 **Output**
->{'white', 'orange', 'tomato', 'yellow', 'green', 'black'}
+
+> {'white', 'orange', 'tomato', 'yellow', 'green', 'black'}
 
 The symmetric_difference() method in Python for two elements StudentsList1 and StudentsList2 is used to return the set of elements contained in both StudentsList1 and StudentsList2 but not common in both of them.

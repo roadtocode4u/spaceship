@@ -15,23 +15,24 @@ It was created by Guido van Rossum, and released in 1991
 
 `print` function accept string (`string` means a plan text or group of character) and gives output on standard output device and in this case our screen is the standard output device.
 
-###  Here is our first program
+### Here is our first program
 
 ```python title="hello world.py" showLineNumbers="true
  print("Hello World !!")
 ```
 
 **Output**
+
 > Hello World !!
 
-*In the above example, we can write python program to print "Hello World". You can pass any text and print functions will print it on the screen.*
+_In the above example, we can write python program to print "Hello World". You can pass any text and print functions will print it on the screen._
 
 ```python title="sample.py" showLineNumbers="true
 print("Hii \n Good Evening \n Welcome To Python Programming!!")
 ```
+
 **Output**
+
 > Hii<br/>
->Good Evening<br/>
->Welcome To Python Programming!!<br/>
-
-
+> Good Evening<br/>
+> Welcome To Python Programming!!<br/>

@@ -1,11 +1,12 @@
 ---
-title: Introduction To CSS  
+title: Introduction To CSS
 description: "Introduction To CSS "
 hide_table_of_contents: true
 ---
-# Introduction To CSS 
 
-## ```CSS``` means Cascading Style Sheets
+# Introduction To CSS
+
+## `CSS` means Cascading Style Sheets
 
 CSS are Used to Design Your Webpage.
 CSS are used to describes how HTML elements are to be displayed on Desktop, laptop, Tablet,screen or in other media.
@@ -13,44 +14,43 @@ CSS are used to describes how HTML elements are to be displayed on Desktop, lapt
 You can Add CSS in Html elements then use this style tag. 👇
 
 ```html
- <style>
-
- </style>
+<style></style>
 ```
 
 **Code :**
 
 ```html
 <!DOCTYPE html>
-<html >
-<head>
-    <title> CSS  </title>
+<html>
+  <head>
+    <title>CSS</title>
     <style>
-        h2{
-            color : tomato;
-        }
+      h2 {
+        color: tomato;
+      }
     </style>
-</head>
-<body> 
-    <h2> WOW. CSS is beautiful </h2>
-</body>
+  </head>
+  <body>
+    <h2>WOW. CSS is beautiful</h2>
+  </body>
 </html>
 ```
+
 **Explanation :**
 
 ```css
-      h1{
-         color : tomato;
-      }
+h1 {
+  color: tomato;
+}
 ```
 
-```h1```  = Selector <br/>
-```{``` = Start <br/>
-```color``` = Property <br/>
-```:``` =  Seperator <br/>
-```blue``` = Declaration <br/>
-```;``` = End of value <br/>
-```}``` = End <br/>
+`h1` = Selector <br/>
+`{` = Start <br/>
+`color` = Property <br/>
+`:` = Seperator <br/>
+`blue` = Declaration <br/>
+`;` = End of value <br/>
+`}` = End <br/>
 
 **Output :**
 
@@ -59,37 +59,42 @@ You can Add CSS in Html elements then use this style tag. 👇
 ### Background-color & font-size
 
 ```css
- background-color: tomato;
- font-size: 50px;
+background-color: tomato;
+font-size: 50px;
 ```
 
 **Code :**
 
 ```html
 <!DOCTYPE html>
-<html >
-<head>
-    <title> CSS  </title>
+<html>
+  <head>
+    <title>CSS</title>
     <style>
-        h2{
-            color : blue;
-            background-color: tomato;
-            font-size: 50px;
-        }
+      h2 {
+        color: blue;
+        background-color: tomato;
+        font-size: 50px;
+      }
 
-        p{
-            background-color: yellow;
-        }
+      p {
+        background-color: yellow;
+      }
     </style>
-</head>
-<body> 
-    <h2> WOW. CSS is beautiful </h2>
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non at dignissimos commodi sequi alias dolores. Dolorem recusandae alias blanditiis eaque eos maxime voluptatibus qui repellendus, ratione ut, repellat, maiores natus.</p>
-</body>
+  </head>
+  <body>
+    <h2>WOW. CSS is beautiful</h2>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non at
+      dignissimos commodi sequi alias dolores. Dolorem recusandae alias
+      blanditiis eaque eos maxime voluptatibus qui repellendus, ratione ut,
+      repellat, maiores natus.
+    </p>
+  </body>
 </html>
 ```
+
 **Output :**
 
 <img src="/icp/12/output-2.png" alt="output-2" width="600px"/>
-

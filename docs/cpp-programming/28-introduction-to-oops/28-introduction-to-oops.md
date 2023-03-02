@@ -1,6 +1,6 @@
 ## Introduction to OOPs
 
-### OOPs : 
+### OOPs :
 
 OOP stands for Object-Oriented Programming. Its aims to implement real-life entities like inheritance, data-hiding, polymorphism, etc in programming.
 
@@ -8,12 +8,12 @@ Software Development standards
 
 ### Pillars of OOPs
 
-* Encapsulation 
-* Abstraction  
-* Polymorphism
-* Inheritance.
+- Encapsulation
+- Abstraction
+- Polymorphism
+- Inheritance.
 
-**Encapsulation :** 
+**Encapsulation :**
 
 Putting related data & function at one place.
 
@@ -21,7 +21,7 @@ Putting related data & function at one place.
 
 <br />
 
-**Abstraction :** 
+**Abstraction :**
 
 Abstraction displays only necessary information and hiding details information about how it is implemented.
 
@@ -35,19 +35,20 @@ Poly means many & morphism means forms
 
 <br />
 
-**Inheritance :** 
+**Inheritance :**
 
-Inheritance is a mechanism of reusing and extending existing classes without modifying them. 
+Inheritance is a mechanism of reusing and extending existing classes without modifying them.
 
 ```cpp
-    
+
         criteria
-         
+
      -----[RBI]-----
      |      |      |
    [SBI]  [BOI]  [HDFC]
 
 ```
+
 ```cpp
 
     ------[Google Login]------

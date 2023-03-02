@@ -1,5 +1,5 @@
 ---
-title: Tuple
-description: "Tuple"
+title: Arrays
+description: "Arrays"
 hide_table_of_contents: true
 ---

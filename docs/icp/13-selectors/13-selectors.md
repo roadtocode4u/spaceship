@@ -1,9 +1,10 @@
 ---
-title: Selectors in CSS  
+title: Selectors in CSS
 description: "Selectors in CSS"
 hide_table_of_contents: true
 ---
-# Selectors in CSS 
+
+# Selectors in CSS
 
 A CSS selector selects the HTML element you want to style.
 
@@ -14,121 +15,120 @@ Three Types of selectors
 3. ID
 
 ### Tagname
- Tagname selector select attribute by tag for example ```<h1>```,```<h2>```,```<p>```...
-    
-  ```html
-     <h1> Hii </h1>
 
-     CSS of h1 tag 👉
-     
-     <style>
-     h1{
-         color : red
-     }
-     </style>
- ```
+Tagname selector select attribute by tag for example `<h1>`,`<h2>`,`<p>`...
+
+```html
+<h1>Hii</h1>
+
+CSS of h1 tag 👉
+
+<style>
+  h1 {
+    color: red;
+  }
+</style>
+```
 
 ### Classname
 
-The ```.class``` selector selects elements with a specific class attribute.
-    
-  ```html
-    <p class="highlight"> Hii </p>
-    <h1 class="highlight"> Hii  </p>
+The `.class` selector selects elements with a specific class attribute.
 
-     CSS of class 👉
+```html
+  <p class="highlight"> Hii </p>
+  <h1 class="highlight"> Hii  </p>
 
-     <style>
-        .highlight{
-            background-color : yellow
-        }
-    </style>
-  ```
+   CSS of class 👉
+
+   <style>
+      .highlight{
+          background-color : yellow
+      }
+  </style>
+```
 
 ### ID
 
-   Selects the element with id <br/>
+Selects the element with id <br/>
 
-  Example:  ```id="firstname"```
+Example: `id="firstname"`
 
 ```html
-     <h1 id="myheading"> Hii </h1>
+<h1 id="myheading">Hii</h1>
 
-     CSS of myheading id 👉
-     
-     <style>
-     #myheading{
-         color : red
-     }
-     </style>
+CSS of myheading id 👉
 
+<style>
+  #myheading {
+    color: red;
+  }
+</style>
 ```
 
 **Code :**
 
 ```html
 <!DOCTYPE html>
-<html >
-<head>
-    <title> CSS  </title>
+<html>
+  <head>
+    <title>CSS</title>
     <style>
-      p{
+      p {
         color: white;
         font-size: 30px;
         background-color: black;
       }
-      
-      #description{
+
+      #description {
         color: red;
         font-size: 30px;
         background-color: black;
       }
     </style>
-</head>
-<body> 
-    <p id="description">We are learning CSS. </p>
+  </head>
+  <body>
+    <p id="description">We are learning CSS.</p>
     <p>We are very excited..</p>
-</body>
+  </body>
 </html>
 ```
+
 **Output :**
 
 <img src="/icp/13/output-3.png" alt="output-3" width="600px"/>
 
 ### Priority in CSS Selectors
-When we can provide same effect (like id, class, tag) on particular element then the selector priority as given below. 
-In the CSS selector priority of a selector is  High priority for ID, middle priority for class, & low priority for tag.
+
+When we can provide same effect (like id, class, tag) on particular element then the selector priority as given below.
+In the CSS selector priority of a selector is High priority for ID, middle priority for class, & low priority for tag.
 
 **Code :**
 
 ```html
 <!DOCTYPE html>
-<html >
-<head>
-    <title> CSS  </title>
+<html>
+  <head>
+    <title>CSS</title>
     <style>
-     h1{
-      color: tomato;
-     }
+      h1 {
+        color: tomato;
+      }
 
-     #xyz{
-      color: green;
-     }
+      #xyz {
+        color: green;
+      }
 
-     .abc{
-      color: blue;
-     }
-
+      .abc {
+        color: blue;
+      }
     </style>
-</head>
-<body> 
-   <h1 class="abc" id="xyz">
-    This is heading
-   </h1>
-</body>
+  </head>
+  <body>
+    <h1 class="abc" id="xyz">This is heading</h1>
+  </body>
 </html>
 ```
+
 **Output :**
 
 <img src="/icp/13/output-4.png" alt="output-4" width="600px"/>
-

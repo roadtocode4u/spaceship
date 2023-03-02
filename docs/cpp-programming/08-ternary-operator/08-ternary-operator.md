@@ -1,16 +1,18 @@
-# Ternary operator 
+# Ternary operator
 
 ```cpp
 example :
 condition ? true part : false part
 ```
+
 **💻 Example 1 :**
+
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-   
+
    int num = 10;
 
    num==10 ? cout<<"Equal" : cout<<"Not Equal";
@@ -18,16 +20,19 @@ int main() {
    return 0;
 }
 ```
+
 **⚙️ Output :**
->Equal
+
+> Equal
 
 **💻 Example 2 :**
+
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-   
+
    int num = 15;
 
    num==10 ? cout<<"Equal" : cout<<"Not Equal";
@@ -35,16 +40,19 @@ int main() {
    return 0;
 }
 ```
+
 **⚙️ Output :**
+
 > Not Equal
 
 **💻 Example 3 :**
+
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-   
+
    int a = 5;
    int b = 8;
 
@@ -55,16 +63,19 @@ int main() {
    return 0;
 }
 ```
+
 **⚙️ Output :**
->8
+
+> 8
 
 **💻 Example 4 :**
+
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-   
+
    int a = 50;
    int b = 8;
 
@@ -75,5 +86,7 @@ int main() {
    return 0;
 }
 ```
+
 **⚙️ Output :**
->50
+
+> 50

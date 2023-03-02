@@ -1,5 +1,5 @@
 ---
-title: Loops in C Programming
+title: Loops
 description: "Loops"
 hide_table_of_contents: true
 ---

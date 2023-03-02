@@ -11,8 +11,8 @@ if statement to specify a block of code to be executed if a condition is true.
 **Syntax :**
 
 ```c
-if (condition) 
-{ 
+if (condition)
+{
   // block of code to be executed if the condition is true
 }
 ```
@@ -23,21 +23,21 @@ if (condition)
 #include <stdio.h>
 
 int main() {
-    
+
     int a=5;
-    
+
     if(a==5)
     {
         printf("Both are Equal");
     }
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->Both are Equal
+> Both are Equal
 
 **Example:**
 
@@ -45,24 +45,24 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int a=5;
-    
+
     if(a==5)
     {
         printf("Both are Equal");
     }
-    
+
     printf("\n This is a normal Line");
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->Both are Equal  
->This is a normal Line
+> Both are Equal  
+> This is a normal Line
 
 **Example:**
 
@@ -70,20 +70,21 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    
+
     int a=10;
-    
+
     if(a%2==0)
     {
         printf("Given number is Even ");
     }
-    
+
     return 0;
 }
 ```
+
 **Output :**
 
->Given number is Even
+> Given number is Even
 
 **If-else Conditional Statement**
 
@@ -111,8 +112,8 @@ block of code to be executed the condition is false;
 
 **Output :**
 
->Enter Number :5  
->Given number is odd
+> Enter Number :5  
+> Given number is odd
 
 **Example:** WAP to find out your age is eligible for voting or not
 
@@ -120,17 +121,17 @@ block of code to be executed the condition is false;
 #include <stdio.h>
 
 int main() {
-    
+
     int age;
-    
+
     printf("Enter your age :");
     scanf("%d",&age);
-    
+
     if(age>=18)
     {
         printf("Your are eligible for voting ");
     }
-    
+
     else
     {
         printf("Your are not eligible for voting");
@@ -167,3 +168,6 @@ if else ladder check condition in sequentional manner. if first condition gets t
 
    }
 ```
+
+> Enter your age :18  
+> Your are eligible for voting

@@ -86,18 +86,17 @@ different pages and also add an anchor tag to return back to home page
 
 1. Create a Collage ID card or Bank Card (add fake details) using position & other CSS properties.
 
-
 ### Homework-15
 
 Implement all justify-content properties on a flexbox div. place images of bird or animal as a flex-item.
 
 ### Homework-16
 
-Create a Calculator design using flexbox & other CSS property. 
+Create a Calculator design using flexbox & other CSS property.
 
 ## Homework-17
 
-Create a GitHub account & send a profile URL to your Teaching Assistant. 
+Create a GitHub account & send a profile URL to your Teaching Assistant.
 
 ## Homework-18
 
@@ -109,5 +108,16 @@ Host Calculator Project on Netlify & Share url.
 
 ## Homework-20
 
-Create a fork of icp-4-first-fork repo from rtc account and make commits by reading comments in index.html. 
+Create a fork of icp-4-first-fork repo from rtc account and make commits by reading comments in index.html.
 
+## Homework-21
+
+Create a webpage and use following JS concepts.
+
+1.  alert
+2.  document.write
+3.  console.log
+
+## Homework No-22
+
+WAP to calculate sum of marks of 5 subjects. Use prompt to take input from user.

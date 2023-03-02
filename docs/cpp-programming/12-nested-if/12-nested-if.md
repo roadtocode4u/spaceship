@@ -1,26 +1,13 @@
 # Nested-if
 
-syntax : 
+syntax :
 
 ```html
-if (condition)
-{
-    if
-    {
-        //-----
-    }
-    else
-    {
-        //----
-    }
-}
-else
-{
-    //----
-}
+if (condition) { if { //----- } else { //---- } } else { //---- }
 ```
 
 **💻 Example 1 :**
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -35,15 +22,18 @@ int main() {
     else
     {
         cout<<"Fail";
-    }  
+    }
 
     return 0;
 }
 ```
+
 **⚙️ Output :**
->Fail
+
+> Fail
 
 **💻 Example 2 :**
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -62,7 +52,7 @@ int main() {
          else
         {
         cout<<"Failed in Maths";
-        }  
+        }
     }
     else
     {
@@ -71,13 +61,16 @@ int main() {
     return 0;
 }
 ```
+
 **⚙️ Output :**
->Passed in Maths<br/>
-Failed in Marathi
 
- ## Homeworks Examples :
+> Passed in Maths<br/>
+> Failed in Marathi
 
-**💻 Example 1️⃣ :  WAP to calculate largrst number among 3 using if-else-ladder ?**
+## Homeworks Examples :
+
+**💻 Example 1️⃣ : WAP to calculate largrst number among 3 using if-else-ladder ?**
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -91,7 +84,7 @@ int main() {
     if(a>b && a>c)
     {
         cout<<"A is largest";
-    } 
+    }
     else if(b>a && b>c)
     {
         cout<<"B is largest";
@@ -99,25 +92,28 @@ int main() {
     else if(c>a && c>b)
     {
         cout<<"C is largest";
-    } 
+    }
     else
     {
         cout<<"All are equal";
-    }  
+    }
      return 0;
 }
 ```
+
 **⚙️ Output :**
->Enter 3 Numbers 5 80 7<br/>
-B is largest
+
+> Enter 3 Numbers 5 80 7<br/>
+> B is largest
 
 **💻 Example 2️⃣: WAP to calculate largest number among 3 using nested-if ?**
+
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    
+
     int a,b,c;
     cout<<"Enter 3 Numbers:";
     cin>>a>>b>>c;
@@ -147,6 +143,8 @@ int main() {
      return 0;
 }
 ```
+
 **⚙️ Output :**
->Enter 3 Numbers 2 70 6<br/>
-B is largest
+
+> Enter 3 Numbers 2 70 6<br/>
+> B is largest

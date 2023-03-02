@@ -1,5 +1,5 @@
 ---
-title: List
-description: "List"
+title: Loops
+description: "Loops"
 hide_table_of_contents: true
 ---

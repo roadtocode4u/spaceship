@@ -1,6 +1,7 @@
 # Reference
 
 **Example :**
+
 ```cpp
     #include <iostream>
     using namespace std;
@@ -12,18 +13,20 @@
 
       cout<<"a: "<<a<<endl;
 
-      cout<<"b: "<<b<<endl; 
+      cout<<"b: "<<b<<endl;
 
-    
+
         return 0;
     }
 ```
-**⚙️ Output :**
->a: 10<br/>
-b: 10
 
+**⚙️ Output :**
+
+> a: 10<br/>
+> b: 10
 
 **💻Example 2:**
+
 ```cpp
     #include <iostream>
     using namespace std;
@@ -37,16 +40,19 @@ b: 10
 
       cout<<"a: "<<a<<endl;
 
-      cout<<"b: "<<b<<endl; 
+      cout<<"b: "<<b<<endl;
 
        return 0;
     }
 ```
+
 **⚙️ Output :**
->a: 40<br/>
-b: 40
+
+> a: 40<br/>
+> b: 40
 
 **💻Example 3:**
+
 ```cpp
     #include <iostream>
     using namespace std;
@@ -64,16 +70,18 @@ b: 40
 
       cout<<"After changes: ";
       cout<<<<a<<endl;
-      cout<<"b: "<<b<<endl; 
+      cout<<"b: "<<b<<endl;
 
         return 0;
     }
 ```
+
 **⚙️ Output :**
->Before changes: 10<br/>
-10
-Before changes: 50<br/>
-50
+
+> Before changes: 10<br/>
+> 10
+> Before changes: 50<br/>
+> 50
 
 ```cpp
 int a;
@@ -83,7 +91,9 @@ fun(int b)
     b = 100;
 }
 ```
+
 **💻Example 4:**
+
 ```cpp
     #include <iostream>
     using namespace std;
@@ -104,7 +114,8 @@ fun(int b)
         return 0;
     }
 ```
-**⚙️ Output :**
->Enter n: 5<br/>
-Square is: 25
 
+**⚙️ Output :**
+
+> Enter n: 5<br/>
+> Square is: 25

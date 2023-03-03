@@ -18,21 +18,21 @@ Single-line comment are use to comment in single line. Single-line comments star
 #include <stdio.h>
 
 int main() {
-    
+
     // This is a comment
       printf("Hello!");
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->Hello!
+> Hello!
 
 **Multi-line Comments**
 
-Multi-line comment are used comment in multiple Line. Multi-line comments start with /* and ends with */.
+Multi-line comment are used comment in multiple Line. Multi-line comments start with /_ and ends with _/.
 
 **Example :**
 
@@ -40,16 +40,16 @@ Multi-line comment are used comment in multiple Line. Multi-line comments start 
 #include <stdio.h>
 
 int main() {
-    
+
     /* This is a Multi-line comment
     and multi-line comment are use to comment on multiple line.*/
 
       printf("Hello!");
-    
+
     return 0;
 }
 ```
 
 **Output :**
 
->Hello!
+> Hello!

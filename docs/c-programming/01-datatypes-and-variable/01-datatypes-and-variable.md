@@ -4,14 +4,13 @@ description: "Datatype and Variable"
 hide_table_of_contents: true
 ---
 
-### String 
+### String
 
->Strings is represented as Collection of characters.
+> Strings is represented as Collection of characters.
 
-### Variable 
+### Variable
 
->Variable is used to store data.
-
+> Variable is used to store data.
 
 ### Datatype
 
@@ -23,26 +22,25 @@ Example = 1,2,2253,899,44,55...
 
 2. **Character (char)**
 
->Stores a single character,letter.
+> Stores a single character,letter.
 
 💻Example='r','v','s'....
 
 3. **Float (float)**
 
->float means Stores numbers with decimals point.
+> float means Stores numbers with decimals point.
 
 💻Example= 15.7,89.0,46.84 ....
-
 
 ### Format Specifiers
 
 There are different format specifiers for each data type.
 
-```%d = int```
+`%d = int`
 
-```%f = float```
+`%f = float`
 
-```%c = char```
+`%c = char`
 
 **Code**
 
@@ -51,18 +49,18 @@ There are different format specifiers for each data type.
 
 int main()
  {
-  
+
    int age=10;
-   
+
    printf("%d",age);
-    
+
     return 0;
 }
 ```
 
 **Output**
 
->10
+> 10
 
 **Code**
 
@@ -71,19 +69,19 @@ int main()
 
 int main()
 {
-    
+
    int age;
    age=30;
-   
+
    printf("%d",age);
-    
+
     return 0;
 }
 ```
 
 **Output**
 
->30
+> 30
 
 **Code**
 
@@ -92,20 +90,20 @@ int main()
 
 int main()
 {
-    
+
    int age;
    age=30;
    age=50;
-   
+
    printf("%d",age);
-    
+
     return 0;
 }
 ```
 
 **Output**
 
->50
+> 50
 
 **Code**
 
@@ -114,21 +112,21 @@ int main()
 
 int main()
 {
-    
+
    int age;
    age=30;
    printf("%d",age);
-   
+
    age=50;
    printf("%d",age);
-    
+
     return 0;
 }
 ```
 
 **Output**
 
->3050
+> 3050
 
 **Code**
 
@@ -138,17 +136,16 @@ int main()
 int main()
 {
     float weight=80.5;
-    
+
     printf("%f",weight);
-    
+
     return 0;
 }
 ```
 
 **Output**
 
->80.500000
-
+> 80.500000
 
 **Code**
 
@@ -158,22 +155,22 @@ int main()
 int main()
 {
     char alpha='c';
-    
+
     printf("%c",alpha);
-    
+
     return 0;
 }
 ```
 
 **Output**
 
->c
+> c
 
 ## Rules to Declare Variables and Formatting Output
 
 ### Rules of Declare Variables
 
-1. A Variable Name Can contain alphabates (A to Z)(a to z) , digits (0-9),underscore( _ ).
+1. A Variable Name Can contain alphabates (A to Z)(a to z) , digits (0-9),underscore( \_ ).
 
 2. Cannot Start with digit.
 
@@ -182,7 +179,8 @@ int main()
 4. Length of variable name should be less than 31 character.
 
 ### Case Sensitivity
->Text that is sensitive to capitalization of letters. For example, `NAME` ,`name`,`NaMe` are three different.
+
+> Text that is sensitive to capitalization of letters. For example, `NAME` ,`name`,`NaMe` are three different.
 
 **Example : Write a program to sum of 2 variable**
 
@@ -195,18 +193,18 @@ int main() {
     int a=10;
     int b=20;
     int c;
-    
+
     c=a+b;
-    
+
     printf("%d",c);
-    
+
     return 0;
 }
 ```
 
 **Output**
 
->30
+> 30
 
 **Code**
 
@@ -217,19 +215,18 @@ int main() {
     int val1=30;
     int val2=20;
     int sum;
-    
+
     sum=val1 + val2;
-    
+
     printf("%d",sum);
-    
+
     return 0;
 }
 ```
 
 **Output**
 
->50
-
+> 50
 
 **Code**
 
@@ -238,22 +235,21 @@ int main() {
 
 int main() {
     int val1=30, val2=20, sum;
-    
+
     sum=val1 + val2;
-    
+
     printf("%d",sum);
-    
+
     return 0;
 }
 ```
 
 **Output**
 
->50
+> 50
 
 ### Formatting Output
 
-
 **Code**
 
 ```c
@@ -261,19 +257,18 @@ int main() {
 
 int main() {
     int val1=30, val2=20, sum;
-    
+
     sum=val1 + val2;
-    
+
     printf(" sum = %d",sum);
-    
+
     return 0;
 }
 ```
 
 **Output**
 
->sum = 50
-
+> sum = 50
 
 **Code**
 
@@ -282,16 +277,16 @@ int main() {
 
 int main() {
     float num = 20.5;
-    
+
     printf("Number is %f", num);
-    
+
     return 0;
 }
 ```
 
 **Output**
 
->Number is 20.500000
+> Number is 20.500000
 
 **Code**
 
@@ -301,16 +296,16 @@ int main() {
 int main()
 {
     float weight=80.5;
-    
+
     printf("%f",weight);
-    
+
     return 0;
 }
 ```
 
 **Output**
 
->80.500000
+> 80.500000
 
 **Code**
 
@@ -321,16 +316,16 @@ int main() {
     int a = 10;
     int b = 20;
     int c = a + b;
-    
+
     printf("a=%d b=%d",a,b);
-    
+
     return 0;
 }
 ```
 
 **Output**
 
->a=10 b=20
+> a=10 b=20
 
 **Code**
 
@@ -341,13 +336,13 @@ int main() {
     int val1 = 10;
     int val2 = 20;
     int sum = val1 + val2;
-    
+
     printf("sum of %d and %d is %d",val1,val2,sum);
-    
+
     return 0;
 }
 ```
 
 **Output**
 
->sum of 10 and 20 is 30
+> sum of 10 and 20 is 30

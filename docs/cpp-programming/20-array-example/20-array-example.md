@@ -7,18 +7,18 @@
 using namespace std;
 
 int main() {
-    
+
     int arr[5] = {5,4,1,9,7};
-    
+
     int sum = 0;
-    
+
     for(int i=0; i<5; i++)
     {
         sum = sum + arr[i];
     }
-    
+
     cout<<"Sum = "<<sum;
-   
+
     return 0;
 }
 ```
@@ -32,7 +32,7 @@ int main() {
 using namespace std;
 
 int main() {
-    
+
     int arr[8] = {5,4,1,9,7,6,12,3};
 
     for(int i=0; i<8; i++)
@@ -42,14 +42,13 @@ int main() {
             cout<<arr[i]<<" , ";
         }
     }
-    
-   
+
+
     return 0;
 }
 ```
 
 ![output-2](output-2.png)
-
 
 3. Write a program to find largest element from array.
 
@@ -58,23 +57,24 @@ int main() {
 using namespace std;
 
 int main() {
-    
+
     int arr[5] = {5,7,81,2,23};
-    
+
     int largest = 0;
-    
+
     for(int i=1; i<5; i++)
-    
+
     {
         if(arr[i] > largest)
         {
             largest = arr[i];
         }
     }
-    
+
     cout<<"Largest Element is = "<<largest;
-   
+
     return 0;
 }
 ```
+
 ![output-3](output-3.png)

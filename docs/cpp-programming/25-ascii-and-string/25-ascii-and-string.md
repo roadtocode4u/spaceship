@@ -1,13 +1,13 @@
 ## ASCII and String Operations
 
-ASCII (American Standard Code for Information Interchange) 
+ASCII (American Standard Code for Information Interchange)
 
 > ASCII Value of a Character
 
 ```cpp
-A -> 65               
-B -> 66                   
-C -> 67                
+A -> 65
+B -> 66
+C -> 67
    .
    .
    .
@@ -20,7 +20,7 @@ c -> 99
    .
    .
    .
-z -> 122 
+z -> 122
 ```
 
 **Example :**
@@ -31,17 +31,19 @@ using namespace std;
 
 int main() {
     char alpha = 'A';
-    
+
     int val = alpha;
     cout<<"Char: "<<alpha<<endl;
-    cout<<"ASCII: "<<val;   
+    cout<<"ASCII: "<<val;
 
     return 0;
 }
 ```
+
 **Output :**
->Char: A<br  />
-ASCII: 65
+
+> Char: A<br  />
+> ASCII: 65
 
 **Example :**
 
@@ -50,7 +52,7 @@ ASCII: 65
 using namespace std;
 
 int main() {
-    
+
 int ascii = 65;
 
 char alpha = ascii;
@@ -63,16 +65,18 @@ cout<<"Char: "<<alpha;
 ```
 
 **Output :**
->ASCII: 65<br  />
-Char: A
+
+> ASCII: 65<br  />
+> Char: A
 
 **Example :**
+
 ```cpp
   #include <iostream>
 using namespace std;
 
 int main() {
-    
+
 int ascii = 90;
 
 cout<<char(ascii);
@@ -80,25 +84,29 @@ cout<<char(ascii);
     return 0;
 }
 ```
+
 **Output :**
->Z
+
+> Z
 
 **💻Example 4:**
+
 ```cpp
  #include <iostream>
 using namespace std;
 
 int main() {
     char alpha = 'B';
-    
+
     cout<<int(alpha);
-    
+
     return 0;
 }
 ```
-**Output :**
->66
 
+**Output :**
+
+> 66
 
 **How to find out length of a string**
 
@@ -111,49 +119,54 @@ string name = "RTC";
 ```
 
 **Example :**
+
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    
+
    string name = "RTC";
-   
+
    cout<<name.length();
-   
+
     return 0;
 }
 ```
+
 **Output :**
->3
+
+> 3
 
 **💻Example :**
+
 ```cpp
 #include <iostream>
 using namespace std;
 
-int main() 
+int main()
 {
-    
+
    string name = "RTC";
-   
+
    int count = 0;
    while(true)
    {
        cout<<name[count];
        count++;
-       
+
        if(name[count]=='\0'){
            break;
        }
    }
-   
+
     return 0;
 }
 ```
-**Output :**
->RTC
 
+**Output :**
+
+> RTC
 
 **How to convert capital letter into small.**
 
@@ -177,61 +190,65 @@ small-ascii - 32 => cap ascii
 
 ```cpp
 int main() {
-    
+
     string name;
     cout<<"Enter small name: ";
     cin>>name;
-    
+
     int i=0;
-    
+
     while(name[i]!='\0')
     {
         int curr_char = name[i];
         curr_char = curr_char - 32;
         name[i] = curr_char;
-        
+
         i++;
     }
-    
+
     cout<<"Capital Letter is: "<<name;
     return 0;
 }
 ```
+
 **⚙️ Output :**
->Enter small name: hello<br  />
-Capital Letter is: HELLO
+
+> Enter small name: hello<br  />
+> Capital Letter is: HELLO
 
 **Example :**
+
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    
+
     string name;
     cout<<"Enter small name: ";
     cin>>name;
-    
+
     int i=0;
-    
+
     while(name[i]!='\0')
     {
         int curr_char = name[i];
-        
+
         if(curr_char>=97 && curr_char<=122)
         {
         curr_char = curr_char - 32;
         }
         name[i] = curr_char;
-        
+
         i++;
     }
-    
+
     cout<<"Capital Letter is: "<<name;
     return 0;
 }
 ```
-**Output :**
->Enter small name: abcd<br  />
-Capital Letter is: ABCD
 
+**Output :**
+
+> Enter small name: abcd<br  />
+> Capital Letter is: ABCD

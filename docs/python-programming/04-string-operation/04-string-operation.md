@@ -7,9 +7,10 @@ hide_table_of_contents: true
 ## Input for Multiple values And String Operations in Python
 
 ### IMP Point
-  By Default data type of input function is String.
 
-### Spilt Function 
+By Default data type of input function is String.
+
+### Spilt Function
 
 The split() method splits a string into a list.
 
@@ -17,9 +18,11 @@ The split() method splits a string into a list.
 sentence="My Name is vedika".split()
 print(sentence)
 ```
+
 **Output**
->['My', 'Name', 'is', 'vedika']
- 
+
+> ['My', 'Name', 'is', 'vedika']
+
 In the above example we can create one variable and name that variable is `sentence`then we will stored the string of that variable is `My Name is vedika` and we can use split function then the split function are use to divide the small parts of sentence and the split function are create sentence in a list.
 
 ```python
@@ -27,25 +30,27 @@ a,b=input("Enter two values").split()
 print("a= ",a)
 print("b= ",b)
 ```
-**Output**
->Enter two values 2 5<br/>
->2 5<br/>
->a=  2<br/>
->b=  5
- 
-In the above example we can stored two variable a,b and one input box using split function.
 
+**Output**
+
+> Enter two values 2 5<br/>
+> 2 5<br/>
+> a= 2<br/>
+> b= 5
+
+In the above example we can stored two variable a,b and one input box using split function.
 
 ```python
 rate,quantity=input("Enter rate and quantity").split()
 bill=int(rate)*int(quantity)
 print("bill :",bill)
 ```
-**Output**
->Enter rate and quantity 8 8<br/>
->8 8 <br/>
->bill : 64
 
+**Output**
+
+> Enter rate and quantity 8 8<br/>
+> 8 8 <br/>
+> bill : 64
 
 ### Multiline String
 
@@ -76,8 +81,10 @@ stringname[startindex:endindex]
 mystring="Road to Code"
 print(mystring[0:4])
 ```
+
 **Output**
->Road
+
+> Road
 
 In the above example the name of variable is `mystring` in that we stored one string `Road to Code`& in a second line we print mystring using a `slicing`. in a slicing the startindex is 0 and endindex is 4 that's why the output is start from 0 to 4 position. and always remember endindex position is end -1.
 
@@ -85,16 +92,19 @@ In the above example the name of variable is `mystring` in that we stored one st
 mystring="Road to Code"
 print(mystring[1:])
 ```
+
 **Output**
->oad to Code
+
+> oad to Code
 
 ```python
 mystring="Road to Code"
 print(mystring[:8])
 ```
-**Output**
->Road to 
 
+**Output**
+
+> Road to
 
 ### Length Function
 
@@ -104,17 +114,20 @@ len() is a built-in function in python. You can use the len() to get the length 
 studentname="vedika"
 print(len(studentname))
 ```
-**Output**
->6
 
+**Output**
+
+> 6
 
 ```python
 studentname="anand"
 length=len(studentname)
 print(length)
 ```
+
 **Output**
->5
+
+> 5
 
 ### in operator
 
@@ -124,17 +137,19 @@ The 'in' operator is used to check if a value exists in a sequence or not.
 mystring="Road to Code"
 print("Road" in mystring)
 ```
-**Output**
->True
 
+**Output**
+
+> True
 
 ```python
 mystring="Dahi Puri"
 print("Pani" in mystring)
 ```
-**Output**
->False
 
+**Output**
+
+> False
 
 ### Comments in python
 
@@ -142,16 +157,17 @@ Comments in Python are the lines in the code that are ignored by the compiler du
 
 1. Single Line Comment (#)
 
-A single-line comment begins with a hash (#) symbol. The single-line comment is used to comment only one line of the code. 
+A single-line comment begins with a hash (#) symbol. The single-line comment is used to comment only one line of the code.
+
 ```python
-#This is sample program 
+#This is sample program
 print("roadtocode4u")
 ```
 
+2. Multiline Comment (""" """)
 
-2. Multiline Comment ("""   """)
+In Python Triple double quote (""") and single quote (''') are used for Multi-line commenting.Multi-line comment is useful when we need to comment on many lines.
 
-In Python Triple double quote (""") and single quote (''') are used for Multi-line commenting.Multi-line comment is useful when we need to comment on many lines. 
 ```python
 """
 This is a comment
@@ -166,70 +182,87 @@ print("roadtocode4u")
 1.  Upper()
 
 Converts a string into upper case.
+
 ```python
 myString = "roadtocode4u"
 print("Original String :",myString)
 newString = myString.upper()
 print("New String :",newString)
 ```
-**Output**
->Original String : roadtocode4u <br/>
->New String : ROADTOCODE4U
 
+**Output**
+
+> Original String : roadtocode4u <br/>
+> New String : ROADTOCODE4U
 
 2. Lower()
 
 Converts a string into lower case.
+
 ```python
 myString = "ROADTOCODE4U"
 print("Original String :",myString)
 newString = myString.lower()
 print("New String :",newString)
 ```
-**Output**
->Original String : ROADTOCODE4U <br/>
->New String : roadtocode4u
 
+**Output**
+
+> Original String : ROADTOCODE4U <br/>
+> New String : roadtocode4u
 
 3. Strip()
 
-Removes white space from the end of String 
+Removes white space from the end of String
+
 ```python
 str1 = "rtc4u"
 str2 = "rtc4u             "
 print(str1)
 print(str2.strip())
 ```
+
 **Output**
->rtc4u <br/>
->rtc4u
+
+> rtc4u <br/>
+> rtc4u
 
 4. Replace()
 
 Replace in string
+
 ```python
 myString = "roadtocode"
 newString = myString.replace("d","#")
 print(newString)
 ```
+
 **Output**
->roa#toco#e
+
+> roa#toco#e
 
 5. split()
 
 Splits the string at the specified separator, and returns a list.
+
 ```python
 myString = "road to code".split()
 print(myString)
 ```
-**Output**
->['road', 'to', 'code']
 
-### Array 
+**Output**
+
+> ['road', 'to', 'code']
+
+### Array
+
 Collection of similar data type
+
 ```python
 myString="India"
 print(myString[2])
 ```
+
 **Output**
->d
+
+> d

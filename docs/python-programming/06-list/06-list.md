@@ -9,13 +9,15 @@ hide_table_of_contents: true
 Lists are used to store multiple items in a single variable.
 
 **Code**
+
 ```python
 students = ["sahil","Rahul","Ashwini"]
 print(students)
 ```
 
 **Output**
->['sahil', 'Rahul', 'Ashwini']
+
+> ['sahil', 'Rahul', 'Ashwini']
 
 ### Slicing on list
 
@@ -27,7 +29,8 @@ print(students[0:3])
 ```
 
 **Output**
->['sahil', 'Rahul', 'Ashwini']
+
+> ['sahil', 'Rahul', 'Ashwini']
 
 **Code**
 
@@ -37,7 +40,8 @@ print(students[2:4])
 ```
 
 **Output**
->['Ashwini', 'Tanaya']
+
+> ['Ashwini', 'Tanaya']
 
 **Code**
 
@@ -47,7 +51,8 @@ print(students[-2])
 ```
 
 **Output**
->Ashwini
+
+> Ashwini
 
 **Code**
 
@@ -57,7 +62,8 @@ print(students[1])
 ```
 
 **Output**
->Rahul
+
+> Rahul
 
 **Code**
 
@@ -67,8 +73,8 @@ print(students[1:])
 ```
 
 **Output**
->['Rahul', 'Ashwini', 'Tanaya']
 
+> ['Rahul', 'Ashwini', 'Tanaya']
 
 ## Properties Of List
 
@@ -82,8 +88,10 @@ Lists are ordered, it means that the items have a defined order, and that order 
 students = ["sahil","Rahul","Ashwini","Tanaya"]
 print(students)
 ```
+
 **Output**
->['sahil', 'Rahul', 'Ashwini', 'Tanaya']
+
+> ['sahil', 'Rahul', 'Ashwini', 'Tanaya']
 
 #### Allow Duplicates
 
@@ -95,8 +103,10 @@ Lists can have items with the same value
 students = ["sahil","Rahul","Ashwini","Tanaya","Ashwini","Ashwini"]
 print(students)
 ```
+
 **Output**
->['sahil', 'Rahul', 'Ashwini', 'Tanaya', 'Ashwini', 'Ashwini']
+
+> ['sahil', 'Rahul', 'Ashwini', 'Tanaya', 'Ashwini', 'Ashwini']
 
 #### List can contain Different Data Type
 
@@ -106,18 +116,20 @@ print(students)
 randomData = ["abc",10,True,50.50,"Hii"]
 print(randomData)
 ```
-**Output**
->['abc', 10, True, 50.5, 'Hii']
 
-#### Changeable 
+**Output**
+
+> ['abc', 10, True, 50.5, 'Hii']
+
+#### Changeable
 
 The list is changeable, that we can change, add, and remove items in a list after it has been created.
 
-### Update 
+### Update
 
 **Syntax**
 
-```listName[index] = "updated-element"```
+`listName[index] = "updated-element"`
 
 **Code**
 
@@ -127,16 +139,17 @@ print("Befor update: ",courses)
 courses[3] = "java programming"
 print("After update :",courses)
 ```
+
 **Output**
 
->Befor update:  ['c', 'c++', 'python', 'java', 'icp']
->After update : ['c', 'c++', 'python', 'java programming', 'icp']
+> Befor update: ['c', 'c++', 'python', 'java', 'icp']
+> After update : ['c', 'c++', 'python', 'java programming', 'icp']
 
-### Insert 
+### Insert
 
 **Syntax**
 
-```listName.insert(index-position, "new-element-to-insert")```
+`listName.insert(index-position, "new-element-to-insert")`
 
 **Code**
 
@@ -146,19 +159,19 @@ print("before insert:", courses)
 courses.insert(4,"Android Dev")
 print("After insert :",courses)
 ```
+
 **Output**
 
->Before insert: ['c', 'c++', 'python', 'java', 'icp']
->After insert : ['c', 'c++', 'python', 'java', 'Android Dev', 'icp']
+> Before insert: ['c', 'c++', 'python', 'java', 'icp']
+> After insert : ['c', 'c++', 'python', 'java', 'Android Dev', 'icp']
 
-### Append 
+### Append
 
 The append() method appends an element to the end of the list.
 
 **Syntax**
 
-```listName.append("element")```
-
+`listName.append("element")`
 
 **Code**
 
@@ -168,18 +181,19 @@ print("Before append :",courses)
 courses.append("Android Dev")
 print("After append :",courses)
 ```
+
 **Output**
 
->Before append : ['c', 'c++', 'python', 'java', 'icp']
->After append : ['c', 'c++', 'python', 'java', 'icp', 'Android Dev']
+> Before append : ['c', 'c++', 'python', 'java', 'icp']
+> After append : ['c', 'c++', 'python', 'java', 'icp', 'Android Dev']
 
-### Remove 
+### Remove
 
 The remove() method removes the specified item.
 
 **Syntax**
 
-```listName.remove("element")```
+`listName.remove("element")`
 
 **Code**
 
@@ -189,18 +203,19 @@ print("Before remove :",courses)
 courses.remove("java")
 print("After remove :",courses)
 ```
+
 **Output**
 
->Before remove : ['c', 'c++', 'python', 'java', 'icp']
->After remove : ['c', 'c++', 'python', 'icp']
+> Before remove : ['c', 'c++', 'python', 'java', 'icp']
+> After remove : ['c', 'c++', 'python', 'icp']
 
-### Pop 
+### Pop
 
 The pop() method takes a single argument (index).
 
 **Syntax**
 
-```listName.pop(index)```
+`listName.pop(index)`
 
 **Code**
 
@@ -210,16 +225,17 @@ print("Before pop :",courses)
 courses.pop(2)
 print("After pop :",courses)
 ```
+
 **Output**
 
->Before pop : ['c', 'c++', 'python', 'java', 'icp']
->After pop : ['c', 'c++', 'java', 'icp']
+> Before pop : ['c', 'c++', 'python', 'java', 'icp']
+> After pop : ['c', 'c++', 'java', 'icp']
 
-### Delete 
+### Delete
 
 **Syntax**
 
-```del listname[index]```
+`del listname[index]`
 
 **Code**
 
@@ -231,8 +247,9 @@ print("After delete :",friuts)
 ```
 
 **Output**
->Before delete : ['apple', 'banana', 'cherry', 'mango']
->After delete : ['apple', 'cherry', 'mango']
+
+> Before delete : ['apple', 'banana', 'cherry', 'mango']
+> After delete : ['apple', 'cherry', 'mango']
 
 ### Clear
 
@@ -240,7 +257,7 @@ The clear() method removes all the elements from a list.
 
 **Syntax**
 
-```listName.clear()```
+`listName.clear()`
 
 **Code**
 
@@ -252,10 +269,11 @@ print("After clear : ",friuts)
 ```
 
 **Output**
->Before clear : ['apple', 'banana', 'cherry', 'mango']
->After clear : []
 
-* Sort =
+> Before clear : ['apple', 'banana', 'cherry', 'mango']
+> After clear : []
+
+- Sort =
 
 List objects have a sort() method that will sort the list alphanumerically, ascending,descending.
 
@@ -268,9 +286,10 @@ alphabets = ['A','Z','C','V','P','R']
 alphabets.sort()
 print(alphabets)
 ```
+
 **Output**
 
->['A', 'C', 'P', 'R', 'V', 'Z']
+> ['A', 'C', 'P', 'R', 'V', 'Z']
 
 ### Descending Order
 
@@ -281,6 +300,7 @@ alphabets = ['A','Z','C','V','P','R']
 alphabets.sort(reverse=True)
 print(alphabets)
 ```
+
 **Output**
 
->['Z', 'V', 'R', 'P', 'C', 'A']
+> ['Z', 'V', 'R', 'P', 'C', 'A']

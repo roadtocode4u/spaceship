@@ -1,8 +1,10 @@
 # If-else Ladder
 
-## Conditional Statements : 
-There are Four Types : 
-1. if 
+## Conditional Statements :
+
+There are Four Types :
+
+1. if
 2. if-else
 3. if-else-ladder
 4. nested-if
@@ -10,7 +12,7 @@ There are Four Types :
 ```cpp
 3. if-else-ladder
 
-syntax : 
+syntax :
 if (condition 1)
 {
     //-----
@@ -38,6 +40,7 @@ else
 ```
 
 **💻 Example 1 :**
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -51,26 +54,29 @@ int main() {
         cout<<"One";
     }
     else if(num==2){
-        cout<<"Two"; 
+        cout<<"Two";
     }
     else if(num==3){
-        cout<<"Three"; 
+        cout<<"Three";
     }
     else if(num==4){
-        cout<<"Four"; 
+        cout<<"Four";
     }
     else
     {
         cout<<"Not Matched :";
-    }  
+    }
      return 0;
 }
 ```
+
 **⚙️ Output :**
->Enter Number : 3<br/>
-Three
+
+> Enter Number : 3<br/>
+> Three
 
 **💻 Example 2 :**
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -84,26 +90,29 @@ int main() {
         cout<<"One";
     }
     else if(num==2){
-        cout<<"Two"; 
+        cout<<"Two";
     }
     else if(num==3){
-        cout<<"Three"; 
+        cout<<"Three";
     }
     else if(num==4){
-        cout<<"Four"; 
+        cout<<"Four";
     }
     else
     {
         cout<<"Not Matched...";
-    } 
-     return 0; 
+    }
+     return 0;
 }
 ```
+
 **⚙️ Output :**
->Enter Number : 8<br/>
-Not Matched...
+
+> Enter Number : 8<br/>
+> Not Matched...
 
 **💻 Example 3 :**
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -118,23 +127,26 @@ int main() {
         cout<<" Grade A";
     }
     else if(marks>80){
-        cout<<"Grade B"; 
+        cout<<"Grade B";
     }
     else if(marks>70){
-        cout<<" Grade C"; 
+        cout<<" Grade C";
     }
     else
     {
         cout<<"Fail";
-    }  
+    }
      return 0;
 }
 ```
+
 **⚙️ Output :**
->Enter Marks : 85<br/>
-Grade B
+
+> Enter Marks : 85<br/>
+> Grade B
 
 **💻 Example 4 :**
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -149,26 +161,29 @@ int main() {
         cout<<" Grade A";
     }
     else if(marks>80){
-        cout<<"Grade B"; 
+        cout<<"Grade B";
     }
     else if(marks>70){
-        cout<<"Grade C"; 
+        cout<<"Grade C";
     }
     else if(marks>60){
-        cout<<"Grade D"; 
+        cout<<"Grade D";
     }
     else
     {
         cout<<"Fail";
-    }  
+    }
      return 0;
 }
 ```
+
 **⚙️ Output :**
->Enter Marks : 25<br/>
-Fail
+
+> Enter Marks : 25<br/>
+> Fail
 
 **💻 Example 5 : Boundry Condition**
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -183,24 +198,27 @@ int main() {
         cout<<"Grade C";
     }
     else if(marks>=80 && marks<=90){
-        cout<<"Grade B"; 
+        cout<<"Grade B";
     }
     else if(marks>=90 && marks <=100){
-        cout<<"Grade A"; 
+        cout<<"Grade A";
     }
     else
     {
         cout<<"Invalid Number";
-    }  
+    }
 
     return 0;
 }
 ```
+
 **⚙️ Output :**
->Enter Marks : 100<br/>
-A
+
+> Enter Marks : 100<br/>
+> A
 
 **💻 Example 6 : Boundry Condition**
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -215,19 +233,21 @@ int main() {
         cout<<"Grade C";
     }
     else if(marks>=80 && marks<=90){
-        cout<<"Grade B"; 
+        cout<<"Grade B";
     }
     else if(marks>=90 && marks <=100){
-        cout<<"Grade A"; 
+        cout<<"Grade A";
     }
     else
     {
         cout<<"Invalid Number";
-    }  
+    }
 
     return 0;
 }
 ```
+
 **⚙️ Output :**
->Enter Marks : 880<br/>
-Invalid Number
+
+> Enter Marks : 880<br/>
+> Invalid Number

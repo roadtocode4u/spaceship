@@ -3,24 +3,25 @@ title: Git and Github
 description: Git and Github
 hide_table_of_contents: true
 ---
+
 # Introduction to Git & GitHub
 
-## Git 
+## Git
 
- Git is a software is also known as **Version Control System**. Git is used for to **track Code changes**, **who made changes** , **project collaboration**, **history explanation** and **manages code**. 
+Git is a software is also known as **Version Control System**. Git is used for to **track Code changes**, **who made changes** , **project collaboration**, **history explanation** and **manages code**.
 
-## GitHub  
+## GitHub
 
- GitHub is designed for developers. GitHub is a code hosting platform that hosts projects in different programming languages and keep track of changes made. GitHub are useful for To store Codebase. Other can also review your code. Most importantly, it is free and open source.
+GitHub is designed for developers. GitHub is a code hosting platform that hosts projects in different programming languages and keep track of changes made. GitHub are useful for To store Codebase. Other can also review your code. Most importantly, it is free and open source.
 
-## Steps to Create Account in GitHub 
+## Steps to Create Account in GitHub
 
 1. Open GitHub Website 👉 [Click Here to Open GitHub Website](https://github.com)
-2. Click Sing up 
-3. Enter Your Email 
+2. Click Sing up
+3. Enter Your Email
 4. Create password
-5. Enter username 
-6. Click the Create an account button. 
+5. Enter username
+6. Click the Create an account button.
 7. Complete the CAPTCHA puzzle.
 8. Click the Verify email address button in the message from GitHub.
 
@@ -28,9 +29,9 @@ hide_table_of_contents: true
 
 It is a Folder where we can upload Code for specific Project.
 
-## Steps to Create Repository 
+## Steps to Create Repository
 
-1. In the upper-right corner of gitHub page, use the  + drop-down menu, and select New repository.
+1. In the upper-right corner of gitHub page, use the + drop-down menu, and select New repository.
 
 <img src="/icp/23/img-1.png" alt="img-1" width="600px"/>
 
@@ -46,7 +47,7 @@ It is a Folder where we can upload Code for specific Project.
 
 <img src="/icp/23/img-4.png" alt="img-4" width="600px"/>
 
-5. Upload Your Files. 
+5. Upload Your Files.
 
 <img src="/icp/23/img-5.png" alt="img-5" width="600px"/>
 
@@ -54,45 +55,43 @@ It is a Folder where we can upload Code for specific Project.
 
 <img src="/icp/23/img-6.png" alt="img-6" width="600px"/>
 
-7. Click Commit Changes Button. 
+7. Click Commit Changes Button.
 
 <img src="/icp/23/img-7.png" alt="img-7" width="600px"/>
 
+## Account Setup credentials
 
-##  Account Setup credentials 
+1. Globally Set User = `git config --global user.name "RTC 4U"`
 
-1. Globally Set User = ```git config --global user.name "RTC 4U"```
-
-2. Globally Set Email =  ```git config --global user.email "email"```
+2. Globally Set Email = `git config --global user.email "email"`
 
 ## Git commands
 
-1. ```git init```
+1. `git init`
 
-```git init``` command are used to Initialize Git repository to in your normal folder.  To create a new repo, you use the ```git init``` command. This command is one-time you use during a new repository initial setup.
+`git init` command are used to Initialize Git repository to in your normal folder. To create a new repo, you use the `git init` command. This command is one-time you use during a new repository initial setup.
 
->```.git ``` File =  It stores all the history related to your repo. 
+> `.git ` File = It stores all the history related to your repo.
 
-2. ```git status```
+2. `git status`
 
-```git status``` command display the status of your working project. 
+`git status` command display the status of your working project.
 
-3. ```git add <filename>```
+3. `git add <filename>`
 
-The  ```git add <filename>``` command adds new or changed files in your working project to the Git staging area. 
+The `git add <filename>` command adds new or changed files in your working project to the Git staging area.
 
-4. ```git commit```
+4. `git commit`
 
-```git commit``` command are used to record the changes in the repository. Every commit contain commit message. 
+`git commit` command are used to record the changes in the repository. Every commit contain commit message.
 
 **Syntax :**
 
-```git commit -m "<commit message>"```
+`git commit -m "<commit message>"`
 
-5. ```git push```
+5. `git push`
 
-```git push``` command are used to uploads all local branch commit to GitHub.
-
+`git push` command are used to uploads all local branch commit to GitHub.
 
 ## How to push your code to GitHub using git commands?
 
@@ -100,20 +99,20 @@ Step 1 - Create a new GitHub Repository
 
 Step 2 - Initialize Git repository
 
-```git init```
+`git init`
 
-Step 3 - Add files in your local repository. 
+Step 3 - Add files in your local repository.
 
-```git add <filename>```
+`git add <filename>`
 
 Step 4 - Commit the file that you have add in your repository.
 
-```git commit -m "first commit"```
+`git commit -m "first commit"`
 
 Step 5 - Add remote origin
 
-```git remote add origin https://github.com/vaibhavihole31/my-portfolio.git```
+`git remote add origin https://github.com/vaibhavihole31/my-portfolio.git`
 
 Step 6 - Push to GitHub
 
-```git push -u origin main```
+`git push -u origin main`

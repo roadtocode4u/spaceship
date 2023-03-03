@@ -3,9 +3,11 @@ title: Strings
 description: "Strings"
 hide_table_of_contents: true
 ---
+
 # Strings
 
-### Strings : 
+### Strings :
+
 It is a collection of characters .
 
 ```cpp
@@ -30,9 +32,9 @@ int mark2 = 20;
 
 int mark3 = 30;
 
-int marks[3];             
-                        
-       0   1   2       
+int marks[3];
+
+       0   1   2
 marks[10][20][30]
 ```
 
@@ -74,8 +76,10 @@ char name[5];
         return 0;
     }
 ```
+
 **⚙️ Output :**
->Road To Code.
+
+> Road To Code.
 
 **💻Example 2:**
 
@@ -95,10 +99,12 @@ char name[5];
 ```
 
 **⚙️ Output :**
->Enter name: Road To Code<br  />
-Hello Road
+
+> Enter name: Road To Code<br  />
+> Hello Road
 
 **💻Example 3:**
+
 ```cpp
     #include <iostream>
     using namespace std;
@@ -113,15 +119,19 @@ Hello Road
        return 0;
     }
 ```
+
 **⚙️ Output :**
->Enter name: Road To Code<br  />
-Hello Road To Code
+
+> Enter name: Road To Code<br  />
+> Hello Road To Code
 
 #### Features:
+
 1. No fixed length
 2. It will inc/dec as per requirement.
 
 **💻Example 4:**
+
 ```cpp
  #include<iostream>
 using namespace std;
@@ -131,9 +141,9 @@ int main()
     char str[50];
     cout<<"Enter Your name: ";
     cin>>str;
-    
+
     int count = 0;
-    
+
     while(str[count]!='\0')
     {
         count++;
@@ -142,6 +152,8 @@ int main()
     return 0;
 }
 ```
+
 **⚙️ Output :**
->Enter Your name: pinki <br/>
-Length :5
+
+> Enter Your name: pinki <br/>
+> Length :5

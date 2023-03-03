@@ -16,7 +16,8 @@ print(c)
 ```
 
 **Output**
->30
+
+> 30
 
 2. Subtraction Operator (-)
 
@@ -28,9 +29,10 @@ print(c)
 ```
 
 **Output**
->10
 
-3. Multiplication Operator (*)
+> 10
+
+3. Multiplication Operator (\*)
 
 ```python title="multplication.py" showLineNumbers="true"
 a=10
@@ -40,7 +42,8 @@ print(c)
 ```
 
 **Output**
->200
+
+> 200
 
 4. Division Operator (/)
 
@@ -52,7 +55,8 @@ print(c)
 ```
 
 **Output**
->2.0
+
+> 2.0
 
 5. Modulus Operator (%)
 
@@ -64,10 +68,11 @@ print(c)
 ```
 
 **Output**
->2
 
-6. Exponentiation Operator (**)
-  
+> 2
+
+6. Exponentiation Operator (\*\*)
+
 ```python title="modulus.py" showLineNumbers="true"
 base = 2
 power = 3
@@ -76,18 +81,20 @@ print(result)
 ```
 
 **Output**
->8
+
+> 8
 
 7. Floor Operator (//)
 
 ```python title="modulus.py" showLineNumbers="true"
 a = 20
-b = 10 
+b = 10
 result = a // b
 print(result)
 ```
 
 **Output**
+
 >2
 
 8. Equality Operator (==)
@@ -161,3 +168,6 @@ print(result)
 
 **Output**
 >True
+
+
+> 2

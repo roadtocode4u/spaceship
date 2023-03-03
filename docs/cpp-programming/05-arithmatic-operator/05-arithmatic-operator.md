@@ -1,6 +1,6 @@
 # Arithmetic Operators
 
-**Operators :**  
+**Operators :**
 
 ```cpp
 Doctor ---> Operator
@@ -13,12 +13,12 @@ ex : a+b
 ```
 
 ## Types of Operator
-1. Arithmetic Operator :  (-, +, /, *, %)
+
+1. Arithmetic Operator : (-, +, /, \*, %)
 2. Assignment Operator : (=, +=, -=,...)
 3. Relational Operator : (>,<,>=,<=,==)
 4. Logical Operator: (&&,||, !)
 5. Bitwise Operator
-
 
 ## 1.Arithmetic Operator:
 
@@ -31,12 +31,13 @@ ex : a+b
 ```
 
 **💻 Example 1 : Addition of two numbers**
+
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    
+
     int a=5;
     int b=10;
 
@@ -46,17 +47,19 @@ int main() {
     return 0;
 }
 ```
-**⚙️ Output :**
->15
 
+**⚙️ Output :**
+
+> 15
 
 **💻 Example 2 : Subtraction of two numbers**
+
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    
+
     int a=20;
     int b=10;
 
@@ -66,16 +69,19 @@ int main() {
     return 0;
 }
 ```
+
 **⚙️ Output :**
->10
+
+> 10
 
 **💻 Example 3 : Multiplication of two numbers**
+
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    
+
     int a=55;
     int b=2;
 
@@ -85,16 +91,19 @@ int main() {
     return 0;
 }
 ```
+
 **⚙️ Output :**
->110
+
+> 110
 
 **💻 Example 4: Division of two numbers**
+
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    
+
     int a=55;
     int b=2;
 
@@ -104,28 +113,33 @@ int main() {
     return 0;
 }
 ```
-**⚙️ Output :**
->27
 
-## % Modulus Operator : 
-* It calculates reminder after the integer division
+**⚙️ Output :**
+
+> 27
+
+## % Modulus Operator :
+
+- It calculates reminder after the integer division
 
 **💻 Example 5 :**
+
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    
+
     int result = 22 % 5;
     cout<<result;
 
     return 0;
 }
 ```
-**⚙️ Output :**
->2
 
+**⚙️ Output :**
+
+> 2
 
 ```cpp
 odd number : 3,7,9

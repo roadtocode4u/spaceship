@@ -18,11 +18,12 @@ arr[i] == key
 ```
 
 **💻Example 1:**
+
 ```cpp
     #include <iostream>
     using namespace std;
     int main() {
-       
+
        int arr[5];
 
        cout<<"Enter 5 Elements in Array: ";
@@ -31,7 +32,7 @@ arr[i] == key
        {
         cin>>arr[i];
        }
-       
+
        int key;
        cout<<"Enter key to search: ";
        cin>>key;
@@ -47,18 +48,20 @@ arr[i] == key
     }
 
 ```
-**⚙️ Output :**
->Enter 5 Elements in Array: 2 4 6 7 8<br/>
-Enter key to search: 6<br/>
-key found at: 2
 
+**⚙️ Output :**
+
+> Enter 5 Elements in Array: 2 4 6 7 8<br/>
+> Enter key to search: 6<br/>
+> key found at: 2
 
 **💻Example 2:**
+
 ```cpp
     #include <iostream>
     using namespace std;
     int main() {
-       
+
        int arr[5];
 
        cout<<"Enter 5 Elements in Array: ";
@@ -67,7 +70,7 @@ key found at: 2
        {
         cin>>arr[i];
        }
-       
+
        int key;
        cout<<"Enter key to search: ";
        cin>>key;
@@ -92,10 +95,9 @@ key found at: 2
     }
 
 ```
+
 **⚙️ Output :**
->Enter 5 Elements in Array: 2 4 6 7 8<br/>
-Enter key to search: 10<br/>
-Element Not found
 
-
-
+> Enter 5 Elements in Array: 2 4 6 7 8<br/>
+> Enter key to search: 10<br/>
+> Element Not found

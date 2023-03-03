@@ -1,23 +1,21 @@
 ---
-title: Forms 
+title: Forms
 description: "Forms"
 hide_table_of_contents: true
 ---
+
 # Forms
 
 Form is an HTML element which is used to take input from user.
 
 ```html
-<form> => form start
-</form> => form end
+<form>=> form start</form>
+=> form end
 ```
 
 ```html
-<input type = "text"/> =>input field
-
-type => attribute
+<input type="text" /> =>input field type => attribute
 ```
-
 
 ### How to take input from user
 
@@ -26,48 +24,47 @@ type => attribute
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <form>
-        <input type="text" />
+      <input type="text" />
     </form>
-</body>
+  </body>
 </html>
 ```
 
 **Output :**
 
-<img src="/icp/10/output-1.png" alt="output-1" width="600px"/> 
+<img src="/icp/10/output-1.png" alt="output-1" width="600px"/>
 
-### Label 
+### Label
 
 The label is a normal text, its show information about your input element & its visually and pragmatically associated with the input element.
 
-The ```<label>``` tag is used to specify a label for an ```<input>``` element.
+The `<label>` tag is used to specify a label for an `<input>` element.
 
 **Code :**
 
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Forms</title>
-</head>
-<body>
+  </head>
+  <body>
     <form>
-        <label for="inputFullName">Enter FullName: </label> 
-        <input type="text" id="inputFullName"/>
+      <label for="inputFullName">Enter FullName: </label>
+      <input type="text" id="inputFullName" />
     </form>
-</body>
+  </body>
 </html>
 ```
 
 **Output :**
 
-<img src="/icp/10/output-2.png" alt="output-2" width="600px"/> 
-
+<img src="/icp/10/output-2.png" alt="output-2" width="600px"/>
 
 ### Password
 
@@ -78,21 +75,21 @@ Password is attribute which is invisible to the user in password field.
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Forms</title>
-</head>
-<body>
+  </head>
+  <body>
     <form>
-        <label for="inputPassword">Enter Password:</label>
-        <input type="password" id="inputPassword"/>
+      <label for="inputPassword">Enter Password:</label>
+      <input type="password" id="inputPassword" />
     </form>
-</body>
+  </body>
 </html>
 ```
 
 **Output :**
 
-<img src="/icp/10/output-4.png" alt="output-4" width="600px"/> 
+<img src="/icp/10/output-4.png" alt="output-4" width="600px"/>
 
 ### Email
 
@@ -103,54 +100,55 @@ The email Attribute is used to validates the text for correct email address. You
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Forms</title>
-</head>
-<body>
+  </head>
+  <body>
     <form>
-        <label for="inputEmail">Enter Email:</label>
-        <input type="email" id="inputEmail"/>
+      <label for="inputEmail">Enter Email:</label>
+      <input type="email" id="inputEmail" />
     </form>
-</body>
+  </body>
 </html>
 ```
 
 **Output :**
 
-<img src="/icp/10/output-11.png" alt="output-11" width="600px"/> 
+<img src="/icp/10/output-11.png" alt="output-11" width="600px"/>
 
-📝Note:-  If we do not enter the proper email address then  it will display error like this
+📝Note:- If we do not enter the proper email address then it will display error like this
 
 **Code :**
 
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Forms</title>
-</head>
-<body>
+  </head>
+  <body>
     <form>
-        <label for="inputFullName">Enter FullName: </label> 
-        <input type="text" id="inputFullName" required/>
+      <label for="inputFullName">Enter FullName: </label>
+      <input type="text" id="inputFullName" required />
 
-        <br/><br/>
+      <br /><br />
 
-        <label for="inputEmail">Enter Email:</label>
-        <input type="email" id="inputEmail" required/>
+      <label for="inputEmail">Enter Email:</label>
+      <input type="email" id="inputEmail" required />
 
-        <br/><br/>
+      <br /><br />
 
-        <label for="inputPassword" >Enter Password:</label>
-        <input type="password" id="inputPassword" required/>
+      <label for="inputPassword">Enter Password:</label>
+      <input type="password" id="inputPassword" required />
 
-        <br/><br/>
+      <br /><br />
 
-        <input type="submit" value="Register Now"/>
+      <input type="submit" value="Register Now" />
     </form>
-</body>
+  </body>
 </html>
 ```
+
 **Output :**
 
 <img src="/icp/10/output-7.png" alt="output-7" width="600px"/>
@@ -158,6 +156,7 @@ The email Attribute is used to validates the text for correct email address. You
 ## Button
 
 There are two type of button <br />
+
 1. Submit button :- it is used to submit form data.
 2. Button :- it is used to trigger action.
 
@@ -166,14 +165,14 @@ There are two type of button <br />
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Forms</title>
-</head>
-<body>
+  </head>
+  <body>
     <form>
-        <input type="submit" value="Register Now"/>
+      <input type="submit" value="Register Now" />
     </form>
-</body>
+  </body>
 </html>
 ```
 
@@ -181,8 +180,7 @@ There are two type of button <br />
 
 <img src="/icp/10/output-5.png" alt="output-5" width="600px"/>
 
-
-### required 
+### required
 
 It is specifies that the element is mandatory to filled out before submitting the form.
 
@@ -191,53 +189,54 @@ It is specifies that the element is mandatory to filled out before submitting th
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Forms</title>
-</head>
-<body>
+  </head>
+  <body>
     <form>
-        <label for="inputFullName">Enter FullName: </label> 
-        <input type="text" id="inputFullName" required/>
+      <label for="inputFullName">Enter FullName: </label>
+      <input type="text" id="inputFullName" required />
 
-        <br/><br/>
+      <br /><br />
 
-        <label for="inputPassword" >Enter Password:</label>
-        <input type="password" id="inputPassword" required/>
+      <label for="inputPassword">Enter Password:</label>
+      <input type="password" id="inputPassword" required />
 
-        <br/><br/>
+      <br /><br />
 
-        <input type="submit" value="Register Now"/>
+      <input type="submit" value="Register Now" />
     </form>
-</body>
+  </body>
 </html>
 ```
 
 **Output :**
 
-<img src="/icp/10/output-6.png" alt="output-6" width="600px"/> 
+<img src="/icp/10/output-6.png" alt="output-6" width="600px"/>
 
 ### Placeholder
 
-Placeholder is a attribute which is used to set a short hint that describes the value of an input field. 
+Placeholder is a attribute which is used to set a short hint that describes the value of an input field.
 
 **Code :**
 
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Forms</title>
-</head>
-<body>
+  </head>
+  <body>
     <form>
-        <input type="text" placeholder="Enter your name"/>
+      <input type="text" placeholder="Enter your name" />
     </form>
-</body>
+  </body>
 </html>
 ```
+
 **Output :**
 
-<img src="/icp/10/output-8.png" alt="output-8" width="600px"/> 
+<img src="/icp/10/output-8.png" alt="output-8" width="600px"/>
 
 ### Date and Time
 
@@ -246,18 +245,18 @@ Placeholder is a attribute which is used to set a short hint that describes the 
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Forms</title>
-</head>
-<body>
+  </head>
+  <body>
     <form>
-       Date:  <input type="date"/>
+      Date: <input type="date" />
 
-       <br/><br/>
-       
-       Time:  <input type="time"/>
+      <br /><br />
+
+      Time: <input type="time" />
     </form>
-</body>
+  </body>
 </html>
 ```
 
@@ -265,17 +264,17 @@ Placeholder is a attribute which is used to set a short hint that describes the 
 
 <img src="/icp/10/output-9.png" alt="output-9" width="600px"/>
 
-### Dropdown 
+### Dropdown
 
-We can create drop-down list using ```<select>``` tag. ```<select>``` Tag are contain Multiple ```<option>``` tag. ```<option>``` Tag are used to display available options in drop-down.
+We can create drop-down list using `<select>` tag. `<select>` Tag are contain Multiple `<option>` tag. `<option>` Tag are used to display available options in drop-down.
 
 **Syntax :**
 
 ```html
 <select>
-    <option></option>
-    <option></option>
-    <option></option>
+  <option></option>
+  <option></option>
+  <option></option>
 </select>
 ```
 
@@ -283,45 +282,46 @@ We can create drop-down list using ```<select>``` tag. ```<select>``` Tag are co
 
 ```html
 <!DOCTYPE html>
-<html >
-<head>
-    <title> Checkbox </title>
-</head>
-<body>
+<html>
+  <head>
+    <title>Checkbox</title>
+  </head>
+  <body>
     <form>
-        <label for="selectLanguage">Choose Language :</label> <br/>
-        <select id="selectLanguage">
-            <option> Choose Language :  </option>
-            <option> HTML </option>
-            <option> CSS </option>
-            <option> JAVASCRIPT </option>
-        </select>
+      <label for="selectLanguage">Choose Language :</label> <br />
+      <select id="selectLanguage">
+        <option>Choose Language :</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JAVASCRIPT</option>
+      </select>
     </form>
-</body>
+  </body>
 </html>
 ```
+
 **Output :**
 
 <img src="/icp/10/output-12.png" alt="output-12" width="600px"/>
 
 ### Value
 
-The value attribute are used specifies the value of an ```<input>``` element. Value attribute represent the default value for the input element.
+The value attribute are used specifies the value of an `<input>` element. Value attribute represent the default value for the input element.
 
 **Code :**
 
 ```html
 <!DOCTYPE html>
-<html >
-<head>
-    <title> Checkbox </title>
-</head>
-<body>
+<html>
+  <head>
+    <title>Checkbox</title>
+  </head>
+  <body>
     <form>
-        <label for="motherThoung">Mother Tounge :</label> <br/>
-        <input type="text" id="motherThoung" value="ABC"/>
+      <label for="motherThoung">Mother Tounge :</label> <br />
+      <input type="text" id="motherThoung" value="ABC" />
     </form>
-</body>
+  </body>
 </html>
 ```
 
@@ -338,55 +338,57 @@ It can help the user, the user does not need to type the whole text data list ha
 
 ```html
 <!DOCTYPE html>
-<html >
-<head>
-    <title> Checkbox </title>
-</head>
-<body>
+<html>
+  <head>
+    <title>Checkbox</title>
+  </head>
+  <body>
     <form>
-        <input list="techOptions" />
+      <input list="techOptions" />
 
-        <datalist id="techOptions">
-            <option> Choose Techonoloy :  </option>
-            <option> HTML </option>
-            <option> CSS </option>
-            <option> Javascript </option>
-            <option> Bootstrap </option>
-            <option> NodeJs </option>
-            <option> ExpressJs </option>
-        </datalist>
+      <datalist id="techOptions">
+        <option>Choose Techonoloy :</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>Javascript</option>
+        <option>Bootstrap</option>
+        <option>NodeJs</option>
+        <option>ExpressJs</option>
+      </datalist>
     </form>
-</body>
+  </body>
 </html>
 ```
+
 **Output :**
 
 <img src="/icp/10/output-14.png" alt="output-14" width="600px"/>
 
-### Checkbox 
- 
+### Checkbox
+
 Checkbox is used to multiple selection.
 
 **Code :**
 
 ```html
 <!DOCTYPE html>
-<html >
-<head>
-    <title> Checkbox </title>
-</head>
-<body>
+<html>
+  <head>
+    <title>Checkbox</title>
+  </head>
+  <body>
     <form>
-        <input type="checkbox" id="movie1"/>
-        <label for="movie1">Movie 1</label> <br/><br/>
+      <input type="checkbox" id="movie1" />
+      <label for="movie1">Movie 1</label> <br /><br />
 
-        <input type="checkbox" id="movie2"/>
-        <label for="movie2">Movie 2</label> <br/> <br/>
+      <input type="checkbox" id="movie2" />
+      <label for="movie2">Movie 2</label> <br />
+      <br />
 
-        <input type="checkbox" id="movie3"/>
-        <label for="movie3">Movie 3</label> <br/><br/>
+      <input type="checkbox" id="movie3" />
+      <label for="movie3">Movie 3</label> <br /><br />
     </form>
-</body>
+  </body>
 </html>
 ```
 
@@ -394,28 +396,29 @@ Checkbox is used to multiple selection.
 
 <img src="/icp/10/output-15.png" alt="output-15" width="600px"/>
 
-Checkbox have one ```Checked = true``` attribute & this attribute specifies input  element should be pre-selected or checked.
+Checkbox have one `Checked = true` attribute & this attribute specifies input element should be pre-selected or checked.
 
 **Code :**
 
 ```html
 <!DOCTYPE html>
-<html >
-<head>
-    <title> Checkbox </title>
-</head>
-<body>
+<html>
+  <head>
+    <title>Checkbox</title>
+  </head>
+  <body>
     <form>
-        <input type="checkbox" id="movie1"  checked="true"/>
-        <label for="movie1">Movie 1</label> <br/><br/>
+      <input type="checkbox" id="movie1" checked="true" />
+      <label for="movie1">Movie 1</label> <br /><br />
 
-        <input type="checkbox" id="movie2"/>
-        <label for="movie2">Movie 2</label> <br/> <br/>
+      <input type="checkbox" id="movie2" />
+      <label for="movie2">Movie 2</label> <br />
+      <br />
 
-        <input type="checkbox" id="movie3"/>
-        <label for="movie3">Movie 3</label> <br/><br/>
+      <input type="checkbox" id="movie3" />
+      <label for="movie3">Movie 3</label> <br /><br />
     </form>
-</body>
+  </body>
 </html>
 ```
 
@@ -431,38 +434,39 @@ Radio Button is used to Single selection.
 
 ```html
 <!DOCTYPE html>
-<html >
-<head>
-    <title> Checkbox </title>
-</head>
-<body>
+<html>
+  <head>
+    <title>Checkbox</title>
+  </head>
+  <body>
     <form>
-        <input type="radio" name="gender" id="male"/>
-        <label for="male">Male</label><br/>
+      <input type="radio" name="gender" id="male" />
+      <label for="male">Male</label><br />
 
-        <input type="radio" name="gender" id="female"/>
-        <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="female">Female</label>
     </form>
-</body>
+  </body>
 </html>
 ```
+
 **Output :**
 
 <img src="/icp/10/output-17.png" alt="output-17" width="600px"/>
 
 ### File
 
-```<input>``` elements with ```type="file"``` it is used to user choose files from their device storage.
+`<input>` elements with `type="file"` it is used to user choose files from their device storage.
 
 **Syntax :**
 
 ```html
 <form>
-	<input type="file">
+  <input type="file" />
 </form>
 ```
 
-```accept="application/pdf"```
+`accept="application/pdf"`
 
 The accept attribute specifies what type of file user can pick from their device storage.
 
@@ -470,32 +474,30 @@ The accept attribute can only be used with file tag.
 
 Different accept attribute value :
 
-```image/*```  = image files <br/>
-```audio/*```  = audio files <br/>
-```video/*```  = video files <br/>
-```application/*``` = all type application <br/>
-```application/pdf``` = pdf file <br/>
-```image/png``` = only png extension images <br/>
+`image/*` = image files <br/>
+`audio/*` = audio files <br/>
+`video/*` = video files <br/>
+`application/*` = all type application <br/>
+`application/pdf` = pdf file <br/>
+`image/png` = only png extension images <br/>
 
 **Code :**
 
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>File Picker</title>
-</head>
-<body>
+  </head>
+  <body>
     <form>
-       <label for="fileInput"> Upload Your Marksheet :</label>
-        <input type="file" id="fileInput" accept="application/pdf" />
+      <label for="fileInput"> Upload Your Marksheet :</label>
+      <input type="file" id="fileInput" accept="application/pdf" />
     </form>
-</body>
+  </body>
 </html>
 ```
+
 **Output :**
 
 <img src="/icp/10/output-18.png" alt="output-18" width="600px"/>
-
-
-

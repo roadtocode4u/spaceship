@@ -121,3 +121,23 @@ Create a webpage and use following JS concepts.
 ## Homework No-22
 
 WAP to calculate sum of marks of 5 subjects. Use prompt to take input from user.
+
+## Homework No-23
+
+1. WAP to find largest number among 2 Take two numbers from user as a input.
+
+2. WAP to print full day name when day number is given.
+
+1----->Monday <br/>
+2----->Tuesday <br/>
+.
+.
+.
+.
+.
+
+## Homework No-24
+
+1. WAP to find given alphabet is vowel or consonants using switch case.
+
+

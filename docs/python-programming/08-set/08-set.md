@@ -11,7 +11,7 @@ It Data type which Act like Mathmatical sets. { }= Define sets.
 
 ## Properties of Sets
 
-- **Unorderd** : <br/>
+ **Unorderd** : <br/>
   Unordered means that the items in a set do not have a defined order.
 
 ```python showLineNumbers = "true" title="unorderd.py"
@@ -22,8 +22,9 @@ print(myColors)
 **Output**
 
 > {'pink', 'black', 'red', 'sky', 'yellow'}
+> \
 
-- **Unindexed** : <br/>
+ **Unindexed** : <br/>
   we cannot access the elements index no.
 
 ```python showLineNumbers = "true" title="unindexed.py"
@@ -35,7 +36,7 @@ print(myColors)
 
 > {'pink', 'black', 'red', 'sky', 'yellow'}
 
-- **Unique values** : <br/>
+ **Unique values** : <br/>
   Unique values means that the items in a set do not give duplicate value its provide only unique values
 
   ```python showLineNumbers = "true" title="unique values.py"
@@ -103,8 +104,10 @@ colorSets2 = {"green","pink","white","orange"}
 allColors = colorSets1.union(colorSets2)
 print(allColors)
 ```
+
 **Output**
->{'orange', 'pink', 'tomato', 'black', 'white', 'sky', 'yellow', 'green'}
+
+> {'orange', 'pink', 'tomato', 'black', 'white', 'sky', 'yellow', 'green'}
 
 ## Intersection of Sets
 
@@ -116,9 +119,10 @@ colorSets2 = {"green","pink","white","orange","sky"}
 colors = colorSets1.intersection(colorSets2)
 print(colors)
 ```
-**Output**
->{'pink', 'sky'}
 
+**Output**
+
+> {'pink', 'sky'}
 
 ## Symmetric Differnce
 
@@ -128,7 +132,9 @@ colorSets2 = {"green","pink","white","orange","sky"}
 allcolors = colorSets1.symmetric_difference(colorSets2)
 print(allcolors)
 ```
+
 **Output**
->{'white', 'orange', 'tomato', 'yellow', 'green', 'black'}
+
+> {'white', 'orange', 'tomato', 'yellow', 'green', 'black'}
 
 The symmetric_difference() method in Python for two elements StudentsList1 and StudentsList2 is used to return the set of elements contained in both StudentsList1 and StudentsList2 but not common in both of them.

@@ -89,3 +89,75 @@ print(result)
 
 **Output**
 >2
+
+8. Equality Operator (==)
+
+```python title="equality.py" showLineNumbers="true"
+a = 10 
+b = 10
+result = a == b
+print(result)
+```
+
+**Output**
+>True
+
+9. Less than Operator (<)
+
+```python title="less than.py" showLineNumbers="true"
+a = 10 
+b = 20
+result = a < b
+print(result)
+```
+
+**Output**
+>True
+
+10. Greater than Operator (>)
+
+```python title="greater than.py" showLineNumbers="true"
+a = 30 
+b = 10
+result = a > b
+print(result)
+```
+
+**Output**
+>True
+
+11. Less than or equal to Operator (<=)
+
+```python title="less than or equal to.py" showLineNumbers="true"
+a = 20
+b = 20
+result = a <= b
+print(result)
+```
+
+**Output**
+>True
+
+12. Greater than or equal to Operator (>=)
+
+```python title="greater than or equal to.py" showLineNumbers="true"
+a = 30
+b = 20
+result = a >= b
+print(result)
+```
+
+**Output**
+>True
+
+13. Not equal Operator (!=)
+
+```python title="not equal.py" showLineNumbers="true"
+a = 50 
+b = 100
+result = a != b
+print(result)
+```
+
+**Output**
+>True

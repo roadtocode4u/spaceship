@@ -136,3 +136,8 @@ WAP to calculate sum of marks of 5 subjects. Use prompt to take input from use
 .
 .
 
+## Homework No-24
+
+1. WAP to find given alphabet is vowel or consonants using switch case.
+
+

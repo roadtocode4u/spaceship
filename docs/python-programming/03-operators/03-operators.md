@@ -97,11 +97,18 @@ print(result)
 > 2
 
 
-# comparision Operators
-Comparison operators are used to compare two values and return output in boolean value.
+# Comparision Operators
+Comparison operators are used to compare two values and return output in boolean value.<br/>
+Comparision operator have 6 types : 
+1. Equal Operator
+2. Less than Operator
+3. Greater than Operator
+4. Less than or equal to Operator
+5. Greater than or equal to Operator
+6.  Not equal Operator
 
-1. Equal Operator (==)
 
+ 1. Equal  (==)
 ```python title="equal.py" showLineNumbers="true"
 a = 10 
 b = 10
@@ -122,7 +129,7 @@ Finally, the result of the comparison is assigned to the variable result.
 
 The last line of code prints the value of result, which in this case is True.
 
-2. Less than Operator (<)
+1. Less than  (<)
 
 ```python title="less than.py" showLineNumbers="true"
 a = 10 
@@ -144,7 +151,7 @@ Finally, the result of the comparison is assigned to the variable result.
 
 The last line of code prints the value of result, which in this case is True.
 
-3. Greater than Operator (>)
+3. Greater than  (>)
 
 ```python title="greater than.py" showLineNumbers="true"
 a = 30 
@@ -167,7 +174,7 @@ Finally, the result of the comparison is assigned to the variable result.
 The last line of code prints the value of result, which in this case is True.
 
 
-4. Less than or equal to Operator (<=)
+4. Less than or equal to  (<=)
 
 ```python title="less than or equal to.py" showLineNumbers="true"
 a = 20
@@ -190,7 +197,7 @@ Finally, the result of the comparison is assigned to the variable result.
 The last line of code prints the value of result, which in this case is True.
 
 
-5. Greater than or equal to Operator (>=)
+5. Greater than or equal to  (>=)
 
 ```python title="greater than or equal to.py" showLineNumbers="true"
 a = 30
@@ -212,7 +219,7 @@ Finally, the result of the comparison is assigned to the variable result.
 
 The last line of code prints the value of result, which in this case is True.
 
-6.  Not equal Operator (!=)
+6.  Not equal  (!=)
 
 ```python title="not equal.py" showLineNumbers="true"
 a = 50 

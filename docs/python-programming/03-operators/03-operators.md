@@ -240,3 +240,89 @@ Since `a` is 50 and `b` is 100 so, `a` is not equal to `b` Therefore, the compar
 Finally, the result of the comparison is assigned to the variable result.
 
 The last line of code prints the value of result, which in this case is True.
+
+## Logical Operator
+
+Logical operators are used to combine conditional statements.
+
+1. AND operator (and)
+
+ The `and` operator returns `True` only if both of its conditions are True. Otherwise, it returns   `False`.
+
+**Code :**
+
+```py title="logical-opertor.py" showLineNumbers="true"
+hsc=50
+jee=120
+result= hsc>60 and jee>130
+print(result)
+```
+**Output:**
+
+>False 
+
+In the above program is to create two variables `hsc` and `jee`, assigning them the values of `50` and `130`, respectively.
+
+Then it creates a new variable called `result` which uses the and logical operator to check if both `hsc is greater than 60` `AND` `jee is greater than 120`. The and operator returns `True` if both conditions are `true`, and `False` otherwise.
+
+So, the output of this code will be `False` since `hsc is not greater than 60`.
+
+**Code :**
+
+```py title="logical-opertor.py" showLineNumbers="true"
+hsc=70
+jee=130
+result= hsc>60 and jee>130
+print(result)
+```
+**Output:**
+
+>True
+
+In the above program is to create two variables `hsc` and `jee`, assigning them the values of `70` and `130`, respectively.
+
+Then it creates a new variable called `result` which uses the and logical operator to check if both `hsc is greater than 60` `AND` `jee is greater than 120`. The and operator returns `True` if both conditions are `true`, and `False` otherwise.
+
+So, the output of this code will be `true` because both condition are true.
+
+2. OR operator (or)
+
+ The `or` operator returns `True` if at least one of its operands is `True`. If both operands are `False`, it returns `False`.
+
+**Code :**
+
+```py title="logical-opertor.py" showLineNumbers="true"
+neet=80
+aiims=130
+result=neet>520 or aiims>220
+print(result)
+```
+**Output:**
+
+>false
+
+In the above program variable `neet` equal to `80`, sets the variable `aiims` equal to `130`, checks whether `neet is greater than 520` `or` `aiims is greater than 220`, and assigns the result to the variable `result`.
+
+The `or` operator evaluates to True if at least one of the expressions it connects is True. Since neither `neet > 520` nor `aiims > 220` is True, the overall result of the expression `neet > 520 or aiims > 220` is False.
+
+Therefore, the code will output `False`.
+
+**Code :**
+
+```py title="logical-opertor.py" showLineNumbers="true"
+neet=530
+aiims=230
+result=neet>520 or aiims>220
+print(result)
+```
+**Output:**
+
+>true
+
+In the above program variable `neet` equal to `530`, sets the variable `aiims` equal to `230`, checks whether `neet is greater than 520` `or` `aiims is greater than 220`, and assigns the result to the variable `result`.
+
+The `or` operator evaluates to True if at least one of the expressions it connects is True. Since neither `neet > 520` nor `aiims > 220` is True so both condition are true. 
+
+Therefore, the code will output `true`.
+
+

@@ -33,7 +33,7 @@ if a==b :
 In the above example, we are create a two variables `a`& `b`, in their stored values `20` & `10` respectively and check the `if statement` a==b if this condition is true the the output is `A is equals to B`.
 
 ### if--else Statements
-if statement can have two outputs. the first output is if your comparision is `true`, the second if your comparision is `false` then output is only one.
+if statement can have two outputs. the first output is if your comparison is `true`, the second if your comparison is `false` then output is only one.
 
 **Syntax:**
 ```python
@@ -75,7 +75,7 @@ else :
   print("A is Not smaller")
 ```
 **Output:**
->A is Not smller
+>A is Not smaller
 
 In the above example, we are create a two variables `a`& `b`, in their stored values `10` & `30` respectively and check the `if-else statement` a>b if this condition is false so,the the output is `A is Not smaller`.
 
@@ -103,6 +103,7 @@ else:
 >Enter Number :9<br/>
 >Given number is Odd
 
+**Example: Write a program which asks user to enter rate and quantity of a product. Your program should calculate and display the the bill amount as rate * quantity. If bill amount is more than 500 discount of 20% on bill and less than 500 then discount of 5% on bill.**
 
 ```python title="example 5"
 rate, quantity = input("Enter rate and quantity :").split()
@@ -127,8 +128,20 @@ else:
 >"### 20% off ###"<br/>
 >Actual Bill 1000<br/>
 >Discount 200.0<br/>
->payble amount 800.0
+>payable amount 800.0
 
+In the above program we create two variable `rate` and `quantity` and this variable we can give a input from user so we use `input()` function and this input function give message for user `Enter rate and quantity :` and in one `input()` we give multiple input so we use `spilt()` function. 
+
+In next line we create one variable `bill` and this variable we store calculation of `int(rate) * int(quantity)` 
+
+It first checks if the value of `bill` is greater than `500` using an `if statement`.
+If the condition is `true`, then it prints `### 20% off ###` to indicate that a `20%` discount is being applied.
+The program then prints the `actual bill` amount using the print function.
+It calculates the `discount amount` by multiplying the `bill` amount with `20/100*(20%)`.
+The program prints the discount amount and the payable amount after the discount by subtracting the discount amount from the actual bill amount.
+
+If the value of bill is `less than or equal to 500`, the program prints `### 5% off ###` to indicate that a `5%` discount is being applied.
+The program then follows the same steps as above to calculate and print the discount amount and the payable amount after the discount.
 
 ```python title="example 6"
 rate, quantity = input("Enter rate and quantity :").split()
@@ -151,4 +164,4 @@ print("Payble amount", bill-discount)
 >"### 5% ###"<br/>
 >Actual Bill : 50<br/>
 >Discount : 2.5<br/>
->Payble amount 47.5<br/>
+>Payable amount 47.5<br/>

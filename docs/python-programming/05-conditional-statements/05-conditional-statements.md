@@ -165,3 +165,158 @@ print("Payble amount", bill-discount)
 >Actual Bill : 50<br/>
 >Discount : 2.5<br/>
 >Payable amount 47.5<br/>
+
+## If else Ladder 
+
+Python elif is used to execute a continuous chain of conditional logic ladder. In elif, there are multiple conditions and the corresponding statements as a ladder.
+
+**Syntax**
+
+```py
+if condition-1:
+  statements-1
+  statements-2
+elif condition-2:
+  statements-1
+  statements-2
+elif condition-3:
+  statements-1
+  statements-2
+elif condition-4:
+  statements-1
+  statements-
+else:
+  statements-1
+  statements-2
+```
+
+**Code:**
+
+```py title="if-else.py" showLineNumbers="true"
+num = int(input("Enter number from 1 to 5 :"))
+if num==1:
+  print("You selected option 1")
+elif num==2:
+  print("You selected option 2")
+elif num==3:
+  print("You selected option 3")
+elif num==4:
+  print("You selected option 4")
+elif num==5:
+  print("You selected option 5")
+else :
+  print("You selected wrong input")
+```
+
+**Output:**
+
+>Enter number from 1 to 5 :5 <br/>
+>You selected option 5
+
+In the above example we create one `num` variable and in that variable we give input number from the user and checks whether the number is between `1 to 5`. If the input is within the range, it displays the corresponding message, and if the input is out of range, it displays `You selected wrong input`.
+
+**Code:**
+
+```py title="if-else.py" showLineNumbers="true"
+name = input("Enter fruits or vegetable name :")
+if name=="onion":
+  print("🧅")
+elif name=="apple":
+  print("🍎")
+elif name=="banana":
+  print("🍌")
+elif name=="pineabpple":
+  print("🍍")
+else:
+  print("Not avilable")
+```
+
+**Output:**
+
+>Enter fruits or vegetable name :orange <br/>
+>Not available
+
+**Example: Write a program to take input for marks of 5 subject and display the grade.** <br/>
+
+💡 HINT : Per=(total/500)*100 <br/>
+
+If the percentage greater than 90 “Grade: A” is printed. <br/>
+If the percentage greater than 80 “Grade: B” is printed. <br/>
+If the percentage greater than 70 “Grade: C” is printed. <br/>
+If the percentage greater than 60 “Grade: D” is printed. <br/>
+otherwise , Fail is Printed.
+
+**Code:**
+
+```py title="if-else.py" showLineNumbers="true"
+marathi,hindi,english,math,science = input("Enter marks of 5 subject :").split()
+sum = int(marathi) + int(hindi) + int(english) + int(math) + int(science)
+per = (sum/500)*100
+print("Percentage :",per)
+
+if per>=90:
+  print("Grade A")
+elif per>=80:
+  print("Grade B")
+elif per>=70:
+  print("Grade C")
+elif per>=60:
+  print("Grade D")
+else:
+  print("FAIL")
+```
+
+**Output:**
+
+>Enter marks of 5 subject :40 30 45 35 38 <br/>
+>Percentage : 37.6 <br/>
+>FAIL
+
+
+In the above example, we takes input from the user in the form of marks obtained in five subjects `Marathi, Hindi, English, Math, and Science`. It then calculates the  sum  marks obtained and the   `percentage` obtained by the student. Finally, based on the percentage obtained, it prints the grade of the student.
+
+But This case If the condition sequence will change , then output will also change.👇👇 Because we have not set any boundary conditions.
+
+```py title="if-else.py" showLineNumbers="true"
+marathi,hindi,english,math,science= input("Enter Marks of 5 Subject : ").split()
+sum=int(marathi)+int(hindi)+int(english)+int(math)+int(science)
+per=(sum/500)*100
+print("Percentage :",per,"%")
+if per>=60:
+  print("Grade D")  
+elif per>=70:
+  print("Grade C")
+elif per>=80:
+  print("Grade B")
+elif per>=90:
+  print("Grade A")
+else:
+  print("FAIl")
+```
+
+So, Give Boundary conditions of the above Program. After give a boundary condition then sequence does not matter and our output also not change.
+
+**Code:**
+
+```py title="if-else.py" showLineNumbers="true"
+marathi,hindi,english,math,science= input("Enter Marks of 5 Subject : ").split()
+sum=int(marathi)+int(hindi)+int(english)+int(math)+int(science)
+per=(sum/500)*100
+print("Percentage :",per,"%")
+if per>=60 and per<70:
+  print("Grade D")
+elif per>=70 and per<80:
+  print("Grade C")
+elif per>=80 and per<90:
+  print("Grade B")
+elif per>=90: and per<=100:
+  print("Grade A")
+else:
+  print("FAIl")
+```
+
+**Output:**
+
+>Enter Marks of 5 Subject : 91 93 93 98 85 <br/>
+> Percentage : 92.0 %  <br/>
+>Grade A 

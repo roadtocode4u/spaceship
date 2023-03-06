@@ -29,12 +29,12 @@ int main() {
 
 **Output :**
 
-Hello
-Hello
-Hello
-Hello
-Hello
-Hello
+Hello  
+Hello  
+Hello  
+Hello  
+Hello  
+Hello  
 
 **Example:**
 
@@ -58,11 +58,11 @@ int main() {
 **Output :**
 
 Enter Number :5  
-Hey   
-Hey   
+Hey     
+Hey     
+Hey      
 Hey    
-Hey  
-Hey 
+Hey   
 
 **Example:**
 
@@ -85,10 +85,10 @@ int main() {
 
 **Output :**
 
-Enter Number :3
-Xerox... 1
-Xerox... 2
-Xerox... 3
+Enter Number :3  
+Xerox... 1  
+Xerox... 2  
+Xerox... 3  
 
 **Example:**
 
@@ -107,9 +107,96 @@ int main() {
 
 **Output :**
 
-5
-4
-3
-2
-1
+5  
+4  
+3  
+2  
+1  
 0
+
+**While Loop**
+
+Entry Controlled  
+Pre-Tested Loop  
+if condition will false it will run zero times  
+
+**Syntax:**
+
+```c
+while(condition)
+{
+
+}
+```
+
+**Example :**
+
+```c
+#include <stdio.h>
+
+int main() {
+    
+    int i=0;
+    
+    while(i<5)
+    {
+        printf("\n%d",i);
+        
+        i++;
+    }
+    return 0;
+}
+```
+
+**Output :**
+0  
+1  
+2  
+3  
+4  
+
+**Do-While Loop**
+
+Exit Controlled
+Post-Tested Loop
+if condition will false it will run ones
+
+**Syntax:**
+
+```c
+do
+{
+ 
+}
+while(condition);
+```
+
+**Example:**
+
+```c
+#include <stdio.h>
+
+int main() {
+    
+    int i=0;
+    
+    do
+    {
+        printf("\n%d",i);
+        
+        i++;
+    }
+    
+    while(i<5);
+    
+    return 0;
+}
+```
+
+**Output :**
+
+0  
+1  
+2  
+3  
+4  

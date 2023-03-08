@@ -129,3 +129,59 @@ Then, the `sayHello()` function is called three times with different **arguments
 In the above example, we define a function called `addTwoNumbers()` that takes two **parameters** - `num1` and `num2`. The function calculates the `sum` of `num1` and `num2` using the `+ operator` and stores the result in a variable called `sum`. Then, the function writes a message to the document using `document.write()`, displaying the value of `sum`.
 
 After defining the function, it is called twice with different **arguments** - `addTwoNumbers(5, 7)` and `addTwoNumbers(8, 1)`. These calls pass in different values for `num1` and `num2`, which are used by the function to calculate the `sum` and display it on the document.
+
+
+**Code**
+
+ ```js
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello JS 💛</title>
+    <script>
+    function addTwoNumbers(a, b)
+    {
+       const sum = a + b;
+       document.write("<br /> Sum : "+sum);
+    }
+
+    const num1 = parseInt(prompt("Enter Num 1: ));
+    const num2 = parseInt(prompt("Enter Num 2: ));
+
+    addTwoNumbers(num1, num2)
+    </script>
+  </head>
+  <body></body>
+</html>
+ ```
+In the above code we create function that takes two numbers as input and adds them together. The function then outputs the sum using the `document.write()` method, which writes the sum to the web page.
+
+The `parseInt()` method is used to convert the input values from strings to numbers so that they can be added together. The `prompt()` method is used to prompt the user to enter two numbers, which are then assigned to the variables `num1` and `num2`.
+
+Two prompts will appear asking the user to `enter two numbers`. After the user enters the numbers, the function will be called with those values as arguments, and the sum will be displayed on the page using the `document.write()` method.
+
+**Code**
+
+ ```js
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello JS 💛</title>
+    <script>
+  function calAreaOfRectangle(l, b){
+    const area = l * b;
+    return area;
+  }
+  const ans = calAreaOfRectangle(5, 4)
+  console.log(ans)
+    </script>
+  </head>
+  <body></body>
+</html>
+ ```
+
+In the above code defines a function `calAreaOfRectangle` which takes two parameters `l` (length) and `b` (breadth) and calculates the area of a rectangle using the formula `area = length * breadth`. The calculated area is then returned by the function.
+
+The function is then called with arguments `5` and `4`, and the returned value is stored in a variable `ans`. Finally, the value of `ans` is printed to the console using `console.log()`.
+
+The expected output of this code is `20`, which is the area of the rectangle with length `5` and breadth `4`.

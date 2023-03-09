@@ -138,6 +138,13 @@ WAP to calculate sum of marks of 5 subjects. Use prompt to take input from use
 
 ## Homework No-24
 
-1. WAP to find given alphabet is vowel or consonants using switch case.
+WAP to find given alphabet is vowel or consonants using switch case.
 
+## Homework No-25
+
+WAP to build function that can calculate area of rectangle when length and breadth are passed as a parameter.
+
+## Homework No-26
+
+Create a webpage to show bulb (or object of your choice) using image tag and change it's source on button click .
 

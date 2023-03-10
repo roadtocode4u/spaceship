@@ -37,7 +37,7 @@ print(MyNumber)
 **Output:**
 >range(0, 10)
 
-We can passed a one parameter so its range function decide this one parameter `stop` because starting and step parameter have already bydefault value that is `0` & `1`. but we can passed a one value then this is decide this value is `stop`.
+We can passed a one parameter so its range function decide this one parameter `stop` because starting and step parameter have already by default value that is `0` & `1`. but we can passed a one value then this is decide this value is `stop`.
 
 ```python title="example 2"
 MyNumber=range(2,10)
@@ -62,9 +62,9 @@ In loops you can repeate n number of code and lines.
 There are three types are: 
 1. for loop
 2. while
-3. nested loop
 
 ## For Loop 
+
 For loops are used when you have a block of code which you want to repeat a fixed number of times.
 
 **Syntax :**
@@ -176,6 +176,10 @@ for i in range(5, 55, 5):
 >40<br/>
 >45<br/>
 >50
+
+The `range()` function generates a sequence of numbers from the starting point `5` up to, but not including, the ending point `55`, incrementing by the step value `5` on each iteration of the loop.
+
+So, in each iteration of the loop, the value of `i` will be incremented by `5`, and the loop will print the value of `i`. The loop will run `10` times, printing the values `5`, `10`, `15`, `20`, `25`, `30`, `35`, `40`, `45`, and `50`.
 
 ```python title="example 7"
 n = int(input("Enter n :"))

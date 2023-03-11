@@ -234,6 +234,8 @@ In the above example, we are taking a input from user.The `for` statement initia
 
 The `range(num)` function generates a sequence of numbers from `0 to num`, then we are applying here `if condition` this condition is true then print `i` or `even number`.
 
+## Break & Continue Keyword
+
 ```python title="example 10"
 for val in range(10):
   if val == 2:
@@ -268,6 +270,8 @@ for val in range(10):
 In the above example, The `for` statement initiates a loop that will repeat for a specified number of times, in this case, ten times.
 
 The `range(10)` function generates a sequence of numbers from `0 to 9`, we are applying `if condition` "if val == 2" then we will use `continue` keyword for `skip` the specific number of the loop. so output is only print `0,1,3,4,5,6,7,8,9`.
+
+## else keyword in python
 
 ```python title="example 12"
 for i in range(10):

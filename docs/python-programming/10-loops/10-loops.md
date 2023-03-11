@@ -326,3 +326,119 @@ for i in range(5):
 In the above example, The `for` statement initiates a loop that will repeat for a specified number of times, in this case, five times.
 
 The `range(5)` function generates a sequence of numbers from `0 to 4`, we are applying `if else condition` then check the  condition "if val == 2" then we will use `continue` keyword for `skip` the specific number of the loop. then print the `i` number of values and then go to the `else` part and print `Loop executed successfully!!`.
+
+```python title="example 15"
+number  = int(input("Please enter any Number :"))
+fact = 1
+
+for i in range(1, number+1):
+  fact = fact * i
+print(fact)
+```
+**Output:**
+>Please enter any Number :5<br/>
+>120
+
+In the above example, we are taking a input from user and stored in the number variable in second line we are created `fact = 1`. 
+
+The `for` statement initiates a loop that will repeat for a specified number of times, in this case, n number of times we are passesd in the range starting from `1` & stop point `number + 1`. Again we are stored in the fact variable `fact * i` and print `fact`.
+
+```python title="example 16"
+students = ["Dhanashri", "Sahil","Rahul","Chaitali"]
+for student in students:
+  print("Sending mail to..",student)
+```
+**Output:**
+>Sending mail to.. Dhanashri<br/>
+>Sending mail to.. Sahil<br/>
+>Sending mail to.. Rahul<br/>
+>Sending mail to.. Chaital<br/>
+
+In the above example we are create one `students` list and stored multiple data in their list,here apply for loop in this loop create one variable `student` and pass `students` list then finally we are print `student` name. so,output print for each student name of the students list.
+
+```python title="example 17"
+marks  = [90, 80, 70, 56, 78]
+sum = 0
+for mark in marks:
+  sum = sum + mark
+print(sum)
+```
+**Output:**
+>374
+
+In the above axample, we are declare one marks variable and stored different marks. create `sum` variable and its value is 0, here apply for loop in this loop create one variable `mark` and pass `marks` list.
+
+Again create `sum` variable and stored in the `sum` variable addition of previous `sum` variable and `marks`. In the last we are print `sum`.
+
+```python title="example 18"
+tuple1 = (10, 20, 30, 40, 50)
+for tup in tuple1:
+  print(tup)
+```
+**Output:**
+>10<br/>
+>20<br/>
+>30<br/>
+>40<br/>
+>50
+
+In the above example, we are create one tuple that is `tuple1` storing differnt multiple data in that. Here apply for loop in this loop create `tup` variable and pass `tuple1` tuple then print this `tup`.
+
+```python title="example 19"
+courses = {
+    "c": 499,
+    "c++": 499,
+    "python": 499,
+    "icp":999,
+    "dsa": 999
+}
+
+for i in courses.keys():
+  print(i)
+```
+**Output:**
+>c<br/>
+>c++<br/>
+>python<br/>
+>icp<br/>
+>dsa
+
+In the above example, create one dictionary that is `courses` here we are use for loop in this loop create `i` variable and pass `courses.keys`. then print `i` variable so, we get all `keys` of `courses` dictionary.
+
+```python title="example 20"
+courses = {
+    "c": 499,
+    "c++": 499,
+    "python": 499,
+    "icp":999,
+    "dsa": 999
+}
+
+for i in courses.values():
+  print(i)
+```
+**Output:**
+>499<br/>
+>499<br/>
+>499<br/>
+>999<br/>
+>999
+
+In the above example, create one dictionary that is `courses` here we are use for loop in this loop create `i` variable and pass `courses.values`. then print `i` variable so, we get all `values` of `courses` dictionary.
+
+```python title="example 21"
+progress = {
+    "vedika": 90,
+    "Aniket": 91,
+    "pranali": 93,
+    "Prajakta": 94
+}
+
+for k,v in progress.items():
+  print(k,"scored",v,"marks")
+```
+**Output:**
+>vedika scored 90 marks<br/>
+>Aniket scored 91 marks<br/>
+>pranali scored 93 marks<br/>
+>Prajakta scored 94 marks

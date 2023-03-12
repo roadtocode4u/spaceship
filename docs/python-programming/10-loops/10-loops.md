@@ -449,6 +449,9 @@ for k,v in progress.items():
 
 ## While loop
 
+While  loop is used to repeat a specific block of code an unknown no.of time .
+While loop is called as Entry control Loop. The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true.
+
 ```python showLineNumbers="true" title="example1.py"
 i = 0
 while i<5:

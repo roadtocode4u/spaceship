@@ -446,3 +446,58 @@ for k,v in progress.items():
 >Aniket scored 91 marks<br/>
 >pranali scored 93 marks<br/>
 >Prajakta scored 94 marks
+
+## While loop
+
+```python showLineNumbers="true" title="example1.py"
+i = 0
+while i<5:
+  print(i)
+  i = i+1
+```
+**Output**
+>0  <br/>
+>1  <br/> 
+>2  <br/>
+>3  <br/>
+>4  <br/>
+
+In the above example, we are declare one variable that's value is `0`. here, apply the while loop if the while loop condition will be true then its enter in loop and print `i` increase by 1. 
+
+**Example :**
+
+>Write a program to Count the Number of Digits Present In a Number.
+
+
+```python showLineNumbers="true" title="example2.py"
+num = int(input("Enter Any Number :"))
+count = 0
+while num>0:
+  num = num // 10 
+  count = count + 1
+print("Total Digits: ",count)
+```
+**Output**
+>Enter Any Number :63465346 <br/>
+>Total Digits:  8
+
+In the above example, we are created one variable that is `num` in that variable taking input from a user, declare the `count` variable and its value `0` use here `while` loop in that `num>0` condition if this condition will be true then enter in the loop. num variable store `num // 10` value `//` is floor by 10, we are increasing count value by `1` then print this `count` so, in last we get total digit for the corresponding number.
+
+**Example :**
+
+>Write a program to reversed the Present Number.
+
+```python showLineNumbers="true" title="example3.py"
+num = int(input("Enter Any Number :"))
+rev = 0
+while num>0:
+  rem = num % 10
+  rev = (rev*10)+rem
+  num = num // 10
+print("Reversed Number : ",rev)
+```
+**Output**
+>Enter Any Number :483675 <br/>
+>Reversed Number :  576384
+
+In the above example, we are created one variable that is `num` in that variable taking input from a user, declare the `rev` variable and its value `0` use here `while` loop in that `num>0` condition if this condition will be true then enter in the loop. in the 4th line, we are declared `rem` variable is assigned `num % 10`, in the 5th line we declare the `rev` variable is assigned `rev` multiply by `10` and add `rem` to that `rev` value .and in 6th line we are declared `num` variable again and its assign `num // 10` so, in last we get reversed number.

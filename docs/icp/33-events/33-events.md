@@ -139,4 +139,41 @@ In the above code this is a simple HTML code that creates two buttons labeled `O
 
 When the user clicks on the `One` button, the `printOne()` function will be called, and the value `1` will be logged to the console. Similarly, when the user clicks on the `Two` button, the `printTwo()` function will be called, and the value `2` will be logged to the console.
 
+## onmouseout
+
+The onmouseout event occurs when a user moves the mouse pointer out of an element.
+
+**Code :**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <button 
+    onmouseout="console.log('mouse goes out')">
+    Mouse Events
+    </button>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/33/output-5.png" alt="output-5" width="600px"/>
+
+This is a button element that has an `onmouseout` event listener attached to it. The `onmouseout` event is triggered when the mouse pointer moves out of the button element. In this case, when the `onmouseout` event is triggered, the console will log the message `mouse goes out`.
+
+## onkeypress
+
+The onkeypress event occurs when the user presses a key.
+
+## onkeyup
+
+The onkeyup event occurs when the user releases a key.
+
+
 

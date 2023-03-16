@@ -4,93 +4,6 @@ description: "Arbitrary Arguments, Default Arguments"
 hide_table_of_contents: true
 ---
 
->Write a program to find simple interest using function all cases .
-
-💡 HINT : Simple Interest = (P x T x R)/100
-Where,
-P is the principle amount
-T is the time and
-R is the rate
-
-👉Answer Of this program based on following 4 ways:
-
-**1. No Arguments And No Return:**
-
-**Program :**
-```python showLineNumbers="true" title="No Arguments And No Return.py"
-def cal_si():
-  p = int(input("Enter Principle : "))
-  r = int(input("Enter Rate : "))
-  t = int(input("Enter time : "))
-  si = p*r*t/100
-  print(si)
-cal_si()
-```
-**Output**
->Enter Principle : 5000 <br/>
->Enter Rate : 3<br/>
->Enter time : 2<br/>
->300.0
-
-**2. Arguments but No Return:**
-
-**Program :**
-```python showLineNumbers="true" title="Arguments but No Return.py"
-def cal_si(p,r,t):
-  si = p*r*t/100
-  print(si)
-
-Amount = int(input("Enter Amount : "))
-Rate = int(input("Enter Rate : "))
-Time = int(input("Enter Time : "))
-cal_si(Amount, Rate, Time)
-```
-**Output**
->Enter Principle : 5000 <br/>
->Enter Rate : 3<br/>
->Enter time : 2<br/>
->300.0
-
-**3. No Arguments but Return:**
-
-**Program :**
-```python showLineNumbers="true" title="No Arguments but Return.py"
-def cal_si():
-  p = int(input("Enter Principle : "))
-  r = int(input("Enter Rate : "))
-  t = int(input("Enter time : "))
-  si = p*r*t/100
-  return si
-
-ans = cal_si()
-print(ans)
-```
-**Output**
->Enter Principle : 5000 <br/>
->Enter Rate : 3<br/>
->Enter time : 2<br/>
->300.0
-
-**4. Arguments And Return:**
-
-**Program :**
-```python showLineNumbers="true" title="Arguments And Return.py"
-def cal_si(p, r, t):
-  si = p*r*t/100
-  return si
-
-Amount = int(input("Enter Amount : "))
-Rate = int(input("Enter Rate : "))
-Time = int(input("Enter Time : "))
-ans = cal_si(Amount,Rate, Time)
-print(ans)
-```
-**Output**
->Enter Principle : 5000 <br/>
->Enter Rate : 3<br/>
->Enter time : 2<br/>
->300.0
-
 ## Arbitrary Arguments :
 
 Especially useful when we are not sure in the advance that how many arguments, the function would require.
@@ -111,7 +24,7 @@ greeting("Ankita","Mahesh","Dhanashri")
 >Dhanashri <br/>
 
 In the above example, we are create function `greeting` with the use of arbitrary argument its defining a function using the asterisk (*) sign.
-print `students` function , while define `greeting` function that time we are pass `studests` in parameter.
+print `students` variable , while define `greeting` function that time we are pass `studests` in parameter.
 
 **Program :**
 ```python showLineNumbers="true" title="Arbitrary arguments.py"

@@ -34,7 +34,7 @@ for i in range(num):
 >5<br/>
 >8
 
- In the above example, we are taking create one variable that is `num` and taking input from the user. In the `f` variable  we are storing value of `0` and `s` variable we are storing value of `1` then print `f` & `s`.  The `for` statement initiates a loop that will repeat for a specified number of times, in this case, `num times.
+ In the above example, we are taking create one variable that is `num` and taking input from the user. In the `f` variable  we are storing value of `0` and `s` variable we are storing value of `1` then print `f` & `s`.  The `for` statement initiates a loop that will repeat for a specified number of times, in this case, `num times`.
 
  then we are creating `num` variable and in this variable storing value of addtion of `f & s`. In this `f` variable we are storing value of `s`. and `s` variable storing value of `num` then print this `num` variable.
 

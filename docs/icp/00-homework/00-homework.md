@@ -148,3 +148,7 @@ WAP to build function that can calculate area of rectangle when length and bread
 
 Create a webpage to show bulb (or object of your choice) using image tag and change it's source on button click .
 
+## Homework No-27
+
+Create a simple web app using html, css and js to toggle colors of whiteboard (div). Use class changing logic of JS.
+

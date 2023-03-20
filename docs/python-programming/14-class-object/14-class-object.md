@@ -39,6 +39,10 @@ sahil.ShowStudent()
 >Sahil <br/>
 >124 
 
+In the above example, we are creating the `Students` class in this class we are declare two variables that's name is `full_name` & `roll_no`. And to create the `showStudent()` function with the pass `self` parameter.
+
+So, we are create object for class `Students` that is `chaitali` with the help of `chaitali` object we are calling `full_name` & `roll_no` again create one object for `Students` that name is `sahil`, Similarly we are calling `full_name` & `roll_no` with the   `sahil` object.
+
 ## Getter and Setter in Python 
 
 **Getter :**
@@ -71,3 +75,7 @@ kavita.getStudents()
 
 >Name :  Kavita <br/>
 >Roll No :  123
+
+In the above example, we are creating the `Student` class in this class we are declare two variables that's name is `Name` & `roll_no`. And to create the two functions that's name is  `setStudent()` & `getStudents` with the pass `self` parameter.
+
+So, we are create object for class `Student` that is `kavita` with the help of `kavita` object we are calling `setStudent()` & `getStudents` in the `setStudent` we are pass two parameter for `Name` & `roll_no`

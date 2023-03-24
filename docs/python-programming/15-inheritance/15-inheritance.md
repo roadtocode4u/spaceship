@@ -206,6 +206,14 @@ obj2.cal_area(10,20)
 >300.0  
 >200  
 
+In the above example, we create class `helper` in that class create one function `cal_si()` this function carries default parameter `self` & `p`, `r` &`t` also pass then print `si`.
+
+we create a second function `cal_area()` this function also carries the `self` default parameter as well as `l` & `b` and then print `area`.
+
+we are creating class `bank` in this class create function `loan` with `self` parameter & print `"Loan"`.
+
+create the object for class `bank` that is `obj` & calling the `loan` function. again create the object for class `helper` that is `obj2` & calling the `cal_si()` function with parameter `p`, `r` & `t` values, calling `cal_area()` function with parameter `l` & `b` values. 
+
 ## Abstraction  
 Show the necessary things and hiding unnecessary information from the user.
 
@@ -226,6 +234,10 @@ obj.showStudent()
 **Output**
 >Enter Name :pinki  
 >Student Name : pinki  
+
+In the above example, we create one class `student` in that class and create the variable `studentName`. here two function `getStudent()` & `showStudent()`. In the `getStudent()` function we access the variable `studentName` with the `self` parameter & In the `showStudent()` function we print them.
+
+create the object for the `student` class that is `obj` and call both the functions that are `getStudent()` & `showStudent()`.
 
 ## Polymorphism 
 Polymorphism in python defines methods in the child class that have the same name as the methods in the parent class.
@@ -249,3 +261,5 @@ obj2.speak()
 **Output**
 >Meowwwww^$%^$^$^%    
 >BHoooooo!  
+
+In the above example, we create classes `cat` and `dog` in both classes we pass the same function that is `speak()` with the `self` parameter, and create the object for both classes `obj1` & `obj2` respectively. 

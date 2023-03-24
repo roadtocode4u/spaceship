@@ -1,9 +1,16 @@
 ---
-title: Inheritance
-description: "Inheritance"
+title: Four Pillars 0f OOPs
+description: "Four Pillars"
 hide_table_of_contents: true
 ---
 
+## Four Pillars
+1. Inheritance  
+2. Encapsulation   
+3. Abstraction   
+4. Polymorphism  
+
+## Inheritance
 
 Inheritance means deriving properties of one class into another class.
 
@@ -168,3 +175,91 @@ objC.showParent()
 In the above example, we are creating the `Parent` class in that class to create the `showParent()` function with the pass `self` parameter. Similarly, for class `A`, class `B` & class `C`  we are creating the `A`, `B` & `C` classes in that classes to create the `showName()` functions here class `A`, class `B` and class `C`  inherit class `Parent` respectively. 
 
 So, we create the object for class `A` that is `objA`, for class `B` that is `objB` & for class `C` that is `objC`. And most important we are calling the class `Parent` function in them.
+
+## Encapsulation 
+Binding similar data and its functionality.
+
+
+```python showLineNumbers='true' title='encapsulation_ex.py'
+class helper:
+  def cal_si(self, p ,r, t):
+    si = (p*r*t)/100
+    print(si)
+
+  def cal_area(self,l,b):
+    area = l * b
+    print(area)
+
+class bank:
+  def loan(self):
+    print("Loan")
+
+obj1 = bank()
+obj1.loan()
+
+obj2 = helper()
+obj2.cal_si(5000,3,2)
+obj2.cal_area(10,20)
+```
+**Output**
+>Loan  
+>300.0  
+>200  
+
+In the above example, we create class `helper` in that class create one function `cal_si()` this function carries default parameter `self` & `p`, `r` &`t` also pass then print `si`.
+
+we create a second function `cal_area()` this function also carries the `self` default parameter as well as `l` & `b` and then print `area`.
+
+we are creating class `bank` in this class create function `loan` with `self` parameter & print `"Loan"`.
+
+create the object for class `bank` that is `obj` & calling the `loan` function. again create the object for class `helper` that is `obj2` & calling the `cal_si()` function with parameter `p`, `r` & `t` values, calling `cal_area()` function with parameter `l` & `b` values. 
+
+## Abstraction  
+Show the necessary things and hiding unnecessary information from the user.
+
+
+```python showLineNumbers='true' title='Abstraction_ex.py'
+class student :
+  studentName = ''
+  def getStudent(self):
+    self.studentName = input("Enter Name :")
+
+  def showStudent(self):
+    print("Student Name :", self.studentName)
+
+obj = student()
+obj.getStudent()
+obj.showStudent()
+```
+**Output**
+>Enter Name :pinki  
+>Student Name : pinki  
+
+In the above example, we create one class `student` in that class and create the variable `studentName`. here two function `getStudent()` & `showStudent()`. In the `getStudent()` function we access the variable `studentName` with the `self` parameter & In the `showStudent()` function we print them.
+
+create the object for the `student` class that is `obj` and call both the functions that are `getStudent()` & `showStudent()`.
+
+## Polymorphism 
+Polymorphism in python defines methods in the child class that have the same name as the methods in the parent class.
+
+
+```python showLineNumbers='true' title='Polymorphism_ex.py'
+class Cat : 
+  def speak(self):
+    print("Meowwwww^$%^$^$^%")
+
+class Dog :
+  def speak(self):
+    print("BHoooooo!")
+
+obj1 = Cat()
+obj1.speak()
+
+obj2 = Dog()
+obj2.speak()
+```
+**Output**
+>Meowwwww^$%^$^$^%    
+>BHoooooo!  
+
+In the above example, we create classes `cat` and `dog` in both classes we pass the same function that is `speak()` with the `self` parameter, and create the object for both classes `obj1` & `obj2` respectively. 

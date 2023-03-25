@@ -18,6 +18,12 @@ console.log(students)
 **Output :**
 > ['Harsh','Kashifa','Yogita','Ankita','Vrushali']
 
+In the above Code we defines an array called `students` with five elements: `Harsh`, `Kashifa`, `Yogita`, `Ankita`, and `Vrushali`.
+
+The `console.log()` function is then used to print the entire `students` array to the console.
+
+
+
 **You can access elements in an array using their index, which starts at `0`. For example, to access the first element in `students`, you would use:**
 
 ```js 
@@ -70,6 +76,10 @@ marks.length
 
 >5
 
+In the above code we defines an array called `marks` with five elements: `50`, `45`, `30`, `20`, and `10`.
+
+The length property of the `marks` array is then accessed using the `.` notation and returned. The length property returns the number of elements in the array, which is `5` in this case.
+
 **2. push()**
 
 To add element from the end of array
@@ -87,6 +97,14 @@ console.log(students)
 
 >['A','B','C','D'] <br/>
 >['A','B','C','D','E]
+
+In the above code we defines an array called `students` with four elements: `A`, `B`, `C`, and `D`.
+
+The first `console.log()` function is then used to print the entire students array to the console. 
+
+The `push()` method is then called on the students array with the argument `E`. This adds the string `E` as a new element at the `end` of the students array.
+
+The second `console.log()` function is then used to print the updated students array to the console.
 
 **3. pop()**
 
@@ -106,6 +124,14 @@ console.log(students)
 >['A','B','C','D'] <br/>
 >['A','B','C']
 
+In the above code we defines an array called `students` with four elements: `A`, `B`, `C`, and `D`.
+
+The first `console.log()` function is then used to print the entire students array to the console.
+
+The `pop()` method is then called on the students array. This `removes` the last element `D` from the students array.
+
+The second `console.log()` function is then used to print the updated students array to the console
+
 **4. unshift**
 
 To insert element from the start of array.
@@ -124,6 +150,14 @@ console.log(students)
 >['A','B','C','D'] <br/>
 >['E','A','B','C','D']
 
+In the above code we defines an array called `students` with four elements: `A`, `B`, `C`, and `D`.
+
+The first `console.log()` function is then used to print the entire students array to the console.
+
+The `unshift()` method is then called on the students array with the argument `E`. This `adds` the string `E` as a new element at the `beginning of the students array`.
+
+The second `console.log()` function is then used to print the updated students array to the console. 
+
 **5. Shift**
 
 To delete elements from the start of array.
@@ -141,6 +175,14 @@ console.log(students)
 
 >['A','B','C','D'] <br/>
 >['B','C','D']
+
+In the above code we defines an array called `students` with four elements: `A`, `B`, `C`, and `D`.
+
+The first `console.log()` function is then used to print the entire students array to the console.
+
+The `shift()` method is then called on the `students` array. This `removes the first element A from the students array`.
+
+The second `console.log()` function is then used to print the updated students array to the console.
 
 **6. splice()**
 This function can perform insertion and deletion at once.
@@ -162,6 +204,14 @@ console.log(students)
 
 >['A','B','C','D','E','F'] <br/>
 >['A','B','W','Q',E,'F']
+
+In the above code we can defines an array called `students` with six elements: `A`, `B`, `C`, `D`, `E`, and `F`.
+
+The first `console.log()` function is then used to print the entire students array to the console.
+
+The ``splice()` method is then called on the `students` array with the arguments `1`, `2`, `W`, and `Q`. This removes two elements starting from the index `1`, which removes `B` and `C`, and inserts two new elements `W` and `Q` in their place.
+
+The second `console.log()` function is then used to print the updated students array to the console. 
 
 **7. join()**
 

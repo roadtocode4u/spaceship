@@ -4,6 +4,13 @@ description: "Introduction to C Programming"
 hide_table_of_contents: true
 ---
 
+<ins
+className="adsbygoogle"
+data-ad-client="ca-pub-1373341236327290"
+data-ad-slot='9699001202'
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
 ### 🤔What is Programming ?
 
 Providing clear instruction to computer to perform specific operation.
@@ -41,7 +48,7 @@ Hello world!
 ### Program Explanation:
 
 **Line 1:** `#`defines path directory `include` means add `.h` defines header file. Header files means code. `<stdio.h>` stands for
-**Standard Input Output.**  
+**Standard Input Output.**
 `#include <stdio.h>` support input output file like printf() and scanf(). **printf( )** function display output on screen **scanf()** function take input from user.
 
 **Line 2:** `int` means Return type of your Function. `main()` it is the first function of every C program that is responsible for starting the execution and termination of the program.
@@ -68,7 +75,7 @@ int main()
 }
 ```
 
-**⚙️ Output :**  
+**⚙️ Output :**
 HyeHow Are You ?
 
 **Example 3 :**
@@ -83,7 +90,7 @@ int main() {
 }
 ```
 
-**⚙️ Output :**  
+**⚙️ Output :**
 My name is Suraj.I love teaching.I write code.
 
 ## New Line Character
@@ -102,7 +109,7 @@ int main() {
 }
 ```
 
-**⚙️ Output :**  
-My name is Suraj.  
-I love teaching.  
+**⚙️ Output :**
+My name is Suraj.
+I love teaching.
 I write code.

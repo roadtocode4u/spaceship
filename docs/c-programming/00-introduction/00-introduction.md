@@ -4,12 +4,18 @@ description: "Introduction to C Programming"
 hide_table_of_contents: true
 ---
 
-<ins
-className="adsbygoogle"
-data-ad-client="ca-pub-1373341236327290"
-data-ad-slot='9699001202'
-data-ad-format="auto"
-data-full-width-responsive="true"></ins>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1373341236327290"
+     crossOrigin="anonymous"></script>
+
+<ins className="adsbygoogle"
+     data-ad-client="ca-pub-1373341236327290"
+     data-ad-slot="9699001202"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 🤔What is Programming ?
 

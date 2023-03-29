@@ -8,14 +8,6 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import styles from "./index.module.css";
 
 function HomepageHeader() {
-  useEffect(() => {
-    try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (e) {
-      console.error(e);
-    }
-  }, []);
-
   const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>

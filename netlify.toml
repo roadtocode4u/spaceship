@@ -1,0 +1,10 @@
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "https://spaceship.roadtocode.org/*"
+  to = "https://roadtocode.org/spaceship/:splat"
+  status = 200
+  force = true

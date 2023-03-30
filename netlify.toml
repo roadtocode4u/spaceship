@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "https://spaceship.roadtocode.org/*"
+  from = "https://rtc-spaceship.netlify.app/docs/*"
   to = "https://roadtocode.org/spaceship/:splat"
   status = 200
   force = true

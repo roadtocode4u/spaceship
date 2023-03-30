@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "https://rtc-spaceship.netlify.app/*"
-  to = "https://www.roadtocode.org/spaceship/:splat"
-  status = 301
-  force = true

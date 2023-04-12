@@ -28,7 +28,7 @@ Let's look at the example below, if we want to store `ages` of `4` people then w
 
 Once you have created an array, you can add elements to it by assigning values to individual array elements. You can access a specific element of an array using its index, which starts from `0` and goes up to `size - 1`.
 
-```cpp
+```cpp showLineNumbers="true"
 int marks[5]; 
   
   marks[0] = 5;
@@ -42,7 +42,7 @@ This code creates an array marks with `five` elements and initializes them to `5
 
 **Code :**
 
-```cpp
+```cpp showLineNumbers="true"
 #include <iostream>
 using namespace std;
 
@@ -83,7 +83,7 @@ Finally, the program `returns 0`, indicating that the program ran successfully.
 
 You can use a loop to access and manipulate the elements of an array. The most commonly used loop for this purpose is the for loop.
 
-```cpp
+```cpp showLineNumbers="true"
 for(int i = 0; i < size; i++) {
     
 }
@@ -92,7 +92,7 @@ Here, `i` is the index of the array element. The loop runs from `0` to `size - 1
 
 **For example :**
 
-```cpp
+```cpp showLineNumbers="true"
 for(int i = 0; i < 5; i++) {
     cout << marks[i] << endl;
 }
@@ -103,7 +103,7 @@ This code uses a for loop to print out all the elements of the marks array.
 
 **Code :**
 
-```cpp
+```cpp showLineNumbers="true"
 #include <iostream>
 using namespace std;
 
@@ -133,13 +133,124 @@ int main() {
 
 In the above example, we created an `integer` array named `marks` with a size of `5`. We then initialized the array elements with the values of `10`, `20`, `30`, `40`, and `50`. Finally, we printed out the elements of the array using a `for loop`.
 
-### Largest element in an array
+**For loops are used to optimize the code by reducing the amount of code required and making it more efficient.Let's look at the example below.**
 
-will be added soon
+**Code :**
+
+```cpp showLineNumbers="true"
+#include <iostream>
+using namespace std;
+
+int main() {
+        int marks[4];
+    
+    for(int i=0; i<4; i++)
+    {
+        cout<<"Enter Value for index "<<i<<": ";
+        cin>>marks[i];
+    }
+    
+    for(int i=0; i<4; i++)
+    {
+        cout<<marks[i]<<endl;
+    }
+    return 0;
+}
+```
+
+**Output :**
+
+Enter Value for index 0: 5 <br/>
+Enter Value for index 1: 10 <br/>
+Enter Value for index 2: 15 <br/>
+Enter Value for index 3: 20 <br/>
+5 <br/>
+10 <br/>
+15 <br/>
+20
+
+In the Above example, The first `for loop` is used to iterate through each index of the `marks` array and take input for each index. Instead of taking input separately for each variable, the for loop is used to iterate through the array and take input for each index in a single iteration. This not only saves time but also makes the code more efficient and readable
+
+The second for loop is used to print the values of the `marks` array. Instead of printing each variable separately, the for loop is used to iterate through the array and print each index in a single iteration. This makes the code more efficient and saves time and effort.
+
+In summary, for loops are used to optimize code reducing the amount of code required and making it more efficient. By iterating through arrays, for loops allow us to perform operations on all elements of the array in a single iteration, rather than repeating the same code for each individual element. This can save time and effort, making our code more efficient and easier to read and understand.
 
 ### Sum of array elements
 
-will be added soon
+To calculate the sum of array elements, we can use a loop to iterate through each element of the array and add them together. Here's an example code to find the sum of elements in an array
+
+**code :**
+
+```cpp showLineNumbers="true"
+#include <iostream>
+using namespace std;
+
+int main() {
+   int runs[5] = {4, 2, 8,46,1};
+   
+   int sum = 0;
+   
+   for(int i=0; i<5; i++) 
+   {
+       sum = sum + runs[i];
+   }
+   
+   cout<<"Total Runs: "<<sum;
+   
+    return 0;
+}
+```
+
+**Output :**
+
+Total Runs: 61
+
+In the above code, we declare an integer array `runs` of size `5` and initialize it with the values `{4, 2, 8, 46, 1}` on line `5`. It should be noted that the first element in an array has an index of `0`, so `runs[0]` is `4`, `runs[1]` is `2`, and so on.
+
+On line 7, we declare an integer variable `sum` and initialize it to `0`. This variable will be used to store the sum of the elements in the `runs` array.
+
+Lines 9 to 12 start a for loop that iterates over the elements of the runs array. The loop variable `i` starts at `0` and goes up to `4`. Inside the loop, each element in the array is added to the `sum` variable.
+
+Finally, line 14 gives the output of the total `sum` of the elements in the runs array, along with the message `"Total Runs: "`.
+
+### Largest element in an array
+
+**Code :**
+
+```cpp showLineNumbers="true"
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[] = {40,9,8,7,16,20,4,99,75};
+    
+    int largest = arr[0];
+    
+    for(int  i=1; i<9; i++)
+    {
+        if(arr[i]>largest)
+        {
+            largest = arr[i];
+        }
+    }
+    
+    cout<<"Largest Element is :"<<largest;
+
+    return 0;
+}
+```
+
+**Output :**
+
+Largest Element is :99
+
+In the above Example, We` finds the largest element in an array of integers.
+
+The program first declares an integer array of size `9`, named `arr`, and initializes it with `9` integers. It then declares an integer variable named `largest` and initializes it with the first element of the array `arr[0]`.
+
+Next, the program uses a `for loop` to iterate over the elements of the array, starting from the second element `i=1` and ending at the last element `i<9`. Inside the loop, the program checks if the current element is greater than the current largest element `arr[i]>largest`. If it is, the current element is assigned to largest. This way, the loop will find the largest element in the array.
+
+Finally, the program prints the largest element using the `cout` statement.
 
 ### Remove an element from an array
 

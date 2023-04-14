@@ -252,11 +252,71 @@ Next, the program uses a `for loop` to iterate over the elements of the array, s
 
 Finally, the program prints the largest element using the `cout` statement.
 
-### Remove an element from an array
-
-will be added soon
-
 ### Reverse an array
+
+Reversing an array means to change the order of elements in the array such that the last element becomes the first, the second-last element becomes the second, and so on, until the first element becomes the last.
+
+For example, if we have an array [5, 4, 7, 9, 6], reversing the array would result in [6, 9, 7, 4, 5].
+
+**Code :**
+
+```cpp 
+#include <iostream>
+
+int main() {
+    using namespace std;
+    
+    int arr[5] = {5, 4, 7, 9, 6};
+    
+    for(int i=0; i<=4; i++)
+    {
+        cout<<arr[i]<<",";
+    }
+    
+    cout<<endl<<endl;
+    
+    int start = 0;
+    int end = 4;
+    while(start<end)
+    {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        
+        start++;
+        end--;
+    }
+    
+     for(int i=0; i<=4; i++)
+    {
+        cout<<arr[i]<<",";
+    }
+    
+    return 0;
+}
+```
+
+**Output :**
+
+5,4,7,9,6, <br/>
+
+6,9,7,4,5,
+
+In the above code we can create an array named `arr` of size `5` and assigns some initial values to it.
+
+Then, the program uses a for loop to print the values of the array element using the `cout` statement.
+
+After that, the program prints two new lines using the `endl` statement to separate the two sets of array values.
+
+Next, The code starts by initializing two integer variables, `start` and `end`, with the values `0` and `4` respectively. These variables are used to keep track of the indices of the elements in the array that need to be swapped.
+
+The while loop runs as long as start is less than end, which means that the loop will continue until the midpoint of the array is reached. Inside the loop, the values of `arr[start]` and `arr[end]` are swapped by using a temporary variable `temp` to hold the value of `arr[start]`, then assigning the value of `arr[end]` to `arr[start]` and finally assigning the value of `temp` to `arr[end]`.
+
+After the swap, `start` is `incremented by 1` and `end` is `decremented by 1`, so that the next two elements in the array can be swapped in the next iteration of the loop.
+
+Once the loop has finished running, the array arr will have been reversed, with the first element now being the last element, the second element being the second to last element, and so on. 
+
+### Remove an element from an array
 
 will be added soon
 

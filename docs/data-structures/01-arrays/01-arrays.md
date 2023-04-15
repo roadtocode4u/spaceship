@@ -260,7 +260,7 @@ For example, if we have an array [5, 4, 7, 9, 6], reversing the array would resu
 
 **Code :**
 
-```cpp 
+```cpp showLineNumbers="true"
 #include <iostream>
 
 int main() {
@@ -318,11 +318,150 @@ Once the loop has finished running, the array arr will have been reversed, with 
 
 ### Remove an element from an array
 
-will be added soon
+Removing an element from an array means deleting one of the values from the collection, which may shift the positions of the remaining elements.
 
+**Code :**
+
+```cpp showLineNumbers="true"
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int arr[50];
+    int size;
+    
+    cout<<"How many elements do you want to store? :";
+    cin>>size;
+    
+    for(int i=0; i<size; i++)
+    {
+        cout<<"Enter Value for index "<<i<<" :";
+        cin>>arr[i];
+    }
+    
+    cout<<"Before Remove Array elements are :";
+    for(int i=0; i<size; i++)
+    {
+        cout<<arr[i]<<", ";
+    }
+    
+    int index;
+    cout<<"\n At what position you want remove element :";
+    cin>>index;
+    
+    for(int i=index; i<size-1; i++)
+    {
+        arr[i] = arr[i+1];
+    }
+    size--;
+    
+    cout<<"After Remove Array elements are :";
+    for(int i=0; i<size; i++)
+    {
+        cout<<arr[i]<<", ";
+    }
+    
+    return 0;
+}
+```
+
+**Output :**
+
+How many elements do you want to store? :5 <br/>
+Enter Value for index 0 :10 <br/>
+Enter Value for index 1 :20 <br/>
+Enter Value for index 2 :30 <br/>
+Enter Value for index 3 :40 <br/>
+Enter Value for index 4 :50 <br/>
+Before Remove Array elements are :10, 20, 30, 40, 50,  <br/>
+At what position you want remove element :2 <br/>
+After Remove Array elements are :10, 20, 40, 50,<br/>
+
+The program declares an integer array named `arr` with a size of `50`, and an integer variable named `size`.
+
+The program take input from user to enter the number of elements they want to store in the array using the `cout` statement. It then reads the user input and stores it in the `size` variable using the `cin` statement.
+
+The program then uses a for loop to prompt the user to enter a value for each index of the array up to the specified `size`. It uses the `cout` statement to display the prompt and the `cin` statement to read the user input and store it in the appropriate index of the `arr` array.
+
+Next, the program uses another for loop to display the array elements before the removal. It uses the `cout` statement to display the elements of the array up to the specified size.
+
+The program then prompts the user to enter the index position of the element to be removed using the `cout` statement. It reads the user input and stores it in the `index` variable using the `cin` statement.
+
+Next, the program uses a for loop to remove the element at the specified index position by shifting all the elements to the right of it by one position to the left. It then decrements the size variable to indicate that the array now has one less element.
+
+Finally, the program uses another for loop to display the array elements after the removal. It uses the `cout` statement to display the elements of the array up to the new size.
+
+ 
 ### Linear search
 
-will be added soon
+Linear search, also known as sequential search, is a simple searching algorithm used to find an element in a list or array of values.
+
+In linear search, we start at the beginning of the list and examine each element in the list one-by-one, comparing it with the target element we are searching for. We continue this process until either we find the target element or reach the end of the list.
+
+**Code :**
+
+```cpp showLineNumbers="true"
+    #include <iostream>
+    using namespace std;
+    int main() {
+
+       int arr[5];
+
+       cout<<"Enter 5 Elements in Array: ";
+
+       for(int i=0; i<5; i++)
+       {
+        cin>>arr[i];
+       }
+
+       int key;
+       cout<<"Enter key to search: ";
+       cin>>key;
+
+       int flag = -1;
+
+       for(int i=0; i<5; i++)
+       {
+        if(key==arr[i])
+        {
+            flag = i;
+            cout<<"Key found at: "<<i<<endl;
+            break;
+        }
+       }
+       if(flag== -1)
+       {
+        cout<<"Element Not found";
+       }
+
+        return 0;
+    }
+```
+
+**Output :**
+
+Enter 5 Elements in Array: 10 20 30 40 50 <br/>
+Enter key to search: 30 <br/>
+Key found at: 2 <br/>
+
+In line 5, an integer array named `arr` of size `5` is declared. This means that the `arr` array can store `5` integers.
+
+Line 7 prints a message to the console, asking the user to `enter 5 elements in the array`.
+
+Lines 9 to 12 use a loop to read `5` integers from the user and store them in the `arr` array.
+
+Lines 14 to 16 ask the user to enter a key element that will be searched in the `arr` array.
+
+Line 18 initializes a `flag` variable to `-1`. This variable will be used to determine if the key element was found in the array.
+
+Lines 20 to 28 use a loop to check each element of the `arr` array to see if it matches the key element entered by the user. If a match is found, the flag variable is set to the index of the matching element, and the program prints a message to the console indicating where the `key was found`. The `break` statement is used to exit the loop once the key element is found.
+
+Lines 29 to 32 use an if statement to check if the `flag` variable was changed from its initial value of `-1`. If the flag is still `-1`, it means the key element was `not found in the arr array`. In that case, the program prints a message to the console indicating that the `element was not found`.
+
+Overall, this code searches for a key element in an array by iterating through each element of the array and checking if it matches the key element. If a match is found, the program prints the index where the key element was found. If no match is found, the program prints a message indicating that the element was not found.
+
 
 ### Binary search
 

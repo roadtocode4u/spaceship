@@ -465,7 +465,79 @@ Overall, this code searches for a key element in an array by iterating through e
 
 ### Binary search
 
-will be added soon
+Binary search is a searching algorithm used to find a particular value in a sorted list or array. It works by dividing the list into halves and comparing the target value with the middle element of the list. Depending on whether the target value is greater or less than the middle element, the algorithm eliminates the half that doesn't contain the target value and repeats the process on the remaining half. This is done repeatedly until the target value is found or the search space is exhausted. The algorithm is efficient and can quickly search large sorted lists.
+
+**Code :**
+
+```cpp showLineNumbers="true"
+
+#include <iostream>
+using namespace std;
+int main() {
+
+    int arr[5];
+    cout<<"Enter 5 Values: ";
+    for(int i=0; i<5; i++)
+    {
+        cin>>arr[i];
+    }
+
+    int key;
+    cout<<"Which number do you want to search: ";
+    cin>>key;
+
+    int start=0;
+    int end=4;
+    int flag = -1;
+
+    while(start<=end)
+    {
+       int mid = (start + end) / 2;
+
+       if(key==arr[mid])
+       {
+          flag = mid;
+           cout<<"Element found at: "<<mid;
+           break;
+       }
+       else if(key>arr[mid])
+       {
+           start = mid + 1;
+       }
+       else
+       {
+           end = mid - 1;
+       }
+    }
+    
+    if (flag == -1)
+    {
+        cout<<"Element Not Found";
+    }
+    
+    return 0;
+}
+```
+
+**Output :**
+
+Enter 5 Values: 10 20 30 40 50 <br/>
+Which number do you want to search: 20 <br/>
+Element found at: 1 <br/>
+
+In the above program In line 6, declares an integer array `arr` of size `5`.
+
+Line 7, display output a message to the console asking the user to enter `5` values.
+
+Line 8 to 11, We create a loop takes input from the user and stores it in the `arr` array.
+
+Line 13 to 15, These lines ask the user to input a number to search for, which is stored in the `key` variable.
+
+Line 17 to 19, These lines initialize variables `start` and `end` to `0` and `4` respectively, and `flag` to `-1`. `flag` will be used later to check if the element was found in the array or not.
+
+Line 21 to 39, This is a binary search algorithm to find the index of the `key` in the `arr` array. The loop runs as long as `start is less than or equal to end`. Inside the loop, the `mid` index is calculated as the average of `start` and `end`. If the element at the `mid` index is equal to `key`, the `flag` variable is set to the `mid` index, the index is printed to the console, and the loop is exited with `break`. If the `key is greater than the element at the mid index`, the start index is updated to `mid + 1`. If the `key is less than the element at the mid index`, the end index is updated to `mid - 1`.
+
+Line 41 to 44, This block of code checks if the `flag` variable is still `-1`, which means the key was not found in the array. If it is still -1, a message is printed to the console indicating that the element was not found.
 
 ### Bubble sort
 

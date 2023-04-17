@@ -539,6 +539,7 @@ Line 21 to 39, This is a binary search algorithm to find the index of the `key` 
 
 Line 41 to 44, This block of code checks if the `flag` variable is still `-1`, which means the key was not found in the array. If it is still -1, a message is printed to the console indicating that the element was not found.
 
+
 ## Windows Sum 
 
 **Code :**
@@ -590,6 +591,7 @@ In the above program, Line 7 to 9 we declares an integer array `arr` of size `10
 Line 11 to 20, create for loop that iterates from `i=1` to `i=8`. It calculates the sum of each window of size `3` by adding the `current element`, the `previous element`, and the `next element` in the array. If the current window `sum` is `larger` than the previous largest sum, the largest variable is updated, and the index variable is set to the current index. The `cout` statement prints the `sum` of each window to the console.
 
 In line 22, This line prints the largest window sum
+
 
 ### Bubble sort
 

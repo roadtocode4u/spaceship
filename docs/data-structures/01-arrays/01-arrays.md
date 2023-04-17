@@ -539,6 +539,58 @@ Line 21 to 39, This is a binary search algorithm to find the index of the `key` 
 
 Line 41 to 44, This block of code checks if the `flag` variable is still `-1`, which means the key was not found in the array. If it is still -1, a message is printed to the console indicating that the element was not found.
 
+## Windows Sum 
+
+**Code :**
+
+```cpp showLineNumbers="true"
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int largest = arr[0]+arr[1]+arr[2];
+    int index = 1;
+    
+    for(int i=1; i<=8; i++)
+    {
+        int sum = arr[i-1]+arr[i]+arr[i+1];
+        if(sum>largest)
+        {
+            largest = sum;
+            index = i;
+        }
+        cout<<arr[i-1]<<"+"<<arr[i]<<"+"<<arr[i+1]<<" = "<<sum<<endl;
+    }
+    
+    cout<<"Largest Window sum is : "<<largest<<endl;
+    cout<<"Window : "<<arr[index-1]<<","<<arr[index]<<","<<arr[index+1]<<endl;
+    
+    return 0;
+}
+```
+
+**Output :**
+
+1+2+3 = 6 <br/>
+2+3+4 = 9 <br/>
+3+4+5 = 12 <br/>
+4+5+6 = 15 <br/>
+5+6+7 = 18 <br/>
+6+7+8 = 21 <br/>
+7+8+9 = 24 <br/>
+8+9+10 = 27 <br/>
+Largest Window sum is : 27 <br/>
+Window : 8,9,10
+
+In the above program, Line 7 to 9 we declares an integer array `arr` of size `10` and initializes it with some values. The variable `largest` is initialized to the sum of the first three elements of the array. The variable `index` is initialized to `1`, which will be used to keep track of the index of the largest window. 
+
+Line 11 to 20, create for loop that iterates from `i=1` to `i=8`. It calculates the sum of each window of size `3` by adding the `current element`, the `previous element`, and the `next element` in the array. If the current window `sum` is `larger` than the previous largest sum, the largest variable is updated, and the index variable is set to the current index. The `cout` statement prints the `sum` of each window to the console.
+
+In line 22, This line prints the largest window sum
+
 ### Bubble sort
 
 will be added soon

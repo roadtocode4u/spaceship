@@ -4,7 +4,6 @@ description: "Bootstrap"
 hide_table_of_contents: true
 ---
 
-
 ```html
 Bootstrap => Css libraray
 prewritten CSS and JS

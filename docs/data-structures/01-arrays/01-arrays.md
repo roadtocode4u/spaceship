@@ -595,7 +595,62 @@ In line 22, This line prints the largest window sum
 
 ### Bubble sort
 
-will be added soon
+Bubble Sort is a simple sorting algorithm used in Data Structures and Algorithms (DSA) that works by repeatedly comparing adjacent elements in an array and swapping them if they are in the wrong order. It continues to iterate through the array until all elements are in the correct order.
+
+**Code :**
+
+```cpp showLineNumbers="true"
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int arr[6] = {1, 5, 2, 8, 9, 5};
+    int size = 6;
+    
+    cout<<"Before Swap: ";
+    for(int i=0; i<size; i++)
+    {
+        cout<<arr[i]<<" , ";
+    }
+    
+    for (int i=0; i<size-1; i++)
+    {
+        for(int j=0; j<size-i-1; j++)
+        {
+            if(arr[j] > arr[j+1])
+            {
+                int temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }
+    
+    cout<<"\nAfter Swap: ";
+    for(int i=0; i<size; i++)
+    {
+        cout<<arr[i]<<" , ";
+    }
+    
+    return 0;
+}
+```
+
+**Output :**
+
+Before Swap: 1 , 5 , 2 , 8 , 9 , 5 ,  <br/>
+After Swap: 1 , 2 , 5 , 5 , 8 , 9 , 
+
+In the above code, line 6, initializes an integer array `arr` with `six` elements and assigns initial values to the array. 
+
+Line 7, Creates an integer variable `size` and assigns it the value `6`.
+
+Lines 9 to 13, Display a message on the console indicating that the elements in the array are being printed `before sorting`, and a for loop iterates through the elements of the array `arr` to print each element to the console along with a comma separator. 
+
+Lines 15 to 26, Implement the bubble sort algorithm to sort the array in `ascending order`, where the outer loop iterates through the array elements from `0` to `size-1`, and the inner loop iterates through the array elements from `0` to `size-i-1`. In each iteration of the inner loop, adjacent elements are compared, and if they are not in the correct order, they are swapped using a temporary variable temp. 
+
+Lines 28 to 32, Display a message on the console indicating that the elements in the array are being printed after sorting, and a for loop iterates through the elements of the array `arr` to print each element to the console along with a comma separator.
 
 ### Kadane's algorithm
 

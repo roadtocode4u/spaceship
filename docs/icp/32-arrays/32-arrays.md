@@ -282,4 +282,4 @@ console.log(index)
 
 **Output :**
 
->2
+>1

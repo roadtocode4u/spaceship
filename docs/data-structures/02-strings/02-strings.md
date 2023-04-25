@@ -270,3 +270,153 @@ The output of this program will be `Palindrome` if the input string is a palindr
 
 
 
+## ASCII
+
+`ASCII` stands for `American Standard Code for Information Interchange`. It is a character encoding system that assigns numerical values to letters, digits, punctuation marks, and other symbols commonly used in the English language. ASCII has been used in various applications, such as text communication, data storage, and computer programming.
+
+## Character to ASCII Value
+
+**Code :**
+
+```cpp
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    char alpha = 'A';
+    cout<<(int)alpha;
+    
+    return 0;
+}
+```
+
+**Output :**
+
+65
+
+In the above program that declares a character variable named `alpha` and assigns the value `A` to it. Then, the program uses the `cout` statement to output the integer representation of alpha by Type casting it to an integer using the `(int)` operator.
+
+In `ASCII` encoding, the character `A` has an integer value of `65`. Therefore, this program would output `65` to the console.
+
+
+## ASCII Value to Character 
+
+**Code :**
+
+```cpp
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    char val =  67;
+    cout<<(char)val;
+    
+    return 0;
+}
+```
+
+**Output :**
+
+C
+
+In the above program that declares a character variable named `val` and assigns the integer value `67` to it. Then, the program uses the `cout` statement to output the character representation of `val` by casting it to a character using the `(char)` operator.
+
+In `ASCII` encoding, the integer value `67` represents the character `C`. Therefore, this program would output `C` to the console.
+
+## Capital to Small 
+
+**Code :**
+
+```cpp
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    char capital = 'B' ;
+    char small = capital + 32 ;
+    cout<<small;
+    
+    return 0;
+}
+```
+
+**Output :**
+
+b
+
+In the above program that converts a given uppercase alphabet into its corresponding lowercase alphabet.
+
+The program first declares a `char` variable `capital` and initializes it to the `uppercase` alphabet `B`. Then, it declares another `char` variable `small` and assigns it the value of `capital + 32`.
+
+In `ASCII`, the decimal value of `B` is `66`, and the decimal value of `b` is `98`. The program adds `32` to the `ASCII` value of `B` (i.e., 66+32=98) to get the `ASCII` value of `b`. The resulting value is then stored in the variable `small`.
+
+Finally, the program uses the `cout` statement to display the value of `small`, which is the lowercase alphabet `b`.
+
+When you run this program, the output will be `b` displayed on the console.
+
+**Code :**
+
+```cpp
+#include<iostream>
+using namespace std;
+
+int main()
+{
+   string str = "INDIA";
+   
+   for(int i=0; i<str.length(); i++)
+   {
+      if(str[i]>='A' && str[i]<='Z')
+      {
+           str[i] = str[i] + 32;
+      }
+   }
+   
+   cout<<"Small Letter is : "<<str;
+    
+    return 0;
+}
+```
+
+**Output :**
+
+Small Letter is : india
+
+In the above program that converts uppercase letters in a given string to lowercase letters using `ASCII` values.
+
+A string variable `str` is declared and initialized with the value `"INDIA"`.A for loop is used to iterate through each character of the string `str`.An if statement is used to check if the current character is an uppercase letter. This is done by checking if the `ASCII` value of the character lies between the `ASCII` values of `A` and `Z`. If the character is an uppercase letter, its `ASCII` value is increased by `32` to convert it to its corresponding lowercase letter. This is done using the expression `str[i] = str[i] + 32`. After the for loop completes, the converted string `str` is displayed on the screen using the `cout` statement.
+
+## Small to Capital
+
+**Code :**
+
+```cpp
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    char small = 'd' ;
+    char captial = small - 32 ;
+    cout<<captial;
+    
+    return 0;
+}
+```
+
+**Output :**
+
+D
+
+In the above program that converts a given lowercase alphabet into its corresponding uppercase alphabet.
+
+The program first declares a `char` variable `small` and initializes it to the lowercase alphabet `d`. Then, it declares another `char` variable `capital` and assigns it the value of `small - 32`.
+
+In `ASCII`, the decimal value of `d` is `100`, and the decimal value of `D` is `68`. The program subtracts `32` from the `ASCII` value of `d` (i.e., 100-32=68) to get the `ASCII` value of `D`'. The resulting value is then stored in the variable `capital`.
+
+Finally, the program uses the `cout` statement to display the value of `capital`, which is the uppercase alphabet `D`.
+
+When you run this program, the output will be `D` displayed on the console.

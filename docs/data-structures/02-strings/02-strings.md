@@ -420,3 +420,64 @@ In `ASCII`, the decimal value of `d` is `100`, and the decimal value of `D` is `
 Finally, the program uses the `cout` statement to display the value of `capital`, which is the uppercase alphabet `D`.
 
 When you run this program, the output will be `D` displayed on the console.
+
+## Largest word from String
+
+The concept of finding the largest word from a string involves iterating through each character of the string, and keeping track of the current word and its length. If a space is encountered, it means the current word has ended, so we check if it is longer than the previous maximum word and update the maximum word and its length accordingly. Once we have iterated through the entire string, we have found the largest word in the string.
+
+**Code :**
+
+```cpp showLineNumbers="true"
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    string str = "khul ja sim sim";
+    
+    string currWrod = "";
+    int currLength = 0;
+    
+    string maxWord = "";
+    int maxlength = 0;
+    
+    for (int i=0; i<str.length(); i++)
+    {
+        if(str[i]== ' ')
+        {
+            currWrod = "";
+            currLength = 0;
+        }
+        else
+        {
+            currWrod = currWrod +str[i];
+            currLength++;
+        }
+        
+        if(currLength > maxlength)
+        {
+            maxlength = currLength;
+            maxWord = currWrod; 
+        }
+    }
+    
+    cout<<"Max word is "<<
+    maxWord<<" with length: "<<maxlength;
+    
+    return 0;
+}
+```
+
+**Output :**
+
+Max word is `khul` with length: `4`
+
+In the above code line no 6 we create string variable `str` with the value `khul ja sim sim`. This is the input string we want to find the largest word from.
+
+Line 8 to 12, the code initializes four variables: `currWord`, `currLength`, `maxWord`, and `maxlength`. `currWord` and `currLength` keep track of the current word and its length as we iterate through the input string. `maxWord` and `maxlength` keep track of the largest word we have found so far and its length.
+
+In line 14 to 32, code then enters a for loop that iterates through each character of the input string `str`. Inside the for loop, the code checks if the current character is a space or not. If it is a space, it means the current word has ended, so the code resets `currWord` and `currLength` to start tracking a new word.After updating `currWord` and `currLength`, the code checks if the current word is longer than the previous largest word `(maxWord)`. If it is, then we update `maxWord` and `maxlength` to store the new largest word and its length. Once we have iterated through the entire input string, the largest word and its length are stored in `maxWord` and `maxlength`. Finally, the code prints the largest word and its length to the console.
+
+
+So, the output of this code is: `Max word is khul with length: 4`
+This means that the largest word in the input string `khul ja sim sim` is `khul`, which has a length of `4`.

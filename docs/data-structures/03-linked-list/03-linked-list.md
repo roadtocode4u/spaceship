@@ -73,3 +73,54 @@ Finally, the `return 0`; statement ends the program execution.
 
 ## Class and Object
 
+A class is a blueprint or a template that defines the characteristics and behavior of a set of objects. It defines the variables (also known as data members) and functions (also known as member functions or methods) that each object of that class will have.
+
+An object, on the other hand, is an instance of a class. It is a variable that has been created using the blueprint or template defined by the class. Each object of a class has its own set of variables and functions, and can be manipulated independently of other objects of the same class.
+
+**Code :**
+
+```cpp showLineNumbers="true"
+
+#include<iostream>
+
+using namespace std;
+
+   class Box
+   {
+       public:
+       int length;
+       int breadth;
+       
+       void takeValue()
+       {
+           cout<<"Enter length and breadth: ";
+           cin>>length>>breadth;
+       }
+       
+       void calArea()
+       {
+           int area = length * breadth;
+           cout<<"Area : "<<area;
+       }
+   };
+
+int main()
+{
+ Box b1;
+ b1.takeValue();
+ b1.calArea();
+ 
+    return 0;
+}
+```
+
+**Output :**
+
+Enter length and breadth:  <br/>
+10 20 <br/>
+Area : 200
+
+
+In the above program Line no 6 to 23, This block of code defines a `Box` class. This class has two `public` member variables: `length` and `breadth`. It also has two public member functions: `takeValue()` and `calArea()`. `takeValue()` prompts the user to enter values for `length` and `breadth` using cout and reads in those values from the console using `cin`. `calArea()` calculates the area of the box using the `length` and `breadth` member variables, and then prints the result to the console using `cout`.
+
+In line 25 to 31, This is the main function of the program. It creates an instance of the `Box` class called `b1`. It then calls `takeValue()` to prompt the user to enter values for `length` and `breadth` and stores those values in `b1`. Finally, it calls `calArea()` to calculate the area of the `box` and `print` the result to the console. The `return 0`; statement signals that the program has finished executing and `returns 0` to the operating system.

@@ -189,5 +189,3 @@ Next, four Node objects, `a`, `b`, `c`, and `d`, are created using the `new` key
 The objects are then linked together by setting the next pointer of each object to point to the next object in the sequence. In this case, `a->next` points to `b`, `b->next` points to `c`, `c->next` points to `d`, and `d->next` is set to `NULL`, indicating the end of the linked list.
 
 Finally, a pointer to the first object in the linked list `a` is assigned to a new pointer called `head`. A while loop is then used to traverse the linked list, printing out the data value of each Node object in sequence. The loop continues until the next pointer of the last Node object is `NULL`, indicating the end of the list.
-
-In summary, this code creates a simple linked list of four Node objects, and prints out the data values of each Node in sequence using a while loop.

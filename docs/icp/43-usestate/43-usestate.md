@@ -33,3 +33,51 @@ Here is an example of using useState in a functional component:
 ```
 
 In this example, the `App` function is a functional component that uses the `useState` hook to declare a `count` state variable with an initial value of `0`. The return statement of the function returns the `h1` element with the current value of the `count` variable, and a button that updates the `count` variable using the `setCount` function when clicked.
+
+
+## Form Handling using useState
+
+This Readme will show you how to use the `useState` hook in React to handle form input. We'll create a simple form component that allows the user to enter their `name` and `email` address, and then display that information on the screen.
+
+First, create a new component called `Form`. In this component, we'll create a form with two input fields for the `user's name` and `email address`. We'll also create a button to `submit` the form.
+
+**Code :**
+
+```js 
+import { useState } from 'react';
+
+function Form() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(`Name: ${name}, Email: ${email}`);
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        Name:
+        <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+      </label>
+      <label>
+        Email:
+        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+  );
+}
+
+export default Form;
+```
+
+In the above code,  we're using the `useState` hook to create two state variables, `name` and `email`, and two setter functions, `setName` and `setEmail`. We're also creating a `handleSubmit` function that will be called when the `user submits the form`.
+
+In the return statement, we're rendering a form with two input fields, one for the `user's name` and one for their `email address`. We're setting the value of each input to its corresponding state variable, and using the `onChange event` to update the state variable when the user types into the input.
+
+Finally, we're rendering a submit button that will call the `handleSubmit` function when clicked.
+
+
+

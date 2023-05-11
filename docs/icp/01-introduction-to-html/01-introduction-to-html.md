@@ -36,6 +36,65 @@ Editor is a simple software where we can create and edit files. We will be using
 3. Follow the prompts to complete the installation. This may include accepting the license agreement and choosing the location to install VS Code.
 4. Once the installation is complete, you can launch VS Code by clicking on its icon or by searching for it in your operating system's Start menu.
 
+### Steps to run the first webpage
+
+**To write the Following HTML code in a new file in the VS Code editor, follow these steps:**
+
+1. Create a new folder on your computer where you want to store your project files.
+2. Open VS Code editor on your computer.
+3. Click on `File` in the top menu bar.
+
+<img src="/icp/01/step-1.png" alt="step-1" width="600px"/>
+
+4. Click on `Open Folder` in the drop-down menu.
+
+<img src="/icp/01/step-2.png" alt="step-2" width="600px"/>
+
+5. Navigate to the folder you created in step 1 and click on `Open`.
+
+6. In the VS Code editor, on the right-hand side of your folder name, click on the `New File` option. This will allow you to create a new file within your folder.
+
+<img src="/icp/01/step-3.png" alt="step-3" width="600px"/>
+
+7. Give your file a name with ".html" extension (e.g. `suraj.html`).
+
+<img src="/icp/01/step-4.png" alt="step-4" width="600px"/>
+
+8. Now click on your file name to open the file, then Write the following HTML code into that file.
+
+<img src="/icp/01/step-5.png" alt="step-5" width="600px"/>
+
+9. Click on `File` in the top menu bar again.
+
+<img src="/icp/01/step-1.png" alt="step-1" width="600px"/>
+
+10. Click on the `Save` button.
+
+<img src="/icp/01/step-6.png" alt="step-6" width="600px"/>
+
+
+**Now you have created a new HTML file and save your file. To view the output of your HTML code, follow these steps:**
+
+1. Open your folder in your local system where you saved your HTML file.
+
+<img src="/icp/01/step-7.png" alt="step-7" width="600px"/>
+
+1. Right-click on the HTML file you just created.
+
+<img src="/icp/01/step-8.png" alt="step-8" width="600px"/>
+
+2. Click on `Open with` in the drop-down menu.
+
+<img src="/icp/01/step-9.png" alt="step-9" width="600px"/>
+
+3. Choose a web browser of your choice (e.g. Google Chrome, Mozilla Firefox, etc.).
+
+<img src="/icp/01/step-10.png" alt="step-10" width="600px"/>
+
+4. The browser will open and display the output of your HTML code.
+
+<img src="/icp/01/step-11.png" alt="step-11" width="600px"/>
+
 ### Tag in HTML
 
 Tags are used to provide meaning/effect to content.Also it provides special information about content.
@@ -53,7 +112,7 @@ Tags are used to provide meaning/effect to content.Also it provides special info
     <title>My Frist Webpage</title>
   </head>
   <body>
-    Hello Students 👋 Good Evening, Welcome to ICP 4.0 💫❤️
+    Hello Students 👋 Good Evening, Welcome to ICP 5.0 💫❤️
   </body>
 </html>
 ```
@@ -72,7 +131,7 @@ Tags are used to provide meaning/effect to content.Also it provides special info
 
 **Output :**
 
-<img src="/icp/01/output-1.png" alt="output-1" width="600px"/>
+<img src="/icp/01/step-11.png" alt="step-11" width="600px"/>
 
 Cheers you have create your first webpage 🍻
 

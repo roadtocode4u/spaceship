@@ -137,7 +137,7 @@ Linked lists can be classified into several types, such as singly linked list, d
 
 **Code :**
 
-```cpp
+```cpp showLineNumbers="true"
 #include<iostream>
 using namespace std;
 
@@ -189,3 +189,68 @@ Next, four Node objects, `a`, `b`, `c`, and `d`, are created using the `new` key
 The objects are then linked together by setting the next pointer of each object to point to the next object in the sequence. In this case, `a->next` points to `b`, `b->next` points to `c`, `c->next` points to `d`, and `d->next` is set to `NULL`, indicating the end of the linked list.
 
 Finally, a pointer to the first object in the linked list `a` is assigned to a new pointer called `head`. A while loop is then used to traverse the linked list, printing out the data value of each Node object in sequence. The loop continues until the next pointer of the last Node object is `NULL`, indicating the end of the list.
+
+## Length of LinkedList
+
+A LinkedList is a data structure made up of individual nodes that are linked together. Each node contains some data and a reference to the next node in the list. The length of a LinkedList refers to the number of nodes that are present in the list.
+
+**Code :**
+
+```cpp showLineNumbers="true"
+#include<iostream>
+using namespace std;
+
+class Node
+{
+    public:
+    int data;
+    Node *next;
+};
+int main()
+{
+    Node *a = new Node();
+    a->data = 5;
+    
+    Node *b = new Node();
+    b->data = 10;
+    
+    Node *c = new Node();
+    c->data = 15;
+    
+    Node *d = new Node();
+    d->data = 20;
+    
+    a->next = b;
+    b->next = c;
+    c->next = d;
+    d->next = NULL;
+    
+    int count = 0 ;
+    Node *ptr = a;
+    while(ptr != NULL)
+    {
+        count++;
+        ptr = ptr->next;
+    }
+    
+    cout<<"Length of Linkedlist : "<<count<<endl;
+    
+    return 0;
+}
+```
+
+**Output :**
+
+Length of Linkedlist : 4
+
+In the above program first we create a class called `Node`, which has two member variables: an `integer data`, and a pointer to another `Node` object, `next`. This pointer will be used to link together multiple Node objects to form the linked list.
+
+Next, four Node objects, `a`, `b`, `c`, and `d`, are created using the `new` keyword. The data member of each object is assigned a different integer value.
+
+The objects are then linked together by setting the next pointer of each object to point to the next object in the sequence. In this case, `a->next` points to `b`, `b->next` points to `c`, `c->next` points to `d`, and `d->next` is set to `NULL`, indicating the end of the linked list.
+
+In line 29 to 30, The code then declares an integer variable `count` to keep track of the number of nodes in the LinkedList, and a pointer variable `ptr` to traverse the LinkedList starting from the first node.
+
+Line 31 to 35, A while loop is used to traverse the LinkedList until the end is reached (`ptr` becomes NULL). Inside the loop, the `count` variable is incremented by one, and the `ptr` variable is updated to point to the next node in the LinkedList.
+
+Finally, the length of the LinkedList is printed to the console using the `cout` statement.

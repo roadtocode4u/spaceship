@@ -254,3 +254,82 @@ In line 29 to 30, The code then declares an integer variable `count` to keep tra
 Line 31 to 35, A while loop is used to traverse the LinkedList until the end is reached (`ptr` becomes NULL). Inside the loop, the `count` variable is incremented by one, and the `ptr` variable is updated to point to the next node in the LinkedList.
 
 Finally, the length of the LinkedList is printed to the console using the `cout` statement.
+
+## Middle element in LinkedList
+
+```cpp showLineNumbers="true"
+#include<iostream>
+using namespace std;
+
+class Node
+{
+    public:
+    int data;
+    Node *next;
+};
+int main()
+{
+    Node *a = new Node();
+    a->data = 5;
+    
+    Node *b = new Node();
+    b->data = 10;
+    
+    Node *c = new Node();
+    c->data = 15;
+    
+    Node *d = new Node();
+    d->data = 20;
+    
+    Node *e = new Node();
+    e->data = 25;
+    
+    a->next = b;
+    b->next = c;
+    c->next = d;
+    d->next = e;
+    e->next = NULL;
+    
+    int count = 0 ;
+    Node *ptr = a;
+    while(ptr != NULL)
+    {
+        count++;
+        ptr = ptr->next;
+    }
+    
+    cout<<"Length of Linkedlist : "<<count<<endl;
+    
+    int mid = count / 2;
+    Node *p = a;
+    while(mid--)
+    {
+        p = p->next;
+    }
+    
+    cout<<"Middle element :"<<p->data;
+    
+    return 0;
+}
+```
+
+**Output :**
+
+Length of Linkedlist : 5 <br/>
+Middle element :15
+
+In the above program first we create a class called `Node`, which has two member variables: an `integer data`, and a pointer to another `Node` object, `next`. This pointer will be used to link together multiple Node objects to form the linked list.
+
+Next, four Node objects, `a`, `b`, `c`,`d` and `e` are created using the `new` keyword. The data member of each object is assigned a different integer value.
+
+The objects are then linked together by setting the next pointer of each object to point to the next object in the sequence. In this case, `a->next` points to `b`, `b->next` points to `c`, `c->next` points to `d`,`d->next` points to `e`, and `e->next` is set to `NULL`, indicating the end of the linked list.
+
+In line 33 to 34, The code then declares an integer variable `count` to keep track of the number of nodes in the LinkedList, and a pointer variable `ptr` to traverse the LinkedList starting from the first node.
+
+Line 35 to 39, A while loop is used to traverse the LinkedList until the end is reached (`ptr` becomes NULL). Inside the loop, the `count` variable is incremented by one, and the `ptr` variable is updated to point to the next node in the LinkedList.
+
+Then length of the LinkedList is printed to the console using the `cout` statement.
+
+Line 43 to 48, The middle element of the linked list is calculated by dividing the length of the linked list by `2` to find the midpoint, and then traversing the linked list starting from the first node until the midpoint is reached. A pointer variable `p` is used to keep track of the current node being traversed.
+
+Lint 50 , The value of the middle element is then printed to the console using the `cout` statement.

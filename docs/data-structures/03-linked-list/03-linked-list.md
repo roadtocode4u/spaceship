@@ -333,3 +333,77 @@ Then length of the LinkedList is printed to the console using the `cout` stateme
 Line 43 to 48, The middle element of the linked list is calculated by dividing the length of the linked list by `2` to find the midpoint, and then traversing the linked list starting from the first node until the midpoint is reached. A pointer variable `p` is used to keep track of the current node being traversed.
 
 Lint 50 , The value of the middle element is then printed to the console using the `cout` statement.
+
+## Hare and Tortoise Algorithm
+
+**Code :**
+
+```cpp showLineNumbers="true"
+#include<iostream>
+using namespace std;
+
+class Node
+{
+    public:
+    int data;
+    Node *next;
+};
+int main()
+{
+    Node *a = new Node();
+    a->data = 5;
+    
+    Node *b = new Node();
+    b->data = 10;
+    
+    Node *c = new Node();
+    c->data = 15;
+    
+    Node *d = new Node();
+    d->data = 20;
+    
+    Node *e = new Node();
+    e->data = 25;
+    
+    a->next = b;
+    b->next = c;
+    c->next = d;
+    d->next = e;
+    e->next = NULL;
+    
+    //[5, b] -> [10, c] -> [15, d] -> [20, e] -> [25, NULL]
+    
+    Node *slow = a;
+    Node *fast = b;
+    
+    while(fast!=NULL && fast->next !=NULL)
+    {
+        fast = fast->next;
+        fast = fast->next;
+        
+        slow = slow->next;
+    }
+    
+    cout<<"Middle Element is: "<<slow->data<<endl;
+    
+    return 0;
+}
+```
+
+**Output :**
+
+Middle Element is: 15
+
+In the above program first we create a class called `Node`, which has two member variables: an `integer data`, and a pointer to another `Node` object, `next`. This pointer will be used to link together multiple Node objects to form the linked list.
+
+Next, four Node objects, `a`, `b`, `c`,`d`,`e` are created using the `new` keyword. The data member of each object is assigned a different integer value.
+
+The objects are then linked together by setting the next pointer of each object to point to the next object in the sequence. In this case, `a->next` points to `b`, `b->next` points to `c`, `c->next` points to `d`,`d->next` is set to `e` and  `e->next` is set to `NULL`, indicating the end of the linked list.
+
+The `slow` pointer and the `fast` pointer are initialized to the `first` and `second` nodes of the list, respectively.
+
+Then, the Hare and Tortoise algorithm is applied in the while loop to find the middle element. In each iteration of the loop, the `fast` pointer moves `two nodes` ahead of the `slow` pointer. If the `fast` pointer reaches the end of the list, the loop stops. Otherwise, the `slow pointer` moves `one node` ahead.
+
+When the loop terminates, the `slow` pointer points to the middle element of the linked list.
+
+Finally, the data member of the middle element is printed using the `cout` statement.

@@ -407,3 +407,121 @@ Then, the Hare and Tortoise algorithm is applied in the while loop to find the m
 When the loop terminates, the `slow` pointer points to the middle element of the linked list.
 
 Finally, the data member of the middle element is printed using the `cout` statement.
+
+## Constructor
+
+A constructor is a special member function of a class that is used to initialize objects of that class. It is called automatically when an object is created and helps set up the initial state of the object.
+
+**Code :**
+
+```cpp
+#include<iostream>
+using namespace std;
+
+class Student
+{
+    public:
+    void sayHello()
+    {
+        cout<<"Hello"<<endl;
+    }
+};
+
+int main()
+{
+    Student obj;
+    obj.sayHello();
+    
+    return 0;
+}
+```
+
+**Output :**
+
+Hello
+
+In the above Program `Student` class is defined using the `class` keyword. Inside the class, we have a `public` member function called `sayHello()`.
+
+The `sayHello()` function is defined within the `Student` class and prints `Hello` to the console using `cout`.
+
+In the `main()` function, an object of the `Student` class is created with the name `obj`.
+
+The `obj.sayHello()` statement calls the `sayHello()` function on the `obj` object, which then prints `Hello` to the console.
+
+
+**Code :**
+
+```cpp
+#include<iostream>
+using namespace std;
+
+class Student
+{
+    public:
+    void sayHello()
+    {
+        cout<<"Hello"<<endl;
+    }
+    
+    Student()
+    {
+        cout<<"Constructor Called .."<<endl;
+    }
+};
+
+int main()
+{
+    Student obj;
+    obj.sayHello();
+    
+    return 0;
+}
+```
+
+**Output :**
+
+Constructor Called .. <br/>
+Hello
+
+The `Student` class is defined using the `class` keyword. Inside the class, we have two member functions: `sayHello()` and a `constructor`.
+
+The `sayHello()` function is defined within the `Student` class and prints `Hello` to the console using `cout`.
+
+The constructor is a special member function with the same name as the class (`Student()` in this case). It is automatically called when an object of the class is created. In this code, the constructor has a print statement `cout<<"Constructor Called .."<<endl;` which prints `Constructor Called ..` to the console.
+
+In the `main()` function, an object of the `Student` class is created with the name `obj    `. When this object is created, the constructor is automatically called and the message `Constructor Called ..` is printed.
+
+The `obj.sayHello()` statement calls the `sayHello()` function on the `obj` object, which then prints `Hello` to the console.
+
+In summary, this code demonstrates the concept of constructors in C++. It defines a Student class with a constructor that is automatically called when an object of the class is created. The constructor prints a message indicating that it has been called. The program then creates an object of the Student class, which triggers the constructor, and subsequently calls the `sayHello()` function on that object. As a result, the program prints `Constructor Called ..` and `Hello` to the console when it is run.
+
+**Code :**
+
+```js 
+#include<iostream>
+using namespace std;
+
+class Student
+{
+    public:
+    int age;
+    
+    void showAge()
+    {
+        cout<<"Age :"<<age<<endl;
+    }
+    
+    Student(int age)
+    {
+        this->age = age;
+    }
+};
+
+int main()
+{
+    Student obj;
+    obj.sayHello(20);
+    
+    return 0;
+}
+```

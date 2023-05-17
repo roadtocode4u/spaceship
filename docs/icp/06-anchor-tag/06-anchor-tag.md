@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
 ## Anchor Tag
 
-The anchor tag used to give a hyperlink, which is used to link from one page to another.
+The anchor tag `<a>` is used to create hyperlinks in HTML, allowing users to navigate from one page to another or open external resources. It is typically used within the body of an HTML document.
 
 **Syntax**
 
@@ -16,7 +16,8 @@ The anchor tag used to give a hyperlink, which is used to link from one page to 
 <a href="url"> Text </a>
 ```
 
-**href** 👉 hyperlink reference
+**href**: This attribute specifies the URL or destination of the hyperlink.
+**Text**: This is the text or content that will be displayed as the hyperlink.
 
 **Code :**
 

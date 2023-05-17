@@ -105,3 +105,88 @@ Line 29 to 39, The `pop()` function is responsible for removing and returning th
 Line 41 to 48, The `printStack()` function is used to display the current elements in the stack. It iterates from the top index to `0` and prints the corresponding values of `arr[i]`.
 
 Line 51 to 60, In the `main()` function, an instance of the `Stack` class, `s`, is created. Elements are then pushed onto the stack using the `push()` method. After that, `pop()` is called to remove the top element `(20 in this case)`. Finally, `printStack()` is invoked to display the remaining elements in the stack.
+
+# Reverse String Using Stack
+
+**Code :**
+
+```cpp
+#include<iostream>
+using namespace std;
+
+class Stack
+{
+    public:
+    int arr[100];
+    int capacity;
+    int top;
+    
+    Stack()
+    {
+        capacity = 100;
+        top = -1;
+    }
+    
+    void push(int val)
+    {
+        if(top == capacity-1)
+        {
+            cout<<"Error: Stack Overflow"<<endl;
+        }
+        else
+        {
+            top++;
+            arr[top] = val;
+        }
+    }
+    
+    int pop()
+    {
+        if(top==-1)
+        {
+            cout<<"Error: Stack Underflow"<<endl;
+            return -1;
+        }
+        int topElement = arr[top];
+        top--;
+        return topElement;
+    }
+    
+    void printStack()
+    {
+        cout<<"Current Stack: "<<endl;
+        for(int i=top; i>=0; i--)
+        {
+            cout<<(char)arr[i]<<endl;
+        }
+    }
+};
+
+int main()
+{
+    Stack s;
+    
+    string str = "ROAD TO CODE";
+    for(int i=0; i<str.length(); i++)
+    {
+        s.push(str[i]);
+    }
+
+    cout<<"Original String: "<<str<<endl;
+    
+    cout<<"Reverse String: ";
+    
+    while(s.top!=-1)
+    {
+        char topElement = s.pop();
+        cout<<topElement<<endl;
+    }
+    
+    
+    return 0;
+}
+```
+
+**Output :**
+Original String: ROAD TO CODE <br/>
+Reverse String: EDOC OT DAOR

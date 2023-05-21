@@ -4,7 +4,7 @@ description: "Stack"
 hide_table_of_contents: true
 ---
 
-# Introduction to Stack
+## Introduction to Stack
 
 The stack data structure is a fundamental concept in computer science. It follows the Last-In, First-Out (LIFO) principle, which means that the last item added to the stack is the first one to be removed.
 
@@ -106,7 +106,7 @@ Line 41 to 48, The `printStack()` function is used to display the current elemen
 
 Line 51 to 60, In the `main()` function, an instance of the `Stack` class, `s`, is created. Elements are then pushed onto the stack using the `push()` method. After that, `pop()` is called to remove the top element `(20 in this case)`. Finally, `printStack()` is invoked to display the remaining elements in the stack.
 
-# Reverse String Using Stack
+## Reverse String Using Stack
 
 **Code :**
 
@@ -229,7 +229,7 @@ Reverse String: EDOC OT DAOR
 
 `cout<<topElement<<endl;`: This line prints the value of `topElement`, which represents the reversed string character by character.
 
- # Balanced parentheses
+ ## Balanced parentheses
 
 Balanced parentheses in a stack refer to a condition where opening and closing parentheses are properly matched and nested within an expression. In simple terms, it means that for every opening parenthesis, there is a corresponding closing parenthesis in the right order.
 

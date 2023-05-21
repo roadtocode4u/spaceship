@@ -229,7 +229,7 @@ Reverse String: EDOC OT DAOR
 
 `cout<<topElement<<endl;`: This line prints the value of `topElement`, which represents the reversed string character by character.
 
- # Balanced Parenthesis
+ # Balanced parentheses
 
 Balanced parentheses in a stack refer to a condition where opening and closing parentheses are properly matched and nested within an expression. In simple terms, it means that for every opening parenthesis, there is a corresponding closing parenthesis in the right order.
 

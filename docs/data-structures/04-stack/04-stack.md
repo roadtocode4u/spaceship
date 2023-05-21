@@ -4,7 +4,7 @@ description: "Stack"
 hide_table_of_contents: true
 ---
 
-#  Introduction to Stack
+# Introduction to Stack
 
 The stack data structure is a fundamental concept in computer science. It follows the Last-In, First-Out (LIFO) principle, which means that the last item added to the stack is the first one to be removed.
 
@@ -228,3 +228,91 @@ Reverse String: EDOC OT DAOR
 `char topElement = s.pop();`: This line pops the top element from the stack `s` using the pop member function and assigns it to the `topElement` variable.
 
 `cout<<topElement<<endl;`: This line prints the value of `topElement`, which represents the reversed string character by character.
+
+ # Balanced Parenthesis
+
+Balanced parentheses in a stack refer to a condition where opening and closing parentheses are properly matched and nested within an expression. In simple terms, it means that for every opening parenthesis, there is a corresponding closing parenthesis in the right order.
+
+A stack is a data structure that follows the `last in, first out` (LIFO) principle. When checking for balanced parentheses, you can use a stack to keep track of the opening parentheses encountered. Here's how it works:
+
+1. Start with an empty stack.
+2. Iterate through each character in the expression.
+3. If the character is an opening parenthesis (e.g., `(` or `{` or `[`), push it onto the stack.
+4. If the character is a closing parenthesis (e.g., `)` or `}` or `]`), check the top element of the stack.
+5. If the stack is empty or the top element doesn't match the closing parenthesis, the parentheses are unbalanced.
+6. If the top element matches the closing parenthesis, pop it from the stack and continue to the next character.
+
+After iterating through the entire expression, if the stack is empty, it means all parentheses are balanced. Otherwise, there are unmatched opening parentheses, indicating an imbalance.
+
+In essence, a balanced parenthesis expression will have every opening parenthesis paired with a corresponding closing parenthesis in the correct order, and the stack will be empty at the end of the evaluation.
+
+**Code :**
+
+```cpp
+#include<iostream>
+#include<stack>
+
+using namespace std;
+
+int main()
+{
+    stack<char> s;
+    string expr = "{}()[]";
+    
+    int flag = 1;
+    
+    for (int i=0; i<expr.length(); i++)
+    {
+        if(expr[i]=='(' || expr[i]=='[' || expr[i]=='{')
+        {
+            s.push(expr[i]);
+            continue;
+        }
+        
+    if(expr[i]==']' && s.top()=='[')
+    {
+        s.pop();
+    }
+    else if(expr[i]==')' && s.top()=='(')
+    {
+        s.pop();
+    }
+    else if(expr[i]=='}' && s.top()=='{')
+    {
+        s.pop();
+    }
+    else{
+        flag = -1;
+        cout<<"Not Balanced ";
+        break;
+    }
+    }
+    
+    if(flag == 1)
+    {
+        cout<<"Parenthesis are balanced ";
+    }
+}
+```
+**Output :**
+
+Parenthesis are balanced 
+
+
+In the above code begins by including the necessary libraries, `iostream` for input/output and `stack` for using the stack data structure.
+
+Inside the `main()` function, a stack of characters `stack<char> s` and a string variable `string expr = "{}()[]"` are declared. The string expr represents the expression containing parentheses that we want to check for balance.
+
+The `flag` variable is initialized as `1`. This variable will help determine whether the parentheses are balanced or not.
+
+A for loop is used to iterate through each character of the `expr` string.
+
+Inside the loop, the code checks if the current character is an opening parenthesis `(, [, or {`. If it is, the character is pushed onto the stack using `s.push(expr[i])`. The continue statement ensures that the remaining code in the loop is skipped and the next iteration starts.
+
+If the current character is a closing parenthesis `], ), or }`, the code checks if the top element of the stack matches the corresponding opening parenthesis. If the top element matches, it is popped from the stack using `s.pop()`.
+
+If the current character and the top element of the stack do not match, it means the parentheses are not balanced. In this case, the `flag` variable is set to `-1`, and a message `Not Balanced` is printed using `cout`. The loop is then exited using `break`.
+
+After the loop finishes, the code checks the value of the `flag` variable. If it is still `1`, it means all parentheses have been matched and balanced. In this case, the message `Parentheses are balanced`is printed using `cout`.
+
+To summarize, the program reads an expression containing parentheses and uses a stack to check if the parentheses are balanced. It iterates through the expression character by character, pushing opening parentheses onto the stack and matching closing parentheses with the top element of the stack. If there is a mismatch or unbalanced parentheses, the program flags it and terminates, otherwise, it confirms that the parentheses are balanced.

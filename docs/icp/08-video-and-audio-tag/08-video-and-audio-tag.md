@@ -6,9 +6,11 @@ hide_table_of_contents: true
 
 # Video Tag and Audio Tag
 
-Video tag is used to show a video on web page in html.
+The video tag in HTML is used to display videos on a web page, while the audio tag is used to play audio files. This guide will show you how to use these tags and their attributes.
 
 **Syntax :**
+
+To use the video tag, follow this syntax:
 
 ```html
 <video>
@@ -36,14 +38,18 @@ Video tag is used to show a video on web page in html.
 
 <img src="/icp/08/output-1.png" alt="output-1" width="600px"/>
 
-### There are Some Attributes available for video tag
+The above code will display the video specified by the `src` attribute. In this example, the video file `sample-video.mp4` is located in the same directory as the HTML file.
 
-1. Controls
-2. Height
-3. Width
-4. Autoplay
-5. Muted
-6. Poster
+## Video Tag Attributes
+
+The video tag supports various attributes to customize its behavior:
+
+1. `Controls`: Adds video controls such as play, pause, volume, and fullscreen toggle.
+2. `Height` and Wid`th: Sets the height and width of the video element.
+3. `Autoplay`: Automatically starts playing the video when the web page is loaded.
+4. `Muted`: Mutes the audio of the video.
+5. `Poster`: Displays an image as a placeholder before the video is loaded.
+
 
 ### Controls
 
@@ -125,6 +131,26 @@ The poster attribute are used to show image to your video.
 
 <img src="/icp/08/output-4.png" alt="output-4" width="600px"/>
 
+### Loop
+
+This attribute specifies that the video should automatically restart from the beginning once it reaches the end.
+
+**Code :**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video Tag</title>
+  </head>
+  <body>
+    <video height="300px" controls loop>
+      <source src="./sample-video.mp4" type="video/mp4" />
+    </video>
+  </body>
+</html>
+```
+
 ### Audio Tag
 
 Audio tag is used to show a audio on web page in html.
@@ -136,6 +162,14 @@ Audio tag is used to show a audio on web page in html.
   <source src="<url>" type="audio/mp3" />
 </audio>
 ```
+
+## Audio Tag Attributes
+
+The audio tag also supports some attributes:
+
+1. `Controls`: Adds audio controls like play, pause, and volume.
+2. `Muted`: Mutes the audio playback by default.
+3. `Autoplay`: Automatically starts playing the audio when the web page is loaded.
 
 **Code :**
 
@@ -156,6 +190,8 @@ Audio tag is used to show a audio on web page in html.
 **Output :**
 
 <img src="/icp/08/output-5.png" alt="output-5" width="600px"/>
+
+The above code will display an audio player with controls, and the audio specified by the `src` attribute will be played. In this example, the audio file `sample-audio.mp3` is located in the same directory as the HTML file.
 
 **Code :**
 

@@ -152,3 +152,61 @@ int main()
 * Several elements `2, 4, 6, and 8` are enqueued using the `enqueue()` function.
 * The `printQueue()` function is called to display the elements in the queue.
 * The `main()` function returns `0`, indicating successful program execution.
+
+## Queue Using STL
+
+**Code :**
+
+```cpp
+#include<iostream>
+#include<queue>
+using namespace std;
+
+int main()
+{
+    queue<int> q;
+    q.push(5);
+    q.push(10);
+    q.push(15);
+    q.push(20);
+    
+    cout<<"Front :"<<q.front()<<endl;
+    cout<<"Back :"<<q.back()<<endl;
+    
+    q.pop();
+    cout<<"Front :"<<q.front()<<endl;
+    cout<<"Back :"<<q.back()<<endl;
+    
+    cout<<"Is Empty: "<<q.empty()<<endl;
+    return 0;
+}
+```
+
+**Output :**
+
+
+Front :5 <br/>
+Back :20 <br/>
+Front :10 <br/>
+Back :20 <br/>
+Is Empty: 
+
+Inside the `main` function, a queue named `q` is declared using the `queue<int>` syntax. This means that `q` will store integers.
+
+The push function is used to insert elements into the `queue`. In this code, four integers `5, 10, 15, and 20` are pushed into the queue using the `q.push(value)` syntax.
+
+The cout statements print the values of the `front` and `back` elements of the queue using the `q.front()` and `q.back()` functions, respectively. The front function returns the value of the first element in the queue, while the back function returns the value of the last element in the queue. In this case, it will print:
+
+`Front: 5` (since 5 is the first element in the queue)
+`Back: 20` (since 20 is the last element in the queue)
+The pop function is used to remove the first element from the queue. In this case, the `q.pop()` statement removes the element `5` from the queue.
+
+After the pop operation, the `front` and `back` functions are called again and their values are printed. Now, the queue has `10`, `15`, and `20` remaining, so it will print:
+
+`Front: 10`
+`Back: 20`
+Finally, the empty function is used to check if the queue is empty. The `q.empty()` statement returns false if the queue is not empty, and true otherwise. In this case, since the queue still has elements, it will print:
+
+`Is Empty: 0` (0 represents false)
+The return 0 statement signifies a successful termination of the main function.
+

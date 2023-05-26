@@ -40,7 +40,7 @@ To remove a specific item from LocalStorage, you can use the localStorage.remove
 ```js 
 localStorage.removeItem('username');
 const removedUsername = localStorage.getItem('username');
-console.log(removedUsername); // Output: null (since the item was removed)
+console.log(removedUsername); 
 ```
 
 4. **Clearing All Data**
@@ -50,7 +50,3 @@ If you want to remove all the data stored in LocalStorage, you can use the local
 ```js
 localStorage.clear();
 ```
-
-* LocalStorage is specific to the domain and protocol of the web page. Data stored on one website cannot be accessed by another website.
-* Data stored in LocalStorage remains available even after the browser is closed and reopened.
-* LocalStorage is synchronous, which means that storing or retrieving large amounts of data may affect the performance of your web application.

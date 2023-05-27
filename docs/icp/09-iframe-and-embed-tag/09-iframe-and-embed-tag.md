@@ -61,7 +61,7 @@ Target attribute are used to a name or a keyword that indicates where to display
 
 ### `target= "_blank"` Attribute
 
-Target \_blank attribute are used to open the linked document in a new tab.
+Target _blank attribute are used to open the linked document in a new tab.
 
 **Code :**
 
@@ -95,7 +95,7 @@ Target \_blank attribute are used to open the linked document in a new tab.
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Video</title>
+    <title>Video Tag</title>
   </head>
   <body>
     <iframe
@@ -123,7 +123,7 @@ Target \_blank attribute are used to open the linked document in a new tab.
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Map</title>
+    <title>Google Map Integration</title>
   </head>
   <body>
     <iframe

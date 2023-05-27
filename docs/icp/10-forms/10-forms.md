@@ -334,7 +334,7 @@ hide_table_of_contents: true
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Form</title>
   </head>
   <body>
     <form>
@@ -456,7 +456,7 @@ Checkbox have one `Checked = true` attribute & this attribute specifies input el
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Radio</title>
+    <title>Radio Button</title>
   </head>
   <body>
     <form>

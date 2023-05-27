@@ -13,7 +13,7 @@ There are two types of database:
 1.  NoSQL
 2.  SQL
 
-There are two types of databases: SQL and NoSQL. MongoDB belongs to the NoSQL category, which means that it utilizes a non-relational data model for storing and managing data, So we Will use MongoDB database.
+MongoDB belongs to the NoSQL category, which means that it utilizes a non-relational data model for storing and managing data, So we Will use MongoDB database.
 
 ## MongoDB Data Structure
 

@@ -4,9 +4,9 @@ description: "Iframe "
 hide_table_of_contents: true
 ---
 
-# Iframe
+# Iframe and Embed Tag
 
-Iframe is used to embed another Html content from other sources or other webpage.
+Iframe tag is used for to integrate other webpage or the resource of another webpage.
 
 **Syntax :**
 
@@ -61,7 +61,7 @@ Target attribute are used to a name or a keyword that indicates where to display
 
 ### `target= "_blank"` Attribute
 
-Target \_blank attribute are used to opens the linked document in a new tab.
+Target \_blank attribute are used to open the linked document in a new tab.
 
 **Code :**
 
@@ -69,7 +69,7 @@ Target \_blank attribute are used to opens the linked document in a new tab.
 <!DOCTYPE html>
 <html>
   <head>
-    <title>iframe</title>
+    <title>Target Attribute</title>
   </head>
   <body>
     <h1>Iframe</h1>
@@ -87,7 +87,7 @@ Target \_blank attribute are used to opens the linked document in a new tab.
 
 <img src="/icp/09/output-3.png" alt="output-3" width="600px"/>
 
-## Video
+## Video Tag
 
 **Code :**
 
@@ -95,7 +95,7 @@ Target \_blank attribute are used to opens the linked document in a new tab.
 <!DOCTYPE html>
 <html>
   <head>
-    <title>iframe</title>
+    <title>Video</title>
   </head>
   <body>
     <iframe
@@ -123,7 +123,7 @@ Target \_blank attribute are used to opens the linked document in a new tab.
 <!DOCTYPE html>
 <html>
   <head>
-    <title>iframe</title>
+    <title>Map</title>
   </head>
   <body>
     <iframe
@@ -143,7 +143,7 @@ Target \_blank attribute are used to opens the linked document in a new tab.
 
 <img src="/icp/09/output-6.png" alt="output-6" width="600px"/>
 
-## Embed
+## Embed Tag
 
 Embed tag are used to open non html content like pdf file.
 
@@ -159,7 +159,7 @@ Embed tag are used to open non html content like pdf file.
 <!DOCTYPE html>
 <html>
   <head>
-    <title>iframe</title>
+    <title>Embed Tag</title>
   </head>
   <body>
     <embed

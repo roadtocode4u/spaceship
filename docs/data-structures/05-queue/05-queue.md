@@ -210,3 +210,71 @@ Finally, the empty function is used to check if the queue is empty. The `q.empty
 `Is Empty: 0` (0 represents false)
 The return 0 statement signifies a successful termination of the main function.
 
+### Check Palindrome String using Stack and Queue using Stack
+
+**Code :**
+
+```cpp
+#include<iostream>
+#include<stack>
+#include<queue>
+using namespace std;
+int main()
+{
+    stack<char> s;
+    queue<char> q;
+    
+    string name = "test";
+    for(int i=0; i<name.length(); i++)
+    {
+        s.push(name[i]);
+        q.push(name[i]);
+    }
+    
+    int flag = 1;
+    
+    while(!s.empty())
+    {
+        if(s.top()!=q.front())
+        {
+            cout<<"String is not palindrom"<<endl;
+            flag = -1;
+            break;
+        }
+        s.pop();
+        q.pop();
+    }
+    
+    if(flag==1)
+    {
+        cout<<"String is palindrom"<<endl;
+    }
+    
+    return 0;
+}
+```
+
+**Output :**
+
+String is not palindrom
+
+In the above program we deaclre two data structures are declared: a `stack` named `s` and a `queue` named `q`. Both the `stack` and `queue` are defined to hold characters `char`.
+
+A string variable named name is declared and assigned the value `test`. This string will be used to check if it is a palindrome.
+
+A for loop is used to iterate through each character of the name string. Inside the loop, each character is pushed onto both the stack `s` and the queue `q`.
+
+An integer variable flag is declared and initialized with the value `1`. This variable is used to determine if the string is a palindrome.
+
+The code enters a while loop that continues until the stack `s` is empty.
+
+Inside the loop, the code compares the top element of the stack s with the front element of the queue q. If they are not equal, it means the string is not a palindrome. In that case, the code sets the flag variable to -1, breaks out of the loop, and displays the message "String is not a palindrome".
+
+If the top element of the stack s is equal to the front element of the queue q, they are both removed from their respective data structures using pop().
+
+After the while loop, the code checks the value of the flag variable. If it is still 1, it means the string is a palindrome. In that case, the code displays the message "String is a palindrome".
+
+Finally, the main() function returns 0, indicating successful execution of the program.
+
+In summary, this code checks whether a given string is a palindrome or not. It uses a stack to store the characters in reverse order and a queue to store the characters in their original order. If the string is a palindrome, the characters will match when comparing the stack and the queue.
+

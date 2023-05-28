@@ -125,7 +125,7 @@ MongoDB Compass provides a GUI (Graphical User Interface) for accessing MongoDB 
 
 In MongoDB Compass, you can create a new database by right-clicking on the `Databases` tab and selecting `Create Collection`. Provide a name for the database, and it will be created.
 
-### Insert Database :
+### Insert Document :
 
 To insert documents into a collection within a database, select the database, navigate to the desired collection, and click on the `Insert Document` button. Enter the document data and save it.
 
@@ -137,7 +137,14 @@ If you want to delete a database, right-click on the database name in the left-h
 
 Show Databases: To view all the databases on the connected MongoDB server, you can click on the `Databases` tab in the left-hand sidebar. It will display a list of available databases.
 
+```js
+show dbs
+```
+
 ### Use Database :
 
 In MongoDB Compass, you don't need to explicitly run the `use` command to switch to a database. By selecting a database from the sidebar, you are already using that database. MongoDB Compass provides a graphical interface to interact with the selected database and its collections.
-`usemydb`
+
+```js
+usemydb;
+```

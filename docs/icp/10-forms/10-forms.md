@@ -6,18 +6,38 @@ hide_table_of_contents: true
 
 # Forms
 
-Form is an HTML element which is used to take input from user.
+- Form is an HTML element which is used to take input from user.
+- Forms are created using `<form>`.
 
 ```html
-<form>=> form start</form>
-=> form end
+<form></form>
 ```
+
+`<form>`is opening tag.
+
+`</form>`is closing tag.
+
+## Forms Contain
+
+```
+<input>
+<select>
+<checkbox>
+<radio>
+<button>
+<option>
+<label>
+```
+
+## Input Tag
+
+- Input tag specifies an input filed where the user can enter data.
+
+- Input box is created using `<input>` tag.
 
 ```html
-<input type="text" /> 
+<input></input>
 ```
-
-In the above syntax input field type => attribute
 
 ### How to take input from user
 
@@ -43,9 +63,9 @@ In the above syntax input field type => attribute
 
 ### Label
 
-The label is a normal text, its show information about your input element & its visually and pragmatically associated with the input element.
+- The label is a normal text, its show information about your input element & its visually and pragmatically associated with the input element.
 
-The `<label>` tag is used to specify a label for an `<input>` element.
+- The `<label>` tag is used to specify a label for an `<input>` element.
 
 **Code :**
 
@@ -70,7 +90,7 @@ The `<label>` tag is used to specify a label for an `<input>` element.
 
 ### Password
 
-Password is attribute which is invisible to the user in password field.
+- Password is attribute which is invisible to the user in password field.
 
 **Code :**
 
@@ -95,7 +115,7 @@ Password is attribute which is invisible to the user in password field.
 
 ### Email
 
-The email Attribute is used to validates the text for correct email address. You must use `@` and `.` in this field.
+- The email Attribute is used to validates the text for correct email address. You must use `@` and `.` in this field.
 
 **Code :**
 
@@ -157,7 +177,7 @@ The email Attribute is used to validates the text for correct email address. You
 
 ## Button
 
-There are two type of button <br />
+- There are two type of button <br />
 
 1. Submit button :- it is used to submit form data.
 2. Button :- it is used to trigger action.
@@ -184,7 +204,7 @@ There are two type of button <br />
 
 ### required
 
-It is specifies that the element is mandatory to filled out before submitting the form.
+- It is specifies that the element is mandatory to filled out before submitting the form.
 
 **Code :**
 
@@ -218,7 +238,7 @@ It is specifies that the element is mandatory to filled out before submitting th
 
 ### Placeholder
 
-Placeholder is a attribute which is used to set a short hint that describes the value of an input field.
+- Placeholder is a attribute which is used to set a short hint that describes the value of an input field.
 
 **Code :**
 
@@ -268,7 +288,7 @@ Placeholder is a attribute which is used to set a short hint that describes the 
 
 ### Dropdown
 
-We can create drop-down list using `<select>` tag. `<select>` Tag are contain Multiple `<option>` tag. `<option>` Tag are used to display available options in drop-down.
+- We can create drop-down list using `<select>` tag. `<select>` Tag are contain Multiple `<option>` tag. `<option>` Tag are used to display available options in drop-down.
 
 **Syntax :**
 
@@ -286,7 +306,7 @@ We can create drop-down list using `<select>` tag. `<select>` Tag are contain Mu
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Checkbox</title>
+    <title>Select</title>
   </head>
   <body>
     <form>
@@ -308,7 +328,7 @@ We can create drop-down list using `<select>` tag. `<select>` Tag are contain Mu
 
 ### Value
 
-The value attribute are used specifies the value of an `<input>` element. Value attribute represent the default value for the input element.
+- The value attribute are used specifies the value of an `<input>` element. Value attribute represent the default value for the input element.
 
 **Code :**
 
@@ -316,7 +336,7 @@ The value attribute are used specifies the value of an `<input>` element. Value 
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Checkbox</title>
+    <title>Form</title>
   </head>
   <body>
     <form>
@@ -342,7 +362,7 @@ It can help the user, the user does not need to type the whole text data list ha
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Checkbox</title>
+    <title>Datalist</title>
   </head>
   <body>
     <form>
@@ -368,7 +388,7 @@ It can help the user, the user does not need to type the whole text data list ha
 
 ### Checkbox
 
-Checkbox is used to multiple selection.
+- Checkbox is used to multiple selection. Checkbox is always in square.
 
 **Code :**
 
@@ -430,7 +450,7 @@ Checkbox have one `Checked = true` attribute & this attribute specifies input el
 
 ## Radio Button
 
-Radio Button is used to Single selection.
+- Radio Button is used to Single selection. Radio button is always circle.
 
 **Code :**
 
@@ -438,7 +458,7 @@ Radio Button is used to Single selection.
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Checkbox</title>
+    <title>Radio Button</title>
   </head>
   <body>
     <form>

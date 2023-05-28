@@ -84,3 +84,60 @@ In the above Example,the document has three fields `name`, `age`, `city`. Each f
 In this example, we have a documents with two embedded documents. Each document represent a person with their respective name and age field.
 
 These examples showcase the basic structure of BSON documents and how key-value pairs are used to represent data in MongoDB. BSON's flexibility and efficient encoding make it suitable for storing and retrieving data in MongoDB, providing a powerful and scalable solution for managing unstructured and semi-structured data.
+
+# Exploring Mangodb Compass
+
+There are two mongodb tools:
+
+1. `MangoDB Atlas` : It is a website where we can create account and create database.
+
+2. `MangoDB Compass` : We can access data locally can't visit anytime website.
+   Mangodb compass mainly used for data access.
+
+## Steps to install MangoDB Compass
+
+To install MongoDB Compass, you can follow these steps:
+
+1. Search for `MongoDB Compass` in your preferred search engine.
+2. Open the downloads page for MongoDB Compass.
+3. On the downloads page, you'll find options to download the MongoDB Compass installer. Choose the installer that is suitable for your operating system (e.g., .exe for Windows).
+4. Download the latest version of MongoDB Compass by clicking on the appropriate download link.
+5. Once the download is complete, locate the downloaded installer file and launch it.
+6. Follow the on-screen instructions to install MongoDB Compass on your system. The installation process may vary depending on your operating system.
+7. After the installation is complete, you can launch MongoDB Compass from your applications or programs menu.
+
+MongoDB Compass provides a GUI (Graphical User Interface) for accessing MongoDB databases. Once you have MongoDB Compass installed and running, you can connect to your databases and perform various operations like creating databases, inserting documents, deleting databases, and more.
+
+- **Here are some common operations you can perform in mongodb compass.**
+
+### Database
+
+- **Mangosh**: Mangosh is a mangodb shell.(it is terminal of mangodb).
+  we can run the mangodb commands.
+
+- There are three database:
+
+1. **Admin** : It manages mangodb database.
+2. **Local** : Configuration, we can't modifies these database.
+3. **mydb** : It is userdefined database. we can access these database.
+
+### Create Database :
+
+In MongoDB Compass, you can create a new database by right-clicking on the `Databases` tab and selecting `Create Collection`. Provide a name for the database, and it will be created.
+
+### Insert Database :
+
+To insert documents into a collection within a database, select the database, navigate to the desired collection, and click on the `Insert Document` button. Enter the document data and save it.
+
+### Delete Database :
+
+If you want to delete a database, right-click on the database name in the left-hand sidebar and select `Drop Database`. Confirm the deletion when prompted.
+
+### Show Database :
+
+Show Databases: To view all the databases on the connected MongoDB server, you can click on the `Databases` tab in the left-hand sidebar. It will display a list of available databases.
+
+### Use Database :
+
+In MongoDB Compass, you don't need to explicitly run the `use` command to switch to a database. By selecting a database from the sidebar, you are already using that database. MongoDB Compass provides a graphical interface to interact with the selected database and its collections.
+`usemydb`

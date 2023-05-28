@@ -14,8 +14,10 @@ Form is an HTML element which is used to take input from user.
 ```
 
 ```html
-<input type="text" /> =>input field type => attribute
+<input type="text" /> 
 ```
+
+In the above syntax input field type => attribute
 
 ### How to take input from user
 
@@ -473,7 +475,7 @@ The accept attribute specifies what type of file user can pick from their device
 The accept attribute can only be used with file tag.
 
 Different accept attribute value :
-
+r
 `image/*` = image files <br/>
 `audio/*` = audio files <br/>
 `video/*` = video files <br/>

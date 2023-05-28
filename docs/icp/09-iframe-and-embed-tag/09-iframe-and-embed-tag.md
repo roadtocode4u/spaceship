@@ -4,7 +4,7 @@ description: "Iframe "
 hide_table_of_contents: true
 ---
 
-# Iframe
+# Iframe 
 
 Iframe is used to embed another Html content from other sources or other webpage.
 

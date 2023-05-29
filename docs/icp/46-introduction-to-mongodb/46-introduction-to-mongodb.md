@@ -28,17 +28,34 @@ MongoDB organizes data in a flexible and scalable manner. Here are the key compo
 To create a MongoDB Atlas account and set up your database, follow these steps:
 
 1. Visit the MongoDB website at https://www.mongodb.com/.
+
+<img src="/icp/46/step-1.jpeg" alt="step-1" width="600px"/>
+
 2. Click on the `Sign In` button.
+
+<img src="/icp/46/step-2.jpeg" alt="step-1" width="600px"/>
+
 3. Choose the option to sign in with Google.
+
 4. Select your Google email account to proceed.
+
+<img src="/icp/46/step-3.jpeg" alt="step-1" height="300px"/>
+
 5. Read and accept the Privacy Policy and Terms of Service by checking the checkbox.
 6. Click on the `Submit` button.
 7. You will be redirected to the MongoDB Atlas dashboard, where you will be greeted with a welcome message.
 8. Answer the following questions:
+
+   <img src="/icp/46/step-7.jpeg" alt="step-1" width="600px"/>
+
    - For the goal today, select `Learn MongoDB`.
    - For the type of application you are building, choose `I'm just exploring`.
    - For the preferred language, select `JavaScript` from the dropdown.
+
 9. Click on the `Finish` button to proceed.
+
+<img src="/icp/46/step-8.jpeg" alt="step-1" width="600px"/>
+
 10. On the next page, you will be prompted to deploy your database. Choose the `Free` option.
 11. Select your preferred cloud provider (e.g., AWS).
 12. Choose the region where you want to deploy your database (e.g., Mumbai).

@@ -33,29 +33,35 @@ To create a MongoDB Atlas account and set up your database, follow these steps:
 
 2. Click on the `Sign In` button.
 
-<img src="/icp/46/step-2.jpeg" alt="step-2" width="600px"/>
+<img src="/icp/46/step-2.jpg" alt="step-2" width="600px"/>
 
 3. Choose the option to sign in with Google.
 
-4. Select your Google email account to proceed.
+<img src="/icp/46/step-3.jpg" alt="step-3" height="300px"/>
 
-<img src="/icp/46/step-3.jpeg" alt="step-3" height="300px"/>
+4. Select your Google email account to proceed.
 
 5. Read and accept the Privacy Policy and Terms of Service by checking the checkbox.
 
 6. Click on the `Submit` button.
 
-   <img src="/icp/46/step-4.jpg" alt="step-4" width="600px"/>
+   <img src="/icp/46/step-5.jpg" alt="step-5" width="600px"/>
 
 7. You will be redirected to the MongoDB Atlas dashboard, where you will be greeted with a welcome message.
 
 8. Answer the following questions:
 
-  <img src="/icp/46/step-8.jpeg" alt="step-8" width="600px"/>
-
 - For the goal today, select `Learn MongoDB`.
+
+  <img src="/icp/46/step-8-a.jpg" alt="step-8-a" width="600px"/>
+
 - For the type of application you are building, choose `I'm just exploring`.
+
+<img src="/icp/46/step-8-b.jpg" alt="step-8-b" width="600px"/>
+
 - For the preferred language, select `JavaScript` from the dropdown.
+
+<img src="/icp/46/step-8-c.jpg" alt="step-8-c" width="600px"/>
 
 9. Click on the `Finish` button to proceed.
 
@@ -66,17 +72,27 @@ To create a MongoDB Atlas account and set up your database, follow these steps:
 <img src="/icp/46/step-10.jpg" alt="step-10" width="600px"/>
 
 11. Select your preferred cloud provider (e.g., AWS).
+
+<img src="/icp/46/step-11.jpeg" alt="step-11" width="600px"/>
+
 12. Choose the region where you want to deploy your database (e.g., Mumbai).
-13. Enter a cluster name, such as `MongoDB`.
-14. Click on the `Create` button to create your MongoDB Atlas cluster.
-
-<img src="/icp/46/step-11.jpg" alt="step-11" width="600px"/>
-
-15. Set your desired `username` and `password` for accessing the database.
 
 <img src="/icp/46/step-12.jpg" alt="step-12" width="600px"/>
 
+13. Enter a cluster name, such as `MongoDB`.
+
+<img src="/icp/46/step-13.jpg" alt="step-13" width="600px"/>
+
+14. Click on the `Create` button to create your MongoDB Atlas cluster.
+
+<img src="/icp/46/step-14.jpg" alt="step-14" width="600px"/>
+
+15. Set your desired `username` and `password` for accessing the database.
+
+<img src="/icp/46/step-15.jpg" alt="step-15" width="600px"/>
+
 16. Complete the remaining steps as instructed by the MongoDB Atlas setup wizard.
+
 17. Once the setup is complete, you will have successfully installed MongoDB Atlas and created your database.
 
 ## BSON (Binary JSON)

@@ -132,7 +132,7 @@ In this example, we have a documents with two embedded documents. Each document 
 
 These examples showcase the basic structure of BSON documents and how key-value pairs are used to represent data in MongoDB. BSON's flexibility and efficient encoding make it suitable for storing and retrieving data in MongoDB, providing a powerful and scalable solution for managing unstructured and semi-structured data.
 
-# Exploring Mangodb Compass
+## Exploring MangoDB Compass
 
 There are two mongodb tools:
 

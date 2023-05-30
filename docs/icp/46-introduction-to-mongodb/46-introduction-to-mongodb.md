@@ -211,4 +211,162 @@ In MongoDB Compass, you don't need to explicitly run the `use` command to switch
 usemydb;
 ```
 
-## MongoDB CRUD Operation 
+## MongoDB CRUD Operation
+
+### Show Database
+
+To show all databases, use the `show dbs` command.
+This command return list of all databases in the MongoDB.
+
+```
+show dbs
+```
+
+There are two databases in the MongoDB :
+
+1. `admin` : The `admin` database is used to store administrative information.
+2. `local` : The `local` database is used to store replica set configuration information.
+
+```js
+   mydb    72.00 KiB
+   admin  336.00 KiB
+   local    8.27 GiB
+```
+
+This return the following output:
+
+<img src="/icp/46/step-26.png" alt="step26" width="600px"/>
+
+## Use database
+
+To use a database, use the `use` command.
+This command will switch the current database to the specified database.
+We use the `mydb` database.
+
+```js
+   use mydb
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-27.png" alt="step-27" width="600px"/>
+
+### Insert
+
+`insertOne()` - To insert a new document in a collection, we use the `insertOne()` method.
+This method take a single document.
+We create a new document in the `actors` collection.
+
+```js
+db.actors.insertOne({
+  name: "Shraddha Kapur",
+  age: 30,
+  movie: "Heropanti",
+});
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-28.png" alt="step-28" width="600px"/>
+
+`insertMany()` - We can also insert multiple documents at once using the `insertMany()` method.
+This method takes an array of documents.
+We can insert multiple documents in the `actors` collection.
+
+```js
+db.actors.insertMany([
+  {
+    name: "Shraddha Kapur",
+    age: 30,
+    movie: "Heropanti",
+  },
+  {
+    name: "Sai Pallavi",
+    age: 35,
+    movie: "Feeda",
+  },
+  {
+    name: "Rashmika",
+    age: 36,
+    movie: "Geeta Govind",
+  },
+]);
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-29.png" alt="step-29" width="600px"/>
+
+### Read
+
+`find()` - To read documents from a collection, we use the `find()` method. This method returns all of the documents in the `actors` collection.
+
+```js
+db.actors.find();
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-30.png" alt="step-30" width="600px"/>
+
+`findOne()` - We can also use the `findOne()` method to find a single document from a collection. This method returns the first document that matches the given condition. We can find the first document in the `actors` collection.
+
+```js
+db.actors.findOne({ movie: "Geeta Govind" });
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-31.png" alt="step-31" width="600px"/>
+
+```js
+db.actors.findOne({ age: 36 });
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-32.png" alt="step-32" width="600px"/>
+
+### Update
+
+`updateOne()` - To update a document in a collection, we use the `updateOne()` method. This method is used to update document. We can update the `name` of the document in the `actors` collection.
+
+```js
+db.actors.updateOne({ name: "Rashmika" }, { $set: { name: Karina } });
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-33.png" alt="step-33" width="600px"/>
+
+`updateMany()` - We can also use the `updateMany()` method to update multiple documents in a collection. This method is used to update document. We can update the `name` of the documents in the `actors` collection.
+
+```js
+db.actors.updateMany({}, { $set: { name: "Varun Dhavan" } });
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-34.png" alt="step-34" width="600px"/>
+
+### Delete
+
+`deleteOne()` - To delete a document from a collection, we use the `deleteOne()` method. This method is used to delete the documents in collection. We can delete the document in the `actors` collection.
+
+```js
+db.actors.deleteOne({ age: 30 });
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-35.png" alt="step-35" width="600px"/>
+
+`deleteMany()` - To delete the multiple documents from the collection, we can use the `deleteMany()` method. This method is used to delete the multiple documents in collection. We can delete all documents in the `actors` collection.
+
+```js
+db.actors.deleteMany({});
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-36.png" alt="step-36" width="600px"/>

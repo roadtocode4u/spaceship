@@ -146,10 +146,20 @@ There are two mongodb tools:
 To install MongoDB Compass, you can follow these steps:
 
 1. Search for `MongoDB Compass` in your preferred search engine.
+   <img src="/icp/46/step1.png" alt="step1" width="600px"/>
+
 2. Open the downloads page for MongoDB Compass.
+   <img src="/icp/46/step2.png" alt="step2" width="600px"/>
+
 3. On the downloads page, you'll find options to download the MongoDB Compass installer. Choose the installer that is suitable for your operating system (e.g., .exe for Windows).
+   <img src="/icp/46/step3.png" alt="step3" width="600px"/>
+
 4. Download the latest version of MongoDB Compass by clicking on the appropriate download link.
+   <img src="/icp/46/step4.png" alt="step4" width="600px"/>
+
 5. Once the download is complete, locate the downloaded installer file and launch it.
+   <img src="/icp/46/step5.png" alt="step5" width="600px"/>
+
 6. Follow the on-screen instructions to install MongoDB Compass on your system. The installation process may vary depending on your operating system.
 7. After the installation is complete, you can launch MongoDB Compass from your applications or programs menu.
 
@@ -171,18 +181,22 @@ MongoDB Compass provides a GUI (Graphical User Interface) for accessing MongoDB 
 ### Create Database :
 
 In MongoDB Compass, you can create a new database by right-clicking on the `Databases` tab and selecting `Create Collection`. Provide a name for the database, and it will be created.
+<img src="/icp/46/step8.png" alt="step8" width="600px"/>
 
 ### Insert Document :
 
 To insert documents into a collection within a database, select the database, navigate to the desired collection, and click on the `Insert Document` button. Enter the document data and save it.
+<img src="/icp/46/step9.png" alt="step9" width="600px"/>
 
 ### Delete Database :
 
 If you want to delete a database, right-click on the database name in the left-hand sidebar and select `Drop Database`. Confirm the deletion when prompted.
+<img src="/icp/46/step10.png" alt="step10" width="600px"/>
 
 ### Show Database :
 
 Show Databases: To view all the databases on the connected MongoDB server, you can click on the `Databases` tab in the left-hand sidebar. It will display a list of available databases.
+<img src="/icp/46/step11.png" alt="step11" width="600px"/>
 
 ```js
 show dbs
@@ -191,6 +205,7 @@ show dbs
 ### Use Database :
 
 In MongoDB Compass, you don't need to explicitly run the `use` command to switch to a database. By selecting a database from the sidebar, you are already using that database. MongoDB Compass provides a graphical interface to interact with the selected database and its collections.
+<img src="/icp/46/step12.png" alt="step12" width="600px"/>
 
 ```js
 usemydb;

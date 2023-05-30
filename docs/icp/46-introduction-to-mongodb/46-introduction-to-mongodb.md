@@ -213,6 +213,8 @@ usemydb;
 
 ## MongoDB CRUD Operation
 
+`CRUD` - `Create` `Read` `Update` `Delete`
+
 ### Show Database
 
 To show all databases, use the `show dbs` command.
@@ -251,7 +253,7 @@ This will return the following output:
 
 <img src="/icp/46/step-27.png" alt="step-27" width="600px"/>
 
-### Insert
+### Create / Insert
 
 `insertOne()` - To insert a new document in a collection, we use the `insertOne()` method.
 This method take a single document.

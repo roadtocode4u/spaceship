@@ -84,3 +84,89 @@ root node's left child is set to a node, and its right child is set to b node.
 a node's left child is set to c node, and its right child is set to d node.
 b node's left child is set to e node.
 
+**Code :**
+
+```cpp
+#include<iostream>
+#include<queue>
+
+using namespace std; // Added for cout
+
+class Node
+{
+    public:
+    int data;
+    Node *left;
+    Node *right;
+    
+    Node(int data)
+    {
+        this->data = data;
+        left = NULL;
+        right = NULL;
+    }
+};
+
+int main()
+{
+    Node *root = new Node(5);
+    Node *a = new Node(10);
+    Node *b = new Node(15);
+    Node *c = new Node(18);
+    Node *d = new Node(30);
+    Node *e = new Node(26);
+    
+    root->left = a;
+    root->right = b;
+    
+    a->left = c;
+    a->right = d;
+    
+    b->left = e;
+    
+    queue<Node *> q;
+    q.push(root);
+    
+    while (!q.empty())
+    {
+        Node *front = q.front();
+        q.pop();
+        
+        cout << front->data << ", ";
+        
+        if(front->left!=NULL)
+        {
+            q.push(front->left);
+        }
+        
+        if(front->right!=NULL)
+        {
+            q.push(front->right);
+        }
+    }
+    
+    return 0;
+}
+```
+
+**Output :**
+
+5, 10, 15, 18, 30, 26,
+
+
+The nodes are then linked together to form a binary tree structure. The left child of the `root` node is set to `a`, and the `right` child is set to `b`. Similarly, the `left` and `right` children of `a` are set to `c` and `d`, respectively. The left child of `b` is set to `e`.
+
+A queue of pointers to Node objects, `q`, is created to perform the breadth-first traversal. The root node is initially pushed into the queue.
+
+The while loop begins and continues until the queue is `empty`. Inside the loop, the front element of the queue is accessed using `q.front()` and assigned to the `front` pointer.
+
+The front node's data is printed using `cout << front->data << ", "`. This prints the data value of the current node.
+
+If the front node has a left child  `front->left is not NULL` , it is pushed into the queue using `q.push(front->left)`. This ensures that the left child will be processed in the subsequent iterations.
+
+Similarly, if the front node has a right child `front->right is not NULL`, it is also pushed into the queue using `q.push(front->right)`.
+
+Once the loop completes, the breadth-first traversal of the binary tree is finished. The nodes are printed in the order they were visited, following a level-by-level approach.
+
+The output of this code, for the given binary tree, would be: `5`, `10`, `15`, `18`, `30`, `26`. This represents the nodes visited during the breadth-first traversal of the binary tree.
+

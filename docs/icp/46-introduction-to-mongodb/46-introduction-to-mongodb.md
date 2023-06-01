@@ -211,4 +211,240 @@ In MongoDB Compass, you don't need to explicitly run the `use` command to switch
 usemydb;
 ```
 
-## MongoDB CRUD Operation 
+## MongoDB CRUD Operation
+
+CRUD stands for `Create`, `Read`, `Update`, and `Delete`. These are the basic operations used to manipulate data in a database.
+
+### Show Database
+
+To display all databases in MongoDB, you can use the `show dbs` command. This command will return a list of all databases present.
+
+```js
+   show dbs
+```
+
+```js
+   mydb    72.00 KiB
+   admin   336.00 KiB
+   local   8.27 GiB
+```
+
+In the above example, there are three databases: `mydb`, `admin`, and `local`.
+
+## Use database
+
+To switch to a specific database, you can use the use command followed by the database name. This command sets the current database context to the specified database.
+
+```js
+   use mydb
+```
+
+```js
+   switched to db mydb
+```
+
+In the above example, we switched to the mydb database.
+
+### Create / Insert
+
+To `create` or `insert` a new document into a collection, you can use the `insertOne()` or `insertMany()` methods.
+
+- **`insertOne()`** method inserts a single document into a collection.
+
+**Syntax :**
+
+```js
+db.collection -
+  name.insertOne({
+    field1: value1,
+    field2: value2,
+    // ...
+  });
+```
+
+**Example :**
+
+```js
+db.actors.insertOne({
+  name: "Shraddha Kapur",
+  age: 30,
+  movie: "Heropanti",
+});
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-28.png" alt="step-28" width="600px"/>
+
+- **`insertMany()`** method inserts multiple documents into a collection.
+
+**Syntax :**
+
+```js
+db.collection.insertMany([
+  {
+    field1: value1,
+    field2: value2,
+    // ...
+  },
+  {
+    field1: value3,
+    field2: value4,
+    // ...
+  },
+]);
+```
+
+**Example :**
+
+```js
+db.actors.insertMany([
+  {
+    name: "Shraddha Kapur",
+    age: 30,
+    movie: "Heropanti",
+  },
+  {
+    name: "Sai Pallavi",
+    age: 35,
+    movie: "Feeda",
+  },
+  {
+    name: "Rashmika",
+    age: 36,
+    movie: "Geeta Govind",
+  },
+]);
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-29.png" alt="step-29" width="600px"/>
+
+### Read
+
+To `read` or `retrieve` data from a collection, you can use the `find()` and `findOne()` methods.
+
+- **`find()`** method returns all documents in a collection.
+
+**Syntax :**
+
+```js
+db.collection.find();
+```
+
+**Example :**
+
+```js
+db.actors.find();
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-30.png" alt="step-30" width="600px"/>
+
+- **`findOne()`** method returns the first document that matches the given condition.
+
+**Syntax :**
+
+```js
+db.collection.findOne({ field: value });
+```
+
+**Example :**
+
+```js
+db.actors.findOne({ movie: "Geeta Govind" });
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-31.png" alt="step-31" width="600px"/>
+
+**Example :**
+
+```js
+db.actors.findOne({ age: 36 });
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-32.png" alt="step-32" width="600px"/>
+
+### Update
+
+- **`updateOne()`** To update existing documents in a collection, you can use the updateOne() or updateMany() methods.
+
+  **Syntax :**
+
+```js
+db.collection.updateOne({ field: value }, { $set: { newField: newValue } });
+```
+
+**Example :**
+
+```js
+db.actors.updateOne({ name: "Rashmika" }, { $set: { name: Karina } });
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-33.png" alt="step-33" width="600px"/>
+
+- **`updateMany()`** method updates multiple documents in a collection based on the given condition.
+
+  **Syntax :**
+
+```js
+db.collection.updateMany({ field: value }, { $set: { newField: newValue } });
+```
+
+**Example :**
+
+```js
+db.actors.updateMany({}, { $set: { name: "Varun Dhavan" } });
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-34.png" alt="step-34" width="600px"/>
+
+### Delete
+
+To delete documents from a collection, you can use the `deleteOne()` or `deleteMany()` methods.
+
+- **`deleteOne()`** method deletes a single document from a collection based on the given condition.
+
+**Syntax :**
+
+```js
+db.collection.deleteOne({ field: value });
+```
+
+**Example :**
+
+```js
+db.actors.deleteOne({ age: 30 });
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-35.png" alt="step-35" width="600px"/>
+
+- **`deleteMany()`** method deletes multiple documents from a collection based on the given condition.
+
+**Syntax :**
+
+```js
+db.collection.deleteMany({ field: value });
+```
+
+**Example :**
+
+```js
+db.actors.deleteMany({});
+```
+
+This will return the following output:
+
+<img src="/icp/46/step-36.png" alt="step-36" width="600px"/>

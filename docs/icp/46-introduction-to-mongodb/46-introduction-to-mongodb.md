@@ -211,4 +211,4 @@ In MongoDB Compass, you don't need to explicitly run the `use` command to switch
 usemydb;
 ```
 
-## MongoDB CRUD Operation 
+## MongoDB CRUD Operation

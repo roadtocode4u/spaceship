@@ -164,3 +164,40 @@ CSS of myheading id 👉
   }
 </style>
 ```
+
+### Height, Width For Button
+
+CSS provides various methods to specify the height and width of an image. To set image dimensions using pixel (px) values, you can use CSS, which allows for precise control over the size of the image.
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Height And Width</title>
+    <style>
+      #btn-recording {
+        background-color: #99c2ff;
+      }
+      #btn-presenting {
+        background-color: #3385ff;
+        color: white;
+      }
+      .google-btn {
+        height: 40px;
+        width: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn-recording" class="google-btn">Start Recording</button>
+    <br /><br />
+    <button id="btn-presenting" class="google-btn">Start Presenting</button>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/14/output-1.png" alt="output-1" width="600px"/>

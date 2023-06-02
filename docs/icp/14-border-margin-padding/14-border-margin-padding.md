@@ -1,29 +1,40 @@
 ---
-title: Height, Width, Border, Radius in CSS
-description: "Height, Width, Border, Radius in CSS"
+title: Height, Width, Border,  Border Radius in CSS
+description: "Height, Width, Border, Border Radius in CSS"
 hide_table_of_contents: true
 ---
 
-# Height, Width, Border, Radius in CSS
+## Height, Width, Border, Border Radius in CSS
 
-### Height, Width For Image
+### Height, Width For Button
 
-**Code :**
+CSS provides various methods to specify the height and width of an image. To set image dimensions using pixel (px) values, you can use CSS, which allows for precise control over the size of the image.
+
+**Example :**
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CSS</title>
+    <title>Height And Width</title>
     <style>
-      .rtc-logo {
-        height: 100px;
-        width: 100px;
+      #btn-recording {
+        background-color: #99c2ff;
+      }
+      #btn-presenting {
+        background-color: #3385ff;
+        color: white;
+      }
+      .google-btn {
+        height: 40px;
+        width: 120px;
       }
     </style>
   </head>
   <body>
-    <img src="https://github.com/roadtocode4u.png" class="rtc-logo" />
+    <button id="btn-recording" class="google-btn">Start Recording</button>
+    <br /><br />
+    <button id="btn-presenting" class="google-btn">Start Presenting</button>
   </body>
 </html>
 ```
@@ -32,38 +43,51 @@ hide_table_of_contents: true
 
 <img src="/icp/14/output-1.png" alt="output-1" width="600px"/>
 
-### How to provide height and width to div tag ?
+## Border
 
-**Code :**
+CSS Border have different properties like `border style`, `border color`, `border width`, `border radius`.
+
+There are four types of border
+
+1. `solid` : ******\_\_\_******
+2. `double` : =====
+3. `dashed` : --------
+4. `dotted` : ...............
+
+### **solid :**
+
+To add a solid border to HTML elements, such as divs, images, buttons, and more.
+
+**Syntax :**
+
+```css
+selector {
+  border-style: solid;
+  border-color: aqua;
+  border-width: 5px;
+}
+```
+
+**Example :**
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CSS</title>
+    <title>Solid Border</title>
     <style>
-      .rtc-logo {
-        height: 100px;
-        width: 100px;
-      }
-
-      .my-div {
-        background-color: yellow;
-        width: 600px;
-        height: 300px;
+      .box {
+        background-color: #ffcccc;
+        height: 150px;
+        width: 300px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #ff6666;
       }
     </style>
   </head>
   <body>
-    <img src="https://github.com/roadtocode4u.png" class="rtc-logo" />
-
-    <div class="my-div">
-      <h2>About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolores
-        ipsam perferendis corporis eveniet suscipit fuga sint?
-      </p>
-    </div>
+    <div class="box">Aabra ka Dabra</div>
   </body>
 </html>
 ```
@@ -72,62 +96,17 @@ hide_table_of_contents: true
 
 <img src="/icp/14/output-2.png" alt="output-2" width="600px"/>
 
-## Border
+### **double :**
 
-CSS Border have different Properties like border style, border color, border width, border radius.
+To create a double border that features two parallel lines surrounding an HTML element.
 
-There are four types of border
-
-1. `solid` : ******\_\_\_\_******
-2. `dotted` : .................
-3. `dashed` : ----------
-4. `double` : =======
-
-**Syntax :**
-
-```css
-selector {
-  border-style: solid;
-  border-color: black;
-  border-width: 5px;
-}
-```
-
-**Code :**
+**Example :**
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CSS</title>
-    <style>
-      .box {
-        background-color: yellow;
-        height: 200px;
-        width: 300px;
-        border-style: solid;
-        border-color: tomato;
-        border-width: 5px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="box"></div>
-  </body>
-</html>
-```
-
-**Output :**
-
-<img src="/icp/14/output-3.png" alt="output-3" width="600px"/>
-
-**Code :**
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>CSS</title>
+    <title>Double Border</title>
     <style>
       .box {
         background-color: yellow;
@@ -147,32 +126,64 @@ selector {
 
 **Output :**
 
-<img src="/icp/14/output-4.png" alt="output-4" width="600px"/>
+<img src="/icp/14/output-3.png" alt="output-3" width="600px"/>
 
-We Can also Provide Border properties like this `border: solid black 2px;`
+### **dashed :**
 
-**Code :**
+To create a dashed border that consists of a series of short, dashed lines.
+
+**Example :**
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Dashed Border</title>
     <style>
-      .container {
-        background-color: tomato;
-        width: 400px;
-        height: 100px;
-        border: solid black 2px;
+      .box {
+        background-color: yellow;
+        height: 200px;
+        width: 300px;
+        border-style: dashed;
+        border-color: black;
+        border-width: 10px;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <h2>This is a container</h2>
-      <br />
-      This is a container description
-    </div>
+    <div class="box"></div>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/14/output-4.png" alt="output-4" width="600px"/>
+
+### **dotted :**
+
+To create a dotted border that consists of a series of dots.
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dotted Border</title>
+    <style>
+      .box {
+        background-color: yellow;
+        height: 200px;
+        width: 300px;
+        border-style: dotted;
+        border-color: black;
+        border-width: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
   </body>
 </html>
 ```
@@ -181,38 +192,26 @@ We Can also Provide Border properties like this `border: solid black 2px;`
 
 <img src="/icp/14/output-5.png" alt="output-5" width="600px"/>
 
-## Border Radius
+**We can also provide border properties by short hand technique like this `border: solid black 3px;`**
 
-Border Radius Property are used to provide radius of element coners.
-
-We can Provide four value to this property.
-
-Example:
-
-`border-radius: 0px 50px 0px 50px ;`
-
-First value applies to top-left corner, second value applies to top-right cornar, third value applies to bottom-right corner, and fourth value applies to bottom-left corner.
-
-**Code :**
+**Example :**
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Border</title>
     <style>
-      .btn {
-        width: 350px;
-        height: 80px;
-        background-color: tomato;
-        color: white;
-        font-size: 40px;
-        border-radius: 50px;
+      .box {
+        background-color: pink;
+        height: 150px;
+        width: 300px;
+        border: solid black 3px;
       }
     </style>
   </head>
   <body>
-    <button class="btn">Submit</button>
+    <div class="box">Aabra ka Dabra</div>
   </body>
 </html>
 ```
@@ -221,73 +220,47 @@ First value applies to top-left corner, second value applies to top-right cornar
 
 <img src="/icp/14/output-6.png" alt="output-6" width="600px"/>
 
-**Code :**
+## Border Radius
 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title></title>
-    <style>
-      .btn {
-        width: 300px;
-        height: 80px;
-        background-color: tomato;
-        color: white;
-        font-size: 40px;
-        border-radius: 0px 50px 0px 50px;
-      }
-    </style>
-  </head>
-  <body>
-    <button class="btn">Submit</button>
-  </body>
-</html>
-```
+Border radius property used to provide radius to the elements of coners.
 
-**Output :**
+We can provide four value to the border radius property.
+
+**Example :**
+
+`border-radius: 0px 50px 0px 50px ;`
+
+First value applies to `top-left` corner, second value applies to `top-right` cornar, third value applies to `bottom-right` corner, and fourth value applies to `bottom-left` corner.
 
 <img src="/icp/14/output-7.png" alt="output-7" width="600px"/>
 
-### Padding
-
-Padding is used to create distance inside the elements.
-
-**All side Padding**
-
-```html
-padding: 20px
-```
-
-**Padding at specific Location**
-
-```html
-padding: 20px 40px 60px 80px; | | | | top right bottom left
-```
-
-**Code :**
+**Example :**
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Border Radius</title>
     <style>
-      .box {
-        background-color: yellow;
-        width: 400px;
-        border: 5px solid black;
-        padding: 20px 40px 60px 80px;
+      #btn-recording {
+        background-color: #99c2ff;
+      }
+      #btn-presenting {
+        background-color: #3385ff;
+        color: white;
+      }
+      .google-btn {
+        height: 30px;
+        width: 120px;
+        border: none;
+        border-radius: 3px;
       }
     </style>
   </head>
   <body>
-    <div class="box">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur corrupti
-      odio fugiat sunt quisquam, accusantium aspernatur deserunt laboriosam
-      pariatur ex repudiandae minus accusamus, repellendus est itaque nostrum!
-      Voluptatibus, illum soluta.
-    </div>
+    <button id="btn-recording" class="google-btn">Start Recording</button>
+    <br /><br />
+    <button id="btn-presenting" class="google-btn">Start Presenting</button>
   </body>
 </html>
 ```
@@ -295,60 +268,3 @@ padding: 20px 40px 60px 80px; | | | | top right bottom left
 **Output :**
 
 <img src="/icp/14/output-8.png" alt="output-8" width="600px"/>
-
-### Margin
-
-Margin is used to create Distance outside of the elements.
-
-**All side Margin**
-
-```html
-margin: 20px
-```
-
-**Margin at specific Location**
-
-```html
-margin-left: 50px; margin-top: 50px; margin-right: 100px; margin-bottom: 100px'
-```
-
-**Code :**
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title></title>
-    <style>
-      .box {
-        background-color: yellow;
-        width: 400px;
-        border: 5px solid black;
-        padding: 20px 40px 60px 80px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .new-box {
-        width: 300px;
-        background-color: tomato;
-        border: 5px solid black;
-        margin-top: 20px;
-        margin-left: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="box">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    </div>
-    <div class="new-box">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-    </div>
-  </body>
-</html>
-```
-
-**Output :**
-
-<img src="/icp/14/output-9.png" alt="output-9" width="600px"/>

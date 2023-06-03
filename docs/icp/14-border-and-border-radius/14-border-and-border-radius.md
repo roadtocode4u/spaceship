@@ -4,22 +4,11 @@ description: "Border and Border Radius "
 hide_table_of_contents: true
 ---
 
-## Border and Border Radius
-
 ## Border
 
-CSS Border have different properties like `border style`, `border color`, `border width`, `border radius`.
+A border is a decorative or structural element that can be added to HTML elements to visually separate. It is a line that surrounds the content of an element and can be customized in terms of color, width, style.
 
-There are four types of border
-
-1. `solid` : **\*\***\_\_\_**\*\***
-2. `double` : =====
-3. `dashed` : --------
-4. `dotted` : ...............
-
-### **solid :**
-
-To add a solid border to HTML elements, such as divs, images, buttons, and more.
+CSS Border have different properties like **border style**, **border color**, **border width**.
 
 **Syntax :**
 
@@ -30,6 +19,22 @@ selector {
   border-width: 5px;
 }
 ```
+
+`border-style` property is used to defines the style of the border line, `border-color` property is used to sets the color of the border and `border-width` property is used to sets the thickness or width of the border, it can be specified using a specific value in pixels(px).
+
+**There are four types of border styles :**
+
+1. **`solid` :** Continuous line. For example : (\_\_)
+
+2. **`double` :** Two parallel lines. For example :(===)
+
+3. **`dashed` :** A series of short dashes. For example : (-----)
+
+4. **`dotted` :** A series of small dots. For example : (..........)
+
+### **solid :**
+
+The solid border style in CSS creates solid line around an element. It can be applied to a elements, such as divs, paragraphs, headings, buttons, and images.
 
 **Example :**
 
@@ -58,6 +63,38 @@ selector {
 **Output :**
 
 <img src="/icp/14/output-2.png" alt="output-2" width="600px"/>
+
+**You can apply different border colors to different sides of an element :** `left`, `right`, `top`, `bottom`
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Border</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 300px;
+        background-color: #99c2ff;
+        border: solid 4px;
+        border-left: 5px solid rgb(68, 255, 0);
+        border-top: 5px solid red;
+        border-right: 5px solid blue;
+        border-bottom: 5px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/14/output-9.png" alt="output-9" width="600px"/>
 
 ### **double :**
 
@@ -188,15 +225,72 @@ Instead of adding `border-style`, `border-width` and `border-color` separately, 
 
 ## Border Radius
 
+The border-radius CSS property rounds the corners of an element's outer border edge.
 Border radius property used to provide radius to the elements of coners.
-
 We can provide four value to the border radius property.
 
 **Example :**
 
-`border-radius: 0px 50px 0px 50px ;`
+```css
+border-radius: 0px 50px 0px 50px;
+```
 
 First value applies to `top-left` corner, second value applies to `top-right` cornar, third value applies to `bottom-right` corner, and fourth value applies to `bottom-left` corner.
+
+**We can provide different values for different corner :**
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Border Radius</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 300px;
+        background-color: rgb(10, 230, 135);
+        border-radius: 15px 50px 30px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/14/output-10.png" alt="output-10" width="600px"/>
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Border</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        border: solid 2px black;
+        background-color: rgb(230, 10, 204);
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/14/output-11.png" alt="output-11" width="600px"/>
 
 **Example :**
 

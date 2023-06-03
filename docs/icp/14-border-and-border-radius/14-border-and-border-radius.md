@@ -271,7 +271,7 @@ First value applies to `top-left` corner, second value applies to `top-right` co
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Border</title>
+    <title>Border Radius</title>
     <style>
       .box {
         height: 200px;

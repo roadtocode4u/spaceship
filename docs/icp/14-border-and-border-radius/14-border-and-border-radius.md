@@ -12,7 +12,7 @@ CSS Border have different properties like `border style`, `border color`, `borde
 
 There are four types of border
 
-1. `solid` : ******\_\_\_******
+1. `solid` : **\*\***\_\_\_**\*\***
 2. `double` : =====
 3. `dashed` : --------
 4. `dotted` : ...............
@@ -155,7 +155,10 @@ To create a dotted border that consists of a series of dots.
 
 <img src="/icp/14/output-5.png" alt="output-5" width="600px"/>
 
-**We can also provide border properties by short hand technique like this `border: solid black 3px;`**
+:::tip
+Instead of adding `border-style`, `border-width` and `border-color` separately, we can use a shorthand property `border` to provide all values at once. For example,
+`border: solid black 3px;` will set border of solid style with black color having width of 3px.
+:::
 
 **Example :**
 

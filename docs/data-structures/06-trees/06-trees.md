@@ -172,3 +172,89 @@ Once the loop completes, the breadth-first traversal of the binary tree is finis
 
 The output of this code, for the given binary tree, would be: `5`, `10`, `15`, `18`, `30`, `26`. This represents the nodes visited during the breadth-first traversal of the binary tree.
 
+## DFS 
+
+**Code :**
+
+```cpp showLineNumbers="true"
+#include<iostream>
+#include<stack>
+
+using namespace std; 
+
+class Node
+{
+public:
+    int data;
+    Node *left;
+    Node *right;
+    
+    Node(int data)
+    {
+        this->data = data;
+        left = NULL;
+        right = NULL;
+    }
+};
+
+int main()
+{
+    Node *root = new Node(5);
+    Node *a = new Node(10);
+    Node *b = new Node(15);
+    Node *c = new Node(18);
+    Node *d = new Node(30);
+    Node *e = new Node(26);
+    
+    root->left = a;
+    root->right = b;
+    
+    a->left = c;
+    a->right = d;
+    
+    b->left = e;
+    
+    stack<Node *> s;
+    s.push(root);
+    
+    while (!s.empty())
+    {
+        Node *top = s.top();
+        s.pop();
+        
+        cout << top->data << ", ";
+        
+        if (top->right != NULL)
+        {
+            s.push(top->right);
+        }
+        
+        if (top->left != NULL)
+        {
+            s.push(top->left);
+        }
+    }
+    
+    return 0;
+}
+```
+
+**Output :**
+
+5, 10, 18, 30, 15, 26,
+
+In the above code Line 6 to 19, This section defines a class `Node`, which represents a node in a binary tree. It has three members: `data` (to store the value of the node), `left` (to point to the left child node), and `right` (to point to the right child node). The constructor `Node(int data)` initializes the node with the given data and sets the left and right pointers to `NULL`.
+
+Line 21 to 36, In the `main` function, you create instances of the `Node` class and construct a binary tree. The `root` node has a value of `5`. `a` is its left child with a value of `10`, and `b` is its right child with a value of `15`. `c` is the left child of `a` with a value of `18`, and `d` is the right child of `a` with a value of `30`. `e` is the left child of `b` with a value of 26.
+
+Line 38 to 58, This part of the code performs a pre-order traversal of the binary tree using a stack. We create an empty stack `s` and push the `root` node onto it.
+
+The while loop continues until the stack becomes empty. In each iteration, we retrieve the top node from the stack using `s.top()`, store it in the `top` pointer, and then remove it from the stack using `s.pop()`.
+
+We print the value of the `top` node using `cout << top->data << ", "`. This line will print the data of the current node followed by a comma and a space.
+
+Next, we check if the `top` node has a right child. If it does, we push the right child onto the stack using `s.push(top->right)`. This ensures that right child nodes are processed after left child nodes.
+
+Similarly, we check if the `top` node has a left child. If it does, we push the left child onto the stack using `s.push(top->left)`.
+
+The loop continues until all the nodes have been processed and the stack becomes empty.

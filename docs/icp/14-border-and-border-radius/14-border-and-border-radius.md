@@ -6,11 +6,17 @@ hide_table_of_contents: true
 
 ## Border
 
-A border is a decorative or structural element that can be added to HTML elements to visually separate. It is a line that surrounds the content of an element and can be customized in terms of color, width, style.
+A border is a decorative or structural element that can be added to HTML elements to visually separate them from other elements. It is a line that surrounds the content of an element and can be customized in terms of color, width, and style.
 
-CSS Border have different properties like **border style**, **border color**, **border width**.
+In CSS, you can use different properties to define the border of an element:
 
-**Syntax :**
+* **`border-style`** defines the style of the border line.
+
+* **`border-color`** sets the color of the border.
+
+* **`border-width`** sets the thickness or width of the border.
+
+Here's an example of the syntax to set the border properties:
 
 ```css
 selector {
@@ -20,23 +26,29 @@ selector {
 }
 ```
 
-`border-style` property is used to defines the style of the border line, `border-color` property is used to sets the color of the border and `border-width` property is used to sets the thickness or width of the border, it can be specified using a specific value in pixels(px).
+The code you provided is used to style the border of an HTML element. It has three properties that control different aspects of the border: `border-style`, `border-color`, and `border-width`.
 
-**There are four types of border styles :**
+* **`border-style: solid;`**: This line of code sets the style of the border to `solid`. Think of it as drawing a continuous line around the element. There are other styles available like `dashed lines`, `dotted lines`, and more, but here we are using a `solid` line.
 
-1. **`solid` :** Continuous line. For example : (\_\_)
+* **`border-color: aqua;`** : This line of code determines the `color` of the `border`. In this case, it sets the `border color` to `aqua`, which is a light blue color. You can choose any color you like by replacing `aqua` with the color of your choice.
 
-2. **`double` :** Two parallel lines. For example :(===)
+* **`border-width: 5px;`** : This line of code sets the `thickness` or `width` of the `border`. The value `5px` means that the border will have a width of `5 pixels`. You can change this value to make the border thicker or thinner as desired.
 
-3. **`dashed` :** A series of short dashes. For example : (-----)
+**There are four types of border styles you can use:**
 
-4. **`dotted` :** A series of small dots. For example : (..........)
+1. **`solid` :** Creates a continuous line.👉**___________________**
 
-### **solid :**
+2. **`double` :** Creates two parallel lines. 👉 **====**
 
-The solid border style in CSS creates solid line around an element. It can be applied to a elements, such as divs, paragraphs, headings, buttons, and images.
+3. **`dashed` :** Creates a series of short dashes. 👉 **------**
 
-**Example :**
+4. **`dotted` :** Creates a series of small dots.👉 **..........**
+
+### Solid Border
+
+The solid border style creates a solid line around an element. You can apply it to different HTML elements such as `div`, `paragraphs`, `headings`, `buttons`, and `images`.
+
+**EHere's an example :**
 
 ```html
 <!DOCTYPE html>
@@ -64,13 +76,15 @@ The solid border style in CSS creates solid line around an element. It can be ap
 
 <img src="/icp/14/output-2.png" alt="output-2" width="600px"/>
 
-**You can apply different border colors to different sides of an element :** `left`, `right`, `top`, `bottom`
+### Different Border Colors for Different Sides 
 
-**Example :**
+You can apply different border colors to different sides of an element using the properties `border-left`, `border-right`, `border-top`, and `border-bottom`.
+
+**Here's an example :**
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <title>Border</title>
     <style>
@@ -96,11 +110,11 @@ The solid border style in CSS creates solid line around an element. It can be ap
 
 <img src="/icp/14/output-9.png" alt="output-9" width="600px"/>
 
-### **double :**
+### Double Border
 
-To create a double border that features two parallel lines surrounding an HTML element.
+The double border style features two parallel lines surrounding an HTML element.
 
-**Example :**
+**Here's an example:**
 
 ```html
 <!DOCTYPE html>
@@ -128,11 +142,11 @@ To create a double border that features two parallel lines surrounding an HTML e
 
 <img src="/icp/14/output-3.png" alt="output-3" width="600px"/>
 
-### **dashed :**
+### Dashed Border
 
-To create a dashed border that consists of a series of short, dashed lines.
+The dashed border style consists of a series of short, dashed lines. 
 
-**Example :**
+**Here's an example :**
 
 ```html
 <!DOCTYPE html>
@@ -160,11 +174,11 @@ To create a dashed border that consists of a series of short, dashed lines.
 
 <img src="/icp/14/output-4.png" alt="output-4" width="600px"/>
 
-### **dotted :**
+### Dotted Border
 
-To create a dotted border that consists of a series of dots.
+The dotted border style consists of a series of dots.
 
-**Example :**
+**Here's an example :**
 
 ```html
 <!DOCTYPE html>
@@ -193,11 +207,10 @@ To create a dotted border that consists of a series of dots.
 <img src="/icp/14/output-5.png" alt="output-5" width="600px"/>
 
 :::tip
-Instead of adding `border-style`, `border-width` and `border-color` separately, we can use a shorthand property `border` to provide all values at once. For example,
-`border: solid black 3px;` will set border of solid style with black color having width of 3px.
+Instead of adding `border-style`, `border-width`, and `border-color` separately, you can use a shorthand property border to provide all values at once. For example, `border: solid black 3px;` will set a `solid border` with `black color` and a `width of  3 pixels`.
 :::
 
-**Example :**
+**Here's an example :**
 
 ```html
 <!DOCTYPE html>
@@ -225,19 +238,20 @@ Instead of adding `border-style`, `border-width` and `border-color` separately, 
 
 ## Border Radius
 
-The border-radius CSS property rounds the corners of an element's outer border edge.
-Border radius property used to provide radius to the elements of coners.
-We can provide four value to the border radius property.
+The `border-radius` CSS property is used to round the corners of an element's outer border edge. It provides a way to give elements a rounded appearance.
 
-**Example :**
+You can provide up to four values to the `border-radius` property:
 
 ```css
 border-radius: 0px 50px 0px 50px;
 ```
 
-First value applies to `top-left` corner, second value applies to `top-right` cornar, third value applies to `bottom-right` corner, and fourth value applies to `bottom-left` corner.
+* The first value applies to the top-left corner.
+* The second value applies to the top-right corner.
+* The third value applies to the bottom-right corner.
+* The fourth value applies to the bottom-left corner.
 
-**We can provide different values for different corner :**
+**You can also provide different values for different corners**
 
 **Example :**
 
@@ -265,7 +279,9 @@ First value applies to `top-left` corner, second value applies to `top-right` co
 
 <img src="/icp/14/output-10.png" alt="output-10" width="600px"/>
 
-**Example :**
+**Additionally, you can use border-radius to create a circular shape by setting a value of `50%`**.
+
+**Here's an example:**
 
 ```html
 <!DOCTYPE html>
@@ -292,7 +308,10 @@ First value applies to `top-left` corner, second value applies to `top-right` co
 
 <img src="/icp/14/output-11.png" alt="output-11" width="600px"/>
 
-**Example :**
+In this example, the element will have a circular shape because the `border-radius` is set to `50%`.
+
+
+**Here's an example:**
 
 ```html
 <!DOCTYPE html>

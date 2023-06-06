@@ -30,7 +30,7 @@ An API **Application Programming Interface** is a set of rules and protocols tha
 
 <img src="/icp/47/step-2.png" alt="step-2" height="300px"/>
 
-## Expree js:
+## Express js:
 
 Express.js is a popular JavaScript framework for building web applications and APIs. It simplifies the process of setting up a server and handling HTTP requests and responses.
 
@@ -49,7 +49,6 @@ To create a server using Express, you need to write some code in your index.js f
 **Example :**
 
 ```js
-express;
 import express from "express";
 
 const app = express();
@@ -76,14 +75,14 @@ The GET method is used to retrieve data from a specified resource on a server. I
 **Example:**
 
 ```js
-import express from 'express';
+import express from "express";
 
 const app = express();
-app.get('/students', (req, res) => {
-    res.json('students');
+app.get("/students", (req, res) => {
+  res.json("students");
 });
 app.listen(5000, () => {
-    console.log('Listening on port 5000...');
+  console.log("Listening on port 5000...");
 });
 ```
 
@@ -94,30 +93,30 @@ The POST method is used to send data to the server to create a new resource or p
 **Example:**
 
 ```js
-import express from 'express';
+import express from "express";
 
 const app = express();
-app.get('/students', (req, res) => {
-    const students = ["Saurabh", "Yogita", "Bandini", "Harshada", "Darshan"];
-    res.json(students);
+app.get("/students", (req, res) => {
+  const students = ["Saurabh", "Yogita", "Bandini", "Harshada", "Darshan"];
+  res.json(students);
 });
 
-app.post('/student', (req, res) => {
-    const name = req.body.name;
-    const roll = req.body.roll;
+app.post("/student", (req, res) => {
+  const name = req.body.name;
+  const roll = req.body.roll;
 
-    res.json({
-        status: 'success',
-        message: `Student ${name} created with roll number ${roll}`
-    });
+  res.json({
+    status: "success",
+    message: `Student ${name} created with roll number ${roll}`,
+  });
 });
 
 app.listen(5000, () => {
-    console.log('Listening on port 5000');
+  console.log("Listening on port 5000");
 });
 ```
 
-## Nodemon 
+## Nodemon
 
 `Nodemon` is a utility that automatically monitors changes in your source code and restarts the server whenever a change is detected. It is commonly used during development to save time and effort in manually restarting the server after each code modification.
 
@@ -138,3 +137,189 @@ Here's how the scripts section of your `package.json` file should look like:
 ```
 
 With this setup, you can conveniently start your server using `npm start`, and nodemon will take care of automatically restarting the server whenever you make changes to the code.
+
+## Mongoose
+
+Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB.
+
+### Why we used Mongoose?
+
+Mongoose provides optional pre and post save operations for data models. It provides a straight-forward, schema-based solution to modeling your application data and includes built-in type casting, validation, query building, business logic hooks and more, out of the box.
+
+## Installation
+
+```bash
+npm install mongoose
+```
+
+<img src="/icp/47/step-3.png" alt="step-3" height="300px"/>
+
+### How to import mongoose?
+
+- If we can add `"type":"module"` in the `package.json` file then import mongose by following type :
+
+```js
+import mangoose from "mangoose";
+```
+
+- If we cannot add `"type":"module"` in the `package.json` file then import mongose by following type :
+
+```js
+const mongoose = require("mongoose");
+```
+
+## Connecting to MongoDB
+
+### **Syntax :**
+
+```js
+import mongoose from "mongoose";
+
+mongoose.connect("URL", "CALLBACK FUNCTION");
+```
+
+**Example :**
+
+```js
+import express from "express";
+import mongoose from "mongoose";
+
+const app = express();
+app.use(express.json());
+
+async function connectionMongoDB() {
+  const conn = await mongoose.connect(
+    "mongodb+srv://<username>:<password>@mangodb.4kkisqa.mongodb.net/<dbname>"
+  );
+  if (conn) {
+    console.log("Mongo DB connected");
+  } else {
+    console.log("Error");
+  }
+  connectMongoDB();
+}
+
+app.listen(5000, () => {
+  console.log("Listen on port 5000");
+});
+```
+
+## Schema Designing
+
+Schema is a structure of how the data should look like. It defines the structure of the document, default values, validators, etc.
+
+**File Name : package.json**
+
+```js
+{
+  "name": "apis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "yogita",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.2",
+    "nodemon": "^2.0.22"
+  }
+}
+```
+
+**File Name : index.js**
+
+```js
+import express from "express";
+import mongoose from "mongoose";
+import Student from "./models/Student.js";
+import dotnv from "dotenv";
+dotnv.config();
+
+const app = express();
+app.use(express.json());
+
+async function connectMongoDB() {
+  const conn = await mongoose.connect(process.env.MONGO_URL);
+  if (conn) {
+    console.log("Mongo DB Connected");
+  } else {
+    console.log("Error");
+  }
+}
+connectMongoDB();
+
+app.post("/student", async (req, res) => {
+  const fullName = req.body.fullName;
+  const email = req.body.email;
+  const regNo = req.body.regNo;
+
+  const newStud = new Student({
+    fullName: fullName,
+    email: email,
+    regNo: regNo,
+  });
+
+  const savedStudent = await newStud.save();
+
+  res.json({
+    success: true,
+    message: "Student Saved Successfully",
+    data: savedStudent,
+  });
+});
+
+app.get("/students", async (req, res) => {
+  const students = await Student.find();
+
+  res.json({
+    success: true,
+    message: "Students fetched Successfully",
+    data: students,
+  });
+});
+
+app.listen(5000, () => {
+  console.log("Listen on port 5000");
+});
+```
+
+- Create a `models` folder and then create `js` file take first letter of js file always be capital.
+
+**File Name : Student.js**
+
+```js
+import { Schema, model } from "mongoose";
+
+const studentSchema = new Schema({
+  fullname: String,
+  email: String,
+  regNo: Number,
+});
+
+const Student = model("Student", studentSchema);
+
+export default Student;
+```
+
+**File Name : .gitignore**
+
+```js
+node_modules.env;
+```
+
+**File Name : .env**
+
+```js
+MONGO_URL = mongodb+srv://<username>:<password>@mangodb.4kkisqa.mongodb.net/<dbname>
+```
+
+:::tip
+
+Put your username and password in the url for database connection.
+
+:::

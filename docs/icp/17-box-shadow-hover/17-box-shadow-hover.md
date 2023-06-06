@@ -1,6 +1,6 @@
 ---
-title: Box Shadow
-description: Box Shadow
+title: Box Shadow and Hover
+description: Box Shadow and Hover
 hide_table_of_contents: true
 ---
 

@@ -4,24 +4,29 @@ description: Padding, Margin and Box Model
 hide_table_of_contents: true
 ---
 
+## Box-Model
+
+The CSS Box Model is a fundamental concept that describes how elements on a webpage are rendered and how their dimensions are calculated. It consists of four layers: `content`, `padding`, `margin`, and `border`. In this guide, we'll explore the concepts of `padding` and `margin`, and provide examples to illustrate their usage.
+
 ### Padding
 
-The CSS `padding` properties are used to create space around an element's content, `inside` of any defined borders. padding can apply on every element.
-padding can be specify padding for each side of element.
+Padding refers to the space between an element's content and its border. It creates space within the element, inside any defined borders. The CSS properties used to control padding are:
 
-- `padding-left`
+* **`padding-top`**: Specifies the padding on the top side of the element.
 
-- ``padding-right`
+* **`padding-right`**: Specifies the padding on the right side of the element.
 
-- `padding-top`
+* **`padding-bottom`**: Specifies the padding on the bottom side of the element.
 
-- `padding-bottom`
+* **`padding-left`**: Specifies the padding on the left side of the element.
+
+Here's an example of how padding can be applied to an element:
 
 **Example :**
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <title>padding in css</title>
     <style>
@@ -49,46 +54,10 @@ padding can be specify padding for each side of element.
 **Output :**
 <img src="/icp/16/step-1.png" alt="step-1" width="600px"/>
 
-### You can apply padding on same side:
+### Shorthand Padding
 
-**Example :**
+Instead of specifying `padding` for each side individually, you can use the shorthand padding property to define padding for all four sides simultaneously. The values are specified in the following order: `top`, `right`, `bottom`, `left`.
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Padding</title>
-    <style>
-      .box {
-        background-color: tomato;
-        border: 2px solid black;
-        padding: 30px;
-        width: 400px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="box">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-      reiciendis modi numquam et error nesciunt nam vero. Deserunt officiis
-      doloremque cumque quas soluta reiciendis consequuntur a unde, inventore,
-      suscipit eos?
-    </div>
-  </body>
-</html>
-```
-
-**Output**
-<img src="/icp/16/step-2.png" alt="step-2" width="600px"/>
-
-### You can apply padding on shorthand technique:
-
-To shorten the code, it is possible to specify all the padding properties in one property.
-
-- `padding-top`
-- `paading-right`
-- `padding-bottom`
-- `padding-left`
 
 ```html
 <!DOCTYPE html>
@@ -118,7 +87,7 @@ To shorten the code, it is possible to specify all the padding properties in one
 **Output**
 <img src="/icp/16/step-3.png" alt="step-3" width="600px"/>
 
-### We can aply padding on buttons:
+### We can apply padding on buttons:
 
 ```html
 <!DOCTYPE html>
@@ -146,15 +115,17 @@ To shorten the code, it is possible to specify all the padding properties in one
 
 ## Margin:
 
-Margins are used to create space around elements, `outside` of any defined borders.
-margin can be specify marging for each side of element.
+Margin refers to the space around an element, outside of any defined borders. It creates space between elements. The CSS properties used to control margin are similar to padding:
 
-- `margin-top`
-- `margin-right`
-- `margin-bottom`
-- `margin-left`
+* **`margin-top`**: Specifies the margin on the top side of the element.
 
-**Example :**
+* **`margin-right`**: Specifies the margin on the right side of the element.
+
+* **`margin-bottom`**: Specifies the margin on the bottom side of the element.
+
+* **`margin-left`**: Specifies the margin on the left side of the element.
+
+Here's an example of how margin can be applied to an element:
 
 ```html
 <!DOCTYPE html>
@@ -193,9 +164,9 @@ margin can be specify marging for each side of element.
 **Output**
 <img src="/icp/16/step-6.png" alt="step-6" width="600px"/>
 
-### You can apply margin on shorthand technique:
+### Shorthand Margin
 
-To shorten the code, it is possible to specify all the margin properties in one property.
+Similar to shorthand padding, you can use the shorthand margin property to define margin for all four sides simultaneously. The values are specified in the same order: `top`, `right`, `bottom`, `left`.
 
 ```html
 <!DOCTYPE html>
@@ -231,50 +202,4 @@ To shorten the code, it is possible to specify all the margin properties in one 
 **Output**
 <img src="/icp/16/step-8.png" alt="step-8" width="600px"/>
 
-### You can apply padding on same side :
-
-**Example :**
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Margin</title>
-    <style>
-      .btn1 {
-        background-color: rgb(255, 0, 128);
-        color: white;
-        border: none;
-        margin: 40px;
-        padding: 5px 15px 5px 15px;
-      }
-      .box {
-        background-color: aqua;
-        border: 2px solid black;
-        width: 300px;
-      }
-    </style>
-  </head>
-
-  <body>
-    <body>
-      <div class="box">
-        <button class="btn1">Button One</button>
-      </div>
-    </body>
-  </body>
-</html>
-```
-
-**Output**
-<img src="/icp/16/step-7.png" alt="step-7" width="600px"/>
-
-## Box-Model:
-
-The box model is a fundamental concept in CSS (Cascading Style Sheets) that describes how elements on a webpage are rendered and how their dimensions are calculated.
-In the box model, every element on a webpage is represented as a rectangular box. Each box consists of four layers:
-
-1. Content
-2. Padding
-3. Margin
-4. Border
+In the example above, the shorthand `margin` property is used to apply margin to all four sides of the `<button>` element with the class `btn`. The values `10px` `30px` `50px` `80px` represent the top, right, bottom, and left margins, respectively.

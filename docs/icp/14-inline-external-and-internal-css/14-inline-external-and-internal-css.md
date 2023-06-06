@@ -1,5 +1,5 @@
 ---
-title: Three ways to add CSS
+title: Inline, Internal and External CSS
 description: Inline, Internal and External CSS
 hide_table_of_contents: true
 ---

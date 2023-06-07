@@ -4,126 +4,121 @@ description: Box Shadow and Hover
 hide_table_of_contents: true
 ---
 
-## Hexadecimal
+## Hover
+
+The :hover selector is used for selecting the elements when we move the mouse on them. We can use it on almost every HTML element.The hover can be used to highlight the web pages as per the preference of users in an effective web-designing program.
 
 **Code :**
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Box Shadow</title>
+    <title>Hover</title>
     <style>
-      h1 {
-        color: #00ff00;
+      .btn {
+        background-color: tomato;
+        color: white;
+        border: 2px solid dashed;
+        border-radius: 10px;
+      }
+      .btn:hover {
+        background-color: aquamarine;
+        color: black;
       }
     </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <button class="btn">Awesome button</button>
+  </body>
+</html>
+```
+
+### We can give hover effect on image
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>shadow</title>
+    <style>
+      img-tiger {
+        height: 100px;
+        border-radius: 50%;
+      }
+      img-tiger:hover {
+        border-radius: 20px;
+        transition: 2s;
+        margin-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="tiger.png" alt="img" />
   </body>
 </html>
 ```
 
 **Output :**
+<img src="/icp/17/step-1.png" alt="step-1" width="500px"/>
 
-<img src="/icp/16/output-1.png" alt="output-1" width="600px"/>
+## Box-Shadow :
 
-# Box-shadow and Card design
+The box-shadow property attaches one or more shadows to an element.
 
-## Box Shadow
-
-The box-shadow adds shadow effects around an element's frame.
-
-**Syntax:**
-
-```css
-box-shadow: 5px 5px 5px 2px #808080;
-
-
-Explanation:
+**`Syntax :`**
 
          h-shadow v-shadow  blur spread  color
              |       |      |      |       |
-box-shadow: 5px    5px     5px    2px   #808080;
+
+box-shadow: 5px 5px 5px 2px #808080;
+
+**`Explanation :`**
+
+**h-shadow :** The horizontal offset of the shadow. A positive value puts the shadow on the right side of the box, a negative value puts the shadow on the left side of the box
+
+**v-shadow :** The vertical offset of the shadow. A positive value puts the shadow below the box, a negative value puts the shadow above the box.
+
+**blur :** The blur radius. The higher the number, the more blurred the shadow will be.
+
+**spread :** The spread radius. A positive value increases the size of the shadow, a negative value decreases the size of the shadow
+
+**color :** The color of the shadow. The default value is the text color.
+
+```css
+box-shadow: 5px 5px 5px 2px #808080;
 ```
 
 **Code :**
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Box Shadow</title>
+    <title>shadow</title>
     <style>
-      .box {
-        height: 200px;
-        width: 200px;
-        background-color: tomato;
-        box-shadow: 2px 5px 5px 2px #808080;
+      .img-tiger {
+        height: 300px;
+        border-radius: 50px;
+        margin: 30px;
+        box-shadow: 2px 2px 5px 10px rgb(138, 136, 136);
+      }
+
+      .img-tiger:hover {
+        border-radius: 20px;
+        transition: 2s;
       }
     </style>
   </head>
+
   <body>
-    <div class="box"></div>
+    <img src="tiger.png" class="img-tiger" alt="img" />
   </body>
 </html>
 ```
 
 **Output :**
 
-<img src="/icp/16/output-2.png" alt="output-2" width="600px"/>
-
-**Code :**
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Box Shadow</title>
-    <style>
-      .box {
-        height: 200px;
-        width: 200px;
-        background-color: tomato;
-        box-shadow: 0px 0px 10px 5px black;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="box"></div>
-  </body>
-</html>
-```
-
-**Output :**
-
-<img src="/icp/16/output-3.png" alt="output-3" width="600px"/>
-
-**Code :**
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Box Shadow</title>
-    <style>
-      .box {
-        height: 200px;
-        width: 400px;
-        background-color: tomato;
-        border: 1px solid black;
-        border-radius: 10px;
-        box-shadow: 2px 2px 1px 1px black;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="box"></div>
-  </body>
-</html>
-```
-
-**Output :**
-
-<img src="/icp/16/output-4.png" alt="output-4" width="600px"/>
+<img src="/icp/17/step-2.png" alt="step-2" width="500px"/>

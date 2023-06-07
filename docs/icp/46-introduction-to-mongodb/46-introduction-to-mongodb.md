@@ -23,7 +23,7 @@ MongoDB organizes data in a flexible and scalable manner. Here are the key compo
 2. `Document`: A document in MongoDB is a set of key-value pairs. It is equivalent to a record or row in a relational database.
 3. `Collection`: A collection is a group of related documents. It is analogous to a table in a relational database. Collections do not enforce a strict schema, allowing for flexibility in the structure of the stored documents.
 
-## Installing MangoDB
+## Installing MongoDB
 
 To create a MongoDB Atlas account and set up your database, follow these steps:
 
@@ -132,16 +132,16 @@ In this example, we have a documents with two embedded documents. Each document 
 
 These examples showcase the basic structure of BSON documents and how key-value pairs are used to represent data in MongoDB. BSON's flexibility and efficient encoding make it suitable for storing and retrieving data in MongoDB, providing a powerful and scalable solution for managing unstructured and semi-structured data.
 
-## Exploring MangoDB Compass
+## Exploring MongoDB Compass
 
 There are two mongodb tools:
 
-1. `MangoDB Atlas` : It is a website where we can create account and create database.
+1. `MongoDB Atlas` : It is a website where we can create account and create database.
 
-2. `MangoDB Compass` : We can access data locally can't visit anytime website.
+2. `MongoDB Compass` : We can access data locally can't visit anytime website.
    Mangodb compass mainly used for data access.
 
-## Steps to install MangoDB Compass
+## Steps to install MongoDB Compass
 
 To install MongoDB Compass, you can follow these steps:
 
@@ -169,12 +169,12 @@ MongoDB Compass provides a GUI (Graphical User Interface) for accessing MongoDB 
 
 ### Database
 
-- **Mangosh**: Mangosh is a mangodb shell.(it is terminal of mangodb).
-  we can run the mangodb commands.
+- **Mongosh**: Mongosh is a mangodb shell.(it is terminal of mongodb).
+  we can run the mongodb commands.
 
 - There are three database:
 
-1. **Admin** : It manages mangodb database.
+1. **Admin** : It manages mongodb database.
 2. **Local** : Configuration, we can't modifies these database.
 3. **mydb** : It is userdefined database. we can access these database.
 

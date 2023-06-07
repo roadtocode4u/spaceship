@@ -6,19 +6,11 @@ hide_table_of_contents: true
 
 ## Text-align
 
-The `text-align` property is used to specify the horizontal alignment of the text within its containing element. It allows you to control the text is aligned to the `left`, `right`, `center`, or `justify`. for example : We can used this properties on `<p>`, `<div>`, `<heading>`, etc.
+The `text-align` property is used to specify the horizontal alignment of the text within its containing element. It allows you to control how the text is aligned, whether it's aligned to the `left`, `right`, `center`, or `justified`.
 
-**There are four properties of text align :**
+**There are four values for the `text-align` property:**
 
-- **text-align: left;**
-
-- **text-align: right;**
-
-- **text-align: center;**
-
-- **text-align: justify;**
-
-1. **`text-align: left;` :** This value aligns the text to the left edge of the containing element.
+1. **`text-align: left;` :** This value aligns the text to the left edge of the containing element. The text will be flush with the left side, and any remaining space will be on the right side.
 
 **Example :**
 
@@ -51,7 +43,7 @@ The `text-align` property is used to specify the horizontal alignment of the tex
 
 <img src="/icp/18/output-1.png" alt="output-1" width="600px"/>
 
-2. **`text-align: right;`:** This value aligns the text to the right edge of the containing element.
+2. **`text-align: right;`:** This value aligns the text to the right edge of the containing element. The text will be flush with the right side, and any remaining space will be on the left side.
 
 **Example :**
 
@@ -84,7 +76,7 @@ The `text-align` property is used to specify the horizontal alignment of the tex
 
 <img src="/icp/18/output-2.png" alt="output-2" width="600px"/>
 
-3. `text-align: center;` : This value centers the text horizontally within the containing element.
+3. `text-align: center;` :  This value centers the text horizontally within the containing element. The text will be evenly spaced between the left and right edges.
 
 **Example :**
 
@@ -117,7 +109,7 @@ The `text-align` property is used to specify the horizontal alignment of the tex
 
 <img src="/icp/18/output-3.png" alt="output-3" width="600px"/>
 
-4. `text-align: justify;`: This value justifies the text, meaning it spreads the text evenly between the left and right edges of the containing element.
+4. `text-align: justify;`:  This value justifies the text, meaning it spreads the text evenly between the left and right edges of the containing element. It adjusts the spacing between words and characters to create a clean, straight edge on both sides.
 
 **Example :**
 
@@ -152,7 +144,7 @@ The `text-align` property is used to specify the horizontal alignment of the tex
 
 ## Font Family
 
-The `font-family` property is used to specify the font family for the text content of an element. It allows you to define a prioritized list of font families to be used for rendering the text.
+The `font-family` property is used to specify the font family for the text content of an element. It allows you to define a prioritized list of font families to be used for rendering the text. If the first font is not available, the browser will try the next one in the list, and so on.
 
 **Example :**
 
@@ -190,6 +182,12 @@ The `font-family` property is used to specify the font family for the text conte
 **Output :**
 
 <img src="/icp/18/output-5.png" alt="output-5" width="600px"/>
+
+In the example above, the font family is set to `Arial, sans-seri`. This means that the browser will first attempt to use the `Arial` font. If Arial is not available on the user's system, the browser will use a generic `sans-serif` font as a fallback.
+
+You can specify multiple font families separated by commas. The browser will try each font family in order until it finds one that is available.
+
+It's important to note that the font families specified must be installed on the user's system or available through web fonts. Commonly used generic font families include `serif`, `sans-serif`, `monospace`, `cursive`, and `fantasy`. These generic font families are available on most systems and provide a fallback option if the specified font is not available.
 
 **Example :**
 

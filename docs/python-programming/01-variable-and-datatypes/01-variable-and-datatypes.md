@@ -4,26 +4,51 @@ description: "Variable and Datatypes"
 hide_table_of_contents: true
 ---
 
-## What is Variable
+## What is a Variable
 
-Variables are used to store data, they take memory space based on the type of value we assigning to them.
+In programming, a variable is a named container that is used to store data. It is a way to refer to a memory location that holds a value. Variables are fundamental in programming as they allow us to store and manipulate data during the execution of a program.
 
-For Example
+## Declaring Variables in Python
+
+In Python, you can declare a variable by assigning a value to it using the assignment operator `=`. Here's the general syntax for declaring a variable:
 
 ```python
-Name="sakshi"
-print(Name)
+variable_name = value
 ```
 
-Here,We are storing sakshi in the variable name.
+**Example :**
+
+```python
+name = "Ankita"
+```
+
+In the above example, we declared a variable named `name` and assigned the value `Ankita` to it.
 
 ## Rules to declare a variable in python
 
-1. A variable name must start with a letter (a-z or A-Z) or the underscore (\_) character.
+1. A variable name must start with a letter `a-z or A-Z` or the underscore `_` character.
 2. A variable name cannot start with a number.
-3. variable are case-sensitive
+3. Variable names are case-sensitive, which means `name` and `Name` are considered different variables.
 4. A variable name can not used reserved keyword
-5. A variable name can include (a-z,A-z, 0-9, and \_ )
+5. A variable name can include `a-z,A-z, 0-9, and _ `
+**Here are some examples of valid and invalid variable names:**
+
+### Valid variable names
+
+```python
+age = 21
+student_name = "John"
+_total = 100
+my_variable_2 = True
+```
+
+### Invalid variable names
+
+```python
+2name = "Alice"  # Cannot start with a number
+first-name = "Bob"  # Cannot use hyphens
+class = "Math"  # Cannot use reserved keywords
+```
 
 ### Let's learn by examples
 

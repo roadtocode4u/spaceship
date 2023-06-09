@@ -6,26 +6,23 @@ hide_table_of_contents: true
 
 ### Display Properties:
 
-Display property is used to control the layout. There are three display properties. In this guide we will learn about the following display properties :
-
-1. `Inline`
-2. `Block`
-3. `Inline-Block`
+The `display` property in CSS is used to control the layout and behavior of elements. There are three commonly used display properties: `inline`, `block`, and `inline-block`. Let's explore each of these display properties in detail.
 
 ## Inline Elements
 
-Inline elements follow the following properties:
+Inline elements have the following characteristics:
 
-1. Inline elements does not start from new line.
-2. We cannot set `height` and `width` property to inline elements.
-3. Inline elements takes only space required for the content.
+1. They do not start from a new line.
+2. The `height` and `width` properties cannot be applied to inline elements.
+3. Inline elements only occupy the space required for their content.
 
-Here are some of the inline elements:
-`<span>`, `<a>`, `<img>`, `<sub>`, `<sup>`, `<label>`
+Some examples of inline elements include `<span>`, `<a>`, `<img>`, `<sub>`, `<sup>`, and `<label>`.
 
 **`<button>`** button starts from same line it can not start from new line.
 button takes only required space. but we can set `height` and `width` to button.
 That's the reason button is **not inline-element**.
+
+In the given example, the `<span>` elements with the class name `rtc` are inline elements. They are displayed on the same line and only take up the necessary space for their content. Since the `height` and `width` properties are applied to the .`rtc` class, the background color is visible, but it doesn't affect the layout.
 
 **Example :**
 
@@ -56,17 +53,7 @@ That's the reason button is **not inline-element**.
 
 <img src="/icp/19/step-1.png" alt="step-1" width="500px"/>
 
-**Explanation :**
-
-In these above example
-`RTC` , `ICP` & `Offline Classroom program`
-
-1.  these elements can not start from new line.
-2.  They contains only required space.
-3.  Height and width property cannot applied.
-    So That's the reason `span` is inline-element.
-
-    **Example :**
+**Example :**
 
 ```html
 <!DOCTYPE html>
@@ -101,16 +88,18 @@ In these above example
 
 ## Block Elements
 
-Block elements follow the following properties:
+Block elements exhibit the following characteristics:
 
-1. Block elements always start from new line.
-2. These elements takes complete space in horizontal direction.
-3. Height and width can be assign to block elements.
+1. They always start from a new line.
+2. Block elements occupy the full available horizontal space.
+3. The `height` and `width` properties can be assigned to block elements.
 
 Here are some of the block elements:
 `<div>`, `<p>`, `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`, `<ul>`, `<ol>`, `<li>`,
 
-**Code:**
+n the given example, the `<div>` elements with the classes `container` and `box` are block elements. They start from new lines, occupy the full width available within their parent container, and the `height` and `width` properties affect their layout.
+
+**Example :**
 
 ```html
 <!DOCTYPE html>
@@ -148,26 +137,17 @@ body{
 
 <img src="/icp/19/step-3.png" alt="step-2" width="600px"/>
 
-**Explanation :**
-In the above example
-
-1. we can see that both division are starting from `new line`.
-2. They are occupying complete space in `horizontal` direction.
-3. And also `height` and `width` propety can be assigned.
-
-These are the `block` element. because it follow the all property of block elements.
-
 ## Inline-Block Elements
 
-Elements having display property `inline-block`. That follows the property of both `inline` and `block` elements. It follows the following properties:
+Elements with the `display` property set to `inline-block` exhibit the combined behavior of inline and block elements. They possess the following characteristics:
 
-1. Inline-block elements does not starts from new line.
-2. We can provide height and width to the inline-block elements.
-3. Inline-block elements take a space required by the content.
+1. Inline-block elements do not start from a new line.
+2. The height and width properties can be assigned to inline-block elements.
+3. Inline-block elements occupy the required space based on their content.
 
 Some inline-block elements are `<button>`, `<input>`
 
-Now we will make display property of division to `inline-block`` and lets create three simple cards that are displayed in the same line.
+In the given example, the `<div>` elements with the classes `a` and `b` have the display property set to `inline-block`. They are displayed on the same line, can have specific `height` and `width` values assigned, and only occupy the necessary space required by their content.
 
 **Example :**
 
@@ -215,18 +195,9 @@ Now we will make display property of division to `inline-block`` and lets create
 
 <img src="/icp/19/step-8.png" alt="step-8" width="600px"/>
 
-**Explanation :**
-In the above example we can see that
-
-1. Elements can not start from new line , they are start from same line.
-2. The elements takes only required space.
-3. And height and width can be applied.
-
-These are the `Inline-block` element.
-
 ## Change Display Property of Elements
 
-We can change the display property of the elements using CSS. For example, we can change the display property of `<span>` element to `block` using CSS.
+We can change the display property of elements using CSS to alter their behavior. For instance, we can change the display property of a `<span>`element to `block` using CSS as shown in the following code:
 
 **`Syntax`**
 
@@ -235,6 +206,8 @@ span {
   display: block;
 }
 ```
+
+In the example below, the `<span>` elements with the class `info` have the display property set to block. As a result, they are displayed as `block` elements, starting from a new line, and the `height` property can be assigned to them.
 
 **Example :**
 
@@ -263,7 +236,7 @@ span {
 **Output :**
 <img src="/icp/19/step-5.png" alt="step-5" width="600px"/>
 
-In the same way we can change the display property of `<div>` element to `inline-block` using CSS.
+Similarly, we can change the display property of a `<div>` element to `inline-block` using CSS:
 
 ```css
 div {

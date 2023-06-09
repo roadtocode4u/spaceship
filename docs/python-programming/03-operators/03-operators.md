@@ -98,6 +98,7 @@ print(result)
 > 2
 
 # Comparision Operators
+
 Comparison operators are used to compare two values and return output in boolean value.<br/>
 Comparision operator have 6 types : 
 1. Equal Operator

@@ -334,6 +334,7 @@ Make sure to create a `.env` file in the root directory of your project and add 
 ```js
 MONGO_URL = mongodb+srv://<username>:<password>@mangodb.4kkisqa.mongodb.net/<dbname>
 ```
+
 Adjust the URL according to your MongoDB server configuration.
 
 :::tip

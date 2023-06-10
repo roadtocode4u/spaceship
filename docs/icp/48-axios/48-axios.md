@@ -4,7 +4,11 @@ description: "API calls from React Using axios"
 hide_table_of_contents: true
 ---
 
-You can create API to read specific student data.
+### Creating an API to Read Specific Student Data
+
+The code you provided is an example of an API endpoint in a Node.js application that retrieves specific student data based on the email parameter.
+
+**Let's break down the code and understand how it works:**
 
 ```js
 app.get("/student", async (req, res) => {
@@ -28,51 +32,81 @@ app.get("/student", async (req, res) => {
 });
 ```
 
-In the `/student` route, we retrieve the email from the request body.
+* The `/student` route is defined using `app.get`, which handles GET requests to the `/student` endpoint.
 
-In the `/students` route, we use Student.findOne() to retrieve specific student from the database. The fetched students are returned in the response.
-We have get request so we can pass parameter in query.
+* The email parameter is extracted from the query string using `req.query.email`. It assumes that the email parameter is passed in the query string of the URL.
 
-To find specific student from database. Then follow the following steps:
+* The `Student.findOne()` method is used to find a student record in the database based on the email.
 
-**Steps :**
+* If a student record is found, a JSON response is sent back with the student data and a success message.
 
-1. To open Thunder client.
+* If no student record is found, a JSON response is sent back with a failure message.
+
+### Making a Request to the API Endpoint
+
+To retrieve specific student data using the API, you need to make a GET request to the `/student` endpoint and provide the email as a query parameter.
+
+**Here are the steps to make the request:**
+
+1. Open a tool like Thunder Client or Postman to send HTTP requests.
 2. Create a new request.
-3. Request type should be get.
-4. `http://localhost:5000/student?email=<email>&regNo=<regNo>`
+3. Set the request method to GET.
+4. Set the URL to `http://localhost:5000/student?email=<email>`, replacing `<email>` with the email of the student you want to fetch.
 
-**ex.**
+**Example :**
 
 ```js
 http://localhost:5000/student?email=harshda@gmail.com&regNo=1
 ```
 
-where,
+5. Send the request.
 
-**`?`** It is used because we have pass query.
-
-**`&`** when we have passed multiple parameter then use `&` parameter.that separate the parametrs.
+The response will contain the student data if a matching record is found in the database. Otherwise, it will indicate that the student was not found.
 
 **Example :**
 
-**`Input`**
+**Input :**
 
 <img src="/icp/48/step-1.png" alt="step-1" width="600px"/>
 
-**`Output`**
+**Output :**
 
 <img src="/icp/48/step-2.png" alt="step-2" width="600px"/>
 
-## Axios
+### Using Axios to Call the API in a React App
 
-Thunder client is used to calls the APIs. Axios is a client library and it is used to calls an APIs in the react app.axios library can be install on frontend.
+To call the API from a React app, you can use the Axios library, which is a popular choice for making HTTP requests.
 
-To install axios
+Here's how you can set up and use Axios in a React app:
+
+1. Create a new React app by running the following command in your terminal:
 
 ```js
-npm i axios
+npx create-react-app frontend
 ```
+
+2. Install the Axios library by running the following command in the terminal:
+
+```js
+npm install axios
+```
+
+3. Open the App.js file in the src directory of your React app.
+
+4. Import the Axios library at the top of the file:
+
+```js
+import axios from "axios";
+```
+
+5. Create an async function, let's name it `loadData`, inside the `App` component:
+
+```js
+async function loadData() {
+  const response = await axios.get("/student?email=harshda@gmail.com");
+}
+```
+
 
 **To call API's in react app.**
 

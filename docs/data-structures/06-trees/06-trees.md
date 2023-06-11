@@ -576,4 +576,22 @@ int main()
 
 1, 3, 2, 5, 7, 6, 4, 
 
+We define a class called `Node` to represent nodes in a binary tree. Each node contains an integer value (`data`) and two pointers (`left` and `right`) to its left and right child nodes, respectively.
 
+Within the `Node` class, there is a constructor that initializes the `data` value and sets both the `left` and `right` pointers to `NULL`.
+
+Next, we define a function named `postOrderTraversal` that performs a post-order traversal of a binary tree. It takes a pointer to the `root` node as a parameter.
+
+In the `postOrderTraversal` function, we check if the `root` `node` is NULL. If it is, we simply return and exit the function.
+
+If the `root` node is not `NULL`, we first recursively call `postOrderTraversal` on the left child of the `root` node, then recursively call it on the right child of the root node, and finally print the `data` value of the `root` node. This follows the post-order traversal order (left subtree, right subtree, current node).
+
+In the `main` function, we create the binary tree by instantiating `Node` objects and connecting them using the `left` and ri`ght pointers.
+
+We create the `root` node with a value of 4 and then create the other nodes with their respective values.
+
+We establish the relationships between the nodes by assigning the appropriate nodes to the `left` and `right` pointers of their parent nodes.
+
+Finally, we call the `postOrderTraversal` function, passing the `root` node as an argument, to perform a post-order traversal of the binary tree. The `postOrderTraversal` function will print the node values according to the post-order traversal order.
+
+The program ends by returning 0, indicating successful execution.

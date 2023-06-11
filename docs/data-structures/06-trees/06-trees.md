@@ -258,3 +258,89 @@ Next, we check if the `top` node has a right child. If it does, we push the righ
 Similarly, we check if the `top` node has a left child. If it does, we push the left child onto the stack using `s.push(top->left)`.
 
 The loop continues until all the nodes have been processed and the stack becomes empty.
+
+##  In-order, Pre-order and Post-order traversal
+
+**In-order Traversal:**
+
+In in-order traversal, we follow a specific order to visit the nodes of a binary tree. We start by visiting the left subtree, then the current node, and finally the right subtree. Imagine you are exploring a tree from the left side, moving towards the right side. For each node, you first visit all the nodes in its left subtree, then visit the current node, and lastly visit all the nodes in its right subtree. In simple terms, you visit the left side first, then the current node, and finally the right side. In a binary search tree, the in-order traversal will give you the nodes in ascending order.
+
+**Example :**
+
+```
+        4
+       / \
+      2   6
+     / \ / \
+    1  3 5  7
+
+```
+
+**In-order traversal: 1, 2, 3, 4, 5, 6, 7**
+
+Let's go through each traversal to see how the nodes are visited:
+
+* Start from the left subtree of the root (4).
+* Visit node 1.
+* Visit node 2.
+* Visit node 3.
+* Visit the root node 4.
+* Visit node 5.
+* Visit node 6.
+* Visit node 7.
+* End.
+
+
+**Pre-order Traversal:**
+
+In pre-order traversal, we also follow a specific order to visit the nodes of a binary tree. Here, we start by visiting the current node first, then the left subtree, and finally the right subtree. Imagine you are exploring a tree starting from the root node and moving towards the lower levels. For each node, you first visit the current node, then visit all the nodes in its left subtree, and lastly visit all the nodes in its right subtree. In simple terms, you visit the current node first, then the left side, and finally the right side.
+
+```
+        4
+       / \
+      2   6
+     / \ / \
+    1  3 5  7
+
+```
+
+**Pre-order traversal: 4, 2, 1, 3, 6, 5, 7**
+
+Let's go through each traversal to see how the nodes are visited:
+
+* Start from the root node (4).
+* Visit the root node 4.
+* Visit node 2.
+* Visit node 1.
+* Visit node 3.
+* Visit node 6.
+* Visit node 5.
+* Visit node 7.
+* End.
+
+
+**Post-order Traversal:**
+In post-order traversal, we once again follow a specific order to visit the nodes of a binary tree. This time, we start by visiting the left subtree, then the right subtree, and finally the current node. Imagine you are exploring a tree from the bottom up. For each node, you first visit all the nodes in its left subtree, then visit all the nodes in its right subtree, and lastly visit the current node. In simple terms, you visit the left side first, then the right side, and finally the current node.
+
+```
+        4
+       / \
+      2   6
+     / \ / \
+    1  3 5  7
+
+```
+
+**Post-order traversal: 1, 3, 2, 5, 7, 6, 4**
+
+Let's go through each traversal to see how the nodes are visited:
+
+* Start from the left subtree of the root (4).
+* Visit node 1.
+* Visit node 3.
+* Visit node 2.
+* Visit node 5.
+* Visit node 7.
+* Visit node 6.
+* Visit the root node 4.
+* End.

@@ -25,7 +25,7 @@ CSS can be implemented by three ways:
     <title>CSS</title>
   </head>
   <body>
-    <h2 style="color:red; font-size:20px;">This is inline CSS</h2>
+    <h2 style="color:tomato; font-size:20px;">Wow. CSS is beautiful</h2>
   </body>
 </html>
 ```
@@ -43,7 +43,7 @@ CSS can be implemented by three ways:
     <title>CSS</title>
     <style>
       h2 {
-        color: red;
+        color: tomato;
         background-color: grey;
         font-size: 20px;
       }

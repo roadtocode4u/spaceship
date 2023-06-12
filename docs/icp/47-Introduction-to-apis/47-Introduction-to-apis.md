@@ -14,7 +14,7 @@ An API **Application Programming Interface** is a set of rules and protocols tha
 
 **API :** The API acts as an intermediary between the frontend and backend. It defines a set of rules and protocols for how requests and responses should be structured. The API takes the requests from the frontend, processes them, and transforms the data as required. It then sends the transformed data back to the frontend as a response.
 
-<img src="/icp/47/step-1.jpg" alt="step-1" height="300px"/>
+<img src="/icp/47/step-1.png" alt="step-1" height="600px"/>
 
 ## Backend Commands:
 
@@ -334,6 +334,7 @@ Make sure to create a `.env` file in the root directory of your project and add 
 ```js
 MONGO_URL = mongodb+srv://<username>:<password>@mangodb.4kkisqa.mongodb.net/<dbname>
 ```
+
 Adjust the URL according to your MongoDB server configuration.
 
 :::tip

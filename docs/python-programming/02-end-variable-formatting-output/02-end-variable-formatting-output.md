@@ -1,6 +1,6 @@
 ---
-title: Taking Input from User
-description: "Taking Input from User"
+title: End Variable, Formatting output
+description: "End Variable, Formatting output"
 hide_table_of_contents: true
 ---
 

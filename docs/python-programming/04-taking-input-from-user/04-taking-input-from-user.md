@@ -101,3 +101,34 @@ print("Sum of { } and { } is { }".format(val1,val2,sum))
 **Example Explanation :**
 
 In the above example, we are taking two inputs from the user with the help of the `input` function and assigning them to the variable `val1` and `val2` respectively. After that, we are adding both the variables `val1` and `val2` by typecasting them into the `int` data type and assigning it to the variable `sum`. Now we print Sum of `{}` and `{}` is `{}`. That `{}` means `format()` function.
+
+**Swap two numbers **
+
+**Example :**
+
+```py
+a = 10
+b = 20
+
+print("Before swapping value of a",a)
+print("Before swapping value of b",b)
+
+temp = b
+b = a
+a = temp
+
+print("After swapping value of a",a)
+print("After swapping value of b",b)
+
+```
+
+**Output :**
+
+> Before swapping value of a 10<br/>
+> Before swapping value of b 20<br/>
+> After swapping value of a 20<br/>
+> After swapping value of b 10<br/>
+
+**Example Explanation :**
+
+In the above example, We have to swap two numbers. we have declared two variables `a` and `b`.The value of the `a` variable is `10` and the value of the `b` variable is `20`.Now we have to swap these two numbers using the third variable. The third variable we declared as `temp`.Now we stored the second variable `b` in the `temp` variable. Stored the value of variable `a` in variable `b`.now stored the `temp` variable in variable `a`.

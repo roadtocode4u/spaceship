@@ -5,37 +5,45 @@ hide_table_of_contents: true
 ---
 
 ### Indentation
+
 Indentation is a whitespace (space or tab) at the beginning of a line in a block of code to indicate scope of code
 
 ### if Statement
+
 if statement allows for conditional execution of a statement based on the value of an expression.<br/>
 
 **Syntax:**
- ```python
- if condition :
-     statements-1
-     statements-2
-     .....
-     .....
-     statements-n
+
+```python
+if condition :
+    statements-1
+    statements-2
+    .....
+    .....
+    statements-n
 ```
 
 **Example:**
+
 ```python title="example 1"
 a = 20
-b = 10 
+b = 10
 if a==b :
  print("A is equals to B")
 ```
- **Output:**
->A is Equals to B
+
+**Output:**
+
+> A is Equals to B
 
 In the above example, we are create a two variables `a`& `b`, in their stored values `20` & `10` respectively and check the `if statement` a==b if this condition is true the the output is `A is equals to B`.
 
 ### if--else Statements
+
 if statement can have two outputs. the first output is if your comparison is `true`, the second if your comparison is `false` then output is only one.
 
 **Syntax:**
+
 ```python
 if condition :
      statements-1
@@ -52,19 +60,21 @@ else:
 ```
 
 **Examples:**
+
 ```python title="example 1"
 a = 20
-b = 10 
+b = 10
 if a==b :
   print("Equal")
 else :
   print("Not Equal")
 ```
-  **Output:**
- >Not Equal
+
+**Output:**
+
+> Not Equal
 
 In the above example, we are create a two variables `a`& `b`, in their stored values `20` & `10` respectively and check the `if-else statement` a==b if this condition is false so,the the output is `Not Equal`.
-
 
 ```python title="example 2"
 a = 10
@@ -74,11 +84,12 @@ if a>b :
 else :
   print("A is Not smaller")
 ```
+
 **Output:**
->A is Not smaller
+
+> A is Not smaller
 
 In the above example, we are create a two variables `a`& `b`, in their stored values `10` & `30` respectively and check the `if-else statement` a>b if this condition is false so,the the output is `A is Not smaller`.
-
 
 ```python title="example 3"
 age = int(input("Enter Your age :"))
@@ -87,9 +98,11 @@ if age >= 18 :
 else:
   print("You are not eligible for voting")
 ```
+
 **Output:**
->Enter Your age :15<br/>
->You are not eligible for voting
+
+> Enter Your age :15<br/>
+> You are not eligible for voting
 
 ```python title="example 4"
 num = int(input("Enter Number :"))
@@ -99,11 +112,13 @@ if rem == 0:
 else:
   print("Given number is Odd")
 ```
-**Output:**
->Enter Number :9<br/>
->Given number is Odd
 
-**Example: Write a program which asks user to enter rate and quantity of a product. Your program should calculate and display the the bill amount as rate * quantity. If bill amount is more than 500 discount of 20% on bill and less than 500 then discount of 5% on bill.**
+**Output:**
+
+> Enter Number :9<br/>
+> Given number is Odd
+
+**Example: Write a program which asks user to enter rate and quantity of a product. Your program should calculate and display the the bill amount as rate \* quantity. If bill amount is more than 500 discount of 20% on bill and less than 500 then discount of 5% on bill.**
 
 ```python title="example 5"
 rate, quantity = input("Enter rate and quantity :").split()
@@ -123,16 +138,18 @@ else:
   print("Discount",discount)
   print("payble amount",bill-discount)
 ```
+
 **Output:**
->Enter rate and quantity :20 50<br/>
->"### 20% off ###"<br/>
->Actual Bill 1000<br/>
->Discount 200.0<br/>
->payable amount 800.0
 
-In the above program we create two variable `rate` and `quantity` and this variable we can give a input from user so we use `input()` function and this input function give message for user `Enter rate and quantity :` and in one `input()` we give multiple input so we use `spilt()` function. 
+> Enter rate and quantity :20 50<br/>
+> "### 20% off ###"<br/>
+> Actual Bill 1000<br/>
+> Discount 200.0<br/>
+> payable amount 800.0
 
-In next line we create one variable `bill` and this variable we store calculation of `int(rate) * int(quantity)` 
+In the above program we create two variable `rate` and `quantity` and this variable we can give a input from user so we use `input()` function and this input function give message for user `Enter rate and quantity :` and in one `input()` we give multiple input so we use `spilt()` function.
+
+In next line we create one variable `bill` and this variable we store calculation of `int(rate) * int(quantity)`
 
 It first checks if the value of `bill` is greater than `500` using an `if statement`.
 If the condition is `true`, then it prints `### 20% off ###` to indicate that a `20%` discount is being applied.
@@ -159,14 +176,16 @@ print("Actual Bill :",bill)
 print("Discount :",discount)
 print("Payble amount", bill-discount)
 ```
-**Output:**
->Enter rate and quantity :5 10<br/>
->"### 5% ###"<br/>
->Actual Bill : 50<br/>
->Discount : 2.5<br/>
->Payable amount 47.5<br/>
 
-## If else Ladder 
+**Output:**
+
+> Enter rate and quantity :5 10<br/>
+> "### 5% ###"<br/>
+> Actual Bill : 50<br/>
+> Discount : 2.5<br/>
+> Payable amount 47.5<br/>
+
+## If else Ladder
 
 Python elif is used to execute a continuous chain of conditional logic ladder. In elif, there are multiple conditions and the corresponding statements as a ladder.
 
@@ -210,8 +229,8 @@ else :
 
 **Output:**
 
->Enter number from 1 to 5 :5 <br/>
->You selected option 5
+> Enter number from 1 to 5 :5 <br/>
+> You selected option 5
 
 In the above example we create one `num` variable and in that variable we give input number from the user and checks whether the number is between `1 to 5`. If the input is within the range, it displays the corresponding message, and if the input is out of range, it displays `You selected wrong input`.
 
@@ -233,12 +252,12 @@ else:
 
 **Output:**
 
->Enter fruits or vegetable name :orange <br/>
->Not available
+> Enter fruits or vegetable name :orange <br/>
+> Not available
 
 **Example: Write a program to take input for marks of 5 subject and display the grade.** <br/>
 
-💡 HINT : Per=(total/500)*100 <br/>
+💡 HINT : Per=(total/500)\*100 <br/>
 
 If the percentage greater than 90 “Grade: A” is printed. <br/>
 If the percentage greater than 80 “Grade: B” is printed. <br/>
@@ -268,12 +287,11 @@ else:
 
 **Output:**
 
->Enter marks of 5 subject :40 30 45 35 38 <br/>
->Percentage : 37.6 <br/>
->FAIL
+> Enter marks of 5 subject :40 30 45 35 38 <br/>
+> Percentage : 37.6 <br/>
+> FAIL
 
-
-In the above example, we takes input from the user in the form of marks obtained in five subjects `Marathi, Hindi, English, Math, and Science`. It then calculates the  sum  marks obtained and the   `percentage` obtained by the student. Finally, based on the percentage obtained, it prints the grade of the student.
+In the above example, we takes input from the user in the form of marks obtained in five subjects `Marathi, Hindi, English, Math, and Science`. It then calculates the sum marks obtained and the `percentage` obtained by the student. Finally, based on the percentage obtained, it prints the grade of the student.
 
 But This case If the condition sequence will change , then output will also change.👇👇 Because we have not set any boundary conditions.
 
@@ -283,7 +301,7 @@ sum=int(marathi)+int(hindi)+int(english)+int(math)+int(science)
 per=(sum/500)*100
 print("Percentage :",per,"%")
 if per>=60:
-  print("Grade D")  
+  print("Grade D")
 elif per>=70:
   print("Grade C")
 elif per>=80:
@@ -317,12 +335,11 @@ else:
 
 **Output:**
 
->Enter Marks of 5 Subject : 91 93 93 98 85 <br/>
-> Percentage : 92.0 %  <br/>
->Grade A 
+> Enter Marks of 5 Subject : 91 93 93 98 85 <br/>
+> Percentage : 92.0 % <br/>
+> Grade A
 
-
-## Nested if 
+## Nested if
 
 A nested if is a flow control statement that’s the target of another if-statement. By nested-if statements, we mean to use an if-statement inside another if-statement.
 
@@ -348,18 +365,21 @@ if hsc>60:
   print("Congrats you clear HSC")
   if jee>120:
     print("Admmision Granted ")
-  else: 
+  else:
     print("Sorry you did not cleared JEE")
 else:
   print("Sorry You need to imporoved your HSC Score")
 ```
+
 **Output**
->Sorry You need to imporoved your HSC Score
+
+> Sorry You need to imporoved your HSC Score
 
 The code checks if a student has cleared their HSC with a score greater than `60`. If they have, it checks if their JEE score is greater than `120`. If it is, the program prints "Admission Granted". If the HSC score is less than or equal to `60`, the program prints "Sorry You need to imporoved your HSC Score". If the JEE score is less than or equal to `120`, the program prints "Sorry you did not cleared JEE".
 
 **Example:**
->Write a program to Find the Largest Number Among Three Numbers by using if,elif statement.
+
+> Write a program to Find the Largest Number Among Three Numbers by using if,elif statement.
 
 ```python title="if,elif statement.py" showLineNumbers="true"
 a = int(input("Enter a: "))
@@ -375,15 +395,17 @@ else:
 ```
 
 **Output**
->Enter a: 300 <br/>
->Enter b :500 <br/>
->Enter c :100 <br/>
->b is largest <br/>
+
+> Enter a: 300 <br/>
+> Enter b :500 <br/>
+> Enter c :100 <br/>
+> b is largest <br/>
 
 In the above example, we take input from the user in the form of numbers obtained in three numbers `a`, `b` & `c`. we are applying here the If else Ladder statement if `a>b` and `a>c` true so, print a is largest, `b>a` and `b>c` true so, b is largest otherwise print `else` statement c is largest.
 
 **Example:**
->Write a program to Find the Largest Number Among Three Numbers by using Nested-if statement.
+
+> Write a program to Find the Largest Number Among Three Numbers by using Nested-if statement.
 
 ```python title="Nested-if statement.py" showLineNumbers="true"
 a = int(input("Enter a: "))
@@ -403,9 +425,281 @@ else:
 ```
 
 **Output**
->Enter a: 10 <br/>
->Enter b :100 <br/>
->Enter c :100 <br/>
->c is largest <br/>
 
-Now supply inputs say 10 as first number, then enter 20 as second number, and finally enter 30 as third number, we are apply here nested-if-else statement firstly, check if condition if `a>b` is true then  enter in , thier is again `if-else` condition . if this condition will be true then print if statement otherwise else statement .  if condition if `a>b` is false that time print else condition its have also `if-else` condition . 
+> Enter a: 10 <br/>
+> Enter b :100 <br/>
+> Enter c :100 <br/>
+> c is largest <br/>
+
+Now supply inputs say 10 as first number, then enter 20 as second number, and finally enter 30 as third number, we are apply here nested-if-else statement firstly, check if condition if `a>b` is true then enter in , thier is again `if-else` condition . if this condition will be true then print if statement otherwise else statement . if condition if `a>b` is false that time print else condition its have also `if-else` condition .
+
+---
+
+title: String Operation
+description: "String Operation"
+hide_table_of_contents: true
+
+---
+
+## Input for Multiple values And String Operations in Python
+
+### IMP Point
+
+By Default data type of input function is String.
+
+### Spilt Function
+
+The split() method splits a string into a list.
+
+```python
+sentence="My Name is vedika".split()
+print(sentence)
+```
+
+**Output**
+
+> ['My', 'Name', 'is', 'vedika']
+
+In the above example we can create one variable and name that variable is `sentence`then we will stored the string of that variable is `My Name is vedika` and we can use split function then the split function are use to divide the small parts of sentence and the split function are create sentence in a list.
+
+```python
+a,b=input("Enter two values").split()
+print("a= ",a)
+print("b= ",b)
+```
+
+**Output**
+
+> Enter two values 2 5<br/>
+> 2 5<br/>
+> a= 2<br/>
+> b= 5
+
+In the above example we can stored two variable a,b and one input box using split function.
+
+```python
+rate,quantity=input("Enter rate and quantity").split()
+bill=int(rate)*int(quantity)
+print("bill :",bill)
+```
+
+**Output**
+
+> Enter rate and quantity 8 8<br/>
+> 8 8 <br/>
+> bill : 64
+
+### Multiline String
+
+You can print multiples lines then we enclosing that lines it in a triple quotes `""" """`.
+
+```python
+poem="""
+Twinkle, twinkle, little star,
+How I wonder what you are.
+Up above the world so high,
+Like a diamond in the sky.
+Twinkle, twinkle, little star,
+How I wonder what you are!"""
+print(poem)
+```
+
+### Slicing
+
+A slice object is used to specify how to slice a sequence. You can specify where to start the slicing, and where to end.
+
+**Syntax:**
+
+```python
+stringname[startindex:endindex]
+```
+
+```python
+mystring="Road to Code"
+print(mystring[0:4])
+```
+
+**Output**
+
+> Road
+
+In the above example the name of variable is `mystring` in that we stored one string `Road to Code`& in a second line we print mystring using a `slicing`. in a slicing the startindex is 0 and endindex is 4 that's why the output is start from 0 to 4 position. and always remember endindex position is end -1.
+
+```python
+mystring="Road to Code"
+print(mystring[1:])
+```
+
+**Output**
+
+> oad to Code
+
+```python
+mystring="Road to Code"
+print(mystring[:8])
+```
+
+**Output**
+
+> Road to
+
+### Length Function
+
+len() is a built-in function in python. You can use the len() to get the length of the given string, array, list.
+
+```python
+studentname="vedika"
+print(len(studentname))
+```
+
+**Output**
+
+> 6
+
+```python
+studentname="anand"
+length=len(studentname)
+print(length)
+```
+
+**Output**
+
+> 5
+
+### in operator
+
+The 'in' operator is used to check if a value exists in a sequence or not.
+
+```python
+mystring="Road to Code"
+print("Road" in mystring)
+```
+
+**Output**
+
+> True
+
+```python
+mystring="Dahi Puri"
+print("Pani" in mystring)
+```
+
+**Output**
+
+> False
+
+### Comments in python
+
+Comments in Python are the lines in the code that are ignored by the compiler during the execution of the program.
+
+1. Single Line Comment (#)
+
+A single-line comment begins with a hash (#) symbol. The single-line comment is used to comment only one line of the code.
+
+```python
+#This is sample program
+print("roadtocode4u")
+```
+
+2. Multiline Comment (""" """)
+
+In Python Triple double quote (""") and single quote (''') are used for Multi-line commenting.Multi-line comment is useful when we need to comment on many lines.
+
+```python
+"""
+This is a comment
+written in
+more than just one line
+"""
+print("roadtocode4u")
+```
+
+### String Methods
+
+1.  Upper()
+
+Converts a string into upper case.
+
+```python
+myString = "roadtocode4u"
+print("Original String :",myString)
+newString = myString.upper()
+print("New String :",newString)
+```
+
+**Output**
+
+> Original String : roadtocode4u <br/>
+> New String : ROADTOCODE4U
+
+2. Lower()
+
+Converts a string into lower case.
+
+```python
+myString = "ROADTOCODE4U"
+print("Original String :",myString)
+newString = myString.lower()
+print("New String :",newString)
+```
+
+**Output**
+
+> Original String : ROADTOCODE4U <br/>
+> New String : roadtocode4u
+
+3. Strip()
+
+Removes white space from the end of String
+
+```python
+str1 = "rtc4u"
+str2 = "rtc4u             "
+print(str1)
+print(str2.strip())
+```
+
+**Output**
+
+> rtc4u <br/>
+> rtc4u
+
+4. Replace()
+
+Replace in string
+
+```python
+myString = "roadtocode"
+newString = myString.replace("d","#")
+print(newString)
+```
+
+**Output**
+
+> roa#toco#e
+
+5. split()
+
+Splits the string at the specified separator, and returns a list.
+
+```python
+myString = "road to code".split()
+print(myString)
+```
+
+**Output**
+
+> ['road', 'to', 'code']
+
+### Array
+
+Collection of similar data type
+
+```python
+myString="India"
+print(myString[2])
+```
+
+**Output**
+
+> d

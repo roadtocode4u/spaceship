@@ -4,15 +4,15 @@ description: "Taking Input from User"
 hide_table_of_contents: true
 ---
 
-**scanf() function**
+**scanf() function :** `scanf()` is one of the commonly used function to take input from the user, to read the input data from the console.
 
-> scanf() is one of the commonly used function to take input from the user, to read the input data from the console.
+**Example :**
 
-**Example : write a c program to take input from user and print it.**
+**1. Write a C program to take input from user and print it.**
 
-**code**
+**Code :**
 
-```c
+```c showLineNumbers="true"
  #include <stdio.h>
 
  int main() {
@@ -22,22 +22,26 @@ hide_table_of_contents: true
     printf("Enter value of val:");
     scanf("%d",&val);
 
-    printf("output is %d",val);
+    printf("Output is %d",val);
 
     return 0;
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > Enter value of val:10  
-> output is 10
+> Output is 10
 
-**Write a C program to calculate Sum of two numbers.**
+In the above example, `val` is a variable we can store values in variable. `printf()` function is the print the given string message to the console. In this case, it asks the user to enter the value of `val`.
+The `scanf()` function is used to read input from the user. `%d` is the format specifier used to read an integer value and `&val` is the address of the variable `val` where the entered value will be stored.
+`printf()` is used to display the output to the console. It prints the value of `val` using the format specifier `%d`.
 
-**code**
+**2. Write a C program to calculate Sum of two numbers.**
 
-```c
+**Code :**
+
+```c showLineNumbers="true"
  #include <stdio.h>
 
  int main() {
@@ -54,25 +58,25 @@ hide_table_of_contents: true
 
      sum = num1 + num2;
 
-     printf("sum:%d",sum);
+     printf("Sum:%d",sum);
 
     return 0;
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > Enter Value of num1 :20  
 > Enter Value of num2 :30  
-> sum:50
+> Sum:50
 
-## Taking input from user
+In the above example, `num1`, `num2` and `sum` is a variable we can store values in a variable.`printf()` function is print the given string message to the console. It asks the user to enter the value of `num1` and `num2`.The `scanf()` function is used to read input from the user. `%d` is the format specifier used to read an integer value `&num1` and `num2` is the address of the variable `num1` and `num2` where the entered value will be stored.`printf()` is used to display the output to the console. It prints the value of `sum` using the format specifier `%d`. Output is Sum : 50.
 
-**Write a C program to calculate the sum of two numbers.**
+**3. Write a C program to calculate the sum of two numbers.**
 
-**code**
+**Code :**
 
-```c
+```c showLineNumbers="true"
  #include <stdio.h>
 
  int main() {
@@ -85,23 +89,23 @@ hide_table_of_contents: true
     scanf("%d",&num2);
 
     int sum = num1 + num2;
-    printf("sum of num1 and num2 =%d",sum);
+    printf("Sum of num1 and num2 :%d",sum);
 
     return 0;
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
-> Enter value of num1 :30  
-> Enter value of num1 :10  
-> sum of num1 and num2 =40
+> Enter value of num1 : 30  
+> Enter value of num1 : 10  
+> Sum of num1 and num2 : 40
 
-**Write a C program to print input marks of 3 subjects**
+**4. Write a C program to print input marks of 3 subjects.**
 
-**code**
+**Code :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -119,20 +123,21 @@ int main() {
    printf("M=%d H=%d E=%d",marathi,hindi,english);
 
     return 0;
+}
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > Enter marks of Marathi :75  
 > Enter marks of Hindi :85  
 > Enter marks of English :70  
 > M=75 H=85 E=70
 
-**write a c program to print input marks of 3 subjects**
+**5. Write a c program to print input marks of 3 subjects.**
 
-**code**
+**Code :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -148,16 +153,16 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
-> Enter marks of Marathi ,Hindi,and English :75 85 70
+> Enter marks of Marathi ,Hindi and English :75 85 70
 > M=75 H=85 E=70
 
-**Write a C program to take input from user and print sum and percentage**
+**6. Write a C program to take input from user and print sum and percentage.**
 
-**code**
+**Code :**
 
-```c
+```c showLineNumbers="true"
 
 #include <stdio.h>
 
@@ -178,23 +183,23 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > Enter marks of Marathi ,Hindi,and English :75 85 70  
 > Sum=230,Percentage=76 %
 
-**Write a C program to calculate Simple Interest**
+**7. Write a C program to calculate Simple Interest.**
 
-**code**
+**Code :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
 
     float p,r,t,si;
 
-    printf("Enter Principle,Rate and Time:");
+    printf("Enter Principle,Rate and Time : ");
     scanf("%f%f%f", &p,&r,&t);
 
     si=(p*r*t)/100;
@@ -206,17 +211,17 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
-> Enter Principle,Rate and Time:5000 300 2
+> Enter Principle,Rate and Time : 5000 300 2
 > Simple Interest :30000.000000
-> Payable Amount:35000.000000
+> Payable Amount :35000.000000
 
-**Write a C Program to convert temperature from celsius to fahrenheit**
+**8. Write a C Program to convert temperature from celsius to fahrenheit**
 
-**code**
+**Code :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -228,13 +233,13 @@ int main() {
 
    f=1.8*c+32;
 
-   printf(" Temperature in Fahrenheit =%f",f);
+   printf("Temperature in Fahrenheit =%f",f);
 
     return 0;
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > Enter Temperature in Celsius :36
 > Temperature in Fahrenheit =96.800003

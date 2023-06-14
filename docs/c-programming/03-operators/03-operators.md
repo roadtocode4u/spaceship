@@ -541,7 +541,7 @@ int main() {
 
 > 15
 
-**Divides then assign (/=) :**
+**Divides then assign (/=)**
 
 **Example :**
 
@@ -564,7 +564,7 @@ int main() {
 
 > 5
 
-**Modulus then assign (%=) :**
+**Modulus then assign (%=)**
 
 **Example :**
 
@@ -589,8 +589,7 @@ int main() {
 
 **Comparison Operators**
 
-**Equal to (==)**
-Equal to are used to compare to object.
+**Equal to (==) :** Equal to are used to compare to object.
 
 **Example :**
 

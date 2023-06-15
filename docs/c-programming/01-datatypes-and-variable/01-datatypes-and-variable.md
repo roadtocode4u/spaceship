@@ -4,33 +4,31 @@ description: "Datatype and Variable"
 hide_table_of_contents: true
 ---
 
-### String
-
-> Strings is represented as Collection of characters.
-
-### Variable
-
-> Variable is used to store data.
-
 ### Datatype
 
 1. **Integers (int)**
 
-> Integers means Stores whole numbers without decimals point.
+> Integers means stores whole numbers without decimal point.
 
-Example = 1,2,2253,899,44,55...
+💻**Example :** 1, 2, 2253, 899, 44, 55...
 
 2. **Character (char)**
 
-> Stores a single character,letter.
+> Character is store a single letter.
 
-💻Example='r','v','s'....
+💻**Example :** 'r','v','s'....
 
 3. **Float (float)**
 
 > float means Stores numbers with decimals point.
 
 💻Example= 15.7,89.0,46.84 ....
+
+4.  **String**
+
+> String is represented as Collection of characters.String enclosed in `single quotes` or `double quotes`.
+
+💻**Example :** 'code',"harshda".
 
 ### Format Specifiers
 
@@ -166,21 +164,42 @@ int main()
 
 > c
 
-## Rules to Declare Variables and Formatting Output
+### Variable
+
+> Variable is used to store data.
 
 ### Rules of Declare Variables
 
-1. A Variable Name Can contain alphabates (A to Z)(a to z) , digits (0-9),underscore( \_ ).
+1. A Variable name can contain alphabates `(A to Z)(a to z)` , digits `(0-9)`,underscore`( _ )`.
 
-2. Cannot Start with digit.
+2. Variable name Cannot Start with digit.
 
-3. Cannot use reserved keyword or special character.
+3. Variable name cannot use reserved keyword or special character.
 
 4. Length of variable name should be less than 31 character.
 
+### How to define variable
+
+datatype variablename;
+
+**Example :** `int age;`
+
+char variablename;
+
+**Example :** `char gender;`
+
+float variablename;
+
+**Example :** `float weight`
+
+:::tip
+char, int and float these datatypes stored in variable.
+:::
+
 ### Case Sensitivity
 
-> Text that is sensitive to capitalization of letters. For example, `NAME` ,`name`,`NaMe` are three different.
+> Text that is sensitive to capitalization of letters.
+> For example, `NAME` ,`name`,`NaMe` are three different.
 
 **Example : Write a program to sum of 2 variable**
 

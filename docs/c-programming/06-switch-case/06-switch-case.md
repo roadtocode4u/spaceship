@@ -4,9 +4,7 @@ description: "Switch Case"
 hide_table_of_contents: true
 ---
 
-## Switch case
-
-We use **switch case** when we have to check multiple conditions. It is similar to **if else** but it is more efficient than **if else**. It provided direct jump to the case statement. You can consider it as we are pressing button on switch board to turn on the light.
+We use `switch case` when we have to check multiple conditions. It is similar to `if else` but it is more efficient than `if else`. It provided direct jump to the case statement. You can consider it as we are pressing button on switch board to turn on the light.
 
 **Syntax:**
 
@@ -62,7 +60,7 @@ int main() {
 
 ## Switch case without using break statement
 
-If we don't use **break** then next case statements will be executed until break appears.
+If we don't use `break` then next case statements will be executed until break appears.
 
 **💻Example:**
 

@@ -4,9 +4,9 @@ description: "Conditional Statements"
 hide_table_of_contents: true
 ---
 
-**if conditional statement**
+### if conditional statement
 
-if statement to specify a block of code to be executed if a condition is true.
+if statement to specify a block of code to be executed `if` a condition is true.
 
 **Syntax :**
 
@@ -86,9 +86,9 @@ int main() {
 
 > Given number is Even
 
-**If-else Conditional Statement**
+### If-else Conditional Statement
 
-If else statement is used to perform an action if a single condition is true and to perform another action if that condition is false.
+`If else` statement is used to perform an action if a single condition is true and to perform another action if that condition is false.
 
 **Syntax :**
 
@@ -142,9 +142,8 @@ int main() {
 
 **Output :**
 
->Enter your age :18  
->Your are eligible for voting
-
+> Enter your age :18  
+> Your are eligible for voting
 
 **if-else-ladder**
 if else ladder check condition in sequentional manner. if first condition gets true it will not check further conditions.if non of the condition gets true it will run the else block.
@@ -155,7 +154,7 @@ if else ladder check condition in sequentional manner. if first condition gets t
    if (condition)
    {
     // Statement
-   }   
+   }
    else if (condition)
    {
     // Statement

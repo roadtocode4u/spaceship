@@ -4,79 +4,70 @@ description: "Operators"
 hide_table_of_contents: true
 ---
 
-## Operators
+**Operators :** Operators are used to perform operations on variables and values.
 
-**Operators**  
-Operators are used to perform operations on variables and values.
+**Types of Operators :**
 
-**Types of Operators**
+1. Arithmetic operators (+,-,\*,/,%)
+2. Increment Decrement Operators(++,--)
+3. Assignment operators (=,+=,-=,\*=,/=,%=)
+4. Relational Operators (<,<=,>,>=,==,!=)
+5. Logical operators (&&,||,!)
+6. Bitwise operators (&,<<,>>,^,|,~)
 
-1.  Arithmetic operators (+,-,\*,/,%)
-2.  Increment Decrement Operators(++,--)
-3.  Assignment operators (=,+=,-=,\*=,/=,%=)
-4.  Relational Operators (<,<=,>,>=,==,!=)
-5.  Logical operators (&&,||,!)
-6.  Bitwise operators (&,<<,>>,^,|,~)
+**Arithmetic Operators :**
 
-**Arithmetic Operators**
+- **Addition (+) :** `+` is used to adding two numbers.
 
-Addition (+)
+**Example :**
 
-Adds together two values.
-
-**Example**
-
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
-int main() {
+int main()
+{
+    int val1 = 20;
+    int val2 = 30;
+    int sum = val1 + val2;
 
-    int val1=20;
-    int val2=30;
-    int sum=val1+val2;
-
-    printf("%d",sum);
+    printf("Addition of val1 and val2 is %d",sum);
 
     return 0;
 }
 ```
 
-**Output**
+**⚙️ Output :**
 
-> 50
+> Addition of val1 and val2 is 50
 
-Substraction (-)
+- **Substraction (-) :** `-` is used to subtract one value from another value.
 
-Subtracts one value from another.
+**Example :**
 
-**Example**
-
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
-int main() {
+int main()
+{
+    int val1 = 30;
+    int val2 = 20;
+    int sum = val1 - val2;
 
-    int val1=30;
-    int val2=20;
-    int sum=val1-val2;
-
-    printf("%d",sum);
+    printf("Substraction of val1 and val2 is %d",sum);
 
     return 0;
 }
 ```
 
-**Output**
+**⚙️ Output :**
 
-> 10
+> Substraction of val1 and val2 is 10
 
-Multiplication (\*)
+- **Multiplication (\*) :** `*` is used to multiplies two values.
 
-Multiplies two values.
+**Example :**
 
-**Example**
-
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -91,17 +82,15 @@ int main() {
 }
 ```
 
-**Output**
+**⚙️ Output :**
 
 > 600
 
-Division (/)
+- **Division (/) :** Divides one value by another.
 
-Divides one value by another.
+**Example :**
 
-**Example**
-
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -116,17 +105,15 @@ int main() {
 }
 ```
 
-**Output**
+**⚙️ Output :**
 
 > 1
 
-Modulus (%)
+- **Modulus (%) :** Returns the division remainder.
 
-Returns the division remainder
+**Example :**
 
-**Example**
-
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -139,15 +126,15 @@ int main() {
 }
 ```
 
-**Output**
+**⚙️ Output :**
 
 > 3
 
 ## Increment, Decrement Operator
 
-**Example**
+**Example :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -162,15 +149,15 @@ int main() {
 }
 ```
 
-**Output**
+**⚙️ Output :**
 
 > 6
 
-value Increase
+**In this example value increase by 1**
 
-**Example**
+**Example :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -190,18 +177,17 @@ int main() {
 }
 ```
 
-**Output**
+**⚙️ Output :**
 
 > 5  
 > 6  
 > 7
 
-value Decrease
+**In this example value decrease by 1**
 
-**Example**
+**Example :**
 
-```c
-
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -221,22 +207,17 @@ int main() {
 }
 ```
 
-**Output**
+**⚙️ Output :**
 
 > 5  
 > 4  
 > 3
 
-**Increment Operator (++)**
+**Increment Operator (++) :** This Operator are used to increase the value of variable. By default, the value is incremented by 1.
 
-Increment Operator (++)
-This Operator are used to increase the value of variable.
+**Example :**
 
-By Default, the value is incremented by 1.
-
-**Example**
-
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -256,15 +237,17 @@ int main() {
 }
 ```
 
-**Output**
+**⚙️ Output :**
 
 > 5
+
 > 6
+
 > 7
 
-**Example**
+**Example :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -276,16 +259,18 @@ int main() {
 }
 ```
 
-**Output**
+**⚙️ Output :**
 
 > 7
 
-Type of Increment Operator
-Pre-Increment (++var)
-Post-Increment (var++)
-**Example**
+**Type of Increment Operator**
 
-```c
+- Pre-Increment (++var)
+- Post-Increment (var++)
+
+**Example :**
+
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -303,14 +288,15 @@ int main() {
 }
 ```
 
-**Output**
+**⚙️ Output :**
 
 > 1
+
 > 1
 
-**Example**
+**Example :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -326,14 +312,15 @@ int main() {
 }
 ```
 
-**Output**
+**⚙️ Output :**
 
 > 0
+
 > 1
 
-**Example**
+**Example :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -349,19 +336,17 @@ int main() {
 }
 ```
 
-**Output**
+**⚙️ Output :**
 
 > 1
+
 > 1
 
-**Decrement Operator (--)**
-This Operator are used to decrease the value of variable.
+**Decrement Operator (--) :**This Operator are used to decrease the value of variable. By default, the value is Decremented by 1.
 
-By Default, the value is Decremented by 1.
+**Example :**
 
-**Example**
-
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -381,15 +366,17 @@ int main() {
 }
 ```
 
-**Output**
+**⚙️ Output :**
 
 > 5
+
 > 4
+
 > 3
 
-**Example**
+**Example :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -403,16 +390,18 @@ int main() {
 }
 ```
 
-**Output**
+**⚙️ Output :**
 
 > 2
 
-Type of Decrement Operator
-Pre-Decrement (--var)
-Post-Decrement (var--)
-**Example**
+**Type of Decrement Operator**
 
-```c
+- Pre-Decrement (--var)
+- Post-Decrement (var--)
+
+**Example :**
+
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -428,14 +417,15 @@ int main() {
 }
 ```
 
-**Output**
+**⚙️ Output :**
 
 > 5
+
 > 4
 
 **Example**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -451,21 +441,21 @@ int main() {
 }
 ```
 
-**Output**
+**⚙️ Output :**
+
+> 4
 
 > 4
 
 ## Assignment Operators, Comparison Operators and Ternary Operator in C Programming
 
-**Assignment operators**
-
-Assignment operators applied to assign the result of an expression to a variable.
+**Assignment operators :** Assignment operators applied to assign the result of an expression to a variable.
 
 **Assign (=)**
 
-**Example:**
+**Example :**
 
-```c
+```c showLineNumbers="true"
  #include <stdio.h>
 
 int main() {
@@ -478,15 +468,15 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > 10
 
 **Add then assign (+=)**
 
-**Example:**
+**Example :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -509,7 +499,7 @@ int main() {
 
 **Example:**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -524,15 +514,15 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > 2
 
 **Multiplies then assign (\*=)**
 
-**Example:**
+**Example :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -547,15 +537,15 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > 15
 
-**Divides then assign(/=)**
+**Divides then assign (/=)**
 
-**Example:**
+**Example :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -570,15 +560,15 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > 5
 
-**Modulus then assign(%=)**
+**Modulus then assign (%=)**
 
-**Example:**
+**Example :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -593,20 +583,19 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > 1
 
 **Comparison Operators**
 
-**Equal to (==)**
-Equal to are used to compare to object.
+**Equal to (==) :** Equal to are used to compare to object.
 
-**Example:**
+**Example :**
 
 // if value are not equal then print 0 means false.
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -622,15 +611,15 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > 0
 
-**Example:**
+**Example :**
 
 // if value are equal then print 1 means true.
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -646,15 +635,15 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > 1
 
 **Greater than (>)**
 
-**Example:**
+**Example :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -670,15 +659,15 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > 0
 
-**Example:**
+**Example :**
 
 //a is greater than b then true.
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -700,9 +689,9 @@ int main() {
 
 **Less than (<)**
 
-**Example:**
+**Example :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -718,15 +707,15 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > 0
 
-**Example:**
+**Example :**
 
 // a is less than b then true .
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -742,17 +731,17 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > 1
 
 **Less than or equal to (<=)**
 
-**Example:**
+**Example :**
 
 // a is less than or equal to b then true otherwise false.
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -768,15 +757,15 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > 0
 
-**Example:**
+**Example :**
 
 // a is less than or equal to b then true.
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -792,17 +781,17 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > 1
 
 **greater than or equal to (>=)**
 
-**Example:**
+**Example :**
 
 // a is greater than or equal to b then true otherwise false.
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -818,15 +807,15 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > 0
 
-**Example:**
+**Example :**
 
 // a is greater than or equal to b then true.
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -842,17 +831,17 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > 1
 
 **not equal to (!=)**
 
-**Example:**
+**Example :**
 
 //a is not equal to b then true otherwise false.
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -868,15 +857,15 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > 0
 
-**Example:**
+**Example :**
 
 //a is not equal to b then true.
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -892,7 +881,7 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > 1
 
@@ -900,11 +889,11 @@ int main() {
 
 **Syntax :**
 
-(condition)?True:False
+**`(condition)?True:False`**
 
-**Example:**
+**Example :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -914,19 +903,19 @@ int main() {
 
     int ans = (a>b?a:b);
 
-    printf("%d",ans);
+    printf("Ans = %d",ans);
 
     return 0;
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
-> 100
+> Ans = 100
 
-**Example:**
+**Example :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -941,27 +930,23 @@ int main() {
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
 > Even
 
-## Logical Operators C Programming
+## Logical Operator
 
-**Logical Operators**
+**Logical operator are used to chaining condition.**
 
-Logical operator are used to chaining condition.
+- Logical AND (&&)
+- Logical OR (||)
+- Logical Not (!)
 
-Logical AND (&&)
-Logical OR (||)
-Logical Not (!)
+**Logical AND (&&) :** If both conditions are true then it return result true, otherwise it returns false.
 
-**Logical AND (&&)**
+**Example :**
 
-Result True, if both operand condition are true otherwise false.
-
-**Example:**
-
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -971,22 +956,20 @@ int main() {
 
    int res = (maths>80) && (english>80);
 
-   printf("result: %d", res);
+   printf("Result: %d", res);
    return 0;
 }
 ```
 
-**Output :**
+**⚙️ Output :**
 
-> 1
+> Result : 1
 
-**Logical OR (||)**
+**Logical OR (||) :** If both conditions are false it returns their result false, otherwisw its returns their result true.
 
-Result True if both operand condition are true and one of the condition is true otherwise result False.
+**Example :**
 
-**Example:**
-
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -996,18 +979,18 @@ int main() {
 
    int res = (maths>80) || (english>80);
 
-   printf("result: %d", res);
+   printf("Result : %d", res);
    return 0;
 }
 ```
 
-**Output**
+**⚙️ Output :**
 
-> 1
+> Result : 1
 
-**Logical Not (!)**
+**Logical Not (!) :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -1017,11 +1000,11 @@ int main() {
 
    int res = !((maths>80) && (english>80));
 
-   printf("result: %d", res);
+   printf("Result : %d", res);
    return 0;
 }
 ```
 
-**Output**
+**⚙️ Output :**
 
-> 0
+> Result : 0

@@ -9,15 +9,15 @@ Linear search is a search that finds an element in the list by searching the ele
 
 **Example 1 :**
 
-```c
-     #include <stdio.h>
+```c showLineNumbers="true"
+#include <stdio.h>
 
 int main() {
-    
+
     int arr[10]={5, 6, 8, 78, 38, 33, 89, 98, 43, 24};
-    
-    int key = 89; 
-    
+
+    int key = 89;
+
     for(int i=0; i<10; i++)
     {
         if(arr[i]==key)
@@ -29,22 +29,24 @@ int main() {
     return 0;
 }
 ```
-**Output :**  
+
+**Output :**
+
 Element found at 6
 
 **Example 2 :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
-    
+
     int arr[10]={2, 4, 6, 78, 34, 12, 23, 98, 43, 22};
-    
-    int key; 
+
+    int key;
     printf("Enter key: ");
     scanf("%d", &key);
-    
+
     for(int i=0; i<10; i++)
     {
         if(arr[i]==key)
@@ -57,23 +59,24 @@ int main() {
 }
 ```
 
-**Output :**  
+**Output :**
+
 Enter key: 78  
 78 found at 3 index
 
 **Example 3 :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
-    
+
     int arr[100];
-    
-    int n; 
+
+    int n;
     printf("How many elements do you want to add: ");
     scanf("%d", &n);
-    
+
     for(int i=0; i<n; i++)
     {
         printf("Enter value for index %d: ",i);
@@ -82,7 +85,7 @@ int main() {
     int key;
     printf("Enter key: ");
     scanf("%d", &key);
-    
+
     for(int i=0; i<n; i++)
     {
         if(arr[i]==key)
@@ -95,7 +98,8 @@ int main() {
 }
 ```
 
-**Output :**  
+**Output :**
+
 How many elements do you want to add: 5  
 Enter value for index 0: 2  
 Enter value for index 1: 56  
@@ -108,16 +112,16 @@ Enter key: 98
 **Binary Search**  
 Binary Search is a search algorithm that is used to find the position of an element in a sorted array.
 
-*8Example 1 :**
+**Example :**
 
 ```c
 #include <stdio.h>
 
 int main() {
    int arr[] = {1, 5, 4, 7, 45, 23, 56};
-   
+
    int key = 56;
-   
+
    for(int i=0; i<7; i++)
    {
        if(arr[i]==key)
@@ -126,14 +130,10 @@ int main() {
            break;
        }
    }
-    
+
     return 0;
 }
 ```
 
-**Output :**   
+**Output :**  
 Element found at 6
-
-
-
-       

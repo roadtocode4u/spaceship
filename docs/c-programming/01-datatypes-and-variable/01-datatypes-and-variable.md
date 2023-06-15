@@ -4,31 +4,27 @@ description: "Datatype and Variable"
 hide_table_of_contents: true
 ---
 
-### Datatype
+### What is Datatype
 
-1. **Integers (int)**
+Datatype is a type of information which can stored in variable. There are `three` primitive datatypes in c Language. lets discuss,
 
-> Integers means stores whole numbers without decimal point.
+1. `Integers (int)`
+
+Integers means stores whole numbers without decimal point.The size of `int` datatype is `4 byte`.
 
 💻**Example :** 1, 2, 2253, 899, 44, 55...
 
-2. **Character (char)**
+2. `Character (char)`
 
-> Character is store a single letter.
+Character is store a single letter.The size of `char` datatype is `1 bytes`.
 
 💻**Example :** 'r','v','s'....
 
-3. **Float (float)**
+3. `Float (float)`
 
-> float means Stores numbers with decimals point.
+Float means Stores numbers with decimals point. The size of `float` datatype is `4 bytes`.
 
 💻Example= 15.7,89.0,46.84 ....
-
-4.  **String**
-
-> String is represented as Collection of characters.String enclosed in `single quotes` or `double quotes`.
-
-💻**Example :** 'code',"harshda".
 
 ### Format Specifiers
 
@@ -59,6 +55,10 @@ int main()
 **Output**
 
 > 10
+
+**Example explanation :**
+
+In the above example, we import a standard library file `#include <stdio.h>`. The `main()` function is an entry point of the program. that starts the execution of the program.we have declared a variable `age` that initialize with value `10` and used `int` datatype.using the `printf` function, we display the output with format specifier `%d`.
 
 **Code**
 
@@ -145,6 +145,10 @@ int main()
 
 > 80.500000
 
+**Example explanaion :**
+
+In the above example, we import a standard library file `#include <stdio.h>`. The `main()` function is an entry point of the program. that starts the execution of the program. we have declared a variable `weight` that initialize with value `80.5` and used `float` datatype. Using the `printf` function, we display the output with format specifier `%f`.
+
 **Code**
 
 ```c
@@ -164,9 +168,13 @@ int main()
 
 > c
 
+**Example explanation :**
+
+In the above example, we import a standard library file `#include <stdio.h>`. The `main()` function is an entry point of the program. that starts the execution of the program. we have declared a variable `alpha` that initialize with value `c` and used `char` datatype. Using the `printf` function, we display the output with format specifier `%c`.
+
 ### Variable
 
-> Variable is used to store data.
+`Variable` is a container that is used to store data.
 
 ### Rules of Declare Variables
 
@@ -178,28 +186,29 @@ int main()
 
 4. Length of variable name should be less than 31 character.
 
-### How to define variable
+### How to declare variable
 
-datatype variablename;
+In a c language, we can declare variables using `datatype`.The syntax of variable declaration is
 
-**Example :** `int age;`
+    datatype variablename;
 
-char variablename;
+**Example :**
 
-**Example :** `char gender;`
+`int age;`
 
-float variablename;
+`char gender;`
 
-**Example :** `float weight`
+`float weight;`
 
 :::tip
-char, int and float these datatypes stored in variable.
+char, int and float these datatypes are used to declare the variable.
 :::
 
 ### Case Sensitivity
 
-> Text that is sensitive to capitalization of letters.
-> For example, `NAME` ,`name`,`NaMe` are three different.
+Text that is sensitive to capitalization of letters.
+
+**For example:** `NAME` ,`name`,`NaMe` are three different.
 
 **Example : Write a program to sum of 2 variable**
 

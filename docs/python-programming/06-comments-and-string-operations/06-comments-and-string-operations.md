@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 ### Comments in python
 
-A comments is a piece of code that ignored by the compiler and it is useful for human readers to understand the code better.Comments are useful for providing explanations, documenting code or temporarily.
+A comments is a piece of code that ignored by the compiler and it is useful for human readers to understand the code better. Comments are useful for providing explanations, documenting code or temporarily.
 
 **1. Single Line Comment (#)**
 
@@ -29,8 +29,7 @@ In above example, you can created a single line comment by using the `#` charact
 
 **2. Multiline Comment (""" """)**
 
-In Python Triple double quote (""") and single quote (''') are used for Multi-line commenting.
-Multi-line comment is useful when we need to comment on many lines.
+In Python Triple double quote (""") and single quote (''') are used for Multi-line commenting. Multi-line comment is useful when we need to comment on many lines.
 
 **Example :**
 
@@ -47,9 +46,9 @@ In above example, you can created a multi line comment starting with `"""` and e
 
 ### String Manipulation
 
-**1. Upper()**
+**1. upper()**
 
-Upper() function is used to converts a string into upper case.
+upper() function is used to convert a string into uppercase.
 
 **Example :**
 
@@ -67,11 +66,11 @@ print("New String :",newString)
 
 **Example Explanation :**
 
-In above example, we created 1st variable `mystring` for storing the string `road to code 4u`,then print the original string. `upper()` function is used to convert string into uppercase letter. We can created 2nd variable `newString` for store converted uppercase string. Output is ROAD TO CODE 4U.
+In above example, we created 1st variable `mystring` for storing the string `road to code 4u`, then print the original string. `upper()` function is used to convert string into uppercase letter. We can created 2nd variable `newString` for store converted uppercase string. Output is ROAD TO CODE 4U.
 
-**2. Lower()**
+**2. lower()**
 
-Lower() function is used to converts a string into lower case.
+lower() function is used to convert a string into lowercase.
 
 **Example :**
 
@@ -89,11 +88,11 @@ print("New String :",newString)
 
 **Example Explanation :**
 
-In above example, we created 1st variable `mystring` for storing the string `ROAD TO CODE 4U`,then print the original string. `lower()` function is used to convert string into lowercase letter. We can created 2nd variable `newString` for store converted lowercase string. Output is road to code 4u.
+In above example, we created 1st variable `mystring` for storing the string `ROAD TO CODE 4U`, then print the original string. `lower()` function is used to convert string into lowercase letter. We can created 2nd variable `newString` for store converted lowercase string. Output is road to code 4u.
 
-**3. Strip()**
+**3. strip()**
 
-Strip() function is used to removes white space (unnecessary spaces) from the end of string.
+strip() function removes white space (unnecessary spaces) from the end of the string.
 
 **Example :**
 
@@ -109,9 +108,9 @@ print(str2.strip())
 > rtc4u <br/>
 > rtc4u
 
-**4. Replace()**
+**4. replace()**
 
-Replace() function is used to replace the string.
+replace() function is used to replace the string.
 
 **Example :**
 
@@ -131,7 +130,7 @@ In the above example, we provide two parameters for replacing the characters, 1s
 
 **5. split()**
 
-Splits the string at the specified separator, and returns a list.
+splits the string at the specified separator and returns a list.
 
 **Example 1:**
 
@@ -180,7 +179,7 @@ In the above example, you can provide split the string `Yogita#Harshada#Anushka#
 
 ### Array
 
-Array is collection of similar data types. Array index is always start with `0` index.
+Array is collection of similar data types. Array index always starts with the `0` index.
 
 **Example :**
 
@@ -199,7 +198,7 @@ In Python language, an array concept is not available. Array is available in oth
 
 ### Escape Charaters
 
-An escape character is a special character it is used to represent certain sequences of characters that cannot be directly represented in a string.
+An escape character is a special character it is used to represent specific sequences of characters that cannot be directly represented in a string.
 
 **Example 1:**
 
@@ -214,8 +213,7 @@ print(sentence)
 
 **Example Explanation :**
 
-In the above example, we assinged variable `sentence` and provide string `"I'm Yogita."`
-It is enclosed in double quotes because the sentence itself contains a single quote.The `print()` function is used to output the value of the sentence variable.
+In the above example, we assinged variable `sentence` and provide string `"I'm Yogita."` It is enclosed in double quotes because the sentence itself contains a single quote. The `print()` function is used to output the value of the sentence variable.
 
 **Example 2:**
 
@@ -230,4 +228,4 @@ I'm Good. She said, How are you??
 
 **Example Explanation :**
 
-In the above example, we assinged variable `sentence` and provide string `'I\'m Good. She said, How are you??'`.It is enclosed in single quotes because the sentence itself contains a single quote. The single quote within the string is preceded by a backslash `(\)` using `\'` as an escape sequence.This single quote should be treated as a literal character and not as the end of the string.The `print()` function is used to output the value of the sentence variable.
+In the above example, we assinged variable `sentence` and provide string `'I\'m Good. She said, How are you??'`. It is enclosed in single quotes because the sentence itself contains a single quote. The single quote within the string is preceded by a backslash `(\)` using `\'` as an escape sequence. This single quote should be treated as a literal character and not as the end of the string. The `print()` function is used to output the value of the sentence variable.

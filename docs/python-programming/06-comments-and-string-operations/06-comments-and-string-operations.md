@@ -198,7 +198,7 @@ In Python language, an array concept is not available. Array is available in oth
 
 ### Escape Charaters
 
-An escape character is a special character that is used to represent certain sequences of characters that cannot be directly represented in a string. In Python, the backslash () is used as the escape character.
+An escape character is a special character that is used to represent certain sequences of characters that cannot be directly represented in a string. In Python, the backslash `(\)` is used as the escape character.
 
 **Example 1:**
 

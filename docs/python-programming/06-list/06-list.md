@@ -4,115 +4,97 @@ description: "List"
 hide_table_of_contents: true
 ---
 
-## List
-
-Lists are used to store multiple items in a single variable.
+Lists are used to store multiple items in a single variable. List name should be in a `plural` form.
 
 **Code**
 
-```python
-students = ["sahil","Rahul","Ashwini"]
+```py
+students = ['Aachal','Aarav','Avinash','Dolly','Deva']
 print(students)
 ```
 
 **Output**
 
-> ['sahil', 'Rahul', 'Ashwini']
+> ['Aachal', 'Aarav', 'Avinash', 'Dolly', 'Deva']
 
 ### Slicing on list
 
+**Syntax**
+
+```py
+stringname[startindex:endindex]
+```
+
 **Code**
 
 ```python
-students = ["sahil","Rahul","Ashwini","Tanaya"]
-print(students[0:3])
+students = ['Aachal','Aarav','Avinash','Dolly','Deva']
+print(students[0:4])
 ```
 
 **Output**
 
-> ['sahil', 'Rahul', 'Ashwini']
+> ['Aarav', 'Avinash', 'Dolly']
 
 **Code**
 
 ```python
-students = ["sahil","Rahul","Ashwini","Tanaya"]
-print(students[2:4])
+students = ['Aachal','Aarav','Avinash','Dolly','Deva']
+print(students[4:])
 ```
 
 **Output**
 
-> ['Ashwini', 'Tanaya']
+> ['Deva']
 
 **Code**
 
 ```python
-students = ["sahil","Rahul","Ashwini","Tanaya"]
+students = ['Aachal','Aarav','Avinash','Dolly','Deva']
 print(students[-2])
 ```
 
 **Output**
 
-> Ashwini
-
-**Code**
-
-```python
-students = ["sahil","Rahul","Ashwini","Tanaya"]
-print(students[1])
-```
-
-**Output**
-
-> Rahul
-
-**Code**
-
-```python
-students = ["sahil","Rahul","Ashwini","Tanaya"]
-print(students[1:])
-```
-
-**Output**
-
-> ['Rahul', 'Ashwini', 'Tanaya']
+> Dolly
 
 ## Properties Of List
 
-#### Ordered
+### 1. Ordered
 
-Lists are ordered, it means that the items have a defined order, and that order will not change.
+Lists are in ordered form, which means that the items have a defined order, and that order will not change.
 
 **Code**
 
 ```python
-students = ["sahil","Rahul","Ashwini","Tanaya"]
+students = ['Aachal','Aarav','Avinash','Dolly','Deva']
 print(students)
 ```
 
 **Output**
 
-> ['sahil', 'Rahul', 'Ashwini', 'Tanaya']
+> ['Aachal', 'Aarav', 'Avinash', 'Dolly', 'Deva']
 
-#### Allow Duplicates
+### 2. Allow duplicates
 
-Lists can have items with the same value
+Lists can have items with the same value. Lists can contain duplicate values.
 
 **Code**
 
 ```python
-students = ["sahil","Rahul","Ashwini","Tanaya","Ashwini","Ashwini"]
-print(students)
+fruits =['apple','banana','cherry','apple','banana']
+print(fruits)
 ```
 
 **Output**
 
-> ['sahil', 'Rahul', 'Ashwini', 'Tanaya', 'Ashwini', 'Ashwini']
+> ['apple', 'banana', 'cherry', 'apple', 'banana']
 
-#### List can contain Different Data Type
+### 3. List can contain different data type
 
 **Code**
 
-```python
+```py
 randomData = ["abc",10,True,50.50,"Hii"]
 print(randomData)
 ```
@@ -121,31 +103,37 @@ print(randomData)
 
 > ['abc', 10, True, 50.5, 'Hii']
 
-#### Changeable
+### 4. Changeable
 
-The list is changeable, that we can change, add, and remove items in a list after it has been created.
+The list is `changeable`, and we can change add, and remove items in a list after it has been created.
 
 ### Update
 
+Update(change) a list element at the specified index.
+
 **Syntax**
 
-`listName[index] = "updated-element"`
+```py
+listName[index] = "updated-element"
+```
 
 **Code**
 
-```python
-courses = ["c","c++","python","java","icp"]
+```py
+courses = ["c","c++","python","javascript","icp"]
 print("Befor update: ",courses)
-courses[3] = "java programming"
+courses[1] = "c++ programming"
 print("After update :",courses)
 ```
 
 **Output**
 
-> Befor update: ['c', 'c++', 'python', 'java', 'icp']
-> After update : ['c', 'c++', 'python', 'java programming', 'icp']
+> Befor update: ['c', 'c++', 'python', 'javascript', 'icp']<br/>
+> After update : ['c', 'c++ programming', 'python', 'javascript', 'icp']<br/>
 
 ### Insert
+
+Insert an element at the specified position in the list.
 
 **Syntax**
 
@@ -162,12 +150,12 @@ print("After insert :",courses)
 
 **Output**
 
-> Before insert: ['c', 'c++', 'python', 'java', 'icp']
-> After insert : ['c', 'c++', 'python', 'java', 'Android Dev', 'icp']
+> Before insert: ['c', 'c++', 'python', 'java', 'icp']<br/>
+> After insert : ['c', 'c++', 'python', 'java', 'Android Dev', 'icp']<br/>
 
 ### Append
 
-The append() method appends an element to the end of the list.
+The append() method adds an element to the end of the list.
 
 **Syntax**
 
@@ -184,12 +172,12 @@ print("After append :",courses)
 
 **Output**
 
-> Before append : ['c', 'c++', 'python', 'java', 'icp']
-> After append : ['c', 'c++', 'python', 'java', 'icp', 'Android Dev']
+> Before append : ['c', 'c++', 'python', 'java', 'icp']<br/>
+> After append : ['c', 'c++', 'python', 'java', 'icp', 'Android Dev']<br/>
 
 ### Remove
 
-The remove() method removes the specified item.
+The remove() method removes the specified item in the lists.
 
 **Syntax**
 
@@ -198,20 +186,21 @@ The remove() method removes the specified item.
 **Code**
 
 ```python
-courses = ["c","c++","python","java","icp"]
-print("Before remove :",courses)
-courses.remove("java")
-print("After remove :",courses)
+fruits = ['appple','banana','orange','cherry']
+print("Before remove",fruits)
+fruits.remove('banana')
+print("After remove",fruits)
+
 ```
 
 **Output**
 
-> Before remove : ['c', 'c++', 'python', 'java', 'icp']
-> After remove : ['c', 'c++', 'python', 'icp']
+> Before remove ['appple', 'banana', 'orange', 'cherry']<br/>
+> After remove ['appple', 'orange', 'cherry'] <br/>
 
 ### Pop
 
-The pop() method takes a single argument (index).
+The pop() method removes the element. It takes a single argument (index).
 
 **Syntax**
 
@@ -219,17 +208,17 @@ The pop() method takes a single argument (index).
 
 **Code**
 
-```python
-courses = ["c","c++","python","java","icp"]
-print("Before pop :",courses)
-courses.pop(2)
-print("After pop :",courses)
+```py
+fruits = ['appple','banana','orange','cherry']
+print("Before pop",fruits)
+fruits.pop(2)
+print("After pop",fruits)
 ```
 
 **Output**
 
-> Before pop : ['c', 'c++', 'python', 'java', 'icp']
-> After pop : ['c', 'c++', 'java', 'icp']
+> Before pop ['appple', 'banana', 'orange', 'cherry']<br/>
+> After pop ['appple', 'banana', 'cherry']<br/>
 
 ### Delete
 
@@ -239,21 +228,21 @@ print("After pop :",courses)
 
 **Code**
 
-```python
-friuts = ["apple","banana","cherry","mango"]
-print("Before delete : ",friuts)
-del friuts[1]
-print("After delete :",friuts)
+```py
+fruits = ["apple","banana","cherry","mango"]
+print("Before delete : ",fruits)
+del fruits[1]
+print("After delete :",fruits)
 ```
 
 **Output**
 
-> Before delete : ['apple', 'banana', 'cherry', 'mango']
-> After delete : ['apple', 'cherry', 'mango']
+> Before delete : ['apple', 'banana', 'cherry', 'mango']<br/>
+> After delete : ['apple', 'cherry', 'mango']<br/>
 
 ### Clear
 
-The clear() method removes all the elements from a list.
+The clear() method removes all the elements from the list.
 
 **Syntax**
 
@@ -261,27 +250,27 @@ The clear() method removes all the elements from a list.
 
 **Code**
 
-```python
-friuts = ["apple","banana","cherry","mango"]
-print("Before clear :",friuts)
-friuts.clear()
-print("After clear : ",friuts)
+```py
+fruits = ["apple","banana","cherry","mango"]
+print("Before clear :",fruits)
+fruits.clear()
+print("After clear : ",fruits)
 ```
 
 **Output**
 
-> Before clear : ['apple', 'banana', 'cherry', 'mango']
-> After clear : []
+> Before clear : ['apple', 'banana', 'cherry', 'mango']<br/>
+> After clear : [] <br/>
 
-- Sort =
+### Sort
 
-List objects have a sort() method that will sort the list alphanumerically, ascending,descending.
+List objects have a sort() method that will sort the list alphanumerically, ascending, and descending.
 
 ### Ascending Order
 
 **Code**
 
-```python
+```py
 alphabets = ['A','Z','C','V','P','R']
 alphabets.sort()
 print(alphabets)
@@ -295,7 +284,7 @@ print(alphabets)
 
 **Code**
 
-```python
+```py
 alphabets = ['A','Z','C','V','P','R']
 alphabets.sort(reverse=True)
 print(alphabets)

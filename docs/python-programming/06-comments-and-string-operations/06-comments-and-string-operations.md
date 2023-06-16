@@ -198,7 +198,7 @@ In Python language, an array concept is not available. Array is available in oth
 
 ### Escape Charaters
 
-An escape character is a special character it is used to represent specific sequences of characters that cannot be directly represented in a string.
+An escape character is a special character that is used to represent certain sequences of characters that cannot be directly represented in a string. In Python, the backslash () is used as the escape character.
 
 **Example 1:**
 
@@ -213,7 +213,7 @@ print(sentence)
 
 **Example Explanation :**
 
-In the above example, we assinged variable `sentence` and provide string `"I'm Yogita."` It is enclosed in double quotes because the sentence itself contains a single quote. The `print()` function is used to output the value of the sentence variable.
+In this example, we have assigned the string `"I'm Yogita."` to the variable sentence. The string is enclosed in double quotes because the sentence itself contains a single quote. The backslash is not needed here because the single quote does not need to be escaped. The `print()` function is used to display the value of the sentence variable.
 
 **Example 2:**
 
@@ -228,4 +228,6 @@ I'm Good. She said, How are you??
 
 **Example Explanation :**
 
-In the above example, we assinged variable `sentence` and provide string `'I\'m Good. She said, How are you??'`. It is enclosed in single quotes because the sentence itself contains a single quote. The single quote within the string is preceded by a backslash `(\)` using `\'` as an escape sequence. This single quote should be treated as a literal character and not as the end of the string. The `print()` function is used to output the value of the sentence variable.
+In this example, we have assigned the string `'I'm Good. She said, How are you?'` to the variable sentence. The string is enclosed in single quotes because the sentence itself contains a single quote. However, to include the single quote within the string, we need to escape it using the backslash `(\)`. This tells Python to treat the single quote as a literal character and not as the end of the string. The `print()` function is used to display the value of the sentence variable.
+
+In both examples, the use of escape characters `(')` allows us to include single quotes within the string without causing syntax errors or prematurely ending the string.

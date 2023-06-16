@@ -161,15 +161,17 @@ A sticky element are relative and fixed, its depending on the scroll position. E
 
 <img src="/icp/20/output-7.png" alt="output-7" width="600px" height="300px"/>
 
+**Example Explanation :**
+
 In The above 1st output contact image position are `realtive` and 2nd output webpage are scroll then contact image position are `sticky`.
 
 ## Fixed
 
-` position: fixed`
-
 Fixed is set with respect to viewport. Removed from normal flow.
 
 Viewport => Visible area on the browser.
+
+`position: fixed;`
 
 **Example :**
 
@@ -209,13 +211,15 @@ Viewport => Visible area on the browser.
 
 <img src="/icp/20/output-4.png" alt="output-4" width="600px" height="300px"/>
 
+**Example Explanation :**
+
 In the above example, we are providing `position: fixed;`, `top: 20px` and ` right: 20px;` for the button. Then Button are fixed with this position it always stays in the same place even if the page is scrolled.
 
 ## Absolute
 
-`position: absolute`
-
 It is relative to parent element. This element is positioned relative to the first parent element and absolute to its child elements.
+
+`position: absolute;`
 
 **Example :**
 
@@ -258,5 +262,7 @@ It is relative to parent element. This element is positioned relative to the fir
 **⚙️ Output :**
 
 <img src="/icp/20/output-8.png" alt="output-8" height="600px"/>
+
+**Example Explanation :**
 
 In the above example, we are providing `position: relative` for the parent element and `position: absolute` for the child element. Child elements are provided space `top: -50px` and `left: 140px` to their parent elements.

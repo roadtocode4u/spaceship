@@ -595,3 +595,5 @@ We establish the relationships between the nodes by assigning the appropriate no
 Finally, we call the `postOrderTraversal` function, passing the `root` node as an argument, to perform a post-order traversal of the binary tree. The `postOrderTraversal` function will print the node values according to the post-order traversal order.
 
 The program ends by returning 0, indicating successful execution.
+
+## Introduction to BST

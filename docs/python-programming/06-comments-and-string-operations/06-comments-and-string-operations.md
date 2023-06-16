@@ -130,7 +130,7 @@ In the above example, we provide two parameters for replacing the characters, 1s
 
 **5. split()**
 
-splits the string at the specified separator and returns a list.
+split() function is splits the string at the specified separator and returns a list.
 
 **Example 1:**
 

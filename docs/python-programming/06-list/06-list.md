@@ -4,176 +4,168 @@ description: "List"
 hide_table_of_contents: true
 ---
 
-## List
+Lists are used to store multiple items in a single variable. List name should be in a `plural` form.
 
-Lists are used to store multiple items in a single variable.
+**Example :**
 
-**Code**
-
-```python
-students = ["sahil","Rahul","Ashwini"]
+```py
+students = ['Aachal','Aarav','Avinash','Dolly','Deva']
 print(students)
 ```
 
-**Output**
+**Output :**
 
-> ['sahil', 'Rahul', 'Ashwini']
+> ['Aachal', 'Aarav', 'Avinash', 'Dolly', 'Deva']
 
 ### Slicing on list
 
-**Code**
+Slice object is used to specify how to slice a list.
 
-```python
-students = ["sahil","Rahul","Ashwini","Tanaya"]
-print(students[0:3])
+**Syntax :**
+
+```py
+stringname[startindex:endindex]
 ```
 
-**Output**
-
-> ['sahil', 'Rahul', 'Ashwini']
-
-**Code**
+**Example :**
 
 ```python
-students = ["sahil","Rahul","Ashwini","Tanaya"]
-print(students[2:4])
+students = ['Aachal','Aarav','Avinash','Dolly','Deva']
+print(students[0:4])
 ```
 
-**Output**
+**Output :**
 
-> ['Ashwini', 'Tanaya']
+> ['Aarav', 'Avinash', 'Dolly']
 
-**Code**
+**Example :**
 
 ```python
-students = ["sahil","Rahul","Ashwini","Tanaya"]
+students = ['Aachal','Aarav','Avinash','Dolly','Deva']
+print(students[4:])
+```
+
+**Output :**
+
+> ['Deva']
+
+**Example :**
+
+```python
+students = ['Aachal','Aarav','Avinash','Dolly','Deva']
 print(students[-2])
 ```
 
-**Output**
+**Output :**
 
-> Ashwini
-
-**Code**
-
-```python
-students = ["sahil","Rahul","Ashwini","Tanaya"]
-print(students[1])
-```
-
-**Output**
-
-> Rahul
-
-**Code**
-
-```python
-students = ["sahil","Rahul","Ashwini","Tanaya"]
-print(students[1:])
-```
-
-**Output**
-
-> ['Rahul', 'Ashwini', 'Tanaya']
+> Dolly
 
 ## Properties Of List
 
-#### Ordered
+### 1. Ordered
 
-Lists are ordered, it means that the items have a defined order, and that order will not change.
+Lists are in ordered form, which means that the items have a defined order and that order will not change.
 
-**Code**
+**Example :**
 
 ```python
-students = ["sahil","Rahul","Ashwini","Tanaya"]
+students = ['Aachal','Aarav','Avinash','Dolly','Deva']
 print(students)
 ```
 
-**Output**
+**Output :**
 
-> ['sahil', 'Rahul', 'Ashwini', 'Tanaya']
+> ['Aachal', 'Aarav', 'Avinash', 'Dolly', 'Deva']
 
-#### Allow Duplicates
+### 2. Allow duplicates
 
-Lists can have items with the same value
+Lists can have items with the same value. Lists can contain duplicate values.
 
-**Code**
+**Example :**
 
 ```python
-students = ["sahil","Rahul","Ashwini","Tanaya","Ashwini","Ashwini"]
-print(students)
+fruits =['apple','banana','cherry','apple','banana']
+print(fruits)
 ```
 
-**Output**
+**Output :**
 
-> ['sahil', 'Rahul', 'Ashwini', 'Tanaya', 'Ashwini', 'Ashwini']
+> ['apple', 'banana', 'cherry', 'apple', 'banana']
 
-#### List can contain Different Data Type
+### 3. List can contain different datatype
 
-**Code**
+You can add differnent datatypes in single list.
 
-```python
+**Example :**
+
+```py
 randomData = ["abc",10,True,50.50,"Hii"]
 print(randomData)
 ```
 
-**Output**
+**Output :**
 
 > ['abc', 10, True, 50.5, 'Hii']
 
-#### Changeable
+### 4. Changeable
 
-The list is changeable, that we can change, add, and remove items in a list after it has been created.
+The list is `changeable` and we can change add and remove items in a list after it has been created.
 
 ### Update
 
-**Syntax**
+Update (change) a list element at the specified index.
 
-`listName[index] = "updated-element"`
+**Syntax :**
 
-**Code**
+```py
+listName[index] = "updated-element"
+```
 
-```python
-courses = ["c","c++","python","java","icp"]
+**Example :**
+
+```py
+courses = ["c","c++","python","javascript","icp"]
 print("Befor update: ",courses)
-courses[3] = "java programming"
+courses[1] = "c++ programming"
 print("After update :",courses)
 ```
 
-**Output**
+**Output :**
 
-> Befor update: ['c', 'c++', 'python', 'java', 'icp']
-> After update : ['c', 'c++', 'python', 'java programming', 'icp']
+> Befor update: ['c', 'c++', 'python', 'javascript', 'icp']<br/>
+> After update : ['c', 'c++ programming', 'python', 'javascript', 'icp']<br/>
 
 ### Insert
 
-**Syntax**
+The insert() method insert an element at the specified position in the list.
+
+**Syntax :**
 
 `listName.insert(index-position, "new-element-to-insert")`
 
-**Code**
+**Example :**
 
-```python
+```py
 courses = ["c","c++","python","java","icp"]
 print("before insert:", courses)
 courses.insert(4,"Android Dev")
 print("After insert :",courses)
 ```
 
-**Output**
+**Output :**
 
-> Before insert: ['c', 'c++', 'python', 'java', 'icp']
-> After insert : ['c', 'c++', 'python', 'java', 'Android Dev', 'icp']
+> Before insert: ['c', 'c++', 'python', 'java', 'icp']<br/>
+> After insert : ['c', 'c++', 'python', 'java', 'Android Dev', 'icp']<br/>
 
 ### Append
 
-The append() method appends an element to the end of the list.
+The append() method adds an element to the end of the list.
 
-**Syntax**
+**Syntax :**
 
 `listName.append("element")`
 
-**Code**
+**Example :**
 
 ```python
 courses = ["c","c++","python","java","icp"]
@@ -182,125 +174,132 @@ courses.append("Android Dev")
 print("After append :",courses)
 ```
 
-**Output**
+**Output :**
 
-> Before append : ['c', 'c++', 'python', 'java', 'icp']
-> After append : ['c', 'c++', 'python', 'java', 'icp', 'Android Dev']
+> Before append : ['c', 'c++', 'python', 'java', 'icp']<br/>
+> After append : ['c', 'c++', 'python', 'java', 'icp', 'Android Dev']<br/>
 
 ### Remove
 
-The remove() method removes the specified item.
+The remove() method removes the specified item in the lists.
 
-**Syntax**
+**Syntax :**
 
 `listName.remove("element")`
 
-**Code**
+**Example :**
 
-```python
-courses = ["c","c++","python","java","icp"]
-print("Before remove :",courses)
-courses.remove("java")
-print("After remove :",courses)
+```py
+fruits = ['appple','banana','orange','cherry']
+print("Before remove",fruits)
+fruits.remove('banana')
+print("After remove",fruits)
+
 ```
 
-**Output**
+**Output :**
 
-> Before remove : ['c', 'c++', 'python', 'java', 'icp']
-> After remove : ['c', 'c++', 'python', 'icp']
+> Before remove ['appple', 'banana', 'orange', 'cherry']<br/>
+> After remove ['appple', 'orange', 'cherry'] <br/>
 
 ### Pop
 
-The pop() method takes a single argument (index).
+The pop() method remove the element. It takes a single argument (index).
 
-**Syntax**
+**Syntax :**
 
 `listName.pop(index)`
 
-**Code**
+**Example :**
 
-```python
-courses = ["c","c++","python","java","icp"]
-print("Before pop :",courses)
-courses.pop(2)
-print("After pop :",courses)
+```py
+fruits = ['appple','banana','orange','cherry']
+print("Before pop",fruits)
+fruits.pop(2)
+print("After pop",fruits)
 ```
 
-**Output**
+**Output :**
 
-> Before pop : ['c', 'c++', 'python', 'java', 'icp']
-> After pop : ['c', 'c++', 'java', 'icp']
+> Before pop ['appple', 'banana', 'orange', 'cherry']<br/>
+> After pop ['appple', 'banana', 'cherry']<br/>
 
 ### Delete
 
-**Syntax**
+The delete() method delete elements from the specified index.
+
+**Syntax :**
 
 `del listname[index]`
 
-**Code**
+**Example :**
 
-```python
-friuts = ["apple","banana","cherry","mango"]
-print("Before delete : ",friuts)
-del friuts[1]
-print("After delete :",friuts)
+```py
+fruits = ["apple","banana","cherry","mango"]
+print("Before delete : ",fruits)
+del fruits[1]
+print("After delete :",fruits)
 ```
 
-**Output**
+**Output :**
 
-> Before delete : ['apple', 'banana', 'cherry', 'mango']
-> After delete : ['apple', 'cherry', 'mango']
+> Before delete : ['apple', 'banana', 'cherry', 'mango']<br/>
+> After delete : ['apple', 'cherry', 'mango']<br/>
 
 ### Clear
 
-The clear() method removes all the elements from a list.
+The clear() method removes all the elements from the list.
 
-**Syntax**
+**Syntax :**
 
 `listName.clear()`
 
-**Code**
+**Example :**
 
-```python
-friuts = ["apple","banana","cherry","mango"]
-print("Before clear :",friuts)
-friuts.clear()
-print("After clear : ",friuts)
+```py
+fruits = ["apple","banana","cherry","mango"]
+print("Before clear :",fruits)
+fruits.clear()
+print("After clear : ",fruits)
 ```
 
-**Output**
+**Output :**
 
-> Before clear : ['apple', 'banana', 'cherry', 'mango']
-> After clear : []
+> Before clear : ['apple', 'banana', 'cherry', 'mango']<br/>
+> After clear : [] <br/>
 
-- Sort =
+### Sort
 
-List objects have a sort() method that will sort the list alphanumerically, ascending,descending.
+In Python, the `sort()` method is used to sort a list in-place, meaning it modifies the original list directly. It arranges the elements of the list in either `ascending` or `descending` order, depending on the arguments provided.
+
+In the given example, we have a list called `alphabets` with the values ['A','Z','C','V','P','R']. We will perform sorting on this list.
 
 ### Ascending Order
 
-**Code**
+To sort the list in ascending order, we simply call the `sort()` method on the list without passing any arguments or by passing `reverse=False` explicitly. Here's the
 
-```python
+```py
 alphabets = ['A','Z','C','V','P','R']
 alphabets.sort()
 print(alphabets)
 ```
 
-**Output**
+The sort() method rearranges the elements of the alphabets list in `ascending` order. The output will be:
 
 > ['A', 'C', 'P', 'R', 'V', 'Z']
 
 ### Descending Order
 
-**Code**
+To sort the list in descending order, we pass `reverse=True` as an argument to the sort() method. Here's the code:
 
-```python
+```py
 alphabets = ['A','Z','C','V','P','R']
 alphabets.sort(reverse=True)
 print(alphabets)
 ```
 
-**Output**
+The sort() method arranges the elements of the alphabets list in `descending` order. The output will be:
 
-> ['Z', 'V', 'R', 'P', 'C', 'A']
+['Z', 'V', 'R', 'P', 'C', 'A']
+
+In both cases, the `sort()` method modifies the original list. If you don't want to modify the original list and instead obtain a sorted copy, you can use the sorted() function, which returns a new list with the sorted element.

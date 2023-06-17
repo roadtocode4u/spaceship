@@ -270,13 +270,13 @@ print("After clear : ",fruits)
 
 ### Sort
 
-List objects have a sort() method that will sort the list alphanumerically, ascending, and descending.
+In Python, the `sort()` method is used to sort a list in-place, meaning it modifies the original list directly. It arranges the elements of the list in either `ascending` or `descending` order, depending on the arguments provided.
+
+In the given example, we have a list called `alphabets` with the values ['A','Z','C','V','P','R']. We will perform sorting on this list.
 
 ### Ascending Order
 
-Lists can sort elements ascending by `default`.
-
-**Example :**
+To sort the list in ascending order, we simply call the `sort()` method on the list without passing any arguments or by passing `reverse=False` explicitly. Here's the
 
 ```py
 alphabets = ['A','Z','C','V','P','R']
@@ -284,19 +284,13 @@ alphabets.sort()
 print(alphabets)
 ```
 
-**Output :**
+The sort() method rearranges the elements of the alphabets list in `ascending` order. The output will be:
 
 > ['A', 'C', 'P', 'R', 'V', 'Z']
 
-**Example explanation :**
-
-In the above example, we assigned a list of alphabets `['A','Z','C','V','P','R']`. We have to sort the elements in ascending order so we used `alphabets.sort()`. That sort the list in ascending order.
-
 ### Descending Order
 
-Lists can sort in descending order then you have to give the inside sort method `reverser=true`.
-
-**Example :**
+To sort the list in descending order, we pass `reverse=True` as an argument to the sort() method. Here's the code:
 
 ```py
 alphabets = ['A','Z','C','V','P','R']
@@ -304,10 +298,8 @@ alphabets.sort(reverse=True)
 print(alphabets)
 ```
 
-**Output :**
+The sort() method arranges the elements of the alphabets list in `descending` order. The output will be:
 
-> ['Z', 'V', 'R', 'P', 'C', 'A']
+['Z', 'V', 'R', 'P', 'C', 'A']
 
-**Example explanation :**
-
-In the above example, we have a list of alphabets `['A','Z','C','V','P','R']`. We have to sort the elements in descending order so we used `alphabets. sort(reverse=True)`. That sort the elements in descending order.
+In both cases, the `sort()` method modifies the original list. If you don't want to modify the original list and instead obtain a sorted copy, you can use the sorted() function, which returns a new list with the sorted element.

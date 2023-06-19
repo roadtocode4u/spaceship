@@ -18,7 +18,7 @@ Inline CSS are using the style attribute inside HTML elements. It is used to giv
 
 ```css
  <button style=" background-color: black;color: white; border: none;
- border-radius: 5px;padding: 10px;">Click Here to Learn HTML</button>
+ border-radius: 5px;padding: 10px;"> Click Here to Learn HTML</button>
 ```
 
 **Example :**
@@ -68,20 +68,11 @@ Document level CSS used `<style>` element in the `<head>` section.
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>CSS</title>
+    <title>Document Level</title>
     <style>
-      <!DOCTYPE
-        html
-        > <html
-        lang="en"
-        > <head
-        > <title
-        > Document
-        Level</title
-        > <style
-        > .btn {
+      .btn {
         background-color: black;
         color: white;
         border: none;
@@ -161,8 +152,8 @@ External CSS are using a `<link>` element to link to an external CSS file. We ca
 
 <b>game.html file output : </b> <br/>
 
-<img src="/icp/14/output-14.png" alt="output-3" width="600px"/> <br/>
+<img src="/icp/14/output-14.png" alt="output-14" width="600px"/> <br/>
 
 <b>study.html file output :</b> <br/>
 
-<img src="/icp/14/output-15.png" alt="output-4" width="600px"/>
+<img src="/icp/14/output-15.png" alt="output-15" width="600px"/>

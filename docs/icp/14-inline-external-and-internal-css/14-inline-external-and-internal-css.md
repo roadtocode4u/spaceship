@@ -6,9 +6,43 @@ hide_table_of_contents: true
 
 # There are three ways to add CSS
 
-1. `Document level / Internal CSS`
-2. `Inline CSS => single element`
+1. `Inline CSS => single element`
+2. `Document level / Internal CSS`
 3. `External CSS`
+
+### Inline CSS
+
+Inline CSS are using the style attribute inside HTML elements. It is used to give CSS for individual HTML tags.
+
+**Code :**
+
+```css
+ <button style=" background-color: black;color: white; border: none;
+ border-radius: 5px;padding: 10px;"> Click Here to Learn HTML</button>
+```
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inline CSS</title>
+  </head>
+  <body>
+    <button
+      style=" background-color: black;color: white; border: none; 
+    border-radius: 5px;padding: 10px;"
+    >
+      Click Here to Learn HTML
+    </button>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/14/output-12.png" alt="output-12" width="600px"/>
 
 ### Document level
 
@@ -19,88 +53,50 @@ Document level CSS used `<style>` element in the `<head>` section.
 ```css
 <head>
     <style>
-        .box{
-            width: 400px;
-            padding: 20px;
-            border: 2px solid black;
-            margin: 15px;
-            border-radius: 15px;
-     }
+      .btn {
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+        }
     </style>
 </head>
 ```
 
-**Code :**
+**Example :**
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>CSS</title>
+    <title>Document Level</title>
     <style>
-      .box {
-        width: 400px;
-        padding: 20px;
-        border: 2px solid black;
-        margin: 15px;
-        border-radius: 15px;
-      }
-
-      .box-1 {
-        background-color: aqua;
-      }
-
-      .box-2 {
-        background-color: yellow;
+      .btn {
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
       }
     </style>
   </head>
+
   <body>
-    <div class="box box-1">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    </div>
-    <div class="box box-2">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-    </div>
+    <button class="btn">Click Here to Learn HTML</button>
+
+    <button class="btn">Click Here to Learn CSS</button>
   </body>
 </html>
 ```
 
 **Output :**
 
-<img src="/icp/15/output-1.png" alt="output-1" width="600px"/>
-
-### Inline CSS
-
-Inline CSS are using the style attribute inside HTML elements.It is used to give CSS for individual HTML tags.
-
-**Code :**
-
-```css
- <h1 style="background-color: tomato; color: white;">Hello Students</h1>
-```
-
-**Code :**
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>CSS</title>
-  </head>
-  <body>
-    <h1 style="background-color: tomato; color: white;">Hello Students</h1>
-  </body>
-</html>
-```
-
-**Output :**
-
-<img src="/icp/15/output-2.png" alt="output-2" width="600px"/>
+<img src="/icp/14/output-13.png" alt="output-13" width="600px"/>
 
 ### External CSS
 
-External CSS are using a `<link>` element to link to an external CSS file. We can Provide external link to `<head>` Section.
+External CSS are using a `<link>` element to link to an external CSS file. We can provide external link to `<head>` section.
 
 **External Link Example :**
 
@@ -110,32 +106,34 @@ External CSS are using a `<link>` element to link to an external CSS file. We ca
 
 **Code :**
 
-**File Name : index.html**
+**File Name : game.html**
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Homepage</title>
+    <title>Games</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="app-header">Home Page</div>
+    <button class="btn">Click Here to Play Basketball🏀</button>
+    <button class="btn">Click Here to Play Cricket🏏</button>
   </body>
 </html>
 ```
 
-**File Name : about.html**
+**File Name : study.html**
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>AboutPage</title>
+    <title>Study</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="app-header">About Page</div>
+    <button class="btn">Click Here to Learn HTML</button>
+    <button class="btn">Click Here to Learn CSS</button>
   </body>
 </html>
 ```
@@ -143,19 +141,19 @@ External CSS are using a `<link>` element to link to an external CSS file. We ca
 **File Name : style.css**
 
 ```css
-.app-header {
-  border: 5px solid black;
-  padding: 5px;
-  font-size: 50px;
-  background-color: aqua;
-  border-radius: 15px;
+.btn {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
 }
 ```
 
-<b>index.html file output </b> <br/>
+<b>game.html file output : </b> <br/>
 
-<img src="/icp/15/output-3.png" alt="output-3" width="600px"/> <br/>
+<img src="/icp/14/output-14.png" alt="output-14" width="600px"/> <br/>
 
-<b>about.html file output </b> <br/>
+<b>study.html file output :</b> <br/>
 
-<img src="/icp/15/output-4.png" alt="output-4" width="600px"/>
+<img src="/icp/14/output-15.png" alt="output-15" width="600px"/>

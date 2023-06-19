@@ -168,7 +168,8 @@ The 1st value applies to the top-left corner. The 2nd value applies to the top-r
   <summary>👁 Show Answer</summary>
   <p>
 
-    To center align an element horizontally and vertically using CSS, you can use the following CSS properties : display: flex; justify-content: center; align-items: center;
+To center align an element horizontally and vertically using CSS,
+you can use the following CSS properties : `display: flex;` `justify-content: center;` `align-items: center;`
 
 **Example :**
 
@@ -554,7 +555,19 @@ There are four flex directions in CSS :
 
 </details>
 
-> 37. What is a media query in CSS and what is its purpose?
+> 37. How do you create a responsive layout using flexbox?
+
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+   
+  To create a responsive layout using flexbox, you can use media queries to change the flex container's properties, such as flex-direction, flex-wrap, and justify-content, based on different screen sizes.
+
+  </p>
+
+</details>
+
+> 38. What is a media query in CSS and what is its purpose?
 
 <details>
   <summary>👁 Show Answer</summary>
@@ -566,7 +579,7 @@ A media query in CSS is a technique used to apply different styles based on the 
 
 </details>
 
-> 38. What are the different types of media features that can be used in a media query?
+> 39. What are the different types of media features that can be used in a media query?
 
 <details>
   <summary>👁 Show Answer</summary>
@@ -578,7 +591,7 @@ A media query in CSS is a technique used to apply different styles based on the 
 
 </details>
 
-> 39. Are media queries limited to screen sizes, or can they target other device characteristics as well?
+> 40. Are media queries limited to screen sizes, or can they target other device characteristics as well?
 
 <details>
   <summary>👁 Show Answer</summary>
@@ -590,7 +603,7 @@ A media query in CSS is a technique used to apply different styles based on the 
 
 </details>
 
-> 40. How would you create a responsive navigation menu using CSS?
+> 41. How would you create a responsive navigation menu using CSS?
 
 <details>
   <summary>👁 Show Answer</summary>
@@ -602,7 +615,7 @@ To create a responsive navigation menu using CSS, you can used CSS media queries
 
 </details>
 
-> 41. Could you please explain the concept of device breakpoints in media queries?
+> 42. Could you please explain the concept of device breakpoints in media queries?
 
 <details>
   <summary>👁 Show Answer</summary>
@@ -624,7 +637,7 @@ TV/Large desktop : greater than `1200px`
 
 </details>
 
-> 42. What is the purpose of pseudo-classes in CSS?
+> 43. What is the purpose of pseudo-classes in CSS?
 
 <details>
   <summary>👁 Show Answer</summary>
@@ -636,7 +649,7 @@ TV/Large desktop : greater than `1200px`
 
 </details>
 
-> 43. How would you style a hyperlink differently when it is being hovered over?
+> 44. How would you style a hyperlink differently when it is being hovered over?
 
 <details>
   <summary>👁 Show Answer</summary>
@@ -648,14 +661,16 @@ To style a hyperlink differently when it is being hovered over, you can use CSS 
 
  </details>
 
-> 44. How do you hide an element using CSS?
+> 45. How do you hide an element using CSS?
 
 <details>
   <summary>👁 Show Answer</summary>
   <p>
 
-To hide an element using CSS, you can use the display property and set value to "none", which removes the element from the page flow and makes it invisible.
+To hide an element using CSS, you can use the `display` property and set value to `none`, which removes the element from the page flow and makes it invisible.
 
   </p>
 
 </details>
+
+> 46.

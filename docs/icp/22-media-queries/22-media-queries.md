@@ -258,7 +258,7 @@ The third way to add color in CSS is `rgb` format .rgb stands for red ,green ,bl
 
 ### 4.rgba
 
-`rgba` stands for red, green, blue, alpha.
+`rgba` color composed with four color combination. That is red, green, blue, alpha.
 
 **Example :**
 

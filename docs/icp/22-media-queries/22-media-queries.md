@@ -183,3 +183,87 @@ media screen and (min-width: 600px) and (max-width: 800px) {
   </body>
 </html>
 ```
+
+## Colors in CSS
+
+There are different ways to add css colors.
+
+### 1. Color name
+
+We can choose the color directly using the `color name`.
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>css-color</title>
+    <style>
+      .btn {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">Click Here to play cricket</button>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/22/output-5.png" alt="output-5" width="600px"/>
+
+### 2.Hexadecimal colors:
+
+To choose a hexadecimal color in CSS, you start with the pound sign(#). That follows six characters which can be numbers from 0 to 9 and letters from A to F. These characters represent values from 0 to 15 in base 16. And allow you to specify a red, green and blue color by combining them in pairs.
+
+     #  00  00  00
+        |    |     |
+        red  green blue
+
+**Example :**
+
+`#000000`: black
+
+`#fff`: white
+
+`#ff0000`: red
+
+`#00ff00`: green
+
+`#0000ff`: blue
+
+`#ffff00`: yellow
+
+### 3.rgb
+
+The third way to add color in CSS is `rgb` format .rgb stands for red ,green ,blue. The structure of the rgb is
+
+        rgb(r,g,b);
+              | | |
+              0 0 0
+              | | |
+            255 255 255
+
+**Example :**
+
+`rgb(255,255,255)`: white
+
+`rgb(255,0,255)`: Agenda
+
+`rgb(255,255,0)`: yellow
+
+### 4.rgba
+
+`rgba` stands for red, green, blue, alpha.
+
+**Example :**
+
+`rgba(0,0,0,0)`: black
+
+### 5. hsl
+
+The `hsl` stands for hue saturation light. It is generally used in photography. It basically work like brightness.

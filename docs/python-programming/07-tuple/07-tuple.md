@@ -4,18 +4,24 @@ description: "Tuple"
 hide_table_of_contents: true
 ---
 
+### Tuples in Python
+
 Tuples are used to store multiple values in a single variable. Tuples can be written in round brackets `()`.
 
 **Example :**
 
-```py
-mybasket = ('Apple','Banana','Grapes','Orange')
-print(mybasket)
+```py showLineNumbers = "true"
+myBasket = ('Apple','Banana','Grapes','Orange')
+print(myBasket)
 ```
 
 **Output :**
 
 > ('Apple', 'Banana', 'Grapes', 'Orange')
+
+**Example Explanation :**
+
+In the above example, In the 1st line we can create one variable and the name of that variable is `myBasket`. In this variable, we store the tuple of elements `('Apple','Banana','Grapes','Orange')` and In 2nd line we can print the value of that variable.
 
 ### Properties Of Tuple
 
@@ -29,16 +35,16 @@ print(mybasket)
    Tuples are `indexed`, they can have items with the same value. It contains duplicates items.
 
 :::tip
-You can performs update, add and deleter operations on `list`. But you can not perform update, add and delete operation on `tuples`.
+You can perform update, add and delete operations on `list`. But you can not perform update, add and delete operations on `tuples`.
 :::
 
 ### Manipulation of Tuple
 
-You can not change tuples but you can performs some extra operation on tuples you can change it.
+You can not change tuples but you can perform some extra operations on tuples you can also change it.
 
 **Example :**
 
-```py
+```py showLineNumbers = "true"
 myBasket = ('Apple','Banana','Grapes','Apple')
 listmyBasket = list(myBasket)
 listmyBasket[0] = "Cherry"
@@ -52,11 +58,11 @@ print(listmyBasket)
 
 **Example explanation :**
 
-In above the example, we create the myBasket `tuple` and in that `tuple` store multiple data. We convert the myBasket `tuple` into `list` so, in the 2nd line create one variable `listmyBasket` and store the list of myBasket `tuple`. In the 3rd line listmyBasket variable will be the update list, and update the 0 index element and change to `Cherry` mybasket. We are again the listmyBasket list convert into a `tuple` and stored in the myBasket `tuple`. In the last line, we print this myBasketlist `tuple`.
+In the above example, In the 1st line we can create first variable and the name of that variable is `myBasket`. In this variable, we store the tuple of items `('Apple','Banana','Grapes','Apple')`. In the 2nd line we can create a second variable and the name of that variable is `listmyBasket` and store the list of `myBasket` tuple. In the 3rd line `listmyBasket` variable will be the update list, and update the `[0] index` element which is `Apple` to `Cherry` in the `myBasket` variable. We can again the `listmyBasket` list convert into a tuple and store it in the `myBasket` tuple. In 5th line we can print the value of that variable.
 
 ### Index Position
 
-Index position returns the index of the items in the tuples.
+Index position returns the `index` of the items in the tuples.
 
 **Syntax :**
 
@@ -66,7 +72,7 @@ tuplename.index('element')
 
 **Example explanation :**
 
-```py
+```py showLineNumbers = "true"
 pythonStudent = ("Saurabh","pooja","Tushar","Harshal")
 print(pythonStudent.index('Saurabh'))
 ```
@@ -75,9 +81,9 @@ print(pythonStudent.index('Saurabh'))
 
 > 0
 
-**Example explanation :**
+**Example Explanation :**
 
-In the above example, In the 1st line we can create one variable and the name of that variable is `pythonStudent`. In this variable, we store the tuple of items {'Saurabh','pooja','Tushar','Harshal'}. In the 2nd line, we print the value of that variable and provide the `index` method for finding the index of that given element.
+In the above example, In the 1st line we can create one variable and the name of that variable is `pythonStudent`. In this variable, we store the tuple of items `{'Saurabh','pooja','Tushar','Harshal'}`. In the 2nd line, we print the value of that variable and provide the `index` method for finding the index of that given element.
 
 ### Count()
 
@@ -91,7 +97,7 @@ tuplename.count("element")
 
 **Example :**
 
-```py
+```py showLineNumbers = "true"
 pythonStudent = ('Saurabh','pooja','Tushar','Harshal')
 print(pythonStudent.count('Tushar'))
 ```
@@ -100,15 +106,15 @@ print(pythonStudent.count('Tushar'))
 
 > 1
 
-**Example explanation :**
+**Example Explanation :**
 
-In the above example, In the 1st line we can create one variable and the name of that variable is `pythonStudent`. In this variable, we store the tuple of items {'Saurabh','pooja','Tushar','Harshal'}. In the 2nd line, we print the value of that variable and provide the `count` method for counting the element appers in the tuple.
+In the above example, In the 1st line we can create one variable and the name of that variable is `pythonStudent`. In this variable, we store the tuple of items `{'Saurabh','pooja','Tushar','Harshal'}`. In the 2nd line, we print the value of that variable and provide the `count` method for counting the element appers in the tuple.
 
 ### Concatenation of String
 
-To concatenate, or combine, two strings you can use the + operator.
+To concatenate, or combine, two strings you can use the `+` operator.
 
-```py
+```py showLineNumbers = "true"
 a = "Hello"
 b = "World"
 c = a + b
@@ -121,4 +127,4 @@ print(c)
 
 **Example explanation :**
 
-In the above example, In the 1st line we create a variable that variable name is `a`. In these variable we stored a string "Hello". In the 2nd line we create another variable and name of that variable is `b` and in these variable we stored the "world". In the 3rd line we create third variable and name of that variable is `c`. In the `c` concatenate the two strings using `+` operator `a+b`. That combine the two strings.
+In the above example, In the 1st line we create a variable and name of that variable is `a`. In this variable we can stored a string `Hello`. In the 2nd line we can create second variable and name of that variable is `b`. In this variable we can stored a string `World`. In the 3rd line we can create third variable and name of that variable is `c`. In this line we can concatenate the two strings using `+` operator `a + b` and store that string in variable `c`. In the 4th line we can print that variable.

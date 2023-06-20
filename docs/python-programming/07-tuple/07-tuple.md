@@ -4,68 +4,111 @@ description: "Tuple"
 hide_table_of_contents: true
 ---
 
-## Tuple in Python
+Tuples are used to store multiple values in a single variable. Tuples can be written in round brackets `()`.
 
-### Tuple
+**Example :**
 
-Tuple are used to store multiple values in a single variable.
+```py
+mybasket = ('Apple','Banana','Grapes','Orange')
+print(mybasket)
+```
+
+**Output :**
+
+> ('Apple', 'Banana', 'Grapes', 'Orange')
 
 ### Properties Of Tuple
 
-- Ordered : <br/>
-  Tuples are an ordered sequences of items, just like lists.
+1. **Ordered :**
+   Tuples are an `ordered` sequences of items, just like lists.
 
-- Unchangeable : <br/>
-  Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.
+2. **Unchangeable :**
+   Tuples are `unchangeable`, meaning that we cannot change, add or remove items after the tuple has been created.
 
-- Allow Duplicates : <br/>
-  tuples are indexed, they can have items with the same value.
+3. **Allow Duplicates :**
+   Tuples are `indexed`, they can have items with the same value. It contains duplicates items.
 
-### Manipulation of Tuple Example
+:::tip
+You can performs update, add and deleter operations on `list`. But you can not perform update, add and delete operation on `tuples`.
+:::
 
-```python showLineNumbers='true'
-color = ("Red","Pink","Sky","orange","Black")
-listColor = list(color)
-listColor[1] = "Green"
-color = tuple(listColor)
-print(color)
+### Manipulation of Tuple
+
+You can not change tuples but you can performs some extra operation on tuples you can change it.
+
+**Example :**
+
+```py
+myBasket = ('Apple','Banana','Grapes','Apple')
+listmyBasket = list(myBasket)
+listmyBasket[0] = "Cherry"
+myBasket = tuple(listmyBasket)
+print(listmyBasket)
 ```
 
 **Output**
 
-> ('Red', 'Green', 'Sky', 'orange', 'Black')
+> ['Cherry', 'Banana', 'Grapes', 'Apple']
 
-In above the example, we create the color `tuple` and in that `tuple` store multiple data. we convert the color `tuple` into `list` so, in the 2nd line create one variable `listColor` and store the list of color `tuple`. in the 3rd line listColour variable will be update list, and update 1 index element and change to `Green` color. we are again the listColour list convert into `tuple` and stored in color `tuple`. In the last line, we print this color `tuple`.
+**Example explanation :**
+
+In above the example, we create the myBasket `tuple` and in that `tuple` store multiple data. We convert the myBasket `tuple` into `list` so, in the 2nd line create one variable `listmyBasket` and store the list of myBasket `tuple`. In the 3rd line listmyBasket variable will be the update list, and update the 0 index element and change to `Cherry` mybasket. We are again the listmyBasket list convert into a `tuple` and stored in the myBasket `tuple`. In the last line, we print this myBasketlist `tuple`.
 
 ### Index Position
 
-```python showLineNumbers='true'
-myBasket = ("Apple","Banana","Orange","Grapes","Apple","Apple")
-print(myBasket.index("Banana"))
+Index position returns the index of the items in the tuples.
+
+**Syntax :**
+
+```py
+tuplename.index('element')
+```
+
+**Example explanation :**
+
+```py
+pythonStudent = ("Saurabh","pooja","Tushar","Harshal")
+print(pythonStudent.index('Saurabh'))
+```
+
+**Output**
+
+> 0
+
+**Example explanation :**
+
+In the above example, In the 1st line we can create one variable and the name of that variable is `pythonStudent`. In this variable, we store the tuple of items {'Saurabh','pooja','Tushar','Harshal'}. In the 2nd line, we print the value of that variable and provide the `index` method for finding the index of that given element.
+
+### Count()
+
+The `count()` method returns the number of times the specified element appears in the list.
+
+**Syntax :**
+
+```py
+tuplename.count("element")
+```
+
+**Example :**
+
+```py
+pythonStudent = ('Saurabh','pooja','Tushar','Harshal')
+print(pythonStudent.count('Tushar'))
 ```
 
 **Output**
 
 > 1
 
-### Count()
+**Example explanation :**
 
-The count() method returns the number of times the specified element appears in the list.
-
-```python showLineNumbers='true'
-myBasket = ("Apple","Banana","Orange","Grapes","Apple","Apple")
-print(myBasket.count("Apple"))
-```
-
-**Output**
-
-> 3
+In the above example, In the 1st line we can create one variable and the name of that variable is `pythonStudent`. In this variable, we store the tuple of items {'Saurabh','pooja','Tushar','Harshal'}. In the 2nd line, we print the value of that variable and provide the `count` method for counting the element appers in the tuple.
 
 ### Concatenation of String
 
 To concatenate, or combine, two strings you can use the + operator.
 
-```python showLineNumbers='true'
+```py
 a = "Hello"
 b = "World"
 c = a + b
@@ -75,3 +118,7 @@ print(c)
 **Output**
 
 > HelloWorld
+
+**Example explanation :**
+
+In the above example, In the 1st line we create a variable that variable name is `a`. In these variable we stored a string "Hello". In the 2nd line we create another variable and name of that variable is `b` and in these variable we stored the "world". In the 3rd line we create third variable and name of that variable is `c`. In the `c` concatenate the two strings using `+` operator `a+b`. That combine the two strings.

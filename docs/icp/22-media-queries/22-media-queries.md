@@ -190,7 +190,7 @@ There are different ways to add css colors.
 
 ### 1. Color name
 
-We can choose the color directly using the `color name`.
+CSS provides predefined color names that you can use directly.
 
 **Example :**
 
@@ -207,7 +207,7 @@ We can choose the color directly using the `color name`.
     </style>
   </head>
   <body>
-    <button class="btn">Click Here to play cricket</button>
+    <button class="btn">Click Here</button>
   </body>
 </html>
 ```
@@ -216,54 +216,143 @@ We can choose the color directly using the `color name`.
 
 <img src="/icp/22/output-5.png" alt="output-5" width="600px"/>
 
+**Example explanation :**
+
+In the above example, set the background color to "red" or the text color to "white".
+
 ### 2.Hexadecimal colors:
 
-To choose a hexadecimal color in CSS, you start with the pound sign(#). That follows six characters which can be numbers from 0 to 9 and letters from A to F. These characters represent values from 0 to 15 in base 16. And allow you to specify a red, green and blue color by combining them in pairs.
-
-     #  00  00  00
-        |    |     |
-        red  green blue
+Hexadecimal colors start with a pound sign (#) followed by six characters representing red, green, and blue (RGB) values. Each pair of characters represents a value from 00 (minimum) to FF (maximum).
 
 **Example :**
 
-`#000000`: black
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>css-color</title>
+    <style>
+      .btn {
+        background-color: #ff0000;
+        color: #ffffff;
+      }
+    </style>
+  </head>
 
-`#fff`: white
+  <body>
+    <button class="btn">Click Here</button>
+  </body>
+</html>
+```
 
-`#ff0000`: red
+**Output :**
 
-`#00ff00`: green
+<img src="/icp/22/output-6.png" alt="output-6" width="600px"/>
 
-`#0000ff`: blue
+**Example explanation :**
 
-`#ffff00`: yellow
+In the above example, sets the background color to red (#FF0000) and the text color to white (#FFFFFF).
 
 ### 3.rgb
 
-The third way to add color in CSS is `rgb` format .rgb stands for red ,green ,blue. The structure of the rgb is
-
-        rgb(r,g,b);
-              | | |
-              0 0 0
-              | | |
-            255 255 255
+RGB colors allow you to specify the intensity of red, green, and blue using decimal values ranging from 0 to 255. You can use the `rgb()` function for this.
 
 **Example :**
 
-`rgb(255,255,255)`: white
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>css-color</title>
+    <style>
+      .btn {
+        background-color: rgb(255, 0, 0);
+        color: rgb(255, 255, 255);
+      }
+    </style>
+  </head>
 
-`rgb(255,0,255)`: Agenda
+  <body>
+    <button class="btn">Click Here</button>
+  </body>
+</html>
+```
 
-`rgb(255,255,0)`: yellow
+**Output :**
+
+<img src="/icp/22/output-6.png" alt="output-6" width="600px"/>
+
+**Example explanation :**
+
+In the above example, sets the background color to red (255, 0, 0) and the text color to white (255, 255, 255).
 
 ### 4.rgba
 
-`rgba` color composed with four color combination. That is red, green, blue, alpha.
+RGBA colors are similar to RGB, but with an additional alpha channel representing capacity. The alpha value ranges from 0 (transparent) to 1 (opaque). Use the rgba() function to specify these colors.
 
 **Example :**
 
-`rgba(0,0,0,0)`: black
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>css-color</title>
+    <style>
+      .btn {
+        background-color: rgba(0, 0, 0, 0);
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="btn">Click Here</button>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/22/output-9.png" alt="output-9" width="600px"/>
+
+**Example explanation :**
+
+In the above example, the background color is black with full transparency (0), making it completely invisible.
 
 ### 5. hsl
 
-The `hsl` stands for hue saturation light. It is generally used in photography. It basically work like brightness.
+HSL colors define hue, saturation, and lightness. Hue represents a color on the color wheel, saturation determines the intensity and lightness controls the brightness. Use the hsl() function to specify these colors.
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>css-color</title>
+    <style>
+      .btn {
+        background-color: hsl(0, 100%, 50%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="btn">Click Here</button>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/22/output-10.png" alt="output-10" width="600px"/>
+
+**Example explanation :**
+
+In the above example, sets the background color to pure red (0 degrees), with 100% saturation and 50% lightness.
+
+### You can refer to the following websites to choose colors:
+
+1. [colorhunt](https://colorhunt.co)
+   <br/>
+
+2. [colorcoder](https://htmlcolorcodes.com/color-picker/)

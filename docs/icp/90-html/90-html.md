@@ -61,7 +61,6 @@ hide_table_of_contents: true
         
        The empty tag does not have content like the &lt;br&gt; tag. There is no need to close the empty tag. A container tag is a tag that contains both opening and closing tags. &lt;b&gt; &lt;/b&gt; and &lt;body&gt; &lt;/body&gt;.
 
-
   </p>
 
 </details>
@@ -113,7 +112,6 @@ hide_table_of_contents: true
   </p>
 
 </details>
-
 
 > 10. **How do you add comments in HTML?**
 
@@ -209,8 +207,7 @@ hide_table_of_contents: true
 
   </p>
 
-</details>   
-
+</details>
 
 > 18. **What is anchor tag?**
 
@@ -235,7 +232,6 @@ hide_table_of_contents: true
   </p>
 
 </details>
-
 
 > 20. **Which attributes are used for creating the table in HTML?**
 
@@ -295,13 +291,13 @@ Rowspace attribute used for represents the number of rows in cell span.
   <summary>👁 Show Answer</summary>
   <p>
    
-
-
+       To create an ordered list with Roman numerals (I, II, III) in HTML, use the  &lt;ol type="i"&gt; tag.
+      
   </p>
 
 </details>
 
-25. **what is the use of vedio tag in HTML?**
+> 25. **what is the use of vedio tag in HTML?**
 
 <details>
   <summary>👁 Show Answer</summary>
@@ -313,7 +309,7 @@ Rowspace attribute used for represents the number of rows in cell span.
 
 </details>
 
-26. **How do you add a background image to an HTML element?**
+> 26. **How do you add a background image to an HTML element?**
 
 <details>
   <summary>👁 Show Answer</summary>
@@ -325,7 +321,7 @@ Rowspace attribute used for represents the number of rows in cell span.
 
 </details>
 
-27. **What is the purpose of the &lt;iframe&gt; tag in HTML?**
+> 27. **What is the purpose of the &lt;iframe&gt; tag in HTML?**
 
 <details>
   <summary>👁 Show Answer</summary>
@@ -337,7 +333,7 @@ Rowspace attribute used for represents the number of rows in cell span.
 
 </details>
 
-28. **How do you create a dropdown menu in HTML?**
+> 28. **How do you create a dropdown menu in HTML?**
 
 <details>
   <summary>👁 Show Answer</summary>
@@ -356,7 +352,7 @@ Syntax
 
 </details>
 
-29. **What is the purpose of the &lt;label&gt; tag in HTML forms?**
+> 29. **What is the purpose of the &lt;label&gt; tag in HTML forms?**
 
 <details>
   <summary>👁 Show Answer</summary>
@@ -368,7 +364,7 @@ Syntax
 
 </details>
 
-30. **How do you create a checkbox in HTML?**
+> 30. **How do you create a checkbox in HTML?**
 
 <details>
   <summary>👁 Show Answer</summary>
@@ -380,7 +376,7 @@ Syntax
 
 </details>
 
-31. **What is the purpose of the &lt;audio&gt; and &lt;video&gt; tags in HTML?**
+> 31. **What is the purpose of the &lt;audio&gt; and &lt;video&gt; tags in HTML?**
 
 <details>
   <summary>👁 Show Answer</summary>
@@ -391,7 +387,7 @@ Syntax
 
 </details>
 
-32. **What are the attributes of vedio tag?**
+> 32. **What are the attributes of vedio tag?**
 
 <details>
   <summary>👁 Show Answer</summary>
@@ -399,31 +395,222 @@ Syntax
    
        The vedio tag has various attributes<br/>
 1. Controls :  Adds vedio controls such as play, pause, volume and fullscreen toggle.<br/>
-2. Height and width : 
+2. Height and width : You can set height and width of the vedio element.<br/>
+3. Autoplay : Automatically starts playing the video when the web page is loaded.<br/>
+4. Muted : Mute the audio of the vedio.<br/>
+5. Poster : Displays an images as a placeholder before the vedio is loaded.<br/>
+
   </p>
 
 </details>
 
-33. **Explain the target attribute in HTML?**
+> 33. **Explain the target attribute in HTML?**
 
-34. **What is the value attribute in form Tag?**
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+   
+      Target attribute are used to a name or a keyword that indicates where to display the content. Target_blank attribute are used to open the linked document in a new tab.
+      
+     
+  </p>
 
-35. **What is the difference between &lt;div&gt; and &lt;span&gt; tag?**
+</details>
 
-36. **What is an use of iframe tag?**
+> 34. **What is the value attribute in form Tag?**
 
-37. **what is button tag?**
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+   
+      The value attribute are used to specifies the value of an input element. The value attribute represent the default value for the input element.
 
-38. **What is datalist tag?**
+  </p>
 
-39. **Differentiate between ordered list and unorderd list?**
+</details>
 
-40. **How do you add buttons in HTML?**
+> 35. **What is the difference between &lt;div&gt; and &lt;span&gt; tag?**
 
-41. **What is the alt attribute in HTML?**
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+   
+      &lt;div&gt; tag is used for create division, seperate block or a section in an HTML document. The div tag is a block element. Span tag is a inline element. The &lt;span&gt; does not have any effect.
 
-42. **Can HTML Tags and elements are same?**
+   </p>
 
-43. **What is the input tag and how to take input from user?**
+</details>
 
-44.
+> 36. **what is button tag?**
+
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+   
+      The button tag is used to create a clickable button.
+
+  </p>
+
+</details>
+
+> 37. **What is the purpose of DOCTYPE in HTML?**
+
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+    
+        The purpose of the DOCTYPE declaration in HTML is to specify the version of HTML being used in the document. It is placed at the very beginning of an HTML document before the &lt;html&gt; tag
+ </p>
+
+</details>
+
+> 38. **What is datalist tag?**
+
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+     
+      Datalist is a searchable list option. It can help the user, the user does not need to type the whole text data list have predefined suggestions so it can suggest to the user.
+
+</p>
+
+</details>
+
+> 39. **What is the purpose of the &lt;meta&gt; tag in HTML?**
+
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+   
+       The purpose of the meta tag is to provide additional information and metadata about the HTML document, such as character encoding, viewport settings, description, keywords.
+  </p>
+
+</details>
+
+> 40. **How do you add buttons in HTML?**
+
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+   
+      We can create a HTML buttons using &lt;button&gt;tag.
+  </p>
+
+</details>
+
+> 41. **What is the alt attribute in HTML?**
+
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+   
+        The alt attribute is used to provide the alternative text of the image. If the image is not displayed for some reason or we can provide the wrong source of the image.
+
+  </p>
+
+</details>
+
+> 42. **Can HTML Tags and elements are same?**
+
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+    
+       No. HTML tags and elements are different. The HTML tags has only opening and closing tag but the HTML elements have starting tag, contains content and ending tag.
+
+  </p>
+
+</details>
+
+> 43. **What is the input tag and how to take input from user?**
+
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+     
+        The input tag in HTML is used to create an interactive form element and to take input from the user, you can place the input tag within a form tag.
+
+  </p>
+
+</details>
+
+> 44. **How do you embed audio and video in HTML?**
+
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+   
+      To embed audio and video content in HTML, you can use the audio and video tags, respectively, and specify the source file using the "src" attribute within the tag.
+
+  </p>
+
+</details>
+
+> 45. **How do you create a table in HTML?**
+
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+   
+      We can create a table in HTML by using table tag.
+  </p>
+
+</details>
+
+> 46. **Do all HTML tag have an end tag?**
+
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+     
+       No. There are some tags that doesn't need to close the tag like &lt;image&gt; , &lt;input&gt; tag.
+  </p>
+
+</details>
+
+47. **What are empty tag?**
+
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+    
+      The HTML tag which does not have content called as empty tag.
+
+  </p>
+
+</details>
+
+> 48. **What are audio tag attribute?**
+
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+   
+      The attribute of the audio tag is control, muted, autoplay.
+  </p>
+
+</details>
+
+> 49 **What are the placeholder in form HTML?**
+
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+   
+     Placeholder is a attribute which is used to set a short hint that describes the value of an input field.
+
+  </p>
+
+</details>
+
+> 50. **What are radio button?**
+
+<details>
+  <summary>👁 Show Answer</summary>
+  <p>
+     
+      The radio button is a single selection . It is always circle.
+
+  </p>
+
+</details>

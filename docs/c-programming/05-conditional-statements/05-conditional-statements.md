@@ -4,22 +4,28 @@ description: "Conditional Statements"
 hide_table_of_contents: true
 ---
 
-### if conditional statement
+## Conditional Statements in C :
 
-if statement to specify a block of code to be executed `if` a condition is true.
+1. if statement
+2. if-else statement
+3. if-else-ladder statement
+
+### if statement :
+
+The `if` statement allows you to specify a block of code to be executed if a certain condition is `true`.
 
 **Syntax :**
 
-```c
+```c showLineNumbers="true"
 if (condition)
 {
   // block of code to be executed if the condition is true
 }
 ```
 
-**Example:**
+**Example :**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -41,7 +47,7 @@ int main() {
 
 **Example:**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -66,7 +72,7 @@ int main() {
 
 **Example:**
 
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -86,38 +92,29 @@ int main() {
 
 > Given number is Even
 
-### If-else Conditional Statement
+### if-else statement
 
-`If else` statement is used to perform an action if a single condition is true and to perform another action if that condition is false.
+The `if-else` statement allows you to specify two blocks of code: one to be executed if a condition is `true`, and another to be executed if the condition is `false`.
 
 **Syntax :**
 
-```c
+```c showLineNumbers="true"
 if (condition)
-
 {
-
-block of code to be executed the condition is true;
-
+  //block of code to be executed the condition is true;
 }
 
 else
-
 {
 
-block of code to be executed the condition is false;
+  //block of code to be executed the condition is false;
 
 }
 ```
 
-**Output :**
+**Example:** WAP to find out your age is eligible for voting or not.
 
-> Enter Number :5  
-> Given number is odd
-
-**Example:** WAP to find out your age is eligible for voting or not
-
-```c
+```c showLineNumbers="true"
 #include <stdio.h>
 
 int main() {
@@ -145,12 +142,13 @@ int main() {
 > Enter your age :18  
 > Your are eligible for voting
 
-**if-else-ladder**
-if else ladder check condition in sequentional manner. if first condition gets true it will not check further conditions.if non of the condition gets true it will run the else block.
+### if-else-ladder statement
+
+The `if-else-ladder` checks conditions in a sequential manner. If the first condition gets `true` it will not check further conditions. If none of the condition gets `true` it will run the else block.
 
 **syntax**
 
-```c
+```c showLineNumbers="true"
    if (condition)
    {
     // Statement
@@ -168,5 +166,30 @@ if else ladder check condition in sequentional manner. if first condition gets t
    }
 ```
 
-> Enter your age :18  
-> Your are eligible for voting
+**Example :**
+
+```c
+#include <stdio.h>
+
+int main() {
+    int number;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    if (number > 0) {
+        printf("The number is positive.\n");
+    } else if (number < 0) {
+        printf("The number is negative.\n");
+    } else {
+        printf("The number is zero.\n");
+    }
+
+    return 0;
+}
+```
+
+**Output :**
+
+> Enter a number: 12 <br/>
+> The number is positive.

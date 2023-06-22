@@ -6,232 +6,330 @@ hide_table_of_contents: true
 
 ## Dictionary in Python
 
-Dictionaries are used to store data values in key:value pairs.
+Dictionaries are used to store data values in `key:value` pairs.
+
+**Syntax :**
 
 ```python
-syntax = dictionary_name={
+ dictionary_name={
     key1:value1,
     key2:value2,
     key3:value3
 }
 ```
 
-```python
-phonebook = {
-    "Dhanashri" : "477637673267",
-    "Ashwini" : "46764763887",
-    "Snehal" : "8346764387",
-    "Kavita" : "37546636734",
-    "Harsha" : "48787586865"
-}
-print(phonebook)
-```
-
-**Output**
-
-> {'Dhanashri': '477637673267', 'Ashwini': '46764763887', 'Snehal': '8346764387', 'Kavita': '37546636734', 'Harsha': '48787586865'}
-
-The code defines a dictionary name `phonebook` which contains key-value pairs where each key represents a name and each value represents a phone number.
-output shows the entire phonebook dictionary with all the `key-value` pairs.
+**Example 1 :**
 
 ```python
-phonebook = {
-    "Dhanashri" : "477637673267",
-    "Ashwini" : "46764763887",
-    "Snehal" : "8346764387",
-    "Kavita" : "37546636734",
-    "Harsha" : "48787586865"
+phoneBook = {
+    "Dolly" : "1234567890",
+    "Anu" : "9876543210",
+    "Avinash" : "21323422222",
+    "Pooja" : "878975457"
 }
-print(phonebook["Harsha"])
+print(phoneBook)
 ```
 
-**Output**
+**Output :**
 
-> 48787586865
+> {'Dolly': '1234567890', 'Anu': '9876543210', 'Avinash': '21323422222', 'Pooja': '878975457'}
 
-The code defines a dictionary named `phonebook` which contains key-value pairs where each key represents a name and each value represents a phone number.
-The code then prints the value associated with the key `"Harsha"` using dictionary.
+**Example Exaplanation :**
+
+The code defines a dictionary name `phoneBook` which contains key-value pairs where each key represents a name and each value represents a `phone number`. Output shows the entire phonebook dictionary with all the `key-value` pairs.
+
+**Example 2 :**
 
 ```python
-phonebook = {
-    "Dhanashri" : "477637673267",
-    "Ashwini" : "46764763887",
-    "Snehal" : "8346764387",
-    "Kavita" : "37546636734",
-    "Harsha" : "48787586865"
+phoneBook = {
+    "Dolly" : "1234567890",
+    "Anu" : "9876543210",
+    "Avinash" : "21323422222",
+    "Pooja" : "878975457"
 }
-print(phonebook.get("Ashwini"))
+print(phoneBook["Pooja"])
 ```
 
-**Output**
+**Output :**
 
-> 46764763887
+> 878975457
 
-The code defines a dictionary named `phonebook` which contains key-value pairs where each key represents a name and each value represents a phone number.
+**Example Explanation :**
 
-we can print a specific keys values then you will use also get function one key and that key and that function will give a that specific key value
+The code defines a dictionary named `phoneBook` which contains key-value pairs where each key represents a name and each value represents a `phone number`. The code then prints the value associated with the key `"Pooja"` using dictionary.
+
+**Example 3 :**
 
 ```python
-phonebook = {
-    "Dhanashri" : "477637673267",
-    "Ashwini" : "46764763887",
-    "Snehal" : "8346764387",
-    "Kavita" : "37546636734",
-    "Harsha" : "48787586865"
+phoneBook = {
+    "Dolly" : "1234567890",
+    "Anu" : "9876543210",
+    "Avinash" : "21323422222",
+    "Pooja" : "878975457"
 }
-
-name = input("Enter name to find mobile no : ")
-mobile = phonebook.get(name)
-print("Mobile Number : ",mobile)
+print("Anu =",phoneBook["Anu"])
 ```
 
-**Output**
+**Output :**
 
-> Enter name to find mobile no : Kavita<br/>
-> Mobile Number : 37546636734
+> Anu = 9876543210
 
-The code defines a dictionary named `phonebook` which contains key-value pairs where each key represents a name and each value represents a phone number.
+**Example Explanation :**
 
-We can create one variable name and in that variable we can give a input from the user then in a next line we create a one variable is `mobile` and in a mobile we can pass that user input and in a next line we print that mobile number.
+The code defines a dictionary named `phoneBook` which contains key-value pairs where each key represents a name and each value represents a `phone number`. The code then prints in a formatting way the value associated with the key `"Anu"` using a dictionary.
+
+- **Example by using `get()` method :**
+
+**Example 4 :**
+
+```python
+phoneBook = {
+    "Dolly" : "1234567890",
+    "Anu" : "9876543210",
+    "Avinash" : "21323422222",
+    "Pooja" : "878975457"
+}
+print(phoneBook.get("Avinash"))
+```
+
+**Output :**
+
+> 21323422222
+
+**Example Explanation :**
+
+The code defines a dictionary named `phoneBook` which contains key-value pairs where each key represents a name and each value represents a `phone number`. We can print a specific keys values then you will use also get function one key and that key and that function will give a that specific key value.
+
+**Example 5 :**
+
+```python
+phoneBook = {
+    "Dolly" : "1234567890",
+    "Anu" : "9876543210",
+    "Avinash" : "21323422222",
+    "Pooja" : "878975457"
+}
+name = input("Enter name to find mob no :")
+mobile = phoneBook.get(name)
+print("Mobile Number :",mobile)
+```
+
+**Output :**
+
+> Enter name to find mob no :Pooja <br/>
+> Mobile Number : 878975457
+
+**Example Explanation :**
+
+The code defines a dictionary named `phoneBook` which contains key-value pairs where each key represents a name and each value represents a phone number. We can create one variable name and in that variable we can give a input from the user then in a next line we create a one variable is `mobile` and in a mobile we can pass that user input and in a next line we print that mobile number.
+
+**Example 6 :**
 
 ```python
 fruitsNameToImage = {
-    "Apple" : "🍎",
-    "Banana" : "🍌",
-    "cherry" : "🍒",
-    "Grapes" : "🍇",
-    "Orange" : "🍊"
+    'Apple' : '🍎',
+    'Graphs' : '🍇',
+    'Banana' : '🍌',
+    'Orange' : '🍊',
+    'Cherry' : '🍒'
 }
-
-fruitsKey = input("Enter fruit Name :")
-image = fruitsNameToImage.get(fruitsKey)
-print("{} looks like {} ".format(fruitsKey,image))
+fruitKey = input("Enter fruit Name : ")
+image =fruitsNameToImage.get(fruitKey)
+print("{} Looks Like {}".format(fruitKey,image))
 ```
 
-**Output**
+**Output :**
 
-> Enter fruit Name :Orange<br/>
-> Orange looks like 🍊
+> Enter fruit Name : Orange<br/>
+> Orange Looks Like 🍊
+
+**Example Explanation :**
 
 The code defines a dictionary name `fruitsNameToImage` which contains key-value pairs where each key represents a fruitsname and each value represents a fruitsemoji.
 
+**Example 7 :**
+
 ```python
-courses = {
-    "c" : "499",
-    "c++" : "499",
-    "python" : "499",
-    "ICP" : "999"
+courses ={
+    "C" :"499",
+    "C++" :"499",
+    "Python" :"499",
+    "DSA" :"999",
+    "ICP" :"999",
+    "ICGP" :"10,000"
 }
 print(courses.keys())
 ```
 
-**Output**
+**Output :**
 
-> dict_keys(['c', 'c++', 'python', 'ICP'])
+> dict_keys(['C', 'C++', 'Python', 'DSA', 'ICP', 'ICGP'])
 
-The code defines a dictionary named `courses` which contains key-value pairs where each key represents the name of a course and each value represents its price.
+**Example Explanation :**
 
-The code then uses the keys() method of the courses dictionary to retrieve a list of all the keys in the dictionary.
+The code defines a dictionary named `courses` which contains key-value pairs where each key represents the name of a course and each value represents its price. The code then uses the `keys()` method of the courses dictionary to retrieve a list of all the keys in the dictionary.
+
+**Example 8 :**
 
 ```python
-courses = {
-    "c" : "499",
-    "c++" : "499",
-    "python" : "499",
-    "ICP" : "999"
+courses ={
+    "C" :"499",
+    "C++" :"499",
+    "Python" :"499",
+    "DSA" :"999",
+    "ICP" :"999",
+    "ICGP" :"10,000"
 }
 print(courses.values())
 ```
 
-**Output**
+**Output :**
 
-> dict_values(['299', '299', '499', '999', '499'])
+> dict_values(['499', '499', '499', '999', '999', '10,000'])
 
-The code defines a dictionary named `courses` which contains key-value pairs where each key represents the name of a course and each value represents its price.
+**Example Explanation :**
 
-The code then uses the values() method of the courses dictionary to retrieve a list of all the values in the dictionary.
+The code defines a dictionary named `courses` which contains key-value pairs where each key represents the name of a course and each value represents its price. The code then uses the `values()` method of the courses dictionary to retrieve a list of all the values in the dictionary.
 
 ### Adding New Key :
 
+**Syntax :**
+
 ```python
-courses = {
-    "c" : "499",
-    "c++" : "499",
-    "python" : "499",
-    "ICP" : "999"
+dictionary_name={
+    key1:value1,
+    key2:value2,
+    key3:value3
+}
+dictionary_name["Key-name"]
+```
+
+**Example :**
+
+```python
+courses ={
+    "C" :"499",
+    "C++" :"499",
+    "Python" :"499",
+    "DSA" :"999",
+    "ICP" :"999",
+    "ICGP" :"10,000"
 }
 print(courses)
-courses["Data S"] = "999"
+courses["Java"] = "499"
 print(courses)
 ```
 
-**Output**
+**Output :**
 
-> {'c': '499', 'c++': '499', 'python': '499', 'ICP': '999'}<br/>
-> {'c': '499', 'c++': '499', 'python': '499', 'ICP': '999', 'Data S': '999'}
+> {'C': '499', 'C++': '499', 'Python': '499', 'DSA': '999', 'ICP': '999', 'ICGP': '10,000'}<br/>
+> {'C': '499', 'C++': '499', 'Python': '499', 'DSA': '999', 'ICP': '999', 'ICGP': '10,000', 'Java': '499'}
 
-The code defines a dictionary named `courses` which contains key-value pairs where each key represents the name of a course and each value represents its price.
+**Example Explanation :**
 
-In tha above example we can add a new course and the new course is `Data S` and print a next time.
+The code defines a dictionary named `courses` which contains key-value pairs where each key represents the name of a course and each value represents its price. In the above example, we can add a new course and the new course is `Java` and print a directory in next time.
 
 ### Update Key :
 
+**Syntax :**
+
 ```python
-courses = {
-    "c" : "499",
-    "c++" : "499",
-    "python" : "499",
-    "ICP" : "999"
+dictionary_name={
+    key1:value1,
+    key2:value2,
+    key3:value3
+}
+dictionary_name["Key-name"] = "value"
+```
+
+**Example :**
+
+```python
+courses ={
+    "C" :"499",
+    "C++" :"499",
+    "Python" :"499",
+    "DSA" :"999",
+    "ICP" :"999",
+    "ICGP" :"10,000"
 }
 print(courses)
-courses["c++"] = "999"
+courses["Python"] = "999"
 print(courses)
 ```
 
-**Output**
+**Output :**
 
-> {'c': '499', 'c++': '499', 'python': '499', 'ICP': '999'}<br/>
-> {'c': '499', 'c++': '999', 'python': '499', 'ICP': '999'}
+> {'C': '499', 'C++': '499', 'Python': '499', 'DSA': '999', 'ICP': '999', 'ICGP': '10,000'}<br/>
+> {'C': '499', 'C++': '499', 'Python': '999', 'DSA': '999', 'ICP': '999', 'ICGP': '10,000'}
 
-The code defines a dictionary named `courses` which contains key-value pairs where each key represents the name of a course and each value represents its price.
+**Example Explanation :**
 
-In tha above example we can update a `c++` value and print a next line.
+The code defines a dictionary named `courses` which contains key-value pairs where each key represents the name of a course and each value represents its price. In the above example, we can update a `Python` value and print a directory in next line.
 
-### Remove key =
+### Remove key :
+
+**Syntax :**
 
 ```python
-courses = {
-    "c" : "499",
-    "c++" : "499",
-    "python" : "499",
-    "ICP" : "999",
-    "Data s" : "999",
-    "Java" : "499"
+dictionary_name={
+    key1:value1,
+    key2:value2,
+    key3:value3
+}
+dictionary_name.pop["Key-name"]
+```
+
+**Example :**
+
+```python
+courses ={
+    "C" :"499",
+    "C++" :"499",
+    "Python" :"499",
+    "DSA" :"999",
+    "ICP" :"999",
+    "ICGP" :"10,000",
+    'Java': '499'
 }
 print(courses)
 courses.pop("Java")
 print(courses)
 ```
 
-**Output**
+**Output :**
 
-> {'c': '499', 'c++': '499', 'python': '499', 'ICP': '999', 'Data s': '999', 'Java': '499'}<br/>
-> {'c': '499', 'c++': '499', 'python': '499', 'ICP': '999', 'Data s': '999'}
+> {'C': '499', 'C++': '499', 'Python': '499', 'DSA': '999', 'ICP': '999', 'ICGP': '10,000', 'Java': '499'}<br/>
+> {'C': '499', 'C++': '499', 'Python': '499', 'DSA': '999', 'ICP': '999', 'ICGP': '10,000'}
 
-The code defines a dictionary named `courses` which contains key-value pairs where each key represents the name of a `course` and each value represents its `price`.
+**Example Explanation :**
 
-In tha above example we can use pop method and in a pop method we can passed one element and that element will be deleted.
+The code defines a dictionary named `courses` which contains key-value pairs where each key represents the name of a `course` and each value represents its `price`. In the above example, we can use the `pop()` method and in a pop method we can pass one element and that element will be deleted.
 
-### Clear Dictionary =
+### Clear Dictionary :
+
+**Syntax :**
 
 ```python
-courses = {
-    "c" : "499",
-    "c++" : "499",
-    "python" : "499",
-    "ICP" : "999",
-    "Data s" : "999",
-    "Java" : "499"
+dictionary_name={
+    key1:value1,
+    key2:value2,
+    key3:value3
+}
+dictionary_name.clear()
+```
+
+**Example :**
+
+```python
+courses ={
+    "C" :"499",
+    "C++" :"499",
+    "Python" :"499",
+    "DSA" :"999",
+    "ICP" :"999",
+    "ICGP" :"10,000",
+    'Java': '499'
 }
 print(courses)
 courses.clear()
@@ -240,9 +338,9 @@ print(courses)
 
 **Output**
 
-> {'c': '499', 'c++': '499', 'python': '499', 'ICP': '999', 'Data s': '999', 'Java': '499'}<br/>
+> {'C': '499', 'C++': '499', 'Python': '499', 'DSA': '999', 'ICP': '999', 'ICGP': '10,000', 'Java': '499'}<br/>
 > {}
 
-The code defines a dictionary named `courses` which contains key-value pairs where each key represents the name of a `course` and each value represents its `price`.
+**Example Explanation :**
 
-In tha above example we can clear all dictionary then we will use clear method() the clear method() is clear all the dictionary.
+The code defines a dictionary named `courses` which contains key-value pairs where each key represents the name of a `course` and each value represents its `price`. In the above example, we can clear all dictionary then we will use `clear()` method. The `clear()` method is used to clear all the dictionary.

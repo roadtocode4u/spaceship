@@ -89,15 +89,17 @@ The `box-shadow` property is used to add one or more shadows to an element. It a
 
            h-shadow v-shadow  blur spread  color
               |       |      |      |       |
+
 box-shadow: 5px 5px 5px 2px #808080;
-* **`h-shadow`** : The horizontal offset of the shadow. A positive value puts the shadow on the right side of the box, and a negative value puts the shadow on the left side.
-* **`v-shadow`** : The vertical offset of the shadow. A positive value puts the shadow below the box, and a negative value puts the shadow above.
 
-* **`blur`** : The blur radius. The higher the value, the more blurred the shadow will be.
+- **`h-shadow`** : The horizontal offset of the shadow. A positive value puts the shadow on the right side of the box, and a negative value puts the shadow on the left side.
+- **`v-shadow`** : The vertical offset of the shadow. A positive value puts the shadow below the box, and a negative value puts the shadow above.
 
-* **`spread`** : The spread radius. A positive value increases the size of the shadow, and a negative value decreases the size.
+- **`blur`** : The blur radius. The higher the value, the more blurred the shadow will be.
 
-* **`color`** : The color of the shadow.
+- **`spread`** : The spread radius. A positive value increases the size of the shadow, and a negative value decreases the size.
+
+- **`color`** : The color of the shadow.
 
 **In the third example you provided, you want to add a box shadow to an image. Here's the code:**
 
@@ -133,7 +135,284 @@ box-shadow: 5px 5px 5px 2px #808080;
 
 <img src="/icp/17/step-2.png" alt="step-2" width="500px"/>
 
-
 In this example, there is an image element with the class `img-tiger`. The CSS styles defined for the class `img-tiger` specify that the image should have a height of `300px`, a border-radius of `50px`, and a margin of `30px`. The `box-shadow` property is used to add a shadow to the image. The values `2px 2px 5px 10px` define the horizontal offset, vertical offset, blur radius, and spread radius of the shadow, respectively. The color of the shadow is specified as `rgb(138, 136, 136)`.
 
 When you view this HTML page in a browser, the image will have a box shadow applied to it according to the styles defined by the `.img-tiger` class. When you move your mouse over the image, the border-radius will change to 20px with a transition effect, as defined by the `.img-tiger:hover` selector.
+
+## Background image
+
+The `background-image` property in CSS is used to set one or more background images for an element.
+
+**Syntax :**
+
+```css
+background-image: url("image-url");
+```
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>background-image</title>
+    <style>
+      .container {
+        border: 1px solid black;
+        width: 600px;
+        height: 400px;
+        background-image: url("https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80");
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>This is a card</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+        voluptates cum veritatis odio voluptas nihil commodi sunt facere illum
+        quis nostrum nam quasi aut ipsam aliquam, similique accusamus nulla!
+        Molestias.
+      </p>
+    </div>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/17/step-4.png" alt="step-4" width="600px"/>
+
+**Example explanation :**
+
+In the above example, the `.container` class is used to define a container element with a background image. The `background-image` property is set to the URL of the desired image. In this case, we're using an image from Unsplash. The image will be displayed as the background of the container element
+
+### Background-size
+
+The `background-size` property in CSS is used to control the size of the background image.
+
+### `backgound-size: auto`
+
+This value is used to set the background image to its original size.
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background-image</title>
+    <style>
+      .container {
+        border: 1px solid black;
+        width: 600px;
+        height: 400px;
+        background-image: url("https://cdn-icons-png.flaticon.com/128/3595/3595455.png");
+        background-size: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>This is a card</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+        voluptates cum veritatis odio voluptas nihil commodi sunt facere illum
+        quis nostrum nam quasi aut ipsam aliquam, similique accusamus nulla!
+        Molestias.
+      </p>
+    </div>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/17/step-5.png" alt="step-4" width="600px"/>
+
+**Example explanation:**
+
+In the above example, we set background image by using `background-img` property. Also we can set `background-size` that sets the original size of the image and image is small that's why it display image repetedly.
+
+### `background-size: cover`
+
+This value is used to scale the background image to cover the entire container, while maintaining the image's aspect ratio. The image may be cropped or stretched as needed.
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background-image</title>
+    <style>
+      .container {
+        border: 1px solid black;
+        width: 600px;
+        height: 400px;
+        background-image: url("https://cdn-icons-png.flaticon.com/128/3595/3595455.png");
+        background-size: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>This is a card</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+        voluptates cum veritatis odio voluptas nihil commodi sunt facere illum
+        quis nostrum nam quasi aut ipsam aliquam, similique accusamus nulla!
+        Molestias.
+      </p>
+    </div>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/17/step-7.png" alt="step-7" width="600px"/>
+
+**Example explanation :**
+
+In the above example, .container class is used to define a container element with a background image. The `background-image` property is set to the URL of the desired image. In this case, we used `background-size:cover`. This property is cover the entire container and image is stretched.
+
+### We can set background size in height and width:
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background-image</title>
+    <style>
+      .container {
+        border: 1px solid black;
+        width: 600px;
+        height: 400px;
+        background-image: url("https://cdn-icons-png.flaticon.com/128/3195/3195966.png");
+        background-size: 600px 400px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>This is a card</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+        voluptates cum veritatis odio voluptas nihil commodi sunt facere illum
+        quis nostrum nam quasi aut ipsam aliquam, similique accusamus nulla!
+        Molestias.
+      </p>
+    </div>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/17/step-8.png" alt="step-8" width="600px"/>
+
+### Background repeat
+
+This property is used to repeat the image. It can repeat image in differnet direction
+
+`background-repeat: repeat-x;` This value is used to repeat the background image horizontally along the `x-axis`.
+
+`background-repeat: repeat-y;` This value is used to repeat the background image horizontally along the `y-axis`.
+
+`background-repeat: repeat;` This value is used to `repeat` the background image.
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background-image</title>
+    <style>
+      .container {
+        border: 1px solid black;
+        width: 600px;
+        height: 400px;
+        background-image: url("https://cdn-icons-png.flaticon.com/128/3595/3595455.png");
+        background-size: auto;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>This is a card</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+        voluptates cum veritatis odio voluptas nihil commodi sunt facere illum
+        quis nostrum nam quasi aut ipsam aliquam, similique accusamus nulla!
+        Molestias.
+      </p>
+    </div>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/17/step-9.png" alt="step-9" width="600px"/>
+
+### Background position:
+
+The `background-position` property is used to set the position of image.
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background-image</title>
+    <style>
+      .container {
+        border: 1px solid black;
+        width: 600px;
+        height: 400px;
+        background-image: url("https://cdn-icons-png.flaticon.com/128/3595/3595455.png");
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>This is a card</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+        voluptates cum veritatis odio voluptas nihil commodi sunt facere illum
+        quis nostrum nam quasi aut ipsam aliquam, similique accusamus nulla!
+        Molestias.
+      </p>
+    </div>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/17/step-10.png" alt="step-10" width="600px"/>

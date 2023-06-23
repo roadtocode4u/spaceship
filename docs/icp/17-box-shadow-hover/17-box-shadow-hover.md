@@ -141,12 +141,12 @@ When you view this HTML page in a browser, the image will have a box shadow appl
 
 ## Background image
 
-The `background-image` property is used to set one or more background images.
+The `background-image` property in CSS is used to set one or more background images for an element.
 
 **Syntax :**
 
 ```css
-background-image: url("");
+background-image: url("image-url");
 ```
 
 **Example :**
@@ -184,13 +184,17 @@ background-image: url("");
 
 <img src="/icp/17/step-4.png" alt="step-4" width="600px"/>
 
+**Example explanation :**
+
+In the above example, the `.container` class is used to define a container element with a background image. The `background-image` property is set to the URL of the desired image. In this case, we're using an image from Unsplash. The image will be displayed as the background of the container element
+
 ### Background-size
 
-The background-size property is used for the size of background images.
+The `background-size` property in CSS is used to control the size of the background image.
 
 ### `backgound-size: auto`
 
-This property used to set images to their original size.
+This value is used to set the background image to its original size.
 
 **Example :**
 
@@ -236,7 +240,7 @@ In the above example, we set background image by using `background-img` property
 
 ### `background-size: cover`
 
-This property is used to cover the area of the container.
+This value is used to scale the background image to cover the entire container, while maintaining the image's aspect ratio. The image may be cropped or stretched as needed.
 
 **Example :**
 
@@ -275,6 +279,10 @@ This property is used to cover the area of the container.
 **Output :**
 
 <img src="/icp/17/step-7.png" alt="step-7" width="600px"/>
+
+**Example explanation :**
+
+In the above example, .container class is used to define a container element with a background image. The `background-image` property is set to the URL of the desired image. In this case, we used `background-size:cover`. This property is cover the entire container and image is stretched.
 
 ### We can set background size in height and width:
 
@@ -320,11 +328,11 @@ This property is used to cover the area of the container.
 
 This property is used to repeat the image. It can repeat image in differnet direction
 
-`background-repeat: repeat-x;`
+`background-repeat: repeat-x;` This value is used to repeat the background image horizontally along the `x-axis`.
 
-`background-repeat: repeat-y;`
+`background-repeat: repeat-y;` This value is used to repeat the background image horizontally along the `y-axis`.
 
-`background-repeat: repeat;`
+`background-repeat: repeat;` This value is used to `repeat` the background image.
 
 **Example :**
 

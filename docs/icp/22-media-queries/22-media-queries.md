@@ -427,13 +427,15 @@ The folder structure in HTML is how you arrange the files and folders in your pr
       <input
         type="email"
         placeholder="Enter Your Email"
-        class="input-email d-block"
+        class="input-box d-block"
       />
+
       <input
         type="password"
         placeholder="Enter Password"
         class="input-password d-block"
       />
+
       <button class="btn-login d-block">Login Now</button>
     </div>
   </body>
@@ -461,17 +463,11 @@ body {
   padding-top: 30px;
 }
 
-.input-email {
+.input-box {
   height: 40px;
   width: 300px;
   margin-top: 20px;
   padding: 5px;
-}
-
-.input-password {
-  height: 40px;
-  width: 300px;
-  margin-top: 20px;
 }
 
 .btn-login {

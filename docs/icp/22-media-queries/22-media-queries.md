@@ -356,3 +356,141 @@ In the above example, sets the background color to pure red (0 degrees), with 10
    <br/>
 
 2. [colorcoder](https://htmlcolorcodes.com/color-picker/)
+
+# Folder Structure
+
+The folder structure in HTML is how you arrange the files and folders in your project.
+
+<img src="/icp/22/output-11.png" alt="output-11" width="600px"/>
+
+### Folder Structure in VS-code
+
+<img src="/icp/22/output-12.png" alt="output-12" width="600px"/>
+
+### After Exapanding folders
+
+<img src="/icp/22/output-13.png" alt="output-13" width="600px"/>
+
+### How to pass the path for an image in HTML?
+
+**Code :**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Folder Structure</title>
+    <style>
+      .img {
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./images/taj.jpg" class="img" />
+  </body>
+</html>
+```
+
+:::tip
+`./` indicates that the current folder.
+:::
+
+**Output :**
+
+<img src="/icp/22/output-14.png" alt="output-14" width="600px"/>
+
+### Simple Login form by using folder structure and external css file
+
+**Code :**
+
+**File Name :** login.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./../css/style.css" />
+  </head>
+
+  <body>
+    <div class="login-container">
+      <img
+        src="./../images/image-header/profile.png"
+        alt="profile"
+        class="profile-img d-block"
+      />
+
+      <input
+        type="email"
+        placeholder="Enter Your Email"
+        class="input-email d-block"
+      />
+      <input
+        type="password"
+        placeholder="Enter Password"
+        class="input-password d-block"
+      />
+      <button class="btn-login d-block">Login Now</button>
+    </div>
+  </body>
+</html>
+```
+
+**File Name :** style.css
+
+```css
+body {
+  background-color: black;
+}
+
+.login-container {
+  background-color: white;
+  height: 500px;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 4px 4px steelblue;
+  margin-top: 30px;
+}
+
+.profile-img {
+  padding-top: 30px;
+}
+
+.input-email {
+  height: 40px;
+  width: 300px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.input-password {
+  height: 40px;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.btn-login {
+  margin-top: 30px;
+  width: 200px;
+  font-size: 25px;
+  padding: 7px;
+  background-color: rgb(67, 67, 247);
+  border: none;
+  border-radius: 10px;
+}
+
+.d-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+```
+
+**Output :**
+
+<img src="/icp/22/output-15.png" alt="output-15" width="600px"/>

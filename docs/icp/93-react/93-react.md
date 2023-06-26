@@ -6,13 +6,58 @@ hide_table_of_contents: true
 
 > 1. What is React and what are it's key features?
 
+<details>
+  <summary>👁 Show Answer</summary>
+
+  <p>
+  
+  </p>
+
+</details>
+
 > 2. What is the used of React?
+
+<details>
+  <summary>👁 Show Answer</summary>
+
+  <p>
+  
+  </p>
+
+</details>
 
 > 3. What are the advantages of using React?
 
+<details>
+  <summary>👁 Show Answer</summary>
+
+  <p>
+  
+  </p>
+
+</details>
+
 > 4. How to create a React App?
 
+<details>
+  <summary>👁 Show Answer</summary>
+
+  <p>
+  
+  </p>
+
+</details>
+
 > 5. What is the fullform of npm and npx?
+
+<details>
+  <summary>👁 Show Answer</summary>
+
+  <p>
+  
+  </p>
+
+</details>
 
 > 6. How to start a React App?
 

@@ -357,7 +357,7 @@ In the above example, sets the background color to pure red (0 degrees), with 10
 
 2. [colorcoder](https://htmlcolorcodes.com/color-picker/)
 
-# Folder Structure
+## Folder Structure
 
 The folder structure in HTML is how you arrange the files and folders in your project.
 

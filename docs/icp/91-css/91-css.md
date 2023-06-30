@@ -4,50 +4,39 @@ description: "CSS Interview Questions"
 hide_table_of_contents: true
 ---
 
-> 1. What is CSS and what role does it play in web development?
-
 <details>
-  <summary>👁 Show Answer</summary>
+<summary>1. What is CSS?</summary>
 <p>
 
 CSS stands for **Cascading Style Sheets**. It is used to design webpages and control the visual appearance of HTML elements. CSS describes how HTML elements should be displayed on different devices such as desktops, laptops, tablets or other media.
 
-  </p>
-
+</p>
 </details>
 
-> 2. How can you include CSS in an HTML document?
-
 <details>
-  <summary>👁 Show Answer</summary>
-  <p>
+<summary>2. How can you include CSS in an HTML document?</summary>
+<p>
 
 CSS can be included in an HTML document by using inline styles, internal stylesheets
 within the `<style>` element, or external stylesheets linked via the `<link>` element.
 
-  </p>
-
+</p>
 </details>
 
-> 3. How many ways do we include CSS in an HTML document?
-
 <details>
-  <summary>👁 Show Answer</summary>
-  <p>
+<summary>3. How many ways do we include CSS in an HTML document?</summary>
+<p>
 
-    There are three ways we include CSS in HTML document : inline css, document css and external css.
+There are three ways we include CSS in HTML document : inline css, document css and external css.
 
-  </p>
-
+</p>
 </details>
 
-> 4. What are the differences between inline, internal, and external CSS?
-
 <details>
-  <summary>👁 Show Answer</summary>
-  <p>
+<summary>4. What are the differences between inline, internal, and external CSS?</summary>
+<p>
 
-    There are some differences are given below -
+There are some differences are given below -
 
 **i. Inline CSS :** Inline CSS is applied directly to HTML elements using the style attribute. It allows you to apply CSS styles to individual HTML tags.
 
@@ -55,17 +44,15 @@ within the `<style>` element, or external stylesheets linked via the `<link>` el
 
 **iii. External CSS :** External CSS is stored in a separate CSS file and linked to the HTML document using the `<link>` element. The CSS file is saved with a `style.css` extension.
 
-  </p>
+</p>
 
 </details>
 
-> 5. Could you explain what selectors are in CSS and how they function?
-
 <details>
-  <summary>👁 Show Answer</summary>
-  <p>
+<summary>5. Could you explain what selectors are in CSS and how they function?</summary>
+<p>
   
-   Yes, Selectors in CSS are patterns that define which elements in an HTML document should be styled, and they function by selecting specific elements based on their classes, IDs, tag names or other attributes.
+Yes, Selectors in CSS are patterns that define which elements in an HTML document should be styled, and they function by selecting specific elements based on their classes, IDs, tag names or other attributes.
 
 **i. Class Selector :** The class selector selects elements based on their class attribute. It is denoted by a dot `(.)` followed by the class name.
 
@@ -73,26 +60,22 @@ within the `<style>` element, or external stylesheets linked via the `<link>` el
 
 **iii. Tagname Selector :** Tagname selector selects HTML elements based on their tag names. For example, h1, h2, p, etc.
 
-  </p>
+</p>
 
 </details>
 
-> 6. How would you change the font style and size using CSS?
-
 <details>
-  <summary>👁 Show Answer</summary>
-  <p>
+<summary>6. How would you change the font style and size using CSS?</summary>
+<p>
 
 To change the font style and size using CSS, you can use the `font-family` and `font-size` properties.
 
-  </p>
+</p>
 
 </details>
 
-> 7. What are the various methods to apply CSS styles to an element?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>7. What are the various methods to apply CSS styles to an element?</summary>
   <p>
 
 There are three ways to apply style to an element :
@@ -110,10 +93,8 @@ document using the `<link>` tag. The CSS code resides in a separate file with a 
 
 </details>
 
-> 8. What is border style in CSS and which properties are included in it?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>8. What is border style in CSS and which properties are included in it?</summary>
   <p>
 
 A border is a decorative or structural element that can be added to HTML elements to visually separate them from other elements. It is a line that surrounds the content of an element and can be customized in terms of color, width, and style.
@@ -128,10 +109,8 @@ A border is a decorative or structural element that can be added to HTML element
 
 </details>
 
-> 9. What are the different types of border styles in CSS?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>9. What are the different types of border styles in CSS?</summary>
   <p>
 
 There are four types of border style in CSS :
@@ -148,10 +127,8 @@ There are four types of border style in CSS :
 
 </details>
 
-> 10. What is the use of the border-radius property in CSS and how we used this property?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>10. What is the use of the border-radius property in CSS and how we used this property?</summary>
   <p>
 
 The border-radius CSS property is used to round the corners of an element's outer border edge. It provides a way to give elements a rounded appearance.
@@ -164,10 +141,8 @@ The 1st value applies to the top-left corner. The 2nd value applies to the top-r
 
 </details>
 
-> 11. How would you horizontally and vertically center align an element using CSS?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>11. How would you horizontally and vertically center align an element using CSS?</summary>
   <p>
 
 To center align an element horizontally and vertically using CSS,
@@ -187,10 +162,8 @@ you can use the following CSS properties : `display: flex;` `justify-content: ce
 
 </details>
 
-> 12. How can you add a background color or image to an element using CSS?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>12. How can you add a background color or image to an element using CSS?</summary>
   <p>
 
 To add background color in the CSS, you can use this syntax: `background-color: color_name;` and for adding an image in the CSS, you can use this syntax : `background-image: url(" ");`
@@ -206,10 +179,8 @@ To add background color in the CSS, you can use this syntax: `background-color: 
 
 </details>
 
-> 13. Which CSS property and value is used to center an element?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>13. Which CSS property and value is used to center an element?</summary>
   <p>
 
 `text-align` property with value `center` is used to center an elements.
@@ -218,10 +189,8 @@ To add background color in the CSS, you can use this syntax: `background-color: 
 
 </details>
 
-> 14. What is the work of text-align property in CSS and what are their values?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>14. What is the work of text-align property in CSS and what are their values?</summary>
   <p>
 
 The text-align property is used to specify the horizontal alignment of the text within its containing element. It allows you to control how the text is aligned, whether it's aligned to the left, right, center and justified.
@@ -234,10 +203,8 @@ There are four values for the text-align property :
 
 </details>
 
-> 15. What is the use of font-family property in CSS?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>15. What is the use of font-family property in CSS?</summary>
   <p>
 
 The font-family property is used to specify the font family for the text content of an element. It allows you to define a prioritized list of font families to be used for rendering the text. If the first font is not available, the browser will try the next one in the list, and so on.
@@ -246,20 +213,16 @@ The font-family property is used to specify the font family for the text content
 
 </details>
 
-> 16. Why we use font-weight property?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>16. Why we use font-weight property?</summary>
   <p>
     The font-weight property is used to set how thick or thin characters in text should be displayed.
   </p>
 
 </details>
 
-> 17. Which property is used to define the text color?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>17. Which property is used to define the text color?</summary>
   <p>
 
 The color property is used to define the text color in CSS.
@@ -270,10 +233,8 @@ For example : `color : red;`
 
 </details>
 
-> 18. What is the use of margin in CSS and which are their properties?
-
  <details>
-  <summary>👁 Show Answer</summary>
+  <summary>18. What is the use of margin in CSS and which are their properties?</summary>
   <p>
 
 The margin is used to refers the space around an element, outside of any defined borders. It creates space between elements and their properties are :
@@ -290,10 +251,8 @@ The margin is used to refers the space around an element, outside of any defined
 
  </details>
 
-> 19. Could you explain the distinction between margin and padding in CSS?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>19. Could you explain the distinction between margin and padding in CSS?</summary>
   <p>
 
 | Margin                                                                                | Padding                                                                                |
@@ -308,10 +267,8 @@ The margin is used to refers the space around an element, outside of any defined
 
 </details>
 
-> 20. What is the box model in CSS and how does it operate?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>20. What is the box model in CSS and how does it operate?</summary>
   <p>
 
 The CSS box model is a fundamental concept that describes how elements on a webpage are rendered and how their dimensions are calculated. It consists of four layers such as content, padding, margin, and border.
@@ -321,10 +278,8 @@ It operates by providing a way to control the sizing, spacing, and layout of ele
 
 </details>
 
-> 21. What is the use of box-shadow in CSS?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>21. What is the use of box-shadow in CSS?</summary>
   <p>
 
 The box-shadow property is used to add one or more shadows to an element. It allows you to create visually appealing effects, such as giving the illusion of depth or highlighting elements.
@@ -333,10 +288,8 @@ The box-shadow property is used to add one or more shadows to an element. It all
 
 </details>
 
-> 22. What is the used of hover selector in CSS?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>22. What is the used of hover selector in CSS?</summary>
   <p>
 
 The `:hover` selector is used to apply styles to an element when it is being hovered over by the mouse.
@@ -346,10 +299,8 @@ It allows you to add interactive effects to elements on your web page.
 
 </details>
 
-> 23. Which CSS property is used to style the hyperlinks on hover (Mouse over)?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>23. Which CSS property is used to style the hyperlinks on hover (Mouse over)?</summary>
   <p>
 
 The `a:hover` property is used to define the style on mouse over event.
@@ -358,10 +309,8 @@ The `a:hover` property is used to define the style on mouse over event.
 
 </details>
 
-> 24. How can you create a CSS animation or transition?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>24. How can you create a CSS animation or transition?</summary>
   <p>
 
 To create a CSS animation or transition, use CSS properties and selectors to define how an element should behave and appear during the animation or transition.
@@ -370,10 +319,8 @@ To create a CSS animation or transition, use CSS properties and selectors to def
 
 </details>
 
-> 25. How can you override CSS styles using specificity and the !important rule?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>25. How can you override CSS styles using specificity and the !important rule?</summary>
   <p>
 
 To override CSS styles using specificity and the !important rule, use a more specific selector for the element and add !important to the CSS property value.
@@ -382,10 +329,8 @@ To override CSS styles using specificity and the !important rule, use a more spe
 
 </details>
 
-> 26. What is the purpose of comments in CSS, and what are the two types of comments that can be used in CSS?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>26. What is the purpose of comments in CSS, and what are the two types of comments that can be used in CSS?</summary>
   <p>
 
 The purpose of comments in CSS is to add notes, explanations, or reminders within the code.
@@ -400,10 +345,8 @@ Multi Line : Muti line comment denoted by `/*  */`
 
 </details>
 
-> 27. Can comments also span multiple lines?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>27. Can comments also span multiple lines?</summary>
   <p>
 
 Yes, comments can also span multiple lines.
@@ -412,10 +355,8 @@ Yes, comments can also span multiple lines.
 
 </details>
 
-> 28. What is the purpose of the "position" property and its values in CSS?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>28. What is the purpose of the "position" property and its values in CSS?</summary>
   <p>
 
 The position property is used to set the position to the CSS element accordingly.
@@ -436,23 +377,20 @@ There are five different types of positions in css :
 
 </details>
 
-> 29. Could you explain the distinction between absolute and relative positioning in CSS?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>29. Could you explain the distinction between absolute and relative positioning in CSS?
+</summary>
   <p>
 
-    Absolute position is relative to parent element.
-    Relative position is relative to original position.
+Absolute position is relative to parent element.
+Relative position is relative to original position.
 
   </p>
 
 </details>
 
-> 30. What is the used of display property? and difference between their properties (Inline,Block and Inline-block).
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>30. What is the used of display property? and difference between their properties (Inline,Block and Inline-block).</summary>
   <p>
 
 The display property in CSS is used to control the layout and behavior of elements. There are three commonly used display properties: `inline`, `block` and `inline-block`.
@@ -467,22 +405,18 @@ The display property in CSS is used to control the layout and behavior of elemen
 
 </details>
 
-> 31. What is the significance of the "float" property in CSS?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>31. What is the significance of the "float" property in CSS?</summary>
   <p>
 
-     The "float" property in CSS is used to control the positioning and layout of elements within a document flow.
+The "float" property in CSS is used to control the positioning and layout of elements within a document flow.
 
   </p>
 
 </details>
 
-> 32. What is the purpose of vendor prefixes in CSS and why are they used?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>32. What is the purpose of vendor prefixes in CSS and why are they used?</summary>
   <p>
 
 The purpose of vendor prefixes is to allow browser vendors to implement new CSS features before they are standardized feedback from developers and the community. It is used to implement non-standard CSS features in different web browsers.
@@ -491,10 +425,8 @@ The purpose of vendor prefixes is to allow browser vendors to implement new CSS 
 
 </details>
 
-> 33. What is flexbox in CSS?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>33. What is flexbox in CSS?</summary>
   <p>
 
 Flexbox stands for flexible box. To align cards flexibly inside to container. Flexbox make it simple to align items vertically and horizontally using rows and columns. Flexbox makes it easier to design a flexible responsive layout of a webpage.
@@ -503,10 +435,8 @@ Flexbox stands for flexible box. To align cards flexibly inside to container. Fl
 
 </details>
 
-> 34. What is the purpose of the flex-direction property?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>34. What is the purpose of the flex-direction property?</summary>
   <p>
 
 The flex-direction property determines whether flex items are arranged horizontally or vertically within a flex container by defining the direction.
@@ -515,10 +445,8 @@ The flex-direction property determines whether flex items are arranged horizonta
 
 </details>
 
-> 35. Whats the use of flex direction in CSS and explain their directions?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>35. Whats the use of flex direction in CSS and explain their directions?</summary>
   <p>
 
 Flex direction are used to define the direction of child item are placed in the flex container.
@@ -537,10 +465,8 @@ There are four flex directions in CSS :
 
 </details>
 
-> 36. What are the main properties used to control the layout of flex containers and flex items?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>36. What are the main properties used to control the layout of flex containers and flex items?</summary>
   <p>
 
 The main properties used to control the layout of flex containers and flex items are :
@@ -557,10 +483,8 @@ The main properties used to control the layout of flex containers and flex items
 
 </details>
 
-> 37. How do you create a responsive layout using flexbox?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>37. How do you create a responsive layout using flexbox?</summary>
   <p>
 
 To create a responsive layout using flexbox, you can use media queries to change the flex container's properties, such as flex-direction, flex-wrap, and justify-content, based on different screen sizes.
@@ -569,10 +493,8 @@ To create a responsive layout using flexbox, you can use media queries to change
 
 </details>
 
-> 38. What is a media query in CSS and what is its purpose?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>38. What is a media query in CSS and what is its purpose?</summary>
   <p>
 
 A media query in CSS is a technique used to apply different styles based on the characteristics of the device or viewport, such as screen size allowing for responsive design and optimized user experiences across various devices and screen sizes.
@@ -581,10 +503,8 @@ A media query in CSS is a technique used to apply different styles based on the 
 
 </details>
 
-> 39. What are the different types of media features that can be used in a media query?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>39. What are the different types of media features that can be used in a media query?</summary>
   <p>
 
 Media queries in CSS allow you to target and customize styles based on various device characteristics such as screen size, aspect ratio, orientation, resolution, color, and more, enabling precise styling adjustments for different devices.
@@ -593,10 +513,8 @@ Media queries in CSS allow you to target and customize styles based on various d
 
 </details>
 
-> 40. Are media queries limited to screen sizes, or can they target other device characteristics as well?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary> 40. Are media queries limited to screen sizes, or can they target other device characteristics as well?</summary>
   <p>
 
 Media queries can target more than just screen sizes; they can also be used to customize styles based on various device characteristics like screen size, aspect ratio, resolution, color, input capabilities (mouse or touchscreen), and even the user's preferred display mode (light or dark), providing a flexible way to adapt designs to different devices and user preferences.
@@ -605,10 +523,8 @@ Media queries can target more than just screen sizes; they can also be used to c
 
 </details>
 
-> 41. How would you create a responsive navigation menu using CSS?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>41. How would you create a responsive navigation menu using CSS?r</summary>
   <p>
 
 To create a responsive navigation menu using CSS, you can used CSS media queries, flexbox, or CSS grid to adjust the structure and visual presentation of the menu based on the screen size or device, and user-friendly across different devices and viewport sizes.
@@ -617,10 +533,8 @@ To create a responsive navigation menu using CSS, you can used CSS media queries
 
 </details>
 
-> 42. Could you please explain the concept of device breakpoints in media queries?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>42. Could you please explain the concept of device breakpoints in media queries?</summary>
   <p>
 
 Media queries allow you to create responsive websites on all screen sizes from desktop to mobile.
@@ -639,10 +553,8 @@ TV/Large desktop : greater than `1200px`
 
 </details>
 
-> 43. What is the purpose of pseudo-classes in CSS?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>43. What is the purpose of pseudo-classes in CSS?</summary>
   <p>
 
 The purpose of the pseudo-classes in CSS enable the selection and styling of elements based on various conditions, allowing for dynamic and interactive styling based on user interactions.
@@ -651,10 +563,8 @@ The purpose of the pseudo-classes in CSS enable the selection and styling of ele
 
 </details>
 
-> 44. How would you style a hyperlink differently when it is being hovered over?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>44. How would you style a hyperlink differently when it is being hovered over?</summary>
   <p>
 
 To style a hyperlink differently when it is being hovered over, you can use CSS and the `:hover` pseudo-class to apply specific styles when the mouse hovers over the link, allowing you to change its color, or add effects.
@@ -663,10 +573,8 @@ To style a hyperlink differently when it is being hovered over, you can use CSS 
 
  </details>
 
-> 45. How do you hide an element using CSS?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>45. How do you hide an element using CSS?</summary>
   <p>
 
 To hide an element using CSS, you can use the `display` property and set value to `none`, which removes the element from the page flow and makes it invisible.
@@ -675,10 +583,8 @@ To hide an element using CSS, you can use the `display` property and set value t
 
 </details>
 
-> 46. What is the distinction between class selectors and id selectors?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>46. What is the distinction between class selectors and id selectors?</summary>
   <p>
 
 Class selectors are used to target multiple elements with the same class name and it is denoted by `(.)`, while id selectors are used to target a unique element with a specific id attribute value and it is denoted by `(#)`.
@@ -687,10 +593,8 @@ Class selectors are used to target multiple elements with the same class name an
 
 </details>
 
-> 47. What are CSS backgrounds, list the properties?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>47. What are CSS backgrounds, list the properties?</summary>
   <p>
 
 The CSS backgrounds are used to style and customize the background of an element, and there are some main properties `background-color`, `background-image`, `background-repeat` and more.
@@ -699,10 +603,8 @@ The CSS backgrounds are used to style and customize the background of an element
 
 </details>
 
-> 48. What are the various positioning properties in CSS?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>48. What are the various positioning properties in CSS?</summary>
   <p>
 
 The various positioning properties in CSS are `static`, `relative`, `absolute`, `fixed` and `sticky` which determine how elements are positioned and interact with the document flow.
@@ -711,10 +613,8 @@ The various positioning properties in CSS are `static`, `relative`, `absolute`, 
 
 </details>
 
-> 49. What is meant by universal selector?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>49. What is meant by universal selector?</summary>
   <p>
  
  The universal selector is a CSS selector denoted by an asterisk (*) symbol. It is used to select all elements in an HTML document.
@@ -723,10 +623,8 @@ The various positioning properties in CSS are `static`, `relative`, `absolute`, 
 
 </details>
 
-> 50. How can you use CSS to control image repetition?
-
 <details>
-  <summary>👁 Show Answer</summary>
+  <summary>50. How can you use CSS to control image repetition?</summary>
   <p>
 
 By using `background-repeat` property, we can control image repetition.

@@ -4,13 +4,16 @@ description: "Loops"
 hide_table_of_contents: true
 ---
 
-`Types of Loops`
+### Types of Loops :
+
+**There are three types of loops.**
 
 1. For-Loop
 2. While Loop
 3. Do-While Loop
 
-`For Loop`
+#### 1. For Loop :
+
 For loops are used when you have a block of code which you want to repeat a fixed number of times.
 
 💻**Example :**
@@ -37,7 +40,7 @@ Hello
 Hello  
 Hello
 
-**Example:**
+**Example :**
 
 ```c
 #include <stdio.h>
@@ -65,7 +68,7 @@ Hey
 Hey  
 Hey
 
-**Example:**
+**Example :**
 
 ```c
 #include <stdio.h>
@@ -91,7 +94,7 @@ Xerox... 1
 Xerox... 2  
 Xerox... 3
 
-**Example:**
+**Example :**
 
 ```c
 #include <stdio.h>
@@ -115,13 +118,11 @@ int main() {
 1  
 0
 
-`While Loop`
+#### 2. While Loop
 
-While loop is Entry Controlled loop.  
-It is `Pre-Tested` Loop.  
-if condition will false it will run zero times.
+While loop is **entry controlled** loop. It is **Pre-Tested** loop. If condition will false it will run zero times.
 
-**Syntax:**
+**Syntax :**
 
 ```c
 while(condition)
@@ -156,13 +157,11 @@ int main() {
 3  
 4
 
-`Do-While Loop`
+#### 3. Do-While Loop
 
-It is Exit Controlled loop.
-It is `Post-Tested` Loop
-if condition will false it will run ones.
+do-while loop is **exit-controlled** loop. It is **Post-Tested** loop. If condition will false it will run ones.
 
-**Syntax:**
+**Syntax :**
 
 ```c
 do
@@ -172,7 +171,7 @@ do
 while(condition);
 ```
 
-**Example:**
+**Example :**
 
 ```c
 #include <stdio.h>

@@ -1,5 +1,7 @@
 # Spaceship 🛸
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3a9c883e-a381-45c2-9e68-6bee48d2fb04/deploy-status?branch=main)](https://app.netlify.com/sites/rtc-spaceship/deploys)
+
 <img src="./static/img/homepage_screenshot.png?id=1" />
 
 ## Star History

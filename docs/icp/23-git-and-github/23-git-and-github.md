@@ -45,17 +45,17 @@ GitHub is designed for developers. GitHub is a code hosting platform that hosts 
 
 <img src="/icp/23/step-7.jpeg" alt="step-7" width="600px"/>
 
-## Repository (Repo)
+### Repository (Repo)
 
-It is a Folder where we can upload Code for specific Project.
+In short, a `repo` in GitHub stands for a `repository`. It is a central location where you can store your source code and related files for a specific project.
 
-## Steps to Create Repository
+### Steps to Create Repository
 
 1. In the upper-right corner of gitHub page, use the + drop-down menu, and select New repository.
 
 <img src="/icp/23/img-1.png" alt="img-1" width="600px"/>
 
-2. Enter name for your repository. For example, "Sample".
+2. Enter name for your repository. **For example** - `sample`
 
 <img src="/icp/23/img-2.png" alt="img-2" width="600px"/>
 
@@ -63,19 +63,33 @@ It is a Folder where we can upload Code for specific Project.
 
 <img src="/icp/23/img-3.png" alt="img-3" width="600px"/>
 
-4. Click Create repository.
+:::tip
+Always keep your repository public.
+:::
+
+4. Click on `Create repository` button for creating your repo.
 
 <img src="/icp/23/img-4.png" alt="img-4" width="600px"/>
 
-5. Upload Your Files.
+5. You show your empty repo like this.
 
 <img src="/icp/23/img-5.png" alt="img-5" width="600px"/>
 
-6. Choose Your File.
+6. Open your Git Bash and paste the following code.
 
 <img src="/icp/23/img-6.png" alt="img-6" width="600px"/>
 
-7. Click Commit Changes Button.
+```html
+git clone https://github.com/yogita-s-24/sample.git
+```
+
+<img src="/icp/23/img-8.png" alt="img-8" width="600px"/>
+
+:::tip
+You enter your link which available on your repo.
+:::
+
+7. See on your desktop `sample` folder will be created.
 
 <img src="/icp/23/img-7.png" alt="img-7" width="600px"/>
 
@@ -89,55 +103,119 @@ It is a Folder where we can upload Code for specific Project.
 
 #### 1. git init
 
-`git init` command are used to Initialize Git repository to in your normal folder. To create a new repo, you use the `git init` command. This command is one-time you use during a new repository initial setup.
+```html
+git init
+```
 
-> `.git ` File = It stores all the history related to your repo.
+**git init** command are used to initialize git repository to in your normal folder. To create a new repo, you use the **git init** command. This command is one-time you use during a new repository initial setup.
 
 #### 2. git status
 
-`git status` command display the status of your working project.
+```html
+git status
+```
+
+**git status** command display the status of your working project.
 
 #### 3. git add `<filename>`
 
-The `git add <filename>` command adds new or changed files in your working project to the Git staging area.
+```html
+git add index.html
+```
+
+The git add `<filename>` command adds new or changed files in your working project to the git staging area.
 
 #### 4. git commit
 
-`git commit` command are used to record the changes in the repository. Every commit contain commit message.
+**git commit** command are used to record the changes in the repository. Every commit contain commit message.
 
 **Syntax :**
 
 `git commit -m "<commit message>"`
 
+```html
+git commit -m "first commit"
+```
+
 #### 5. git push
 
-`git push` command are used to uploads all local branch commit to GitHub.
+```html
+git push
+```
 
-## How to push your code to GitHub using git commands?
+`git push` command are used to upload all local branch commit to GitHub.
 
-Now that you have created your GitHub account, you can proceed to push your code to a GitHub repository using `Git commands`:
+Now that you have created your GitHub account, you can proceed to push your code to a GitHub repository using **Git commands**.
 
-1. Open a terminal or command prompt on your computer.
+### How to push your code to GitHub using git commands?
 
-2. Navigate to the directory where your local project repository is located using the cd command.
+### create a new repository on the command line
 
-3. Initialize a new Git repository in your project folder using the `git init` command. This command sets up a new repository and creates a `.git` folder to store all the version control information.
+```html
+echo "# sample" >> README.md git init git add README.md git commit -m "first
+commit" git branch -M main git remote add origin
+https://github.com/yogita-s-24/sample.git git push -u origin main
+```
 
-4. **`git init`**
-   Add the files in your local repository to the git staging area using the `git add` command. You can specify a specific file or use . to add all files.
-   git add `<filename>`
+:::tip
+You can used your repository commands.
+:::
 
-5. Commit the changes with a descriptive message using the `git commit` command. This creates a new commit with the added files.
+### push an existing repository from the command line
+
+```html
+git remote add origin https://github.com/yogita-s-24/sample.git git branch -M
+main git push -u origin main
+```
+
+These commands are available on your repo we can use these commands to push your code in this created repo.
+
+### How to add your code in existing repo
+
+Open a terminal or command prompt on your computer.
+
+1. Initialize a new Git repository in your project folder using the `git init` command.
+
+<img src="/icp/23/img-9.png" alt="img-9" width="600px"/>
+
+2. Add this command.
+
+```html
+git remote add origin https://github.com/yogita-s-24/sample.git
+```
+
+3. Add this command.
+
+```html
+git branch -M main
+```
+
+4. Add this command.
+
+```html
+git push -u origin main
+```
+
+5. Add the files in your local repository to the git staging area using the `git add .` command. When you can change multiple files in this case you use this command `git add . `. You can also add a specific file. In this case you can used this command `git add index.html`
+
+```html
+git add .
+```
+
+6. Commit the changes with a descriptive message using the `git commit` command. This creates a new commit with the added files.
 
 ```html
 git commit -m "First commit"
 ```
 
-6. Next, you need to add a remote origin to your local repository. This tells Git where to push your code. Use the git remote add command, providing the URL of your GitHub repository.
-   git remote add origin https://github.com/your-username/your-repository.git
-
 7. Finally, push your code to GitHub using the `git push` command. This uploads your local branch commits to the GitHub repository.
 
 ```html
-git push -u origin main
+git push
 ```
+
+<img src="/icp/23/img-10.png" alt="img-10" width="600px"/>
+
+8. Go to your GitHub account, fresh your page and see your result.
+
+<img src="/icp/23/img-11.png" alt="img-11" width="600px"/>

@@ -355,51 +355,7 @@ In MongoDB, case-insensitive queries can be performed using regular expressions 
 </details>
 
 <details>
-<summary>34. What is Express JS?</summary>
-<p>
-
-Express.js is a popular JavaScript framework for building web applications and APIs. It simplifies the process of setting up a server and handling HTTP `requests` and `responses`.
-
-</p>
-
-</details>
-
-<details>
-<summary>35. How to install Express JS in MongoDB?</summary>
-<p>
-
-To install express, you can use the following commands:
-
-```js
-npm install express
-```
-
-</p>
-
-</details>
-
-<details>
-<summary>36. How to create server using Express in MongoDB?</summary>
-<p>
-
-To create a server using Express, you need to write some code in your **index.js** file.
-
-```js
-import express from "express";
-
-const app = express();
-
-app.listen(5000, () => {
-  console.log("listening on port 5000");
-});
-```
-
-</p>
-
-</details>
-
-<details>
-<summary>37. Which http methods are available in MongoDB?</summary>
+<summary>34. Which http methods are available in MongoDB?</summary>
 <p>
 
 There are two http methods are available in MongoDB :
@@ -412,7 +368,7 @@ There are two http methods are available in MongoDB :
 </details>
 
 <details>
-<summary>38. Which method you can used for retrieve data from server in MongoDB?</summary>
+<summary>35. Which method you can used for retrieve data from server in MongoDB?</summary>
 <p>
 
 In the MongoDB, we can used get() method for retrieve data from the server.
@@ -422,7 +378,7 @@ In the MongoDB, we can used get() method for retrieve data from the server.
 </details>
 
 <details>
-<summary>39. Which method you can used for send data to the server in MongoDB?</summary>
+<summary>36. Which method you can used for send data to the server in MongoDB?</summary>
 <p>
 
 In the MongoDB, we can used post() method for send data to the server.
@@ -432,43 +388,7 @@ In the MongoDB, we can used post() method for send data to the server.
 </details>
 
 <details>
-<summary>40. What is Nodemon in MongoDB?</summary>
-<p>
-
-Nodemon is a utility that automatically monitors changes in your source code and restarts the server whenever a change is detected.
-
-</p>
-
-</details>
-
-<details>
-<summary>41. Why we used Nodemon in MongoDB?</summary>
-<p>
-
-In the MongoDB, Nodemon is commonly used during development to save time and effort in manually restarting the server after each code modification.
-
-</p>
-
-</details>
-
-<details>
-<summary>42. Which command you can used to install Nodemon in the MangoDB?</summary>
-<p>
-
-To install Nodemon for your MongoDB project, run the following command in your terminal:
-
-```js
-npm i nodemon
-```
-
-This command will install Nodemon as a development dependency in your MongoDB project.
-
-</p>
-
-</details>
-
-<details>
-<summary>43. What is Mongoose in MongoDB?</summary>
+<summary>37. What is Mongoose in MongoDB?</summary>
 <p>
 
 Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It provides a schema-based solution to model your application data, manage relationships between data, perform validation, and translate between objects in code and their representation in MongoDB.
@@ -478,7 +398,7 @@ Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It pr
 </details>
 
 <details>
-<summary>44. What are the advantages of Mongoose?</summary>
+<summary>38. What are the advantages of Mongoose?</summary>
 <p>
 
 The advantages of Mongoose such as :
@@ -495,7 +415,7 @@ The advantages of Mongoose such as :
 </details>
 
 <details>
-<summary>45. How to install Mongoose, which is their command?</summary>
+<summary>39. How to install Mongoose, which is their command?</summary>
 <p>
 
 To install Mongoose, you can use the npm package manager. Open your terminal and run the following command:
@@ -511,7 +431,7 @@ This command will download and install the Mongoose package for your Node.js pro
 </details>
 
 <details>
-<summary>46. How you can import Mongoose in js file?</summary>
+<summary>40. How you can import Mongoose in js file?</summary>
 <p>
 
 To import Mongoose, the method depends on the version of Node.js you are using and your project's configuration.
@@ -527,7 +447,7 @@ import mangoose from "mangoose";
 </details>
 
 <details>
-<summary>47. What is the role of the $set operator in MongoDB? </summary>
+<summary>41. What is the role of the $set operator in MongoDB? </summary>
 <p>
 
 In MongoDB, the `$set` operator is used to modify or add values to particular fields in a document without changing the entire document. The role of the $set operator in MongoDB is to update or add values to specific fields in a document without replacing or modifying the entire document.
@@ -537,7 +457,7 @@ In MongoDB, the `$set` operator is used to modify or add values to particular fi
 </details>
 
 <details>
-<summary>48. What is the difference between a SQL database and a NoSQL database like MongoDB?</summary>
+<summary>42. What is the difference between a SQL database and a NoSQL database like MongoDB?</summary>
 <p>
 
 | Aspect         | SQL Databases                         | NoSQL Databases (MongoDB)                             |
@@ -550,7 +470,7 @@ In MongoDB, the `$set` operator is used to modify or add values to particular fi
 </details>
 
 <details>
-<summary>49. What is the maximum document size in MongoDB?</summary>
+<summary>43. What is the maximum document size in MongoDB?</summary>
 <p>
 
 In MongoDB, the maximum document size is `16 megabytes (MB)`.
@@ -559,7 +479,7 @@ In MongoDB, the maximum document size is `16 megabytes (MB)`.
 
 </details>
 <details>
-<summary>50. What is Frontend in APIs?</summary>
+<summary>44. What is Frontend in APIs?</summary>
 <p>
 
 The frontend, also known as the `client`, refers to the user interface of a web application that users interact with. It is responsible for sending requests to the backend and displaying the data received from the server.
@@ -569,7 +489,7 @@ The frontend, also known as the `client`, refers to the user interface of a web 
 </details>
 
 <details>
-<summary>51. What is Backend in APIs?</summary>
+<summary>45. What is Backend in APIs?</summary>
 <p>
 
 The backend, also known as the `server`, handles the processing of requests received from the frontend. It performs various operations such as retrieving data from a database, executing business logic, and generating a response to be sent back to the client.

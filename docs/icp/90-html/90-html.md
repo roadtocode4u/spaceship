@@ -8,7 +8,7 @@ hide_table_of_contents: true
   <summary>1. What is HTML?</summary>
   <p>
    
-      HTML is a language which is used to create website. HTML stands for Hyper Text Markup Language and is used to create web pages.
+       HTML is a markup language used for creating web pages. It stands for Hyper Text Markup Language.
 
   </p>
 
@@ -18,7 +18,7 @@ hide_table_of_contents: true
   <summary>2. What are tags in HTML?</summary>
   <p>
    
- HTML tags are used to provide meaning or effect to content. And also it provides special information about the content. It has opening and closing.
+HTML tags are used to define and structure the content of a web page. They provide meaning and formatting to the text or elements within the tags. Tags have opening and closing parts.
 
   </p>
 
@@ -40,7 +40,7 @@ hide_table_of_contents: true
 </summary>
   <p>
    
-    We can create a heading using heading tag. There are 6 heading tags in html such as &lt;h1&gt;,&lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;. &lt;h1&gt; is a largest heading and &lt;h6&gt; is a smallest heading.
+   Headings in HTML can be created using heading tags. There are six levels of headings: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>`. The `<h1>` tag represents the highest level of heading, while `<h6>` represents the lowest level of heading.
 
   </p>
 
@@ -51,8 +51,10 @@ hide_table_of_contents: true
 </summary>
   <p>
    
-        
-       The empty tag does not have content like the &lt;br&gt; tag. There is no need to close the empty tag. A container tag is a tag that contains both opening and closing tags. &lt;b&gt; &lt;/b&gt; and &lt;body&gt; &lt;/body&gt;.
+   An empty tag, also known as a self-closing tag, does not have any content between its opening and closing parts. Examples of empty tags include `<br>` for line breaks or `<img>` for images. They do not require a closing tag.
+
+   On the other hand, a container tag, also known as a paired tag, consists of both an opening tag and a closing tag. The opening tag defines the start of a block of content, and the closing tag defines the end of that block. Examples of container tags include `<b>` and `</b>` for bold text or `<body>` and `git ` for the entire body content of a web page.
+
 
   </p>
 

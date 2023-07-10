@@ -32,29 +32,23 @@ HTML tags are used to define and structure the content of a web page. They provi
  The purpose of the head tag is to discribe the identity of webpage.
 
   </p>
-
 </details>
 
 <details>
-  <summary>4. How do you create a heading using HTML?
-</summary>
+  <summary>4. How do you create a heading using HTML?</summary>
   <p>
    
-   Headings in HTML can be created using heading tags. There are six levels of headings: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>`. The `<h1>` tag represents the highest level of heading, while `<h6>` represents the lowest level of heading.
+   Headings in HTML can be created using heading tags. There are six levels of headings: &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; and &lt;h6&gt;. The &lt;h1&gt; tag represents the highest level of heading, while &lt;h6&gt; represents the lowest level of heading.
 
   </p>
-
 </details>
 
 <details>
-  <summary> 5. What is the difference between empty tag and container tag?
-</summary>
+  <summary> 5. What is the difference between empty tag and container tag?</summary>
   <p>
    
-   An empty tag, also known as a self-closing tag, does not have any content between its opening and closing parts. Examples of empty tags include `<br>` for line breaks or `<img>` for images. They do not require a closing tag.
-
-   On the other hand, a container tag, also known as a paired tag, consists of both an opening tag and a closing tag. The opening tag defines the start of a block of content, and the closing tag defines the end of that block. Examples of container tags include `<b>` and `</b>` for bold text or `<body>` and `git ` for the entire body content of a web page.
-
+   An empty tag, also known as a self-closing tag, does not have any content between its opening and closing parts. Examples of empty tags include &lt;br&gt; for line breaks or &lt;img&gt; for images. They do not require a closing tag.<br/>
+On the other hand, a container tag, also known as a paired tag, consists of both an opening tag and a closing tag. The opening tag defines the start of a block of content, and the closing tag defines the end of that block. Examples of container tags include &lt;b&gt; and &lt;br&gt; for bold text or &lt;body&gt; and git  for the entire body content of a web page.
 
   </p>
 

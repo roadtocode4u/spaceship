@@ -204,10 +204,10 @@ The attribute are used for creating table in HTML is<br/>
 2. &lt;tr&gt; tag: The &lt;tr&gt; tag is used to create each row in the table.<br/>
 3. &lt;td&gt; tag: The &lt;td&gt; tag is used to create each cell in the table.<br/>
 4. &lt;th&gt; tag: The &lt;th&gt; tag is used to create table headers.<br/>
-5. colspan: The colspan attribute is used to merge multiple cells horizontally.<br/>
-6. rowspan: The rowspan attribute is used to merge multiple cells vertically.<br/>
+5. colspan: The colspan attribute is used to merge multiple cells horizontally. <br/>
+6. rowspan: The rowspan attribute is used to merge multiple cells vertically. <br/>
 
-  </p>
+</p>
 
 </details>
 
@@ -215,7 +215,7 @@ The attribute are used for creating table in HTML is<br/>
   <summary> 21. What is the purpose of the &lt;ul&gt; and &lt;ol&gt; tags in HTML? </summary>
   <p>
    
-   The purpose of the &lt;ul&gt; is used to create an unordered list. The items in the unordered list are displayed with bullet points. <br/><br/>
+  The purpose of the &lt;ul&gt; is used to create an unordered list. The items in the unordered list are displayed with bullet points. <br/><br/>
   The purpose of the &lt;ol&gt; is used to create an ordered list. The items in the ordered list are displayed with numbers or letters.
 
   </p>
@@ -256,7 +256,7 @@ To create an ordered list with Roman numerals (I, II, III) in HTML, you can use 
   <summary> 25. what is the use of video tag in HTML?</summary>
   <p>
       
-  The &lt;video&gt; tag in HTML is used to display videos on a web page. It allows you to play videos directly in the browser without the need for separate video player.
+The &lt;video&gt; tag in HTML is used to display videos on a web page. It allows you to play videos directly in the browser without the need for separate video player.
 
   </p>
 
@@ -266,7 +266,7 @@ To create an ordered list with Roman numerals (I, II, III) in HTML, you can use 
   <summary> 26. How can you add a background image to an HTML element? </summary>
   <p>
     
-   To add a background image to an HTML element you can use CSS with the background-image property.
+To add a background image to an HTML element you can use CSS with the background-image property.
 
   </p>
 
@@ -276,7 +276,7 @@ To create an ordered list with Roman numerals (I, II, III) in HTML, you can use 
   <summary>27. What is the purpose of the &lt;iframe&gt; tag in HTML? </summary>
   <p>
    
-  The purpose of the &lt;iframe&gt; tag is used to embed another HTML document into the current document. It allows us to display the content of another website on our own webpage.
+The purpose of the &lt;iframe&gt; tag is used to embed another HTML document into the current document. It allows us to display the content of another website on our own webpage.
 
   </p>
 
@@ -368,7 +368,7 @@ The target attribute in HTML is used to specify where to open the linked documen
   <summary> 35. What is the difference between &lt;div&gt; and &lt;span&gt; tag? </summary>
   <p>
    
- &lt;div&gt; tag is used for create division, seperate block or a section in an HTML document. The div tag is a block element means it occupies full space. Div tag starts on a new line.<br/>
+&lt;div&gt; tag is used for create division, seperate block or a section in an HTML document. The div tag is a block element means it occupies full space. Div tag starts on a new line.<br/>
 
 &lt;span&gt; tag is an inline element means it occupies only the necessary space to contain its content and Span tag does not create line breaks.
 
@@ -430,7 +430,7 @@ To add buttons in HTML, you can use the &lt;button&gt; tag.
   <summary> 41. What is the alt attribute in HTML? </summary>
   <p>
    
-  The alt attribute is used to provide the alternative text of the image if the image is not displayed for some reason.
+The alt attribute is used to provide the alternative text of the image if the image is not displayed for some reason.
 
   </p>
 
@@ -440,7 +440,7 @@ To add buttons in HTML, you can use the &lt;button&gt; tag.
   <summary>42. Can HTML Tags and elements are same? </summary>
   <p>
     
-   No, HTML tags and elements are not same.
+No, HTML tags and elements are not same.
 
 The HTML tags has only opening and closing tag. But the HTML elements have starting tag, contains content and ending tag.
 
@@ -449,8 +449,7 @@ The HTML tags has only opening and closing tag. But the HTML elements have start
 </details>
 
 <details>
-  <summary> 43. What is an input tag?
-</summary>
+  <summary> 43. What is an input tag? </summary>
   <p>
      
 The input tag in HTML is used to create an interactive form element and to take input from the user, you can place the input tag within a form tag.
@@ -460,8 +459,7 @@ The input tag in HTML is used to create an interactive form element and to take 
 </details>
 
 <details>
-  <summary> 44. How do you embed audio and video in HTML?
-</summary>
+  <summary> 44. How do you embed audio and video in HTML? </summary>
   <p>
    
 To embed audio and video content in HTML, you can use the audio and video tag. That specify the source file using the "src" attribute within the tag.
@@ -471,9 +469,7 @@ To embed audio and video content in HTML, you can use the audio and video tag. T
 </details>
 
 <details>
-  <summary> 45. what is the use of br tag?
-
-</summary>
+  <summary> 45. what is the use of br tag? </summary>
   <p>
    
 The &lt;br&gt; tag in HTML is a line break tag. It is a self-closing tag, which means it does not have a closing tag.
@@ -496,7 +492,7 @@ The &lt;br&gt; tag in HTML is a line break tag. It is a self-closing tag, which 
   <summary>47. What is empty tag? </summary>
   <p>
     
-  The HTML tag which does not have content called as empty tag.
+The HTML tag which does not have content called as empty tag.
 
   </p>
 
@@ -506,7 +502,7 @@ The &lt;br&gt; tag in HTML is a line break tag. It is a self-closing tag, which 
   <summary>48. What are the attributes of audio tag? </summary>
   <p>
    
-  Attributes of the audio tag is<br/>
+Attributes of the audio tag is<br/>
 Controls: Adds audio controls like play, pause, and volume.<br/>
 Muted: Mutes the audio playback by default.<br/>
 Autoplay: Automatically starts playing the audio when the web page is loaded.<br/>
@@ -519,7 +515,7 @@ Autoplay: Automatically starts playing the audio when the web page is loaded.<br
   <summary> 49.  What is placeholder in form HTML? </summary>
   <p>
    
-   Placeholder is a attribute which is used to set a short hint that describes the value of an input field.
+Placeholder is a attribute which is used to set a short hint that describes the value of an input field.
 
   </p>
 
@@ -529,7 +525,7 @@ Autoplay: Automatically starts playing the audio when the web page is loaded.<br
   <summary> 50. What is radio button? </summary>
   <p>
      
-  A radio button in HTML is form element that allows users to select a single option from multiple choice. It is represented by an &lt;input&gt; element with the type attribute is to set radio.
+ A radio button in HTML is form element that allows users to select a single option from multiple choice. It is represented by an &lt;input&gt; element with the type attribute is to set radio.
 
   </p>
 

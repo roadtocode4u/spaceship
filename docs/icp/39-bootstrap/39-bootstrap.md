@@ -14,7 +14,7 @@ Bootstrap => Css Component Libraray Prewritten CSS and JS
 
 **Click Here To Render On Bootstrap Page :** (https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
-## How to add Bootstrap In HTML File
+### How to add Bootstrap In HTML File
 
 **Example :**
 
@@ -30,7 +30,7 @@ Bootstrap => Css Component Libraray Prewritten CSS and JS
       crossorigin="anonymous"
     />
   </head>
-  32q2iu
+
   <body>
     <h1>Hello, world!</h1>
     <script
@@ -112,7 +112,7 @@ In the above example, we can apply class `btn` for the button and `btn-primary` 
 
 <img src="/icp/39/output-2.png" alt="output" width="400px"/>
 
-**Code :**
+**Example :**
 
 ```html
 <!DOCTYPE html>
@@ -534,7 +534,7 @@ large => xxl
 </html>
 ```
 
-**⚙️ Output :**
+**Output :**
 
 **Small Device**
 

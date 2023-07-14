@@ -137,6 +137,8 @@ add_two(10,20)
 
 In the above example, in 1st line we can create a function. The name of that function is `add_two`. In the 2nd line we can create variable `sum`. In that variable we stored a addition of two numbers. In the 3rd line print a sum. In the 4th line we can called a function and pass the parameter `10 and 20`.
 
+## Simple Interest 
+
 > Write a program to find simple interest using function all cases .
 
 💡 HINT : Simple Interest = (P x T x R)/100

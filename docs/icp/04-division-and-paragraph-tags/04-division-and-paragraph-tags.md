@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
 ### Paragraph Tags
 
-Paragraph tag is used to define a block of text in paragraph.
+The paragraph tag `<p>` is used to define a block of text in HTML as a paragraph. It represents a unit of content that is separated from other elements on the page
 
 **Syntax :**
 
@@ -49,9 +49,7 @@ Paragraph tag is used to define a block of text in paragraph.
 
 ### Align
 
-Align attribute specifies the horizontal alignment of your text.
-We can provide align by three types Left, Center, Right.
-
+The `align` attribute is used to specify the horizontal alignment of the text within a paragraph. It can be set to one of three values:  `left`, `center`, or `right`.
 **Syntax :**
 
 ```html
@@ -82,9 +80,7 @@ We can provide align by three types Left, Center, Right.
 
 ### Division Tags
 
-Div tag is used for create division, Seperate block or a section in an HTML document.
-
-We can use paragraph tag in div tag but we cannot use div tag in paragraph tag.
+he division tag `<div>` is used to create a division or section in an HTML document. It is a container that allows you to group and style related content together.
 
 **Syntax :**
 

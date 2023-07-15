@@ -6,9 +6,11 @@ hide_table_of_contents: true
 
 # Basic Tags
 
+This guide provides an overview of some basic HTML tags and how to use them effectively in your web pages.
+
 ### Whitespace
 
-Whitespace means empty space around the content of a page. You can Give Multiple spaces in your HTML code but By default, HTML is Considered only one single space. The browser ignores whitespace.
+Whitespace refers to empty space around the content of a web page. By default, HTML considers multiple spaces as a single space, and the browser ignores excess whitespace.
 
 **Code :**
 
@@ -54,13 +56,13 @@ If you can Manually add empty spaces in your HTML code then you can use one Spec
 
 **`<br>`** : Break Row
 
-This tag is used for break row. We don't need to close **`<br>`** because it is an empty tag. we can close **`<br/>`** like this.
+The `<br>` tag is used to create line breaks or new lines within the content. It is an empty tag and does not require a closing tag.
 
-### Based On Opening & Closing Tag There are 2 Type
+### Types of Tags
 
 1. **Empty Tag**
 
-Some HTML tags have no content like **`<br>`** tag these type of tags are called empty Tag. Empty Tag do not need to close tag.
+Some HTML tags have no content, such as the `<br>` tag. These tags are called empty tags and do not require a closing tag.
 
 2. **Container Tag**
 

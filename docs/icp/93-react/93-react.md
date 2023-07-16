@@ -962,7 +962,7 @@ Finally we are rendering the form with two input fields for name and email and s
 </details>
 
 <details>
-  <summary>33. Why use LocalStorage?</summary>
+  <summary> 33. Why use LocalStorage?</summary>
 
   <p>
 
@@ -1096,7 +1096,7 @@ In the above example, the `setItem()` method is used to store the value "Harshda
 </details>
 
 <details>
-  <summary>38. How to Use LocalStorage?  </summary>
+  <summary> 38. How to Use LocalStorage?  </summary>
 
   <p>
 
@@ -1271,7 +1271,7 @@ To handle events, React components define event handler functions. These functio
 </details>
 
 <details>
-  <summary>43.  How can you embed two or more components into one? </summary>
+  <summary> 43.  How can you embed two or more components into one? </summary>
 
   <p>
   
@@ -1307,7 +1307,7 @@ In the above example, the `ParentComponent` is composed of two child components:
   <summary> 44. What are the Router components of React Router?</summary>
 
   <p>
-  
+
 The main router component is called "BrowserRouter". It is used to handle the routing logic and allows you to define different routes in your application.
 
 **BrowserRouter :** This component uses HTML5 history API to handle routing. It provides a way to render different components based on the current URL. It is typically used for applications with a server-side backend or for deployments that support HTML5 history.
@@ -1354,19 +1354,17 @@ In the above example, the `myState` variable is initially set to null. when the 
   <summary>46. What are the advantages react?</summary>
 
   <p>
-
 1. React is used for code reusability, maintainability, and makes it easier to manage complex UI structures.
 2. React calculates the minimum required updates and performs them in an optimized manner, resulting in improved performance and responsiveness.
 3. React follows a unidirectional data flow, also known as one-way data binding. This means that data in a React application flows in a single direction, from parent components to child components.
 4. React uses a declarative syntax, allowing developers to describe how the UI should look based on the current application state. This makes the code more predictable, easier to read, and less prone to bugs compared to manually manipulating the DOM.
-5. React provides developers with a wealth of resources, ready-made components, and solutions to common problems, enabling faster development and reducing the learning curve.
 
   </p>
 
 </details>
 
 <details>
-  <summary>47. How do you programmatically navigate using React router? </summary>
+  <summary> 47. How do you programmatically navigate using React router? </summary>
 
 <p>
 
@@ -1391,7 +1389,6 @@ function App() {
     </BrowserRouter>
   );
 }
-
 export default App;
 ```
 
@@ -1466,7 +1463,6 @@ In the above example, we have three routes: `/`, `/about` and `/contact`. For ea
   <summary>50. What is the use of "gitignore" file? </summary>
 
   <p>
-
 
 `.gitignore` file is used to tell git which files or folders to ignore in a project.
 The `gitignore` file is used to specify which files and directories should be ignored by Git version control system. When working on a project, there are certain files that you may not want to track or include in your Git repository. The `gitignore` file allows you to explicitly declare these files and directories, preventing them from being committed or staged.

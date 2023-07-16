@@ -216,9 +216,7 @@ The font-family property is used to specify the font family for the text content
 <details>
   <summary>16. Why we use font-weight property?</summary>
   <p>
-
     The font-weight property is used to set how thick or thin characters in text should be displayed.
-
   </p>
 
 </details>
@@ -254,7 +252,7 @@ The margin is used to refers the space around an element, outside of any defined
  </details>
 
 <details>
-  <summary>19. What is the difference between margin and padding in CSS?</summary>
+  <summary>19. Could you explain the distinction between margin and padding in CSS?</summary>
   <p>
 
 | Margin                                                                                | Padding                                                                                |
@@ -294,7 +292,8 @@ The box-shadow property is used to add one or more shadows to an element. It all
   <summary>22. What is the used of hover selector in CSS?</summary>
   <p>
 
-The `:hover` selector is used to apply styles to an element when it is being hovered over by the mouse. It allows you to add interactive effects to elements on your web page.
+The `:hover` selector is used to apply styles to an element when it is being hovered over by the mouse.
+It allows you to add interactive effects to elements on your web page.
 
   </p>
 
@@ -304,14 +303,14 @@ The `:hover` selector is used to apply styles to an element when it is being hov
   <summary>23. Which CSS property is used to style the hyperlinks on hover (Mouse over)?</summary>
   <p>
 
-The CSS property used to style hyperlinks on hover (mouse over) is called `:hover`. It is a pseudo-class selector that targets an element when the user hovers over it with the mouse cursor.
+The `a:hover` property is used to define the style on mouse over event.
 
   </p>
 
 </details>
 
 <details>
-  <summary>24. How do you create a CSS animation or transition?</summary>
+  <summary>24. How can you create a CSS animation or transition?</summary>
   <p>
 
 To create a CSS animation or transition, use CSS properties and selectors to define how an element should behave and appear during the animation or transition.
@@ -379,15 +378,12 @@ There are five different types of positions in css :
 </details>
 
 <details>
-  <summary>29. What is the distinction between absolute and relative positioning in CSS?
+  <summary>29. Could you explain the distinction between absolute and relative positioning in CSS?
 </summary>
   <p>
 
-| Relative Positioning                                                                                   | Absolute Positioning                                                                                |
-| ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
-| Element retains its space in the document flow.                                                        | Element is completely removed from the normal document flow.                                        |
-| Element is positioned relative to its original position.                                               | Element is positioned relative to its closest position.                                             |
-| Uses CSS properties like top, right, bottom, and left to offset its position from its normal position. | Uses CSS properties like top, right, bottom, and left to specify the exact position of the element. |
+Absolute position is relative to parent element.
+Relative position is relative to original position.
 
   </p>
 
@@ -538,7 +534,7 @@ To create a responsive navigation menu using CSS, you can used CSS media queries
 </details>
 
 <details>
-  <summary>42. What is the concept of device breakpoints in media queries?</summary>
+  <summary>42. Could you please explain the concept of device breakpoints in media queries?</summary>
   <p>
 
 Media queries allow you to create responsive websites on all screen sizes from desktop to mobile.
@@ -628,23 +624,16 @@ The various positioning properties in CSS are `static`, `relative`, `absolute`, 
 </details>
 
 <details>
-  <summary>50. How you can control background image repetition in CSS?</summary>
+  <summary>50. How can you use CSS to control image repetition?</summary>
   <p>
 
-This property is used to repeat the image. It can repeat image in differnet direction
-
-`background-repeat` : repeat-x; This value is used to repeat the background image horizontally along the x-axis.
-
-`background-repeat` : repeat-y; This value is used to repeat the background image horizontally along the y-axis.
-
-`background-repeat` : repeat; This value is used to repeat the background image.
+By using `background-repeat` property, we can control image repetition.
 
 **Example :**
 
 ```css
-.container {
-  background-image: url("https://cdn-icons-png.flaticon.com/128/3595/3595455.png");
-  background-repeat: no-repeat;
+h3 {
+  background-repeat: none;
 }
 ```
 

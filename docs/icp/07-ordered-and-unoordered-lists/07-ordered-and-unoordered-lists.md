@@ -6,21 +6,17 @@ hide_table_of_contents: true
 
 # Unordered List & Ordered List
 
-### There are two types of list in HTML
-
 ### Unordered List
 
-Unordered list used to create a list of related items which have no specific order or sequence.
-
-`<ul>` stands for Unordered list
+An unordered list is used to create a list of related items that have no specific order or sequence. It is represented by the `<ul>` tag in HTML.
 
 **Syntax :**
 
 ```html
 <ul>
-  <li>list1</li>
-  <li>list2</li>
-  <li>list3</li>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
 </ul>
 ```
 
@@ -49,13 +45,13 @@ Unordered list used to create a list of related items which have no specific ord
 
 <img src="/icp/07/output-1.png" alt="output-1" width="600px"/>
 
-### Types
+### Types of Unordered Lists
 
-> **disc:** This list item will be marked as bullet small black circles (default).
+There are three types of unordered lists that you can use by specifying the type attribute within the `<ul>` tag.
 
-> **circle:** This list item will be marked to a circle.
-
-> **square:** This list item will be marked as square.
+* `type="disc"` (default): The list items are marked with small black circles.
+* `type="circle"`: The list items are marked with circles.
+* `type="square"`: The list items are marked with squares.
 
 **Syntax :**
 
@@ -119,9 +115,7 @@ Unordered list used to create a list of related items which have no specific ord
 
 ### Ordered List
 
-Ordered list used to create a list of related items which have specific order or sequence.
-
-`<ol>` stands for ordered list
+An ordered list is used to create a list of related items that have a specific order or sequence. It is represented by the `<ol>` tag in HTML.
 
 Example :
 
@@ -165,9 +159,11 @@ Example :
 
 <img src="/icp/07/output-4.png" alt="output-4" width="600px"/>
 
-### Types
+### Types of Ordered Lists
 
-> **type="1"** It defines the list items in number.This is the default value.
+There are different types of ordered lists that you can specify using the type attribute within the `<ol>` tag.
+
+* `type="1"` (default): The list items are numbered with Arabic numerals (1, 2, 3, etc.).
 
 **Code :**
 
@@ -193,7 +189,7 @@ Example :
 
 <img src="/icp/07/output-4.png" alt="output-4" width="600px"/>
 
-> **type="A"** It defines the list items in alphabetically ordered Capital Letter.
+* `type="A"`: The list items are numbered with uppercase letters (A, B, C, etc.).
 
 **Code :**
 
@@ -219,20 +215,24 @@ Example :
 
 <img src="/icp/07/output-5.png" alt="output-5" width="600px"/>
 
-> **type="a"** It defines list items in alphabetically ordered lowercase letters.
+* `type="a"`: The list items are numbered with lowercase letters (a, b, c, etc.).
 
-> **type="I"** It Defines list items in Uppercase roman number order.
+* `type="I"`: The list items are numbered with uppercase Roman numerals (I, II, III, etc.).
 
-> **type="i"** It Defines list items in lower roman number order.
+* `type="i"`: The list items are numbered with lowercase Roman numerals (i, ii, iii, etc.).
 
-## Start
+## Starting the List at a Specific Point
 
-We can start the list at a specific point then you can use the start type it accepts a particular position to start the list. Start always accepting numbers.
+You can start the ordered list at a specific point using the `start` attribute within the `<ol>` tag. This attribute specifies the value at which the list should start.
 
 **Syntax :**
 
 ```html
-<ol type="a" start="3"></ol>
+<ol start="3">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
 ```
 
 **Code :**

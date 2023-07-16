@@ -45,7 +45,7 @@ The above code will display the video specified by the `src` attribute. In this 
 The video tag supports various attributes to customize its behavior:
 
 1. `Controls`: Adds video controls such as play, pause, volume, and fullscreen toggle.
-2. `Height` and Wid`th: Sets the height and width of the video element.
+2. `Height` and `Width`: Sets the height and width of the video element.
 3. `Autoplay`: Automatically starts playing the video when the web page is loaded.
 4. `Muted`: Mutes the audio of the video.
 5. `Poster`: Displays an image as a placeholder before the video is loaded.

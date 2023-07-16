@@ -6,13 +6,21 @@ hide_table_of_contents: true
 
 # Iframe and Embed Tag
 
-Iframe tag is used for to integrate other webpage or the resource of another webpage.
+IThe `<iframe>` tag is used to embed content from another webpage or resource within your HTML document.
 
 **Syntax :**
 
 ```html
 <iframe src=" " height=" " width=" "> </iframe>
 ```
+
+### Explanation:
+
+* `src`: This attribute specifies the URL or source of the content you want to embed. It can be a webpage, an image, a video, or any other valid web resource.
+
+* `height`: This attribute sets the height of the `iframe` in pixels or as a percentage of the parent container.
+
+* `width`: This attribute sets the width of the `iframe` in pixels or as a percentage of the parent container.
 
 **Code :**
 
@@ -57,11 +65,11 @@ Iframe tag is used for to integrate other webpage or the resource of another web
 
 ## Target Attribute
 
-Target attribute are used to a name or a keyword that indicates where to display the content.
+The `target` attribute is used to specify where the content linked from the iframe should be displayed.
 
 ### `target= "_blank"` Attribute
 
-Target _blank attribute are used to open the linked document in a new tab.
+The `_blank` attribute is used to open the linked document in a new tab or window.
 
 **Code :**
 
@@ -86,6 +94,8 @@ Target _blank attribute are used to open the linked document in a new tab.
 **Output :**
 
 <img src="/icp/09/output-3.png" alt="output-3" width="600px"/>
+
+In this example, an `iframe` is created with a name of `myscreen`. The `Contact` and `About` links use the target attribute to specify that the linked content should be displayed in the `myscreen` iframe.
 
 ## Video Tag
 
@@ -145,13 +155,17 @@ Target _blank attribute are used to open the linked document in a new tab.
 
 ## Embed Tag
 
-Embed tag are used to open non html content like pdf file.
+The `<embed>` tag is used to embed non-HTML content, such as PDF files, within an HTML document.
 
 **Syntax :**
 
 ```html
 <embed src="" />
 ```
+
+### Explanation:
+
+`src`: This attribute specifies the URL or source of the non-HTML content you want to embed.
 
 **Code :**
 
@@ -175,3 +189,5 @@ Embed tag are used to open non html content like pdf file.
 **Output :**
 
 <img src="/icp/09/output-7.png" alt="output-7" width="600px"/>
+
+In this example, an embed tag is used to embed a PDF file named `Homework-3.pdf` within the HTML document. The type attribute specifies the MIME type of the embedded content.

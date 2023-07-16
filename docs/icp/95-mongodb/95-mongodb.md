@@ -1124,32 +1124,81 @@ In the above example, we can import the `express` module and create an instance 
 </details>
 
 <details>
-<summary>47. </summary>
+<summary>47. What is the significance of the "_id" field in MongoDB?</summary>
 <p>
+
+The "\_id" field in MongoDB is a special field that serves as the primary key for documents in a collection. It uniquely identifies each document within a collection and ensures its uniqueness across the entire database. The "\_id" field is automatically added to a document if not provided explicitly during document insertion.
+
+Key significance of the "\_id" field:
+
+1. **Uniqueness**: The "\_id" field ensures that each document in a collection has a unique identifier. This uniqueness is maintained across the collection and the database as a whole. It helps avoid conflicts and data duplication.
+
+2. **Primary Key**: MongoDB uses the "\_id" field as the primary key for the documents. This means that MongoDB uses it as the main reference for indexing and searching documents within a collection.
+
+3. **Custom "\_id" Values**: While MongoDB generates "\_id" values by default, you can also provide your own custom unique identifier when inserting documents.
+
+4. **Sharding**: The "\_id" field is especially important when using sharding in MongoDB. It is used to route and distribute documents across shards to ensure data is evenly distributed.
+
+5. **Sort Order**: When querying data without specific sorting criteria, MongoDB will naturally sort the documents by their "\_id" field in ascending order.
 
 </p>
 
 </details>
 
 <details>
-<summary>48. </summary>
+<summary>48. What are some of the advantages of MongoDB? </summary>
 <p>
+
+Some advantages of MongoDB are as follows:
+
+- MongoDB supports field, range-based, string pattern matching type queries. for searching the data in the database
+- MongoDB is very easy to scale up or down
+- MongoDB uses a dynamic database schema
+- MongoDB has inbuilt support for data partitioning (Sharding).
+- MongoDB support primary and secondary index on any fields
+- MongoDB basically uses JavaScript objects in place of procedures
 
 </p>
 
 </details>
 
 <details>
-<summary>49. </summary>
+<summary>49. How can you improve the performance of MongoDB queries?</summary>
 <p>
+
+Improving the performance of MongoDB queries involves optimizing various aspects of the database and application setup. Here are some strategies to enhance query performance:
+
+1. **Use Indexes**: Indexes improve query performance by allowing MongoDB to find and retrieve documents more efficiently. Analyze the query patterns and create appropriate indexes on the fields frequently used in queries.
+
+2. **Avoid Large Indexes**: While indexes are essential, having too many or excessively large indexes can negatively impact performance. Strike a balance between query optimization and index overhead.
+
+3. **Covered Queries**: Design queries in such a way that they can be satisfied solely using the index without having to access the actual documents. This reduces the amount of data that MongoDB needs to fetch and improves query speed.
+
+4. **Use Query Profiler**: MongoDB has a built-in query profiler that helps identify slow queries. Analyze the profiler output to find bottlenecks and areas for optimization.
+
+5. **Limit and Skip**: Avoid using excessive `limit()` and `skip()` in your queries, as they can lead to poor performance, especially with large data sets.
+
+6. **Proper Schema Design**: Design your schema according to the access patterns of your application. Properly normalized data and avoiding excessively nested arrays can lead to better performance.
+
+7. **Sharding**: For large-scale applications, consider sharding your data to distribute it across multiple servers. Sharding can significantly improve query performance and overall scalability.
 
 </p>
 
 </details>
 
 <details>
-<summary>50. </summary>
+<summary>50. How to initialized the node package manager in Mongodb?</summary>
 <p>
+
+**npm init -y :** This command initializes a new Node.js package in the current directory. The -y flag sets default options for all the prompts, allowing the initialization to proceed without requiring user input.
+
+```js
+      npm init -y
+```
+
+**Create index.js:** This step involves creating an index.js file. The index.js file typically serves as the entry point of the backend application.
+
+**edit package.json :** The package.json file contains metadata about the Node.js package and its dependencies. This step likely involves editing the package.json file to include necessary information about the backend application.
 
 </p>
 

@@ -25,6 +25,41 @@ Browsers are software applications used to access and view websites. Some popula
 
 An editor is a software tool used for writing and editing code. In web development, an editor is used to create HTML files and other related files such as CSS and JavaScript. One commonly used editor is Visual Studio Code (VS Code). It provides features like syntax highlighting, code suggestions, and debugging capabilities, making it popular among web developers.
 
+## Search Engine Optimization (SEO)
+
+Search Engine Optimization (SEO) is the practice of optimizing a website to improve its visibility and ranking in search engine results pages (SERPs). While HTML (Hypertext Markup Language) is the standard markup language for creating web pages, it plays a crucial role in implementing SEO techniques. Here are some key aspects of SEO in HTML:
+
+1.**Title Tags**: The title tag, defined within the `<title> ` element in the HTML `<head>` section, is an essential HTML element for SEO. It represents the title of a web page and appears as the clickable link in search engine results. It is advisable to include relevant keywords in the title tag to optimize it for search engines.
+
+**Example:**
+
+```html
+<head>
+  <title>My Website - Welcome</title>
+</head>
+```
+
+2. **Heading Tags:** HTML provides six levels of heading tags, from `<h1>` to `<h6>`, to structure content hierarchy on a web page. Search engines consider heading tags as important signals for understanding the page's structure and content. Properly utilizing heading tags, including relevant keywords, can enhance the SEO of your HTML.
+
+**Example:**
+
+```html
+<body>
+  <h1>Main Heading</h1>
+  <h2>Subheading</h2>
+  <h3>Subheading</h3>
+</body>
+```
+3. **Alt Text for Images**: When including images on your web page, using the alt attribute within the `<img>` tag provides alternative text that describes the image's content. This text is important for accessibility purposes and helps search engines understand the context of the image.
+
+**Example:**
+
+```html
+<img src="image.jpg" alt="Description of the image">
+```
+
+These are just a few examples of how HTML can be optimized for search engines. SEO also involves off-page factors like building backlinks, social signals, and user engagement metrics. Remember that SEO is an ongoing process, and staying up to date with the latest best practices and algorithm changes is essential for maintaining and improving your website's search engine visibility.
+
 ### Steps to download VS Code
   
   To download and install VS Code, follow these steps:  

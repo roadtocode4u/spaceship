@@ -12,17 +12,19 @@ Table tag allow us to arrange data into rows and columns.
 
 ### Table Row
 
-`<tr>` Represents a row in a table
+The `<tr>` tag represents a row in a table. It should be placed within the `<table>` element.
 
 ### Table Cell
 
-`<td>` Represents a cell in a table
+The` <td>` tag represents a cell in a table. It is used to define individual data cells within a row. Each `<td>` element should be placed within a `<tr>` element.
 
 ### Header Cell
 
-`<th>` Defines a header cell in a table
+The `<th>` tag is used to define header cells in a table. It represents the header row or column of the table. Typically, `<th>` elements are used within the `<thead>` section of the table.
 
 **Syntax :**
+
+Here's an example of the basic syntax for creating a table:
 
 ```html
 <table>
@@ -35,6 +37,8 @@ Table tag allow us to arrange data into rows and columns.
 ```
 
 **Code :**
+
+Here's an example of HTML code that creates a simple table with two rows and three columns:
 
 ```html
 <!DOCTYPE html>
@@ -122,7 +126,7 @@ Table tag allow us to arrange data into rows and columns.
 
 ## Colspan
 
-Colspan attribute we use for represents the number of columns in cell span.
+The `colspan` attribute is used to specify the number of columns a cell should span. It allows you to merge adjacent cells horizontally.
 
 **Code :**
 
@@ -171,7 +175,7 @@ Colspan attribute we use for represents the number of columns in cell span.
 
 ### Rowspan
 
-Rowspan attribute we use for represents the number of rows in cell span.
+The `rowspan` attribute is used to specify the number of rows a cell should span. It allows you to merge adjacent cells vertically.
 
 **Code :**
 

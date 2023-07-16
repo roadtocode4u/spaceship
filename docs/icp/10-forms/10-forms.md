@@ -6,11 +6,16 @@ hide_table_of_contents: true
 
 # Forms
 
-- Form is an HTML element which is used to take input from user.
-- Forms are created using `<form>`.
+Forms in HTML are used to collect input from users. They can include various elements such as text fields, checkboxes, radio buttons, dropdown menus, buttons, and more. In this guide, we'll explore the different form elements and their usage.
+
+## Form Structure
+
+A form is created using the `<form>` element. It serves as a container for form controls and defines the boundaries of the form.
 
 ```html
-<form></form>
+<form>
+  <!-- Form controls go here -->
+</form>
 ```
 
 `<form>`is opening tag.
@@ -31,12 +36,14 @@ hide_table_of_contents: true
 
 ## Input Tag
 
-- Input tag specifies an input filed where the user can enter data.
+The `<input>` tag is used to create different types of input fields where users can enter data.
 
-- Input box is created using `<input>` tag.
+### Text Input
+
+The `type="text"` attribute creates a text input field where users can enter single-line text.
 
 ```html
-<input></input>
+<input type="text" />
 ```
 
 ### How to take input from user
@@ -90,7 +97,7 @@ hide_table_of_contents: true
 
 ### Password
 
-- Password is attribute which is invisible to the user in password field.
+The `type="password"` attribute creates a password input field where entered characters are masked for security.
 
 **Code :**
 
@@ -204,7 +211,7 @@ hide_table_of_contents: true
 
 ### required
 
-- It is specifies that the element is mandatory to filled out before submitting the form.
+- The `required` attribute indicates that an input field must be filled out before submitting the form.
 
 **Code :**
 

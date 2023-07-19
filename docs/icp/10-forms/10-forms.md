@@ -18,9 +18,9 @@ A form is created using the `<form>` element. It serves as a container for form 
 </form>
 ```
 
-`<form>`is opening tag.
+`<form>` is opening tag.
 
-`</form>`is closing tag.
+`</form>` is closing tag.
 
 ## Forms Contain
 
@@ -145,7 +145,9 @@ The `type="password"` attribute creates a password input field where entered cha
 
 <img src="/icp/10/output-11.png" alt="output-11" width="600px"/>
 
-📝Note:- If we do not enter the proper email address then it will display error like this
+:::tip
+If we do not enter the proper email address then it will display error like this
+:::
 
 **Code :**
 
@@ -186,8 +188,8 @@ The `type="password"` attribute creates a password input field where entered cha
 
 - There are two type of button <br />
 
-1. Submit button :- it is used to submit form data.
-2. Button :- it is used to trigger action.
+1. **Submit button :-** It is used to submit form data.
+2. **Button :-** It is used to trigger action.
 
 **Code :**
 
@@ -501,14 +503,55 @@ The accept attribute specifies what type of file user can pick from their device
 
 The accept attribute can only be used with file tag.
 
-Different accept attribute value :
-r
-`image/*` = image files <br/>
-`audio/*` = audio files <br/>
-`video/*` = video files <br/>
-`application/*` = all type application <br/>
-`application/pdf` = pdf file <br/>
-`image/png` = only png extension images <br/>
+**Different accept attribute value :**<br/>
+
+- **`image/*` = image files**
+
+**Code :**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Picker</title>
+  </head>
+  <body>
+    <form>
+      <label for="fileInput"> Upload All Type Of Images</label>
+      <input type="file" id="fileInput" accept="image/*" />
+    </form>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/10/output-19.png" alt="output-19" width="600px"/>
+
+- **`audio/*` = audio files**
+
+**Code :**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Picker</title>
+  </head>
+  <body>
+    <form>
+      <label for="fileInput"> Upload Audio</label>
+      <input type="file" id="fileInput" accept="audio/*" />
+    </form>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/10/output-20.png" alt="output-20" width="600px"/>
+
+- **`application/pdf` = pdf file**
 
 **Code :**
 
@@ -530,3 +573,93 @@ r
 **Output :**
 
 <img src="/icp/10/output-18.png" alt="output-18" width="600px"/>
+
+- **`video/*` = video files**
+
+**Code :**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Picker</title>
+  </head>
+  <body>
+    <form>
+      <label for="fileInput"> Upload Video </label>
+      <input type="file" id="fileInput" accept="video/*" />
+    </form>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/10/output-21.png" alt="output-21" width="600px"/>
+
+- `application/*` = all type application
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Picker</title>
+  </head>
+  <body>
+    <form>
+      <label for="fileInput"> Upload Application </label>
+      <input type="file" id="fileInput" accept="application/*" />
+    </form>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/10/output-22.png" alt="output-22" width="600px"/>
+
+- **`image/png` = only png extension images**
+
+**Code :**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Picker</title>
+  </head>
+  <body>
+    <form>
+      <label for="fileInput"> Upload PNG format Images Only</label>
+      <input type="file" id="fileInput" accept="image/png" />
+    </form>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/10/output-24.png" alt="output-24" width="600px"/>
+
+- **We can also Upload multiple Type of Files.**
+
+**Code :**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Picker</title>
+  </head>
+  <body>
+    <form>
+      <label for="fileInput"> Upload All Type Of Images</label>
+      <input type="file" id="fileInput" accept="video/*,image/png" />
+    </form>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/10/output-25.png" alt="output-25" width="600px"/>

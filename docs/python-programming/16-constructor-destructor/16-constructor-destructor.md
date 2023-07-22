@@ -4,15 +4,18 @@ description: "Constructor and Destructor"
 hide_table_of_contents: true
 ---
 
-## Constructor 
+## Constructor
+
 Constructor is special function which invokes automatically at the time of object creation.
 
-**Syntax** 
+**Syntax :**
+
 ```python showLineNumbers='true' title='constructor_syntax.py'
 def __init__ (self):
 ```
 
-**Example** 
+**Example :**
+
 ```python showLineNumbers='true' title='constructor.py'
 class ATM:
 
@@ -25,11 +28,17 @@ class ATM:
 obj = ATM()
 obj.normal_function()
 ```
-**Output**
->Welcome to BOB !   
->Normal Function Called...
+
+**Output :**
+
+> Welcome to BOB !  
+> Normal Function Called...
+
+**Example Exaplanation :**
 
 In the above example, we create class `ATM` in this class create function `normal_function()` with a `self` parameter then create a constructor with a `self` parameter & print massage, create the object for `ATM` that is `obj` and call function `normal_function()`.
+
+**Example :**
 
 ```python showLineNumbers='true' title='constructor.py'
 class sample:
@@ -42,19 +51,24 @@ class sample:
 obj = sample()
 obj.showSample("code")
 ```
-**Output**
->Constructer Called..  
->This is sample code
+
+**Output :**
+
+> Constructer Called..  
+> This is sample code
 
 ## Destructor
+
 Destructor invokes when object goes out of scope .
 
-**Syntax**
+**Syntax :**
+
 ```python showLineNumbers='true' title='destructor_syntax.py'
 def __del__(self):
 ```
 
-**Example**
+**Example :**
+
 ```python showLineNumbers='true' title='destructor.py'
 class ATM:
 
@@ -70,10 +84,14 @@ class ATM:
 obj = ATM()
 obj.normal_function()
 ```
-**Output**
->Welcome to BOB !  
->Normal Function Called...  
->Destructor Called...  
+
+**Output :**
+
+> Welcome to BOB !  
+> Normal Function Called...  
+> Destructor Called...
+
+**Example :**
 
 ```python showLineNumbers='true' title='destructor.py'
 class ATM:
@@ -91,10 +109,9 @@ obj = ATM()
 obj.normal_function()
 del obj
 ```
-**Output**
->Welcome to BOB !  
->Normal Function Called...  
->Destructor Called ...  
->Destructor Called...    
-=======
---- 
+
+**Output :**
+
+> Welcome to BOB !
+> Normal Function Called...
+> Destructor Called ...

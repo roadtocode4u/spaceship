@@ -7,7 +7,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Spaceship 🛸",
-  tagline: "Handbook by Road To Code for Programming Courses",
+  tagline:
+    "Spaceship is a mini Wikipedia 📖 for computer science students, created by RoadToCode.",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   staticDirectories: ["public", "static", "docs/icp/assets"],

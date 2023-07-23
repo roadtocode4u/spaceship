@@ -18,7 +18,7 @@ We appreciate and welcome contributions from the community to help expand and im
 2. Implement your changes, add new content, or fix any existing issues.
 3. Open a new pull request in this repository.
 
-To ensure that your contributions align with our goals of maintaining a beginner-friendly handbook and providing valuable resources for computer science students, please refer to the [.github/CONTRIBUTING.md](.github/CONTRIBUTING.md) file for proper contribution guidelines.
+To ensure that your contributions align with our goals of maintaining a beginner-friendly and valuable resources for computer science students, please refer to the [.github/CONTRIBUTING.md](.github/CONTRIBUTING.md) file for proper contribution guidelines.
 
 ## Star History 📈
 

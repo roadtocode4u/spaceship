@@ -345,27 +345,75 @@ In the above example, the `<table>` tag is used to create a table. The `<tr>` ta
   <summary> 21. What is the purpose of the &lt;ul&gt; and &lt;ol&gt; tags in HTML? </summary>
   <p>
    
-The purpose of the &lt;ul&gt; is used to create an unordered list. The items in the unordered list are displayed with bullet points. For example: <br/><br/>
+The purpose of the &lt;ul&gt; is used to create an unordered list. The items in the unordered list are displayed with bullet points. <br/>
+
+`Syntax`
 
 ```html
-<ol>
+<ul>
   <li>First item</li>
   <li>Second item</li>
   <li>Third item</li>
-</ol>
+</ul>
 ```
 
-The purpose of the &lt;ol&gt; is used to create an ordered list. The items in the ordered list are displayed with numbers or letters. For example:
+For example:
 
 ```html
-<dl>
-  <ul>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ordered List</title>
+  </head>
+  <body>
+    <h1>Syllabus of RTC</h1>
+
+    <ul>
+      <li>HTML5</li>
+      <li>CSS</li>
+      <li>Git & Github</li>
+      <li>JavaScript</li>
+    </ul>
+  </body>
+</html>
+```
+
+In this example, we have created an unordered list containing four items "HTML5", "CSS", "Git &Github" and "JavaScript". When you open this HTML file in a web browser it will display the list.
+
+- The purpose of the &lt;ol&gt; is used to create an ordered list. The items in the ordered list are displayed with numbers or letters.
+
+`Syntax`
+
+```html
+  <ol>
     <li>First item</li>
     <li>Second item</li>
     <li>Third item</li>
   </ul>
-</dl>
 ```
+
+For example:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List</title>
+  </head>
+  <body>
+    <h1>Features of RTC</h1>
+
+    <ol>
+      <li>Live + Recorded Classes</li>
+      <li>Teaching Assistance for Doubt Solving</li>
+      <li>Notes for Quick Revision</li>
+      <li>Low Fees</li>
+    </ol>
+  </body>
+</html>
+```
+
+In the above example, we can create an ordered list. This list contains features of RTC such as "Live+ Recorded Classes", "Teaching Assistance for Dout Solving", "Low Fees" and "Notes for Quick Revision".
 
   </p>
 

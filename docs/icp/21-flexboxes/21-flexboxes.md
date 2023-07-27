@@ -694,15 +694,17 @@ When the value of **flex-direction** is set to **column**, the **justify-content
 
 ### Flex-wrap
 
-The flex-wrap property is used to control how flex items are displayed and wrapped within a flex container when there is not enough space to fit all the items on a single line.
+This is a simple HTML and CSS example demonstrating the use of Flexbox with the flex-wrap property. Flexbox is a powerful layout system in CSS that allows for easy arrangement and alignment of elements within a container. The flex-wrap property specifically controls how flex items are displayed and wrapped when there is not enough space to fit all the items on a single line.
 
-There are three values of flex-wrap property :
+**Flex-Wrap Property:**
 
-1. `nowrap (default)` : This value indicates that all flex items should be displayed on a single line.
+The `flex-wrap` property accepts three values:
 
-2. `wrap` : This value indicates that the flex items should wrap onto multiple lines when there is not enough space. The items will stack vertically in this case.
+1. `nowrap (default)` : This value indicates that all flex items should be displayed on a single line, regardless of the available space.
 
-3. `wrap-reverse` : This value is similar to wrap, but it causes the flex items to wrap in reverse order, meaning they will stack vertically in reverse order from the normal flow.
+2. `wrap` : This value indicates that the flex items should wrap onto multiple lines when there is not enough space horizontally. The items will stack vertically in this case.
+
+3. `wrap-reverse` : This value is similar to `wrap`, but it causes the flex items to wrap in reverse order, meaning they will stack vertically in reverse order from the normal flow.
 
 **Code :**
 

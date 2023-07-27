@@ -365,8 +365,6 @@ In this direction, child items are packed **end** of the flex-direction.
 
 In this direction, child items are **center** along the line.
 
-<img src="/icp/21/img-8.png" alt="img-8" width="400px" />
-
 **Code :**
 
 ```html
@@ -404,7 +402,7 @@ In this direction, child items are **center** along the line.
 
 **Output :**
 
-<img src="/icp/21/output-7.png" alt="output-7" width="600px"/>
+<img src="/icp/21/output-17.png" alt="output-8" width="600px" />
 
 4. `justify-content: space-between;`
 
@@ -545,7 +543,7 @@ Child items are evenly distributed within the alignment container. In the space-
 
 When the **flex-direction** is a **row** then **justify-content** control **horizontally**. This means the X-axis but you can control the opposite axis. This means the Y-axis then you use the property align-items. Align items are used to control items on the opposite axis.
 
-1. `align-items: flex-start`;
+1. `align-items: start;`
 
 Items are placed at the start of the Opposite (Y-axis) axis.
 
@@ -565,15 +563,16 @@ Items are placed at the start of the Opposite (Y-axis) axis.
         width: 100px;
         margin: 10px;
         font-size: 50px;
-        padding: 10px;
+        padding: 5px;
       }
+
       .conatiner {
         background-color: aqua;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 500px;
+        align-items: start;
+        height: 300px;
+        width: 600px;
       }
     </style>
   </head>
@@ -590,9 +589,9 @@ Items are placed at the start of the Opposite (Y-axis) axis.
 
 **Output :**
 
-<img src="/icp/21/output-14.png" alt="output-14" width="600px"/>
+<img src="/icp/21/output-18.png" alt="output-18" width="600px"/>
 
-2. `align-item: flex-end`;
+2. `align-item: end;`
 
 Items are placed at the end of the Opposite (Y-axis) axis.
 
@@ -618,8 +617,7 @@ Items are placed at the end of the Opposite (Y-axis) axis.
         background-color: aqua;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        align-items: end;
         height: 500px;
       }
     </style>
@@ -639,7 +637,7 @@ Items are placed at the end of the Opposite (Y-axis) axis.
 
 <img src="/icp/21/output-13.png" alt="output-13" width="600px"/>
 
-3. `align-item: center`;
+3. `align-item: center;`
 
 Items are centered in the Opposite axis.
 

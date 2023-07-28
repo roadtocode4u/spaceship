@@ -55,7 +55,7 @@ The max-width are specifies the maximum width of a particular device.
   <head>
     <title>Media Query</title>
     <style>
-      .test-btn {
+      .btn {
         width: 400px;
         height: 50px;
         font-size: 20px;
@@ -64,7 +64,7 @@ The max-width are specifies the maximum width of a particular device.
       }
 
       @media screen and (max-width: 500px) {
-        .test-btn {
+        .btn {
           background-color: blue;
           width: 300px;
           height: 80px;
@@ -75,7 +75,7 @@ The max-width are specifies the maximum width of a particular device.
   </head>
 
   <body>
-    <button class="test-btn">This Is Button</button>
+    <button class="btn">This Is Button</button>
   </body>
 </html>
 ```
@@ -113,7 +113,7 @@ The min-width are specifies the `minimum` width of a particular device.
   <head>
     <title>Media Query</title>
     <style>
-      .test-btn {
+      .btn {
         width: 400px;
         height: 50px;
         font-size: 20px;
@@ -122,7 +122,7 @@ The min-width are specifies the `minimum` width of a particular device.
       }
 
       @media screen and (min-width: 600px) {
-        .test-btn {
+        .btn {
           background-color: blue;
           width: 300px;
           height: 50px;
@@ -133,7 +133,7 @@ The min-width are specifies the `minimum` width of a particular device.
   </head>
 
   <body>
-    <button class="test-btn">This Is Button</button>
+    <button class="btn">This Is Button</button>
   </body>
 </html>
 ```

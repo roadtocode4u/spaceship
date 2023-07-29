@@ -4,23 +4,19 @@ description: Media Queries
 hide_table_of_contents: true
 ---
 
-# Media Queries
+Media Queries allow you to create responsive websites on all screen sizes from desktop to mobile.
 
-## Responsive design using media query
+<img src="/icp/22/output-16.png" alt="img-1" width="400px" />
 
-Media Queries allow you to create responsive websites on all screen sizes, from desktop to mobile.
+- In a big screen you can show all possible elements.
 
-**Desktop**
+- In a small screen you can show only important elements.
 
-<img src="/icp/22/img-1.png" alt="img-1" width="400px" />
+  **For example :**
 
-**Phone**
+<img src="/icp/22/output-17.png" alt="img-2" width="400px" />
 
-<img src="/icp/22/img-2.png" alt="img-2" width="400px" />
-
-> In a Big Screen You can show all possible Elements.
-
-> In a Small Screen You can show Only Important Elements.
+In the above example, we can store the water in different containers like can, jar, bottle and glass. The water takes the shape of a container like we can store the water in `jar` the water takes a shape of `jar`. Also we can store the water in a bottle, jar and glass the water takes the shape of a bottle, glass and jar. Same as our webpage. The webpage can be opened on different devices the webpage takes the shape of a device. Suppose a webpage is in a laptop then it takes the shape of a laptop that contains images and icons in the webpages.
 
 ## Device Breakpoint
 
@@ -30,7 +26,15 @@ Media Queries allow you to create responsive websites on all screen sizes, from 
 4. Laptops / desktops : greater than `992px` and less than `1200px`
 5. TV/Large desktop : greater than `1200px`
 
-Media Query calculate screen size and if it matches you passed screen size and media query screen size then media query will apply effect.
+### Rules for creating website responsive:
+
+1. Keeps the elements or cards horizontally on big screens. Arrange elements vertically on small screens.
+
+2. Keep dimensions of text, images and buttons large on larger screens or small on smaller screens.
+
+3. Use icons on smaller devices insted of text if possible.
+
+- Media Query calculate `screen size` and if it matches you passed screen size and media query screen size then media query will apply effect.
 
 **max-width**
 
@@ -43,7 +47,7 @@ The max-width are specifies the maximum width of a particular device.
 }
 ```
 
-**Code :**
+**For example :**
 
 ```html
 <!DOCTYPE html>
@@ -51,7 +55,7 @@ The max-width are specifies the maximum width of a particular device.
   <head>
     <title>Media Query</title>
     <style>
-      .test-btn {
+      .btn {
         width: 400px;
         height: 50px;
         font-size: 20px;
@@ -60,7 +64,7 @@ The max-width are specifies the maximum width of a particular device.
       }
 
       @media screen and (max-width: 500px) {
-        .test-btn {
+        .btn {
           background-color: blue;
           width: 300px;
           height: 80px;
@@ -71,7 +75,7 @@ The max-width are specifies the maximum width of a particular device.
   </head>
 
   <body>
-    <button class="test-btn">This Is Button</button>
+    <button class="btn">This Is Button</button>
   </body>
 </html>
 ```
@@ -86,11 +90,13 @@ The max-width are specifies the maximum width of a particular device.
 
 <img src="/icp/22/output-2.png" alt="output-2" width="600px"/>
 
-In the above outputs in the normal screen 1st output will display and if the screen size is less than 500px then the media query effects will apply then that's the time 2nd output will display on the screen.
+**Example explanation :**
+
+In the above example, in the normal screen 1st output will display and if the screen size is less than 500px then the media query effects will apply then that's the time 2nd output will display on the screen.
 
 **min-width**
 
-The min-width are specifies the minimum width of a specific device.
+The min-width are specifies the `minimum` width of a particular device.
 
 **Syntax :**
 
@@ -99,7 +105,7 @@ The min-width are specifies the minimum width of a specific device.
 }
 ```
 
-**Code :**
+**For example :**
 
 ```html
 <!DOCTYPE html>
@@ -107,7 +113,7 @@ The min-width are specifies the minimum width of a specific device.
   <head>
     <title>Media Query</title>
     <style>
-      .test-btn {
+      .btn {
         width: 400px;
         height: 50px;
         font-size: 20px;
@@ -116,7 +122,7 @@ The min-width are specifies the minimum width of a specific device.
       }
 
       @media screen and (min-width: 600px) {
-        .test-btn {
+        .btn {
           background-color: blue;
           width: 300px;
           height: 50px;
@@ -127,7 +133,7 @@ The min-width are specifies the minimum width of a specific device.
   </head>
 
   <body>
-    <button class="test-btn">This Is Button</button>
+    <button class="btn">This Is Button</button>
   </body>
 </html>
 ```
@@ -142,7 +148,9 @@ The min-width are specifies the minimum width of a specific device.
 
 <img src="/icp/22/output-3.png" alt="output-3" width="600px"/>
 
-In the above outputs in the normal screen 1st output will display and if the screen size is less than 600px then the media query effects will apply then that's the time 2nd output will display on the screen.
+**Example explanation :**
+
+In the above example, in the normal screen 1st output will display and if the screen size is less than 600px then the media query effects will apply then that's the time 2nd output will display on the screen.
 
 **min-width and max-width at same time**
 
@@ -153,36 +161,65 @@ media screen and (min-width: 600px) and (max-width: 800px) {
 }
 ```
 
-**Code :**
+**For example :**
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Media Query</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <style>
-      .test-btn {
-        width: 400px;
-        height: 50px;
-        font-size: 20px;
+      .btn {
         background-color: tomato;
-        color: white;
+        width: 300px;
+        height: 80px;
+        font-size: 40px;
+      }
+      /* Mobile Devices */
+
+      @media screen and (min-width: 600px) and (max-width: 768px) {
+        .btn {
+          background-color: aquamarine;
+        }
       }
 
-      @media screen and (min-width: 600px) and (max-width: 800px) {
-        .test-btn {
-          background-color: black;
-          border: 25px;
+      /* Tablet Devices */
+
+      @media screen and (min-width: 769px) and (max-width: 992px) {
+        .btn {
+          background-color: blue;
+        }
+      }
+
+      /* Dekstop device */
+
+      @media screen and (min-width: 993px) and (max-width: 1200px) {
+        .btn {
+          background-color: chartreuse;
         }
       }
     </style>
   </head>
 
   <body>
-    <button class="test-btn">This Is Button</button>
+    <button class="btn">This is button</button>
   </body>
 </html>
 ```
+
+**Output :**
+
+<img src="/icp/22/output-20.png" alt="output-20" width="600px"/>
+
+**Screen size is less than 600px**
+
+<img src="/icp/22/output-21.png" alt="output-21" width="600px"/>
+
+**Example explanation :**
+
+In the above example, in the normal screen 1st output will display and if the screen size is less than 600px then the media query effects will apply then that's the time 2nd output will display on the screen.
 
 ## Colors in CSS
 

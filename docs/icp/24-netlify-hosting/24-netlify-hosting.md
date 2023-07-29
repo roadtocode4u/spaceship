@@ -4,6 +4,8 @@ description: Netlify Hosting
 hide_table_of_contents: true
 ---
 
+Netlify is a popular cloud platform that specializes in web development and hosting services. It is designed to simplify the process of deploying, managing, and scaling web applications and websites.
+
 ## 🤔 How to host or publish Website on Netlify ?
 
 ### 📝 Steps to Create Account in Netlify

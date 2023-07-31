@@ -68,7 +68,7 @@ In the above example, the `&nbsp;` is used to add space between the words "Hello
 </details>
 
 <details>
-<summary> 7. What is the used of &lt;p&gt; tag in HTML?</summary>
+<summary> 7. What is the use of &lt;p&gt; tag in HTML?</summary>
 <p>
       
 The paragraph tag is used to define a block of text. The paragraph tag start from new line. It provide margin and line spacing.<br/> The example of &lt;p&gt; tag is <br/>
@@ -207,7 +207,7 @@ The &lt;span&gt; tag helps you to style or manipulate specific parts of your tex
   <summary> 15. How can you create a hyperlink that opens in a new tab or window? </summary>
   <p>
    
-To create a link that opens in a new tab or window in HTML you can use target_blank attribute of the &lt;br&gt;. The example of how to create a hyperlink that opens in a new tab:
+To create a link that opens in a new tab or window in HTML you can use target_blank attribute. The example of how to create a hyperlink that opens in a new tab:
 
 ```html
 <a href="https://www.roadtocode.org/" target="_blank">text</a>
@@ -225,7 +225,9 @@ In the above example, the href attribute is specifies the URL of the linked docu
    
   There are two types of lists in HTML.<br/><br/>
 
-1. Ordered list: Ordered list represent the numbered list. These are lists that are numbered. They are created using the &lt;ol&gt; tag. The example how of ordered list is:
+1. Ordered list: Ordered list represent the numbered list. These lists are numbered. They are created using the &lt;ol&gt; tag.
+
+For example:
 
 ```html
 <ol>
@@ -235,7 +237,9 @@ In the above example, the href attribute is specifies the URL of the linked docu
 </ol>
 ```
 
-2. Unordered list: Unordered list represents bullet points. These are lists that have bullet points. They are created using the &lt;ul&gt; tag. The example of unordered list is:
+2. Unordered list: Unordered list represents bullet points. These lists have bullet points. They are created using the &lt;ul&gt; tag.
+
+For example:
 
 ```html
 <dl>
@@ -255,13 +259,15 @@ In the above example, the href attribute is specifies the URL of the linked docu
   <summary> 17. What is anchor tag in HTML? </summary>
   <p>
    
-The anchor tag in HTML is used to create clickable links that redirect one webpage to other web pages. The href attribute to specify the destination URL or target location. The text or content placed between the opening and closing. The example of anchor tag is:
+The anchor tag in HTML is used to create clickable links that redirect one webpage to other web pages. The href attribute to specify the destination URL or target location. The text or content placed between the opening and closing.
+
+For example:
 
 ```html
 <a href="https:www.google.com/"></a>
 ```
 
-In the above example the anchor tag is used to create hyperlink to the google website. When user clicks on the link they will be taken to the google website. the href attribute specifies URL of website you want to link to.
+In the above example the anchor tag is used to create hyperlink to the google website. When user clicks on the link they will be taken to the google website. The href attribute specifies URL of website you want to link to.
 
   </p>
 
@@ -271,7 +277,9 @@ In the above example the anchor tag is used to create hyperlink to the google we
   <summary> 18. What is a subscript tag? </summary>
   <p>
     
-The  &lt;sub&gt; tag is used in HTML to create subscript text, which is text that is smaller and lower than the surrounding text. To use the &lt;ul&gt; tag, that wrap the text you want to appear as subscript inside the tag. Here the example:
+The  &lt;sub&gt; tag is used in HTML to create subscript text, which is text that is smaller and lower than the surrounding text.
+
+For example:
 
 ```html
 H<sub>2</sub>O
@@ -279,11 +287,13 @@ H<sub>2</sub>O
 
 In the above example, the number "2" will displayed as subscript text.
 
-You can also use CSS to style the subscript text, such as changing the font size or color. For example:
+You can also use CSS to style the subscript text, such as changing the font size or color.
+
+For example:
 
 ```css
 sub {
-  font-size: 0.8em;
+  font-size: 10px;
   color: blue;
 }
 ```
@@ -316,7 +326,8 @@ The attribute are used for creating table in HTML is<br/>
 4. &lt;th&gt; tag: The &lt;th&gt; tag is used to create table headers.<br/>
 5. colspan: The colspan attribute is used to merge multiple cells horizontally. <br/>
 6. rowspan: The rowspan attribute is used to merge multiple cells vertically. <br/><br/>
-   Here the example to create table:
+
+For example:
 
 ```html
 <table>
@@ -378,7 +389,7 @@ For example:
 </html>
 ```
 
-In this example, we have created an unordered list containing four items "HTML5", "CSS", "Git &Github" and "JavaScript". When you open this HTML file in a web browser it will display the list.
+In this example, we created an unordered list containing four items "HTML5", "CSS", "Git &Github" and "JavaScript". When you open this HTML file in a web browser it will display the list.
 
 - The purpose of the &lt;ol&gt; is used to create an ordered list. The items in the ordered list are displayed with numbers or letters.
 
@@ -413,7 +424,7 @@ For example:
 </html>
 ```
 
-In the above example, we can create an ordered list. This list contains features of RTC such as "Live+ Recorded Classes", "Teaching Assistance for Dout Solving", "Low Fees" and "Notes for Quick Revision".
+In the above example, we created an ordered list. This list contains features of RTC such as "Live+ Recorded Classes", "Teaching Assistance for Dout Solving", "Low Fees" and "Notes for Quick Revision".
 
   </p>
 
@@ -476,7 +487,9 @@ To create an ordered list with Roman numerals (I, II, III) in HTML, you can use 
   <summary> 25. what is the use of video tag in HTML?</summary>
   <p>
       
-The &lt;video&gt; tag in HTML is used to display videos on a web page. It allows you to play videos directly in the browser without the need for separate video player. The example is:
+The &lt;video&gt; tag in HTML is used to display videos on a web page. It allows you to play videos directly in the browser without the need for separate video player.
+
+For example:
 
 ```html
 <video src="myvideo.mp4" controls>
@@ -494,7 +507,9 @@ In this example, the `src` attribute specifies the URL of the video file to be p
   <summary> 26. How can you add a background image to an HTML element? </summary>
   <p>
     
-To add a background image to an HTML element, you can use the `background-image` property in CSS. For example:
+To add a background image to an HTML element, you can use the `background-image` property in CSS.
+
+For example:
 
 ```html
 <style>
@@ -520,7 +535,9 @@ In this example, we use the `.my-element` class to target a `<div>` element and 
   <summary>27. What is the purpose of the &lt;iframe&gt; tag in HTML? </summary>
   <p>
    
-The purpose of the &lt;iframe&gt; tag is used to embed another HTML document into the current document. It allows us to display the content of another website on our own webpage. For example:
+The purpose of the &lt;iframe&gt; tag is used to embed another HTML document into the current document. It allows us to display the content of another website on our own webpage.
+
+For example:
 
 ```html
 <iframe src="https://www.google.com"></iframe>
@@ -536,7 +553,9 @@ In the above example, the src attribute specifies the URL of the web page to be 
   <summary> 28. How can you create a dropdown menu in HTML? </summary>
   <p>
     
-To create a dropdown menu in HTML, you can use the &lt;select&gt; and &lt;option&gt; elements. The drop-down menu is a user interface control that allows users to choose one value from multiple options. The &lt;select&gt; element creates the dropdown menu. And the &lt;option&gt; element creates the individual options in the menu.The example of drop-down menu is: <br/>
+To create a dropdown menu in HTML, you can use the &lt;select&gt; and &lt;option&gt; elements. The drop-down menu is a user interface control that allows users to choose one value from multiple options. The &lt;select&gt; element creates the dropdown menu. And the &lt;option&gt; element creates the individual options in the menu.
+
+For example:
 
 ```html
 <select id="my-dropdown" name="my-dropdown">
@@ -556,7 +575,9 @@ In the above example, we use the `<select>` tag to create the dropdown menu, and
   <summary> 29. What is the purpose of the &lt;label&gt; tag in HTML forms? </summary>
   <p>
    
-The purpose of the &lt;label&gt; tag is to specify a label for &lt;input&gt; tag. The label is a normal text, its shows information about your input element. For example:
+The purpose of the &lt;label&gt; tag is to specify a label for &lt;input&gt; tag. The label is a normal text, its shows information about your input element.
+
+For example:
 
 ```html
 <label for="username">Username:</label>
@@ -573,7 +594,9 @@ In the above example, the `<label>` element is associated with the `<input>` ele
   <summary> 30. What is checkbox in HTML and how to create it? </summary>
   <p>
    
-Checkbox in HTML is a user interface element that allows users to select one or more options from  multiple options. To create a checkbox in HTML, you can use the &lt;input&gt; tag with the type attribute set to checkbox. For example:
+Checkbox in HTML is a user interface element that allows users to select one or more options from  multiple options. To create a checkbox in HTML, you can use the &lt;input&gt; tag with the type attribute set to checkbox.
+
+For example:
 
 ```html
 <input type="checkbox" id="fruit1" name="fruit" value="apple" />
@@ -596,7 +619,9 @@ In this example, we have three checkboxes, each with a unique `id`, `name`, and 
   <summary>31. What is the purpose of the &lt;audio&gt; tag? </summary>
   <p>
    
-The purpose of the &lt;audio&gt; tag is used to embed audio content, such as music or sound files, directly into a web page. For example:
+The purpose of the &lt;audio&gt; tag is used to embed audio content, such as music or sound files, directly into a web page.
+
+For example:
 
 ```html
 <audio controls>
@@ -657,7 +682,9 @@ The target attribute in HTML is used to specify where to open the linked documen
   <summary> 34. What is the value attribute in form Tag? </summary>
   <p>
    
- The value attribute are used to specifies the value of an input element. The value attribute represent the default value for the input element. For example:
+ The value attribute are used to specifies the value of an input element. The value attribute represent the default value for the input element. 
+ 
+ For example:
 
 ```html
 <label for="name">Enter Your Name</label>
@@ -675,6 +702,7 @@ In this example, the `value` attribute is set to "Harshda", so the text input fi
   <p>
    
 &lt;div&gt; tag is used for create division, seperate block or a section in an HTML document. The div tag is a block element means it occupies full space. Div tag starts on a new line.<br/>
+
 For Example:
 
 ```html
@@ -703,7 +731,9 @@ The `<span>` tag is used to highlight a single word within a sentence.
   <summary> 36. what is button tag? </summary>
   <p>
    
- The button tag in HTML is used to create a clickable button on webpage. It represents a user interface element that interact with the user to perform actions. For example:
+ The button tag in HTML is used to create a clickable button on webpage. It represents a user interface element that interact with the user to perform actions.
+ 
+  For example:
 
 ```html
 <button type="submit" class="btn">Submit</button>
@@ -770,7 +800,7 @@ To add buttons in HTML, you can use the &lt;button&gt; tag. Here the example to 
 <button>Click me!</button>
 ```
 
-The above example,the &lt;button&gt; tag create a button that displays the text "Click me!" on the webpage. When the button is clicked, it will not perform any action by default.
+In the above example,the &lt;button&gt; tag create a button that displays the text "Click me!" on the webpage. When the button is clicked, it will not perform any action by default.
 
   </p>
 
@@ -780,7 +810,9 @@ The above example,the &lt;button&gt; tag create a button that displays the text 
   <summary> 41. What is the alt attribute in HTML? </summary>
   <p>
    
-The alt attribute is used to provide the alternative text of the image if the image is not displayed for some reason. The alt attribute is used with &lt;img&gt; tag. For example:
+The alt attribute is used to provide the alternative text of the image if the image is not displayed for some reason. The alt attribute is used with &lt;img&gt; tag.
+
+For example:
 
 ```html
 <img src="tiger.jpg" alt="image not shown" />
@@ -796,7 +828,9 @@ In the above example, the `alt` attribute provides a description of the image wh
   <summary>42. Can HTML Tags and elements are same? </summary>
   <p>
     
-No, HTML tags and elements are not same. HTML tags are enclosed in angle brackets &lt; and &gt;. They are used to define elements, attributes, and another content. Elements can have opening tag, closing tag and the content that is contained between them. The example of HTML element is:
+No, HTML tags and elements are not same. HTML tags are enclosed in angle brackets &lt; and &gt;. They are used to define elements, attributes, and another content. Elements can have opening tag, closing tag and the content that is contained between them.
+
+For example:
 
 ```html
 <p>This is a paragraph element.</p>
@@ -812,7 +846,9 @@ In the above example, the `<p>` tag is the opening tag, the `</p>` tag is the cl
   <summary> 43. What is an input tag? </summary>
   <p>
      
-The input tag in HTML is used to create an interactive form element and to take input from the user, you can place the input tag within a form tag. Here the example:
+The input tag in HTML is used to create an interactive form element and to take input from the user, you can place the input tag within a form tag.
+
+For example:
 
 ```html
 <input type="text" id="name" name="name" />
@@ -829,6 +865,8 @@ In the above example, the `<input>` tag creates a text field that allows users t
   <p>
    
 To embed audio and video content in HTML, you can use the audio and video tag. That specify the source file using the "src" attribute within the tag.  Both of these tags allow to include audio and video content in your web page.
+
+For example:
 
 ```html
 <video controls>
@@ -847,7 +885,9 @@ In the above example, the `<video>` tag creates a video player that allows users
   <summary> 45. what is the use of br tag? </summary>
   <p>
    
-The &lt;br&gt; tag in HTML is a line break tag. It is a self-closing tag, which means it does not have a closing tag. For example:
+The &lt;br&gt; tag in HTML is a line break tag. It is a self-closing tag, which means it does not have a closing tag.
+
+For example:
 
 ```html
 <p>Hello Students.<br />Good Evening.</p>
@@ -863,7 +903,9 @@ In the above example, the `<br>` tag is used to create a line break between the 
   <summary> 46. Do all HTML tag have an end tag? </summary>
   <p>
      
-No, not all HTML tags have end tag. There are some tags that doesn't need to close the tag like &lt;image&gt; , &lt;input&gt; tag. Here the example:
+No, not all HTML tags have end tag. There are some tags that doesn't need to close the tag like &lt;image&gt; , &lt;input&gt; tag.
+
+For example:
 
 ```
 <img src="image.jpg" alt="img not display">
@@ -893,7 +935,8 @@ There are various attributes of the audio tag is:<br/><br/>
 Controls: Adds audio controls like play, pause, and volume.<br/>
 Muted: Mutes the audio playback by default.<br/>
 Autoplay: Automatically starts playing the audio when the web page is loaded.<br/><br/>
-Here the example to used audio tag and their attributes:
+
+For example:
 
 ```html
 <audio controls>
@@ -929,6 +972,8 @@ In the above example, the `placeholder` attribute is set to "Enter your email ad
   <p>
      
  A radio button in HTML is form element that allows users to select a single option from multiple choice. It is represented by an &lt;input&gt; element with the type attribute is to set radio.
+
+For example:
 
 ```html
 <form>

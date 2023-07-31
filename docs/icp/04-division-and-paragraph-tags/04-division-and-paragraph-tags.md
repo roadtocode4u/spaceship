@@ -16,7 +16,7 @@ The paragraph tag `<p>` is used to define a block of text in HTML as a paragraph
 <p>Text</p>
 ```
 
-**Code :**
+**For example :**
 
 ```html
 <!DOCTYPE html>
@@ -49,7 +49,8 @@ The paragraph tag `<p>` is used to define a block of text in HTML as a paragraph
 
 ### Align
 
-The `align` attribute is used to specify the horizontal alignment of the text within a paragraph. It can be set to one of three values:  `left`, `center`, or `right`.
+The `align` attribute is used to specify the horizontal alignment of the text within a paragraph. It can be set to one of three values: `left`, `center`, or `right`.
+
 **Syntax :**
 
 ```html
@@ -58,7 +59,7 @@ The `align` attribute is used to specify the horizontal alignment of the text wi
 <p align="right">Text</p>
 ```
 
-**Code :**
+**For example :**
 
 ```html
 <!DOCTYPE html>
@@ -80,7 +81,7 @@ The `align` attribute is used to specify the horizontal alignment of the text wi
 
 ### Division Tags
 
-he division tag `<div>` is used to create a division or section in an HTML document. It is a container that allows you to group and style related content together.
+The division tag `<div>` is used to create a division or section in an HTML document. It is a container that allows you to group and style related content together.
 
 **Syntax :**
 
@@ -88,7 +89,7 @@ he division tag `<div>` is used to create a division or section in an HTML docum
 <div>Text</div>
 ```
 
-**Code :**
+**For example :**
 
 ```html
 <!DOCTYPE html>

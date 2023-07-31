@@ -365,6 +365,8 @@ In this direction, child items are packed **end** of the flex-direction.
 
 In this direction, child items are **center** along the line.
 
+<img src="/icp/21/img-8.png" alt="img-8" width="400px" />
+
 **Code :**
 
 ```html
@@ -408,7 +410,7 @@ In this direction, child items are **center** along the line.
 
 Child items are evenly distributed in the line.It does not provide space in side but it provide equal space between all items.
 
-<img src="/icp/21/img-9.png" alt="img-9" width="400px" />
+<img src="/icp/21/img-9.png" alt="img-10" width="400px" />
 
 **Code :**
 
@@ -453,7 +455,7 @@ Child items are evenly distributed in the line.It does not provide space in side
 
 In this direction, child items are distributed so that the **spacing** between any two items are **equal**.
 
-<img src="/icp/21/img-11.png" alt="img-11" width="400px" />
+<img src="/icp/21/img-12.png" alt="img-11" width="400px" />
 
 **Code :**
 
@@ -498,7 +500,7 @@ In this direction, child items are distributed so that the **spacing** between a
 
 Child items are evenly distributed within the alignment container. In the space-around, only the inner items will have equal spacing in between each other. The first and last items will only be allocated half the spacing.
 
-<img src="/icp/21/img-10.png" alt="img-10" width="400px" />
+<img src="/icp/21/img-11.png" alt="img-11" width="400px" />
 
 **Code :**
 
@@ -547,7 +549,7 @@ When the **flex-direction** is a **row** then **justify-content** control **hori
 
 Items are placed at the start of the Opposite (Y-axis) axis.
 
-<img src="/icp/21/img-12.png" alt="img-12" width="400px" />
+<img src="/icp/21/img-13.png" alt="img-12" width="400px" />
 
 **Code :**
 
@@ -641,7 +643,7 @@ Items are placed at the end of the Opposite (Y-axis) axis.
 
 Items are centered in the Opposite axis.
 
-<img src="/icp/21/img-13.png" alt="img-13" width="400px" />
+<img src="/icp/21/img-15.png" alt="img-13" width="400px" />
 
 **Code :**
 
@@ -686,11 +688,11 @@ Items are centered in the Opposite axis.
 
 When the value of **flex-direction** is set to **column**, the **justify-content** property controls the vertical alignment of items. This refers to the Y axis, but you can also control the opposite axis (X axis) using the **align-items** property.
 
-<img src="/icp/21/img-15.png" alt="img-15" width="400px" />
+<img src="/icp/21/img-16.png" alt="img-15" width="400px" /><br/>
 
-<img src="/icp/21/img-16.png" alt="img-16" width="400px" />
+<img src="/icp/21/img-17.png" alt="img-16" width="400px" /><br/>
 
-<img src="/icp/21/img-17.png" alt="img-17" width="400px" />
+<img src="/icp/21/img-18.png" alt="img-17" width="400px" />
 
 ### Flex-wrap
 

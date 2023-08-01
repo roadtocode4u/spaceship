@@ -55,7 +55,7 @@ We can use the flexbox property then your first step is to create one parent div
 
 **Output :**
 
-<img src="/icp/21/output-1.png" alt="output-1" width="400px"/>
+<img src="/icp/21/output-1.png" alt="output-1" width="600px"/>
 
 Now, we implement flexbox. If you implement the flexbox property then give the effect of the parent division, not a child.
 
@@ -101,7 +101,7 @@ Now, we implement flexbox. If you implement the flexbox property then give the e
 
 **Output :**
 
-<img src="/icp/21/output-2.png" alt="output-2" width="400px"/>
+<img src="/icp/21/output-2.png" alt="output-2" width="600px"/>
 
 In the above example, we only give one class to parents division and add the effect on parent division `display: flex` then your parent division are made a flexbox.
 
@@ -518,7 +518,7 @@ Child items are evenly distributed in the line.It does not provide space in side
 
 **Output :**
 
-<img src="/icp/21/output-9.png" alt="output-11" width="600px"/>
+<img src="/icp/21/output-9.png" alt="output-9" width="600px"/>
 
 5. `justify-content: space-evenly;`
 
@@ -645,12 +645,12 @@ Items are placed at the start of the Opposite (Y-axis) axis.
       }
 
       .container {
+        height: 300px;
+        width: 600px;
         background-color: aqua;
         display: flex;
         flex-direction: row;
         align-items: start;
-        height: 300px;
-        width: 600px;
       }
     </style>
   </head>
@@ -719,7 +719,7 @@ Items are placed at the end of the Opposite (Y-axis) axis.
 
 **Output :**
 
-<img src="/icp/21/output-12.png" alt="output-13" width="600px"/>
+<img src="/icp/21/output-12.png" alt="output-12" width="600px"/>
 
 3. `align-item: center;`
 
@@ -770,11 +770,11 @@ Items are centered in the Opposite axis.
 
 When the value of **flex-direction** is set to **column**, the **justify-content** property controls the vertical alignment of items. This refers to the Y axis, but you can also control the opposite axis (X axis) using the **align-items** property.
 
-<img src="/icp/21/img-16.png" alt="img-15" width="400px" /><br/>
+<img src="/icp/21/img-16.png" alt="img-16" width="400px" /><br/>
 
-<img src="/icp/21/img-17.png" alt="img-16" width="400px" /><br/>
+<img src="/icp/21/img-17.png" alt="img-17" width="400px" /><br/>
 
-<img src="/icp/21/img-18.png" alt="img-17" width="400px" />
+<img src="/icp/21/img-18.png" alt="img-18" width="400px" />
 
 ### Flex-wrap
 

@@ -22,19 +22,29 @@ We can use the flexbox property then your first step is to create one parent div
   <head>
     <title>Flex Box</title>
     <style>
+      .container {
+        height: 380px;
+        width: 400px;
+        background-color: #0cc0df;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
       .item {
-        background-color: tomato;
+        background-color: #b1dddf;
         height: 100px;
         width: 100px;
         margin: 10px;
         font-size: 50px;
-        padding: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 1px white;
       }
     </style>
   </head>
 
   <body>
-    <div>
+    <div class="container">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
@@ -45,7 +55,7 @@ We can use the flexbox property then your first step is to create one parent div
 
 **Output :**
 
-<img src="/icp/21/output-1.png" alt="output-1" width="600px"/>
+<img src="/icp/21/output-1.png" alt="output-1" width="400px"/>
 
 Now, we implement flexbox. If you implement the flexbox property then give the effect of the parent division, not a child.
 
@@ -58,21 +68,29 @@ Now, we implement flexbox. If you implement the flexbox property then give the e
     <title>Flex Box</title>
     <style>
       .item {
-        background-color: tomato;
+        background-color: #b1dddf;
         height: 100px;
         width: 100px;
         margin: 10px;
         font-size: 50px;
         padding: 10px;
+        border-radius: 10px;
+        border: solid 1px white;
       }
-      .conatiner {
+
+      .container {
+        height: 380px;
+        width: 400px;
         display: flex;
+        background-color: #0cc0df;
+        padding: 5px;
+        border-radius: 5px;
       }
     </style>
   </head>
 
   <body>
-    <div class="conatiner">
+    <div class="container">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
@@ -83,7 +101,7 @@ Now, we implement flexbox. If you implement the flexbox property then give the e
 
 **Output :**
 
-<img src="/icp/21/output-2.png" alt="output-2" width="600px"/>
+<img src="/icp/21/output-2.png" alt="output-2" width="400px"/>
 
 In the above example, we only give one class to parents division and add the effect on parent division `display: flex` then your parent division are made a flexbox.
 
@@ -110,14 +128,20 @@ By default, the direction is a row. Child items are **Left to Right** direction.
     <title>Flex Box</title>
     <style>
       .item {
-        background-color: tomato;
         height: 100px;
         width: 100px;
+        background-color: #b1dddf;
         margin: 10px;
         font-size: 50px;
         padding: 10px;
       }
-      .conatiner {
+
+      .container {
+        height: 380px;
+        width: 900px;
+        background-color: #0cc0df;
+        padding: 5px;
+        border-radius: 5px;
         display: flex;
         flex-direction: row;
       }
@@ -125,7 +149,7 @@ By default, the direction is a row. Child items are **Left to Right** direction.
   </head>
 
   <body>
-    <div class="conatiner">
+    <div class="container">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
@@ -153,14 +177,22 @@ In this direction, child items are in **Right to Left** direction.
     <title>Flex Box</title>
     <style>
       .item {
-        background-color: tomato;
         height: 100px;
         width: 100px;
+        background-color: #b1dddf;
         margin: 10px;
         font-size: 50px;
-        padding: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 1px white;
       }
-      .conatiner {
+
+      .container {
+        height: 380px;
+        width: 400px;
+        background-color: #0cc0df;
+        padding: 5px;
+        border-radius: 5px;
         display: flex;
         flex-direction: row-reverse;
       }
@@ -168,7 +200,7 @@ In this direction, child items are in **Right to Left** direction.
   </head>
 
   <body>
-    <div class="conatiner">
+    <div class="container">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
@@ -196,22 +228,30 @@ In this direction, child items are **Top to Bottom** direction.
     <title>Flex Box</title>
     <style>
       .item {
-        background-color: tomato;
         height: 100px;
         width: 100px;
+        background-color: #b1dddf;
         margin: 10px;
         font-size: 50px;
-        padding: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 1px white;
       }
-      .conatiner {
+
+      .container {
+        height: 380px;
+        width: 400px;
+        background-color: #0cc0df;
         display: flex;
         flex-direction: column;
+        padding: 5px;
+        border-radius: 5px;
       }
     </style>
   </head>
 
   <body>
-    <div class="conatiner">
+    <div class="container">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
@@ -239,22 +279,30 @@ In this direction, child items are **Bottom to Top** direction.
     <title>Flex Box</title>
     <style>
       .item {
-        background-color: tomato;
         height: 100px;
         width: 100px;
+        background-color: #b1dddf;
         margin: 10px;
         font-size: 50px;
-        padding: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 1px white;
       }
-      .conatiner {
+
+      .container {
         display: flex;
         flex-direction: column-reverse;
+        height: 380px;
+        width: 400px;
+        background-color: #0cc0df;
+        padding: 5px;
+        border-radius: 5px;
       }
     </style>
   </head>
 
   <body>
-    <div class="conatiner">
+    <div class="container">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
@@ -286,24 +334,31 @@ It is a default value. Child items are packed start of the flex-direction.
     <title>Flex Box</title>
     <style>
       .item {
-        background-color: tomato;
         height: 100px;
         width: 100px;
         margin: 10px;
+        background-color: #b1dddf;
         font-size: 50px;
-        padding: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 1px white;
       }
-      .conatiner {
-        background-color: aqua;
+
+      .container {
+        height: 380px;
+        width: 900px;
+        background-color: #0cc0df;
         display: flex;
         flex-direction: row;
         justify-content: start;
+        padding: 5px;
+        border-radius: 5px;
       }
     </style>
   </head>
 
   <body>
-    <div class="conatiner">
+    <div class="container">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
@@ -331,24 +386,31 @@ In this direction, child items are packed **end** of the flex-direction.
     <title>Flex Box</title>
     <style>
       .item {
-        background-color: tomato;
         height: 100px;
         width: 100px;
+        background-color: #b1dddf;
         margin: 10px;
         font-size: 50px;
-        padding: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 1px white;
       }
-      .conatiner {
-        background-color: aqua;
+
+      .container {
+        height: 380px;
+        width: 900px;
+        background-color: #0cc0df;
         display: flex;
         flex-direction: row;
         justify-content: end;
+        padding: 5px;
+        border-radius: 5px;
       }
     </style>
   </head>
 
   <body>
-    <div class="conatiner">
+    <div class="container">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
@@ -376,24 +438,31 @@ In this direction, child items are **center** along the line.
     <title>Flex Box</title>
     <style>
       .item {
-        background-color: tomato;
         height: 100px;
         width: 100px;
+        background-color: #b1dddf;
         margin: 10px;
         font-size: 50px;
-        padding: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 1px white;
       }
-      .conatiner {
-        background-color: aqua;
+
+      .container {
+        height: 380px;
+        width: 900px;
+        background-color: #0cc0df;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        padding: 5px;
+        border-radius: 5px;
       }
     </style>
   </head>
 
   <body>
-    <div class="conatiner">
+    <div class="container">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
@@ -404,7 +473,7 @@ In this direction, child items are **center** along the line.
 
 **Output :**
 
-<img src="/icp/21/output-17.png" alt="output-8" width="600px" />
+<img src="/icp/21/output-8.png" alt="output-8" width="600px" />
 
 4. `justify-content: space-between;`
 
@@ -421,14 +490,14 @@ Child items are evenly distributed in the line.It does not provide space in side
     <title>Flex Box</title>
     <style>
       .item {
-        background-color: tomato;
         height: 100px;
         width: 100px;
+        background-color: tomato;
         margin: 10px;
         font-size: 50px;
         padding: 10px;
       }
-      .conatiner {
+      .container {
         background-color: aqua;
         display: flex;
         flex-direction: row;
@@ -438,7 +507,7 @@ Child items are evenly distributed in the line.It does not provide space in side
   </head>
 
   <body>
-    <div class="conatiner">
+    <div class="container">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
@@ -449,7 +518,7 @@ Child items are evenly distributed in the line.It does not provide space in side
 
 **Output :**
 
-<img src="/icp/21/output-11.png" alt="output-11" width="600px"/>
+<img src="/icp/21/output-9.png" alt="output-11" width="600px"/>
 
 5. `justify-content: space-evenly;`
 
@@ -466,15 +535,22 @@ In this direction, child items are distributed so that the **spacing** between a
     <title>Flex Box</title>
     <style>
       .item {
-        background-color: tomato;
         height: 100px;
         width: 100px;
+        background-color: #b1dddf;
         margin: 10px;
         font-size: 50px;
-        padding: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 1px white;
       }
-      .conatiner {
-        background-color: aqua;
+
+      .container {
+        height: 380px;
+        width: 900px;
+        background-color: #0cc0df;
+        padding: 5px;
+        border-radius: 5px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -483,7 +559,7 @@ In this direction, child items are distributed so that the **spacing** between a
   </head>
 
   <body>
-    <div class="conatiner">
+    <div class="container">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
@@ -518,7 +594,7 @@ Child items are evenly distributed within the alignment container. In the space-
         font-size: 50px;
         padding: 10px;
       }
-      .conatiner {
+      .container {
         background-color: aqua;
         display: flex;
         flex-direction: row;
@@ -528,7 +604,7 @@ Child items are evenly distributed within the alignment container. In the space-
   </head>
 
   <body>
-    <div class="conatiner">
+    <div class="container">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
@@ -568,7 +644,7 @@ Items are placed at the start of the Opposite (Y-axis) axis.
         padding: 5px;
       }
 
-      .conatiner {
+      .container {
         background-color: aqua;
         display: flex;
         flex-direction: row;
@@ -580,7 +656,7 @@ Items are placed at the start of the Opposite (Y-axis) axis.
   </head>
 
   <body>
-    <div class="conatiner">
+    <div class="container">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
@@ -591,7 +667,7 @@ Items are placed at the start of the Opposite (Y-axis) axis.
 
 **Output :**
 
-<img src="/icp/21/output-18.png" alt="output-18" width="600px"/>
+<img src="/icp/21/output-11.png" alt="output-11" width="600px"/>
 
 2. `align-item: end;`
 
@@ -608,25 +684,31 @@ Items are placed at the end of the Opposite (Y-axis) axis.
     <title>Flex Box</title>
     <style>
       .item {
-        background-color: tomato;
+        background-color: #b1dddf;
         height: 100px;
         width: 100px;
         margin: 10px;
         font-size: 50px;
-        padding: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 1px white;
       }
-      .conatiner {
-        background-color: aqua;
+
+      .container {
+        height: 380px;
+        width: 900px;
+        background-color: #0cc0df;
+        padding: 5px;
+        border-radius: 5px;
         display: flex;
         flex-direction: row;
         align-items: end;
-        height: 500px;
       }
     </style>
   </head>
 
   <body>
-    <div class="conatiner">
+    <div class="container">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
@@ -637,7 +719,7 @@ Items are placed at the end of the Opposite (Y-axis) axis.
 
 **Output :**
 
-<img src="/icp/21/output-13.png" alt="output-13" width="600px"/>
+<img src="/icp/21/output-12.png" alt="output-13" width="600px"/>
 
 3. `align-item: center;`
 
@@ -661,7 +743,7 @@ Items are centered in the Opposite axis.
         font-size: 50px;
         padding: 10px;
       }
-      .conatiner {
+      .container {
         background-color: aqua;
         display: flex;
         flex-direction: row;
@@ -673,7 +755,7 @@ Items are centered in the Opposite axis.
   </head>
 
   <body>
-    <div class="conatiner">
+    <div class="container">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
@@ -684,7 +766,7 @@ Items are centered in the Opposite axis.
 
 **Output :**
 
-<img src="/icp/21/output-12.png" alt="output-12" width="600px"/>
+<img src="/icp/21/output-13.png" alt="output-13" width="600px"/>
 
 When the value of **flex-direction** is set to **column**, the **justify-content** property controls the vertical alignment of items. This refers to the Y axis, but you can also control the opposite axis (X axis) using the **align-items** property.
 
@@ -717,18 +799,24 @@ The `flex-wrap` property accepts three values:
     <title>Flex Box</title>
     <style>
       .conatiner {
+        height: 500px;
         background-color: aqua;
         display: flex;
         flex-wrap: wrap;
+        background-color: #0cc0df;
+        padding: 5px;
+        border-radius: 5px;
       }
 
       .item {
-        background-color: tomato;
+        background-color: #b1dddf;
         height: 150px;
         width: 150px;
         margin: 10px;
         font-size: 50px;
-        padding: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 1px white;
       }
     </style>
   </head>
@@ -748,11 +836,11 @@ The `flex-wrap` property accepts three values:
 
 In the 1st output, set all the items on a single line.
 
-<img src="/icp/21/output-15.png" alt="output-15" width="600px" />
+<img src="/icp/21/output-14.png" alt="output-14" width="600px" />
 
 In the 2nd output, if the container does not have enough space to set all the items on a single line, the items will wrap on the next line.
 
 The flex-wrap property is commonly used in combination with other flexbox properties like `flex-direction`, `justify-content`, and `align-items` to create responsive and flexible layouts.
 It is helpful for responsive designs on different screens.
 
-<img src="/icp/21/output-16.png" alt="output-15" width="400px" />
+<img src="/icp/21/output-15.png" alt="output-15" width="400px" />

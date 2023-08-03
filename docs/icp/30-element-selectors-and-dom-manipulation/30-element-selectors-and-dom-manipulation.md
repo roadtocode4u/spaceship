@@ -24,7 +24,7 @@ _Case_
 
 Let's learn one by one...
 
-1. **`getElementById()`** is a method in JavaScript that is used to retrieve a reference to an HTML element with a specific `identifier` or `ID`. This method searches the document for an element with a matching `ID` and returns a reference to it if found. This method used to select an element by its `id` attribute.
+1. **`getElementById()`** is a method in JavaScript that is used to retrieve a reference to an HTML element with a specific `identifier` or `id`. This method searches the document for an element with a matching `id` and returns a reference to it if found. This method used to select an element by its `id` attribute.
 
 **For example :**
 
@@ -52,9 +52,9 @@ Let's learn one by one...
 
 **Example explanation:**
 
-In the above example, the `getElementById()` method to retrieve a reference to an HTML element with the ID `firstHeading` and it to the console using `console.log()`.
+In the above example, the `getElementById()` method to retrieve a reference to an HTML element with the id `firstHeading` and it to the console using `console.log()`.
 
-The first two lines of code define heading elements with ID `firstHeading`. The third line uses `getElementById()` to retrieve a reference to the `firstHeading` element and assigns it to the variable `element`. The fourth line logs the value of element to the console, which will be the HTML element with the ID `firstHeading`.
+The first two lines of code define heading elements with id `firstHeading`. The third line uses `getElementById()` to retrieve a reference to the `firstHeading` element and assigns it to the variable `element`. The fourth line logs the value of element to the console, which will be the HTML element with the id `firstHeading`.
 
 ### innerHtml
 
@@ -89,9 +89,9 @@ The first two lines of code define heading elements with ID `firstHeading`. The 
 
 **Example explanation :**
 
-In the above example, the `getElementById()` method to retrieve a reference to an HTML element with the ID `box` and it to the console using `console.log()`.
+In the above example, the `getElementById()` method to retrieve a reference to an HTML element with the id `box` and it to the console using `console.log()`.
 
-The first two lines of code define heading elements with ID `box`. The third line uses `getElementById()` to retrieve a reference to the `box` element and assigns it to the variable `element`. The fourth line logs the value of element to the console, which will be the HTML element with `innerHTML` the ID `box`. The `inner.HtMl` provide HTML element.
+The first two lines of code define heading elements with id `box`. The third line uses `getElementById()` to retrieve a reference to the `box` element and assigns it to the variable `element`. The fourth line logs the value of element to the console, which will be the HTML element with `innerHTML` the id `box`. The `inner.HtMl` provide HTML element.
 
 ### innerText
 
@@ -126,9 +126,9 @@ The first two lines of code define heading elements with ID `box`. The third lin
 
 **Example explanation :**
 
-In the above example, the `getElementById()` method to retrieve a reference to an HTML element with the ID `box` and it to the console using `console.log()`.
+In the above example, the `getElementById()` method to retrieve a reference to an HTML element with the id `box` and it to the console using `console.log()`.
 
-The first two lines of code define heading elements with ID `box`. The third line uses `getElementById()` to retrieve a reference to the `box` element and assigns it to the variable `element`. The fourth line logs the value of element to the console, which will be the HTML element with `innerHTML` the ID `box`. The `inner.Text` returns only textual data.
+The first two lines of code define heading elements with id `box`. The third line uses `getElementById()` to retrieve a reference to the `box` element and assigns it to the variable `element`. The fourth line logs the value of element to the console, which will be the HTML element with `innerHTML` the id `box`. The `inner.Text` returns only textual data.
 
 **Another example :**
 
@@ -155,9 +155,9 @@ The first two lines of code define heading elements with ID `box`. The third lin
 
 <img src="/icp/30/output-4.png" alt="output-4" width="600px"/>
 
-In above example the `getElementById()` method to retrieve a reference to an HTML element with the ID `element` and then accessing its `innerHTML` property to change its content.
+In above example the `getElementById()` method to retrieve a reference to an HTML element with the id `element` and then accessing its `innerHTML` property to change its content.
 
-The first two lines of code define heading elements with ID `box`. The third line uses `getElementById()` to retrieve a reference to the `box` element and assigns it to the variable `element`.
+The first two lines of code define heading elements with id `box`. The third line uses `getElementById()` to retrieve a reference to the `box` element and assigns it to the variable `element`.
 
 The fourth line sets the `innerHTML` property of the tag element to `element` which will replace the original text `Hello Javascript` with `Bye Bye`.
 

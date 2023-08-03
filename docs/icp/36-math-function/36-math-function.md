@@ -14,7 +14,7 @@ There are Math Function in JS :
 - Math.pow(x,y)
 - Math.abs(x)
 - Math.min(x)
-- Math.maz(x)
+- Math.max(x)
 - Math.sqrt(x)
 
 1. **`Math.ceil(x)`** : It returns the smallest integer greater than or equal to `x`.

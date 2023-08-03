@@ -4,10 +4,6 @@ description: "Element Selectors and DOM Manipulation"
 hide_table_of_contents: true
 ---
 
-`InnerHTML` is a property that allows you to access and modify the content inside an HTML element using JavaScript.
-
-### Element selectors
-
 Element selector are methods that allow you to access HTML elements from the DOM (Document Object Model). There are different element selectors in javascript.
 
 1. getElementById()
@@ -62,7 +58,7 @@ The first two lines of code define heading elements with ID `firstHeading`. The 
 
 ### innerHtml
 
-The `innerHTML` is a property that allows you to access or modify the HTML content inside an element.
+`innerHTML` is a property that allows you to access and modify the content inside an HTML element using JavaScript.
 
 **For example :**
 

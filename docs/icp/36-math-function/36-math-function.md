@@ -4,7 +4,7 @@ description: "Math Functions"
 hide_table_of_contents: true
 ---
 
-The `Math` function provides built-in functions for performing various mathematical operations, such as ceiling, floor, absolute, square roots, powers, rounding, min, max, and more.
+JavaScript's Math functions are built-in tools that help you do math tasks easily and accurately in your code. They handle common operations like rounding, finding the highest or lowest number, calculating powers and square roots, and more. This makes your code shorter, faster, and less error-prone.
 
 There are Math Function in JS :
 
@@ -19,7 +19,7 @@ There are Math Function in JS :
 
 1. **`Math.ceil(x)`** : It returns the smallest integer greater than or equal to `x`.
 
-**Syntax :**
+**Syntax :**g
 
 ```
 Math.ceil(x);

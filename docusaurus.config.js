@@ -82,6 +82,11 @@ const config = {
             position: "left",
             label: "ICP",
           },
+          {
+            to: "/docs/category/tips-and-tools",
+            position: "left",
+            label: "Tips and Tools",
+          },
           { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/roadtocode4u/spaceship",

@@ -89,17 +89,3 @@ Icons8 is a digital asset provider that offers design elements to professional a
 8. Click the Download button to save the image to your device.
 
 <img src="/tip-and-tools/02/screenshot-8.png" alt="screenshot-2" width="600px"/>
-
-
-
-
-
-<!-- ### What is icons8?
->Icons8 is a digital asset provider that offers design elements to professional and  designers. They offer icons, photo stock, music library, free Sketch for Windows, and other projects for designers, marketers, and developers.
-
-### How to use Icons8?
-
-1. Visit the official website of icons8  https://icons8.com/ .
-2. You can search icons, illustrations, photos, music and design tools.
-3. In this website Free icons, Free design tools , Free illustrations , and Free photos is also available.
-4. In search bar, you can search icons so lots of icons are visible in website. -->

@@ -19,7 +19,7 @@ There are Math Function in JS :
 
 1. **`Math.ceil(x)`** : It returns the smallest integer greater than or equal to `x`.
 
-**Syntax :**g
+**Syntax :**
 
 ```
 Math.ceil(x);

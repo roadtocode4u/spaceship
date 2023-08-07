@@ -9,12 +9,26 @@ Bootstrap is a popular open-source framework for building responsive and mobile-
 **Bootstrap is a CSS Component library and it is also called as prewritten CSS.**
 
 ```html
-Bootstrap => Css Component Libraray Prewritten CSS and JS
+Bootstrap => Frontend Component Libraray, Prewritten CSS and JS
 ```
 
 **Click Here To Render On Bootstrap Page :** (https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
+After clicking on the website you this page.
+
+<img src="/icp/39/screenshot-1.png" alt="screenshot-1" width="600px"/>
+
 ### How to add Bootstrap In HTML File
+
+The first link is for CSS, which will apply CSS to our code. The second link is for Javascript, which will add some effects to our webpage.
+
+<img src="/icp/39/screenshot-2.png" alt="screenshot-2" width="600px"/>
+
+## What is CDN?
+
+CDN stands for **Content Deliver Network**.
+
+CDN in Bootstrap means using special servers to quickly share Bootstrap's design. It's like getting help from a super-fast library. This makes your site load faster and work smoothly for visitors.
 
 **Example :**
 
@@ -24,23 +38,29 @@ Bootstrap => Css Component Libraray Prewritten CSS and JS
   <head>
     <title>Bootstrap Demo</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
   </head>
-
   <body>
-    <h1>Hello, world!</h1>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
   </body>
 </html>
 ```
+
+In the above example, We have included the structure of the bootstrap file.
+
+## Buttons using Bootstrap
+
+### Base Button
+
+Bootstrap has base `.btn` class that sets up basic styles such as padding and content alignment. By default, `.btn` controls have a transparent border and background color.
 
 **Example :**
 
@@ -48,24 +68,22 @@ Bootstrap => Css Component Libraray Prewritten CSS and JS
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstarp</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
   </head>
-
-  <body style="padding: 10px;">
-    <button class="btn btn-primary">Simple Button</button>
-    <button class="btn btn-warning">Simple Button</button>
+  <body>
+    <button class="btn">Click Me!</button>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
   </body>
@@ -74,9 +92,27 @@ Bootstrap => Css Component Libraray Prewritten CSS and JS
 
 **Output :**
 
-<img src="/icp/39/output-1.png" alt="output" width="400px"/>
+<img src="/icp/39/screenshot-3.png" alt="screenshot-3" width="600px"/>
 
-In the above example, we can apply class `btn` for the button and `btn-primary` and `btn-warning` is used for the background-color which is primary means `blue` and warning means `yellow`.
+Bootstrap has nine buttons with plain backgrounds that are easy to use.
+
+1. **btn-primary** : If you select the `btn-primary` color option, a button with a `blue` background will be created.
+
+2. **btn-secondary** : If you select the `btn-secondary` color option, a button with a `grey` background will be created.
+
+3. **btn-success** : If you select the `btn-success` color option, a button with a `green` background will be created.
+
+4. **btn-danger** : If you select the `btn-danger` color option, a button with a `red` background will be created.
+
+5. **btn-warning** : If you select the `btn-warning` color option, a button with a `yellow` background will be created.
+
+6. **btn-info** : If you select the `btn-info` color option, a button with a `sky` background will be created.
+
+7. **btn-light** : If you select the `btn-light` color option, a button with a `white` background will be created.
+
+8. **btn-dark** : If you select the `btn-dark` color option, a button with a `black` background will be created.
+
+9. **btn-link** : If you select the `btn-link` color option, a button with simple **anchor link** will be created.
 
 **Example :**
 
@@ -84,24 +120,25 @@ In the above example, we can apply class `btn` for the button and `btn-primary` 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstarp</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
   </head>
-
-  <body style="padding: 10px;">
-    <button class="btn btn-outline-primary">Simple Button</button>
-    <button class="btn btn-outline-secondary">Simple Button</button>
+  <body>
+    <button class="btn btn-primary">Click Me!</button>
+    <button class="btn btn-secondary">Click Me!</button>
+    <button class="btn btn-info">Click Me!</button>
+    <button class="btn btn-dark">Click Me!</button>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
   </body>
@@ -110,7 +147,9 @@ In the above example, we can apply class `btn` for the button and `btn-primary` 
 
 **Output :**
 
-<img src="/icp/39/output-2.png" alt="output" width="400px"/>
+<img src="/icp/39/screenshot-4.png" alt="screentshot-4" width="600px"/>
+
+In the above example, we can apply `btn` class for the button and `btn-primary` , `btn-secondary` , `btn-info` , `btn-dark` is used for the background-color, primary means `blue`, secondary means `grey`, info means `sky` and dark means `black`.
 
 **Example :**
 
@@ -118,23 +157,23 @@ In the above example, we can apply class `btn` for the button and `btn-primary` 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstarp</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
   </head>
-
-  <body style="padding: 10px;">
-    <div class="alert alert-primary">Hello this is alert</div>
+  <body>
+    <button class="btn btn-outline-primary">Click Me!</button>
+    <button class="btn btn-outline-secondary">Click Me!</button>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
   </body>
@@ -143,37 +182,70 @@ In the above example, we can apply class `btn` for the button and `btn-primary` 
 
 **Output :**
 
-<img src="/icp/39/output-3.png" alt="output" width="400px"/>
+<img src="/icp/39/screenshot-5.png" alt="screenshot-5" width="600px"/>
 
-## Margin-Padding
+## Padding
 
-Class of padding in bootstrap = "p"
+Class of padding in Bootstrap = `p`
 
-Class of margin in bootstrap = "m"
+**Sides for Padding :** We can apply padding for four side such as top, bottom, start and end.
+
+`t` => From Top<br/>
+`b` => From Bottom <br/>
+`s` => From Start<br/>
+`e` => From End
+
+<img src="/icp/39/screenshot-6.png" alt="screenshot-6" width="600px"/>
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstarp</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="p-5 bg-warning">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, error
+      recusandae. Nobis officia deleniti nesciunt delectus voluptatem! Odit
+      tempore officia, cupiditate iusto adipisci aliquam! Molestiae similique
+      cum ratione. Temporibus, laborum.
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/39/screenshot-7.png" alt="screenshot-7" width="600px"/>
+
+## Margin
+
+Class of margin in Bootstrap = `m`
 
 **Sides for Margin :** We can apply margin for four side such as top, bottom, start and end.
 
-t = From Top <br/>
-b = From Bottom <br/>
-s = From Start<br/>
-e = From End
+`t` => From Top<br/>
+`b` => From Bottom <br/>
+`s` => From Start<br/>
+`e` => From End
 
-**Size :**
-
-0 = 0 _ 16 => 0px<br/>
-1 = .25 _ 16 => 4px<br/>
-2 = .5 & 16 => 8px<br/>
-3 = $spacer => 16px<br/>
-4 = 1.5 _16 => 24px<br/>
-5 = 3 _ 16 => 48px
-
-**Example :**
-
-```css
-margin top = "mt-2"
-```
-
-In the above example, we can used bootstrap css class for apply `margin-top:2px` to the element.
+<img src="/icp/39/screenshot-6.png" alt="screenshot-6" width="600px"/>
 
 **Example :**
 
@@ -181,23 +253,27 @@ In the above example, we can used bootstrap css class for apply `margin-top:2px`
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstarp</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
   </head>
-
-  <body style="padding: 10px;">
-    <button class="btn btn-danger mt-5 ms-5 pt-4">Button</button>
+  <body class="bg-info">
+    <div class="m-5 bg-warning">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, error
+      recusandae. Nobis officia deleniti nesciunt delectus voluptatem! Odit
+      tempore officia, cupiditate iusto adipisci aliquam! Molestiae similique
+      cum ratione. Temporibus, laborum.
+    </div>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
   </body>
@@ -206,7 +282,7 @@ In the above example, we can used bootstrap css class for apply `margin-top:2px`
 
 **Output :**
 
-<img src="/icp/39/output-4.png" alt="output" width="400px"/>
+<img src="/icp/39/screenshot-8.png" alt="screenshot-8" width="600px"/>
 
 ## Bootstrap classes for Shadows
 

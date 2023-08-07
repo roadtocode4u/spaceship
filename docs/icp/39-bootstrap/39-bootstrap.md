@@ -56,6 +56,10 @@ CDN in Bootstrap means using special servers to quickly share Bootstrap's design
 
 In the above example, We have included the structure of the bootstrap file.
 
+### What is crossorigin attribute?
+
+In the context of Bootstrap and web development, **cross-origin** refers to interactions between different websites or domains. This pertains to how web browsers handle requests and resources from one website when they are utilized on another website.
+
 ## Buttons using Bootstrap
 
 ### Base Button

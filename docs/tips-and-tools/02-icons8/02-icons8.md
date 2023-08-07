@@ -4,7 +4,7 @@ description: "Icons8"
 hide_table_of_contents: true
 ---
 
-The Icons8 website typically features a user-friendly interface that facilitates easy navigation, search, and access to design resources. The Icons8 website typically features a user-friendly interface that facilitates easy navigation, search, and access to design resources.
+The Icons8 website typically features a user-friendly interface that facilitates easy navigation, search, and access to design resources.
 
 1. [Introduction](#introduction)
 2. [Why use Icons8?](#why-use-icons8)

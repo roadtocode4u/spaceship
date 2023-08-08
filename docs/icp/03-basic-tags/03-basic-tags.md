@@ -237,6 +237,7 @@ Superscript is a number or letter that written above the normal text.
 **Output :**
 
 <img src="/icp/03/output-9.png" alt="output-9" width="600px"/>
+
 ### Subscript
 
 Subscript is a number or letter that written below the normal text.

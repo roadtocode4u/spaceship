@@ -157,7 +157,7 @@ In the above example, in the normal screen 1st output will display and if the sc
 **Syntax :**
 
 ```css
-media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 600px) and (max-width: 800px) {
 }
 ```
 

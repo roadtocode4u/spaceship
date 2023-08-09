@@ -58,34 +58,88 @@ const config = {
         },
         items: [
           {
-            to: "/docs/category/c-programming",
+            type: "dropdown",
+            label: "Frontend",
             position: "left",
-            label: "C Programming",
+            items: [
+              {
+                to: "/docs/category/html",
+                label: "HTML",
+              },
+              {
+                to: "/docs/category/css",
+                label: "CSS",
+              },
+              {
+                to: "/docs/category/javascript",
+                label: "JavaScript",
+              },
+              {
+                to: "/docs/category/reactjs",
+                label: "ReactJS",
+              },
+            ],
           },
           {
-            to: "/docs/category/cpp-programming",
+            type: "dropdown",
+            label: "Backend",
             position: "left",
-            label: "C++ Programming",
+            items: [
+              {
+                to: "/docs/category/nodejs",
+                label: "NodeJS",
+              },
+              {
+                to: "/docs/category/mongodb",
+                label: "MongoDB",
+              },
+              {
+                to: "/docs/category/expressjs",
+                label: "ExpressJS",
+              },
+            ],
           },
           {
-            to: "/docs/category/python-programming",
+            type: "dropdown",
+            label: "Programming",
             position: "left",
-            label: "Python",
+            items: [
+              {
+                to: "/docs/category/c-programming",
+                label: "C Programming",
+              },
+              {
+                to: "/docs/category/cpp-programming",
+                label: "C++ Programming",
+              },
+              {
+                to: "/docs/category/python-programming",
+                label: "Python",
+              },
+              {
+                label: "RTC",
+                href: "https://www.roadtocode.org",
+              },
+            ],
           },
           {
-            to: "/docs/category/data-structures",
+            type: "dropdown",
+            label: "Other",
             position: "left",
-            label: "Data Structures",
-          },
-          {
-            to: "/docs/category/internship-cohort-program",
-            position: "left",
-            label: "ICP",
-          },
-          {
-            to: "/docs/category/tips-and-tools",
-            position: "left",
-            label: "Tips and Tools",
+            items: [
+              {
+                to: "/docs/category/data-structures",
+                label: "Data Structures",
+              },
+              {
+                to: "/docs/category/internship-cohort-program",
+                label: "ICP",
+              },
+              {
+                to: "/docs/category/tips-and-tools",
+                label: "Tips and Tools",
+              },
+            ],
           },
           { to: "/blog", label: "Blog", position: "left" },
           {

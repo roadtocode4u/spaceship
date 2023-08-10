@@ -1,0 +1,5 @@
+---
+title: Animation
+description: "Animation"
+hide_table_of_contents: true
+---

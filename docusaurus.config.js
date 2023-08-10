@@ -139,6 +139,10 @@ const config = {
                 to: "/docs/category/tips-and-tools",
                 label: "Tips and Tools",
               },
+              {
+                to: "/docs/category/github",
+                label: "Git & GitHub",
+              },
             ],
           },
           { to: "/blog", label: "Blog", position: "left" },

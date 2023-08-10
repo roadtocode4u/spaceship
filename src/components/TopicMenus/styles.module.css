@@ -1,0 +1,32 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  background-color: #fff1cc;
+}
+
+.featureSvg {
+  height: 50px;
+  display: block;
+  margin: 5px auto;
+}
+
+.menu {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #fff;
+}
+
+.menu:hover {
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.menuTitle {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 0;
+}

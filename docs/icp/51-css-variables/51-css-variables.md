@@ -4,7 +4,7 @@ description: "CSS Variables"
 hide_table_of_contents: true
 ---
 
-CSS variables, also called custom properties, function as containers in CSS that hold values. Instead of repeating a value throughout the code, it can be stored in a variable and used wherever necessary. If the value needs to be changed later, it only needs to be changed in one place and it will be updated everywhere.
+CSS variables, also known as custom properties, act as containers in CSS that store values. Instead of repeating a value throughout your code, you can store it in a variable and use it wherever needed. If the value needs to be changed later, you only need to update it in one place, and it will automatically update everywhere it's used.
 
 **Example :**
 
@@ -53,7 +53,7 @@ CSS variables, also called custom properties, function as containers in CSS that
 
 **`:root` variable in CSS**
 
-In CSS, `:root` is similar to the `<html>` tag and allows for the creation of global CSS custom properties that can hold colors, sizes, and other attributes, making it easy to modify the styling of the entire website.
+The `:root` selector in CSS is like the boss of all selectors. It lets you create global CSS variables that can hold various things like `colors`, `sizes`, and more. This is super handy because you can change the whole look of your website from one place!
 
 **Example :**
 
@@ -109,3 +109,7 @@ In CSS, `:root` is similar to the `<html>` tag and allows for the creation of gl
 ```
 
 <img src="/icp/51/screenshot-2.png" alt="screenshot-2" width="600px"/>
+
+By tapping into the power of the `:root` selector, you can manage the style of your whole website without getting lost in a jungle of styles.
+
+Remember, CSS variables make your styles consistent and easy to manage. They're like magic shortcuts for your code. So, go ahead and give them a try in your projects

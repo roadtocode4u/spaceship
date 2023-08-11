@@ -1,12 +1,12 @@
 ---
-title: Animation
-description: "Animation"
+title: CSS Animations Adding Motion and Effects to Elements
+description: "CSS Animations: Adding Motion and Effects to Elements"
 hide_table_of_contents: true
 ---
 
-CSS animation is a process of adding motion and visual effects to the element. CSS animations includes changing the properties of an element such as its position, size, color, over specified period of time.
+CSS animations enable you to add motion and visual effects to elements on your webpage. These animations involve changing the properties of an element, such as its `position`, `size`, or `color`, `over` a specified period of time. This guide will introduce you to different types of CSS animations and transformations with easy-to-understand examples.
 
-**For example :**
+**Example :**
 
 ```html
 <!DOCTYPE html>
@@ -36,9 +36,6 @@ CSS animation is a process of adding motion and visual effects to the element. C
 
 **Output :**
 
-<!-- <video src="/icp/53/output-1.mp4" alt="output-1"  width="600px" controls autoplay>
-</video> -->
-
   <video height="300px" controls autoplay muted>
       <source src="/icp/53/output-1.mp4" type="video/mp4" />
     </video>
@@ -47,13 +44,13 @@ CSS animation is a process of adding motion and visual effects to the element. C
 
 In the above example, we can create a button. We provide a `btn` class to the button and also provide a CSS style to the button. We provide a background color, color, and border to the button. The `background-color` property sets the background color to the button. The `color` property is set to the text color. The `border: none` property is remove the border. Also we can provide a hover effect to the button. The `border-radius` property adds a circular border radius to the `btn` when they are hovered over. The `transition` property adds a transition effect when properties change.
 
-### Transform
+### Transformations
 
-The `transform` property in CSS is used for change the way an element looks and behaves by different way moving, rotating, scaling. There are three different types:
+CSS `transformations` allow you to change how an element appears and behaves by applying various effects like `moving`, `rotating`, and `scaling`. Here are different types of transformations with examples:
 
 ### Scale
 
-Scale property is used to change the size of an element on a webpage.
+Scaling changes the size of an element. Use the `transform` property along with the `scale` function. Here's an example of scaling a button on hover:
 
 **For example :**
 
@@ -182,7 +179,7 @@ In the above example, we can create button. We provide CSS style to the button. 
 
 ### rotate
 
-The `rotate` function in CSS is allows you to rotate an element by a specified angle.
+Rotation allows you to rotate an element by a specified angle. You can use functions like `rotate`, `rotateX`, `rotateY`, and `rotateZ`. Here's an example of rotating an image:
 
 **For example :**
 

@@ -4,38 +4,48 @@ description: "Datatypes and Variables"
 hide_table_of_contents: true
 ---
 
- ## Datatypes In Javascript
+ ## Primitive Data types
 
- ### Premitive Data types
+ 1. **String**
+ 
+A string is a data type used to represent textual data. It consists of a sequence of characters enclosed within single ('') or double ("") quotation marks.
 
- 1. String :  A string is a data type used to represent textual data. A string is a sequence of characters enclosed within single ('') or double ("") quotation marks.
- > "Hello Im String"
- > 'Hello, How are you...'
+**Example :**
 
- 2. Int : Proper numbers without pointing 
- values. 
- > 123456
+>`"Hello, I'm a string"` <br/>
+>`'Hello, How are you...'`
 
- 3. Float : Pointing Values
+ 2. **Int** 
+ 
+ Integers are whole numbers without decimal points.
+
+**Example :**
+ 
+>`123456`
+
+ 3. **Float** 
+ 
+ Floats are numbers with decimal points.
+
  > 8793.90 
 
- 4. Boolean : A boolean is a data type that represents one of two possible values: true or false
+ 4. **Boolean** 
+ 
+ A boolean represents one of two possible values: `true` or `false`.
+
  > `true or false`
 
- ### What is Javascript Engine?
- > Whatever we code in Javascript, the browser converts it into output, but it does not do this job alone, it has a JavaScript Engine, all chromium based browsers have an engine named V8, it compiles the Javascript code, So the Javascript engine works like a compiler, which compiles Javascript and produces output. 
+## What is Javascript Engine?
+ 
+ A JavaScript engine is responsible for executing JavaScript code in a web browser. Browsers utilize engines like V8 (used in Chromium-based browsers), which compiles JavaScript code and produces the desired output.
 
- ## Variables In Javascript
- variable is used to store data.
+## Variables In Javascript
 
- ### How to create variables:
- There are three keywords to make variables:
+A variable is used to store data. There are three keywords to declare variables:
 
- 1. let 
- 2. const
- 3. var 
+**`let`**, **`const`**, **`var`** 
 
- **Synatx**
+ **Synatx :**
 
 `keyword valriableName;`
 
@@ -58,7 +68,7 @@ In the above example we create declaration and assignment part at same time.
 ## let
 
 Let keyword used to declare variables in JavaScript.
-Variables defined using let cannot be re-declared.
+Variables defined using let Cannot be re-declared within the same scope.
 
 **Code**
 
@@ -151,7 +161,8 @@ In the above example we can create one variable using `let` keyword name of that
 >undefined
 
 ### Template String 
- Template strings are enclosed by backticks (``) instead of single or double quotes.Useing template string we can add variables inside the placeholders.
+
+ Template strings are enclosed by backticks `(``)` and allow variables to be added using placeholders `${}`.
 
  `placeholder: ${}`
 
@@ -178,7 +189,8 @@ In the above example we can create one variable using `let` keyword name of that
 > Name : Suraj
 
 ## const
-const means constant , we cannot change or assign the value of const variable.
+
+`const` declares a constant variable that cannot be reassigned.
 
 **Example**
 
@@ -201,7 +213,8 @@ const means constant , we cannot change or assign the value of const variable.
 > 20
 
 ## var
-The var keyword is used to declare variables. 
+
+`var` is an older way to declare variables with functional scope.
 
 **Example**
 
@@ -226,39 +239,18 @@ The var keyword is used to declare variables.
 
 ## Difference between var, let and const
 
-### var
-
-- The scope of the var variable is the functional scope.
-
-- It can be updated and re-declared in scope.
-
-- It can be declared without initialization.
-
-- It can be accessed without initialization because its default value is undefined.
-
-### let
-
-- Let allow us to declare a variable that is limited to the scope of a block.
-
-- In let first we declare variable and second time we used so there is no need to write second time.
-
-- It can be declared without initialization.
-
-- It cannot accessed without initialization, or a "reference error" will be raised.
-
-### const
-
-- The scope of the const variable is block scope.
-
-- It cannot be updated or re-declared in scope.
-
-- It cannot be accessed without initialization because it cannot be declared without initialization.
+|                    |     var     |    let   |      const    |
+| -------------------| ----------- |----------- | ----------- |
+| **Scope**          |The scope of the var variable is the functional scope.|Let allow us to declare a variable that is limited to the scope of a block.|The scope of the const variable is block scope.|
+| **Updates**        |  It can be updated and re-declared in scope. |It Can be updated, but not re-declared within its scope. | Cannot be updated or re-declared after being defined. |
+| **Initialization** | Can be declared without being assigned a value. | Can be declared without being assigned a value. |Must be assigned a value when declared. |
+| **Access**         |It can be accessed without initialization because its default value is undefined. | It cannot accessed without initialization, or a "reference error" will be raised.| It cannot be accessed without initialization because it cannot be declared without initialization.  |
 
 ## Rules to declare variables:
 
-1. a-z, A-Z, 0-9, and _
-2. variable cannot start with numbers.
-3. variable name cannot be a reserved keyword.
+1. Use letters `a-z`, `A-Z`, digits `0-9`, and underscore `_`.
+2. Variables cannot start with numbers.
+3. Variable names cannot be reserved keywords.
 
 
 

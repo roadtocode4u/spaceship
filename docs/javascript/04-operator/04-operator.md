@@ -12,16 +12,17 @@ Operators are used to perform certain operations on one or more values or variab
 
 1. Arithmetic operators (+, -, \*, /)
 2. Assignment operators (=, +=, -=, \*=, /=)
-3. Increment & Decrement operator
-4. Logical operators (&& (logical AND), || (logical OR), ! (logical NOT))
-5. Comparison operators (<, >, <=, >=, ==, !=)
-6. Bitwise operators (&, |, ^, ~, <<, >>
+3. Increment & Decrement operator 
 
 ### Arithmetic Operators
 
+Arithmetic operators perform basic mathematical computations on values.
+
 **1. Addition Operator (+)**
 
-**Code**
+The addition operator (`+`) is used to add two numbers together.
+
+**Code :**
 
 ```html
 <!DOCTYPE html>
@@ -48,6 +49,8 @@ This code defines three variable : `a` is assigned the value `10`, `b` is assign
 The document.write() method is then used to output the value of `result` to the document, which will display as the number `30` in the rendered HTML.
 
 **2. Subtraction Operator (-)**
+
+The subtraction operator (-) subtracts one number from another.
 
 **Code**
 
@@ -77,6 +80,8 @@ The document.write() method is then used to output the value of `result` to the 
 
 **3. Multiplication Operator**
 
+The multiplication operator (`*`) multiplies two numbers.
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -102,6 +107,8 @@ This code defines three variable : `a` is assigned the value `8`, `b` is assigne
 The document.write() method is then used to output the value of `result` to the document, which will display as the number `40` in the rendered HTML.
 
 **4. Division Operator (/)**
+
+The division operator (`/`) divides one number by another.
 
 ```html
 <!DOCTYPE html>
@@ -129,7 +136,7 @@ The document.write() method is then used to output the value of `result` to the 
 
 **5. Modulus Operator (%)**
 
-Modulus Operator are used to calculate reminder.
+The modulus operator (`%`) returns the remainder of a division operation.
 
 **Code**
 
@@ -159,9 +166,11 @@ The output of this code snippet will be `1`. This is because `10` can be divided
 
 ### Assignment Operators
 
+Assignment operators are used to assign values to variables.
+
 **1. equals to (=)**
 
-It is used to assign a value to a variable.
+The equals to operator (`=`) assigns a value to a variable.
 
 **Code**
 
@@ -191,6 +200,8 @@ It's important to note that the `let` keyword is used to declare a variable that
 
 **2. plus equals to (+=)**
 
+The plus equals to operator (`+=`) adds a value to the current value of a variable.
+
 **Code**
 
 ```html
@@ -217,6 +228,8 @@ It's important to note that the `let` keyword is used to declare a variable that
 > New Balance:520
 
 **3. minus equals to (-=)**
+
+The minus equals to operator (`-=`) subtracts a value from the current value of a variable.
 
 **Code**
 
@@ -245,14 +258,15 @@ It's important to note that the `let` keyword is used to declare a variable that
 
 ### Increment & Decrement Operators
 
-`Increment Operator : ++` <br/>
-`Decrement Operator : --`
+Increment and decrement operators increase or decrease the value of a variable.
 
  ## Increment Operator
+
   There are two types of increment operators: The `pre-increment operator (++variable) ` and the `post-increment operator (variable++)`.
 
  1. **Post-Increment Operator (variable++):**
- > This operator increments the value of the variable by 1, but it returns the original value before the increment. After the value is returned, the variable is then incremented by 1.
+
+ > The post-increment operator (`variable++`) increases the value of a variable by `1`, returning the original value before the increment.
 
  **Code**
 
@@ -278,7 +292,8 @@ It's important to note that the `let` keyword is used to declare a variable that
 > 22
 
  2. **Pre-Increment Operator (++variable):**
- >This operator also increments the value of the variable by 1, but it returns the value after the increment.
+
+The pre-increment operator (`++variable`) increases the value of a variable by `1`, returning the value after the increment.
 
  **Code**
 
@@ -304,10 +319,13 @@ It's important to note that the `let` keyword is used to declare a variable that
 > 21
 
 ## Decrement Operator
+
 There are two types of decrement operators: The `pre-decrement operator (--variable) ` and the `post-decrement operator (variable--)`.
 
 1. **Post-Decrement Operator (variable--):**
->This operator decreases the value of the variable by 1, but it returns the original value before the decrement. After the value is returned, the variable is then decremented by 1.
+
+The post-decrement operator (`variable--`) decreases the value of a variable by `1`, returning the original value before the decrement.
+
 
 **Code**
 
@@ -332,8 +350,9 @@ There are two types of decrement operators: The `pre-decrement operator (--varia
 > 21 <br/>
 > 20
 
-2. **Pre-Decrement Operator (--variable):**  
->This operator also decreases the value of the variable by 1, but it returns the value after the decrement.
+2. **Pre-Decrement Operator (--variable):**
+
+The pre-decrement operator (`--variable`) decreases the value of a variable by `1`, returning the value after the decrement.
 
 **Code**
 

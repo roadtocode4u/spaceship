@@ -256,6 +256,93 @@ The minus equals to operator (`-=`) subtracts a value from the current value of 
 > Current Balance :500 <br/>
 > New Balance:350
 
+**4. multiplication equals to (*=)**
+
+The multiplication equals to operator (`*=`) multiplication a value from the current value of a variable.
+
+**Code**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello JS 💛</title>
+    <script>
+      let balance = 500;
+      document.write("Current Balance :" + balance);
+
+      balance *= 150;
+
+      document.write("<br/> New Balance:" + balance);
+    </script>
+  </head>
+  <body></body>
+</html>
+```
+
+**Output**
+
+> Current Balance :500 <br/>
+> New Balance:75000
+
+**5. division equals to (*=)**
+
+The division equals to operator (`/=`) division a value from the current value of a variable.
+
+**Code**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello JS 💛</title>
+    <script>
+      let balance = 500;
+      document.write("Current Balance :" + balance);
+
+      balance /= 150;
+
+      document.write("<br/> New Balance:" + balance);
+    </script>
+  </head>
+  <body></body>
+</html>
+```
+
+**Output**
+
+> Current Balance :500 <br/>
+> New Balance:3.3333
+
+**6. modulus equals to (*=)**
+
+The modulus equals to operator (`%=`) modulus a value from the current value of a variable.
+
+**Code**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello JS 💛</title>
+    <script>
+      let balance = 500;
+      document.write("Current Balance :" + balance);
+
+      balance %= 150;
+
+      document.write("<br/> New Balance:" + balance);
+    </script>
+  </head>
+  <body></body>
+</html>
+```
+
+**Output**
+
+> Current Balance :500 <br/>
+> New Balance:50
+
 ### Increment & Decrement Operators
 
 Increment and decrement operators increase or decrease the value of a variable.
@@ -301,7 +388,7 @@ The pre-increment operator (`++variable`) increases the value of a variable by `
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Post-Increment Operator</title>
+    <title>Pre-Increment Operator</title>
     <script>
     let num = 21;
     let result = ++num; 
@@ -315,8 +402,8 @@ The pre-increment operator (`++variable`) increases the value of a variable by `
 
 **Output**
 
-> 21 <br/>
-> 21
+> 22 <br/>
+> 22
 
 ## Decrement Operator
 
@@ -333,7 +420,7 @@ The post-decrement operator (`variable--`) decreases the value of a variable by 
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Post-Increment Operator</title>
+    <title>Post-Decrement Operator</title>
     <script>
     let num = 21;
     let result = num--; 
@@ -360,7 +447,7 @@ The pre-decrement operator (`--variable`) decreases the value of a variable by `
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Post-Increment Operator</title>
+    <title>Pre-Decrement Operator</title>
     <script>
     let num = 21;
     let result = --num; 

@@ -40,29 +40,27 @@ To edit or remove the background of images, there are three ways you can upload 
 
 <img src="/tip-and-tools/06/screenshot-3.png" alt="screenshot-3" width="600px"/>
 
-- Once you upload the image on remove.bg, it automatically removes the backgroung of the image uploaded and displays result image.
+4. Once you upload the image on remove.bg, it automatically removes the backgroung of the image uploaded and displays result image.
 
 <img src="/tip-and-tools/06/screenshot-4.png" alt="screenshot-4" width="600px"/>
 
-- You can now download the edited image from the download option as shown:
+5. You can now download the edited image from the download option as shown:
 
 <img src="/tip-and-tools/06/screenshot-5.png" alt="screenshot-5" width="600px"/>
 
-- If you want, you can also edit the image further, by choosing the edit option:
+6. If you want, you can also edit the image further, by choosing the edit option:
 
 ## Tools & API
 
-- Save time, boost productivity and supercharge your workflow by implementing remove.bg's automatic background removal integration into your everyday work. Remove.bg provides a curated selection of top solutions:
+Save time, boost productivity and supercharge your workflow by implementing remove.bg's automatic background removal integration into your everyday work. Remove.bg provides a curated selection of top solutions:
 
 <img src="/tip-and-tools/06/screenshot-6.png" alt="screenshot-6" width="600px"/>
 
 ## Subscription Plan
 
-- Remove.bg also provides subscriptions plan based on the users's requirements.
+Remove.bg also provides subscriptions plan based on the users's requirements.
 
 <img src="/tip-and-tools/06/screenshot-7.png" alt="screenshot-7" width="600px"/>
 
 :::tip
-
-- Do remember to download the images you have edited. They will no longer be available on the website after 60 minutes of editing.  
-  :::
+Do remember to download the images you have edited. They will no longer be available on the website after 60 minutes of editing.

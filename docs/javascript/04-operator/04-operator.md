@@ -12,7 +12,7 @@ Operators are used to perform certain operations on one or more values or variab
 
 1. Arithmetic operators (+, -, \*, /)
 2. Assignment operators (=, +=, -=, \*=, /=)
-3. Increment & Decrement operator 
+3. Increment & Decrement operators
 4. Comparison operators (<, >, <=, >=, ==, !=)
 5. Logical operators (&& (logical AND), || (logical OR), ! (logical NOT))
 

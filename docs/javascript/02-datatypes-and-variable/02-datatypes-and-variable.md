@@ -223,6 +223,7 @@ In the above example we can create one variable using `let` keyword name of that
 1. Use letters `a-z`, `A-Z`, digits `0-9`, and underscore `_`.
 2. Variables cannot start with numbers.
 3. Variable names cannot be reserved keywords.
+4. Variable names are case-sensitive, which means `name` and `Name` are considered different variables.
 
 
 

@@ -192,7 +192,7 @@ The equals to operator (`=`) assigns a value to a variable.
 
 **Output**
 
-> 15
+> 50
 
 This code declare a variable named `result` using the `let` keyword and assigns it a value of `50`. The `document.write` method is then used to output the value of the `result` variable.
 
@@ -711,7 +711,7 @@ If the operand is true, it returns false, and if the operand is false, it return
   <head>
     <title>Hello JS 💛</title>
     <script>
-      document.write((!8==5))
+      document.write((8!=5))
     </script>
   </head>
   <body></body>

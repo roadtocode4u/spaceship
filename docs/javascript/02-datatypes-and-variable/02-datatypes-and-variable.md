@@ -160,34 +160,6 @@ In the above example we can create one variable using `let` keyword name of that
 
 >undefined
 
-### Template String 
-
- Template strings are enclosed by backticks `(``)` and allow variables to be added using placeholders `${}`.
-
- `placeholder: ${}`
-
- **Example**
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-  </head>
-  <body>
-    <script>
-      let age = 23;
-      let name = "Suraj";
-      console.log(`Age: ${age}, Name: ${name}`);
-    </script>
-  </body>
-</html>
-```
-
-**Output**
-
-> Age : 23 <br/>
-> Name : Suraj
-
 ## const
 
 `const` declares a constant variable that cannot be reassigned.

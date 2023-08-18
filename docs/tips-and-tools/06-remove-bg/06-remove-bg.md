@@ -18,29 +18,31 @@ Remove BG uses sophisticated AI technology to detect foreground layers and separ
 
 ## 🤔Why use removebg?
 
-- **Fast Service** It removes backgrounds 100% automatically in 5 seconds with one click.
-- **AI Technology** Thanks to remove.bg's clever AI, you can slash editing time - and have more fun! No matter if you want to make a background transparent (PNG) or add a white background to a photo - you can do all this and more with remove.bg.
-- **Supports API integration** It has built in tools and plugins for some of the most popular design programs, eCommerce sites and computer environments.
+- **Fast Service :** It removes backgrounds 100% automatically in 5 seconds with one click.
+- **AI Technology :** Thanks to remove.bg's clever AI, you can slash editing time - and have more fun! No matter if you want to make a background transparent (PNG) or add a white background to a photo - you can do all this and more with remove.bg.
+- **Supports API integration :** It has built in tools and plugins for some of the most popular design programs, eCommerce sites and computer environments.
 
 ## How to use Remove bg:
 
-To use remove bg, search 'remove bg' on Google, or any other search engine, and visit it's website https://www.remove.bg .
+To use remove bg, search `remove bg` on Google, or any other search engine, and visit it's website https://www.remove.bg .
 
-To edit or remove the background of images, there are three ways you can upload your files on remove.bg.
+<img src="/tip-and-tools/06/screenshot-0.png" alt="screenshot-0" width="600px"/>
 
-1. Click on Upload Image option on website's homepage:
+To edit or remove the background of images, there are three ways you can upload your files on `remove.bg`.
+
+1. Click on Upload Image button on website's homepage.
 
 <img src="/tip-and-tools/06/screenshot-1.png" alt="screenshot-1" width="600px"/>
 
-2. Directly drag and drop the file from your computer to the remove.bg's upload area.
+2. Directly drag and drop the file from your computer to the `remove.bg's` upload area.
 
 <img src="/tip-and-tools/06/screenshot-2.png" alt="screenshot-2" width="600px"/>
 
-3. Copy-Paste the image url from the web.
+3. Copy-Paste the image-url from the web.
 
 <img src="/tip-and-tools/06/screenshot-3.png" alt="screenshot-3" width="600px"/>
 
-4. Once you upload the image on remove.bg, it automatically removes the backgroung of the image uploaded and displays result image.
+4. Once you upload the image on `remove.bg`, it automatically removes the background of the image uploaded and displays result image.
 
 <img src="/tip-and-tools/06/screenshot-4.png" alt="screenshot-4" width="600px"/>
 
@@ -48,17 +50,17 @@ To edit or remove the background of images, there are three ways you can upload 
 
 <img src="/tip-and-tools/06/screenshot-5.png" alt="screenshot-5" width="600px"/>
 
-6. If you want, you can also edit the image further, by choosing the edit option:
+6. If you want, you can also edit the image further, by choosing the edit option.
 
 ## Tools & API
 
-Save time, boost productivity and supercharge your workflow by implementing remove.bg's automatic background removal integration into your everyday work. Remove.bg provides a curated selection of top solutions:
+Save time and supercharge your workflow by using remove.bg's automatic background removal integration for top-quality results.
 
 <img src="/tip-and-tools/06/screenshot-6.png" alt="screenshot-6" width="600px"/>
 
 ## Subscription Plan
 
-Remove.bg also provides subscriptions plan based on the users's requirements.
+`remove.bg` also provides subscriptions plan based on the users's requirements.
 
 <img src="/tip-and-tools/06/screenshot-7.png" alt="screenshot-7" width="600px"/>
 

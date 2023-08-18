@@ -107,7 +107,7 @@ if (condition) {
 > True<br/>
 > General Statement
 
-#### 1. if-else
+#### 2. if-else
 
 **Syntax :**
 
@@ -309,3 +309,348 @@ In the above example, HTML tags were used within a script tag. The script tag co
 **Code Explanation :**
 
 In the above example, HTML tags were used within a `<script>` tag. The script tag of 3rd line where in the `<h1>` tag is used to change text color of the text.
+
+#### 3. if-else-ladder
+
+**Syntax :**
+
+```js
+if (condition) {
+  //Statement
+}
+else if(condition){
+  //Statement
+}
+else if(condition){
+  //Statement
+}
+else{
+   //Statement 
+}
+```
+
+**Code :**
+
+```js
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Hello JS 💛</title>
+ </head>
+ <body>
+  <script>
+  const number = 3;
+
+  if(number == 1)
+  {
+    document.write('One');
+  }
+  else if(number == 2)
+  {
+    document.write('Two');
+  }
+  else if(number == 3)
+  {
+    document.write('Three');
+  }
+  else if(number == 4)
+  {
+    document.write('Four');
+  }
+  else if(number == 5)
+  {
+    document.write('Five');
+  }
+  else{
+     document.write('Invalid');
+  }   
+   </script>
+ </body>
+</html>
+```
+
+**Output**
+
+>Three
+
+**Code :**
+
+```js
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Hello JS 💛</title>
+ </head>
+ <body>
+  <script>
+  const number = 8;
+
+  if(number == 1)
+  {
+    document.write('One');
+  }
+  else if(number == 2)
+  {
+    document.write('Two');
+  }
+  else if(number == 3)
+  {
+    document.write('Three');
+  }
+  else if(number == 4)
+  {
+    document.write('Four');
+  }
+  else if(number == 5)
+  {
+    document.write('Five');
+  }
+  else{
+     document.write('Invalid');
+  }   
+   </script>
+ </body>
+</html>
+```
+
+**Output**
+
+>Invalid
+
+## Taking Input From User
+
+**Code :**
+
+```js
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Hello JS 💛</title>
+ </head>
+ <body>
+  <script>
+  const number = parseInt(prompt('Enter a number'));
+
+  if(number == 1)
+  {
+    document.write('One');
+  }
+  else if(number == 2)
+  {
+    document.write('Two');
+  }
+  else if(number == 3)
+  {
+    document.write('Three');
+  }
+  else if(number == 4)
+  {
+    document.write('Four');
+  }
+  else if(number == 5)
+  {
+    document.write('Five');
+  }
+  else{
+     document.write('Invalid');
+  }   
+   </script>
+ </body>
+</html>
+```
+
+**Output**
+
+>Enter a number : 5 <br/>
+>Five
+
+**Code :**
+
+```js
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Hello JS 💛</title>
+ </head>
+ <body>
+  <script>
+  const per = parseInt(prompt('Enter a number'));
+
+  if(per >= 90){
+    console.log('A')
+  }
+  else if(per >= 80){
+    console.log('B')
+  }
+  else if(per >= 70){
+    console.log('C')
+  }
+  else if(per >= 60){
+    console.log('D')
+  } 
+  else if(per >= 50){
+    console.log('E ')
+  } 
+  else{
+    console.log('Fail')
+  } 
+
+
+  </script>
+ </body>
+</html>
+```
+
+**Output**
+
+>Enter a number : 82 <br/>
+>B
+
+## Boundary Cases:
+
+**Code :**
+
+```js
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Hello JS 💛</title>
+ </head>
+ <body>
+  <script>
+ const per = parseInt(prompt('Enter Percentage:')); 
+
+  if(per >= 50 && per<60){
+    console.log('E')
+  }
+  else if(per >= 60 && per<70){
+    console.log('D')
+  }
+  else if(per >= 70 && per<80){
+    console.log('C')
+  }
+  else if(per >= 80 && per<90){
+    console.log('B')
+  }
+  else if(per >= 90 && per<=100){
+    console.log('A')
+  } 
+  else{
+    console.log('Fail')
+  } 
+  </script>
+ </body>
+</html>
+```
+
+**Output**
+
+>Enter a number : 38 <br/>
+>Fail
+
+#### 4. nested-if
+
+**Syntax:**
+```js
+if (condition A){
+   //statement
+    if (condition B){
+       //statement
+    }
+    else{
+      //statement
+    }
+  }
+  else{
+      //statement
+  }
+```
+            
+
+**Code :**
+
+```js
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Hello JS 💛</title>
+ </head>
+ <body>
+  <script>
+  const jeeMain = 130;
+  const jeeAdv = 150;
+
+  if(jeeMain>=120)
+  {
+    console.log("JEE MAIN Claer Hua...");
+    if(jeeAdv>=120)
+    {
+       console.log("JEE ADV Claer Hua...");
+    }
+    else
+    {
+       console.log("JEE ADV Claer NAHI Hua...");
+    }
+  }
+  else
+  {
+    console.log("JEE MAIN Claer NAHI Hua...")
+  }
+  </script>
+ </body>
+</html>
+```
+
+**Output**
+
+>JEE MAIN Claer Hua... <br/>
+>JEE ADV Claer Hua...
+
+**Code :**
+
+```js
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Hello JS 💛</title>
+ </head>
+ <body>
+  <script>
+  const jeeMain = 100;
+  const jeeAdv = 150;
+
+  if(jeeMain>=120)
+  {
+    console.log("JEE MAIN Claer Hua...");
+    if(jeeAdv>=120)
+    {
+       console.log("JEE ADV Claer Hua...");
+    }
+    else
+    {
+       console.log("JEE ADV Claer NAHI Hua...");
+    }
+  }
+  else
+  {
+    console.log("JEE MAIN Claer NAHI Hua...")
+  }
+  </script>
+ </body>
+</html>
+```
+
+**Output**
+
+>JEE MAIN Claer NAHI Hua...<br/>
+
+
+
+
+
+
+
+
+
+  
+

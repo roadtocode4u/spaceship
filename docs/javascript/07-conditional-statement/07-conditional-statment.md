@@ -1,6 +1,6 @@
 ---
-title: Conditional Operator
-description: "Conditional Operator"
+title: Conditional Statement
+description: "Conditional Statement"
 hide_table_of_contents: true
 ---
 
@@ -254,61 +254,6 @@ if (condition) {
 
 <img src="/javascript/07/screenshot-12.png" alt="screenshot-12" width="600px"/>
 
-### How to add HMTL tags in JavaScript
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Html in JS</title>
-  </head>
-  <body>
-    <script>
-      document.write("Hello");
-      document.write("<b> Hello </b>");
-      document.write("<h1> Hello </h1>");
-    </script>
-  </body>
-</html>
-```
-
-**Output :**
-
-<img src="/javascript/07/screenshot-1.png" alt="screenshot-1" width="600px"/>
-
-**Code Explanation :**
-
-In the above example, HTML tags were used within a script tag. The script tag contained the code `document.write('<b> Hello </b>');` where the `<b>` tag was used to make the word `Hello` appear in bold.
-
-#### We also apply CSS within the script tag.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Html in JS</title>
-  </head>
-  <body>
-    <script>
-      document.write("Hello");
-      document.write("<b> Hello </b>");
-      document.write(`<h1 style="color:red;"> Hello </h1>`);
-    </script>
-  </body>
-</html>
-```
-
-**Output :**
-
-<img src="/javascript/07/screenshot-2.png" alt="screenshot-2" width="600px"/>
-
-**Code Explanation :**
-
-In the above example, HTML tags were used within a `<script>` tag. The script tag of 3rd line where in the `<h1>` tag is used to change text color of the text.
 
 #### 3. if-else-ladder
 

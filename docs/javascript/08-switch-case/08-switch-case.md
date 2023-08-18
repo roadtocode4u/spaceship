@@ -6,9 +6,9 @@ hide_table_of_contents: true
 
 ## Switch Case
 
->The switch statement provides a convenient way to execute different blocks of code depending on the value of a variable or expression.
+The switch statement provides a convenient way to execute different blocks of code depending on the value of a variable or expression.
 
-**Syntax:**
+**Syntax :**
 
 ```js
 switch (expression) {
@@ -27,7 +27,7 @@ switch (expression) {
 }
 ```
 
-**Code:**
+**Code :**
 
 ```js
 <!DOCTYPE html>
@@ -68,11 +68,14 @@ switch (expression) {
   </body>
 </html>
 ```
-**Output**
+
+**Output :**
 
 > three
 
-In the above code we uses a switch statement to evaluate the value of the variable `num`. The switch statement checks if `num` is equal to different cases and executes the code block associated with the first matching case.
+**Code Explanation :**
+
+In the above code, we uses a switch statement to evaluate the value of the variable `num`. The switch statement checks if `num` is equal to different cases and executes the code block associated with the first matching case.
 
 In this case, since `num` is assigned the value of `3`, the code block associated with the case `3` label is executed, which will write the string `three` to the document.
 
@@ -80,7 +83,7 @@ If `num` had a different value, the default case would be executed, which would 
 
 Overall, this code is a simple example of using a switch statement in JavaScript to evaluate the value of a variable and execute different code blocks based on the value.
 
-**Code:**
+**Code :**
 
 ```js
 <!DOCTYPE html>
@@ -109,11 +112,20 @@ Overall, this code is a simple example of using a switch statement in JavaScript
   </body>
 </html>
 ```
-**Output**
+
+**Output :**
 
 > Option 2
 
-**Code:**
+**Code Explanation :**
+
+In the above code, we uses a switch statement to evaluate the value of the variable `option`. The switch statement checks if `option` is equal to different cases and executes the code block associated with the first matching case.
+
+In this case, since `option` is assigned the value of `2`, the code block associated with the case `2` label is executed, which will write the string `Option 2` to the document.
+
+Overall, this code is a simple example of using a switch statement in JavaScript to evaluate the value of a variable and execute different code blocks based on the value.
+
+**Code :**
 
 ```js
 <!DOCTYPE html>
@@ -141,12 +153,21 @@ Overall, this code is a simple example of using a switch statement in JavaScript
   </body>
 </html>
 ```
-**Output**
+**Output :**
 
 > Option 1 <br/>
 > Option 2 
 
-**Code:**
+**Code Explanation :**
+
+In the above code, we uses a switch statement to evaluate the value of the variable `option`. The switch statement checks if `option` is equal to different cases and executes the code block associated with the first matching case.
+
+In this case, since `option` is assigned the value of `1`, the code block associated with case `1` and case `2` is executed, causing two statements to run simultaneously because `break` cannot be used after the first case.
+
+Overall, this code is a simple example of using a switch statement in JavaScript to evaluate the value of a variable and execute different code blocks based on the value.
+
+
+**Code :**
 
 ```js
 <!DOCTYPE html>
@@ -178,11 +199,18 @@ Overall, this code is a simple example of using a switch statement in JavaScript
   </body>
 </html>
 ```
-**Output**
+**Output :**
 
 > BAD Option
 
-**Code:**
+**Code Explanation :**
+
+In the above code, we uses a switch statement to evaluate the value of the variable `option`. The switch statement checks if `option` is equal to different cases and executes the code block associated with the first matching case.
+
+In this case, the code block associated with the `default` label is executed because `option` is assigned the value of `5`. This block writes the string `BAD Option` to the output.
+
+
+**Code :**
 
 ```js
 <!DOCTYPE html>
@@ -215,8 +243,18 @@ Overall, this code is a simple example of using a switch statement in JavaScript
   </body>
 </html>
 ```
-**Output**
+**Output :**
 
 >Enter food option: burger<br/>
 >🍔
+
+**Code Explanation :**
+
+In the above code, a switch statement is used to evaluate the value of the variable `option`. The switch statement checks if `option` is equal to different cases and executes the code block associated with the first matching case.
+
+In this case, since `option` is `taking input from the user`, the code block associated with the case `3` label is executed, which will write the string `three` to the document. 
+
+If `num` had a different value, the default case would be executed, which would write the string `wrong input` to the document.
+
+Overall, this code is a simple example of using a switch statement in JavaScript to evaluate the value of a variable and execute different code blocks based on the value.
  

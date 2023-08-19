@@ -10,13 +10,17 @@ A conditional statement is a programming construct that allows you to execute di
 
 **There are 5 type of conditional statement.**
 
-1. if
-2. if-else
-3. if-else-ladder
-4. nested-if
-5. switch case
+1. **if Statement** : Executes a block of code if the specified condition is true.
 
-#### 1. if
+2. **if-else Statement** : Executes one block of code if the condition is true and a different block if the condition is false.
+
+3. **if-else-ladder Statement** : Executes a specific block of code from a series of options based on multiple conditions.
+
+4. **nested-if Statement** : Uses an if statement inside another if statement to create a hierarchy of conditions.
+
+5. **switch-case Statement** : Provides an efficient way to handle multiple possible conditions by associating them with specific code blocks.
+
+## 1. if
 
 **Syntax :**
 
@@ -50,6 +54,14 @@ if (condition) {
 
 > You are eligible for voting...
 
+In the above cod in JavaScript and is meant to be embedded within an HTML document using a `<script>` tag. 
+
+`const age = 20;` : This line declares a constant variable named `age` and assigns the value `20` to it. This represents the age of a person.
+
+`if (age > 18) { ... }` : This is an if statement, which is a type of conditional statement. It checks whether the value of the age variable is greater than `18`. If this condition evaluates to `true`, the code block within the curly braces `{ ... }` will be executed.
+
+`document.write("You are eligible for voting...");`: Inside the code block of the if statement, there is a single line that uses the `document.write()` method to display a message on the web page. The message `You are eligible for voting...` will be written to the document if the condition `age > 18` is `true`.
+
 **Code :**
 
 ```html
@@ -77,6 +89,16 @@ if (condition) {
 **Output :**
 
 > General Statement
+
+In the above code of two constant declarations and an `if` statement. 
+
+`const a = 10;` and `const b = 20;`: These two lines declare two constant variables, `a` and `b`, and assign the values `10` and `20` to them, respectively.
+
+`if (a > b) { ... }`: This is an if statement that checks whether the value of a (which is 10) is greater than the value of b (which is 20). Since `10` is not greater than `20`, the condition evaluates to `false`, and the code block within the curly braces `{ ... }` will not be executed.
+
+`console.log("True");`: This line is inside the code block of the if statement. However, since the condition is `false`, this line will not be executed, and the message `True` will not be logged to the browser's console.
+
+`console.log("General Statement");`: This line is outside the if statement, so it will always be executed. It logs the message `General Statement` to the browser's console.
 
 **Code :**
 
@@ -107,7 +129,15 @@ if (condition) {
 > True<br/>
 > General Statement
 
-#### 2. if-else
+`const a = 30;` and `const b = 20;`: These two lines declare two constant variables, `a` and `b`, and assign the values `30` and `20` to them, respectively.
+
+`if (a > b) { ... }` : This is an `if` statement that checks whether the value of a (which is 30) is greater than the value of b (which is 20). Since `30` is indeed greater than `20`, the condition evaluates to `true`, and the code block within the curly braces` { ... } `will be executed.
+
+`console.log("True");`: This line is inside the code block of the if statement. Because the condition is `true`, this line will be executed, and the message `True` will be logged to the browser's console.
+
+`console.log("General Statement");`: This line is outside the if statement, so it will always be executed. It logs the message `General Statement` to the browser's console.
+
+## 2. if-else
 
 **Syntax :**
 
@@ -151,6 +181,14 @@ if (condition) {
 
 <img src="/javascript/07/screenshot-4.png" alt="screenshot-4" width="600px"/>
 
+`const number = parseInt(prompt("Enter Number: "));`: This line prompts the user to enter a number and stores the entered value in the number variable. The `parseInt()` function is used to convert the input from a string to an integer.
+
+`if (number >= 0) { ... }`: This is an if statement that checks whether the value of the number variable is greater than or equal to `0`. If the condition evaluates to `true`, the code block within the curly braces `{ ... }` will be executed.
+
+`console.log("Positive Number");`: This line is inside the code block of the if statement. If the entered number is greater than or equal to `0`, this line will be executed, and the message `Positive Number` will be logged to the browser's console.
+
+`console.log("Negative Number");`: This line is inside the else block of the if statement. If the entered number is not greater than or equal to `0`, this line will be executed, and the message `Negative Number` will be logged to the browser's console.
+
 **2. Write a Javascript program to find Even or Odd number.**
 
 ```html
@@ -180,6 +218,14 @@ if (condition) {
 <img src="/javascript/07/screenshot-5.png" alt="screenshot-5" width="600px"/>
 
 <img src="/javascript/07/screenshot-6.png" alt="screenshot-6" width="600px"/>
+
+`const number = parseInt(prompt("Enter Number: "));`: This line prompts the user to enter a number and stores the entered value in the number variable. The `parseInt()` function is used to convert the input from a string to an integer.
+
+`if (number % 2 == 0) { ... }:` This is an if statement that checks whether the remainder of dividing the value of the number variable by `2` is equal to `0`. If the remainder is `0`, the code block within the curly braces `{ ... }` will be executed.
+
+`console.log("Number is Even");`: This line is inside the code block of the `if` statement. If the remainder of the division is `0`, meaning the entered number is evenly divisible by `2`, this line will be executed, and the message `Number is Even` will be logged to the browser's console.
+
+`console.log("Number is Odd");`: This line is inside the else block of the if statement. If the remainder of the division is not `0`, meaning the entered number is not evenly divisible by `2`, this line will be executed, and the message `Number is Odd` will be logged to the browser's console.
 
 **3. Write a Javascript program to find Greater number.**
 

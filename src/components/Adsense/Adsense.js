@@ -9,8 +9,9 @@ function Adsense({ dataAdSlot }) {
     }
   }, []);
   return (
-    <div>
+    <div style={{ textAlign: "center" }}>
       <ins
+        data-adtest="on"
         className="adsbygoogle"
         style={{ display: "block" }}
         data-ad-client="ca-pub-1373341236327290"
@@ -18,7 +19,6 @@ function Adsense({ dataAdSlot }) {
         data-ad-format="auto"
         data-full-width-responsive="true"
       ></ins>
-      Ads are blocked by default
     </div>
   );
 }

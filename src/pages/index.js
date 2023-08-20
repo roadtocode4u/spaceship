@@ -1,10 +1,10 @@
-import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
 import React from "react";
 
+import Adsense from "../components/Adsense/Adsense";
 import TopicMenus from "../components/TopicMenus";
 import styles from "./index.module.css";
 
@@ -31,6 +31,7 @@ export default function Home() {
       <main>
         <TopicMenus />
         <HomepageFeatures />
+        <Adsense />
       </main>
     </Layout>
   );

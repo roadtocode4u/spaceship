@@ -264,23 +264,16 @@ if (condition) {
 
 <img src="/javascript/07/screenshot-9.png" alt="screenshot-7" width="600px"/>
 
-In the above example two variables, `num1 and num2`, are declared and `initialized`: <br/>
-`num1` is assigned the `integer value` entered by the user for `"Number 1."`. 
-`num2` is assigned the `integer value` entered by the user for `"Number 2."`
+`const num1 = parseInt(prompt("Enter Number 1 :"));`: This line of code prompts the user to enter a number using the prompt function. The prompt function displays a dialog box with the message `Enter Number 1 :` and waits for the user to input a value. The value entered by the user is then stored in the constant variable `num1`. The `parseInt` function is used to convert the input string into an `integer`.
 
-`if-else statement` to compare `num1 and num2`. Here's how the comparison works based on your input:
+`const num2 = parseInt(prompt("Enter Number 2 :"));`: This line is similar to the previous line but prompts the user to enter another number, which is then stored in the constant variable `num2`.
 
-You entered `89` for `"Number 1"` and `100` for `"Number 2"`.
+`if (num1 > num2) { ... } else { ... }`: This is an if-else statement, a conditional statement that checks whether a condition is `true` or `false`. In this case, it checks if `num1` is greater than `num2`. If the condition is `true`, the code inside the curly braces following the if statement will be executed. If the condition is `false`, the code inside the curly braces following the else statement will be executed.
 
-The `if statement` checks if `num1 (89)` is `greater than num2 (100)`. Since this condition is not `true`, it proceeds to the `else block`.
+`console.log(${num1} is greater than ${num2}.);`: If `num1` is indeed greater than `num2`, this line will execute, and it will log a message to the browser's console using the console.log function. The message will state that `num1` is greater than `num2`.
 
-So, the output of this code is:
-```js
-Enter Number 1 : 89
-Enter Number 2 : 100
-100 is greater than 89
-```
-This output correctly indicates that the value you entered for `"Number 2" (100)` is greater than the value you entered for `"Number 1" (89)`.
+`console.log(${num2} is greater than ${num1}.);`: If the condition in the if statement is `false`, meaning that `num1` is not greater than `num2`, this line will execute, and it will log a message stating that `num2` is greater than `num1`.
+
 
 **4. Write a Javascript program to find Discount.**
 
@@ -325,31 +318,27 @@ This output correctly indicates that the value you entered for `"Number 2" (100)
 
 <img src="/javascript/07/screenshot-12.png" alt="screenshot-12" width="600px"/>
 
-In the above example two variables, `rate and quantity`, are declared and initialized: <br/>
-`rate` is assigned the `integer value `entered by the user  for the `rate`.
-`quantity` is assigned the integer value entered by the user for the `quantity`.
+`const rate = parseInt(prompt("Enter rate: "));`: This line prompts the user to enter a `rate` (price per unit) using the prompt function and stores the entered value as an integer in the constant variable `rate`.
 
-calculates the bill amount by multiplying the `rate and quantity,` and stores it in the variable `bill`.
+`const quantity = parseInt(prompt("Enter quantity: "));`: Similar to the previous line, this line prompts the user to enter a quantity and stores the entered value as an integer in the constant variable `quantity`.
 
-You entered a `rate of 1000` and a `quantity of 5`.then calculates the `bill` as `rate * quantity`, which is `1000 * 5 = 5000`.
+`const bill = rate * quantity;`: This line calculates the bill amount by multiplying the `rate` and `quantity`. The result is stored in the constant variable `bill`.
 
-Since, the bill amount is `greater than 100`, the if block is executed:
+`if (bill > 100) { ... } else { ... }`: This if-else statement checks whether the bill amount is greater than `$100`. If the condition is `true`, the code inside the curly braces following the if statement will be executed. If the condition is `false`, the code inside the curly braces following the else statement will be executed.
 
-It calculates a `discount of bill / 10`, which is` 5000 / 10 = 500`.
-It calculates the `payable amount` as `bill - discount`, which is `5000 - 500 = 4500`.
-The discount amount as `"Discount: 500"` and the payable amount as `"Payble amount: 4500"` to the console.
+`const discount = bill / 10;`: If the bill amount is greater than `$100`, this line calculates a discount of `10%` of the bill amount and stores it in the constant variable discount.
 
-So, the final output of this code will be:
-```js
-Enter rate: 1000 <br/>
-Enter quantity: 5  <br/>
-Discount: 500 <br/>
-Payble amount: 4500
-```
+`const paybleAmount = bill - discount;`: This line calculates the payable amount after subtracting the discount from the original bill amount. The result is stored in the constant variable `paybleAmount`.
 
-So, the output correctly indicates that you received a `discount of 500`, and the` total payable amount is 4500` based on the input values you provided.
+`console.log(Discount: ${discount} );`: This line logs the calculated discount amount to the console.
 
-#### 3. if-else-ladder
+`console.log(Payble amount: ${paybleAmount});`: This line logs the payable amount after applying the discount (if applicable) to the console.
+
+`console.log("No discount");`: If the bill amount is `$100` or `less`, this line logs `No discount` to the console.
+
+`console.log(Payble amount: ${bill});`: This line logs the original bill amount (without any discount) to the console.
+
+## 3. if-else-ladder
 
 **Syntax :**
 
@@ -412,13 +401,15 @@ else{
 
 >Three
 
-`const number = 3;` declares a constant variable name is `number` and assigns it the value `3`.
+`const number = 3;`: This line declares a constant variable named `number` and assigns it a value of `3`.
 
-`if(number == 1)` This is the 1st `if` condition. It checks if number is `equal to 1`. If it is, it executes the code inside the curly braces immediately following it, which in this case is `document.write('One');`. Since number is `3`, this condition is not true, so it moves on to the next `else if` statement.
+`if (number == 1) { ... }`: This is an if statement. It checks if the value of `number` is equal to `1`. If it is, the code within the curly braces immediately following this line will be executed. In this case, it would display `One`.
 
-`else if(number == 2)` This is the 2nd `else if` statement. It checks if number is `equal to 2`. It executes the code inside the curly braces, which is` document.write('Two');`. Again, number is not `equal to 2`, so this condition is not matched, and the script proceeds to the next `else if`.
+`else if (number == 2) { ... }`: If the first condition is `false`, this line checks if the value of `number` is equal to `2`. If it is, the code within these curly braces will be executed. In this case, it would display `Two`.
 
-`else if(number == 3)` This is the 3rd `else if` statement. It checks if number is `equal to 3`. Since number is `equal to 3`, it executes the code inside the curly braces, which is `document.write('Three');`. This line print the text `"Three"` to the output.
+The next several lines follow a similar pattern, each checking for a different value of `number` and displaying a corresponding message.
+
+`else { ... }`: If none of the previous conditions are met (i.e., `number` is not `1`, `2`, `3`, `4`, or `5`), this block will be executed. It will display `Invalid`.
 
 **Code :**
 

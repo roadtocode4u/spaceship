@@ -457,9 +457,9 @@ The next several lines follow a similar pattern, each checking for a different v
 
 `const number = 8;` declares a constant variable name is `number` and assigns it the value `8`.
 
-`if(number == 1)` This is the 1st `if` condition. It checks if number is `equal to 1`. If it is, it executes the code inside the curly braces immediately following it, which in this case is `document.write('One');`. Since number is `3`, this condition is not true, so it moves on to the next `else if` statement.
+`if (number == 1) { ... }` This is the 1st `if` condition. It checks if number is `equal to 1`. If it is, it executes the code inside the curly braces immediately following it, which in this case is `document.write('One');`. Since number is `3`, this condition is not true, so it moves on to the next `else if` statement.
 
-`else if(number == 2)` This is the 2nd `else if` statement. It checks if number is `equal to 2`. It executes the code inside the curly braces, which is` document.write('Two');`. Again, number is not `equal to 2`, so this condition is not matched, and the script proceeds to the next `else if`.
+`else if(number == 2){ ... }` This is the 2nd `else if` statement. It checks if number is `equal to 2`. It executes the code inside the curly braces, which is` document.write('Two');`. Again, number is not `equal to 2`, so this condition is not matched, and the script proceeds to the next `else if`.
 
 The `3rd`, `4th` and `5th `conditions are similar to the `1st,` `2nd`.
 
@@ -567,9 +567,9 @@ In the above example you `Enter a number : 5`, then  `'Five'` is printed to the 
 
 The user entered value `82 `is then converted to an integer using `parseInt` and assigned to the variable `per`.
 
-The first `if statement` checks if `per is greater than or equal to 90`. In this case,` 82 is not greater than 90`, so this `condition is false`, and it proceeds to the next `else if`.
+The first `if statement { ... }` checks if `per is greater than or equal to 90`. In this case,` 82 is not greater than 90`, so this `condition is false`, and it proceeds to the next `else if`.
 
-The second `else if` checks if `per is greater than or equal to 80`. `82 is indeed greater than 80`, so this `condition is true`.
+The second `else if { ... }` checks if `per is greater than or equal to 80`. `82 is indeed greater than 80`, so this `condition is true`.
 
 When a `condition is true`, the block is `executed`. In this case, it print `'B'` to the coutput.
 
@@ -617,19 +617,19 @@ When a `condition is true`, the block is `executed`. In this case, it print `'B'
 
 `const number = parseInt(prompt("Enter Number: "));`: This line prompts the user to enter a number and stores the entered value in the number variable. The `parseInt()` function is used to convert the input from a string to an integer.
 
-`if-else if statements` to determine the grade based on the `entered percentage`. The conditions check for specific percentage ranges.
+`if-else if statements { ... }` to determine the grade based on the `entered percentage`. The conditions check for specific percentage ranges.
 
-`if (per >= 50 && per < 60): `If the percentage is` greater than or equal to 50` and `less than 60,` it prints `'E'` to the output.
+`if (per >= 50 && per < 60){ ... }: `If the percentage is` greater than or equal to 50` and `less than 60,` it prints `'E'` to the output.
 
-`else if (per >= 60 && per < 70):` If the percentage is `greater than or equal to 60` and `less than 70`, it prints `'D'` to the output.
+`else if (per >= 60 && per < 70){ ... }:` If the percentage is `greater than or equal to 60` and `less than 70`, it prints `'D'` to the output.
 
-`else if (per >= 70 && per < 80): `If the percentage is `greater than or equal to 70` and `less than 80`, it prints `'C'` to the output.
+`else if (per >= 70 && per < 80){ ... }: `If the percentage is `greater than or equal to 70` and `less than 80`, it prints `'C'` to the output.
 
-`else if (per >= 80 && per < 90):` If the percentage is `greater than or equal to 80` and `less than 90`, it prints `'B'` to the output.
+`else if (per >= 80 && per < 90){ ... }:` If the percentage is `greater than or equal to 80` and `less than 90`, it prints `'B'` to the output.
 
-`else if (per >= 90 && per <= 100):` If the percentage is `greater than or equal to 90` and `less than or equal to 100`, it prints `'A'` to the output.
+`else if (per >= 90 && per <= 100){ ... }:` If the percentage is `greater than or equal to 90` and `less than or equal to 100`, it prints `'A'` to the output.
 
-`else:` If none of the above conditions are matched, it means the entered percentage is below 50, and it prints `'Fail'` to the output.
+`else{ ... }:` If none of the above conditions are matched, it means the entered percentage is below 50, and it prints `'Fail'` to the output.
 
 In the above example you enter a `percentage of 38`, it false below the range of all the specified conditions, so the else `block is executed,` and `'Fail'` is printed to the output.
 
@@ -691,9 +691,9 @@ if (condition A){
 >JEE MAIN Claer Hua... <br/>
 >JEE ADV Claer Hua...
 
-In the above example `two variables`, `jeeMain and jeeAdv`, are declared and initialized with `values 130 and 150`.
+In the above example `two variables`, `jeeMain and jeeAdv`, are declared and assign `values 130 and 150`.
 
-The `if statement` checks whether `jeeMain is greater than or equal to 120`. This condition is true because` jeeMain is 130`.
+The `if statement{ ... }` checks whether `jeeMain is greater than or equal to 120`. This condition is true because` jeeMain is 130`.
 
 Inside this block, it logs `"JEE MAIN Clear Hua..."` to the console using `console.log()`.
 
@@ -744,9 +744,9 @@ both conditions in the `nested if statements are true`, so both `"JEE MAIN Clear
 
 >JEE MAIN Claer NAHI Hua...
 
-In the above example `two variables`, `jeeMain and jeeAdv`, are declared and initialized with `values 100 and 150`.
+In the above example `two variables`, `jeeMain and jeeAdv`, are declared and assign `values 100 and 150`.
 
-The `if statement` that checks the value of `jeeMain` against of 120.,Since `jeeMain (100) is less than 120`, the code proceeds to the `else block`.
+The `if statement{ ... }` that checks the value of `jeeMain` against of 120.,Since `jeeMain (100) is less than 120`, the code proceeds to the `else block`.
 
 Inside the `else block`, the ` "JEE MAIN Clear NAHI Hua..." `to the console. This indicates that the `JEE MAIN exam was not cleared` because the `jeeMain` score did not matched the required minimum score of `120`.
 

@@ -757,22 +757,3 @@ So, the final output of this code will be:
 ```js
 JEE MAIN Clear NAHI Hua...
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-

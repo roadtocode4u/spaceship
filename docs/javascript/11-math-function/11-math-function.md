@@ -8,15 +8,15 @@ JavaScript's Math functions are built-in tools that help you do math tasks easil
 
 There are Math Function in JS :
 
-- toFixed( )
-- Math.ceil(x)
-- Math.floor(x)
-- Math.round(x)
-- Math.pow(x,y)
-- Math.abs(x)
-- Math.min(x)
-- Math.max(x)
-- Math.sqrt(x)
+- `toFixed( )`
+- `Math.ceil(x)`
+- `Math.floor(x)`
+- `Math.round(x)`
+- `Math.pow(x,y)`
+- `Math.abs(x)`
+- `Math.min(x)`
+- `Math.max(x)`
+- `Math.sqrt(x)`
 
 1. **`toFixed()`** : The `toFixed()` method is used to format a number with a fixed number of decimal places and return it as a string.It allows you to control the precision of a floating-point number by specifying how many decimal places you want to keep.
 
@@ -26,7 +26,7 @@ There are Math Function in JS :
 number.toFixed(digits)
 ```
 `number`: The number you want to format.<br/>
-`digits`: The number of decimal places to keep in the result. It must be an integer between 0 and 20.
+`digits`: The number of decimal places to keep in the result.
 
 **Example :**
 
@@ -52,12 +52,12 @@ number.toFixed(digits)
 
 **Example Explanation :**
 
-In the above example, a variable named `number `is declared and assigned the value` 10.6422773427`. This value is a floating-point number.another variable named `formattedNum` is declared. It is assigned the result of calling the `toFixed(2)` method on the number variable.`console.log(formattedNum);`the formattedNum variable to the console.
+In the above example, we create one variable that name is `number`and assigned the value` 10.6422773427`. This value is a floating-point number and also create one another variable that name is `formattedNum`. It is assigned the result of calling the `toFixed(2)` method on the `number` variable. `console.log(formattedNum);`the `formattedNum` variable to the print console.
 The `original number, 10.6422773427`, is rounded to two decimal places, resulting in `10.64`, and that value is logged to the console.
 
+<img src="/javascript/11/screenshot1.png" alt="screenshot1" width="600px"/>
 
-
-2. **`Math.ceil(x)`** : It returns the smallest integer greater than or equal to `x`.
+2. **`Math.ceil(x)`** : The `Math.ceil()` method rounds a number rounded `UP` to the nearest integer.
 
 **Syntax :**
 
@@ -90,7 +90,7 @@ Math.ceil(x);
 
 In the above example, `Math.ceil(3.2)` is used to calculate the ceiling value of the number `3.2`. The `Math.ceil()` function rounds up a number to the nearest greater or equal to integer value. In this example, `3.2` is closer to `4` than `3`, the output will be `4`.
 
-3. **`Math.floor(x)`** : It returns the largest integer less than or equal to `x`.
+3. **`Math.floor(x)`** : The `Math.floor()` method rounds a number `DOWN` to the nearest integer.
 
 **Syntax :**
 
@@ -123,10 +123,11 @@ Math.floor(x);
 
 In the above example, `Math.floor(3.2)` is used to calculate the floor value of the number `3.2`. The `Math.floor()` function rounds down a number to the nearest less or equal integer value. In this example, `3.2` is closer to `3` than `4`, the out will be `3`.
 
-4. **`Math.round(x)`** : It returns the value of `x` rounded to the nearest integer value.
+4. **`Math.round(x)`** :The `Math.round()` method rounds a number to the nearest integer.
 
-- If the decimal part of the number is less than `0.5`, it rounds down to the nearest integer value.
-- If the decimal part is equal to or greater than `0.5`, it rounds up to the nearest integer value.
+- It returns the value of `x` rounded to the nearest integer value.
+- If the decimal part of the number is `less than 0.5`, it rounds `down` to the nearest integer value.
+- If the decimal part is equal to or `greater than 0.5`, it rounds `up` to the nearest integer value.
 
 **Syntax :**
 
@@ -161,7 +162,7 @@ Math.round(x)
 
 **Example Explanation :**
 
-In the above example, `Math.round()` function is used to round the numbers `3.2` and `3.6` to their nearest integers value. The variable `val1` returns rounding down value is `3`, and the variable `val2` return rounding up value is `4`.
+In the above example, `Math.round()` function is used to round the numbers `3.2` and `3.6` to their nearest integers value. The variable `val1` returns `rounding down` value is `3`, and the variable `val2` return `rounding up` value is `4`.
 
 5. **`Math.pow(x,y)`** : It returns the value of `x` raised to the power of `y`.
 

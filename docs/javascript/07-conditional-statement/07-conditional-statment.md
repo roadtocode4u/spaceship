@@ -411,60 +411,6 @@ The next several lines follow a similar pattern, each checking for a different v
 
 `else { ... }`: If none of the previous conditions are met (i.e., `number` is not `1`, `2`, `3`, `4`, or `5`), this block will be executed. It will display `Invalid`.
 
-**Code :**
-
-```js
-<!DOCTYPE html>
-<html>
- <head>
-   <title>Hello JS 💛</title>
- </head>
- <body>
-  <script>
-  const number = 8;
-
-  if(number == 1)
-  {
-    document.write('One');
-  }
-  else if(number == 2)
-  {
-    document.write('Two');
-  }
-  else if(number == 3)
-  {
-    document.write('Three');
-  }
-  else if(number == 4)
-  {
-    document.write('Four');
-  }
-  else if(number == 5)
-  {
-    document.write('Five');
-  }
-  else{
-     document.write('Invalid');
-  }   
-   </script>
- </body>
-</html>
-```
-
-**Output**
-
->Invalid
-
-`const number = 8;` declares a constant variable name is `number` and assigns it the value `8`.
-
-`if (number == 1) { ... }` This is the 1st `if` condition. It checks if number is `equal to 1`. If it is, it executes the code inside the curly braces immediately following it, which in this case is `document.write('One');`. Since number is `3`, this condition is not true, so it moves on to the next `else if` statement.
-
-`else if(number == 2){ ... }` This is the 2nd `else if` statement. It checks if number is `equal to 2`. It executes the code inside the curly braces, which is` document.write('Two');`. Again, number is not `equal to 2`, so this condition is not matched, and the script proceeds to the next `else if`.
-
-The `3rd`, `4th` and `5th `conditions are similar to the `1st,` `2nd`.
-
-These all conditions are not match then the output is `Invalid`.
-
 ## Taking Input From User
 
 **Code :**
@@ -512,20 +458,19 @@ These all conditions are not match then the output is `Invalid`.
 >Enter a number : 5 <br/>
 >Five
 
-`const number = parseInt(prompt("Enter Number: "));`: This line prompts the user to enter a number and stores the entered value in the number variable. The `parseInt()` function is used to convert the input from a string to an integer.
+The line `const number = parseInt(prompt('Enter a number'));` is asking the user to enter a number. The prompt function displays a dialog box where the user can type in a value. The entered value is then stored in the number variable after converting it to an integer using the `parseInt` function.
 
-`if-else if statements` to compare the value of number with various numbers `(1, 2, 3, 4, and 5)`.
+The code uses a series of `if`, `else if`, and `else` statements to determine what to display based on the value of the number variable.
 
-If number is equal to any of these numbers, it uses the `document.write` method to display the  string `('One,' 'Two,' 'Three,' 'Four,' or 'Five')` on the output.
+The first `if` statement checks if the value of number is equal to `1`. If it is, the code inside the block `{ ... }` following the if statement is executed. In this case, it displays the word `One` using the `document.write` function.
 
-If number doesn't match any of the specified numbers `(1, 2, 3, 4, or 5)`, the else block is executed, and it print `'Invalid'` to the output.
+If the value of number is not `1`, the code moves on to the `else if` statements. Each `else if` statement checks whether the value of number matches a specific number `2`, `3`, `4`, or `5`. If a match is found, the corresponding word `Two`, `Three`, `Four`, or `Five` is displayed using `document.write`.
 
-In the above example you `Enter a number : 5`, then  `'Five'` is printed to the output.
-
+If none of the `if` or `else if` conditions are met, the code reaches the else statement. This means that the value of number is neither `1`, `2`, `3`, `4`, nor `5`. In this case, the code displays `Invalid` using `document.write`.
 
 **Code :**
 
-```js
+```js showLineNumbers="true"
 <!DOCTYPE html>
 <html>
  <head>
@@ -563,21 +508,25 @@ In the above example you `Enter a number : 5`, then  `'Five'` is printed to the 
 >Enter a number : 82 <br/>
 >B
 
-`const number = parseInt(prompt("Enter Number: "));`: This line prompts the user to enter a number and stores the entered value in the number variable. The `parseInt()` function is used to convert the input from a string to an integer.
+In the above code, Line 8 declares a `constant` variable called `per`. The `const` keyword is used to define a variable that won't change its value once it's assigned. The value assigned to `per` comes from the result of the prompt function. This function displays a prompt box to the user with the message `Enter a number` and waits for the user to input something. The input provided by the user is then converted to an integer using `parseInt` and stored in the `per` variable.
 
-The user entered value `82 `is then converted to an integer using `parseInt` and assigned to the variable `per`.
+Line 10 to 12, This `if` statement checks if the value of `per` is `greater than or equal to 90`. If this condition is true, the code inside the block (between the curly braces) is executed. In this case, it prints `A` to the browser's console using the `console.log` function.
 
-The first `if statement { ... }` checks if `per is greater than or equal to 90`. In this case,` 82 is not greater than 90`, so this `condition is false`, and it proceeds to the next `else if`.
+Line 13 to 15, This `else if` statement checks `if` the value of `per` is not `greater than or equal to 90`, but it is `greater than or equal to 80`. If this condition is `true`, the code inside this block is executed. It prints `B` to the console.
 
-The second `else if { ... }` checks if `per is greater than or equal to 80`. `82 is indeed greater than 80`, so this `condition is true`.
+Line 16 to 18, This `else if` statement checks if the value of `per` is `not greater than or equal to 90 or 80`, but it is  . If this condition is true, it prints `C` to the console.
 
-When a `condition is true`, the block is `executed`. In this case, it print `'B'` to the coutput.
+Line 19 to 21, This `else if` statement checks if the value of `per` is `not greater than or equal to 90, 80, or 70`, but it is `greater than or equal to 60`. If this condition is true, it prints `D` to the console.
+
+Line 22 to 24, This `else if` statement checks if the value of `per` is `not greater than or equal to 90, 80, 70, or 60`, but it is `greater than or equal to 50`. If this condition is true, it prints `E` to the console.
+
+Line 25 to 27, If none of the previous conditions are met (`meaning per is less than 50`), the code inside this `else` block is executed. It prints `Fail` to the console, indicating that the grade is failing.
 
 ## Boundary Cases:
 
 **Code :**
 
-```js
+```js showLineNumbers="true"
 <!DOCTYPE html>
 <html>
  <head>
@@ -615,25 +564,21 @@ When a `condition is true`, the block is `executed`. In this case, it print `'B'
 >Enter a number : 38 <br/>
 >Fail
 
-`const number = parseInt(prompt("Enter Number: "));`: This line prompts the user to enter a number and stores the entered value in the number variable. The `parseInt()` function is used to convert the input from a string to an integer.
+In the above code, Line 8 declares a `constant` variable called `per`. The `const` keyword is used to define a variable that won't change its value once it's assigned. The value assigned to `per` comes from the result of the prompt function. This function displays a prompt box to the user with the message `Enter a number` and waits for the user to input something. The input provided by the user is then converted to an integer using `parseInt` and stored in the `per` variable.
 
-`if-else if statements { ... }` to determine the grade based on the `entered percentage`. The conditions check for specific percentage ranges.
+Line 10 to 12, This `if` statement checks if the value of `per` is `greater than or equal to 50 and less than 60`. If this condition is `true`, it means the percentage falls within the range of `50` to `59` (inclusive), so the code inside the block is executed. In this case, it prints `E` to the console.
 
-`if (per >= 50 && per < 60){ ... }: `If the percentage is` greater than or equal to 50` and `less than 60,` it prints `'E'` to the output.
+Line 13 to 15, This `else if` statement checks if the value of `per` is not within the previous range but is `greater than or equal to 60 and less than 70`. If this condition is `true`, it means the percentage falls within the range of `60` to `69` (inclusive), so it prints `D` to the console.
 
-`else if (per >= 60 && per < 70){ ... }:` If the percentage is `greater than or equal to 60` and `less than 70`, it prints `'D'` to the output.
+Line 16 to 18, This `else if` statement checks if the value of per is not within the previous ranges but is `greater than or equal to 70 and less than 80`. If this condition is `true`, it means the percentage falls within the range of `70` to `79` (inclusive), so it prints `C` to the console.
 
-`else if (per >= 70 && per < 80){ ... }: `If the percentage is `greater than or equal to 70` and `less than 80`, it prints `'C'` to the output.
+Line 19 to 21, This `else if` statement checks if the value of `per` is not within the previous ranges but is `greater than or equal to 80 and less than 90`. If this condition is `true`, it means the percentage falls within the range of `80` to `89` (inclusive), so it prints `B` to the console.
 
-`else if (per >= 80 && per < 90){ ... }:` If the percentage is `greater than or equal to 80` and `less than 90`, it prints `'B'` to the output.
+Line 22 to 24, This `else if` statement checks if the value of `per` is not within the previous ranges but is `greater than or equal to 90 and less than or equal to 100`. If this condition is `true`, it means the percentage falls within the range of `90` to `100` (inclusive), so it prints `A` to the console.
 
-`else if (per >= 90 && per <= 100){ ... }:` If the percentage is `greater than or equal to 90` and `less than or equal to 100`, it prints `'A'` to the output.
+Line 25 to 27, If none of the previous conditions are met (meaning the percentage is less than `50` or greater than `100`), the code inside this else block is executed. It prints `Fail`` to the console, indicating that the grade is failing.
 
-`else{ ... }:` If none of the above conditions are matched, it means the entered percentage is below 50, and it prints `'Fail'` to the output.
-
-In the above example you enter a `percentage of 38`, it false below the range of all the specified conditions, so the else `block is executed,` and `'Fail'` is printed to the output.
-
-#### 4. nested-if
+## 4. nested-if
 
 **Syntax:**
 ```js

@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 A JavaScript function is a reusable block of code that performs a specific task and it can be executed multiple times.
 
-### Types of Functions
+## Types of Functions
 
 #### Inbuilt
 
@@ -48,7 +48,7 @@ sayHello();
 > Hello <br/>
 > Hello
 
-**Example Exaplanation :**
+**Exaplanation :**
 
 In the above example, we create simple user-defined function. The `sayHello()` function is defined to write the message `Hello` to the console using the `console.log()` method.
 
@@ -69,7 +69,7 @@ sayHello();
 > Hello undefined<br/>
 > Hello undefined
 
-**Example Exaplanation :**
+**Exaplanation :**
 
 In the above example, we create a simple user-defined function. The `sayHello()` function is defined in this function we pass the `name` parameter `Hello ${name}` to write the message to the console using the `console.log()` method.
 
@@ -90,7 +90,7 @@ sayHello("Pinki");
 > Hello Yogita<br/>
 > Hello Pinki
 
-**Example Exaplanation :**
+**Exaplanation :**
 
 In the above example, we create simple user-defined function. The `sayHello(name)` function in this function we pass one parameter name of that parameter is `name` defined to write the message `Hello Yogita` and `Hello Pinki` to the console using the `console.log()` method.
 
@@ -110,7 +110,7 @@ calSquareArea(10);
 
 > Area : 100
 
-**Example Explanation :**
+**Explanation :**
 
 In the above example, we created a function called `calSquareArea()` where we pass the argument `side`. We then called the function and passed the parameter `10`.
 
@@ -127,7 +127,7 @@ greet();
 
 > Hello User. Your interview is scheduled on next class.
 
-**Example Explanation :**
+**Explanation :**
 
 In the above example, we created a function. The name of that function is `greet()` and in this function, we pass **arguments - name, day** and also passed **parameters - User, next class**. In this function, we pass default parameters which are `User` and `next class`. In the console, we print output in a formatted way using a template string.
 
@@ -144,9 +144,10 @@ greet("Suraj");
 
 > Hello Suraj. Your interview is scheduled on next class.
 
-**Example Explanation :**
+**Explanation :**
 
 In the example above, we define a function called `greet()` which takes two parameters - `name` and `day`. The function assigns default values to the parameters, with `User` and `next class` as the defaults. In the 5th line, we call the function and pass in the parameters. Finally, in the 3rd line, we use template strings to print our string.
 
 :::tip
-If we pass two arguments to a function and provide a value for the first argument, the passed value will always be assigned to the first argument, even if we have already provided a default value for the second argument.
+When you use a JavaScript function and give it two things to work with, if you give values for both things, those values will be used. But if you only give a value for the first thing and let the second thing use its default value, the second thing will use that default value.
+:::

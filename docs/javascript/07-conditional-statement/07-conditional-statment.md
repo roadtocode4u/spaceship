@@ -54,7 +54,7 @@ if (condition) {
 
 > You are eligible for voting...
 
-In the above cod in JavaScript and is meant to be embedded within an HTML document using a `<script>` tag. 
+In the above code in JavaScript and is meant to be embedded within an HTML document using a `<script>` tag. 
 
 `const age = 20;` : This line declares a constant variable named `age` and assigns the value `20` to it. This represents the age of a person.
 
@@ -254,12 +254,26 @@ if (condition) {
 ```
 
 **Output :**
+>Enter Number 1 : 89<br/>
+>Enter Number 2 : 100 <br/>
+> 100 is greater than 89
 
 <img src="/javascript/07/screenshot-7.png" alt="screenshot-7" width="600px"/>
 
 <img src="/javascript/07/screenshot-8.png" alt="screenshot-7" width="600px"/>
 
 <img src="/javascript/07/screenshot-9.png" alt="screenshot-7" width="600px"/>
+
+`const num1 = parseInt(prompt("Enter Number 1 :"));`: This line of code prompts the user to enter a number using the prompt function. The prompt function displays a dialog box with the message `Enter Number 1 :` and waits for the user to input a value. The value entered by the user is then stored in the constant variable `num1`. The `parseInt` function is used to convert the input string into an `integer`.
+
+`const num2 = parseInt(prompt("Enter Number 2 :"));`: This line is similar to the previous line but prompts the user to enter another number, which is then stored in the constant variable `num2`.
+
+`if (num1 > num2) { ... } else { ... }`: This is an if-else statement, a conditional statement that checks whether a condition is `true` or `false`. In this case, it checks if `num1` is greater than `num2`. If the condition is `true`, the code inside the curly braces following the if statement will be executed. If the condition is `false`, the code inside the curly braces following the else statement will be executed.
+
+`console.log(${num1} is greater than ${num2}.);`: If `num1` is indeed greater than `num2`, this line will execute, and it will log a message to the browser's console using the console.log function. The message will state that `num1` is greater than `num2`.
+
+`console.log(${num2} is greater than ${num1}.);`: If the condition in the if statement is `false`, meaning that `num1` is not greater than `num2`, this line will execute, and it will log a message stating that `num2` is greater than `num1`.
+
 
 **4. Write a Javascript program to find Discount.**
 
@@ -293,6 +307,10 @@ if (condition) {
 ```
 
 **Output :**
+>Enter rate: 1000 <br/>
+>Enter quantity: 5  <br/>
+>Discount: 500 <br/>
+>Payble amount: 4500
 
 <img src="/javascript/07/screenshot-10.png" alt="screenshot-10" width="600px"/>
 
@@ -300,8 +318,27 @@ if (condition) {
 
 <img src="/javascript/07/screenshot-12.png" alt="screenshot-12" width="600px"/>
 
+`const rate = parseInt(prompt("Enter rate: "));`: This line prompts the user to enter a `rate` (price per unit) using the prompt function and stores the entered value as an integer in the constant variable `rate`.
 
-#### 3. if-else-ladder
+`const quantity = parseInt(prompt("Enter quantity: "));`: Similar to the previous line, this line prompts the user to enter a quantity and stores the entered value as an integer in the constant variable `quantity`.
+
+`const bill = rate * quantity;`: This line calculates the bill amount by multiplying the `rate` and `quantity`. The result is stored in the constant variable `bill`.
+
+`if (bill > 100) { ... } else { ... }`: This if-else statement checks whether the bill amount is greater than `$100`. If the condition is `true`, the code inside the curly braces following the if statement will be executed. If the condition is `false`, the code inside the curly braces following the else statement will be executed.
+
+`const discount = bill / 10;`: If the bill amount is greater than `$100`, this line calculates a discount of `10%` of the bill amount and stores it in the constant variable discount.
+
+`const paybleAmount = bill - discount;`: This line calculates the payable amount after subtracting the discount from the original bill amount. The result is stored in the constant variable `paybleAmount`.
+
+`console.log(Discount: ${discount} );`: This line logs the calculated discount amount to the console.
+
+`console.log(Payble amount: ${paybleAmount});`: This line logs the payable amount after applying the discount (if applicable) to the console.
+
+`console.log("No discount");`: If the bill amount is `$100` or `less`, this line logs `No discount` to the console.
+
+`console.log(Payble amount: ${bill});`: This line logs the original bill amount (without any discount) to the console.
+
+## 3. if-else-ladder
 
 **Syntax :**
 
@@ -364,49 +401,15 @@ else{
 
 >Three
 
-**Code :**
+`const number = 3;`: This line declares a constant variable named `number` and assigns it a value of `3`.
 
-```js
-<!DOCTYPE html>
-<html>
- <head>
-   <title>Hello JS 💛</title>
- </head>
- <body>
-  <script>
-  const number = 8;
+`if (number == 1) { ... }`: This is an if statement. It checks if the value of `number` is equal to `1`. If it is, the code within the curly braces immediately following this line will be executed. In this case, it would display `One`.
 
-  if(number == 1)
-  {
-    document.write('One');
-  }
-  else if(number == 2)
-  {
-    document.write('Two');
-  }
-  else if(number == 3)
-  {
-    document.write('Three');
-  }
-  else if(number == 4)
-  {
-    document.write('Four');
-  }
-  else if(number == 5)
-  {
-    document.write('Five');
-  }
-  else{
-     document.write('Invalid');
-  }   
-   </script>
- </body>
-</html>
-```
+`else if (number == 2) { ... }`: If the first condition is `false`, this line checks if the value of `number` is equal to `2`. If it is, the code within these curly braces will be executed. In this case, it would display `Two`.
 
-**Output**
+The next several lines follow a similar pattern, each checking for a different value of `number` and displaying a corresponding message.
 
->Invalid
+`else { ... }`: If none of the previous conditions are met (i.e., `number` is not `1`, `2`, `3`, `4`, or `5`), this block will be executed. It will display `Invalid`.
 
 ## Taking Input From User
 
@@ -455,9 +458,19 @@ else{
 >Enter a number : 5 <br/>
 >Five
 
+The line `const number = parseInt(prompt('Enter a number'));` is asking the user to enter a number. The prompt function displays a dialog box where the user can type in a value. The entered value is then stored in the number variable after converting it to an integer using the `parseInt` function.
+
+The code uses a series of `if`, `else if`, and `else` statements to determine what to display based on the value of the number variable.
+
+The first `if` statement checks if the value of number is equal to `1`. If it is, the code inside the block `{ ... }` following the if statement is executed. In this case, it displays the word `One` using the `document.write` function.
+
+If the value of number is not `1`, the code moves on to the `else if` statements. Each `else if` statement checks whether the value of number matches a specific number `2`, `3`, `4`, or `5`. If a match is found, the corresponding word `Two`, `Three`, `Four`, or `Five` is displayed using `document.write`.
+
+If none of the `if` or `else if` conditions are met, the code reaches the else statement. This means that the value of number is neither `1`, `2`, `3`, `4`, nor `5`. In this case, the code displays `Invalid` using `document.write`.
+
 **Code :**
 
-```js
+```js showLineNumbers="true"
 <!DOCTYPE html>
 <html>
  <head>
@@ -485,8 +498,6 @@ else{
   else{
     console.log('Fail')
   } 
-
-
   </script>
  </body>
 </html>
@@ -497,11 +508,25 @@ else{
 >Enter a number : 82 <br/>
 >B
 
+In the above code, Line 8 declares a `constant` variable called `per`. The `const` keyword is used to define a variable that won't change its value once it's assigned. The value assigned to `per` comes from the result of the prompt function. This function displays a prompt box to the user with the message `Enter a number` and waits for the user to input something. The input provided by the user is then converted to an integer using `parseInt` and stored in the `per` variable.
+
+Line 10 to 12, This `if` statement checks if the value of `per` is `greater than or equal to 90`. If this condition is true, the code inside the block (between the curly braces) is executed. In this case, it prints `A` to the browser's console using the `console.log` function.
+
+Line 13 to 15, This `else if` statement checks `if` the value of `per` is not `greater than or equal to 90`, but it is `greater than or equal to 80`. If this condition is `true`, the code inside this block is executed. It prints `B` to the console.
+
+Line 16 to 18, This `else if` statement checks if the value of `per` is `not greater than or equal to 90 or 80`, but it is  . If this condition is true, it prints `C` to the console.
+
+Line 19 to 21, This `else if` statement checks if the value of `per` is `not greater than or equal to 90, 80, or 70`, but it is `greater than or equal to 60`. If this condition is true, it prints `D` to the console.
+
+Line 22 to 24, This `else if` statement checks if the value of `per` is `not greater than or equal to 90, 80, 70, or 60`, but it is `greater than or equal to 50`. If this condition is true, it prints `E` to the console.
+
+Line 25 to 27, If none of the previous conditions are met (`meaning per is less than 50`), the code inside this `else` block is executed. It prints `Fail` to the console, indicating that the grade is failing.
+
 ## Boundary Cases:
 
 **Code :**
 
-```js
+```js showLineNumbers="true"
 <!DOCTYPE html>
 <html>
  <head>
@@ -539,7 +564,21 @@ else{
 >Enter a number : 38 <br/>
 >Fail
 
-#### 4. nested-if
+In the above code, Line 8 declares a `constant` variable called `per`. The `const` keyword is used to define a variable that won't change its value once it's assigned. The value assigned to `per` comes from the result of the prompt function. This function displays a prompt box to the user with the message `Enter a number` and waits for the user to input something. The input provided by the user is then converted to an integer using `parseInt` and stored in the `per` variable.
+
+Line 10 to 12, This `if` statement checks if the value of `per` is `greater than or equal to 50 and less than 60`. If this condition is `true`, it means the percentage falls within the range of `50` to `59` (inclusive), so the code inside the block is executed. In this case, it prints `E` to the console.
+
+Line 13 to 15, This `else if` statement checks if the value of `per` is not within the previous range but is `greater than or equal to 60 and less than 70`. If this condition is `true`, it means the percentage falls within the range of `60` to `69` (inclusive), so it prints `D` to the console.
+
+Line 16 to 18, This `else if` statement checks if the value of per is not within the previous ranges but is `greater than or equal to 70 and less than 80`. If this condition is `true`, it means the percentage falls within the range of `70` to `79` (inclusive), so it prints `C` to the console.
+
+Line 19 to 21, This `else if` statement checks if the value of `per` is not within the previous ranges but is `greater than or equal to 80 and less than 90`. If this condition is `true`, it means the percentage falls within the range of `80` to `89` (inclusive), so it prints `B` to the console.
+
+Line 22 to 24, This `else if` statement checks if the value of `per` is not within the previous ranges but is `greater than or equal to 90 and less than or equal to 100`. If this condition is `true`, it means the percentage falls within the range of `90` to `100` (inclusive), so it prints `A` to the console.
+
+Line 25 to 27, If none of the previous conditions are met (meaning the percentage is less than `50` or greater than `100`), the code inside this else block is executed. It prints `Fail`` to the console, indicating that the grade is failing.
+
+## 4. nested-if
 
 **Syntax:**
 ```js
@@ -597,6 +636,21 @@ if (condition A){
 >JEE MAIN Claer Hua... <br/>
 >JEE ADV Claer Hua...
 
+In the above example `two variables`, `jeeMain and jeeAdv`, are declared and assign `values 130 and 150`.
+
+The `if statement{ ... }` checks whether `jeeMain is greater than or equal to 120`. This condition is true because` jeeMain is 130`.
+
+Inside this block, it logs `"JEE MAIN Clear Hua..."` to the console using `console.log()`.
+
+Then, there's another `if statement nested`conditon. It checks whether `jeeAdv is greater than or equal to 120`. This condition is also true because `jeeAdv is 150`.
+
+So, the final output of this code will be:
+```js
+JEE MAIN Clear Hua...
+JEE ADV Clear Hua...
+```
+both conditions in the `nested if statements are true`, so both `"JEE MAIN Clear Hua..." `and `"JEE ADV Clear Hua..."` are printed to the `output`.
+
 **Code :**
 
 ```js
@@ -633,15 +687,18 @@ if (condition A){
 
 **Output**
 
->JEE MAIN Claer NAHI Hua...<br/>
+>JEE MAIN Claer NAHI Hua...
 
+In the above example `two variables`, `jeeMain and jeeAdv`, are declared and assign `values 100 and 150`.
 
+The `if statement{ ... }` that checks the value of `jeeMain` against of 120.,Since `jeeMain (100) is less than 120`, the code proceeds to the `else block`.
 
+Inside the `else block`, the ` "JEE MAIN Clear NAHI Hua..." `to the console. This indicates that the `JEE MAIN exam was not cleared` because the `jeeMain` score did not matched the required minimum score of `120`.
 
+The condition does not continue to check the `jeeAdv` score because it is `nested` within the `jeeMain` condition.
 
+So, the final output of this code will be:
 
-
-
-
-  
-
+```js
+JEE MAIN Clear NAHI Hua...
+```

@@ -87,7 +87,7 @@ The `onkeypress` event  is triggered when a user presses a key on the `keyboard`
 The `onkeydown` event is activated when a key on the keyboard is pressed `down`.
 
 ## onkeyup
-The `keyup` event is triggered when a key on the keyboard is released after being pressed.
+The `keyup` event is triggered when a key on the keyboard is released after being `pressed`.
 
 **For example :**
 
@@ -108,11 +108,11 @@ The `keyup` event is triggered when a key on the keyboard is released after bein
        }
 
        function keyDown(){
-        console.log('keyPress()')
+        console.log('keyDown()')
        }
 
        function keyUp(){ 
-        console.log('keyPress()')
+        console.log('keyUp()')
        }
     </script>
   </body>
@@ -120,6 +120,7 @@ The `keyup` event is triggered when a key on the keyboard is released after bein
 ```
 
 **Output :**
+
 <img src="/javascript/12/screenshot3.png" alt="screenshot3" width="600px"/>
 
 ## onmouseover
@@ -187,7 +188,8 @@ The `onmouseout`event in JavaScript is triggered when the mouse pointer moves ou
 In the above example, When a user leave their mouse out the input box, an `console` will appear saying `onmouse out event occurs`. However, this message is a show since the code will only trigger when the mouse is leave from the input box, not when it's actually clicked.
 
 ## onmousemove
-The `onmousemov`e event is triggered when the mouse pointer moves over an HTML element and generates a continuous stream of events as the mouse moves.
+
+The `onmousemove` event is triggered when the mouse pointer moves over an HTML element and generates a continuous stream of events as the mouse moves.
 
 **For example :**
 
@@ -218,6 +220,7 @@ The `onmousemov`e event is triggered when the mouse pointer moves over an HTML e
 In the above example, when you hover the mouse pointer over this image, it triggers the `onmousemove` event. The `imageOver()` function, a random number between `0 and 1` is generated using `Math.random()`, and a message is logged to the console.
 
 ## ondblclick
+
 The `ondblclick` event is triggered when a user double-clicks on an HTML element.
 
 **For example :**
@@ -239,6 +242,7 @@ The `ondblclick` event is triggered when a user double-clicks on an HTML element
   </body>
 </html>
 ```
+
 **Output :**
 
 <img src="/javascript/12/screenshot8.png" alt="screenshot8" width="600px"/>
@@ -246,7 +250,7 @@ The `ondblclick` event is triggered when a user double-clicks on an HTML element
 **Example explanation :**
 
 In the above example, when you load the web page in a browser, the image` "/pizza.png"` is displayed. if you `double-click` on the image, the `ondblclick` event is triggered.
-The `dbl()` function, an alert dialog open with the message `"Awesome"` is displayed.
+The `dbl()` function, an alert dialog open with the message `Awesome` is displayed.
 
 
 ## onload
@@ -272,6 +276,7 @@ When the webpage loads, the `onload` event is triggered.
 ```
 
 **Output :**
+
 <img src="/javascript/12/screenshot6.png" alt="screenshot6" width="600px"/>
 
 

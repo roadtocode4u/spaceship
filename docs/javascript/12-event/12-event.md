@@ -28,10 +28,8 @@ The `onclick` event in Javascript occurs when the user clicks on an element.
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>onclick</title>
   </head>
 
@@ -59,10 +57,8 @@ The `change` event in JavaScript is triggered when the value of an input element
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>onchange</title>
   </head>
 
@@ -98,10 +94,8 @@ The `keyup` event is triggered when a key on the keyboard is released after bein
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>onkeypress onkeydown onkeyup </title>
   </head>
 
@@ -137,10 +131,8 @@ The `onmouseover` event occurs when the pointer is moved onto an element.
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>onmouseover</title>
   </head>
 
@@ -166,10 +158,8 @@ The `onmouseout`event in JavaScript is triggered when the mouse pointer moves ou
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>onmouseout</title>
   </head>
 
@@ -194,10 +184,8 @@ The `onmousemov`e event is triggered when the mouse pointer moves over an HTML e
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>onmouseout</title>
   </head>
 
@@ -227,10 +215,8 @@ The `ondblclick` event is triggered when a user double-clicks on an HTML element
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ondblclick</title>
   </head>
 
@@ -262,10 +248,8 @@ When webpage is load then `onload` event trigger.
 
 ```html
 <!DOCTYPE html> 
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>onload</title>
   </head>
   <body onload="load()">

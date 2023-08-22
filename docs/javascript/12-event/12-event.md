@@ -4,8 +4,7 @@ description: "Events in JS"
 hide_table_of_contents: true
 ---
 
-JavaScript interacts with HTML through events when the browser manipulates the page. When a page loads, it's called an `event`. When user clicks on a button, that click is also an event.
-Events are the action's that happened in the webpage.
+Events are actions or occurrences that happen in the browser, such as user interactions like `clicking a button`, `moving the mouse`, or `pressing a key`. Changes in the document like the document finishing loading or interactions with elements on a `web page` like submitting a form or resizing a window are also considered as events.
 
 **Events in javascript**
 
@@ -22,7 +21,7 @@ Events are the action's that happened in the webpage.
 
 ## onclick
 
-The `onclick` event in Javascript occurs when the user clicks on an element.
+The `onclick` event in Javascript occurs when the user `clicks` on an element.
 
 **For example :**
 
@@ -47,11 +46,11 @@ The `onclick` event in Javascript occurs when the user clicks on an element.
 
 **Example explanation :**
 
-In the above example, we create a two button `Button One` and `Button two`. when clicked a button one triggers a JavaScript `console` function with the message `Button1`. Similarly, when clicked a button two triggers a Javascript `console` function with the message `Button2`. This is a simple way to provide feedback to the user when they interact with the button.
+In the above example, we have created  two button `Button One` and `Button two`. When clicked a button one triggers a JavaScript `console.log` function with the message `Button1`. Similarly, when clicked a button two triggers a Javascript `console` function with the message `Button2`. This is a simple way to provide feedback to the user when they interact with the button.
 
 ## onchange
 
-The `change` event in JavaScript is triggered when the value of an input element or form element is changed by the user.
+The `onchange` event in JavaScript is triggered when the value of an element or form element is changed by the user.
 
 **For example :**
 
@@ -135,16 +134,21 @@ The `onmouseover` event occurs when the pointer is moved onto an element.
   <head>
     <title>onmouseover</title>
   </head>
-
   <body>
-    <input type="text" onmouseover="console.log('over')" />
+    <img src="pizza.png" onmouseover="imageOver()"/>
+
+    <script>
+        function imageOver(){
+            console.log("Image Over")
+        }
+    </script>
   </body>
 </html>
 ```
 
 **Output :**
 
-<img src="/javascript/12/screenshot4.png" alt="screenshot4" width="600px"/>
+<img src="/javascript/12/screenshot9.png" alt="screenshot9" width="600px"/>
 
 **Example explanation :**
 
@@ -162,16 +166,21 @@ The `onmouseout`event in JavaScript is triggered when the mouse pointer moves ou
   <head>
     <title>onmouseout</title>
   </head>
-
   <body>
-    <input type="text" onmouseout="console.log('onmouse out event occurs')" />
+    <img src="pizza.png" onmouseout="imageOut()"/>
+
+    <script>
+        function imageOut(){
+            console.log("Image Out")
+        }
+    </script>
   </body>
 </html>
 ```
 
 **Output :**
 
-<img src="/javascript/12/screenshot5.png" alt="screenshot5" width="600px"/>
+<img src="/javascript/12/screenshot10.png" alt="screenshot10" width="600px"/>
 
 **Example explanation :**
 
@@ -242,7 +251,7 @@ The `dbl()` function, an alert dialog open with the message `"Awesome"` is displ
 
 ## onload
 
-When webpage is load then `onload` event trigger.
+When the webpage loads, the `onload` event is triggered.
 
 **For example :**
 

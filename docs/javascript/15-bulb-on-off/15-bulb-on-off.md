@@ -43,18 +43,17 @@ hide_table_of_contents: true
 
 **Explanation :**
 
-In the above example, line 10, We have a image of a `light bulb` represented by the `<img> tag`. The image is shown as `"off"` because it has a source (src) attribute set to `"off.png`". This means the bulb is currently `off`, when you switch off a light.
+ In the above example, line 10, We have a image of a `light bulb` represented by the `<img> tag`. The `<img src="off.png" alt="off" id="bulb">`: This `<img>` tag displays an image with the source `off.png` and an alt attribute `off`. The id attribute is set to `bulb`, which is later used to identify this image element in JavaScript.
 
-Line 12 to 17,Below the image, there are two buttons labeled `"ON"` and `"OFF"`. These buttons are created using the `<button>`tags.
+`<button type="button" onclick="bulbOn()">ON</button>`: This button triggers the `bulbOn()` JavaScript function when clicked. The `onclick` attribute is used to specify the action to take when the button is clicked. In this case, it calls the `bulbOn()` function when the button is clicked. The button label is `ON`.
 
-Line 12 to 17,When you click the `"ON"` buttons. It triggers a function called `bulbOn()`. 
+`<button type="button" onclick="bulbOff()">OFF</button>`: Similar to the previous button, this one triggers the `bulbOff()` JavaScript function when clicked. The button label is `OFF`.
 
- `const bulbElement = document.getElementById('bulb');`<br/>
-Line 20, We created one variable name of that variable is `bulbElement`, the ID `'bulb'` assigns it to the constant variable `'bulbElement'` .
+`const bulbElement = document.getElementById('bulb');`: This line of JavaScript gets a reference to the HTML element with the id `bulb` and stores it in the `bulbElement` variable. This allows the JavaScript code to manipulate the image element.
 
-Line 21 to 23,When you press `"ON"`, the `bulbOn()` function runs and changes the 'image source to `"on.png"`. This makes the image of the bulb appear as if it's turned `on`,when you switch `on` a light.
+`function bulbOn() { bulbElement.src = "on.png"; }`: This is a JavaScript function named `bulbOn()`. When called, it changes the `src` attribute of the bulbElement to `on.png`, effectively changing the displayed image to an illuminated `bulb`.
 
-Line 24 to 26,When you press the `"OFF"` button, it `triggers` another function called `bulbOff()`. This function changes the image source back to `"off.png"`,turning the bulb `off`.
+`function bulbOff() { bulbElement.src = "off.png"; }`: This JavaScript function named` bulbOff()` is similar to `bulbOn()`, but it changes the `src` attribute back to `off.png`, turning off the bulb image.
 
 **Example :**
 

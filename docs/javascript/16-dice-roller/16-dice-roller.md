@@ -1,8 +1,9 @@
 ---
 title: Dice Roller
-description: "Dice Rolle"
+description: "Dice Roller"
 hide_table_of_contents: true
 ---
+
 
 **Example :**
 ```html
@@ -139,8 +140,4 @@ It generates a `random number (randomNumber) ` between `1 and 6` using `Math.ran
 It uses a `switch statement` to set the `src attribute of the <img> element based on the value of randomNumber`, displaying an image corresponding to the `rolled number (e.g., "one.png" for 1, "two.png" for 2, and so on)`.
 
 So, when you click the `"Roll The Dice"` button, it generates a random number b`etween 1 and 6` and displays the corresponding `dice` image using a `switch statement`.
-
-
-
-
 

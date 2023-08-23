@@ -151,3 +151,101 @@ In the example above, we define a function called `greet()` which takes two para
 :::tip
 When you use a JavaScript function and give it two things to work with, if you give values for both things, those values will be used. But if you only give a value for the first thing and let the second thing use its default value, the second thing will use that default value.
 :::
+
+**There are four categories of the Function.**
+
+  <img src="/javascript/10/screenshot-1.png" alt="screenshot-1" width="600px"/>
+
+### 1. Argument and Return
+
+**Example :**
+
+```js showLineNumbers="true"
+function areaOfSquare(side) {
+  const area = side * side;
+  return area;
+}
+const A = areaOfSquare(10);
+console.log(`Area of Square :${A} `);
+```
+
+**Output :**
+
+> Area of Square :100
+
+**Exaplanation :**
+
+In the above code, Line 1 we're defining a new function named `areaOfSquare`. This function takes a single parameter called `side`.
+
+Line 2, Inside the function, we calculate the `area` of the square by multiplying the value of `side * side`. The result is stored in a variable called `area`.
+
+Line 3, After calculating the `area`, we're giving it back to whoever asked for it using the `return` keyword. It's like handing over the `result` to someone who used our tool to calculate the `area`.
+
+Line 5, Now, we're using our `areaOfSquare` tool. We call the function by providing a value of `10` as an `argument`. This means we want to find the area of a square with a side length of `10` units. The calculated `area` is then stored in a variable named `A`.
+
+Line 6, Finally, we're displaying the `result` using the `console.log` function. It's like showing the answer on a screen. We're creating a message that says `Area of Square` followed by the value stored in variable `A`. This message is then printed to the console.
+
+### 2. Argument but no Return
+
+**Example :**
+
+```js showLineNumbers="true"
+function areaOfSquare(side) {
+  const area = side * side;
+  console.log(`Area of Square :${area} `);
+}
+areaOfSquare(10);
+```
+
+**Output :**
+
+> Area of Square :100
+
+**Exaplanation :**
+
+In the above example, we're defining a function called `areaOfSquare` that takes a single parameter named `side`. This function is designed to `calculate` and `display` the area of a `square`. Inside the function, we calculate the `area` of the square by multiplying the value of `side * side`. The result is stored in a variable called `area`. After calculating the area, we're using the `console.log` function to display a message. This message includes the calculated `area` value. So, if side is `10`, the calculated area `100` will be displayed as `Area of Square: 100`. This line prints the calculated area to the `console`. Finally, we're actually using the `areaOfSquare` function. We're providing the value `10` as an argument, which means we want to calculate the `area` of a square with a `side` length of `10` units.
+
+### 3. No Argument but Return
+
+**Example :**
+
+```js showLineNumbers="true"
+const side = 10;
+function areaOfSquare() {
+  const area = side * side;
+  return area;
+}
+const A = areaOfSquare();
+console.log(`Area of Square :${A}`);
+```
+
+**Output :**
+
+> Area of Square :100
+
+**Exaplanation :**
+
+In the abbove example, we're creating a variable named `side` and assigning it a value of `10`. This value represents the length of one `side` of the square for which we want to calculate the area. Then We're defining a function named `areaOfSquare` here. This function doesn't take any parameters, but it relies on the side value that we set earlier to calculate the area of a square. Inside the function, we calculate the `area of the square` by multiplying the `side*side`. The result is stored in the `area` variable, and then we use the `return` keyword to send this calculated area back when the function is called. Finallly We're calling the `areaOfSquare` function here. It doesn't need any arguments because it's already using the side value that we set earlier. The calculated area is returned from the function and stored in a variable named `A`. we're displaying the result using the `console.log` function. We're creating a message that includes the value of `A`, which is the calculated area. The message will look like `Area of Square: 100` if side is `10`, as the calculated area is `100`.
+
+### 4. No Argument but No Return
+
+**Example :**
+
+```js showLineNumbers="true"
+const side = 10;
+function areaOfSquare() {
+  const area = side * side;
+  console.log(`Area of Square :${area} `);
+}
+areaOfSquare();
+```
+
+**Output :**
+
+> Area of Square :100
+
+**Exaplanation :**
+
+In the above example, we're creating a variable named `side` and setting its value to `10`. This value represents the length of one `side` of the square for which we want to calculate the `area`.
+
+We're defining a function called `areaOfSquare`. This function doesn't take any parameters. Inside the function, we calculate the area of the square by multiplying the `side*side`. Then, we're using the `console.log` function to display a message that includes the calculated `area`. So, if side is `10`, the calculated area is `100`, and the message will be A`rea of Square: 100`. This line prints the calculated area to the `console`. Finally, we're calling the `areaOfSquare` function. This function doesn't require any arguments because it's already using the side value that we set earlier. When the function is called, it calculates the area and displays it using the `console.log` statement inside the function.

@@ -175,11 +175,15 @@ console.log(`Area of Square :${A} `);
 
 **Exaplanation :**
 
-In the above example, we a function named `areaOfSquare()`, we pass parameter `side`.
-In the function, the area of a square is calculated using the formula `side * side`.
-The calculated area is then returned using the return statement.
-We call the `areaOfSquare()` function with an argument of `10`, and the `result (100)` is stored in the variable `A`.
-We use `console.log()` to display the calculated area of the `square (100)` by referencing the value stored in the variable `A`. The output is `"Area of Square: 100"`.
+In the above code, Line 1 we're defining a new function named `areaOfSquare`. This function takes a single parameter called `side`.
+
+Line 2, Inside the function, we calculate the `area` of the square by multiplying the value of `side * side`. The result is stored in a variable called `area`.
+
+Line 3, After calculating the `area`, we're giving it back to whoever asked for it using the `return` keyword. It's like handing over the `result` to someone who used our tool to calculate the `area`.
+
+Line 5, Now, we're using our `areaOfSquare` tool. We call the function by providing a value of `10` as an `argument`. This means we want to find the area of a square with a side length of `10` units. The calculated `area` is then stored in a variable named `A`.
+
+Line 6, Finally, we're displaying the `result` using the `console.log` function. It's like showing the answer on a screen. We're creating a message that says `Area of Square` followed by the value stored in variable `A`. This message is then printed to the console.
 
 ### 2. Argument but no Return
 
@@ -199,10 +203,7 @@ areaOfSquare(10);
 
 **Exaplanation :**
 
-In the above example, we create a function `areaOfSquare()` that takes a parameter name is `side`.
-In the function, the area of a square is calculated using the formula `side * side`.
-The calculated area is then displayed using the `console.log() `.
-We call the `areaOfSquare()` function and pass the parameter `10`. This calculates the `area (100)` of a square with a side length of `10` and the ouput will be `"Area of Square: 100"`.
+In the above example, we're defining a function called `areaOfSquare` that takes a single parameter named `side`. This function is designed to `calculate` and `display` the area of a `square`. Inside the function, we calculate the `area` of the square by multiplying the value of `side * side`. The result is stored in a variable called `area`. After calculating the area, we're using the `console.log` function to display a message. This message includes the calculated `area` value. So, if side is `10`, the calculated area `100` will be displayed as `Area of Square: 100`. This line prints the calculated area to the `console`. Finally, we're actually using the `areaOfSquare` function. We're providing the value `10` as an argument, which means we want to calculate the `area` of a square with a `side` length of `10` units.
 
 ### 3. No Argument but Return
 
@@ -224,10 +225,7 @@ console.log(`Area of Square :${A}`);
 
 **Exaplanation :**
 
-In the abbove example, we create a variable `side` is assigned a value of `10`. The function `areaOfSquare()` is defined. In the the function, the area of a square is calculated using the formula `side * side`.
-The calculated area is then returned by the function using the return statement.
-The variable `A` is assigned the result of calling the `areaOfSquare()` function. This calculates the `area (100)`.
-The `console.log()` statement uses a template string to display the calculated area, using the value stored in the `A` variable. The output will be `"Area of Square: 100"`.
+In the abbove example, we're creating a variable named `side` and assigning it a value of `10`. This value represents the length of one `side` of the square for which we want to calculate the area. Then We're defining a function named `areaOfSquare` here. This function doesn't take any parameters, but it relies on the side value that we set earlier to calculate the area of a square. Inside the function, we calculate the `area of the square` by multiplying the `side*side`. The result is stored in the `area` variable, and then we use the `return` keyword to send this calculated area back when the function is called. Finallly We're calling the `areaOfSquare` function here. It doesn't need any arguments because it's already using the side value that we set earlier. The calculated area is returned from the function and stored in a variable named `A`. we're displaying the result using the `console.log` function. We're creating a message that includes the value of `A`, which is the calculated area. The message will look like `Area of Square: 100` if side is `10`, as the calculated area is `100`.
 
 ### 4. No Argument but No Return
 
@@ -248,8 +246,6 @@ areaOfSquare();
 
 **Exaplanation :**
 
-In the above example, we firstly create `side` variable to 10. Then, we define a function called `areaOfSquare()`. In the function we calculate the area of a square using the formula `side * side`.
-We use the `console.log()` function to display the calculated area.
-Finally, we call the `areaOfSquare()` function, which calculates the `area (100)` based on the given side length of `10` and displays it as `Area of Square: 100`.
+In the above example, we're creating a variable named `side` and setting its value to `10`. This value represents the length of one `side` of the square for which we want to calculate the `area`.
 
-There is no return statement in this example, so the function does not return any value, it only displays the result using `console.log()`.
+We're defining a function called `areaOfSquare`. This function doesn't take any parameters. Inside the function, we calculate the area of the square by multiplying the `side*side`. Then, we're using the `console.log` function to display a message that includes the calculated `area`. So, if side is `10`, the calculated area is `100`, and the message will be A`rea of Square: 100`. This line prints the calculated area to the `console`. Finally, we're calling the `areaOfSquare` function. This function doesn't require any arguments because it's already using the side value that we set earlier. When the function is called, it calculates the area and displays it using the `console.log` statement inside the function.

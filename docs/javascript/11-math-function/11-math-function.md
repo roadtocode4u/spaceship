@@ -18,15 +18,15 @@ There are Math Function in JS :
 - `Math.max(x)`
 - `Math.sqrt(x)`
 
-1. **`toFixed()`** : The `toFixed()` method is used to format a number with a fixed number of decimal places and return it as a string.It allows you to control the precision of a floating-point number by specifying how many decimal places you want to keep.
+1. **`toFixed()`** : The `toFixed()` method is used to format a number with a fixed number of decimal places and return it as a string. It allows you to control the precision of a floating-point number by specifying how many decimal places you want to keep.
 
 **Syntax :**
 
 ```
 number.toFixed(digits)
 ```
-`number`: The number you want to format.<br/>
-`digits`: The number of decimal places to keep in the result.
+`number` : The number you want to format.<br/>
+`digits` : The number of decimal places to keep in the result.
 
 **Example :**
 
@@ -260,7 +260,7 @@ Math.min(x)
 
 **Output :**
 
-> Min value = 1
+> Min value = 5
 
 **Example Explanation :**
 

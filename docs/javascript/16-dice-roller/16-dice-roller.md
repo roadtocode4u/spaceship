@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 
 **Example :**
-```html
+```html showLineNumbers="true"
 <!DOCTYPE html>
 <html>
 <head>
@@ -71,7 +71,7 @@ So, when you click the `"Roll The Dice"` button, it generates a random number `b
 
 **Example :**
 
-```html
+```html showLineNumbers="true"
 <!DOCTYPE html>
 <html>
 <head>

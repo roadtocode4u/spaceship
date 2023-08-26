@@ -50,7 +50,6 @@ The video tag supports various attributes to customize its behavior:
 4. `Muted`: Mutes the audio of the video.
 5. `Poster`: Displays an image as a placeholder before the video is loaded.
 
-
 ### Controls
 
 Controls attributes are used to show controls on video like Play, Pause, Volume, Fullscreen toggle.
@@ -212,6 +211,10 @@ The above code will display an audio player with controls, and the audio specifi
 **Output :**
 
 <img src="/icp/08/output-6.png" alt="output-6" width="600px"/>
+
+:::tip
+You don't have to use the `"muted"` attribute with the `<audio>` element because it already plays sound silently.
+:::
 
 ### 🔊▶️ Audio and Video URLs
 

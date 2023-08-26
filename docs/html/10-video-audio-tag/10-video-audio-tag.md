@@ -194,7 +194,7 @@ The above code will display an audio player with controls, and the audio specifi
 
 **Code :**
 
-```html
+```html showLineNumbers="true"
 <!DOCTYPE html>
 <html>
   <head>
@@ -208,12 +208,22 @@ The above code will display an audio player with controls, and the audio specifi
 </html>
 ```
 
+In the above code, Line 7 `<audio controls muted autoplay>`: This is the `<audio>` element that embeds an audio file and provides attributes to control its behavior.
+
+**controls**: This attribute adds playback controls (play, pause, volume, etc.) to the audio player, allowing users to interact with it.
+
+**muted**: This attribute mutes the audio. However, the `muted` attribute might be unnecessary here since you also have the `autoplay` attribute. When the `autoplay` attribute is present, most modern browsers will automatically mute the audio to prevent unexpected loud sounds.
+
+`autoplay`: This attribute makes the audio start playing as soon as the page is loaded.
+
+`<source src="sample-audio.mp3" type="audio/mp4" />`: This line specifies the audio source using the `<source>` element. The `src` attribute points to the location of the audio file ("sample-audio.mp3").
+
 **Output :**
 
 <img src="/html/10/output-6.png" alt="output-6" width="600px"/>
 
 :::tip
-You don't have to use the "muted" attribute with the `<audio>` element because it already plays sound silently.
+It doesn't make sense to play audio in a muted format, so you can omit the `muted` attribute from the` <audio>` element. When using the `autoplay` attribute, modern browsers usually initiate audio playback in a muted state by default to prevent sudden loud sounds. Users can easily unmute the audio if they wish.
 :::
 
 ### 🔊▶️ Audio and Video URLs

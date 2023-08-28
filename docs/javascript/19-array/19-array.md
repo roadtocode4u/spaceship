@@ -271,7 +271,7 @@ console.log(arr)
 
 Converts an array in `ascending` order.
 
-**Example :**
+**Example of ascending order :**
 
 ```js
 const arr = ["Z","A","D","B"]
@@ -282,6 +282,22 @@ console.log(arr)
 **Output :**
 
 >['A','B','D','Z']
+
+**Example of descending order :**
+
+```js
+const arr = ["Z","A","D","B"]
+arr.sort()
+console.log("Ascending :"+arr)
+
+arr.reverse()
+console.log("Descending : "+arr)
+```
+
+**Output :**
+
+> Ascending : A,B,D,Z <br/>
+> Descending : Z,D,B,A
 
 **10. indexOf( ) :**
 

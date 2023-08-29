@@ -218,11 +218,9 @@ Line 48 - 50,`decrement function:` `Decrements` the quantity variable by `1` and
         function ChangeQuantity(op) {
 
             if (op === 'inc')
-
                 ++quantity;
 
             if (op === 'dec')
-
                 --quantity;
 
             quantityElement.innerText = quantity;

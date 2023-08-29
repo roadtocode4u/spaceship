@@ -151,3 +151,190 @@ do {
 ```
 
 In the above example, this loop initializes `i` to `0 ` and executes the loop body at least `once`. On each iteration of the loop, the value of `i` is printed to the console using `console.log()`, and then `i` is incremented by `1` using `i++`. The loop continues to execute as long as `i is less than 10`.
+
+## Loops Using Array
+
+```js
+const arr = ["A", "B", "C", "D"];
+
+for (let i = 0; i < 4; i++) {
+  console.log(arr[i]);
+}
+```
+
+**Output :**
+
+A<br/>
+B<br/>
+C<br/>
+D
+
+**Example :**
+
+```js
+const students = [
+  "Gitanjali",
+  "Achal",
+  "Kunal",
+  "Kaveri",
+  "Shanzey",
+  "Suyash",
+  "Vrushali",
+];
+
+for (let i = 0; i < 7; i++) {
+  console.log(`Hello ${students[i]}`);
+}
+```
+
+**Output :**
+
+> Hello Gitanjali<br/>
+> Hello Achal<br/>
+> Hello Kunal<br/>
+> Hello Kaveri<br/>
+> Hello Shanzey<br/>
+> Hello Suyash<br/>
+> Hello Vrushali
+
+In the above example, we initialized an array name of that array is `students` is declared with a list of student names. Each name is a string element in the array. This is a for loop that starts with `i` initialized to `0`. The loop will continue as long as `i` is less than `7`.
+
+After each iteration, the value of `i` is incremented by `1`. Then prints a greeting message using the `console.log()` function. In this message we use template string for combine the string `"Hello"` with the current student's name using the `students[i]`.
+
+**Example :**
+
+```js
+const students = [
+  "Gitanjali",
+  "Achal",
+  "Kunal",
+  "Kaveri",
+  "Shanzey",
+  "Suyash",
+  "Vrushali",
+];
+
+for (let i = 0; i < students.length; i++) {
+  console.log(`Hello ${students[i]}`);
+}
+```
+
+**Output :**
+
+Hello Gitanjali<br/>
+Hello Achal<br/>
+Hello Kunal<br/>
+Hello Kaveri<br/>
+Hello Shanzey<br/>
+Hello Suyash<br/>
+Hello Vrushali
+
+In the above example, we initialized an array name of that array is `students` is declared with a list of student names. Each name is a string element in the array. This is a for loop that starts with `i` initialized to `0`. The loop will continue as long as `i` is less than `students.length`.
+
+After each iteration, the value of `i` is incremented by `1`. Then prints a greeting message using the `console.log()` function. In this message we use template string for combine the string `"Hello"` with the current student's name using the `students[i]`.
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Array With Loop</title>
+    <style>
+      .student-card {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: blueviolet;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const students = [
+        "Achal",
+        "Kunal",
+        "Kaveri",
+        "Shanzey",
+        "Suyash",
+        "Vrushali",
+        "Swapnali",
+        "Yash",
+        "Komal",
+        "Urmila",
+      ];
+
+      for (let i = 0; i < students.length; i++) {
+        document.write(
+          ` <div class='student-card'>
+        Hello ${students[i]}
+      </div>`
+        );
+      }
+    </script>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/31/screenshot-1.png" alt="screenshot-1" width="600px"/>
+
+**Example :**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      body {
+        background-color: bisque;
+      }
+      .student-card {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: blueviolet;
+        color: white;
+        font-size: 20px;
+      }
+      .app-title {
+        text-align: center;
+        color: deepskyblue;
+      }
+      .list {
+        background-color: white;
+        padding: 10px;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="app-title">Student's List</h1>
+
+    <div class="list" id="list"></div>
+
+    <script>
+      const students = ["Achal", "Kunal", "Kaveri", "Shanzey", "Suyash"];
+
+      const listElement = document.getElementById("list");
+
+      for (let i = 0; i < students.length; i++) {
+        listElement.innerHTML += `
+        <div class='student-card'>
+             Hello ${students[i]}
+        </div>
+       `;
+      }
+    </script>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/31/screenshot-2.png" alt="screenshot-2" width="600px"/>

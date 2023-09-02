@@ -458,5 +458,25 @@ Hello C. you are 21 years old.<br>
 > { name: 'Foo Bar', age: 36, interests: [ 'Cricket', 'Basketball' ] }
 
 
+## Object Destructuring
 
+**Code :**
 
+```js
+    const user = {
+       name: "Anand",
+       age: 23,
+       mobile: "7020407429",
+       isActive: true,
+       city: "Pune"
+    }
+
+    const {name, age} = user;
+
+    console.log(name);
+    console.log(age)
+```
+
+**Output :**
+> Anand <br>
+23

@@ -17,6 +17,7 @@ key -----> name, age, city
 
 value -----> string, number, array, object, boolean
 ```
+**Syntax :**
 
 ```js
 {
@@ -249,14 +250,14 @@ value -----> string, number, array, object, boolean
 
 **Output :**
 
->{
-        monday: "9AM-10AM",
-        tuesday: "9AM-10AM",
-        wednesday: "9AM-10AM",
-        thursday: "9AM-10AM",
-        friday: "9AM-10AM",
-        saturday: "9AM-10AM",
-        sunday: "off",
+>{<br>
+        monday: "9AM-10AM",<br>
+        tuesday: "9AM-10AM",<br>
+        wednesday: "9AM-10AM",<br>
+        thursday: "9AM-10AM",<br>
+        friday: "9AM-10AM",<br>
+        saturday: "9AM-10AM",<br>
+        sunday: "off",<br>
   }
 
   **Code :**
@@ -311,17 +312,93 @@ value -----> string, number, array, object, boolean
 
 >9AM-10AM
 
+## Array
 
+**Code :**
 
+```js
+    const course = [
+        {
+            name: 'A',
+            age: 26,
+        },
+        {
+            name: 'B',
+            age: 25,
+        }
+        {
+            name: 'C',
+            age: 21,
+        }
+    ]
+      
+    console.log(students);
+```
 
+**Output :**
+> [ <br>
+    {name: 'A', age: 26},<br>
+    {name: 'B', age: 25},<br>
+    {name: 'C', age: 21},<br>
+]
 
+**Code :**
 
+```js
+    const course = [
+        {
+            name: 'A',
+            age: 26,
+        },
+        {
+            name: 'B',
+            age: 25,
+        }
+        {
+            name: 'C',
+            age: 21,
+        }
+    ]
+      
+    for(let i=0; i<students.length; i++)
+    {
+        console.log(students[i])
+    }
+```
 
+**Output :**
+> {name: 'A', age: 26},<br>
+  {name: 'B', age: 25},<br>
+  {name: 'C', age: 21},<br>
 
+  **Code :**
 
+```js
+    const course = [
+        {
+            name: 'A',
+            age: 26,
+        },
+        {
+            name: 'B',
+            age: 25,
+        }
+        {
+            name: 'C',
+            age: 21,
+        }
+    ]
+      
+    for(let i=0; i<students.length; i++)
+    {
+        const name = students[i].name;
+        const age = students[i].age;
+        console.log(`Hello ${name}. you are ${age} years old.`)
+    }
+```
 
-
-
-
-
+**Output :**
+>Hello A. you are 26 years old.<br>
+Hello B. you are 25 years old.<br>
+Hello C. you are 21 years old.<br>
 

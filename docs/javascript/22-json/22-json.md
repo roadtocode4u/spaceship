@@ -404,6 +404,9 @@ Hello C. you are 21 years old.<br>
 
 
 ## JSON stringify() & JSON parse()
+ 1.  **JSON stringify():** `JSON.stringify` is a method used to convert a JavaScript object into a `JSON string`.
+ 2. **JSON parse():** `JSON.parse `is a method used to `parse a JSON string` and convert it back into a JavaScript object.
+
 
 **Code :**
 
@@ -459,6 +462,7 @@ Hello C. you are 21 years old.<br>
 
 
 ## Object Destructuring
+`Object destructuring` is a feature in JavaScript that allows you to extract values from objects and assign them to variables in a more `concise and convenient way`. It is a way to `"destructure"` or break down the properties of an object into separate variables. This feature can make your code cleaner and more readable.
 
 **Code :**
 

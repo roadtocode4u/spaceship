@@ -402,3 +402,61 @@ value -----> string, number, array, object, boolean
 Hello B. you are 25 years old.<br>
 Hello C. you are 21 years old.<br>
 
+
+## JSON stringify() & JSON parse()
+
+**Code :**
+
+```js
+    const obj = {
+        name : 'Foo Bar',
+        age: 36,
+    }
+
+    const strObj = JSON.stringify(obj)
+
+    console.log(strObj)
+```
+
+**Output :**
+> {"name" : "Foo Bar","age": 36,}
+
+**Code :**
+
+```js
+    const obj = {
+        name : 'Foo Bar',
+        age: 36,
+        interests: ["Cricket", "Basketball"]
+    }
+    console.log(obj)
+    console.log(typeof obj)
+
+    const strObj = JSON.stringify(obj)
+    console.log(strObj)
+    console.log(typeof strObj)
+```
+
+**Output :**
+> <img src="/javascript/22/screenshot1.png" alt="screenshot1.png" width="600px"/>
+
+**Code :**
+
+```js
+    const obj = {
+        name : 'Foo Bar',
+        age: 36,
+        interests: ["Cricket", "Basketball"]
+    }
+   
+    const strObj = JSON.stringify(obj)
+    const objFromStr = JSON.parse(strObj);
+    console.log(objFromStr);
+```
+
+**Output :**
+> { name: 'Foo Bar', age: 36, interests: [ 'Cricket', 'Basketball' ] }
+
+
+
+

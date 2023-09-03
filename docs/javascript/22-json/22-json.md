@@ -4,8 +4,6 @@ description: "JSON"
 hide_table_of_contents: true
 ---
 
-
-
 ## JSON Object 
 
 JSON stands for `JavaScript Object Notation`.
@@ -16,8 +14,8 @@ JSON is a text-based format that consists of `key-value` pairs enclosed in` curl
 
 `String:` Enclosed in double quotes, `e.g., "name": "Anand"`<br/>
 `Number:` E.g., `"age": 23`<br/>
-`Boolean:` true or false<br/>
-`Null:` null<br/>
+`Boolean:` `true` or `false`<br/>
+`Null:` `null`<br/>
 `Object:` A collection of key-value pairs enclosed in curly braces, e.g.,
 
 ```js
@@ -27,17 +25,17 @@ JSON is a text-based format that consists of `key-value` pairs enclosed in` curl
 }
 ```
 
-`Array:` An ordered list of values enclosed in square brackets [], e.g.,
+`Array:` An ordered list of values enclosed in square brackets `[]`, e.g.,
 ```js
 students:["a@gmail.com", "b@gmail.com", "c@gmail.com"]
 ```
 
 ```js
-{} <----- empty object
+`{}` <----- empty object
 
-key -----> name, age, city
+key -----> `name`, `age`, `city`
 
-value -----> string, number, array, object, boolean
+value -----> `string`, `number`, `array`, `object`, `boolean`
 ```
 **Syntax :**
 
@@ -66,13 +64,15 @@ value -----> string, number, array, object, boolean
 
 **Example Explanation :**
 
-In the above example,we creates a JavaScript object called `student` with three properties:
+`const student` = This line declares a constant variable named `student` and initializes it with an object literal enclosed in curly braces `{}`. This object has three key-value pairs separated by colons:
 
-1. `"name"`: This property has the value `"Anand"`, representing the name of the student.
-2. `"age"`: This property has the value `23`, representing the age of the student.
-3. `"city"`: This property has the value `"Pune"`, representing the city where the student is located.
+`"name": "Anand"`: This is a key-value pair where the key is `name` and the value is `Anand`. It represents the name of the student, which is a string.
 
-After defining the `student` object, the `console.log(student)` statement is used to print the entire `student` object to the console.
+`"age": 23`: This is another key-value pair where the key is `age` and the value is `23`. It represents the age of the student, which is a number.
+
+`"city": "Pune"`: This is the third key-value pair where the key is `city` and the value is `Pune`. It represents the city where the student lives, which is also a string.
+
+`console.log(student)`: This line uses the `console.log()` function to output the student object to the console.
 
 **Code :**
 

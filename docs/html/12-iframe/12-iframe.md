@@ -123,7 +123,7 @@ In this example, an `iframe` is created with a name of `myscreen`. The `Contact`
 
 **Output :**
 
-<img src="/html/12/output-8.png" alt="output-8" width="600px"/>
+<img src="/html/12/output-4.png" alt="output-8" width="600px"/>
 
 ## Map
 
@@ -151,7 +151,7 @@ In this example, an `iframe` is created with a name of `myscreen`. The `Contact`
 
 **Output :**
 
-<img src="/html/12/output-6.png" alt="output-6" width="600px"/>
+<img src="/html/12/output-4.png" alt="output-6" width="600px"/>
 
 ## Embed Tag
 
@@ -188,6 +188,6 @@ The `<embed>` tag is used to embed non-HTML content, such as PDF files, within a
 
 **Output :**
 
-<img src="/html/12/output-7.png" alt="output-7" width="600px"/>
+<img src="/html/12/output-5.png" alt="output-7" width="600px"/>
 
 In this example, an embed tag is used to embed a PDF file named `Homework-3.pdf` within the HTML document. The type attribute specifies the MIME type of the embedded content.

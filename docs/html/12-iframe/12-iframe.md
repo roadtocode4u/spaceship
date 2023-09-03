@@ -123,7 +123,7 @@ In this example, an `iframe` is created with a name of `myscreen`. The `Contact`
 
 **Output :**
 
-<img src="/html/12/output-4.png" alt="output-8" width="600px"/>
+<img src="/html/12/output-6.png" alt="output-8" width="600px"/>
 
 ## Map
 

@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
 JSON stands for `JavaScript Object Notation`.
 
-In JSON keys must be represented as strings and Keys must be unique within an object. The values associated with the keys can be of various types, including numbers, strings, arrays, or objects.
+In JSON keys must be represented as `strings and Keys` must be `unique` within an object. The values associated with the keys can be of various types, `including numbers`, `strings`, `arrays` or `objects`.
 
 JSON is a text-based format that consists of `key-value` pairs enclosed in` curly braces {}`, where each key is a string and each value can be one of the following data types:
 
@@ -91,11 +91,13 @@ value -----> `string`, `number`, `array`, `object`, `boolean`
 
 **Example Explanation :**
 
-In the above example,we creates a JavaScript object called `student` with three properties:
+`const student` = This line declares a constant variable named `student` and initializes it with an object literal enclosed in curly braces `{}`. This object has three key-value pairs separated by colons:
 
-1. `"name"`: It has the value `"Anand"` and represents the name of the student.
-2. `"age"`: It has the value `23` and represents the age of the student.
-3. `"city"`: It has the value `"Pune"` and represents the city where the student lives.
+`"name": "Anand"`: This is a key-value pair where the key is `name` and the value is `Anand`. It represents the name of the student, which is a string.
+
+`"age": 23`: This is another key-value pair where the key is `age` and the value is `23`. It represents the age of the student, which is a number.
+
+`"city": "Pune"`: This is the third key-value pair where the key is `city` and the value is `Pune`. It represents the city where the student lives, which is also a string.
 
 After defining the `student` object, the code uses `console.log(student.age)` to access the `"age"` property of the `student` object and prints its value (`23`) to the console. So, the output of this code will be `23`, which is the age of the student.
 
@@ -116,11 +118,13 @@ After defining the `student` object, the code uses `console.log(student.age)` to
 
 **Example Explanation :**
 
-In the above example,we creates a JavaScript object called `student` with three properties:
+`const student` = This line declares a constant variable named `student` and initializes it with an object literal enclosed in curly braces `{}`. This object has three key-value pairs separated by colons:
 
-1. `"name"`: It has the value `"Anand"` and represents the name of the student.
-2. `"age"`: It has the value `23` and represents the age of the student.
-3. `"city"`: It has the value `"Pune"` and represents the city where the student lives.
+`"name": "Anand"`: This is a key-value pair where the key is `name` and the value is `Anand`. It represents the name of the student, which is a string.
+
+`"age": 23`: This is another key-value pair where the key is `age` and the value is `23`. It represents the age of the student, which is a number.
+
+`"city": "Pune"`: This is the third key-value pair where the key is `city` and the value is `Pune`. It represents the city where the student lives, which is also a string.
 
 After defining the `student` object, the code uses `console.log(student.city)` to access the `"city"` property of the `student` object and prints its value (`Pune`) to the console. So, the output of this code will be `Pune`, which is the city of the student.
 
@@ -141,11 +145,13 @@ After defining the `student` object, the code uses `console.log(student.city)` t
 
 **Example Explanation :**
 
-In the above example,we creates a JavaScript object called `student` with three properties:
+`const student` = This line declares a constant variable named `student` and initializes it with an object literal enclosed in curly braces `{}`. This object has three key-value pairs separated by colons:
 
-1. `"name"`: It has the value `"Anand"` and represents the name of the student.
-2. `"age"`: It has the value `23` and represents the age of the student.
-3. `"city"`: It has the value `"Pune"` and represents the city where the student lives.
+`"name": "Anand"`: This is a key-value pair where the key is `name` and the value is `Anand`. It represents the name of the student, which is a string.
+
+`"age": 23`: This is another key-value pair where the key is `age` and the value is `23`. It represents the age of the student, which is a number.
+
+`"city": "Pune"`: This is the third key-value pair where the key is `city` and the value is `Pune`. It represents the city where the student lives, which is also a string.
 
 After defining the `student` object, the code uses `console.log(student.name)` to access the `"name"` property of the `student` object and prints its value (`Anand`) to the console. So, the output of this code will be `Anand`, which is the name of the student.
 
@@ -169,11 +175,13 @@ After defining the `student` object, the code uses `console.log(student.name)` t
 
 **Example Explanation :**
 
-In the above example,we creates a JavaScript object called `student` with three properties:
+`const student` = This line declares a constant variable named `student` and initializes it with an object literal enclosed in curly braces `{}`. This object has three key-value pairs separated by colons:
 
-1. `"name"`: It has the value `"Anand"` and represents the name of the student.
-2. `"age"`: It has the value `23` and represents the age of the student.
-3. `"city"`: It has the value `"Pune"` and represents the city where the student is located.
+`"name": "Anand"`: This is a key-value pair where the key is `name` and the value is `Anand`. It represents the name of the student, which is a string.
+
+`"age": 23`: This is another key-value pair where the key is `age` and the value is `23`. It represents the age of the student, which is a number.
+
+`"city": "Pune"`: This is the third key-value pair where the key is `city` and the value is `Pune`. It represents the city where the student lives, which is also a string.
 
 After creating the `student` object, the code modifies the value of the `"city"` property using square bracket notation: `student['city'] = 'Nagpur'`. This statement updates the `"city"` property from `"Pune"` to `"Nagpur"`.
 
@@ -208,12 +216,15 @@ So, the `"city"` property's value has been updated to `"Nagpur"` in the `student
 
 **Example Explanation :**
 
-In the above example,we creates a JavaScript object called `student` with four properties:
+`const student` = This line declares a constant variable named `student` and initializes it with an object literal enclosed in curly braces `{}`. This object has three key-value pairs separated by colons:
 
-1. `"name"`: It has the value `"Anand"` and represents the name of the student.
-2. `"age"`: It has the value `23` and represents the age of the student.
-3. `"city"`: It has the value `"Pune"` and represents the city where the student lives.
-4. `"first-name"`: It has the value `"XYZ"` and represents the first name of the student. 
+`"name": "Anand"`: This is a key-value pair where the key is `name` and the value is `Anand`. It represents the name of the student, which is a string.
+
+`"age": 23`: This is another key-value pair where the key is `age` and the value is `23`. It represents the age of the student, which is a number.
+
+`"city": "Pune"`: This is the third key-value pair where the key is `city` and the value is `Pune`. It represents the city where the student lives, which is also a string. 
+
+`"first-name"`: This is a key-value pair where the key is `first-name` and the value is `XYZ`. It represents the first-name of the student, which is a string.
 
 The property `"first-name"` contains a hyphen in its name, which is a valid practice in JavaScript, but it requires the use of square bracket notation to access its value due to the hyphen. 
 
@@ -247,13 +258,17 @@ So, the code uses `console.log(student['first-name'])` to access the `"first-nam
 
 **Example Explanation :**
 
-In the above example, a JavaScript object named `course` is defined with several properties:
+`const course` = This line declares a constant variable named `course` and initializes it with an object literal enclosed in curly braces `{}`. This object has five key-value pairs,  including an object property `"batchTimings"` separated by colons:
 
-1. `"title"`: It has the value `"IGCP-1.0"` and represents the title of the course.
-2. `"students"`: It is an array containing three email addresses, `"a@gmail.com"`, `"b@gmail.com"`, and `"c@gmail.com"`, representing the students enrolled in the course.
-3. `"isActive"`: It has the value `true`, indicating that the course is currently active.
-4. `"totalSeats"`: It has the value `30`, representing the total number of seats available in the course.
-5. `"batchTimings"`: It is an object containing the batch timings for each day of the week, such as Monday, Tuesday, Wednesday, etc.
+`title: "IGCP-1.0"`: This is a key-value pair where the key is `title` and the value is `IGCP-1.0`. It represents the title of the course, which is a string.
+
+`students:["a@gmail.com", "b@gmail.com", "c@gmail.com"] `: This is another key-value pair where the key is `student` and the value is `["a@gmail.com", "b@gmail.com", "c@gmail.com"]`  It is an array containing three email addresses, `"a@gmail.com"`, `"b@gmail.com"`, and `"c@gmail.com"`, representing the students enrolled in the course.
+
+`"isActive: true"`: This is the third key-value pair where the key is `isActive` and the value is `true`.  indicating that the course is currently active. 
+
+`"totalSeats: 30"`: This is the four key-value pair where the key is `totalSeats: 30` and the value is `30`. representing the total number of seats available in the course.
+
+`"batchTimings"`: It is an object containing the batch timings for each day of the week, such as Monday, Tuesday, Wednesday, etc.
 
 The code uses `console.log(course.title)` to access and print the value of the `"title"` property of the `course` object, which is `"IGCP-1.0"`. So, when you run this code, it will display `"IGCP-1.0"` in the console.
 
@@ -285,13 +300,17 @@ The code uses `console.log(course.title)` to access and print the value of the `
 
 **Example Explanation :**
 
-In the above example , a JavaScript object named `course` is defined with several properties, including an array property `"students"`:
+`const course` = This line declares a constant variable named `course` and initializes it with an object literal enclosed in curly braces `{}`. This object has five key-value pairs,  including an object property `"batchTimings"` separated by colons:
 
-1. `"title"`: It has the value `"IGCP-1.0"` and represents the title of the course.
-2. `"students"`: It is an array containing three email addresses, `"a@gmail.com"`, `"b@gmail.com"`, and `"c@gmail.com"`, representing the students enrolled in the course.
-3. `"isActive"`: It has the value `true`, indicating that the course is currently active.
-4. `"totalSeats"`: It has the value `30`, representing the total number of seats available in the course.
-5. `"batchTimings"`: It is an object containing the batch timings for each day of the week, such as Monday, Tuesday, Wednesday, etc.
+`title: "IGCP-1.0"`: This is a key-value pair where the key is `title` and the value is `IGCP-1.0`. It represents the title of the course, which is a string.
+
+`students:["a@gmail.com", "b@gmail.com", "c@gmail.com"] `: This is another key-value pair where the key is `student` and the value is `["a@gmail.com", "b@gmail.com", "c@gmail.com"]`  It is an array containing three email addresses, `"a@gmail.com"`, `"b@gmail.com"`, and `"c@gmail.com"`, representing the students enrolled in the course.
+
+`"isActive: true"`: This is the third key-value pair where the key is `isActive` and the value is `true`.  indicating that the course is currently active. 
+
+`"totalSeats: 30"`: This is the four key-value pair where the key is `totalSeats: 30` and the value is `30`. representing the total number of seats available in the course.
+
+`"batchTimings"`: It is an object containing the batch timings for each day of the week, such as Monday, Tuesday, Wednesday, etc.
 
 The code uses `console.log(course.students)` to access and print the value of the `"students"` property of the `course` object, which is `["a@gmail.com", "b@gmail.com", "c@gmail.com"]`. So, when you run this code, it will display `["a@gmail.com", "b@gmail.com", "c@gmail.com"]` in the console.
 
@@ -323,13 +342,17 @@ The code uses `console.log(course.students)` to access and print the value of th
 
 **Example Explanation :**
 
-In the above example , a JavaScript object named `course` is defined with several properties, including an array property `"students"`:
+`const course` = This line declares a constant variable named `course` and initializes it with an object literal enclosed in curly braces `{}`. This object has five key-value pairs,  including an object property `"batchTimings"` separated by colons:
 
-1. `"title"`: It has the value `"IGCP-1.0"` and represents the title of the course.
-2. `"students"`: It is an array containing three email addresses, `"a@gmail.com"`, `"b@gmail.com"`, and `"c@gmail.com"`, representing the students enrolled in the course.
-3. `"isActive"`: It has the value `true`, indicating that the course is currently active.
-4. `"totalSeats"`: It has the value `30`, representing the total number of seats available in the course.
-5. `"batchTimings"`: It is an object containing the batch timings for each day of the week, such as Monday, Tuesday, Wednesday, etc.
+`title: "IGCP-1.0"`: This is a key-value pair where the key is `title` and the value is `IGCP-1.0`. It represents the title of the course, which is a string.
+
+`students:["a@gmail.com", "b@gmail.com", "c@gmail.com"] `: This is another key-value pair where the key is `student` and the value is `["a@gmail.com", "b@gmail.com", "c@gmail.com"]`  It is an array containing three email addresses, `"a@gmail.com"`, `"b@gmail.com"`, and `"c@gmail.com"`, representing the students enrolled in the course.
+
+`"isActive: true"`: This is the third key-value pair where the key is `isActive` and the value is `true`.  indicating that the course is currently active. 
+
+`"totalSeats: 30"`: This is the four key-value pair where the key is `totalSeats: 30` and the value is `30`. representing the total number of seats available in the course.
+
+`"batchTimings"`: It is an object containing the batch timings for each day of the week, such as Monday, Tuesday, Wednesday, etc.
 
 The code uses `console.log(course.students.length)` to access the `"students"` property of the `course` object and retrieve its length, which is the number of elements in the array. In this case, the length of the `"students"` array is `3`, as there are three email addresses in it. So, when you run this code, it will display `3` in the console.
 
@@ -361,13 +384,17 @@ The code uses `console.log(course.students.length)` to access the `"students"` p
 
 **Example Explanation :**
 
-In the above example, a JavaScript object named `course` is defined with several properties:
+`const course` = This line declares a constant variable named `course` and initializes it with an object literal enclosed in curly braces `{}`. This object has five key-value pairs,  including an object property `"batchTimings"` separated by colons:
 
-1. `"title"`: It has the value `"IGCP-1.0"` and represents the title of the course.
-2. `"students"`: It is an array containing three email addresses, `"a@gmail.com"`, `"b@gmail.com"`, and `"c@gmail.com"`, representing the students enrolled in the course.
-3. `"isActive"`: It has the value `true`, indicating that the course is currently active.
-4. `"totalSeats"`: It has the value `30`, representing the total number of seats available in the course.
-5. `"batchTimings"`: It is an object containing the batch timings for each day of the week, such as Monday, Tuesday, Wednesday, etc.
+`title: "IGCP-1.0"`: This is a key-value pair where the key is `title` and the value is `IGCP-1.0`. It represents the title of the course, which is a string.
+
+`students:["a@gmail.com", "b@gmail.com", "c@gmail.com"] `: This is another key-value pair where the key is `student` and the value is `["a@gmail.com", "b@gmail.com", "c@gmail.com"]`  It is an array containing three email addresses, `"a@gmail.com"`, `"b@gmail.com"`, and `"c@gmail.com"`, representing the students enrolled in the course.
+
+`"isActive: true"`: This is the third key-value pair where the key is `isActive` and the value is `true`.  indicating that the course is currently active. 
+
+`"totalSeats: 30"`: This is the four key-value pair where the key is `totalSeats: 30` and the value is `30`. representing the total number of seats available in the course.
+
+`"batchTimings"`: It is an object containing the batch timings for each day of the week, such as Monday, Tuesday, Wednesday, etc.
 
 The code uses `console.log(course.isActive)` to access and print the value of the `"isActive"` property of the `course` object, which is `"true"`. So, when you run this code, it will display `"true"` in the console.
 
@@ -407,13 +434,17 @@ The code uses `console.log(course.isActive)` to access and print the value of th
 
   **Example Explanation :**
 
- In the above example, a JavaScript object named `course` is defined with several properties, including an object property `"batchTimings"`:
+`const course` = This line declares a constant variable named `course` and initializes it with an object literal enclosed in curly braces `{}`. This object has five key-value pairs,  including an object property `"batchTimings"` separated by colons:
 
-1. `"title"`: It has the value `"IGCP-1.0"` and represents the title of the course.
-2. `"students"`: It is an array containing three email addresses, `"a@gmail.com"`, `"b@gmail.com"`, and `"c@gmail.com"`, representing the students enrolled in the course.
-3. `"isActive"`: It has the value `true`, indicating that the course is currently active.
-4. `"totalSeats"`: It has the value `30`, representing the total number of seats available in the course.
-5. `"batchTimings"`: It is an object containing batch timings for each day of the week, such as Monday, Tuesday, Wednesday, etc., with corresponding time ranges.
+`title: "IGCP-1.0"`: This is a key-value pair where the key is `title` and the value is `IGCP-1.0`. It represents the title of the course, which is a string.
+
+`students:["a@gmail.com", "b@gmail.com", "c@gmail.com"] `: This is another key-value pair where the key is `student` and the value is `["a@gmail.com", "b@gmail.com", "c@gmail.com"]`  It is an array containing three email addresses, `"a@gmail.com"`, `"b@gmail.com"`, and `"c@gmail.com"`, representing the students enrolled in the course.
+
+`"isActive: true"`: This is the third key-value pair where the key is `isActive` and the value is `true`.  indicating that the course is currently active. 
+
+`"totalSeats: 30"`: This is the four key-value pair where the key is `totalSeats: 30` and the value is `30`. representing the total number of seats available in the course.
+
+`"batchTimings"`: It is an object containing the batch timings for each day of the week, such as Monday, Tuesday, Wednesday, etc.
 
 The code uses `console.log(course.batchTimings)` to access and print the entire `"batchTimings"` object, which includes the timings for each day of the week. When you run this code, it will display the following output:
 
@@ -428,7 +459,6 @@ The code uses `console.log(course.batchTimings)` to access and print the entire 
     sunday: "off"
 }
 ```
-
 This output shows the batch timings for each day of the week as defined in the `course` object's `"batchTimings"` property.
 
   **Code :**
@@ -459,13 +489,17 @@ This output shows the batch timings for each day of the week as defined in the `
 
 **Example Explanation :**
 
- In the above example, a JavaScript object named `course` is defined with several properties, including an object property `"batchTimings"`:
+`const course` = This line declares a constant variable named `course` and initializes it with an object literal enclosed in curly braces `{}`. This object has five key-value pairs,  including an object property `"batchTimings"` separated by colons:
 
-1. `"title"`: It has the value `"IGCP-1.0"` and represents the title of the course.
-2. `"students"`: It is an array containing three email addresses, `"a@gmail.com"`, `"b@gmail.com"`, and `"c@gmail.com"`, representing the students enrolled in the course.
-3. `"isActive"`: It has the value `true`, indicating that the course is currently active.
-4. `"totalSeats"`: It has the value `30`, representing the total number of seats available in the course.
-5. `"batchTimings"`: It is an object containing batch timings for each day of the week, such as Monday, Tuesday, Wednesday, etc., with corresponding time ranges.
+`title: "IGCP-1.0"`: This is a key-value pair where the key is `title` and the value is `IGCP-1.0`. It represents the title of the course, which is a string.
+
+`students:["a@gmail.com", "b@gmail.com", "c@gmail.com"] `: This is another key-value pair where the key is `student` and the value is `["a@gmail.com", "b@gmail.com", "c@gmail.com"]`  It is an array containing three email addresses, `"a@gmail.com"`, `"b@gmail.com"`, and `"c@gmail.com"`, representing the students enrolled in the course.
+
+`"isActive: true"`: This is the third key-value pair where the key is `isActive` and the value is `true`.  indicating that the course is currently active. 
+
+`"totalSeats: 30"`: This is the four key-value pair where the key is `totalSeats: 30` and the value is `30`. representing the total number of seats available in the course.
+
+`"batchTimings"`: It is an object containing the batch timings for each day of the week, such as Monday, Tuesday, Wednesday, etc.
 
 The code uses `console.log(course.batchTimings.monday)` to access and print the value associated with the `"monday"` property within the `"batchTimings"` object. In this case, the `"monday"` property holds the string `"9AM-10AM"`, which represents the batch timing for Mondays.
 
@@ -779,13 +813,17 @@ The output will be the same as the original `obj`. <br/>i.e `{ name: 'Foo Bar', 
 
 **Example Explanation :**
 
-In the above example, a JavaScript object named `user` is defined with several properties:
+`const user` = This line declares a constant variable named `user` and initializes it with an object literal enclosed in curly braces `{}`. This object has five key-value pairs separated by colons:
 
-1. `"name"`: It has the value `"Anand"` and represents the name of the user.
-2. `"age"`: It has the value `23` and represents the age of the user.
-3. `"mobile"`: It has the value `"7020407429"` and represents the user's mobile number.
-4. `"isActive"`: It has the value `true`, indicating that the user's account is currently active.
-5. `"city"`: It has the value `"Pune"` and represents the city where the user is located.
+`"name": "Anand"`: This is a key-value pair where the key is `name` and the value is `Anand`. It represents the name of the user, which is a string.
+
+`"age": 23`: This is another key-value pair where the key is `age` and the value is `23`. It represents the age of the user, which is a number.
+
+`"mobile": 23`: This is another key-value pair where the key is `mobile` and the value is `7020407429`. It represents the mobile of the user, which is a number.
+
+`"isActive: true"`: This is a key-value pair where the key is `isActive` and the value is `true`. It represents the isActive of the user, which is a string.
+
+`"city": "Pune"`: This is the fifth key-value pair where the key is `city` and the value is `Pune`. It represents the city where the user lives, which is also a string. 
 
 Next, the code uses `object destructuring` to extract specific properties from the `user` object and assign them to variables. Specifically, it extracts the `"name"` property and assigns it to the variable `name`, and it extracts the `"age"` property and assigns it to the variable `age`.
 
@@ -795,5 +833,4 @@ Finally, the code uses `console.log(name)` and `console.log(age)` to print the v
 Anand
 23
 ```
-
 These lines show the values extracted from the `user` object using `object destructuring`.

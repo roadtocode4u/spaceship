@@ -12,11 +12,11 @@ npx create-react-app <app-name>
 
 The `npx create-react-app first-flight` command creates a new React application in a directory called `first-flight`.
 
-**npm:** node package manager. `npm` is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node.js.
+* **npm:** node package manager. `npm` is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node.js.
 
-**create-react-app:** `create-react-app` is a command-line interface tool that allows you to quickly set up a new React project. It generates a starter template with all the necessary files and dependencies for a React app.
+* **create-react-app:** `create-react-app` is a command-line interface tool that allows you to quickly set up a new React project. It generates a starter template with all the necessary files and dependencies for a React app.
 
-**first-flight:** This is the name of the directory where the new `React app` will be created. You can replace `first-flight` with the name of your choice.
+* **first-flight:** This is the name of the directory where the new `React app` will be created. You can replace `first-flight` with the name of your choice.
 
 When you run the `npx create-react-app first-flight` command, it will download the latest version of create-react-app and use it to generate a new React app in the `first-flight` directory. The generated app will include a basic file structure with the necessary files to start building your React app.
 
@@ -25,40 +25,55 @@ When you run the `npx create-react-app first-flight` command, it will download t
 
 1. Open your terminal or command prompt to the root directory of your React app.
 
-2. Run the following command:
+2.  Run the Command
+ 
+ * Simply type the following command and press Enter:
+
 ```js
 npm start
 ```
+
+* f you see this line in your `package.json` file:
 
 ```js
 "scripts":{
     "start": "react-scripts start"
 }
 ```
+
+It means that when you run `npm start`, it's actually running the `react-scripts start` command.
+
+3. **Custom Script :**
+
+Sometimes, developers may customize the script name instead of using `npm start`. For instance, if your `package.json` looks like this:
+
 ```js
 "scripts":{
     "fly": "react-scripts start"
 }
 ```
+
+Then, to start your app, you'd use the custom script name, which is `fly` in this example:
+
 ```js
 npm run fly
 ```
 
+That's it! Your React app should now be running, and you'll see a message in your terminal telling you where you can access it in your web browser ( usually at **http://localhost:3000** by default ). Just open a web browser, paste this address, and you'll be able to see your React app in action.
 
 ### How to open a React App in the browser?
 
 To open a React app in the browser, you need to follow the steps below:
 
-Open your command prompt or terminal to the root directory of your React app.
+1. Open your command prompt or terminal to the root directory of your React app.
 
-Run the command `npm start` in your terminal. This will start a development server and open your app in the default browser automatically.
+2. Run the command `npm start` in your terminal. This will start a development server and open your app in the default browser automatically.
 
-If the app doesn't open automatically, you can manually open it by typing `http://localhost:3000/` in your browser's address bar.
+3. If the app doesn't open automatically, you can manually open it by typing `http://localhost:3000/` in your browser's address bar.
 
 ### SPA (Single Page Application)
 
-A web application or web page interacts with the user by dynamically rewriting the current page instead of loading whole new pages from the server.
-
+A Single Page Application (SPA) is like a website that can change its content smoothly without loading entirely new pages. It's like a magic book where the pages transform on their own, making the web experience faster and more interactive.
 
 ### Folder Structure
 

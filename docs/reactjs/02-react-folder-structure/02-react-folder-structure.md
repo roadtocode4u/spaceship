@@ -33,7 +33,7 @@ When you run the `npx create-react-app first-flight` command, it will download t
 npm start
 ```
 
-* f you see this line in your `package.json` file:
+* if you see this line in your `package.json` file:
 
 ```js
 "scripts":{

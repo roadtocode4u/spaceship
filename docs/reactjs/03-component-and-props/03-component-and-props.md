@@ -6,18 +6,17 @@ hide_table_of_contents: true
 
 ## Components 
 
-Javascript functions that returns `jsx`.
+JavaScript functions that returns `jsx`.
 
-In React, a component is a reusable piece of code that defines the structure and behavior of a part of a user interface. A component is typically written as a JavaScript function or class that returns a JSX element or a tree of elements.
+In React, a component is a reusable piece of code that defines the structure and behaviour of a part of a user interface. A component is typically written as a JavaScript function or class that returns a JSX element or a tree of elements.
 
 **File Name : index.js**
 
-```js
- import ReactDOM from 'react-dom/client';
+```js showLineNumbers="true"
+import ReactDOM from 'react-dom/client';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-  function Card(){
-
+  function  Card(){
   const randomNumber = Math.random();
   return(
     <div>
@@ -39,19 +38,13 @@ root.render(
 
 **Example Explanation :**
 
-In this example, we're using React to create a web page with multiple `"Card" components`. Each `"Card`" component displays a `title with a random number`.
+In Line 1, imports the ReactDOM library from the `react-dom/client` module. `ReactDOM` is a part of React that allows you to render components on a web page.
 
-1. We import a part of React called `ReactDOM`, which helps us work with web pages.
+Line 2, This line creates a React `root` on the HTML element with the ID `root`. In React, the `root` is the entry point where your components will be rendered into the HTML document.
 
-2. We create a `"root"` element in our HTML with the `ID 'root'`, where our React content will appear.
+Line 4 to 11, This code defines a React functional component called `Card`. This component generates a random number and displays it within an ``<h1>`` tag whenever it is rendered. Essentially, it's a card component with a random number as its content.
 
-3. We define a function called `"Card"` that generates a `random number` and displays it as a title inside a card-like container.
-
-4. Inside the "Card" component, we use `Math.random()` to create a random number each time the component is called, and we show it in the title of the card.
-
-5. We use React to render four instances of the "Card" component inside the 'root' element. As a result, you'll see four cards on the web page, each with a different random number in its title.
-
-So, `when you load the page, you'll see four cards`, and each card will have a `unique random number in its title`, created by the "Card" component. 
+Line 12 to 19, the `root.render()` function is used to render multiple instances of the Card component. It renders four `<Card />` components inside a React fragment (`<> ... </>`).
 
 ## Props 
 

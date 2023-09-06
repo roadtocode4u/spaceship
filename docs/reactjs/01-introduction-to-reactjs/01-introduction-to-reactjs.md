@@ -33,7 +33,7 @@ React is a JavaScript frontend library for building user interfaces. It is maint
 
 **Virtual DOM:** The Virtual DOM is a lightweight, in-memory representation of the actual DOM. It's essentially a copy of the real DOM, but it's not directly tied to the browser's rendering engine. Developers use frameworks like React to work with the Virtual DOM.
 
-**JSX :** JSX stands for JavaScript XML. It's a syntax extension for JavaScript used in React to describe the structure and layout of user interfaces. JSX allows developers to write `HTML-like syntax which allows to write Hs & Html at one place`. making it easier to define and render UI components in React applications.
+**JSX :** JSX stands for JavaScript XML. It's a syntax extension for JavaScript used in React to describe the structure and layout of user interfaces. JSX allows developers to write `HTML-like syntax which allows to write Js & Html at one place`. making it easier to define and render UI components in React applications.
 
 ### Some Handy Terms
 

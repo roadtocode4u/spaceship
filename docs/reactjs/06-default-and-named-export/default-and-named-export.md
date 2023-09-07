@@ -22,8 +22,6 @@ export default function MyComponent() {
         // Component logic here
     )
 };
-
-export default MyComponent;
 ```
 
 In this case, `MyComponent` is the default export, and when you import it in another file, you can give it any name you want, like this:

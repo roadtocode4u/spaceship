@@ -17,8 +17,10 @@ For example, in a React component file:
 ```javascript
 import React from 'react';
 
-const MyComponent = () => {
-  // Component logic here
+export default function MyComponent() {
+    return(
+        // Component logic here
+    )
 };
 
 export default MyComponent;

@@ -63,7 +63,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={router} />);
 ```
 
-Hurrah! Now your React application is ready to handle client-side routing.
+Hurray! Now your React application is ready to handle client-side routing.
 
 Wait, wait wait! We haven't actually implemented any routing yet. Let's do that next.
 
@@ -71,7 +71,7 @@ Wait, wait wait! We haven't actually implemented any routing yet. Let's do that 
 
 To navigate between routes in your application, you can use the `Link` component provided by `react-router-dom`. Here's an example of how to create a navigation bar with links to different routes:
 
-```jsx title="src/components/Navbar/Navbar.jsx" showLineNumbers
+```jsx title="src/components/Navbar/Navbar.js" showLineNumbers
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -95,6 +95,12 @@ export default Navbar;
 
 - If you use `a` tags, the page will reload every time you click on a link.
 
-### Hurrah! You've successfully implemented routing in your React application using `react-router-dom` 🎉
+### Hurray! You've successfully implemented routing in your React application using `react-router-dom` 🎉
 
 <img src="https://media.tenor.com/BGsAhrY5FMMAAAAd/great-job-yes.gif" alt="react-router-dom" width="30%" />
+
+<br /> <br />
+
+:::caution
+`react-router-dom` is a npm package and syntax might change over time. Make sure to check the [official documentation](https://reactrouter.com/web/guides/quick-start) for the latest updates.
+:::

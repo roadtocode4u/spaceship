@@ -74,7 +74,7 @@ The solid border style creates a solid line around an element. You can apply it 
 
 **Output :**
 
-<img src="/icp/14/output-2.png" alt="output-2" width="600px"/>
+<img src="/css/03/output-1.png" alt="output-2" width="600px"/>
 
 ### Different Border Colors for Different Sides 
 
@@ -108,7 +108,7 @@ You can apply different border colors to different sides of an element using the
 
 **Output :**
 
-<img src="/icp/14/output-9.png" alt="output-9" width="600px"/>
+<img src="/css/03/output-2.png" alt="output-9" width="600px"/>
 
 ### Double Border
 
@@ -140,7 +140,7 @@ The double border style features two parallel lines surrounding an HTML element.
 
 **Output :**
 
-<img src="/icp/14/output-3.png" alt="output-3" width="600px"/>
+<img src="/css/03/output-3.png" alt="output-3" width="600px"/>
 
 ### Dashed Border
 
@@ -172,7 +172,7 @@ The dashed border style consists of a series of short, dashed lines.
 
 **Output :**
 
-<img src="/icp/14/output-4.png" alt="output-4" width="600px"/>
+<img src="/css/03/output-4.png" alt="output-4" width="600px"/>
 
 ### Dotted Border
 
@@ -204,7 +204,7 @@ The dotted border style consists of a series of dots.
 
 **Output :**
 
-<img src="/icp/14/output-5.png" alt="output-5" width="600px"/>
+<img src="/css/03/output-5.png" alt="output-5" width="600px"/>
 
 :::tip
 Instead of adding `border-style`, `border-width`, and `border-color` separately, you can use a shorthand property border to provide all values at once. For example, `border: solid black 3px;` will set a `solid border` with `black color` and a `width of  3 pixels`.
@@ -234,7 +234,7 @@ Instead of adding `border-style`, `border-width`, and `border-color` separately,
 
 **Output :**
 
-<img src="/icp/14/output-6.png" alt="output-6" width="600px"/>
+<img src="/css/03/output-6.png" alt="output-6" width="600px"/>
 
 ## Border Radius
 
@@ -277,7 +277,7 @@ border-radius: 0px 50px 0px 50px;
 
 **Output :**
 
-<img src="/icp/14/output-10.png" alt="output-10" width="600px"/>
+<img src="/css/03/output-7.png" alt="output-10" width="600px"/>
 
 **Additionally, you can use border-radius to create a circular shape by setting a value of `50%`**.
 
@@ -306,7 +306,7 @@ border-radius: 0px 50px 0px 50px;
 
 **Output :**
 
-<img src="/icp/14/output-11.png" alt="output-11" width="600px"/>
+<img src="/css/03/output-8.png" alt="output-11" width="600px"/>
 
 In this example, the element will have a circular shape because the `border-radius` is set to `50%`.
 
@@ -344,4 +344,4 @@ In this example, the element will have a circular shape because the `border-radi
 
 **Output :**
 
-<img src="/icp/14/output-8.png" alt="output-8" width="600px"/>
+<img src="/css/03/output-9.png" alt="output-8" width="600px"/>

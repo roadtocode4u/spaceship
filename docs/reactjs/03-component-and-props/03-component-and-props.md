@@ -4,15 +4,14 @@ description: "Components and Props"
 hide_table_of_contents: true
 ---
 
-## Components 
+## What is Components?
 
 JavaScript functions that returns `jsx`.
 
 In React, a component is a reusable piece of code that defines the structure and behaviour of a part of a user interface. A component is typically written as a JavaScript function or class that returns a JSX element or a tree of elements.
 
-**File Name : index.js**
 
-```js showLineNumbers="true"
+```jsx title="src/index.js" showLineNumbers="true"
 import ReactDOM from 'react-dom/client';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -46,16 +45,14 @@ Line 4 to 11, This code defines a React functional component called `Card`. This
 
 Line 12 to 19, the `root.render()` function is used to render multiple instances of the Card component. It renders four `<Card />` components inside a React fragment (`<> ... </>`).
 
-## Props 
+## What is Props? 
 
 `props` is a shorthand for `properties`. props means Passing `Parameters` to component. It refers to a mechanism for passing data from `one component to another` in a unidirectional flow. A component can receive data as props from its parent component and use it to render its content. Props are read-only, meaning that a component cannot modify the props it receives from its parent. Overall, props help to create reusable and modular components in React.
 
 
 **Example 1 :**
 
-**File Name : index.js**
-
-```js showLineNumbers="true"
+```jsx title="src/index.js" showLineNumbers="true"
 import ReactDOM from 'react-dom/client';
 const root = ReactDOM.createRoot
 (document.getElementById('root'));
@@ -91,9 +88,7 @@ Line 12 and 16, This line use React to render our `"Greeting"` component inside 
 
 **Example 2 :**
 
-**File Name : index.js**
-
-```js showLineNumbers="true"
+```jsx title="src/index.js" showLineNumbers="true"
 import ReactDOM from 'react-dom/client';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -129,9 +124,7 @@ Line 13 and 17, This line use React to `render the "Greeting" component inside t
 
 **Example 3 :**
 
-**File Name : index.js**
-
-```js showLineNumbers="true"
+```jsx title="src/index.js"showLineNumbers="true"
 import ReactDOM from 'react-dom/client';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -169,9 +162,7 @@ So, when you load the page, you'll see a greeting message that says, `"I am Anan
 
 **Example 4 :**
 
-**File Name : index.js**
-
-```js showLineNumbers="true"
+```jsx title="src/index.js" showLineNumbers="true"
 import ReactDOM from 'react-dom/client';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -212,9 +203,7 @@ When you open the web page, you'll see four greeting messages, each with a diffe
 
 **Example 5 :**
 
-**File Name : index.js**
-
-```js showLineNumbers="true"
+```jsx title="src/index.js" showLineNumbers="true"
 import ReactDOM from 'react-dom/client';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

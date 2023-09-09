@@ -13,9 +13,7 @@ Exploring **CSS Styling** Methods in React :
 
 1. **Inline CSS :** In React, `inline CSS` refers to adding CSS styles directly to individual `JSX elements using the style attribut`e. It allows for unique and immediate styling of specific elements within a component.
 
-**File Name : index.js**
-
-```js
+```jsx title="src/index.js" showLineNumbers="true"
 import ReactDOM from 'react-dom/client';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -41,9 +39,8 @@ root.render(
 
 2. **Document CSS :** Document CSS, also known as embedded CSS, involves placing CSS styles within a `<style> tag` within the `HTML document or JSX file`. These styles apply to the entire document or a specific section, making them reusable within that document.
 
-**File Name : index.js**
 
-```js
+```jsx title="src/index.js" showLineNumbers="true"
 import ReactDOM from 'react-dom/client';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -82,9 +79,7 @@ root.render(
 
 3. **External CSS :**  External CSS refers to placing CSS styles in a separate `external file (typically with a .css extension)` and linking it to your React components. This method promotes reusability and separation of concerns, as the styles can be shared across multiple components or pages.
 
-**File Name : index.js**
-
-```js
+```jsx title="src/index.js" showLineNumbers="true"
 import ReactDOM from 'react-dom/client';
 import "./index.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));

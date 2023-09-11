@@ -1,10 +1,10 @@
 ---
-title: Date Object
-description: "Date Object"
+title: Date 
+description: "Date"
 hide_table_of_contents: true
 ---
 
-## Introduction to the Date Object
+## Introduction to the Date
 
 
 The `Date` object is a built-in JavaScript class that allows you to work with dates and times. It provides methods and properties to create, manipulate, and format dates and times. You can create a new Date object like this:

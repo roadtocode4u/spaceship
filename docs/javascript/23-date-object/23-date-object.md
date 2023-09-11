@@ -126,3 +126,7 @@ console.log(`Current Time: ${currentHour}:${currentMinutes}:${currentSeconds}`);
 ```js
 Current Time: 12:5:46
 ```
+
+### **You've successfully learned how to work with the Date object to manage date and time in JavaScript. 🎉**
+
+<img src="/javascript/23/sticker.webp" alt="sticker" width="200px"/>

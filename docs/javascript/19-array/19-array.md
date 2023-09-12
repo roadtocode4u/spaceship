@@ -219,7 +219,7 @@ In the above example, we can defines an array called `students` with six element
 
 The first `console.log()` function is then used to print the entire students array to the console.
 
-The ``splice()` method is then called on the `students` array with the arguments `1`, `2`, `W`, and `Q`. This removes two elements starting from the index `1`, which removes `B` and `C`, and inserts two new elements `W` and `Q` in their place.
+The ``splice()` method is then called on the `students` array with the arguments `1`, `2`, `W`, and `Q`. This removes two elements starting from the index `1`, which removes `C` and `D`, and inserts two new elements `W` and `Q` in their place.
 
 The second `console.log()` function is then used to print the updated students array to the console. 
 
@@ -249,7 +249,7 @@ console.log(students.join("*"))
 **Output :**
 
 >['A','B','C','D','E','F'] <br/>
->A*B*C*D*E*F
+>`A*B*C*D*E*F`
 
 **8. reverse() :**
 

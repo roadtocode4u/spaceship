@@ -316,3 +316,104 @@ Hello Kaveri<br/>
 Hello Shanzey<br/>
 Hello Suyash<br/>
 Hello Vrushali
+
+
+### Break and Continue Keyword
+
+#### break
+
+`break` keyword is used to immediately terminate a loop and resume execution at the next statement after the loop.
+
+**Example :**
+
+```js
+for (let i = 0; i < 10; i++) {
+  if (i == 5) {
+    break;
+  }
+  console.log(i);
+}
+```
+
+**Output :**
+
+0 <br/>
+1 <br/>
+2 <br/>
+3 <br/>
+4 <br/>
+
+In the above example `for` loop that starts at `0` and iterates up to `9`, with `i` being the loop counter variable.
+
+During each iteration of the loop, it checks if `i` is equal to `5` using an `if statement`. If `i` is equal to `5`, then the `break` statement is executed, causing the loop to terminate immediately and skip the remaining iterations.
+
+If `i` is not equal to `5`, then the loop continues to execute normally and the `console.log(i)` statement is executed, which prints the current value of `i` to the console.
+
+#### continue
+
+`continue` is used to skip the current iteration of a loop and move on to the next iteration.
+
+**Example :**
+
+```js
+for (let i = 0; i < 10; i++) {
+  if (i % 2 === 0) {
+    continue;
+  }
+  console.log(i);
+}
+```
+
+In the above example for loop that starts at `0` and iterates up to `9`, with `i` being the loop counter variable.
+
+During each iteration of the loop, it checks if `i` is divisible by `2` (i.e., if i % 2 === 0) using an `if statement`. If `i` is divisible by `2`, then the continue statement is executed, causing the current iteration of the loop to be skipped and moving on to the next iteration.
+
+If `i` is not divisible by `2`, then the loop continues to execute normally and the `console.log(i)` statement is executed, which prints the current value of `i` to the console.
+
+### while loop and do-while loop
+
+In a while loop, the loop executes as long as the condition is `true`.
+
+**Syntax :**
+
+```js
+while (condition) {
+  // code block to be executed
+}
+```
+
+**Example :**
+
+```js
+let i = 0;
+
+while (i < 10) {
+  console.log(i);
+  i++;
+}
+```
+
+In the above example, this loop initializes `i` to `0` and continues to execute as long as `i is less than 10`. On each iteration of the loop, the value of `i` is printed to the console using `console.log()`, and then `i` is incremented by `1` using `i++`.
+
+**You can also use a do-while loop, which is similar to a while loop but guarantees that the loop body is executed at least once.**
+
+**Syntax :**
+
+```js
+do {
+  // statements to be executed inside the loop
+} while (condition);
+```
+
+**Example :**
+
+```js
+let i = 0;
+
+do {
+  console.log(i);
+  i++;
+} while (i < 10);
+```
+
+In the above example, this loop initializes `i` to `0 ` and executes the loop body at least `once`. On each iteration of the loop, the value of `i` is printed to the console using `console.log()`, and then `i` is incremented by `1` using `i++`. The loop continues to execute as long as `i is less than 10`.

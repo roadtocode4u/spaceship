@@ -1,3 +1,9 @@
+---
+title: forEach and map
+description: "forEach and map"
+hide_table_of_contents: true
+---
+
 # `forEach` and `map`
 
 In JavaScript, `forEach` and `map` are two essential methods that allow you to work with arrays and perform operations on each element within an array.

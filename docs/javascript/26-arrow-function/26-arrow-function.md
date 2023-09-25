@@ -1,6 +1,6 @@
 ---
 title: Arrow Function
-description: "Arrow Functione"
+description: "Arrow Function"
 hide_table_of_contents: true
 ---
 

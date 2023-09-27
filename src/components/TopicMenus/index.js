@@ -68,6 +68,11 @@ const FeatureList = [
     imgSrc: "img/menu_icons/dsa.png",
     path: "/docs/category/dsa",
   },
+  {
+    title: "Bun",
+    imgSrc: "img/menu_icons/bun.svg",
+    path: "/docs/category/bun",
+  },
 ];
 
 function TopicMenu({ imgSrc, title, path }) {

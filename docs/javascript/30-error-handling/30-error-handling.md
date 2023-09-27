@@ -6,25 +6,18 @@ hide_table_of_contents: true
 
 Error handling is the process of managing and responding to errors or exceptions that can occur during the execution of a JavaScript program. Errors can occur for various reasons, such as `incorrect input`, `network issues`, or `programming mistakes`.
 
-Here are the key aspects of error handling in JavaScript:
-
-1. **Error Objects**: JavaScript provides built-in error objects like `Error`, `SyntaxError`, `TypeError`, and others that represent different types of errors. These objects contain information about the error, such as a message and a stack trace.
-
-2. **Throwing Errors**: You can manually throw errors using the `throw` statement. This allows you to create custom error messages and scenarios:
+1. **Throwing Errors**: You can use the throw statement to manually throw custom errors or exceptions. This is often useful when you want to create your own error conditions in your code.
 
     ```javascript
-    function divide(a, b) {
-      if (b === 0) {
-        throw new Error("Division by zero is not allowed");
-      }
-      return a / b;
-    }
+    console.log('Statement 1')
+    throw new Error('You have an error!')
+    console.log('Statement 2')
+    console.log('Statement 3')
     ```
 
-3. **Try...Catch Statements**: The primary mechanism for handling errors in JavaScript is the `try...catch` statement. You wrap the code that might throw an error inside a `try` block, and if an error occurs, it's caught and handled in the `catch` block.
+2. **Try...Catch Statements**: The most common way to handle errors in JavaScript is by using `try-catch statements`. You wrap the code that might throw an error inside a `try` block, and if an error occurs, it's caught and handled in the `catch` block.
 
- Here's a basic example:
-
+**Syntax :**
 ```javascript
     try {
       // Code that might throw an error
@@ -32,12 +25,29 @@ Here are the key aspects of error handling in JavaScript:
       // Handle the error here
     }
 ```
+**Example :**
+
+```javascript
+   console.log('Statement 1')
+   console.log('Statement 2')
+    try {
+      throw new Error('You have an error!')
+    } catch (error){
+      console.log(error)
+    }
+    console.log('Statement 3')
+```
+**output:**
+>Statement 1
+>Statement 2
+>Error: You have an errror!
+>Statement 3
 
 ### Error Object :
- The `"Error" object` is typically used to handle and report runtime errors.
+There are 3 parameters in Error Object:
 
 ```js
-1. name => Error
+1. name
 2. message
 3. stack
 ```
@@ -130,18 +140,3 @@ console.log(message)
 **Output :**
 
 >Hello
-
-**Example Explanation:**
-
-1. We define a function called `sayHello` using the keyword `function`. This function doesn't take any parameters , simply returns the string "Hello."
-
-2. We declare a variable named `message` and initialize it with the value `null`. 
-
-3. Inside a `try` block, we attempt to call the `sayHello` function and assign its result to the `message` variable. This means we're trying to set the `message` variable to "Hello".
-
-4. There's a `try...catch` construct. If any errors occur within the `try` block (like if `sayHello` had a problem), the code inside the `catch` block would execute. In this case, if there were an error, it would log the error to the console using `console.log(e)`.
-
-5. `console.log(message)`. This line prints the value of the `message` variable to the console.
-
-So, when you run this code, it will print "Hello" to the console.  it defines a function to say hello, calls that function to get the message "Hello" and then prints that message to the console.
-

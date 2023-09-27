@@ -38,9 +38,9 @@ Error handling is the process of managing and responding to errors or exceptions
     console.log('Statement 3')
 ```
 **output:**
->Statement 1
->Statement 2
->Error: You have an errror!
+>Statement 1 <br/>
+>Statement 2 <br/>
+>Error: You have an errror!<br/>
 >Statement 3
 
 ### Error Object :

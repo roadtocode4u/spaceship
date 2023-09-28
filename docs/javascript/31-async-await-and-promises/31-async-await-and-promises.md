@@ -4,7 +4,9 @@ description: "Async Await and Promises"
 hide_table_of_contents: true
 ---
 
-## Async
+## Async Functions
+
+Async functions are a way to handle asynchronous operations in JavaScript. They make it easier to write and reason about asynchronous code by allowing you to write code that looks more synchronous.
 
 **Example 1:**
 
@@ -25,6 +27,8 @@ runForShortTime();
 >Run for long time done ! <br/>
 >Run for short time done ! <br/>
 
+In this example, you have two functions: `runForLongTime` and `runForShortTime`. In the first function, you have a long-running loop, and in the second one, you simply log a message. When you call these functions, the long-running function blocks other code execution until it's finished, which is why the `Run for short time done !` message is only printed after the long-running function is done.
+
 **Example 2:**
 
 ```javascript
@@ -44,6 +48,8 @@ runForShortTime();
 >Run for long time done ! <br/>
 >Run for short time done ! <br/>
 
+In this example, the same functions are marked as `async`. Even though `runForLongTime` has a long-running loop, it doesn't block other code execution because it's marked as `async`. The event loop continues to run other code while this function is running. This makes your code more responsive.
+
 **Example 3:**
 
 ```javascript
@@ -58,9 +64,11 @@ console.log(p);
 **output:**
 >Promise { 'Done' }
 
+In this example, `runForLongTime` is an `async` function that doesn't contain any asynchronous operations. It returns `Done` When you call this function, it returns a `Promise` immediately, which resolves with `Done` You can use `.then()` to handle the result when the `promise` is resolved.
+
 ## Promise
 
-A Promise can be  of three states:
+A promise is an object that eventually leads to an asynchronous operation’s `completion` or `failure`. A promise can be in one of three states: `pending`, `fulfilled`, or `rejected`. When the asynchronous operation is completed, the Promise will either be fulfilled with a value or rejected with an error.
 
 ```javascript
 1. Pending 2. Fulfilled 3. Rejected
@@ -91,7 +99,10 @@ p. then((result)=>{
 >Promise { 'Function Finished' }<br/>
 >Function Finished
 
+In this example, `runForLongTime` is an async function with a long-running loop. When you call it, it returns a `Promise` that immediately enters the `Fulfilled` state with the value `Function Finished` You can use `.then()` to handle the resolved value.
+
 **Example 2:**
+
 ```javascript
 async function runForLongTime(){
     for(let i = 0; i < 3000000000; i++){}
@@ -115,7 +126,9 @@ p. then((result)=>{
 >Promise resolved<br/>
 >Function Finished
 
-**Example 1: Rejected**
+This example is similar to the previous one but also includes a `.catch()` block. If an error occurs in the `async` function, it will reject the Promise, and you can use` .catch()` to handle the error.
+
+**Example 3: Rejected**
 
 ```javascript
 async function runForLongTime(){
@@ -145,7 +158,11 @@ p. then((result)=>{
 Error caught<br/>
 Error: Something went wrong...<br/>
 
+In this example, `runForLongTime` throws an error and doesn't return any value. This leads to the `Promise` being in a `Rejected` state. You can use `.catch()` to handle the error.
+
 ## Await
+
+The `await` keyword is used inside async functions to pause the execution of the function until the Promise is resolved. It makes it easy to work with Promises in a more synchronous style.
 
 **Example 1**
 
@@ -172,6 +189,8 @@ Error: Something went wrong...<br/>
 **output:**
 >Something went wrong...
 
+In this example, `await` is used to pause the execution of `runForLongTime` and catch any errors that occur. This allows you to handle exceptions gracefully.
+
 **Example 2**
 
 ```javascript
@@ -197,6 +216,8 @@ async function apiCall(){
 >   at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)<br/>
 >   at node:internal/main/run_main_module:23:47<br/>
 >Node.js v18.16.0
+
+his example attempts to use `await` outside of an async function, which results in a `syntax` error. You can only use await inside an async function.
 
 **Example 3**
 
@@ -236,6 +257,8 @@ triggerAPICall();
 **output:**
 >{ type: 'API_CALL' }
 
+In this example, `await` is used inside an async function to wait for the result of the `apiCall` function and then log the response.
+
 **Example 5**
 
 ```javascript
@@ -264,6 +287,8 @@ triggerAPICall();
 ```
 **output:**
 >{ name: 'Pune', temp: 17 }
+
+Here, the `weatherInfo` function simulates fetching weather information for a city. It either returns an object with the city name and a random temperature or throws an error if the city is not found. When calling triggerAPICall, it awaits the result of weatherInfo("Pune") and logs the response.
 
 **Example 6**
 
@@ -299,6 +324,10 @@ triggerAPICall();
 ```
 **output:**
 >city not found
+
+This is a variation of the previous example, but it uses a try...catch block to catch any errors thrown by the weatherInfo function. If the city is not found, it logs `city not found`.`
+
+
 
 
 

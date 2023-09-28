@@ -6,8 +6,7 @@ hide_table_of_contents: true
 
 In React, exporting allows you to share code from one file (module) with other files in your application. There are two common ways to export items from a module: **Default Export** and **Named Export**.
 
-## Default Export
-
+## What is Default Export?
 
 Default export is used to export a **single value** or **function** as the main export from a module. It's handy when you want to indicate the primary thing to import from that module. Here's how you use it:
 
@@ -29,9 +28,7 @@ This way, you can easily import the most important part of a module in other par
 
 **Examples:**
 
-**File Name : GreetingCard.js**
-
-```js showLineNumbers="true"
+```jsx title="src/GreetingCard.js" showLineNumbers
 export default function GreetingCard(){
     return(
         <div>
@@ -57,7 +54,7 @@ In the above code, **export default:** This part of the code indicates that you 
 
 **File Name : index.js**
 
-```js showLineNumbers="true"
+```jsx title="src/index.js" showLineNumbers
 import ReactDOM from 'react-dom/client';
 import GreetingCard from './GreetingCard';
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -85,9 +82,7 @@ In the above code, `import ReactDOM from 'react-dom/client';`: This line imports
 >Happy Birthday...!! <br/>
 >Happy Birthday...!!
 
-**File Name : GreetingCard.js**
-
-```js showLineNumbers="true"
+```jsx title="src/GreetingCard.js" showLineNumbers
 export default function GreetingCard(){
   const cardStyle = {
   border: '4px double black',
@@ -112,7 +107,7 @@ const headingStyle = {
 
 <img src="/react/06/screenshot1.png" alt="screenshot1.png" width="600px"/>
 
-## Named Export
+##  What is Named Export?
 
 Named export allows you to export **multiple components**, **functions**, or **objects** from a module with specific names. This way, you can import and use them by their exact names in other parts of your React application.
 
@@ -142,12 +137,9 @@ import Button, { OutlineButton, LinkButton } from './Button';
 
 Named exports are helpful for structuring and organizing your React code, allowing you to reference components, functions, or objects explicitly by their names.
 
-
 **Examples:**
 
-**File Name : Button.js**
-
-```js showLineNumbers="true"
+```jsx title="src/Button.js" showLineNumbers="true"
 const buttonStyle = {
  padding: '10px 20px',
  margin: '10px',
@@ -225,9 +217,7 @@ Line 45 to 49,
 
 `Link Button`: This is the text content of the button.
 
-**File Name : index.js**
-
-```js showLineNumbers="true"
+```jsx title="src/index.js" showLineNumbers
 import ReactDOM from 'react-dom/client';
 import GreetingCard from './GreetingCard';
 import Button, {OutlineButton, LinkButton} from './Button'

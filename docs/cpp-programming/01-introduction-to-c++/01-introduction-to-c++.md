@@ -55,10 +55,9 @@ int main() {
 
 > Hello world!
 
-### Program Explanation:
+## Program Explanation
 
 **Line 1:** `#` is a path provider.<br/> `include` is a directory/folder.<br/> `<iostream>` is a class. <br/>`<iostream>` stands for **Input Output Flow**.<br/>
-_iOS is a combination of iostream, stream buffer and o stream_
 
 **Line 2:** `int`(number) means Return type of your Function. <br/>`main()` it is a special function which is inbuilt.<br/> It is triggers automatically when program starts, it is the first function of every C++ program that is responsible for starting the execution and termination of the program.
 

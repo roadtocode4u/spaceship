@@ -11,14 +11,15 @@ hide_table_of_contents: true
 
 ### 🤔What is Programming ?
 
-Programming is the process of instructions that tell a computer how to perform a task.
+A programming is **a set of intructions that help computer which tasks to perform in order to solve problems .** This set of instructions is called scripts.
 
 ### Why Learn C++?
 
 - C++ is used to develop games, desktop apps, operating systems, browsers, and so on.
-- C++ Executes very fast.
-- Rich Library support.
-- Machine Independent & Platform Dependent language.
+- C++ **Executes very fast.**
+- C++ has **Rich Library support.**
+- **Machine Independent & Platform Dependent** language.
+- C++ is an advanced language that supports various programming method like **functional and object oriented programming.**
 - C++ allows you to divide complex problems into smaller sets by using objects.
 
 ### What is C++ Programming?
@@ -33,7 +34,7 @@ Programming is the process of instructions that tell a computer how to perform a
 C++ supports Object-Oriented Programming, including the four pillars of Object-Oriented development.
 
 - Encapsulation
-- Data hiding
+- Abstraction
 - Inheritance
 - Polymorphism
 
@@ -92,22 +93,13 @@ int main() {
 > Hello World<br/>
 > Hello ABC!
 
-```cpp
-#include <iostream>
+### Program Explanation:
 
-int main() {
+**Line 4 :** `std::cout<<"\nHello ABC!";`<br/> `std` stand for standard namespace . `::` is a scope operator. <br/> `cout` stands for console out. <br/> `<<` is a function used to output print text to the screen or to the flash out it is also called Insertion operator or left shift.<br/> The line `\n` The newline character(\n) is called **an escape sequence**,and it forces the cursor to change its position to the beginning of the next line on the screen. <br/> The line `cot<<"\nHello ABC!";` causes the message "Hello ABC!" to be displayed on the screen. <br/> **;** semicolon used to terminate any statement.
 
-    std::cout << "Hello world!";
+**💻 Program to used with 'using namespace std' :**
 
-    return 0;
-}
-```
-
-**⚙️ Output :**
-
-> Hello world!
-
-**💻 program :**
+**Example 3 :**
 
 ```cpp
 #include <iostream>
@@ -127,3 +119,7 @@ int main() {
 
 > Hello world!<br/>
 > This is another text
+
+### Program Explanation:
+
+**Line 2:** `using namespase std;` **"using namespace std"** means we use the namespace named std. The std is ashort form of standard, the std namespace \*\*contains the built-n classes and declared functions.

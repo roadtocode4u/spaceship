@@ -7,9 +7,11 @@ hide_table_of_contents: true
 # Introduction to C++
 
 ![C++](cpplogo.png)
+
+
 ![bjarne stroustrup](bjarne%20stroustrup.jpg)
 
-### 🤔What is Programming ?
+### What is Programming ?
 
 Programming is the process of instructions that tell a computer how to perform a task.
 

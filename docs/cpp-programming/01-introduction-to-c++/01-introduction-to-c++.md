@@ -9,7 +9,7 @@ hide_table_of_contents: true
 ![C++](cpplogo.png)
 
 
-![bjarne stroustrup](bjarne%20stroustrup.jpg)
+![bjarne-stroustrup](bjarne%20stroustrup.jpg)
 
 ### What is Programming ?
 

@@ -1,17 +1,16 @@
-# Taking input from user
+---
+title: Taking Input From User
+description: "Taking Input From User"
+hide_table_of_contents: true
+---
 
-### Console input
+Taking input from users is important in programming because it allows your programs to interact with people and respond to their specific needs. Users can provide data or make choices that influence how your program works. In C++, you use the cin object to take input from the user.
 
-```cpp
-console ----> input
+**Importance**: Taking input from users allows your programs to be more versatile and user-friendly. It enables customization and interaction, making your software more useful and engaging.
 
-cout<<"Enter age"
-cin>>age;
+**Object to Use**: In C++, you use the cin object to take input from the user. You can use it with the `>>` operator to read various types of data, such as numbers, text, and more, from the keyboard. For example, `cin >> variableName;` is used to store user input in a variable named variableName.
 
->> ---> extraction operator
-```
-
-**💻 Example 4 :**
+**Example :**
 
 ```cpp
 #include <iostream>
@@ -30,14 +29,14 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+**Output:**
 
 > Enter Age: 8<br/>
 > 8
 
 ## WAP to print sum of numbers by taking values from user
 
-**💻 Example 5 :**
+**Example:**
 
 ```cpp
 #include <iostream>
@@ -62,7 +61,7 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 > Enter num1: 5<br/>
 > Enter num2: 7<br/>
@@ -70,7 +69,7 @@ int main() {
 
 ## Area of Reactangle
 
-**💻 Example 6 :**
+**Example :**
 
 ```cpp
 #include <iostream>
@@ -94,20 +93,8 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+**Output:**
 
 > Enter length: 8<br/>
 > Enter breadth: 4<br/>
 > Area = 32
-
-## 🏠 HomeWork
-
-> 1️⃣ WAP to calculate Simple interest by taking values of P,R, & T from user<br/>
-
-> 2️⃣ WAP to calculate area of triangle when base & height is given by user
-
-> 3️⃣ WAP to calculate perimeter of circle when radius is given by user
-
-## 🔗 Some Useful Links
-
-## 📖 References

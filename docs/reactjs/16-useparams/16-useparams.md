@@ -159,7 +159,7 @@ export default PreviewPostCard;
 
 ```jsx title="src/views/Posts/Posts.js" showLineNumbers="true"
 import React from 'react';
-import blogData from './../../comfigs/blogs-data.json';
+import blogData from './../../configs/blogs-data.json';
 import PreviewPostCard from '../../components/PreviewPostCard/PreviewPostCard';
 
 function Posts(){
@@ -176,11 +176,13 @@ function Posts(){
 }
 export default Posts;
 ```
+**Output :**
+><img src="/react/16/output1.png" alt="output1.png" width="600px"/>
 
 ```jsx title="src/views/ReadPost/ReadPost.js" showLineNumbers="true"
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
-import blogData from './../../comfigs/blogs-data.json';
+import blogData from './../../configs/blogs-data.json';
 
 function ReadPost(){
     const { id } = useParams()
@@ -208,3 +210,6 @@ function ReadPost(){
 }
 export default ReadPost;
 ```
+
+**Output :**
+><img src="/react/16/output2.png" alt="output2.png" width="600px"/>

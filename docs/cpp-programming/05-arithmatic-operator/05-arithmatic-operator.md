@@ -12,13 +12,17 @@ ex : a+b
  a,b ---> operand
 ```
 
+**Operators** are the symbol use to perform any operation.
+
+**Operand** is the variable or number that use in operation.
+
 ## Types of Operator
 
 1. Arithmetic Operator : (-, +, /, \*, %)
 2. Assignment Operator : (=, +=, -=,...)
 3. Relational Operator : (>,<,>=,<=,==)
 4. Logical Operator: (&&,||, !)
-5. Bitwise Operator
+5. Bitwise Operator : (&, |, ^, ~, <<, >>)
 
 ## 1.Arithmetic Operator:
 
@@ -29,6 +33,10 @@ ex : a+b
 / ---> Division
 % ---> Modules
 ```
+
+## + Addition operator :
+
+- Addition operator is used to add the two number.
 
 **💻 Example 1 : Addition of two numbers**
 
@@ -52,6 +60,10 @@ int main() {
 
 > 15
 
+## - Subtraction operator :
+
+- Subtraction operator is used to find the difference between two number.
+
 **💻 Example 2 : Subtraction of two numbers**
 
 ```cpp
@@ -74,6 +86,10 @@ int main() {
 
 > 10
 
+## \* Multiplication operator :
+
+- This operator is used to find the product.
+
 **💻 Example 3 : Multiplication of two numbers**
 
 ```cpp
@@ -95,6 +111,10 @@ int main() {
 **⚙️ Output :**
 
 > 110
+
+## / division operator :
+
+- It Calculate the questient.
 
 **💻 Example 4: Division of two numbers**
 

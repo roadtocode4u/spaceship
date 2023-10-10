@@ -1,16 +1,12 @@
+---
+title: Arithmatic Operation
+description: "Arithmatic Operation"
+hide_table_of_contents: true
+---
+
 # Arithmetic Operators
 
 **Operators :**
-
-```cpp
-Doctor ---> Operator
-
-patients ---> Operand
-
-ex : a+b
- + ---> operator
- a,b ---> operand
-```
 
 **Operators** are the symbol use to perform any operation.
 
@@ -34,11 +30,11 @@ ex : a+b
 % ---> Modules
 ```
 
-## + Addition operator :
+## `+` Addition operator :
 
 - Addition operator is used to add the two number.
 
-**💻 Example 1 : Addition of two numbers**
+** Example 1 : Addition of two numbers**
 
 ```cpp
 #include <iostream>
@@ -56,15 +52,15 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
 > 15
 
-## - Subtraction operator :
+## `-` Subtraction operator :
 
 - Subtraction operator is used to find the difference between two number.
 
-**💻 Example 2 : Subtraction of two numbers**
+** Example 2 : Subtraction of two numbers**
 
 ```cpp
 #include <iostream>
@@ -82,15 +78,15 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
 > 10
 
-## \* Multiplication operator :
+## `*` Multiplication operator :
 
 - This operator is used to find the product.
 
-**💻 Example 3 : Multiplication of two numbers**
+** Example 3 : Multiplication of two numbers**
 
 ```cpp
 #include <iostream>
@@ -108,15 +104,15 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
 > 110
 
-## / division operator :
+## `/` division operator :
 
 - It Calculate the questient.
 
-**💻 Example 4: Division of two numbers**
+** Example 4: Division of two numbers**
 
 ```cpp
 #include <iostream>
@@ -134,15 +130,15 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
 > 27
 
-## % Modulus Operator :
+## `%` Modulus Operator :
 
 - It calculates reminder after the integer division
 
-**💻 Example 5 :**
+** Example 5 :**
 
 ```cpp
 #include <iostream>
@@ -157,7 +153,7 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
 > 2
 

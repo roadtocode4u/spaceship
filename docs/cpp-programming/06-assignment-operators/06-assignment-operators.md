@@ -1,10 +1,16 @@
+---
+title: Assignment Operator
+description: "Assignment Operation"
+hide_table_of_contents: true
+---
+
 # Assignment Operators
 
-## Assignment Operator: (=, +=, -=,...)
+## Assignment Operator: (=, +=, -=,\*=, /=, %=...)
 
 ex : int a = 10;
 
-**💻 Example 1 :**
+** Example 1 :**
 
 ```cpp
 #include <iostream>
@@ -20,11 +26,11 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
 > 5
 
-**💻 Example 2 : Addition of two numbers**
+** Example 2 : Addition of two numbers**
 
 ```cpp
 #include <iostream>
@@ -33,9 +39,9 @@ using namespace std;
 int main() {
 
     int a=10;
-    // num = num + 5;
+    // a = a + 5;
    or
-    a += 5;
+    a += 5;  // plus assignment
 
     cout<<a;
 
@@ -43,11 +49,11 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
 > 15
 
-**💻 Example 3 : Subtraction of two numbers**
+** Example 3 : Subtraction of two numbers**
 
 ```cpp
 #include <iostream>
@@ -57,7 +63,7 @@ int main() {
     int num=20;
    // num = num -5;
    or
-   num -=5;
+   num -=5;  //minus assignment
 
     cout<<num;
 
@@ -65,11 +71,11 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
 > 15
 
-**💻 Example 4 : Multiplication of two numbers**
+** Example 4 : Multiplication of two numbers**
 
 ```cpp
 #include <iostream>
@@ -79,7 +85,7 @@ int main() {
     int num=10;
    // num = num * 2;
    or
-   num *=5;
+   num *=5;  // multiply assignment
 
     cout<<num;
 
@@ -87,11 +93,11 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
 > 20
 
-**💻 Example 5: Division of two numbers**
+** Example 5: Division of two numbers**
 
 ```cpp
 #include <iostream>
@@ -102,7 +108,7 @@ int main() {
     int num=10;
    // num = num /2;
    or
-   num /=2;
+   num /=2;  //division assignment
 
     cout<<num;
 
@@ -110,13 +116,13 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
 > 5
 
 ### % Modulus Operator :
 
-**💻 Example 6 :**
+** Example 6 :**
 
 ```cpp
 #include <iostream>
@@ -127,7 +133,7 @@ int main() {
      int num = 10;
    // num = num % 3;
    or
-   num %=3;
+   num %=3;   //mod assignment
 
     cout<<num;
 
@@ -135,7 +141,7 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
 > 1
 
@@ -147,12 +153,4 @@ num = num [] value //[+, -, *, /, %]
 => num[]=value;
 
 ex: num[+]=5;
-```
-
-```cpp
-* Boolean Value:
-
-True  represent 1
-
-False represent 0
 ```

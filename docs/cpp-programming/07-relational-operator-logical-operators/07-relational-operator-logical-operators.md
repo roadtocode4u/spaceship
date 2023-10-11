@@ -1,5 +1,13 @@
 # Relational Operator & Logical Operators
 
+```cpp
+* Boolean Value:
+
+True  represent 1
+
+False represent 0
+```
+
 ## Relational Operator : (>,<,>=,<=,==)
 
 - comparision

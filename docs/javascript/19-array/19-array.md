@@ -213,7 +213,7 @@ console.log(students)
 **Output :**
 
 >['A','B','C','D','E','F'] <br/>
->['A','B','W','Q',E,'F']
+>['A','W','Q','D','E','F']
 
 In the above example, we can defines an array called `students` with six elements: `A`, `B`, `C`, `D`, `E`, and `F`.
 

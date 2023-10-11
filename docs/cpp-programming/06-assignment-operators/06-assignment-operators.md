@@ -18,32 +18,9 @@ using namespace std;
 
 int main() {
 
-    int a=5; // assignment operator
+    int balance = 500; // assignment operator
 
-    cout<<a;
-
-    return 0;
-}
-```
-
-** Output :**
-
-> 5
-
-** Example 2 : Addition of two numbers**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-    int a=10;
-    // a = a + 5;
-   or
-    a += 5;  // plus assignment
-
-    cout<<a;
+    cout<<balance;
 
     return 0;
 }
@@ -51,19 +28,71 @@ int main() {
 
 ** Output :**
 
-> 15
+> 500
 
-** Example 3 : Subtraction of two numbers**
+**Example 2 :**
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int num=20;
-   // num = num -5;
+
+    int balance = 0;
+    cout<<"Balance = "<<balance<<"\n";
+
+    balance = balance + 499;
+
+    cout<<"Balance = "<<balance;
+
+    return 0;
+}
+```
+
+**Output**
+
+> Balance = 0
+
+> Balance = 499
+
+** Example 3 : Addition of two numbers**
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int balance = 499
+
+   // balance = balance + 999
    or
-   num -=5;  //minus assignment
+
+    balance += 999;  // plus assignment
+
+    cout<<balance;
+
+    return 0;
+}
+```
+
+** Output :**
+
+> 1498
+
+** Example 4 : Subtraction of two numbers**
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int balance = 400;
+    // balance = balance - 100;
+   or
+
+    balance -= 100 //minus assignment
 
     cout<<num;
 
@@ -73,9 +102,9 @@ int main() {
 
 ** Output :**
 
-> 15
+> 300
 
-** Example 4 : Multiplication of two numbers**
+** Example 5 : Multiplication of two numbers**
 
 ```cpp
 #include <iostream>
@@ -97,7 +126,7 @@ int main() {
 
 > 20
 
-** Example 5: Division of two numbers**
+** Example 6 : Division of two numbers**
 
 ```cpp
 #include <iostream>
@@ -122,7 +151,7 @@ int main() {
 
 ### % Modulus Operator :
 
-** Example 6 :**
+** Example 7 :**
 
 ```cpp
 #include <iostream>

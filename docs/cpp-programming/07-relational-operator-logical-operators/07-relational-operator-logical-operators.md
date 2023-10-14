@@ -1,22 +1,31 @@
+---
+title: Relatonal and Logical Operation
+description: " Relatonal and Logical Operation "
+hide_table_of_contents: true
+---
+
 # Relational Operator & Logical Operators
 
 ## Relational Operator : (>,<,>=,<=,==)
 
-- comparision
-- true / false value
+It is also known as `Comparision operator`
 
-```cpp
-  1. == is equals to
-ex : a == b // == comparision
-
-a = b // value assign
-
-two values are equal then result is true
-
-two values are differebt then result is false
+```
+true = 1
+false = 0
 ```
 
-**💻 Example 1 :**
+## 1. greater than (>)
+
+```cpp
+  ex. a = 10;
+  b = 20;
+  a > b
+ 10 > 20
+the result will be true
+```
+
+** Example 1 :**
 
 ```cpp
 #include <iostream>
@@ -24,11 +33,11 @@ using namespace std;
 
 int main() {
 
-    int a = 5;
+    int a = 10;
 
-    int b = 5;
+    int b = 20;
 
-    int res = a==b;
+    int res = a>b;
 
     cout<<res;
 
@@ -36,11 +45,28 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
 > 1
 
-**💻 Example 2 :**
+**Explanation :**
+
+**Line 6 :** Initialized the `10` value in variable `a`.<br/>
+**Line 8 :** Initialized the `20` value in variable `b`.<br/>
+**Line 10 :** To declare the `res` variable and check the condition `a>b`. <br/>
+**Line 12 :** Print the `res` using `cout`. And result will be true.
+
+## 2. less than (<)
+
+```cpp
+a = 50;
+b = 20;
+a < b;
+50 < 20
+the result will be false
+```
+
+** Example 2 :**
 
 ```cpp
 #include <iostream>
@@ -48,92 +74,9 @@ using namespace std;
 
 int main() {
 
-    int a = 15;
+    int a = 50;
 
-    int b = 5;
-
-    int res = a==b;
-
-    cout<<res;
-
-    return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 0
-
-```
-2. != Not equals to
-ex : a !=b // result false
-```
-
-**💻 Example 3 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-    int a = 15;
-
-    int b = 5;
-
-    int res = a!=b;
-
-    cout<<res;
-
-    return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 1
-
-**💻 Example 4 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-    int a = 15;
-
-    int b = 15;
-
-    int res = a!=b;
-
-    cout<<res;
-
-    return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 0
-
-```
-3. < less than
-ex : a < b (a is less than b)
-a<b => true
-```
-
-**💻 Example 5 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-    int a = 17;
-
-    int b= 20;
+    int b = 20;
 
     int res = a<b;
 
@@ -143,11 +86,33 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
-> 1
+> 0
 
-**💻 Example 6 :**
+**Explanation :**
+
+**Line 6 :** Initialized the `50` value in variable `a`.<br/>
+**Line 8 :** Initialized the `20` value in variable `b`.<br/>
+**Line 10 :** To declare the `res` variable and check the condition `a<b`. <br/>
+**Line 12 :** Print the `res` using `cout`. And result will be false.
+
+## 3. greater than or equal to (>=)
+
+```cpp
+a = 10;
+b = 5;
+a >= b;
+10 >=5;
+```
+
+```
+ F F = F
+ T F = T
+ F T = T
+```
+
+** Example 3 :**
 
 ```cpp
 #include <iostream>
@@ -155,11 +120,91 @@ using namespace std;
 
 int main() {
 
-    int a = 17;
+    int a = 10;
+
+    int b = 5;
+
+    int res = a>=b;
+
+    cout<<res;
+
+    return 0;
+}
+```
+
+** Output :**
+
+> 1
+
+**Explanation :**
+
+**Line 6 :** Initialized the `10` value in variable `a`.<br/>
+**Line 8 :** Initialized the `5` value in variable `b`.<br/>
+**Line 10 :** To declare the `res` variable and check the condition `a>=b`. <br/>
+**Line 12 :** Print the `res` using `cout`. And result will be true.
+
+## 4. less than or equal to (<=)
+
+```cpp
+a = 20;
+b = 20;
+a >= b;
+20 >=20;
+true
+```
+
+** Example 4 :**
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int a = 20;
+
+    int b = 20;
+
+    int res = a<=b;
+
+    cout<<res;
+
+    return 0;
+}
+```
+
+** Output :**
+
+> 1
+
+**Explanation :**
+
+**Line 6 :** Initialized the `20` value in variable `a`.<br/>
+**Line 8 :** Initialized the `20` value in variable `b`.<br/>
+**Line 10 :** To declare the `res` variable and check the condition `a<=b`. <br/>
+**Line 12 :** Print the `res` using `cout`. And result will be true.
+
+## 5. equal to (==)
+
+```
+Note :
+= value to assign
+== two value equal or not
+```
+
+** Example 5 :**
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int a = 20;
 
     int b= 20;
 
-    int res = b<a;
+    int res = a==b;
 
     cout<<res;
 
@@ -167,189 +212,18 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
-
-> 0
-
-```
-3. > greater than
-ex : a > b (a is greater than b)
-a>b => true
-```
-
-**💻 Example 7 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-    int res = 170>20;
-
-    cout<<res;
-
-    return 0;
-}
-```
-
-**⚙️ Output :**
+** Output :**
 
 > 1
 
-**💻 Example 8 :**
+**Explanation :**
 
-```cpp
-#include <iostream>
-using namespace std;
+**Line 6 :** Initialized the `20` value in variable `a`.<br/>
+**Line 8 :** Initialized the `20` value in variable `b`.<br/>
+**Line 10 :** To declare the `res` variable and check the condition `a==b`. <br/>
+**Line 12 :** Print the `res` using `cout`. And result will be true.
 
-int main() {
-
-    int res = 20>170;
-
-    cout<<res;
-
-    return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 0
-
-```
-4. >= greater than or equal to
-ex : a >= b (a is greater than or equals to b)
-a>=b => true
-```
-
-**💻 Example 9 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-    int res = 5>=2;
-
-    cout<<res;
-
-    return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 1
-
-**💻 Example 10 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-    int res = 2>=2;
-
-    cout<<res;
-
-    return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 1
-
-**💻 Example 11 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-    int res = 1>=2;
-
-    cout<<res;
-
-    return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 0
-
-```
-5. <= less than or equal to
-ex : a <= b (a is less than or equals to b)
-a<=b => true
-```
-
-**💻 Example 12 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-    int res = 5<=10;
-
-    cout<<res;
-
-    return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 1
-
-**💻 Example 13 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-    int res = 10<=10;
-
-    cout<<res;
-
-    return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 1
-
-**💻 Example 14 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-    int res = 15<=10;
-
-    cout<<res;
-
-    return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 0
-
-## Logical Operator : (&&,||, !)
+# Logical Operator ( &&, ||, ! )
 
 ```cpp
  1. Logical AND  => &&
@@ -357,42 +231,20 @@ int main() {
  3. Logical NOT(Negation) => !
 ```
 
-```cpp
-1. Logical AND (&&)
+## 1. Logical AND (&&)
 
-**Truth Table**
-(condition 1 && condition 2)
- T   T => T
- T   F => F
- F   T => F
- F   F => F
+Both the conditions have to be checked wether it is true or false then use logical AND operator.
+
+```
+Truth table
+condition 1  &&  condition 2
+    T    T  =  T
+    T    F  =  F
+    F    T  =  F
+    F    F  =  F
 ```
 
-**💻 Example 1 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-   int a = 5;
-
-   int b = 8;
-
-   int res =  a==5 && b==a;
-
-   cout<<res;
-
-   return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 1
-
-**💻 Example 2 :**
+** Example 6 :**
 
 ```cpp
 #include <iostream>
@@ -400,237 +252,25 @@ using namespace std;
 
 int main() {
 
-   int a = 5;
+    int a = 10;
 
-   int res =  a>5 &&a<20;
+    int b= 20;
 
-   cout<<res;
+    int res = a==10 && b==30;
 
-   return 0;
+    cout<<res;
+
+    return 0;
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
 > 0
 
-**💻 Example 3 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-   int a = 5;
-
-   int res =  a==5 &&a<20;
-
-   cout<<res;
-
-   return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 0
-
-**💻 Example 4 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-   int a = 5;
-
-   int res =  a==8 &&a==10;
-
-   cout<<res;
-
-   return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 0
-
-```cpp
-2. Logical OR (||)
-
-**Truth Table**
-(condition 1 || condition 2)
- T   T => T
- T   F => T
- F   T => T
- F   F => F
-```
-
-**💻 Example 1 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-   int jee = 130;
-
-   int cet = 20;
-
-   int res = jee >= 120 || cet >= 200;
-
-   cout<<res;
-
-   return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 1
-
-**💻 Example 2 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-   int jee = 0;
-
-   int cet = 220;
-
-   int res = jee >= 120 || cet >= 200;
-
-   cout<<res;
-
-   return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 1
-
-**💻 Example 3 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-   int jee = 125;
-
-   int cet = 220;
-
-   int res = jee >= 120 || cet >= 200;
-
-   cout<<res;
-
-   return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 1
-
-**💻 Example 4 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-   int jee = 0;
-
-   int cet = 0;
-
-   int res = jee >= 120 || cet >= 200;
-
-   cout<<res;
-
-   return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 0
-
-```cpp
-3. Logical NOT/ NEGATION  (!)
-```
-
-**💻 Example 1 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-   int jee = 0;
-
-   int res = jee >= 120;
-
-   cout<<res;
-
-   return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 0
-
-**💻 Example 2 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-   int jee = 0;
-
-   int res = !(jee >= 120);
-
-   cout<<res;
-
-   return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 1
-
-**💻 Example 3 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-   int jee = 125;
-
-   int res = (jee >= 120);
-
-   cout<<!res;
-
-   return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 0
+**Explanation :**
+
+**Line 6 :** Initialized the `10` value in variable `a`.<br/>
+**Line 8 :** Initialized the `20` value in variable `b`.<br/>
+**Line 10 :** To declare the `res` variable and check the condition `a==10 && b==30`. <br/>
+**Line 12 :** Print the `res` using `cout`. And result will be false.

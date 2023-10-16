@@ -22,12 +22,12 @@ false = 0
   b = 20;
   a > b
  10 > 20
-the result will be true
+the result will be false
 ```
 
 ** Example 1 :**
 
-```cpp
+```cpp showLineNumbers="true
 #include <iostream>
 using namespace std;
 
@@ -47,14 +47,14 @@ int main() {
 
 ** Output :**
 
-> 1
+> 0
 
 **Explanation :**
 
 **Line 6 :** Initialized the `10` value in variable `a`.<br/>
 **Line 8 :** Initialized the `20` value in variable `b`.<br/>
 **Line 10 :** To declare the `res` variable and check the condition `a>b`. <br/>
-**Line 12 :** Print the `res` using `cout`. And result will be true.
+**Line 12 :** Print the `res` using `cout`. And result will be false.
 
 ## 2. less than (<)
 
@@ -63,12 +63,12 @@ a = 50;
 b = 20;
 a < b;
 50 < 20
-the result will be false
+the result will be true
 ```
 
 ** Example 2 :**
 
-```cpp
+```cpp showLineNumbers="true
 #include <iostream>
 using namespace std;
 
@@ -88,14 +88,14 @@ int main() {
 
 ** Output :**
 
-> 0
+> 1
 
 **Explanation :**
 
 **Line 6 :** Initialized the `50` value in variable `a`.<br/>
 **Line 8 :** Initialized the `20` value in variable `b`.<br/>
 **Line 10 :** To declare the `res` variable and check the condition `a<b`. <br/>
-**Line 12 :** Print the `res` using `cout`. And result will be false.
+**Line 12 :** Print the `res` using `cout`. And result will be true.
 
 ## 3. greater than or equal to (>=)
 
@@ -114,7 +114,7 @@ a >= b;
 
 ** Example 3 :**
 
-```cpp
+```cpp showLineNumbers="true
 #include <iostream>
 using namespace std;
 
@@ -148,14 +148,14 @@ int main() {
 ```cpp
 a = 20;
 b = 20;
-a >= b;
-20 >=20;
+a <= b;
+20 <=20;
 true
 ```
 
 ** Example 4 :**
 
-```cpp
+```cpp showLineNumbers="true
 #include <iostream>
 using namespace std;
 
@@ -194,7 +194,7 @@ Note :
 
 ** Example 5 :**
 
-```cpp
+```cpp showLineNumbers="true
 #include <iostream>
 using namespace std;
 
@@ -246,7 +246,8 @@ condition 1  &&  condition 2
 
 ** Example 6 :**
 
-```cpp
+```cpp showLineNumbers="true
+
 #include <iostream>
 using namespace std;
 

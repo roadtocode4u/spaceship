@@ -1,132 +1,252 @@
-# Increment Operator & Decrement Operator
+# Increment Operator & Decrement Operator (++, --)
+
+## Increment Operrator (++)
+
+```
+count + 1 = 1
+count + 1 = 2
+count + 1 = 3
+
+Increase number by 1
+```
+
+```
+a = 5
+a - 1 = 4
+a - 2 = 3
+
+Decrease count by 1
+```
+
+## Increment Operator
 
 ```cpp
 * Inc Operator :
 1. Pre-Increment
-ex : ++num;
+ex : ++number;
 (first increase then use)
-2. Post-Increment
-ex : num++;
-(first use then increase)
 
+2. Post-Increment
+ex : number++;
+(first use then increase)
+```
+
+** Example 1 :**
+
+```cpp showLineNumbers="true"
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int a=10;
+
+    ccout<<"initial value of a : "<<a<<"\n";
+
+    a++;
+
+    cout<<"value of a : "<<a<<"\n";
+
+    return 0;
+}
+```
+
+** Output :**
+
+> initial value of a : 10
+
+> value of a : 11
+
+** Example 2 :**
+
+```cpp showLineNumbers="true"
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+
+    int a=10;
+
+    ccout<<"initial value of a : "<<a<<"\n";
+
+    ++a;
+
+    cout<<"value of a : "<<a<<"\n";
+
+    return 0;
+}
+```
+
+** Output :**
+
+> initial value of a : 10
+
+> value of a : 11
+
+** Example 3 :**
+
+```cpp showLineNumbers="true"
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int a = 10;
+    cout<<"initial value of a :"<<a<<"\n";
+
+    int count = a++;
+    cout<<"value of count : "<<count<<"\n";
+
+    cout<<"initial value of a : "<<a<<"\n";
+
+    return 0;
+}
+```
+
+** Output :**
+
+> initial value of a : 10
+
+> value of count : 10
+
+> initial value of a : 11
+
+**Example 4 :**
+
+```cpp showLineNumbers="true"
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int a = 10;
+    cout<<"initial value of a :"<<a<<"\n";
+
+    int count = ++a;
+    cout<<"value of count : "<<count<<"\n";
+
+    cout<<"initial value of a : "<<a<<"\n";
+
+    return 0;
+}
+```
+
+** Output :**
+
+> initial value of a : 10
+
+> value of count : 11
+
+> initial value of a : 11
+
+## Decrement Operator
+
+```
 * Dec Operator :
+
 1. Pre-Decrement
-ex : --num;
+ex : --number;
 (first decrease then use)
+
 2. Post-Decrement
-ex : num--;
+ex : number--;
 (first use then decrease)
 ```
 
-**💻 Example 6 :**
+** Example 5 :**
 
-```cpp
+```cpp showLineNumbers="true"
 #include <iostream>
 using namespace std;
 
 int main() {
 
-    int count=0;
+    int a = 10;
 
-    count = count + 1;
-    cout<<count;
+    cout<<"initial value of a : "<<a<<"\n";
+
+    int count = --a;
+
+    cout<<"value of count : "<<a<<"\n";
+
+    cout<<"value of a : "<<a"\n";
 
     return 0;
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
-> 1
+> initial value of a : 10
 
-**💻 Example 7 :**
+> value of count : 9
 
-```cpp
+> value pf a : 9
+
+** Example 6 :**
+
+```cpp showLineNumbers="true"
 #include <iostream>
 using namespace std;
 
 int main() {
 
-    int count=0;
+    int a = 10;
 
-    count = count + 1;
+    cout<<"initial value of a : "<<a<<"\n";
 
-    count = count + 1;
-    cout<<count;
+    int count = a--;
+
+    cout<<"value of count : "<<a<<"\n";
+
+    cout<<"value of a : "<<a"\n";
 
     return 0;
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
-> 2
+> initial value of a : 10
 
-**💻 Example 8 :**
+> value of count : 10
 
-```cpp
+> value pf a : 9
+
+** Example 7 :**
+
+```cpp showLineNumbers="true"
 #include <iostream>
 using namespace std;
 
 int main() {
 
-    int count=5;
+    int num = 15;
+    cout<<"Number : "<<num<<"\n";
 
-    count++;
-    count++;
+    int count = num++;
+    cout<<"Count : "<<count<<"\n";
 
-    cout<<count;
+    count = --num;
+    cout<<"Count : "<<count<<"\n";
 
-    return 0;
-}
-```
+    num++;
 
-**⚙️ Output :**
-
-> 7
-
-**💻 Example 9 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-    int count=5;
-
-    int res = ++count;
-
-    cout<<res;
+    cout<<"Number : "<<num<<"\n";
 
     return 0;
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
-> 6
+> Number : 15
 
-**💻 Example 10 :**
+> Count : 15
 
-```cpp
-#include <iostream>
-using namespace std;
+> Count : 15
 
-int main() {
-
-    int count=5;
-
-    int res = count++;
-
-    cout<<res<<endl;
-    cout<<"Count: "<<count;
-
-    return 0;
-}
-```
-
-**⚙️ Output :**
-
-> 5 <br/>
-> Count : 6
+> Number : 16

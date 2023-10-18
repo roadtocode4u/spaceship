@@ -1,6 +1,10 @@
-# if and if-else
+---
+title: Conditional Statement
+description: "if,if-else"
+hide_table_of_contents: true
+---
 
-### Conditional Statements :
+# Conditional Statements
 
 There are Four Types :
 
@@ -9,20 +13,21 @@ There are Four Types :
 3. if-else-ladder
 4. nested-if
 
+# 1. if
+
 ```cpp
 1. if
 syntax :
 
 if (condition)
 {
-    //-----
-    //-----
+    //statements
 }
 ```
 
-**💻 Example 1 :**
+** Example 1 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -40,10 +45,36 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
-> Enter Number : 5<br/>
+> Enter Number : 10<br/>
 > Positive Number
+
+** Example 2 :**
+
+```cpp showLineNumbers = "true"
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+
+    cout<<"Enter Number : ";
+    cin>>num;
+
+    if(num>0){
+        cout<<"Positive Number";
+    }
+
+    return 0
+}
+```
+
+** Output :**
+
+> Enter Number : -5<br/>
+
+# 2. if-else
 
 ```cpp
 2. if-else
@@ -59,9 +90,37 @@ else
 }
 ```
 
-**💻 Example 1 :**
+** Example 3 :**
 
-```cpp
+```cpp showLineNumbers = "true"
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+
+    cout<<"Enter Number : ";
+    cin>>num;
+
+    if(num>0){
+        cout<<" Positive Number";
+    }
+    else{
+        cout<<" Negative Number";
+    }
+
+    return 0
+}
+```
+
+** Output :**
+
+> Enter Number : 10 <br/>
+> Positive Number
+
+** Example 4 :**
+
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -82,42 +141,42 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
-> Enter Number : 5 <br/>
-> Number is odd
-
-**💻 Example 2 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int num;
-
-    cout<<"Enter Number : ";
-    cin>>num;
-
-    if(num%2==0){
-        cout<<"Number is Even";
-    }
-    else{
-        cout<<"Number is Odd";
-    }
-
-    return 0
-}
-```
-
-**⚙️ Output :**
-
-> Enter Number : 4 <br/>
+> Enter Number : 10 <br/>
 > Number is Even
 
-**💻 Example 3 :**
+** Example 5 :**
 
-```cpp
+```cpp showLineNumbers = "true"
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+
+    cout<<"Enter Number : ";
+    cin>>num;
+
+    if(num%2==0){
+        cout<<"Number is Even";
+    }
+    else{
+        cout<<"Number is Odd";
+    }
+
+    return 0
+}
+```
+
+** Output :**
+
+> Enter Number : 9 <br/>
+> Number is Odd
+
+** Example 6 :**
+
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -138,14 +197,14 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
 > Enter Number : 15<br/>
 > Number is divisible by 5 & 3
 
-**💻 Example 4 :**
+** Example 7 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -166,14 +225,14 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
-> Enter Number : 3<br/>
+> Enter Number : 10<br/>
 > Number is NOT divisible by 5 & 3
 
-**💻 Example 5 :**
+** Example 8 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -194,14 +253,14 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
-> Enter Number : 15<br/>
+> Enter Number : 10<br/>
 > Number is divisible by 5 or 3
 
-**💻 Example 3 :**
+** Example 9 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -219,7 +278,7 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
-> Enter Rate & Quantity : 5 3<br/>
-> Bill 15
+> Enter Rate & Quantity : 5 10<br/>
+> Bill 50

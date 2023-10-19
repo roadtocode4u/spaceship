@@ -26,8 +26,6 @@ Remove BG uses sophisticated AI technology to detect foreground layers and separ
 
 To use remove bg, search `remove bg` on Google, or any other search engine, and visit it's website https://www.remove.bg .
 
-<img src="/tip-and-tools/06/screenshot-0.png" alt="screenshot-0" width="600px"/>
-
 To edit or remove the background of images, there are three ways you can upload your files on `remove.bg`.
 
 1. Click on Upload Image button on website's homepage.

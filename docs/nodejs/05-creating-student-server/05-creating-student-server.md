@@ -50,10 +50,6 @@ const PORT = 5000;
 
 const students = [];
 
-app.get('/health', (req, res) => {
-    res.json({status: 'All Good!'})
-})
-
 app.get('/students', (req, res) => {
     res.json({
         success: true,
@@ -72,24 +68,7 @@ app.listen(PORT, () => {
 We'll now extend our API to allow the addition of new student records. This involves handling POST requests and validating the data.
 
 ```jsx title="school/index.js" showLineNumbers
-import express from 'express';
-const app = express()
-app.use(express.json())
-const PORT = 5000;
-
 const students = [];
-
-app.get('/health', (req, res) => {
-    res.json({status: 'All Good!'})
-})
-
-app.get('/students', (req, res) => {
-    res.json({
-        success: true,
-        data: students,
-        message: "Successfully fetched all students",
-    })
-})
 
 app.post('/student', (req, res) => {
     const {name, age, mobile, email} = req.body;
@@ -140,10 +119,6 @@ app.post('/student', (req, res) => {
         message: "Successfully added a new student"
     });
 })
-
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}.`)
-})
 ```
 
 ## Fetching a Single Student
@@ -151,11 +126,6 @@ app.listen(PORT, () => {
 Lastly, we'll implement an API endpoint to retrieve a specific student based on their ID.
 
 ```jsx title="school/index.js" showLineNumbers
-import express from 'express';
-const app = express()
-app.use(express.json())
-const PORT = 5000;
-
 const students = [];
 
 app.get('/health', (req, res) => {
@@ -185,10 +155,6 @@ app.get("/student", (req, res) => {
         data: student,
         message: "Successfully fetched student",
     });
-})
-
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}.`)
 })
 ```
 Creating a Node.js server using Express to manage student data, including endpoints for **health checks**, **fetching all students**, **adding a new student**, and **retrieving a single student**.

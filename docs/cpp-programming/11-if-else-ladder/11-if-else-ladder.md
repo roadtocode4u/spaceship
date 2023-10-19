@@ -74,6 +74,16 @@ int main() {
 > Enter Number : 3<br/>
 > Three
 
+**Explanation :**
+
+**Line 5 :** declare variable `num`<br/>
+**Line 6 :** `Enter a number` from user. <br/>
+**Line 7 :** allocate memory for `num` variable.<br/>
+**Line 9 :** `if(num==1)` check the condition condition true print statement otherwise goto next condition.<br/>
+**Line 12 :** `else if(num==2)` check the condition condition true print statement otherwise goto next condition.<br/>
+**Line 15 :** `else if(num==3)` check the condition condition true print statement otherwise goto next condition.<br/>
+All condition are false then goto the esle part and print the else part .
+
 ** Example 2 :**
 
 ```cpp showLineNumbers = "true"
@@ -110,6 +120,16 @@ int main() {
 > Enter Number : 8<br/>
 > Not Matched...
 
+**Explanation :**
+
+**Line 5 :** declare variable `num`<br/>
+**Line 6 :** `Enter a number` from user. <br/>
+**Line 7 :** allocate memory for `num` variable.<br/>
+**Line 9 :** `if(num==1)` check the condition, condition true print statement otherwise goto next condition.<br/>
+**Line 12 :** `else if(num==2)` check the condition, condition true print statement otherwise goto next condition.<br/>
+**Line 15 :** `else if(num==3)` check the condition, condition true print statement otherwise goto next condition.<br/>
+All condition are false then goto the esle part and print the else part .
+
 ** Example 3 : Boundry Condition**
 
 ```cpp showLineNumbers = "true"
@@ -122,7 +142,7 @@ int main() {
     cout<<"Enter Marks:";
     cin>>marks;
 
-    if(marks>=70 && marks<=80>){
+    if(marks>=70 && marks<=80){
         cout<<"Grade C";
     }
     else if(marks>=80 && marks<=90){
@@ -145,6 +165,16 @@ int main() {
 > Enter Marks : 90<br/>
 > A
 
+**Explanation :**
+
+**Line 5 :** declare variable `marks`<br/>
+**Line 6 :** `Enter marks` from user. <br/>
+**Line 7 :** allocate memory for `marks` variable.<br/>
+**Line 9 :** `if(marks>=70 && marks<=80)` check condition, condition true print the `Grade C` otherwise got to next condition.<br/>
+**Line 12 :** `if(marks>=80 && marks<=90)` check condition, condition true print the `Grade B` otherwise got to next condition.<br/>
+**Line 15 :** `if(marks>=90 && marks<=100)` check condition, condition true print the `Grade A` otherwise got to else part.<br/>
+All condition are false print the else part `Invalid number`.<br/>
+
 ** Example 4 : Boundry Condition**
 
 ```cpp showLineNumbers = "true"
@@ -157,7 +187,7 @@ int main() {
     cout<<"Enter Marks:";
     cin>>marks;
 
-    if(marks>=70 && marks<=80>){
+    if(marks>=70 && marks<=80){
         cout<<"Grade C";
     }
     else if(marks>=80 && marks<=90){
@@ -180,6 +210,16 @@ int main() {
 > Enter Marks : 180<br/>
 > Invalid Number
 
+**Explanation :**
+
+**Line 5 :** declare variable `marks`<br/>
+**Line 6 :** `Enter marks` from user. <br/>
+**Line 7 :** allocate memory for `marks` variable.<br/>
+**Line 9 :** `if(marks>=70 && marks<=80)` check condition, condition true print the `Grade C` otherwise got to next condition.<br/>
+**Line 12 :** `if(marks>=80 && marks<=90)` check condition, condition true print the `Grade B` otherwise got to next condition.<br/>
+**Line 15 :** `if(marks>=90 && marks<=100)` check condition, condition true print the `Grade A` otherwise got to else part.<br/>
+All condition are false print the else part `Invalid number`.<br/>
+
 ** Example 5 : Boundry Condition**
 
 ```cpp showLineNumbers = "true"
@@ -192,7 +232,7 @@ int main() {
     cout<<"Enter Marks:";
     cin>>marks;
 
-    if(marks>=50 && marks<=60>){
+    if(marks>=50 && marks<=60){
         cout<<"Grade E";
     }
     else if(marks>=60 && marks<=70){
@@ -220,3 +260,15 @@ int main() {
 
 > Enter Marks : 55<br/>
 > Grade E
+
+**Explanation :**
+
+**Line 5 :** declare variable `marks`<br/>
+**Line 6 :** `Enter marks` from user. <br/>
+**Line 7 :** allocate memory for `marks` variable.<br/>
+**Line 9 :** `if(marks>=50 && marks<=60)` check condition, condition true print the `Grade E` otherwise got to next condition.<br/>
+**Line 9 :** `if(marks>=60 && marks<=70)` check condition, condition true print the `Grade D` otherwise got to next condition.<br/>
+**Line 9 :** `if(marks>=70 && marks<=80)` check condition, condition true print the `Grade C` otherwise got to next condition.<br/>
+**Line 12 :** `if(marks>=80 && marks<=90)` check condition, condition true print the `Grade B` otherwise got to next condition.<br/>
+**Line 15 :** `if(marks>=90 && marks<=100)` check condition, condition true print the `Grade A` otherwise got to else part.<br/>
+All condition are false print the else part `Invalid number`.<br/>

@@ -40,7 +40,7 @@ else
 
 ** Example 1 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -76,7 +76,7 @@ int main() {
 
 ** Example 2 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -112,7 +112,7 @@ int main() {
 
 ** Example 3 : Boundry Condition**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -147,7 +147,7 @@ int main() {
 
 ** Example 4 : Boundry Condition**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -182,7 +182,7 @@ int main() {
 
 ** Example 5 : Boundry Condition**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 

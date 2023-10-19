@@ -48,6 +48,8 @@ const app = express()
 app.use(express.json())
 const PORT = 5000;
 
+const students = [];
+
 app.get('/health', (req, res) => {
     res.json({status: 'All Good!'})
 })
@@ -74,6 +76,8 @@ import express from 'express';
 const app = express()
 app.use(express.json())
 const PORT = 5000;
+
+const students = [];
 
 app.get('/health', (req, res) => {
     res.json({status: 'All Good!'})
@@ -151,6 +155,8 @@ import express from 'express';
 const app = express()
 app.use(express.json())
 const PORT = 5000;
+
+const students = [];
 
 app.get('/health', (req, res) => {
     res.json({status: 'All Good!'})

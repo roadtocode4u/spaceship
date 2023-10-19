@@ -1,3 +1,9 @@
+---
+title: if-else-ladder
+description: "if-else-ladder"
+hide_table_of_contents: true
+---
+
 # 3. If-else Ladder
 
 **if-else-if ladder** helps user decide from among multiple options. if condition 1 is true then print the statement 1, otherwise

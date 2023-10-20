@@ -1,22 +1,41 @@
-# Nested-if
+# Nested-if-else
+
+nested if-else statement inside another if statement
 
 syntax :
 
-```html
-if (condition) { if { //----- } else { //---- } } else { //---- }
+```
+if (condition)
+{
+    //statement..
+
+    if(condition)
+    {
+        //statement
+    }
+    else
+    {
+
+    }
+}
+else
+{
+
+}
+
 ```
 
-**💻 Example 1 :**
+** Example 1 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
 int main() {
     int maths=30;
-    int marathi=36;
+    int science=36;
 
-    if(marks>=35 && marathi>=35>){
+    if(maths>=35 && science>=35){
         cout<<"Pass";
     }
     else
@@ -28,50 +47,60 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
 > Fail
 
-**💻 Example 2 :**
+**Explanation :**
 
-```cpp
+**Line 5,6 :** declare `maths` and `science` variable and its value is `30` and `36`. <br/>
+**Line 8 :** check condition ` if(maths>=35 && science>=35)` conditon true print if part otherwise jump to the else part <br/>
+
+** Example 2 :**
+
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
 int main() {
-    int maths=40;
-    int marathi=16;
+    int maths=30;
+    int science=36;
 
-    if(marathi>=35>)
+    if(science>=35)
     {
-        cout<<"Passed in Marathi";
+        cout<<"Passed in science \n";
         if(maths>=35)
         {
-            cout<<Passed in Maths"<<endl;
+            cout<<"Passed in Maths \n";
         }
          else
         {
-        cout<<"Failed in Maths";
+        cout<<"Failed in Maths \n";
         }
     }
     else
     {
-       cout<<"Failed in Marathi";
+       cout<<"Failed in Science \n";
     }
     return 0;
 }
+
 ```
 
-**⚙️ Output :**
+** Output :**
 
-> Passed in Maths<br/>
-> Failed in Marathi
+> Passed in Science<br/>
+> Failed in Maths
 
-## Homeworks Examples :
+**Line 5 :** declare `maths` variable assign value `30`. <br/>
+**Line 6 :** declare `science` variable assign value `36`. <br/>
+**Line 8 :** check condition `if(science>=35)` condition is true go inside the if part and print the statement. <br/>
+**Line 11 :** check this condition `if(maths>35)` condition is true go inside the if part and print the statement. otherwise
+jump to the else part. <br/>
 
-**💻 Example 1️⃣ : WAP to calculate largrst number among 3 using if-else-ladder ?**
+** Example 1️⃣ : WAP to calculate largrst number among 3 using if-else-ladder ?**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -101,14 +130,23 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
-> Enter 3 Numbers 5 80 7<br/>
-> B is largest
+> Enter 3 Numbers 10 20 30<br/>
+> C is largest
 
-**💻 Example 2️⃣: WAP to calculate largest number among 3 using nested-if ?**
+**Explanation :**
 
-```cpp
+**Line 5 :** declare 3 variable `a`, `b`,`c`.<br/>
+**Line 6 :** `enter 3 number ` from user.<br/>
+**Line 9 :** `if(a>b && a>c)` check condition , condition is true print statement otherwise jump to next condition.<br/>
+**Line 13 :** ` else if(b>a && b>c)` check condition , condition is true print statement otherwise jump to next condition.<br/>
+**Line 17 :** ` else if(c>a && c>b)` check condition , condition is true print statement otherwise jump to else part.<br/>
+All condition are false print the else part.
+
+** Example 2️⃣: WAP to calculate largest number among 3 using nested-if ?**
+
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -144,7 +182,12 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
-> Enter 3 Numbers 2 70 6<br/>
+> Enter 3 Numbers 20 40 30<br/>
 > B is largest
+
+**Line 5 :** declare 3 variable `a`, `b`,`c`.<br/>
+**Line 6 :** `enter 3 number ` from user.<br/>
+**Line 8 :** `if(a>b)` conditon true goto the if part otherwise else part.<br/>
+**Line 10 :** `if(a>c)` condition true print the statement othewise else statement.<br/>

@@ -8,7 +8,6 @@ hide_table_of_contents: true
 
 ![C++](cpplogo.png)
 
-
 ![bjarne-stroustrup](bjarne%20stroustrup.jpg)
 
 ### What is Programming ?
@@ -19,15 +18,14 @@ Programming is the process of instructions that tell a computer how to perform a
 
 Learning C++ is valuable for several reasons:
 
-* C++ is used to create games, computer applications, operating systems, web browsers, and much more.
-* C++ programs run very quickly and efficiently.
-* It offers a rich set of libraries that make programming easier.
-* With C++, you can break down complex problems into smaller, manageable parts using objects.
+- C++ is used to create games, computer applications, operating systems, web browsers, and much more.
+- C++ programs run very quickly and efficiently.
+- It offers a rich set of libraries that make programming easier.
+- With C++, you can break down complex problems into smaller, manageable parts using objects.
 
 ### What is C++ Programming?
 
 C++ was created by **`Bjarne Stroustrup`** in **`1979`** at Bell Labs in Murray Hill, New Jersey. It is a versatile, case-sensitive, and object-oriented programming language. C++ is considered a middle-level language because it combines features of both high-level and low-level languages. Additionally, C++ is an extension of the C language, which means any C program is a valid C++ program.
-
 
 ### Object-Oriented Programming
 
@@ -38,9 +36,9 @@ C++ supports Object-Oriented Programming, which includes four fundamental princi
 - Inheritance
 - Polymorphism
 
-**💻 Example 1 :**
+** Example 1 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 
 int main() {
@@ -51,7 +49,7 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
 > Hello world!
 
@@ -68,3 +66,9 @@ int main() {
 **Line 4:** `return 0;` return 0 means that the program will execute successfully.
 
 **Line 5:** `}` closing curly bracket is used to end the main function.
+
+## Hurray! You've successfully run first program of `c++` 🎉
+
+<img src="https://media.tenor.com/BGsAhrY5FMMAAAAd/great-job-yes.gif" alt="c++" width="30%" />
+
+<br /> <br />

@@ -239,6 +239,161 @@ In the `/students` route, we use `Student.find()` to retrieve all students from 
 
 In the `/student` this route, we use `Student.findOne({email: email})` handler is designed to fetch a specific student's information from the database based on their **email address** and respond with a JSON object containing the success status, the retrieved student data, and a success message.
 
+## Path Params
+
+**Path Parameters in API**
+
+Path parameters are dynamic values in a URL that allow you to customize API endpoints by inserting specific values into the URL path. They are denoted by a colon (e.g., `:parameter`) and are commonly used to pass data to the server.
+
+**Example: Creating a User API with Path Parameter**
+
+- **HTTP Method:** GET
+- **Endpoint:** `/users/:userId`
+  - `:userId` (Path Parameter): This dynamic part of the URL captures the user's unique identifier.
+
+**API Request Example:**
+
+To retrieve a user's information, make a GET request to the following URL, replacing `:userId` with the actual user's identifier:
+
+```jsx
+GET /users/123
+```
+
+**Response:**
+
+The server retrieves user details based on the `userId` provided and responds with the user's information.
+
+Path parameters provide a clean and dynamic way to handle various requests within your API, allowing you to fetch or manipulate specific data by inserting the appropriate values into the URL.
+
+
+```jsx title="school-server/index.js"
+app.delete('/student/:_id', async(req, res)=>{
+    const { _id } = req.params;
+
+    await Student.deleteOne({_id : _id})
+
+    res.json({
+        success: true,
+        data: {},
+        message: `Successfully deleted student with id ${_id}`,
+    }) 
+})
+```
+
+The `:_id` path parameter is extracted from the request URL using `req.params`.
+
+The `Student.deleteOne()` method is used to delete the student record based on the provided `_id.`
+
+## Difference between put and patch
+
+The main difference between the HTTP PUT and PATCH methods lies in how they handle updates to a resource:
+
+### 1. **HTTP PUT:**
+
+   - **Replace:** The HTTP PUT method is used to completely replace or update a resource or entity at a specific URL.
+
+   - **Full Update:** When you use PUT, you need to send a complete representation of the resource, including all fields. If any data is missing in the request, it's assumed to be intentionally set to null or the default value.
+
+   - **Example:** If you have a user resource at `/users/123`, using PUT to update it would require sending the full user object, and it would replace the entire user resource with the new data.
+
+   ```jsx title="school-server/index.js"
+   app.put('/student/:_id', async(req, res)=>{
+    const { _id } = req.params;
+    const {name, age, mobile, email} = req.body;
+
+    if (!name) {
+    return res.json({
+      success: false,
+      message: "name is required",
+    });
+    }
+
+    if (!age) {
+    return res.json({
+      success: false,
+      message: "age is required",
+    });
+    }
+
+    if (!mobile) {
+    return res.json({
+      success: false,
+      message: "mobile is required",
+    });
+    }
+
+    if (!email) {
+    return res.json({
+      success: false,
+      message: "email is required",
+    });
+    }
+
+    await Student.updateOne(
+        {_id: _id},
+        {$set: {
+            name: name,
+            age: age,
+            mobile: mobile,
+            email: email
+        }})
+
+        const updatedStudent = await Student.findOne({_id: _id});
+
+        res.json({
+             success: true,
+             data: updatedStudent,
+             message: "Successfully updated"
+        })
+    })
+   ```
+
+### 2. **HTTP PATCH:**
+
+   - **Partial Update:** The HTTP PATCH method is used to apply a partial update to a resource. It allows you to send only the changes that need to be made, rather than sending the complete resource representation.
+
+   - **Selective Update:** With PATCH, you can update specific fields or properties without affecting the rest of the resource. It's suitable for making minor updates without sending the complete resource representation.
+
+   - **Example:** If you have a user resource at `/users/123`, using PATCH to update it would require sending only the fields that need to be changed, and the existing data not specified in the request would remain unchanged.
+
+   ```jsx title="school-server/index.js"
+    app.patch('/student/:_id', async(req, res)=>{
+    const { _id } = req.params;
+    const {name, age, mobile, email} = req.body;
+
+    const student = await Student.findById(_id);
+
+    if(name){
+        student.name = name;
+    }
+
+    if(age){
+        student.age = age;
+    }
+
+    if(mobile){
+        student.mobile = mobile;
+    }
+
+    if(email){
+        student.email = email;
+    }
+
+    const updatedStudent = await student.save();
+
+    res.json({
+        success: true,
+        data: updatedStudent,
+        message: "Successfully updated"
+     })
+   })
+   ```
+
+ PUT is used for full resource replacement and requires sending the complete representation of the resource, while PATCH is used for partial updates and allows for selective changes to specific fields within the resource.
+
+
+
+
 ## .env file
 
 Make sure to create a `.env` file in the root directory of your project and add your MongoDB connection URL like this:

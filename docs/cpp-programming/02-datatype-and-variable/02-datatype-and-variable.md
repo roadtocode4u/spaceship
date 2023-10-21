@@ -1,10 +1,16 @@
+---
+title: Datatype and Variable
+description: "Datatype and Variable"
+hide_table_of_contents: true
+---
+
 # Datatypes and Variables
 
-## variables 
+## variables
 
 - Variables: Variables are used to store data in a programming language.
 
-## Data Types 
+## Data Types
 
 Data types determine the kind of data that can be stored in a variable.
 
@@ -35,7 +41,7 @@ float          weight;
 
 **Declaring and Assigning Values**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -51,9 +57,15 @@ int main() {
 
 > 22
 
+**Explanation :**
+
+**Line 4 :** declare variable `age` <br/>
+**Line 5 :** assign value `22` in `age` variable. <br/>
+**Line 5 :** print vairble `age` using `cout` object. <br/>
+
 **Addition of Two Number :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -70,18 +82,24 @@ int main() {
 
 > 30
 
+**Explanation :**
+
+**Line 4 :** declare variable `val1` and assign value `10`. <br/>
+**Line 5 :** declare variable `val2` and assign value `20`. <br/>
+**Line 6 :** declare `sum` variable and assign the addition of `val1 + val2` .<br/>
+**Line 7 :** print `sum` variable by using `cout` object.<br/>
+
 ## Rules to declared Variable
 
 1. A variable name must start with a letter `a-z` or `A-Z` or the underscore `_` character.
 2. A variable name cannot start with a number.
 3. Variable names are case-sensitive, which means name and Name are considered different variables.
 4. A variable name can not used reserved `keyword`
-5. A variable name can include `a-z`,`A-z`, `0-9`, and `_` 
-
+5. A variable name can include `a-z`,`A-z`, `0-9`, and `_`
 
 **Example 1 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -101,9 +119,15 @@ int main() {
 
 > Age = 20
 
+**Explanation :**
+
+**Line 5 :** declare `age` variable assign value to the `age ` variable is `20`. <br/>
+**LIne 7 :** print the `"Age = "` string. <br/>
+**Line 9 :** print `age ` variable using `cout` object. <br/>
+
 **Example 2 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -121,9 +145,12 @@ int main() {
 
 > my age is 22
 
+**Line 5 :** declare `age` and assign value `22`. <br/>
+**Line 7 :** print `My age is` string and `age` variable using `cout` object.<br/>
+
 **Example 3 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -138,6 +165,12 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+** Output :**
 
 > My age is 20 & weight is 50
+
+**Explanation :**
+
+**Line 5 :** Declare `age ` variable and assign value `20`. <br/>
+**Line 6 :** Declare `weight` variable and assign value `50`. <br/>
+**Line 7 :** print `age ` and `weight` using `cout` object.

@@ -37,6 +37,8 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`)
 })
 ```
+**Output:**
+><img src="/nodejs/05/screenshot1.png" alt="screenshot1" width="600px"/>
 
 ## Fetching Student Data
 
@@ -62,6 +64,8 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`)
 })
 ```
+**Output:**
+><img src="/nodejs/05/screenshot2.png" alt="screenshot2" width="600px"/>
 
 ## Adding a New Student
 
@@ -120,41 +124,62 @@ app.post('/student', (req, res) => {
     });
 })
 ```
+**Output:**
+><img src="/nodejs/05/screenshot3.png" alt="screenshot3" width="600px"/>
 
-## Fetching a Single Student
+## Fetching Student Data
+
+implemented a route to fetch student data through a GET request
+
+```jsx title="school/index.js" showLineNumbers
+const students = [];
+
+app.get('/students', (req, res) => {
+    res.json({
+        success: true,
+        data: students,
+        message: "Successfully fetched all students",
+    })
+})
+```
+**Output:**
+><img src="/nodejs/05/screenshot4.png" alt="screenshot4" width="600px"/>
+
+school API now allows the addition of new student records using a **POST request** and provides a way to retrieve all student data using a **GET request**.
+
+## Fetch student using query parameter
 
 Lastly, we'll implement an API endpoint to retrieve a specific student based on their ID.
 
 ```jsx title="school/index.js" showLineNumbers
 const students = [];
 
-app.get('/health', (req, res) => {
-    res.json({status: 'All Good!'})
-})
-
 app.get("/student", (req, res) => {
-    const { id } = req.query;
+  const { id } = req.query;
 
-    let student = null;
+  let student = null;
 
-    students.forEach((stud) => {
-        if (student.id == id) {
-            student = stud;
-        }
-    });
+  students.forEach((stud) => {
+      if (stud.id == id) {
+          student = stud;
+      }
+  });
 
-    if (student == null) {
-        return res.json({
-            success: false,
-            message: "Student not found",
-        });
-    }
+  if (student == null) {
+      return res.json({
+          success: false,
+          message: "Student not found",
+      });
+  }
 
-    res.json({
-        success: true,
-        data: student,
-        message: "Successfully fetched student",
-    });
+  res.json({
+      success: true,
+      data: student,
+      message: "Successfully fetched student",
+  });
 })
 ```
+**Output:**
+><img src="/nodejs/05/screenshot5.png" alt="screenshot5" width="600px"/>
+
 Creating a Node.js server using Express to manage student data, including endpoints for **health checks**, **fetching all students**, **adding a new student**, and **retrieving a single student**.

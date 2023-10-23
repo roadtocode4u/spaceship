@@ -147,19 +147,19 @@ export default function Home() {
   const [mobile, setMobile] = useState('');
   const [email, setEmail] = useState('');
 
-
   const addToStudent = async () => {
-
 
     const addstudent = {
       name,
       age,
       mobile,
       email
-
     }
     await axios.post('/student', addstudent)
-
+    setName('');
+    setAge('');
+    setMobile('');
+    setEmail('');
   }
   return (
     <div>
@@ -217,11 +217,10 @@ function Home() {
             const { name, age, mobile, email} = product
             return (<>
               <div key="index" className='student-card'>
-                <p> Student Name: <span>{name}</span> </p>
+                <p> Student Name: <span>{name}</span></p>
                 <p> Age: <span>{age}</span> </p>
-                <p>Mobile: <span>{mobile}</span> </p>
-                <p> Email:<span>{email}</span> </p>
-
+                <p>Mobile: <span>{mobile}</span></p>
+                <p> Email:<span>{email}</span></p>
               </div>
             </>)
           })

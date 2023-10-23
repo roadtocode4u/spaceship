@@ -43,7 +43,7 @@ The method for importing Mongoose depends on the version of Node.js you are usin
 If you are using Node.js with support for ECMAScript modules (ESM), you can import Mongoose using the `import` statement:
 
 ```js
-import mangoose from "mangoose";
+import mongoose from "mongoose";
 ```
 
 Make sure your project's package.json file includes "type": "module".

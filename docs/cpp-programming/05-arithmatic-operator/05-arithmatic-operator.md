@@ -36,7 +36,7 @@ hide_table_of_contents: true
 
 ** Example 1 : Addition of two numbers**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -56,13 +56,20 @@ int main() {
 
 > 15
 
+**Explanation :**
+
+**Line 5 :** initialize the `a` variable assign value `5`. <br/>
+**Line 6 :** initialize the `b` variable assign value `10`. <br/>
+**Line 8 :** declare `result`, perform operation `a + b` and stored in `result` variable. <br/>
+**Line 9 :** print `result ` variable.
+
 ## `-` Subtraction operator :
 
 - Subtraction operator is used to find the difference between two number.
 
 ** Example 2 : Subtraction of two numbers**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -82,13 +89,20 @@ int main() {
 
 > 10
 
+**Explanation :**
+
+**Line 5 :** initialize the `a` variable assign value `20`. <br/>
+**Line 6 :** initialize the `b` variable assign value `10`. <br/>
+**Line 8 :** declare `result` variable, perform operation `a - b` and stored in `result` variable. <br/>
+**Line 9 :** print `result ` variable.
+
 ## `*` Multiplication operator :
 
 - This operator is used to find the product.
 
 ** Example 3 : Multiplication of two numbers**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -108,13 +122,20 @@ int main() {
 
 > 110
 
+**Explanation :**
+
+**Line 5 :** initialize the `a` variable assign value `55`. <br/>
+**Line 6 :** initialize the `b` variable assign value `2`. <br/>
+**Line 8 :** declare `result` variable, perform operation `a * b` and stored in `result` variable. <br/>
+**Line 9 :** print `result ` variable.
+
 ## `/` division operator :
 
 - It Calculate the questient.
 
 ** Example 4: Division of two numbers**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -134,17 +155,27 @@ int main() {
 
 > 27
 
+**Explanation :**
+
+**Line 5 :** initialize the `a` variable assign value `55`. <br/>
+**Line 6 :** initialize the `b` variable assign value `2`. <br/>
+**Line 8 :** declare `result` variable, perform operation `a / b` and stored in `result` variable. <br/>
+**Line 9 :** print `result ` variable.
+
 ## `%` Modulus Operator :
 
 - It calculates reminder after the integer division
 
 ** Example 5 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
 int main() {
+
+    int a = 22;
+    int b = 5;
 
     int result = 22 % 5;
     cout<<result;
@@ -155,7 +186,14 @@ int main() {
 
 ** Output :**
 
-> 2
+> 4
+
+**Explanation :**
+
+**Line 5 :** initialize the `a` variable assign value `22`. <br/>
+**Line 6 :** initialize the `b` variable assign value `5`. <br/>
+**Line 8 :** declare `result` variable, perform operation `a % b` and stored in `result` variable. <br/>
+**Line 9 :** print `result ` variable.
 
 ```cpp
 odd number : 3,7,9

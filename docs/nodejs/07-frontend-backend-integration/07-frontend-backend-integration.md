@@ -133,8 +133,7 @@ Then install axiox library for calling frontend API's in the react app.In the re
 ```js
  "proxy": "http://localhost:5000"
 ```
-
-**file Name:** AddStudent.js
+### Add Student Form
 
 ```jsx title="client/src/views/AddStudent" showLineNumbers
 import React, { useState } from 'react';
@@ -191,7 +190,7 @@ export default function AddStudent() {
 }
 ```
 
-**file Name:** Home.js
+### Home Page with Student List
 
 ```jsx title="client/src/views/Home" showLineNumbers
 import React, { useEffect, useState } from 'react'
@@ -238,6 +237,7 @@ function Home() {
 
 export default Home
 ```
+###  Routing Configuration
 
 ```jsx title="client/src/index.js" showLineNumbers
 import React from 'react';

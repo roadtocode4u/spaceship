@@ -131,17 +131,17 @@ npx create-react-app frontend
 Then install axiox library for calling frontend API's in the react app.In the react app remove unwanted content from `App.js` file.Then create `async function` and set proxy in `package.json` file.
 
 ```js
- "proxy": "http:localhost:5000"
+ "proxy": "http://localhost:5000"
 ```
 
 **file Name:** AddStudent.js
 
-```jsx title="client/views/AddStudent" showLineNumbers
+```jsx title="client/src/views/AddStudent" showLineNumbers
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Addcard.css'
 
-export default function Home() {
+export default function AddStudent() {
   const [name, setName] = useState('')
   const [age, setAge] = useState('')
   const [mobile, setMobile] = useState('');
@@ -193,7 +193,7 @@ export default function Home() {
 
 **file Name:** Home.js
 
-```jsx title="client/views/Home" showLineNumbers
+```jsx title="client/src/views/Home" showLineNumbers
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import './Home.css'
@@ -208,6 +208,11 @@ function Home() {
   useEffect(() => {
     loadStudent();
   }, [])
+
+  const studentdetail = async (_id) => {
+
+  }
+
   return (
     <div>
       <h1>Home</h1>
@@ -221,6 +226,7 @@ function Home() {
                 <p> Age: <span>{age}</span> </p>
                 <p>Mobile: <span>{mobile}</span></p>
                 <p> Email:<span>{email}</span></p>
+                <a href={/student/${_id}}>View More</a>
               </div>
             </>)
           })
@@ -233,3 +239,82 @@ function Home() {
 export default Home
 ```
 
+```jsx title="client/src/index.js" showLineNumbers
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Home from './views/Home/Home'
+import AddStudent from './views/AddStudent/AddStudent'
+import './index.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'; 
+import StudentDetail from './views/StudentDetail/StudentDetail';
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element:<Home />
+  },
+  {
+    path:"/addstudent" ,
+    element:<AddStudent />
+  },
+  {
+    path:'/student/:_id',
+    element:<StudentDetail />
+  }
+])
+
+root.render(
+  <RouterProvider router={router} />
+);
+```
+### **Server Route for Retrieving a Student's Information**
+
+```jsx
+app.get('/student/:_id' , async(req,res) =>{
+const {_id} = req.params
+const findingOneStudent = await Student.findOne({_id:_id})
+res.json({
+    data:findingOneProduct
+})
+})
+```
+### **Student Detail Page with Axios Data Fetching**
+
+```jsx
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import './StudentDetail.css'
+
+const StudentDetail = () => { 
+const [ student,setStudent] = useState({})
+
+const loadstudent = async () =>{
+    const response = await axios.get('/student/${_id}');
+    setStudent(response?.data?.data);
+}
+useEffect(()=>{
+    loadstudent();
+},[])
+
+    const {_id} = useParams();
+    const{name, mobile, age, email} = student
+  return (
+    <div> 
+      <h1>Student Detail</h1>
+      <div className='student-card'>
+        <div>
+          <h1>Name: {name}</h1>
+          <p>Mobile : {mobile}</p>
+          <p>Age :{age}</p>
+          <p>Email: {email}</p> 
+       </div>
+     </div>
+    </div>
+  )
+}
+
+export default StudentDetail
+```

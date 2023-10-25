@@ -17,7 +17,7 @@ condition-1  ||  condition-2
 
 **Example 1 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -47,7 +47,7 @@ int main() {
 
 **Example 2 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -81,7 +81,7 @@ reverse the boolean value.
 
 **Example 3 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -110,7 +110,7 @@ condition ? true part : false part
 
 ** Example 5 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -140,7 +140,7 @@ int main() {
 
 ** Example 6 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 

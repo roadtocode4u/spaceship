@@ -230,6 +230,9 @@ function Home() {
                 <p> Email:<span>{email}</span></p>
                 <a href={/student/${_id}}>View More</a>
                 <button type='button' onClick={()=>{deleteStudent(_id)}} >delete</button>
+                <div onClick={()=>{
+                  window.open(/update/${_id}, '_blank')
+                }} > edit</div>
               </div>
             </>)
           })

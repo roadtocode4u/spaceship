@@ -138,7 +138,7 @@ Then install axiox library for calling frontend API's in the react app.In the re
 ```jsx title="client/src/views/AddStudent" showLineNumbers
 import React, { useState } from 'react';
 import axios from 'axios';
-import './Addcard.css'
+import './AddStudent.css'
 
 export default function AddStudent() {
   const [name, setName] = useState('')
@@ -211,8 +211,8 @@ function Home() {
   const deleteStudent = async (_id) =>{
   const response = await axios.delete('/product/${id}')
   if(response?.data?.data){
-  loadStudent();
-    }
+    loadStudent();
+     }
    }
 
   return (
@@ -241,6 +241,82 @@ function Home() {
 
 export default Home
 ```
+### Update Student Form
+
+```jsx title="client/src/views/UpdateStudent" showLineNumbers
+import React, { useState useEffect } from 'react';
+import axios from 'axios';
+import './UpdateStudent.css';
+import {  useParams } from 'react-router-dom';
+
+
+export default function UpdateStudent() {
+  const [name, setName] = useState('')
+  const [age, setAge] = useState('')
+  const [mobile, setMobile] = useState('');
+  const [email, setEmail] = useState('');
+
+  const {_id} = useParams();
+
+  const updateOne =async () =>{
+    const response = await axios.get('/student/${_id}')
+    const {
+      name,
+      age,
+      mobile,
+      email
+    } = response.data.data
+     setName(name) 
+     setAge(age)
+     setMobile(mobile)
+     setEmail(email)
+    }
+
+    useEffect(()=>{
+          updateOne();
+    },[])
+
+  const updateToStudent = async () => {
+
+    const updatestudent = {
+      name,
+      age,
+      mobile,
+      email
+    }
+    await axios.put('/student/${_id}', updatestudent)
+  }
+
+  return (
+    <div>
+      <div className='maindiv'>
+        <h1>Update Student</h1>
+
+        <form>
+          <input type='text' value={name} placeholder='product name' onChange={(e) => {
+            setName(e.target.value)
+          }} className='input-box' />
+
+          <input type='text' value={age} placeholder='enter age' onChange={(e) => {
+            setAge(e.target.value)
+          }} className='input-box' />
+
+          <input type='text' value={mobile} placeholder='enter mobile' onChange={(e) => {
+            setMobile(e.target.value)
+          }} className='input-box' />
+
+          <input type='text ' value={email} placeholder='enter email' onChange={(e) => {
+            setEmail(e.target.value)
+          }} className='input-box' />
+
+          <button type='button' onClick={updateToStudent} className='input-box butn'> Update Student</button>
+        </form>
+      </div>
+    </div>
+  )
+}
+```
+
 ###  Routing Configuration
 
 ```jsx title="client/src/index.js" showLineNumbers

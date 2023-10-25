@@ -208,8 +208,8 @@ function Home() {
     loadStudent();
   }, [])
 
-  const deleteStudent = async (_id) =>{
-  const response = await axios.delete('/product/${id}')
+  const deleteStudent = async (id) =>{
+  const response = await axios.delete(`/student/${id}`)
   if(response?.data?.data){
     loadStudent();
      }
@@ -228,11 +228,10 @@ function Home() {
                 <p> Age: <span>{age}</span> </p>
                 <p>Mobile: <span>{mobile}</span></p>
                 <p> Email:<span>{email}</span></p>
-                <a href={/student/${_id}}>View More</a>
+                <a href={`/student-detail/${_id}`} target='_blank'>View More</a>
                 <button type='button' onClick={()=>{deleteStudent(_id)}} >delete</button>
-                <div onClick={()=>{
-                  window.open(/update/${_id}, '_blank')
-                }} > edit</div>
+
+                <a href={`/update-student/$(_id)`} target= '_blank'className="btn-edit-student" >edit</a>
               </div>
             </>)
           })
@@ -261,14 +260,9 @@ export default function UpdateStudent() {
 
   const {_id} = useParams();
 
-  const updateOne =async () =>{
-    const response = await axios.get('/student/${_id}')
-    const {
-      name,
-      age,
-      mobile,
-      email
-    } = response.data.data
+  const loadStudent =async () =>{
+    const response = await axios.get(`/student/${_id}`)
+    const { name, age, mobile,email } = response?.data?.data
      setName(name) 
      setAge(age)
      setMobile(mobile)
@@ -276,18 +270,15 @@ export default function UpdateStudent() {
     }
 
     useEffect(()=>{
-          updateOne();
+         loadStudent();
     },[])
 
   const updateToStudent = async () => {
 
-    const updatestudent = {
-      name,
-      age,
-      mobile,
-      email
-    }
-    await axios.put('/student/${_id}', updatestudent)
+    const updatedDetails = {name, age, mobile,email}
+    const response = await axios.put(`/student/${id}`, updatedDetails)
+
+    alert(response.data.message)
   }
 
   return (
@@ -340,15 +331,15 @@ const router = createBrowserRouter([
     element:<Home />
   },
   {
-    path:"/addstudent" ,
+    path:"/add-student" ,
     element:<AddStudent />
   },
   {
-    path:"/update/:_id",
+    path:"/update-student/:id",
     element:<UpdateStudent />
   },
   {
-    path:'/student/:_id',
+    path:'/student-detail/:id',
     element:<StudentDetail />
   }
 ])

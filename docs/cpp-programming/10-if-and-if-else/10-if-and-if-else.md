@@ -50,6 +50,12 @@ int main() {
 > Enter Number : 10<br/>
 > Positive Number
 
+**Explanation :**
+
+**Line 6 :** declare `num` variable. <br/>
+**Line 8 :** `Enter number` from user. <br/>
+**Line 11 :** `if(num>0)` check condition , condition is true then print the statement otherwise end of if body.
+
 ** Example 2 :**
 
 ```cpp showLineNumbers = "true"
@@ -73,6 +79,10 @@ int main() {
 ** Output :**
 
 > Enter Number : -5<br/>
+
+**Line 6 :** declare `num` variable. <br/>
+**Line 8 :** `Enter number` from user. <br/>
+**Line 11 :** `if(num>0)` check condition , condition is true then print the statement otherwise end of if body.
 
 # 2. if-else
 
@@ -118,6 +128,12 @@ int main() {
 > Enter Number : 10 <br/>
 > Positive Number
 
+**Explanation :**
+
+**Line 6 :** declare `num` variable. <br/>
+**Line 8 :** `Enter number` from user. <br/>
+**Line 11 :** `if(num>0)` condition is true print statement otherwise jump to else part . <br/>
+
 ** Example 4 :**
 
 ```cpp showLineNumbers = "true"
@@ -145,6 +161,12 @@ int main() {
 
 > Enter Number : 10 <br/>
 > Number is Even
+
+**Explanation :**
+
+**Line 6 :** declare `num` variable. <br/>
+**Line 8 :** `Enter number` from user. <br/>
+**Line 11 :** `if(num%2==0)` condition is true print statement otherwise jump to else part . <br/>
 
 ** Example 5 :**
 
@@ -174,6 +196,12 @@ int main() {
 > Enter Number : 9 <br/>
 > Number is Odd
 
+**Explanation :**
+
+**Line 6 :** declare `num` variable. <br/>
+**Line 8 :** `Enter number` from user. <br/>
+**Line 11 :** `if(num>0)` condition is true print statement otherwise jump to else part . <br/>
+
 ** Example 6 :**
 
 ```cpp showLineNumbers = "true"
@@ -201,6 +229,12 @@ int main() {
 
 > Enter Number : 15<br/>
 > Number is divisible by 5 & 3
+
+**Explanation :**
+
+**Line 6 :** declare `num` variable. <br/>
+**Line 8 :** `Enter number` from user. <br/>
+**Line 11 :** `if(num%3==0 && num%5==0)` condition is true print statement otherwise jump to else part . <br/>
 
 ** Example 7 :**
 
@@ -258,6 +292,12 @@ int main() {
 > Enter Number : 10<br/>
 > Number is divisible by 5 or 3
 
+**Explanation :**
+
+**Line 6 :** declare `num` variable. <br/>
+**Line 8 :** `Enter number` from user. <br/>
+**Line 11 :** `if(num%3==0 || num%5==0)` condition is true print statement otherwise jump to else part . <br/>
+
 ** Example 9 :**
 
 ```cpp showLineNumbers = "true"
@@ -282,3 +322,10 @@ int main() {
 
 > Enter Rate & Quantity : 5 10<br/>
 > Bill 50
+
+**Explanation :**
+
+**Line 5 :** declare 2 vaeiable `rate` and `quantity`.<br/>
+**Line 7 :** `Enter rate and quantity` from user. <br/>
+**Line 10 :** declare `bill` variable and assign `rate * quantity`. <br/>
+**Line 12 :** print `Bill` and `bill` variable using `cout`.<br/>

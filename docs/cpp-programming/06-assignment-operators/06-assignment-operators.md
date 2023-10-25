@@ -39,7 +39,7 @@ int main() {
 
 **Example 2 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -75,7 +75,7 @@ The plus equal to operator `(+=)` adds a value to the current value of a variabl
 
 ** Example 3 : Addition of two numbers**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -107,7 +107,7 @@ The minus equals to operator `(-=)` subtracts a value from the current value of 
 
 ** Example 4 : Subtraction of two numbers**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -139,7 +139,7 @@ The multiplication equals to operator `(*=)` multiplication a value from the cur
 
 ** Example 5 : Multiplication of two numbers**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -170,7 +170,7 @@ The division equals to operator `(/=)` division a value from the current value o
 
 ** Example 6 : Division of two numbers**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -202,7 +202,7 @@ The modulus equals to operator `(%=)` modulus a value from the current value of 
 
 ** Example 7 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 

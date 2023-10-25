@@ -208,9 +208,12 @@ function Home() {
     loadStudent();
   }, [])
 
-  const studentdetail = async (_id) => {
-
-  }
+  const deleteStudent = async (id) =>{
+  const response = await axios.delete('/product/${id}')
+  if(response?.data?.data){
+  loadStudent();
+    }
+   }
 
   return (
     <div>
@@ -226,6 +229,7 @@ function Home() {
                 <p>Mobile: <span>{mobile}</span></p>
                 <p> Email:<span>{email}</span></p>
                 <a href={/student/${_id}}>View More</a>
+                <button type='button' onClick={()=>{deleteStudent(_id)}} >delete</button>
               </div>
             </>)
           })
@@ -247,6 +251,7 @@ import AddStudent from './views/AddStudent/AddStudent'
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'; 
 import StudentDetail from './views/StudentDetail/StudentDetail';
+import UpdateStudent from './views/UpdateStudent/UpdateStudent';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -258,6 +263,10 @@ const router = createBrowserRouter([
   {
     path:"/addstudent" ,
     element:<AddStudent />
+  },
+  {
+    path:"/update/:_id",
+    element:<UpdateStudent />
   },
   {
     path:'/student/:_id',

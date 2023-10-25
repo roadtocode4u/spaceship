@@ -208,7 +208,7 @@ function Home() {
     loadStudent();
   }, [])
 
-  const deleteStudent = async (id) =>{
+  const deleteStudent = async (_id) =>{
   const response = await axios.delete('/product/${id}')
   if(response?.data?.data){
   loadStudent();

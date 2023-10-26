@@ -1,3 +1,9 @@
+---
+title: For-loop
+description: "For-loop"
+hide_table_of_contents: true
+---
+
 # For Loop
 
 ````cpp
@@ -12,7 +18,7 @@
 syntax:
 
  ```cpp
- 1. for(init; condition; inc/dec)
+ 1. for(initilization; condition; inc/dec)
  {// loop body start
 
  } // loop body ends
@@ -25,8 +31,9 @@ syntax:
 
 ````
 
+**Explanation :**
+
 ```cpp
-Explanation:
 
 ex:
 int i;
@@ -49,9 +56,9 @@ int i;
 
 ```
 
-**💻 Example 1️⃣ :**
+**Example 1️⃣ :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -66,16 +73,17 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 > Hello<br/>
 > Hello<br/>
 > Hello<br/>
 > Hello<br/>
 > Hello<br/>
+
+**Explanation :**
 
 ```cpp
-Explanation:
 
 ex 2:
 int i;
@@ -95,9 +103,9 @@ int i;
  i=0    0>0   false
 ```
 
-**💻 Example 2️⃣ : Reverse**
+**Example 2️⃣ : Reverse**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -112,16 +120,16 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 > Hello<br/>
 > Hello<br/>
 > Hello<br/>
 > Hello<br/>
 
-**💻 Example 3️⃣ : Reverse**
+**Example 3️⃣ : Reverse**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -136,7 +144,7 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 > 4<br/>
 > 3<br/>
@@ -148,9 +156,9 @@ int main() {
 1. loops condition is always true .
 2. it always runs because stoppping condition never occurs .
 
-**💻 Example 1️⃣ :**
+**Example 1️⃣ :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -165,7 +173,7 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 > 1<br/>
 > 2<br/>
@@ -177,7 +185,7 @@ int main() {
 > .<br/>
 > infinite
 
-**💻 Example 2️⃣ :**
+**Example 2️⃣ :**
 
 ```cpp
 #include <iostream>
@@ -193,7 +201,7 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 > 0=> Hello<br/>
 > 1=> Hello<br/>
@@ -207,57 +215,26 @@ int main() {
 > 9=> Hello<br/>
 > 10=> Hello<br/>
 
-**💻 Example 3️⃣ :**
+**Example 3️⃣ : WAP to print all even numbers upto n**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
 int main() {
 
     int n;
-    cout<<"Enter value pf n: ";
-    cin>>n;
-    for(i=0;i<=10; i++)
-    {
-      cout<<i<<"=> Hello"<<endl;
-    }
-     return 0;
-}
-```
-
-**⚙️ Output :**
-
-> Enter value of n: 12<br/>
-> 1=> Hello<br/>
-> 2=> Hello<br/>
-> .<br/>
-> .<br/>
-> .<br/>
-> .<br/>
-> .<br/>
-> 12=> Hello
-
-**💻 Example 4️⃣ : WAP to print all even numbers upto n**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-    int n;
-    cout<<"Enter value pf n: ";
+    cout<<"Enter value of n: ";
     cin>>n;
     for(i=2;i<=n; i=i+2)
     {
-      cout<<i<<<<endl;
+      cout<<i<<endl;
     }
      return 0;
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 > Enter value of n: 20<br/>
 > 2<br/>
@@ -270,29 +247,29 @@ int main() {
 > .<br/>
 > 20=> Hello
 
-**💻 Example 5️⃣ : WAP to print all even numbers upto n**
+**Example 4️⃣ : WAP to print all even numbers upto n**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
 int main() {
 
     int n;
-    cout<<"Enter value pf n: ";
+    cout<<"Enter value of n: ";
     cin>>n;
     for(i=2;i<=n; i=i+2)
     {
         if(i%2 == 0)
         {
-           cout<<i<<<<endl;
+           cout<<i<<endl;
         }
     }
      return 0;
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 > Enter value of n: 20<br/>
 > 2<br/>
@@ -305,14 +282,15 @@ int main() {
 > .<br/>
 > 20=> Hello
 
+**Explanation :**
+
 ```cpp
-Explanation:
 
 ex of WAP to print sum of n numbers ?:
 int sum =0;
 for(i=1;i<=5; i++)
     {
-        sum = sum + 1;
+        sum = sum + i;
     }
     cout<<"Sum : "<<sum;
 
@@ -324,16 +302,16 @@ for(i=1;i<=5; i++)
  sum = 3+3
 ```
 
-**💻 Example 6️⃣ :WAP to print sum of n numbers ?**
+**Example 5️⃣ :WAP to print sum of n numbers ?**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
 int main() {
 
     int n;
-    cout<<"Enter value pf n: ";
+    cout<<"Enter value 0f n: ";
     cin>>n;
 
     int sum =0;
@@ -346,7 +324,7 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 > Enter value of n: 5<br/>
 > Sum :15

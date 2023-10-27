@@ -1,7 +1,7 @@
 ---
 title: Increment-decrement operator
 description: "Increment-decrement operator"
-hide_table_of_contents: false
+hide_table_of_contents: true
 ---
 
 # Increment Operator & Decrement Operator (++, --)
@@ -48,7 +48,7 @@ int main() {
 
     int a=10;
 
-    ccout<<"initial value of a : "<<a<<"\n";
+    cout<<"initial value of a : "<<a<<"\n";
 
     a++;
 
@@ -64,6 +64,13 @@ int main() {
 
 > value of a : 11
 
+**Explanation :**
+
+**Line 6 :** Declare `a` variable and its value is `10`.<br/>
+**Line 8 :** Print `initial value of a : ` and `a` using `cout`. <br/>
+**Line 10 :** `a++` `Post Increment` operator .<br/>
+**Line 12 :** Print `value of a :` and `a` using `cout`.
+
 ** Example 2 :**
 
 ```cpp showLineNumbers="true"
@@ -76,7 +83,7 @@ int main() {
 
     int a=10;
 
-    ccout<<"initial value of a : "<<a<<"\n";
+    cout<<"initial value of a : "<<a<<"\n";
 
     ++a;
 
@@ -91,6 +98,13 @@ int main() {
 > initial value of a : 10
 
 > value of a : 11
+
+**Explanation :**
+
+**Line 6 :** Declare `a` variable and its value is `10`.<br/>
+**Line 8 :** Print `initial value of a : ` and `a` using `cout`. <br/>
+**Line 10 :** `--a` `Pre Increment` operator .<br/>
+**Line 12 :** Print `value of a :` and `a` using `cout`.
 
 ** Example 3 :**
 
@@ -120,6 +134,14 @@ int main() {
 
 > initial value of a : 11
 
+**Explanation :**
+
+**Line 6 :** Declare `a` variable and its value is `10`.<br/>
+**Line 7 :** Print `initial value of a : ` and `a` using `cout`. <br/>
+**Line 9 :** Initialized count value and assign `a++` .<br/>
+**Line 10 :** Print `value of count : ` and `count` variable.<br/>
+**Line 11 :** Print `initial value of a : ` and `a` variable.<br/>
+
 **Example 4 :**
 
 ```cpp showLineNumbers="true"
@@ -147,6 +169,14 @@ int main() {
 > value of count : 11
 
 > initial value of a : 11
+
+**Explanation :**
+
+**Line 6 :** Declare `a` variable and its value is `10`.<br/>
+**Line 7 :** Print `initial value of a : ` and `a` using `cout`. <br/>
+**Line 9 :** Initialized count value and assign `++a` .<br/>
+**Line 10 :** Print `value of count : ` and `count` variable.<br/>
+**Line 11 :** Print `initial value of a : ` and `a` variable.<br/>
 
 ## Decrement Operator
 
@@ -192,6 +222,14 @@ int main() {
 
 > value pf a : 9
 
+**Explanation :**
+
+**Line 6 :** Declare `a` variable and its value is `10`.<br/>
+**Line 7 :** Print `initial value of a : ` and `a` using `cout`. <br/>
+**Line 9 :** Initialized count value and assign `--a` .<br/>
+**Line 10 :** Print `value of count : ` and `count` variable.<br/>
+**Line 11 :** Print `initial value of a : ` and `a` variable.<br/>
+
 ** Example 6 :**
 
 ```cpp showLineNumbers="true"
@@ -221,6 +259,14 @@ int main() {
 > value of count : 10
 
 > value pf a : 9
+
+**Explanation :**
+
+**Line 6 :** Declare `a` variable and its value is `10`.<br/>
+**Line 7 :** Print `initial value of a : ` and `a` using `cout`. <br/>
+**Line 9 :** Initialized count value and assign `a--` .<br/>
+**Line 10 :** Print `value of count : ` and `count` variable.<br/>
+**Line 11 :** Print `initial value of a : ` and `a` variable.<br/>
 
 ** Example 7 :**
 
@@ -256,3 +302,14 @@ int main() {
 > Count : 15
 
 > Number : 16
+
+**Explanation : **
+
+**Line 6 :** Declare `num` variable and assign value `15` . <br/>
+**Line 7 :** print `Number :` `num`. <br/>
+**Line 9 :** declare `count ` variable assign `num++` . <br/>
+**Line 10 :** print `Count :` `count` . <br/>
+**Line 12 :** assign `--num` into `count` variable . <br/>
+**Line 13 :** print `Count :` `count` .<br/>
+**Line 15 :** `num++` <br/>
+**Line 16 :** print `Number :` `num`. <br/>

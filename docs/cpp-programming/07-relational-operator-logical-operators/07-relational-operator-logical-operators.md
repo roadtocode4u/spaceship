@@ -27,7 +27,7 @@ the result will be false
 
 ** Example 1 :**
 
-```cpp showLineNumbers="true
+```cpp showLineNumbers="true"
 #include <iostream>
 using namespace std;
 
@@ -68,7 +68,7 @@ the result will be true
 
 ** Example 2 :**
 
-```cpp showLineNumbers="true
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -155,7 +155,7 @@ true
 
 ** Example 4 :**
 
-```cpp showLineNumbers="true
+```cpp showLineNumbers="true"
 #include <iostream>
 using namespace std;
 
@@ -194,7 +194,7 @@ Note :
 
 ** Example 5 :**
 
-```cpp showLineNumbers="true
+```cpp showLineNumbers="true"
 #include <iostream>
 using namespace std;
 
@@ -246,7 +246,7 @@ condition 1  &&  condition 2
 
 ** Example 6 :**
 
-```cpp showLineNumbers="true
+```cpp showLineNumbers="true"
 
 #include <iostream>
 using namespace std;

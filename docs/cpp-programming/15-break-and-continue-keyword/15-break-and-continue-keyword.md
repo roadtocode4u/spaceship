@@ -1,3 +1,9 @@
+---
+title: Break-and-continue-keyword
+description: "Break-and-continue-keyword"
+hide_table_of_contents: true
+---
+
 # Break and Continue keywords
 
 ```cpp
@@ -6,7 +12,7 @@ break => loop terminates permantly
 continue => It will skip loop only for the currect instance
 ```
 
-**💻 Example 1️⃣ :**
+**Example 1️⃣ :**
 
 ```cpp
 #include <iostream>
@@ -14,24 +20,34 @@ using namespace std;
 
 int main() {
 
-    for(;;)
+    for(int i=1; i<=100; i++)
     {
-      cout<<"Hello"<<endl;
+      cout<<i<<"\n";
     }
      return 0;
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
-> Hello<br/>
-> Hello<br/>
-> Hello<br/>
-> Hello<br/>
-> Hello<br/>
-> ....
+> 1<br/>
+> 2<br/>
+> 3<br/>
+> 4<br/>
+> 5<br/>
+> 6<br/>
+> 7<br/>
+> .<br/>
+> .<br/>
+> .<br/>
+> 100<br/>
 
-**💻 Example 2️⃣ :**
+**Explanation :**
+
+**Line 6 :** `for(int i=1; i<=100; i++)` `for` is keyword, `i=1` initialized `i` variable, `i++` increase value by 1. <br/>
+**Line 8 :** print `i` variable. <br/>
+
+**Example 2️⃣ :**
 
 ```cpp
 #include <iostream>
@@ -47,7 +63,7 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 > 1=> Xerox Done...<br/>
 
@@ -63,7 +79,7 @@ int main() {
        100=> Xerox Done...
        <br/>
 
-**💻 Example 3️⃣ :**
+**Example 3️⃣ :**
 
 ```cpp
 #include <iostream>
@@ -83,7 +99,7 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 > 1=> Xerox Done...
 > <br/>
@@ -113,7 +129,7 @@ for()
 }
 ```
 
-**💻 Example 4️⃣ :**
+**Example 4️⃣ :**
 
 ```cpp
 #include <iostream>
@@ -133,7 +149,7 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 > 1=> Xerox Done...
 > <br/>
@@ -172,7 +188,7 @@ fact = 1; // 1*100*0=>0
 sum = 0; // 100+0=>100
 ```
 
-**💻 Example 5️⃣ : WAP to calculate factorial of n number**
+**Example 5️⃣ : WAP to calculate factorial of n number**
 
 ```cpp
 #include <iostream>
@@ -196,7 +212,7 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 > Enter n calculate factorial: 3<br/>
 > Factorial is: 6
@@ -215,7 +231,7 @@ for(i=1;i<=4; i++)
     i=4   4<=4   true
 ```
 
-**💻 Example 6️⃣ :WAP number is prime or composite**
+**Example 6️⃣ :WAP number is prime or composite**
 
 ```cpp
 #include <iostream>
@@ -237,13 +253,13 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 > Enter n : 8<br/>
 > Composite Number Because it is divisible by 2<br/>
 > Composite Number Because it is divisible by 4<br/>
 
-**💻 Example 7️⃣ :**
+**Example 7️⃣ :**
 
 ```cpp
 #include <iostream>
@@ -281,7 +297,7 @@ int main() {
 > Enter n : 8<br/>
 > Number is composite
 
-**💻 Example 7️⃣ :**
+**Example 7️⃣ :**
 
 ```cpp
 #include <iostream>
@@ -314,15 +330,9 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 > Enter n : 11<br/>
 > Number is prime
 
-## 🏠 HomeWork
-
-1️⃣
-
-## 🔗 Some Useful Links
-
-## 📖 References
+**Explanation :**

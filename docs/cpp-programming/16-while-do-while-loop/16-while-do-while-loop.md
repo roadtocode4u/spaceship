@@ -1,27 +1,16 @@
-# while and do-while
+---
+title: while-do-while-loop
+description: "while-do-while-loop"
+hide_table_of_contents: true
+---
 
-### Loops :
+# while and do-while loop
 
-2. while
-3. do-while
+## 2. While Loop
 
-```cpp
-1. for     2. while   3. do-while
-
-how many times it will run ?
-
-[n times] ---> for
-
-[pre-Tested] ---> while
-
-[post-Tested] ---> do-while
-```
-
-❤️ **2 .While loop :**
-
-1. entry controlled
+1. entry controlled loop
 2. pre-tested
-3. executes atleast zero times whwn condition is false .
+3. executes atleast zero times when condition is false .
 
 ````cpp
 syntax:
@@ -31,46 +20,9 @@ syntax:
 } // loop body ends
 ````
 
-**Example 1:**
+**Example 1 :**
 
-```
- int i=1;
-   while(i<=5)
-   {
-     cout<<i<<endl;
-     i++;
-   }
-    return 0;
-```
-
-```cpp
-Explanation:
-
-ex:
- int i=1;
-    while(i<=5)
-    {
-      cout<<i<<endl;
-      i++;
-    }
-     return 0;
-
- i=1    1<=5   true
- i++
- i=2    2<=5   true
- i++
- i=3    3<=5   true
- i++
- i=4    4<=5   true
- i++
- i=5    5<=5   true
- i++
- i=6    6<=5   false
-```
-
-**💻 Example 1 :**
-
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -79,14 +31,14 @@ int main() {
     int i=1;
     while(i<=5)
     {
-      cout<<i<<endl;
+      cout<<i<<"\n";
       i++;
     }
      return 0;
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 > 1<br/>
 > 2<br/>
@@ -94,25 +46,38 @@ int main() {
 > 4<br/>
 > 5<br/>
 
-**💻 Example 2 :**
+**Explanation :**
 
-```cpp
+In a `Line no 6` we declare one variable which name has `i` and store value `1`, datatype is `integer`. <br/>
+In a `Line no 7` `while(i<=5)` `while` is keyword, check condition `i<=5`. <br/>
+In a `Line no 8` Start body of while loop .<br/>
+In a `Line no 9` print `i` variable using `cout` `\n` is used to new line. <br/>
+In a `Line no 10` increase value of `i` by one.<br/>
+In a `Line no 11` ends body of while loop .<br/>
+
+**Example 2 :**
+
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
 int main() {
 
     int i=0;
-    while(i<10)
+    int n;
+
+    cout<<"Enter n :"<<"\n";
+    cin>>n;
+    while(i<n)
     {
-      cout<<i<<endl;
+      cout<<i<<"\n";
       i++;
     }
      return 0;
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 > 0<br/>
 > 2<br/>
@@ -122,9 +87,21 @@ int main() {
 > .<br/>
 > 9<br/>
 
-**💻 Example 3 : WAP to print natural numbers upto n using while loop**
+**Explanation :**
 
-```cpp
+In a `Line no 6` we declare one variable which name has `i` and store value `1`, datatype is `integer`. <br/>
+In a `Line no 7` we declare another variable which name has `n`.<br/>
+In a `Line no 9` `Enter n :` from user.<br/>
+In a `Line no 10` store value of `n` variable using `cin` object.<br/>
+In a `Line no 11` `while(i<=5)` `while` is keyword, check condition `i<=5`. <br/>
+In a `Line no 12` Start body of while loop .<br/>
+In a `Line no 13` print `i` variable using `cout` `\n` is used to new line. <br/>
+In a `Line no 14` increase value of `i` by one.<br/>
+In a `Line no 15` ends body of while loop .<br/>
+
+**Example 3 :**
+
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -144,24 +121,36 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
-> Enter value of n: 10<br/>
+> Enter value of n: 25<br/>
 > 1<br/>
 > 2<br/>
 > 3<br/>
 > .<br/>
 > .<br/>
 > .<br/>
-> 10<br/>
+> 25<br/>
 
-❤️ **3. do while loop :**
+**Explanation :**
 
-1. exit controlled
+In a `Line no 6` we declare one variable which name has `i` and store value `1`, datatype is `integer`. <br/>
+In a `Line no 7` we declare another variable which name has `n`.<br/>
+In a `Line no 9` `Enter n :` from user.<br/>
+In a `Line no 10` store value of `n` variable using `cin` object.<br/>
+In a `Line no 11` `while(i<=5)` `while` is keyword, check condition `i<=5`. <br/>
+In a `Line no 12` Start body of while loop .<br/>
+In a `Line no 13` print `i` variable using `cout` `\n` is used to new line. <br/>
+In a `Line no 14` increase value of `i` by one.<br/>
+In a `Line no 15` ends body of while loop .<br/>
+
+## 3. do-while loop :
+
+1. exit controlled loop
 2. post tested
 3. it executes atleast once even if condition is false .
 
-```cpp
+````cpp
 syntax:
 3. do
 {//  start
@@ -171,19 +160,10 @@ syntax:
 } //  ends
 while(condition);
 
-ex 1:
- int i=10;
-   do
-   {
-     cout<<i<<endl;
-     i++;
-   }
-   while(i<=5);
-```
 
-**💻 Example 4 :**
+**Example 4 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -192,26 +172,76 @@ int main() {
     int i=10;
     do
     {
-      cout<<i<<endl;
+      cout<<i<<"\n";
       i++;
     }
     while(i<=5);
 
     return 0;
 }
-```
+````
 
-**⚙️ Output :**
+**Output :**
 
 > 10
 
-**💻 Example 5 : WAP to simulate video game menu**<br/>
+**Explanation :**
+
+In a `Line no 6` we declare one variable which name has `i` and store value `10`, datatype is `integer`. <br/>
+In a `Line no 7` `do` is a keyword.<br/>
+In a `Line no 8` Start body of do-while loop .<br/>
+In a `Line no 9` print `i` variable using `cout` `\n` is used to new line. <br/>
+In a `Line no 10 increase value of `i`by one.<br/>
+In a`Line no 11`ends body of while loop .<br/>
+In a`Line no 12` `while(i<=5)` `while`is keyword, check condition`i<=5`. <br/>
+
+**Example 5 :**
+
+```cpp showLineNumbers = "true"
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i=10;
+    do
+    {
+      cout<<i<<"\n";
+      i++;
+    }
+    while(i<=10);
+
+    return 0;
+}
+```
+
+**Output :**
+
+> 1<br/>
+> 2<br/>
+> 3<br/>
+> 4<br/>
+> .<br/>
+> .<br/>
+> 10<br/>
+
+**Explanation :**
+
+In a `Line no 6` we declare one variable which name has `i` and store value `10`, datatype is `integer`. <br/>
+In a `Line no 7` `do` is a keyword.<br/>
+In a `Line no 8` Start body of do-while loop .<br/>
+In a `Line no 9` print `i` variable using `cout` `\n` is used to new line. <br/>
+In a `Line no 10 increase value of `i`by one.<br/>
+In a`Line no 11`ends body of while loop .<br/>
+In a`Line no 12` `while(i<=5)` `while`is keyword, check condition`i<=5`. <br/>
+
+**Example 6 : WAP to simulate video game menu**<br/>
 1---> New Game<br/>
 2---> Resume<br/>
 3---> Settings<br/>
 4---> Exit<br/>
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -249,7 +279,7 @@ int main() {
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
 > ####### Video Game #######<br/>
 > 1 => New Game<br/>
@@ -272,3 +302,7 @@ int main() {
 > 3<br/>
 > Select Settings...<br/><br/>
 > Do you want to continue ? (y/n)n<br/>
+
+**Difference between for, while, do-while loop :**
+
+![Alt text](loop.png)

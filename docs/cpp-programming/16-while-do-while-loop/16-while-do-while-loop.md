@@ -12,13 +12,13 @@ hide_table_of_contents: true
 2. pre-tested
 3. executes atleast zero times when condition is false .
 
-````cpp
+```cpp
 syntax:
-2.``` while(condition)
+2. while(condition)
 {// loop body start
 
 } // loop body ends
-````
+```
 
 **Example 1 :**
 
@@ -150,7 +150,7 @@ In a `Line no 15` ends body of while loop .<br/>
 2. post tested
 3. it executes atleast once even if condition is false .
 
-````cpp
+```cpp
 syntax:
 3. do
 {//  start
@@ -159,7 +159,7 @@ syntax:
 
 } //  ends
 while(condition);
-
+```
 
 **Example 4 :**
 
@@ -179,7 +179,7 @@ int main() {
 
     return 0;
 }
-````
+```
 
 **Output :**
 
@@ -305,4 +305,9 @@ int main() {
 
 **Difference between for, while, do-while loop :**
 
-![Alt text](loop.png)
+| for                                                                           | while                                                            | do-while                                                |
+| ----------------------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------- |
+| syntax: for(initialization;condition;inc/dec)                                 | syntax: while(condition){ //statements; }                        | syntax: do{ //statements; } while(condition);           |
+| Entry controlled loop                                                         | Entry controlled loop                                            | Exist controlled loop                                   |
+| It executes atleast zero times, when condition is false                       | It executes atleast zero times, when condition is false          | It executes atleast once times, when condition is false |
+| The for loop is used for definite loops when the number of iteration is known | The while loop is used when the number of iteration is not known |

@@ -1,3 +1,108 @@
+**💻Example 4️⃣:**
+
+```cpp
+    #include <iostream>
+    using namespace std;
+    int main() {
+
+        int marks[3];
+
+        cout<<"Enter number 0: ";
+        cin>>marks[0];
+
+        cout<<"Enter number 1: ";
+        cin>>marks[1];
+
+        cout<<"Enter number 2: ";
+        cin>>marks[2];
+
+        cout<<"Number0 => "<<marks[0]<<endl;
+        cout<<"Number1 => "<<marks[1]<<endl;
+        cout<<"Number2 => "<<marks[2]<<endl;
+
+        return 0;
+    }
+```
+
+**⚙️ Output :**
+
+> Enter number 0: 5<br/>
+> Enter number 1: 10<br/>
+> Enter number 2: 15<br/>
+> Number0 => 5<br/>
+> Number1 => 10<br/>
+> Number2 => 15<br/>
+
+**💻Example 5️⃣:**
+
+```cpp
+    #include <iostream>
+    using namespace std;
+    int main() {
+
+        int marks[3];
+
+        for(int i=0; i<3; i++)
+        {
+        cout<<"Enter number"<<i<<": ";
+        cin>>marks[i];
+        }
+
+
+        for(int i=0; i<3; i++){
+           cout<<"Number"<<i<<" =>"<<marks[i]<<endl;
+        }
+
+        return 0;
+    }
+```
+
+**⚙️ Output :**
+
+> Enter number 0: 5<br/>
+> Enter number 1: 10<br/>
+> Enter number 2: 15<br/>
+> Number0 => 5<br/>
+> Number1 => 10<br/>
+> Number2 => 15<br/>
+
+**💻Example 6️⃣:**
+
+```cpp
+    #include <iostream>
+    using namespace std;
+    int main() {
+
+        int marks[5];
+
+        for(int i=0; i<5; i++)
+        {
+        cout<<"Enter number"<<i<<": ";
+        cin>>marks[i];
+        }
+
+
+        for(int i=0; i<5; i++){
+           cout<<"Number"<<i<<" =>"<<marks[i]<<endl;
+        }
+
+        return 0;
+    }
+```
+
+**⚙️ Output :**
+
+> Enter number 0: 5<br/>
+> Enter number 1: 10<br/>
+> Enter number 2: 15<br/>
+> Enter number 2: 20<br/>
+> Enter number 2: 25<br/>
+> Number0 => 5<br/>
+> Number1 => 10<br/>
+> Number2 => 15<br/>
+> Number3 => 20<br/>
+> Number4 => 25<br/>
+
 # Array Example
 
 1. Write a program to calculate sum of elements present in array.

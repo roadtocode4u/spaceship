@@ -43,5 +43,5 @@ Initialized array that name has `arr`, size of is 5, datatype is `int`.<br/>
 we use for loop `for(int i=0; i<5; i++)` and check condition and increase value by one.<br/>
 `arr[i]` using `cin` object.<br/>
 `Values are :` and `arr[i]` using cout object.<br/>
-we use for loop for reverse array `for(int i=4; i>=0; i--)` check conditon and decrease by one.<br>
+we use for loop for reverse array `for(int i=4; i>=0; i--)` check conditon and decrease by one.<br/>
 Print value of `arr[i]` and `, `using `cout`.<br/>

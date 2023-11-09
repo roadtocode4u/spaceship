@@ -1,3 +1,9 @@
+---
+title: Ascii-and-string
+description: "Ascii-and-string"
+hide_table_of_contents: true
+---
+
 ## ASCII and String Operations
 
 ASCII (American Standard Code for Information Interchange)
@@ -23,18 +29,16 @@ c -> 99
 z -> 122
 ```
 
-**Example :**
+**Example : 1**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
 int main() {
     char alpha = 'A';
 
-    int val = alpha;
-    cout<<"Char: "<<alpha<<endl;
-    cout<<"ASCII: "<<val;
+    cout<<"Char : "<<alpha;
 
     return 0;
 }
@@ -42,18 +46,82 @@ int main() {
 
 **Output :**
 
-> Char: A<br  />
-> ASCII: 65
+> Char: A <br/>
 
-**Example :**
+**Explanation :**
 
-```cpp
+In a `line no 5` we declare one variable that name has `alpha` and store `A` character, datatype is `char`.<br/>
+print `Char : ` and `alpha` variable using `cout`.<br/>
+
+**Example : 2**
+
+```cpp showLineNumbers = "true"
+#include <iostream>
+using namespace std;
+
+int main() {
+    char alpha = 'A';
+    int val = alpha;
+
+    cout<<"Char: "<<alpha<<endl;
+    cout<<"ASCII :"<<val;
+
+    return 0;
+}
+
+```
+
+**Output :**
+
+> Char: A <br/>
+> ASCII :65
+
+**Explanation :**
+
+In a `line no 5` we declare one variable that name has `alpha` and store `A` character, datatype is `char`.<br/>
+In a `Line no 6` we declare `int` variable that name has `val`, store value of `alpha` variable.<br/>
+print `Char : ` and `alpha` variable using `cout`, `endl` for new line.<br/>
+print `ASCII : ` and `val` variable using `cout`.
+
+**Example : 3**
+
+```cpp showLineNumbers = "true"
+#include <iostream>
+using namespace std;
+
+int main() {
+    char alpha = 'b';
+    int val = alpha;
+
+    cout<<"Char: "<<alpha<<endl;
+    cout<<"ASCII :"<<val;
+
+    return 0;
+}
+
+```
+
+**Output :**
+
+> Char: b <br/>
+> ASCII :98
+
+**Explanation :**
+
+In a `line no 5` we declare one variable that name has `alpha` and store `b` character, datatype is `char`.<br/>
+In a `Line no 6` we declare `int` variable that name has `val`, store value of `alpha` variable.<br/>
+print `Char : ` and `alpha` variable using `cout`, `endl` for new line.<br/>
+print `ASCII : ` and `val` variable using `cout`.
+
+**Example : 4**
+
+```cpp showLineNumbers = "true"
    #include <iostream>
 using namespace std;
 
 int main() {
 
-int ascii = 65;
+int ascii = 99;
 
 char alpha = ascii;
 
@@ -66,107 +134,15 @@ cout<<"Char: "<<alpha;
 
 **Output :**
 
-> ASCII: 65<br  />
-> Char: A
+> ASCII: 99<br  />
+> Char: c
 
-**Example :**
+**Explanation :**
 
-```cpp
-  #include <iostream>
-using namespace std;
-
-int main() {
-
-int ascii = 90;
-
-cout<<char(ascii);
-
-    return 0;
-}
-```
-
-**Output :**
-
-> Z
-
-**💻Example 4:**
-
-```cpp
- #include <iostream>
-using namespace std;
-
-int main() {
-    char alpha = 'B';
-
-    cout<<int(alpha);
-
-    return 0;
-}
-```
-
-**Output :**
-
-> 66
-
-**How to find out length of a string**
-
-```cpp
-string name = "RTC";
-
-     0  1  2    3
-     |  |  |    |
-    [R][T][C]['\0']
-```
-
-**Example :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-
-   string name = "RTC";
-
-   cout<<name.length();
-
-    return 0;
-}
-```
-
-**Output :**
-
-> 3
-
-**💻Example :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main()
-{
-
-   string name = "RTC";
-
-   int count = 0;
-   while(true)
-   {
-       cout<<name[count];
-       count++;
-
-       if(name[count]=='\0'){
-           break;
-       }
-   }
-
-    return 0;
-}
-```
-
-**Output :**
-
-> RTC
+In a `line no 5` we declare one variable that name has `ascii` and store `99` character, datatype is `int`.<br/>
+In a `line no 7` we declare `char` variable and store value of `ascii` variable.<br/>
+print `ASCII : ` and `ascii` variable using `cout`, `endl` for new line.<br/>
+print `Char : ` and `alpha` variable using `cout`.
 
 **How to convert capital letter into small.**
 
@@ -175,7 +151,115 @@ capital -> small
 A -> a
 cap ascii + 32 => small
 65 + 32 => 97
+97 <= a
 ```
+
+**Example : 5**
+
+```cpp showLineNumbers = "true"
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    char capital;
+    cout<<"Enter Capital: ";
+    cin>>capital;
+
+    char small = capital + 32;
+    cout<<small;
+
+    return 0;
+}
+```
+
+**Output :**
+
+> Enter Capital : B<br/>
+> b
+
+**Explanation :**
+
+In a `Line no 5` we declare one variable that name has `capital`, datatype is `char`.<br/>
+Print `Enter Capital: ` from user using `cout`.<br/>
+store value of capatial using `cin`<br/>
+We declare `small` variable and store `capatial + 32` <br/>
+print `small` variable using `cout`<br/>
+
+**Example : 6**
+
+```cpp showLineNumbers = "true"
+#include <iostream>
+using namespace std;
+
+int main() {
+     string name;
+     cout<<"Enter Capital Name: "<<endl;
+     cin>>name;
+
+     int i = 0;
+
+     while(name[i]!='\0')
+     {
+        name[i] = name[i]+32;
+        i++;
+     }
+
+     cout<<"Small Letter is :"<<name;
+
+}
+```
+
+**Output :**
+
+> Enter Capital Name : ACHAL<br/>
+> Small Letter is : achal
+
+**Explanation :**
+
+In a `Line no 5` we declare one variable that name has `name`, datatype is `string`.<br/>
+print "Enter Capital Name: "from user using `cout`.<br/>
+initialised `i` variablle store value `0`, datatype is `int`.<br/>
+Start `while` loop and check condition (name[i]!='\0').<br/>
+we declare array `name[i]` and store value of `name[i]+32 `.<br/>
+Print `Small Letter is :` and `name` variable using `cout`.<br/>
+
+**Example : 7**
+
+```cpp showLineNumbers = "true"
+#include <iostream>
+using namespace std;
+
+int main() {
+     string name;
+     cout"<<Enter Capital Name: "<<endl;
+
+     int i = 0;
+
+     while(name[i]!='\0')
+     {
+        name[i] = name[i]+32;
+        i++;
+     }
+
+     cout<<"Small Letter is :"<<name;
+
+}
+```
+
+**Output :**
+
+> Enter Capital Name : HELLO<br/>
+> Small Letter is : hello
+
+**Explanation :**
+
+In a `Line no 5` we declare one variable that name has `name`, datatype is `string`.<br/>
+print "Enter Capital Name: "from user using `cout`.<br/>
+initialised `i` variablle store value `0`, datatype is `int`.<br/>
+Start `while` loop and check condition (name[i]!='\0').<br/>
+we declare array `name[i]` and store value of `name[i]+32 `.<br/>
+Print `Small Letter is :` and `name` variable using `cout`.<br/>
 
 **WAP to convert small letter into capital.**
 
@@ -186,60 +270,52 @@ small-ascii - 32 => cap ascii
 100 - 32 => 97
 ```
 
-**Example :**
+**Example : 8**
 
-```cpp
-int main() {
-
-    string name;
-    cout<<"Enter small name: ";
-    cin>>name;
-
-    int i=0;
-
-    while(name[i]!='\0')
-    {
-        int curr_char = name[i];
-        curr_char = curr_char - 32;
-        name[i] = curr_char;
-
-        i++;
-    }
-
-    cout<<"Capital Letter is: "<<name;
-    return 0;
-}
-```
-
-**⚙️ Output :**
-
-> Enter small name: hello<br  />
-> Capital Letter is: HELLO
-
-**Example :**
-
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
 int main() {
 
+    char small;
+    cout<<"Enter Small: ";
+    cin>>small;
+
+    char capital = small - 32;
+    cout<<capital;
+
+    return 0;
+}
+```
+
+**Output :**
+
+> Enter Capital : a<br/>
+> A
+
+**Explanation :**
+
+In a `Line no 5` we declare one variable that name has `small`, datatype is `char`.<br/>
+Print `Enter small: ` from user using `cout`.<br/>
+store value of small using `cin`<br/>
+We declare `capatial` variable and store `small - 32` <br/>
+print `capital` variable using `cout`<br/>
+
+**Example : 9**
+
+```cpp showLineNumbers = "true"
+int main() {
+
     string name;
-    cout<<"Enter small name: ";
+    cout<<"Enter Small Name: ";
     cin>>name;
 
     int i=0;
 
     while(name[i]!='\0')
     {
-        int curr_char = name[i];
-
-        if(curr_char>=97 && curr_char<=122)
-        {
-        curr_char = curr_char - 32;
-        }
-        name[i] = curr_char;
-
+        name[i] = name[i]-32;
         i++;
     }
 
@@ -250,5 +326,14 @@ int main() {
 
 **Output :**
 
-> Enter small name: abcd<br  />
-> Capital Letter is: ABCD
+> Enter small name: hello<br  />
+> Capital Letter is: HELLO
+
+**Explanation :**
+
+In a `Line no 5` we declare one variable that name has `name`, datatype is `string`.<br/>
+print "Enter Small Name: "from user using `cout`.<br/>
+initialised `i` variablle store value `0`, datatype is `int`.<br/>
+Start `while` loop and check condition (name[i]!='\0').<br/>
+we declare array `name[i]` and store value of `name[i]-32 `.<br/>
+Print `Small Letter is :` and `name` variable using `cout`.<br/>

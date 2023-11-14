@@ -15,6 +15,7 @@ Operators are used to perform certain operations on one or more values or variab
 3. Increment & Decrement operators
 4. Comparison operators (<, >, <=, >=, ==, !=)
 5. Logical operators (&& (logical AND), || (logical OR), ! (logical NOT))
+6. Modulus operator
 
 ### Arithmetic Operators
 
@@ -724,6 +725,31 @@ If the operand is true, it returns false, and if the operand is false, it return
 
 In the above code will gives output `true` this is because the `!` (NOT) operator negates the boolean value of its operand. In this case, the operand is `8 == 5`, which evaluates to `false`. Therefore, the `!` operator negates this value to `true`.
 
+### Modulus Operators: 
+
+The **modulus operator** is represented by the percent sign `%`. The modulus operator returns the `remainder` of a division operation. It is often used with integers, but it can also be used with floating-point numbers.
+
+**Code**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello JS 💛</title>
+    <script>
+     const result = 10 % 3;
+     document.write(result);
+    </script>
+  </head>
+  <body></body>
+</html>
+```
+
+**Output**
+
+>1
+
+In this example, `10 % 3` is calculating the remainder when 10 is divided by 3. The result is 1 because 10 divided by 3 is 3 with a remainder of 1.
 
 
 

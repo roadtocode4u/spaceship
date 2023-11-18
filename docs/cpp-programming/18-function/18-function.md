@@ -1,3 +1,9 @@
+---
+title: function in cpp
+description: "function in cpp"
+hide_table_of_contents: true
+---
+
 ## Functions
 
 **A function in C++ refers to a group of statements that takes input, processes it, and returns an output.**
@@ -5,250 +11,241 @@
 ## Features of function in C++
 
 - Re-usability
-- Structural flow
-
-## Addition of two numbers without using function
-
-**💻 Example 1 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-int main() {
-
-    int l1=5, b1=8;
-    int p1 = 2 * (l1+b1);
-    cout<<"Rectangle 1: "<<p1<<endl;
-
-    int l2=5, b2=4;
-    int p2 = 2 * (l2+b2);
-    cout<<"Rectangle 2: "<<p2<<endl;
-
-    return 0;
-}
-```
-
-**⚙️ Output :**
-
-> Rectangle 1: 26<br/>
-> Rectangle 2: 18
+- write once use multiple times
 
 **Syntax :**
 
-```cpp
-returntype functionname(parameter)
-{ <- body start
+```
+<Returntype> functionName(Parameter)
+{ //start fun body
 
-} <- body end
+    return <value of return type>
 
+}//end fun body
+
+void = nothing/empty
 ```
 
-## Write a program to find the perimeter of a rectangle
+**There are Two type of Function**
 
-**💻 Example 2 :**
+1. Inbuild
 
-```cpp
+2. User defined
+
+**Example 1 :**
+
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
-void cal_perimeter(int l, int b)
+// Function Defination
+void sayHello()
 {
-    int perimeter = 2* (l+b);
-    cout<<"Perimeter: "<<perimeter<<endl;
+    cout<<"Hello"<<endl;
 }
 
 int main(){
 
-    int l1=5, b1=8;
-    cal_perimeter(l1, b1);
+    // Function Call
+    sayHello();
+    return 0;
+}
+```
 
-    int l2=5, b2=4;
-    cal_perimeter(l2, b2);
+**Output :**
+
+> Hello
+
+**Explanation :**
+
+In a `Line no 4` we pass comment `// Function Defination`.<br/>
+In a `Line no 5` create user defined function that name has `sayHello()` .<br/>
+print message `Hello` using cout.<br/>
+In a `Line no 12` we pass comment `// Function Call`.<br/>
+In main function we call `sayHello()` function.<br/>
+
+**Example 2 :**
+
+```cpp showLineNumbers = "true"
+#include <iostream>
+using namespace std;
+
+// Function Defination
+void sayHello()
+{
+    cout<<"Hello"<<endl;
+}
+
+int main(){
+
+    // Function Call
+    sayHello();
+    sayHello();
+    sayHello();
+    return 0;
+}
+```
+
+**Output :**
+
+> Hello<br/>
+> Hello<br/>
+> Hello<br/>
+
+**Explanation :**
+
+In a `Line no 4` we pass comment `// Function Defination`.<br/>
+In a `Line no 5` create user defined function that name has `sayHello()` .<br/>
+print message `Hello` using cout.<br/>
+In a `Line no 12` we pass comment `// Function Call`.<br/>
+In main function we call 3 times `sayHello()` function.<br/>
+
+**Wap to print Suare of number using user-defined function.**
+
+**Example 3 :**
+
+```cpp showLineNumbers = "true"
+#include <iostream>
+using namespace std;
+
+// Function Defination
+void calsquare(int num)
+{
+    int square = num * num;
+    cout<<"Square :"<<square;
+}
+
+int main(){
+
+     // Function Call
+    calsquare(10);
 
     return 0;
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
-> Perimeter: 26<br/>
-> Perimeter: 18
+> Square : 100
 
-## How to return value from function in C++
+**Explanation :**
 
-**💻 Example 3 :**
+In a `Line no 4` we pass comment `// Function Defination`.<br/>
+In a `Line no 5` create user defined function that name has `calsquare()` and pass one parameter `(int num)` .<br/>
+Declare `int` variable that name has `square` and store `num * num`.<br/>
+print `Square : ` and `square` variable.<br/>
+In a `Line no 12` we pass comment `// Function Call`.<br/>
+In main function we call `calsquare(10);` function and pass `10` value.<br/>
 
-```cpp
+**Example 4 :**
 
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
-int cal_perimeter(int l, int b)
+// Function Defination
+void calsquare(int num)
 {
-    int perimeter = 2* (l+b);
-    return perimeter;
+    int square = num * num;
+    cout<<"Square :"<<square;
 }
 
 int main(){
 
-    int l1=5, b1=8;
-    int p1 = cal_perimeter(l1, b1);
-    cout<<"Perimeter of first rectangle: "<<p1<<endl;
-
-    int l2=5, b2=4;
-    int p2 = cal_perimeter(l2, b2);
-    cout<<"Boundry of second rectangle: "<<p2<<endl;
-
-    return 0;
-}
-
-```
-
-**⚙️ Output :**
-
-> Perimeter of first rectangle: 26<br/>
-> Boundry of second rectangle: 18
-
-## There are 4 types of functions:
-
-- Functions with arguments and return values.
-- Functions with arguments and without return values.
-- Functions without arguments and with return values.
-- Functions without arguments and without return values.
-
-<br/>
-
-**Functions with arguments and return values.**
-
-**💻 Example 4 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int cal_square(int num)
-{
-    int sq = num * num;
-    return sq;
-}
-
-int main(){
-
-    int n;
-    cout<<"Enter number: ";
-    cin>>n;
-
-    int ans = cal_square(n);
-
-    cout<<"Ans: "<<ans;
+     // Function Call
+    calsquare(10);
+    calsquare(5);
+    calsquare(8);
 
     return 0;
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
-> Enter number: 8<br/>
-> Ans: 64
+> Square : 100<br/>
+> Square : 25<br/>
+> Square : 64<br/>
 
-<br/>
+**Explanation :**
 
-**Functions with arguments and without return values.**
+In a `Line no 4` we pass comment `// Function Defination`.<br/>
+In a `Line no 5` create user defined function that name has `calsquare()` and pass one parameter `(int num)` .<br/>
+Declare `int` variable that name has `square` and store `num * num`.<br/>
+print `Square : ` and `square` variable.<br/>
+In a `Line no 12` we pass comment `// Function Call`.<br/>
+In main function we call 3 times `calsquare()` function and pass 3 different value.<br/>
 
-**💻 Example 5 :**
+**Wap to print addition of two number using user-defined function.**
 
-```cpp
+**Example 6 :**
+
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
-void cal_square(int num)
+// Function Defination
+void addTwoNum(int a, int b)
 {
-    int sq = num * num;
-    cout<<"Ans: "<<sq;
+    int sum = a + b;
+    cout<<"Sum : "<<sum<<endl;
 }
 
 int main(){
 
-    int n;
-    cout<<"Enter number: ";
-    cin>>n;
-
-    cal_square(n);
+    // Function Call
+   addTwoNum(10, 20);
 
     return 0;
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
-> Enter number: 5<br/>
-> Ans: 25
+> Sum : 30
 
-<br/>
+**Explanation :**
 
-**Functions without arguments and with return values.**
+In a `Line no 4` we pass comment `// Function Defination`.<br/>
+In a `Line no 5` create user defined function that name has `addTwoNum()` and pass two parameter `(int a, int b)` .<br/>
+Declare `int` variable that name has `sum` and store `a + b`.<br/>
+print `Sum : ` and `sum` variable.<br/>
+In a `Line no 12` we pass comment `// Function Call`.<br/>
+In main function we call `addTwoNum(10, 20);` function and pass `10 and 20` value.<br/>
 
-**💻 Example 6 :**
+**Example 7 :**
 
-```cpp
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
-int cal_square()
+// Function Defination
+void addTwoNum(int a, int b)
 {
-    int num;
-    cout<<"Enter number: ";
-    cin>>num;
-
-    int sq = num * num;
-    return sq;
+    int sum = a + b;
+    cout<<"Sum : "<<sum<<endl;
 }
 
 int main(){
 
-   int ans = cal_square();
-
-   cout<<"Ans: "<<ans;
+     // Function Call
+   addTwoNum(10, 20);
+   addTwoNum(100, 5);
 
     return 0;
 }
 ```
 
-**⚙️ Output :**
+**Output :**
 
-> Enter number: 5
-> Ans: 25
+> Sum : 30<br/>
+> Sum : 105
 
-<br/>
+**Explanation :**
 
-**Functions without arguments and without return values.**
-
-**💻 Example 7 :**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int cal_square()
-{
-    int num;
-    cout<<"Enter number: ";
-    cin>>num;
-
-    int sq = num * num;
-
-    cout<<"Ans: "<<sq<<endl;
-}
-
-int main(){
-
-   cal_square();
-
-    return 0;
-}
-```
-
-**⚙️ Output :**
-
-> Enter number: 8<br/>
-> Ans: 64
+In a `Line no 4` we pass comment `// Function Defination`.<br/>
+In a `Line no 5` create user defined function that name has `addTwoNum()` and pass two parameter `(int a, int b)` .<br/>
+Declare `int` variable that name has `sum` and store `a + b`.<br/>
+print `Sum : ` and `sum` variable.<br/>
+In a `Line no 12` we pass comment `// Function Call`.<br/>
+In main function we call `addTwoNum(10, 20)` function and pass 2 different value(10, 20).<br/>

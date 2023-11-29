@@ -7,7 +7,7 @@ hide_table_of_contents: true
 
 ### Template String 
 
-Template strings, also known as template literals, are a way to create strings in JavaScript that allows for easy embedding of variables and expressions. They are enclosed by backticks (\`\`) and allow placeholders `${}` to insert variables or expressions directly into the string.
+Template strings is a way to create strings in JavaScript that allows for easy embedding of variables and expressions. They are enclosed by backticks (\`\`) and allow placeholders `${}` to insert variables or expressions directly into the string.
 
  **Basic Usage**
 

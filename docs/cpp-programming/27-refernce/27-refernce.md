@@ -1,121 +1,131 @@
+---
+title: Ireference
+description: "Ireference"
+hide_table_of_contents: true
+---
+
 # Reference
 
-**Example :**
+**Call by value**<br/>
+**Call by address**<br/>
+**Call by reference**<br/>
 
-```cpp
-    #include <iostream>
-    using namespace std;
-    int main() {
+### Call by value
 
-      int b = 10;
+**Example 1:**
 
-      int& a = b;
+```cpp showLineNumbers = "true"
+// call by value
+#include <iostream>
+using namespace std;
 
-      cout<<"a: "<<a<<endl;
-
-      cout<<"b: "<<b<<endl;
-
-
-        return 0;
-    }
-```
-
-**⚙️ Output :**
-
-> a: 10<br/>
-> b: 10
-
-**💻Example 2:**
-
-```cpp
-    #include <iostream>
-    using namespace std;
-    int main() {
-
-      int b = 10;
-
-      int& a = b;
-
-      a=40;
-
-      cout<<"a: "<<a<<endl;
-
-      cout<<"b: "<<b<<endl;
-
-       return 0;
-    }
-```
-
-**⚙️ Output :**
-
-> a: 40<br/>
-> b: 40
-
-**💻Example 3:**
-
-```cpp
-    #include <iostream>
-    using namespace std;
-    int main() {
-
-      int a = 10;
-
-      int b = a;
-
-      cout<<"Before changes: ";
-      cout<<<<a<<endl;
-      cout<<<<b<<endl;
-
-      b = 50;
-
-      cout<<"After changes: ";
-      cout<<<<a<<endl;
-      cout<<"b: "<<b<<endl;
-
-        return 0;
-    }
-```
-
-**⚙️ Output :**
-
-> Before changes: 10<br/>
-> 10
-> Before changes: 50<br/>
-> 50
-
-```cpp
-int a;
-
-fun(int b)
+void fun(int num)
 {
-    b = 100;
+    num = num + 2;
+    cout<<"Inside function "<<num<<endl;
+}
+int main() {
+
+    int num = 10,
+    cout<<"Before function :"<<num<<endl;
+
+   fun(num);
+    cout<<"After function :"<<num<<endl;
+
+    return 0;
+}
+
+```
+
+**Output :**
+
+> Before function : 10<br/>
+> Inside function : 12<br/>
+> After function : 10
+
+**Expalantion**
+
+create function `fun` pass parameter `num`.<br/>
+calculate `num = num + 2`.<br/>
+print `Inside function` and `num`.<br/>
+In main function initialize `num` variable and store `10` value.<br/>
+print `Before function ` and `num`.<br/>
+call `fun` funaction pass argument `num`.<br/>
+print `After function` and `num`.<br/>
+
+### Call by address
+
+**Example 2:**
+
+```cpp showLineNumbers = "true"
+
+//call by address
+#include <iostream>
+using namespace std;
+
+
+void fun(int *num)
+{
+    *num = *num + 2;
+
+    cout<<"Inside function :"<<*num<<endl;
+}
+int main() {
+
+    int num = 10
+    cout<<"Before function :"<<num<<endl;
+    fun(&num);
+    cout<<"After function "<<num<<endl;
+
+    return 0;
 }
 ```
 
-**💻Example 4:**
+**Output :**
 
-```cpp
-    #include <iostream>
-    using namespace std;
+> Before function : 10<br/>
+> Inside function : 12<br/>
+> After function : 10
 
-    void square(int& num)
-    {
-        num = num * num;
-    }
-    int main() {
+**Expalantion**
 
-        int n;
-        cout<<"Enter n ";
-        cin>>n;
+create function `fun` pass parameter `*num`.<br/>
+calculate `*num = *num + 2`.<br/>
+print `Inside function` and `*num`.<br/>
+In main function initialize `num` variable and store `10` value.<br/>
+print `Before function ` and `&num`.<br/>
+call `fun` funaction pass argument `num`.<br/>
+print `After function` and `num`.<br/>
 
-        square(n);
+### Call by reference
 
-        cout<<"Square is: "<<n;
-        return 0;
-    }
+**Example 3:**
+
+```cpp showLineNumbers = "true"
+
+//call by reference
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int a = 10;
+    int& b = a;
+    cout<<a<<endl;
+    cout<<b;
+
+    return 0;
+}
 ```
 
-**⚙️ Output :**
+**Output :**
 
-> Enter n: 5<br/>
-> Square is: 25
+> 10<br/>
+> 10<br/>
+
+**Expalantion**
+
+Initialise `a` variable and store `10` value. <br/>
+Initialise `b` variable and store refrence of `a`.<br/>
+print `a` `endl` for new line.<br/>
+print `b`.

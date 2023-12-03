@@ -1,3 +1,9 @@
+---
+title: class-object
+description: "class-object"
+hide_table_of_contents: true
+---
+
 # Class and Objects
 
 ### Class
@@ -6,11 +12,34 @@ A class is a user-defined data type that we can use in our program, and it works
 
 ```cpp
 
-Variables => To store data
+data members -> storage -> variable
 
-Access Specifiers => access specifiers
+member function -> to perform operation -> function
 
-Functions => processing on variables
+```
+
+```cpp
+int roll;   //data members
+string name;
+
+void display() // member functions
+{
+    information
+}
+```
+
+### How to create class?
+
+```cpp
+
+class <className>
+{
+    public :   <-//access specifiers
+    //data members
+    int roll;
+    // member functions
+    void show(){ }
+};
 
 ```
 
@@ -20,47 +49,67 @@ Functions => processing on variables
 - Private
 - Protected
 
-### How to declare class?
-
-```cpp
-
-class className
-{
-    //access specifiers
-    //variable
-    //functions
-};
-
-```
-
-```cpp
-class student
+```cpp showLineNumbers = "true"
+class Student  // create class
 {
     public:
     int roll;
-    string studName;
 
     void show () {
-        --------
-        --------
+        cout<<"Your roll number is : "<<roll<<endl;
+
     }
 }
 
 ```
 
-### How to declare object ?
+### How to create object ?
 
 ```cpp
-student stud;
+classname objectName;
+
 ```
 
-### Dot operator :
+```cpp showLineNumbers = "true"
+class Student // create class
+{
+    public:
+    int roll;
 
-Dot operator is used to access class, structure, or union members.
+    void show () {
+        cout<<"Your roll number is : "<<roll<<endl;
 
-_💻Example 1:_
+    }
+}
+int main(){
+    Student s1, s2;  //create object
 
-```cpp
+    s1.roll = 123;
+    s2.roll = 567;
+
+    s1.show();
+    s2.show();
+}
+
+```
+
+**Output :**
+
+> Your roll number is : 123<br/>
+> Your roll number is : 567
+
+**Explanation :**
+
+Create a class Student, write access specifier public, declare 1 datamember roll.<br/>
+create a show() function member and print `Your roll number is : ` and roll variable.<br/>
+In main function create object of Student class s1 and s2.<br/>
+pass value in object s1.roll = 123<br/>
+pass value in object s2.roll = 567<br/>
+using object call show() function<br/>
+
+_Example 1:_
+
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
@@ -68,210 +117,107 @@ class Student
 {
     public:
 
-    int roll;
-    string studName;
+    int age;
+    string name;
+
+    void getData()
+    {
+        cout<<"Enter Name :";
+        cin>>name;
+        cout<<"Enter Your age :";
+        cout>>age;
+    }
+     void showData()
+     {
+        cout<<"Name  :"<<name<<"Age : "<<age;<<endl;
+     }
 
 
 };
 int main() {
 
     Student s1;
-    s1.roll = 123;
-    s1.studName = "Suraj";
+    s1.getData();
+    s2.getData();
 
-    cout<<s1.roll<<endl;
-    cout<<s1.studName;
+    s1.showData();
+    s2.showData();
 
     return 0;
 }
 ```
 
-_⚙️ Output :_
+_Output :_
 
-> 123<br/>
-> Suraj
+> Enter Name : Ayesha <br/>
+> Enter Your age :20<br/>
+> Name : Ayesha Age : 20<br/>
+> Enter Name : Harshal <br/>
+> Enter Your age :20<br/>
+> Name : Harshal Age : 20<br/>
 
-_💻Example 2:_
+**Explanation :**
 
-```cpp
+Create a class Student, write access specifier public, declare 2 datamember age and name.<br/>
+create a getdata() function and print `Enter name and age` <br/>
+create a showData() function and print name and variable, age and variable
+In main function create object of Student class s1 and s2.<br/>
+using object call getData() and showData()
+
+_Example 2:_
+
+```cpp showLineNumbers = "true"
 #include <iostream>
 using namespace std;
 
-class Student
+class Rectangle
 {
     public:
 
-    int roll;
-    string studName;
+    int length;
+    int breadth;
+
+    void getData()
+    {
+        cout<<"Enter Length and Breadth :";
+        cin>>length>>breadth;
+        cout<<endl;
+
+    }
+    void calculateArea()
+    {
+        int area = length * breadth;
+        cout<<"Area : "<<area;
+        cout<<endl;
+    }
 
 };
 int main() {
 
-    Student s1, s2;
+    Rectangle r1, r2;
 
-    s1.roll = 123;
-    s1.studName = "Suraj";
+    r1.getData();
+    r1.calculateArea();
 
-    s2.roll = 456;
-    s2.studName = "Vaibhavi";
+    r2.getData();
+    r2.calculateArea();
 
-    cout<<s1.roll<<endl;
-    cout<<s1.studName<<endl;
 
-    cout<<s2.roll<<endl;
-    cout<<s2.studName<<endl;
 
     return 0;
 }
 ```
 
-_⚙️ Output :_
+_Output :_
 
-> 123<br/>
-> Suraj<br/>
-> 456<br/>
-> Vaibhavi<br/>
+> Enter Length and Breadth : 20 10<br/>
+> Area : 200<br/>
+> Enter Length and Breadth :10 10 <br/>
+> Area : 100
 
-**This**
+**Explanation :**
 
-It is a special keyword which stores address of instance current class.
-
-_💻Example 3:_
-
-```cpp
-#include <iostream>
-using namespace std;
-
-class Student
-{
-    public:
-
-    int roll;
-    string studName;
-
-    void showDetail()
-    {
-        cout<<"\nStudent detail is: "<<endl;
-        cout<<"Name: "<<this->studName<<endl;
-        cout<<"Roll: "<<this->roll<<endl;
-    }
-};
-int main() {
-
-    Student s1, s2;
-
-    s1.roll = 123;
-    s1.studName = "Suraj";
-
-    s2.roll = 456;
-    s2.studName = "Vaibhavi";
-
-    s1.showDetail();
-
-    s2.showDetail();
-    return 0;
-}
-```
-
-_⚙️ Output :_
-
-> Student detail is: <br/>
-> Name: Suraj <br/>
-> Roll: 123 <br/> <br/>
-> Student detail is: <br/>
-> Name: Vaibhavi <br/>
-> Roll: 456 <br/>
-
-_💻Example 4:_
-
-```cpp
-#include <iostream>
-using namespace std;
-
-class Student
-{
-    public:
-
-    int roll;
-    string studName;
-
-    void getDetail()
-    {
-        cout<<"Please Enter Name & Roll no: ";
-        cin>>this->studName>>this->roll;
-    }
-
-    void showDetail()
-    {
-        cout<<"\nStudent detail is: "<<endl;
-        cout<<"Name: "<<this->studName<<endl;
-        cout<<"Roll: "<<this->roll<<endl;
-    }
-};
-int main() {
-
-    Student s1;
-
-    s1.getDetail();
-    s1.showDetail();
-    return 0;
-}
-```
-
-_⚙️ Output :_
-
-> Please Enter Name & Roll no: Vaibhavi 123<br/>
-> Student detail is: <br/>
-> Name: Vaibhavi<br/>
-> Roll: 123<br/>
-
-_💻Example 5:_
-
-```cpp
-#include <iostream>
-using namespace std;
-
-class Student
-{
-    public:
-
-    int roll;
-    string studName;
-
-    void getDetail()
-    {
-        cout<<"Please Enter Name & Roll no: ";
-        cin>>this->studName>>this->roll;
-    }
-
-    void showDetail()
-    {
-        cout<<"\nStudent detail is: "<<endl;
-        cout<<"Name: "<<this->studName<<endl;
-        cout<<"Roll: "<<this->roll<<endl;
-    }
-};
-int main() {
-
-    Student s1, s2;
-
-    s1.getDetail();
-    s2.getDetail();
-
-    s1.showDetail();
-    s2.showDetail();
-    return 0;
-}
-```
-
-_⚙️ Output :_
-
-> Please Enter Name & Roll no: A 1<br/>
-> Please Enter Name & Roll no: B 2<br/>
-> Student detail is: <br/>
-> Name: A<br/>
-> Roll: 1<br/>
-> <br/>
-> Student detail is: <br/>
-> Name: B<br/>
-> Roll: 2<br/>
+Create a class Rectangle, write access specifier public, declare 2 datamember length and breadth.<br/>
+create member function `calculateArea` declare `area variable` and calulate `length * breadth` and print `area`.<br/>
+In main function create object of Rectangle class r1 and r2.<br/>
+using object call getData() and calculateArea()

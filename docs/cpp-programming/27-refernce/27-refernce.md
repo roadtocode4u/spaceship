@@ -1,6 +1,6 @@
 ---
-title: Ireference
-description: "Ireference"
+title: Reference
+description: "Reference"
 hide_table_of_contents: true
 ---
 

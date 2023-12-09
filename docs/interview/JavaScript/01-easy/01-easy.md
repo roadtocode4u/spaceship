@@ -24,19 +24,9 @@ console.log(Num);
 
 **Example 2**
  ```js
-<!DOCTYPE html>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello Students</title>
-    <script>
-      let num1= 10;
-      let num2 = 10;
-      document.write(num1==num2)
-    </script>
-  </head>
-  <body></body>
-</html>
+let num1= 10;
+let num2 = 10;
+document.write(num1==num2)
  ```
 
  **Output**
@@ -48,17 +38,9 @@ console.log(Num);
 
  **Example 3**
  ```js
- <html>
-  <head>
-    <title>Hello Students</title>
-    <script>
-      let num1= 10;
-      let num2 = 10;
-      document.write(num1===num2)
-    </script>
-  </head>
-  <body></body>
-</html>
+let num1= 10;
+let num2 = 10;
+document.write(num1===num2)
  ```
 **Output**
  >true

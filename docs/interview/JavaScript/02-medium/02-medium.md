@@ -1,7 +1,7 @@
 ### JavaScript Medium
 
 <details>
-<summary>What Object destructuring in Javascript?</summary>
+<summary>What is Object destructuring in Javascript?</summary>
 
 Object destructuring is the special feature in JavaScript. It is a convenient way to extract data from JavaScript objects and assign them to the variable in more readable way. 
 
@@ -12,7 +12,7 @@ Object destructuring provides shorthand syntax to extracting value from the obje
 **Syntax :**
 
 ```js
-const { } = object-name;
+const { } = objectName;
 ```
 
 **Example :**
@@ -25,11 +25,13 @@ const student = {
     };
 
 // Without destructuring
+
 const name = student.name;
 const age = student.age;
 const city = student.city;
 
-//With destructuring
+// With destructuring
+
 const {name, age, city } = student;
 
 console.log(name);  // Output: Yogita

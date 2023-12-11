@@ -6,6 +6,7 @@ import React from "react";
 
 import TopicMenus from "../components/TopicMenus";
 import styles from "./index.module.css";
+import Adsense from "../components/Adsense/Adsense";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -28,6 +29,7 @@ export default function Home() {
     >
       <HomepageHeader />
       <main>
+        <Adsense />
         <TopicMenus />
         <HomepageFeatures />
       </main>

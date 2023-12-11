@@ -25,5 +25,23 @@ In **try** block we put possible error throwing or code block were error occure 
 
  In this way our whole execution will not be interrupted or stopped but we will handle the error safely .
 
+ ```js showLiniNumbers=true
+ try{
+    const a =10;
+    console.log(a)
+    console.log(c)
+}
+catch(e){
+    console.log(e.message)
+}
+console.log("Hi")
+
+ ```
+
+ **Output**
+
+ > 10 <br/>
+   c is not defined <br/>
+   Hi
 
 </details>

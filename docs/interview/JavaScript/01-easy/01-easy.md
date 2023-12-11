@@ -42,3 +42,9 @@ In above example  In Line no. 7  we create one variable num1 and store  80 ,In L
 
 
 </details>
+
+<details>
+  <summary>What is Ternary Operator ?</summary>
+ 
+</details>
+

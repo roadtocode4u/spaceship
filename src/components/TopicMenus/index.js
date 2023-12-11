@@ -44,6 +44,11 @@ const FeatureList = [
     path: "/docs/category/github",
   },
   {
+    title: "Interview",
+    imgSrc: "img/menu_icons/interview.png",
+    path: "/docs/category/interview",
+  },
+  {
     title: "Tips & Tools",
     imgSrc: "img/menu_icons/tips.png",
     path: "/docs/category/tips-and-tools",
@@ -67,6 +72,16 @@ const FeatureList = [
     title: "Data Structures",
     imgSrc: "img/menu_icons/dsa.png",
     path: "/docs/category/dsa",
+  },
+  {
+    title: "TypeScript",
+    imgSrc: "img/menu_icons/typescript.svg",
+    path: "/docs/category/typescript",
+  },
+  {
+    title: "AWS",
+    imgSrc: "img/menu_icons/aws.jpeg",
+    path: "/docs/category/aws",
   },
   {
     title: "Bun",

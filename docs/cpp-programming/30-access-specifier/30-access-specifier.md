@@ -1,20 +1,16 @@
 # Access Specifier
 
-The access modifiers of C++ allows us to determine which class members are accessible to other classes and functions, and which are not.
+- public
+- private
+- protected
 
-```cpp
+**public** can be access outside of the class.
 
-public:
---------
---------
-private:
---------
---------
-public:
+**private** can be accessed only from inside the class.
 
-```
+**protected** cannot be accessed from outside of the class but, can be accessed inherited class.
 
-**Example :**
+**Example : 1**
 
 ```cpp
 #include <iostream>
@@ -23,13 +19,11 @@ using namespace std;
 class Student
 {
   public:
-  string name;
-  int age;
+  int marks;
 
   void show()
   {
-      cout<<"Name: "<<this->name<<endl;
-      cout<<"Age: "<<this->age;
+      cout<<"Marks : "<<marks<<endl;
   }
 };
 int main() {

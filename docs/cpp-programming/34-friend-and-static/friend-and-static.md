@@ -1,5 +1,5 @@
 ---
-title: friend and static function
+title: friend and dtatic function
 description: "friend-and-static-function"
 hide_table_of_contents: true
 ---

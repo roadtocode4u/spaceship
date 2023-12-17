@@ -167,7 +167,7 @@ In error object their are multiple parameters like `error message` , `error name
 
 In this way our whole execution will not be interrupted or stopped but we will handle the error safely .
 
-```js showLiniNumbers=true
+````js showLiniNumbers=true
 try {
   const a = 10;
   console.log(a);
@@ -185,7 +185,7 @@ Template string is just string in Javascript. We declare template string using `
 ```js showLineNumbers=true
 let name = "RTC";
 console.log(`Hello ${name}`);
-```
+````
 
 **Output**
 
@@ -193,5 +193,26 @@ console.log(`Hello ${name}`);
 > c is not defined <br/>
 > Hi
 > Hello RTC
+
+</details>
+
+<details>
+  <summary>What is JSON?</summary>
+  JSON stands for javaScript object Notation.<br/>
+  JSON build using js Object and it representation is almost similar to object.
+  It is mandatory to keep a key in String formate i.e `" "`
+  JSON is not only limited for JS is use in any other language also like Java,Kotlin ,etc...
+  JSON is build to support transfer data to all other language as well because of its popularity in API'S
+
+```js
+
+{
+  "name":"John",
+  "age":"30",
+  "Add":"Pune",
+  "Mobile No":"7878899889"
+   }
+
+```
 
 </details>

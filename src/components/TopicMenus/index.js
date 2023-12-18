@@ -71,7 +71,7 @@ const FeatureList = [
   {
     title: "Data Structures",
     imgSrc: "img/menu_icons/dsa.png",
-    path: "/docs/category/dsa",
+    path: "/docs/category/data-structures",
   },
   {
     title: "TypeScript",

@@ -1,8 +1,6 @@
 ### HTML Easy
 
 <details>
-  <summary>What is the full form of JSON?</summary>
-
-JavaScript Object Notation
-
+  <summary>What is HTML stands for?</summary>
+  HTML stands for Hyper Text Markup Language.
 </details>

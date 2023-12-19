@@ -167,7 +167,7 @@ In error object their are multiple parameters like `error message` , `error name
 
 In this way our whole execution will not be interrupted or stopped but we will handle the error safely .
 
-````js showLiniNumbers=true
+```js showLiniNumbers=true
 try {
   const a = 10;
   console.log(a);
@@ -176,16 +176,7 @@ try {
   console.log(e.message);
 }
 console.log("Hi");
-
-  <summary>What is Template String?</summary>
-Template string is just string in Javascript. We declare template string using `(backtik)`. Now inside this template string we can inject value of variable using placeholder. And we can create placeholder using $ doller curly bracket open close and inside this placeholder we write the name of variable. So whenver We use this string along with other strings it will consider value of variable.
-
-**Example:**
-
-```js showLineNumbers=true
-let name = "RTC";
-console.log(`Hello ${name}`);
-````
+```
 
 **Output**
 
@@ -198,20 +189,65 @@ console.log(`Hello ${name}`);
 
 <details>
   <summary>What is JSON?</summary>
-  JSON stands for javaScript object Notation.<br/>
-  JSON build using js Object and it representation is almost similar to object.
-  It is mandatory to keep a key in String formate i.e `" "`
-  JSON is not only limited for JS is use in any other language also like Java,Kotlin ,etc...
-  JSON is build to support transfer data to all other language as well because of its popularity in API'S
 
-```js
+- JSON stands for `JavaScript Object Notation.`
+- JSON is oriented from JavaScript Object and it representation is almost similar to js object.
+- It is mandatory to keep a key in String formate i.e`" "`
+- JSON is not only limited for JS is use in any other language also like Java,Kotlin ,etc..
+- JSON is build to support transfer data to all other language as well because of its popularity in API'S.
 
+Simple Example of JSON
+
+```json
 {
-  "name":"John",
-  "age":"30",
-  "Add":"Pune",
-  "Mobile No":"7878899889"
-   }
+  "name": "John",
+  "age": 30,
+  "Add": "Pune",
+  "Mobile No": 7878899889
+}
+```
+
+- In JSON object we can add another object(nested object) also. Let's see a simple example of JSON object having another object.
+
+```json
+{
+  "Institute Name": "Road To Code",
+  "address": {
+    "streetAddress": "Lotus Hospital,PlotNo-404,Pune",
+    "city": "Pune",
+    "state": "Maharastra",
+    "pin code": "412307"
+  }
+}
+```
+
+- In Array ,We can add JSON object.JSON array can store multiple values or multiple object also. It can store string, number, boolean or object in JSON array.
+
+```json
+
+const employees = [
+       {
+        "name":"Akash",
+        "age":23,
+        "email":"akash@gmail.com"
+       },
+        {
+        "name":"Ragini",
+        "age":22,
+         "email":"ragini@gmail.com"
+       },
+        {
+        "name":"Aakansha",
+        "age":21,
+         "email":"aakansha@gmail.com"
+       },
+        {
+        "name":"Shivani",
+        "age":21,
+         "email":"shivani@gmail.com"
+       }
+
+    ]
 
 ```
 

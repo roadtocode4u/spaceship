@@ -87,16 +87,16 @@ In above example In Line no. 7 we create one variable num1 and store 80 ,In Line
 
 <details>
 
-  <summary>What is LocalStorage in javascript ?</summary>
-  LocalStorage  is feature of web browser where we can store data permanantly even user closes or refreshes the web page .<br/>
-  Data can not be share between two browser .for example if user store data in chrome brower it only visible for chrome not MicrosoftEdge.
-  In localstorage the value is store in key-value formatand values in Generic datatype like Number,boolean,string.
+  <summary>What is localStorage in Javascript ?</summary>
+  localStorage  is feature of web browser where we can store data permanantly even user closes or refreshes the web page.<br/>
+  Data can not be share between two browser. For Example if user store data in chrome browser it only visible for chrome not MicrosoftEdge.
+  In localStorage the value is store in key-value formate values in generic datatype like number,boolean,string.
   
   <br/>
 
-**To Work with LocalStorage we have 4 Method :**
+**To Work With LocalStorage we have 4 Method :**
 
-**1.setItem(key,value) :** `setItem(key,value)` method is use for storing the data in LocalStorage.In this method their are two parameters : the `key` its represent the name of data and `value` it may be string,boolean,number or object .
+**1.setItem(key,value) :** `setItem(key,value)` method is use for storing the data in localStorage. In this method their are two parameters : the `key` its represent the name of data and `value` it may be string, boolean, number or object.
 
 **code:**
 
@@ -112,13 +112,13 @@ localStorage.setItem("user", "Akash");
 localStorage.setItem("user");
 ```
 
-**3.removeItem(key) :** `removeItem(key)` method is use to remove a specific item from LocalStorage. It takes the key of the item you want to remove from the localStorage.
+**3.removeItem(key) :** `removeItem(key)` method is use to remove a specific item from localStorage. It takes the key of the item you want to remove from the localStorage.
 
 ```js
 localStorage.removeItem("user");
 ```
 
-**4.clear():**:`clearItem()` is used to remove all the data stored in LocalStorage.
+**4.clear():**:`clearItem()` is used to remove all the data stored in localStorage.
 
 ```js
 localStorage.clear();
@@ -131,13 +131,13 @@ To store complex object we need to use method of `JSON.Stringify()` and `JSON.pa
 <details>
 <summary>What is use of JSON.stringify() and JSON.parse() ?</summary>
 
-**JSON.stringify():** JSON.stringify() convert javascript data which can be various datatype form like normal String ,Number, array ,it can be object.Data of this format will be converted into proper string using ` JSON.stringify().`
+**JSON.stringify():** `JSON.stringify()` convert javascript data which can be various datatype form like normal string, number, array, it can be object. Data of this format will be converted into proper string using ` JSON.stringify().`
 
 ```js
 localStorage.setItem("userdata", JSON.stringify("gayatri"));
 ```
 
-**JSON.parse():** When we apply JSON.parse this method will convert Stringify data to in it's original form.
+**JSON.parse():** When we apply `JSON.parse` this method will convert stringify data to in it's original form.
 
 ```js
 JSON.parse(localStorage.getItem("userdata"));

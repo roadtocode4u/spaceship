@@ -1,8 +1,11 @@
 ### ReactJS Easy
 
 <details>
-  <summary>What is the full form of JSON?</summary>
+  <summary>What is React?</summary>
+  TODO: add answer @VivekShejole
+</details>
 
-JavaScript Object Notation
-
+<details>
+  <summary>What is SPA?</summary>
+  TODO: add answer @VivekShejole
 </details>

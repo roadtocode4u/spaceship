@@ -1,8 +1,9 @@
 ### CSS Easy
 
 <details>
-  <summary>What is the full form of JSON?</summary>
+  <summary>What is CSS? </summary>
+</details>
 
-JavaScript Object Notation
-
+<details>
+  <summary>What are the various selectors available in CSS?</summary>
 </details>

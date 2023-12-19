@@ -198,5 +198,205 @@ console.log(`Hello ${name}`);
 
 <details>
   <summary>Explain common Math functions available in JS.</summary>
-  TODO: add answer @SagarWandile
+  The built-in JavaScript Math functions make it simple and accurate to perform mathematical operations in your code. They manage standard tasks like calculating powers and square roots, determining the highest or lowest integer, rounding, and more. Your code becomes shorter, faster, and less prone to errors as a result.
+
+**Examples:-**
+
+- `toFixed()`
+- `Math.ceil(x)`
+- `Math.floor(x)`
+- `Math.round(x)`
+- `Math.pow(x,y)`
+- `Math.abs(x)`
+- `Math.min(x)`
+- `Math.max(x)`
+- `Math.sqrt(x)`
+
+**1.`toFixed()`**:- To format a number with a fixed number of decimal places and return it as a string, use the` toFixed()` method. By choosing how many decimal places to retain, you can adjust the precision of a floating-point number.
+
+**Syntax :**
+
+`number.toFixed(digits)`
+
+`number` :-The number you want to format.
+
+`digits` :-The number of decimal places to keep in the result.
+
+**Example :**
+
+```js
+<script>
+  const number = 541.6422773427; const formattedNum = number.toFixed(2);
+  console.log(formattedNum);
+</script>
+```
+
+**Output :**
+
+```
+541.64
+```
+
+**2.`Math.ceil(x)`**:- Math.ceil() function in JavaScript is used to round the number passed as a parameter to its nearest integer in an Upward direction of rounding i.e. towards the greater value.
+
+**Syntax :**
+
+`Math.ceil(x);`
+
+**Example :**
+
+```js
+<script>
+  const value = Math.ceil(7.3); console.log("Ceiling value = " + value);
+</script>
+```
+
+**Output :**
+
+```
+8
+```
+
+**3.`Math.floor(x)`**:-Javascript Math.floor() method is used to round off the number passed as a parameter to its nearest integer in a Downward direction of rounding i.e. towards the lesser value.
+
+**Syntax :**
+
+`Math.floor(x)`
+
+**Example :**
+
+```js
+<script>
+  const value = Math.ceil(7.3); console.log("Ceiling value = " + value);
+</script>
+```
+
+**Output :**
+
+```
+7
+```
+
+**4.`Math.round(x)`**:- The Javascript Math.round() method is used to round a number to its nearest integer. If the fractional part of the number is **greater than or equal to .5**, the argument is rounded to the next higher integer. If the fractional part of the number is **less than .5**, the argument is rounded to the next lower integer.
+
+**Syntax :**
+
+`Math.round(x)`
+
+**Example :**
+
+```js
+<script>
+  const val1 = Math.round(6.2); console.log("Round value = " + val1); const val2
+  = Math.round(6.6); console.log("Round value = " + val2);
+</script>
+```
+
+**Output :**
+
+```
+   Round value = 6
+   Round value = 7
+```
+
+**5.`Math.pow(x,y)`**:- The Math.pow(x, y) function in JavaScript is used to raise the base x to the power of the exponent y.
+
+**Syntax :**
+
+`Math.pow(x,y)`
+
+**Example :**
+
+```js
+<script>
+  const value = Math.pow(5, 2); console.log("Power of value = " + value);
+</script>
+```
+
+**Output :**
+
+```
+Power of value = 25
+```
+
+**6. `Math.abs(x)`**:- This function always returns the positive (+ve) value of x.
+
+**Syntax :**
+`Math.abs(x)`
+
+**Example :**
+
+```js
+<script>
+  const val1 = Math.abs(8.4); console.log("Absolute value = " + val1); const
+  val2 = Math.abs(-8.4); console.log("Absolute value = " + val2);
+</script>
+```
+
+**Output :**
+
+```
+Absolute value = 8.4
+Absolute value = 8.4
+```
+
+**7.`Math.min(x)`**:- It returns the minimum value from the given arguments.
+
+**Syntax :**
+`Math.min(x)`
+
+**Example :**
+
+```js
+<script>
+  const value = Math.min(10, 6, 20, 21, 17); console.log("Minimum value = " +
+  value);
+</script>
+```
+
+**Output :**
+
+```
+Min value = 6
+```
+
+**8.`Math.max(x)`** :- It returns the maximum value from the given arguments.
+
+**Syntax :**
+`Math.max(x)`
+
+**Example :**
+
+```js
+<script>
+  const value = Math.max(10, 16, 20, 21, 17, 55, 32); console.log("Maximum value
+  = " + value);
+</script>
+```
+
+**Output :**
+
+```
+Max value = 55
+```
+
+**9.`Math.sqrt(x)`** :- It returns the square root of the given arguments.
+
+**Syntax :**
+`Math.sqrt(x)`
+
+**Example :**
+
+```js
+<script>
+  const value = Math.sqrt(225); console.log("Square Root = " + value);
+</script>
+```
+
+**Output :**
+
+```
+ Square Root = 15
+```
+
 </details>

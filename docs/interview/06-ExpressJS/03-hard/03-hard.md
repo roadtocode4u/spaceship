@@ -10,7 +10,7 @@ REST stands for Representational state transfer.All the business logic is store 
 
 ### REST API Standrads
 
-**1]** <br/>
+**1** <br/>
 Rest standard says that only four method or api request should be use that are `GET` , `POST` , `PUT` , `PATCH` , `DELETE`.
 If you are using other than above method then you are not following REST Standard. <br/>
 `POST` method is use for creating the resource , `GET` method is use for reading the source ,`PUT` method is use for updating the source, `PATCH` method is use for updating the specific field. `DELETE` method is use for deleting the resource.

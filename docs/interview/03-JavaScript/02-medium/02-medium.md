@@ -80,7 +80,7 @@ condition ? value if true : value if false
 
 </details>
 
-<details>                                                                                                                 
+<details>
   <summary>Difference between Pre-Increment Operator and Post-Increment Operator?</summary>
 
 **Pre-Increment Operator**: A Variable is **prefix(++variable)** with increment operator is called Pre-Increment Operator.
@@ -194,4 +194,9 @@ console.log(`Hello ${name}`);
 > Hi
 > Hello RTC
 
+</details>
+
+<details>
+  <summary>Explain common Math functions available in JS.</summary>
+  TODO: add answer @SagarWandile
 </details>

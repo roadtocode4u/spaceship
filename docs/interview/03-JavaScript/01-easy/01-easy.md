@@ -87,5 +87,30 @@ In above example In Line no. 7 we create one variable num1 and store 80 ,In Line
 
 <details>
   <summary>Difference between setTimeout() and setInterval()?</summary>
-  TODO: add answer @PrajaktaMhase
+  <b>setTimeout() and setInterval()</b> are functions in JavaScript used for creating timers or intervals.<br/>They work by receiving two parameters: the first is a function, and the second is the time duration in milliseconds.These functions allow to execute a specific task or function after particular time has passed.<br/><hr/>
+  
+  <b> 1 : setTimeout() : </b> When you call <b>setTimeout()</b>, it sets a timer for a specific period, for example, 5 seconds. After this 5-second , the specified code is executed, and the function returns the result.<br/><br/>
+
+```js
+function time() {
+  console.log("This code was executed after a 5-second .");
+}
+setTimeout(time, 5000);
+```
+
+In this example, time is a function that will be executed after a of 5 seconds (specified in milliseconds with setTimeout). The console.log statement inside time will be triggered after the particular time passed.<br/><hr/>
+
+<b> 2 : setInterval : ()</b>The <b>setInterval()</b> is a javaScript function that repeatedly call a specific function or exicute a code after particular time has passed.
+<br/><br/>
+
+```js
+function time() {
+  console.log("This code will be executed every 5 seconds.");
+}
+setInterval(time, 5000);
+```
+
+<br/>
+In this example, time is a function that will be executed every 3 seconds (specified in milliseconds with setInterval). The function will continue to be called repeatedly.
+
 </details>

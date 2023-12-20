@@ -31,12 +31,20 @@
 
 <details>
   <summary>What is a repository in Git?</summary>
-  TODO: add answer @ShitalWarkhade
+ <ul> 
+ <li>A repository, also known as a repo in Git, is simply a version-controlled folder that holds all of the files and revision history for an entire project.</li>
+ <li>
+ advantages of git  repository are records changes, improves teamwork, and helps you roll return project updates.</li>
+ <li> A repository is a location where you can store project-related data, like files, commit histories, branches, and more. </li>
+ <li>It can be locally located on your computer or remotely located on a server.</li>
+ <li>Consider it as a record of your project's progress as well as a picture taken at a particular point in time.
+</li>
+ </ul>
 </details>
 
 <details>
   <summary>How to track changes in Git? And what is staging area?</summary>
-    TODO: add answer @ShitalWarkhade
+   
 </details>
 
 <details>

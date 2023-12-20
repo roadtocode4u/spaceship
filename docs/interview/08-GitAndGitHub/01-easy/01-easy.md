@@ -3,7 +3,6 @@
 <details>
   <summary>What is Git?</summary>
 
-
 **Git:** Git is a version control system that helps developers to track changes in their code, collaborate with others, and manage codebase history.
 
 </details>
@@ -11,14 +10,13 @@
 <details>
   <summary>What is GitHub?</summary>
 
-
 **GitHub:** GitHub is a web-based platform that acts as a central hub for managing and tracking changes to computer code using a version control system called Git. It provides a collaborative environment for software developers to work on projects, share code, and keep track of modifications made by team members.
 
 </details>
 
 <details>
   <summary>What is the difference between Git and GitHub?</summary>
-  
+
   <p>
 
 1.  Git is a version control system, while GitHub is a platform for hosting Git repositories.
@@ -29,4 +27,19 @@
 
 </p>
 
+</details>
+
+<details>
+  <summary>What is a repository in Git?</summary>
+  TODO: add answer @ShitalWarkhade
+</details>
+
+<details>
+  <summary>How to track changes in Git? And what is staging area?</summary>
+    TODO: add answer @ShitalWarkhade
+</details>
+
+<details>
+  <summary>What is commit in Git?</summary>
+    TODO: add answer @ShitalWarkhade
 </details>

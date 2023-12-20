@@ -20,3 +20,8 @@
 <b>Reconciliation : </b> After calculating the differences between the Real DOM and Virtual DOM in React, only the parts of the Real DOM that need to be changed. In this entire process that is called as Reconciliation.<br/>
 
 </details>
+
+<details>
+  <summary>What is named export and default export?</summary>
+    TODO: add answer @BhartiHarinkhede
+</details>

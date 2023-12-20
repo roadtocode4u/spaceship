@@ -2,7 +2,7 @@
 
 <details>
   <summary>What is MongoDB?</summary>
-  
+
   <p>
   1. MongoDB is the NoSQL database that provides to store large amount of unstructured data. <br/>
   2. It works over the Document and Collection concept. <br/>
@@ -13,12 +13,12 @@
 
 <details>
   <summary>What is BSON? and How it is different from JSON?</summary>
-  
-  BSON stands for Binary JSON (Javascript Object Notetion). It is used to transmit and store data across web based applications. It has similarities with JSON for instance BSON .
-<br/>
-  For Ex.
 
-```JS
+BSON stands for Binary JSON (Javascript Object Notetion). It is used to transmit and store data across web based applications. It has similarities with JSON for instance BSON .
+<br/>
+For Ex.
+
+```js showLineNumbers=true
 {
 "_id": ObjectId("5f5a8f8e8216b52e5e9a0374"),
 "name": "John Doe",
@@ -56,5 +56,25 @@ BSON :
 
    </p>
 
+</details>
+
+<details>
+  <summary>What is `ObjectId` in MongoDB?</summary>
+
+TODO: add question @RahulJadhav
+
+</details>
+
+<details>
+  <summary>What is `collection` in MongoDB?</summary>
+
+TODO: add question @RahulJadhav
+
+</details>
+
+<details>
+  <summary>What is `document` in MongoDB?</summary>
+
+TODO: add question @RahulJadhav
 
 </details>

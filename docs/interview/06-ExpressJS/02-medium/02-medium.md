@@ -6,10 +6,10 @@
 Creating a basic server in `Express.js` is an easy process. Express.js is a commonly used web application framework for Node.js that simplifies the task of building web applications and APIs. Here are the steps you can follow to create a basic server using Express.js:
 
 1. **Install Node.js and npm :**
-   Make sure you have Node.js and npm (Node Package Manager) installed on your machine. You can download them from the official website : **[Node.js](https://nodejs.org/en)** .
+   Assuming you have already knowledge about the `Node.js`
 
 2. **Initialize your project :**
-   Create a new directory for your project and navigate to it in the terminal. Run the `npm init -y` command to initialize a new Node.js project and create a `package.json` file .
+   Create a new directory for your project Run the `npm init -y` command to initialize a new Node.js project and create a `package.json` file .
 
 3. **Install Express :**
    Install Express.js as a dependency for your project using the `npm install express` command:
@@ -21,42 +21,51 @@ Creating a basic server in `Express.js` is an easy process. Express.js is a comm
 
 ```js showLineNumbers=true
 import express from "express";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 app.use(express.json());
 
-const PORT = 3000; // You can choose any available port
+const PORT = process.env.PORT || 5000; // default PORT for development or  5000
 
 // Define routes
 app.post("/students", (req, res) => {
+  // In real life scenario we process the data from the server and return the results to clients
+  const student = {
+    name: "Saurabh Jaykar",
+    age: "22",
+    email: "json@gmail.com",
+  };
   res.json({
     success: true,
-    data: {},
+    data: student,
     message: "students add successfully",
   });
 });
 app.get("/students", (req, res) => {
+  const students = [];
   res.json({
     success: true,
-    data: [],
+    data: students,
     message: "All students Fetch successfully",
   });
 });
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`Server listening at http://localhost:${PORT}`);
+  console.log(`Server listening at port : ${PORT}`);
 });
 ```
 
 ## Express.js Server for Students Data :
 
-This Express.js code sets up a basic server for handling student data. It begins by importing the Express framework and initializing an `app` variable. The middleware `express.json()` is utilized to facilitate the parsing of incoming JSON data within the request body. The server is configured to `listen on port 3000`. Two routes are defined: one for handling **HTTP POST requests to "/students" and another for handling HTTP GET requests to the same endpoint**.
+This code is a basic setup for a backend server using Express.js, a JavaScript framework.
 
-In the POST route, a JSON response is returned, indicating the success of adding students. The response includes an empty data object and a corresponding success message. Similarly, the GET route responds with a JSON object signifying success, an empty array as data (assuming no students are present), and a success message.
+There are two main things it does: one is **add a student** when you ask it to (`POST /students`), and the other is to give you a **list of all students** (`GET /students`).
 
-To run the server, ensure you have Node.js and npm installed. Start the server with the command `npm start`. The server will be accessible at `http://localhost:3000`. The console will log a message confirming the successful initiation of the server.
+When you add a student, it says it worked and gives you some student details in JSON format. When you ask for all students, it says it's successful but gives you an empty list (assuming the student's data).
 
-This code provides a foundational structure for an Express.js application, demonstrating route handling for adding and fetching student data with appropriate JSON responses.
+The server runs on a default port of 5000 but can use a different one if you want. It's the behind-the-scenes part that takes care of managing student data.
 
 </details>

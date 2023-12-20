@@ -61,7 +61,7 @@ const FeatureList = [
   {
     title: "C++",
     imgSrc: "img/menu_icons/c++.svg",
-    path: "/docs/category/c++-programming",
+    path: "/docs/category/cpp-programming",
   },
   {
     title: "Python",

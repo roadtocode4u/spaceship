@@ -61,20 +61,20 @@ BSON :
 <details>
   <summary>What is `ObjectId` in MongoDB?</summary>
 
-TODO: add question @RahulJadhav
+In MongoDB, each document in a collection is required to have a unique identifier known as "ObjectId." ObjectId is automatically assigned by MongoDB to documents at the time of document insertion.
 
 </details>
 
 <details>
   <summary>What is `collection` in MongoDB?</summary>
 
-TODO: add question @RahulJadhav
+In MongoDB, a collection is a group of MongoDB documents. It allow flexibility structure in stored documents.
 
 </details>
 
 <details>
   <summary>What is `document` in MongoDB?</summary>
 
-TODO: add question @RahulJadhav
+It is a JSON-like BSON (Binary JSON) object that consists of key-value pairs. BSON is a binary representation of JSON-like documents. A document in MongoDB is essentially a set of key-value pairs, where the keys are strings (field names) and the values can be various data types value.
 
 </details>

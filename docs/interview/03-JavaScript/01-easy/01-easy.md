@@ -84,3 +84,8 @@ document.write(num1 === num2);
 In above example In Line no. 7 we create one variable num1 and store 80 ,In Line no. 8 create a variable num2 and store a value 20 and In Line no. 9 In console.log() we print a actual value of num1 and num2 and it sum with the help of ${}.
 
 </details>
+
+<details>
+  <summary>Difference between setTimeout() and setInterval()?</summary>
+  TODO: add answer @PrajaktaMhase
+</details>

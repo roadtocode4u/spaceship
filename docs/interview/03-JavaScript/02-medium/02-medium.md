@@ -270,10 +270,11 @@ const employees = [
 <details>
 
   <summary>What is localStorage in Javascript ?</summary>
-  localStorage  is feature of web browser where we can store data permanantly even user closes or refreshes the web page.<br/>
-  Data can not be share between two browser. For Example if user store data in chrome browser it only visible for chrome not MicrosoftEdge.
-  In localStorage the value is store in key-value formate values in generic datatype like number,boolean,string.
-  
+
+- localStorage is feature of web browser where we can store data permanantly even user closes or refreshes the web page.<br/>
+- Data can not be share between two browser. For Example if user store data in chrome browser it only visible for chrome not MicrosoftEdge.
+- In localStorage the value is store in key-value formate values in generic datatype like number,boolean,string.
+
   <br/>
 
 **To Work With LocalStorage we have 4 Method :**

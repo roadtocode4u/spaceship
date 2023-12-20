@@ -93,3 +93,9 @@ later also we can `customized some folder structure` like for `assets` for `view
 - `components:` In components we create resuable components folders like Footer, Navbar and in this folders same as views we create a js and css file like Navbar.js, Navbar.css
 
 </details>
+
+
+<details>
+  <summary>What is UseState? What is UseEffect and difference between them?</summary>
+  TODO: add answer @Chndrajoytiadil
+</details>

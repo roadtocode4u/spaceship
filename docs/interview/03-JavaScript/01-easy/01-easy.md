@@ -93,10 +93,12 @@ In above example In Line no. 7 we create one variable num1 and store 80 ,In Line
 
 ```js
 function time() {
-  console.log("This code was executed after a 5-second .");
+  console.log("Good Morning..! .");
 }
 setTimeout(time, 5000);
 ```
+
+<b>Output: </b>Good Morning..!<br/><br/>
 
 In this example, time is a function that will be executed after a of 5 seconds (specified in milliseconds with setTimeout). The console.log statement inside time will be triggered after the particular time passed.<br/><hr/>
 
@@ -105,10 +107,14 @@ In this example, time is a function that will be executed after a of 5 seconds (
 
 ```js
 function time() {
-  console.log("This code will be executed every 5 seconds.");
+  console.log("Good Morning..!");
 }
 setInterval(time, 5000);
 ```
+
+<b>Output : </b>Good Morning..!<br/>
+Good Morning..!<br/>
+Good Morning..!.........<br/>
 
 <br/>
 In this example, time is a function that will be executed every 3 seconds (specified in milliseconds with setInterval). The function will continue to be called repeatedly.

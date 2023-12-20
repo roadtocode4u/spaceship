@@ -49,5 +49,18 @@
 
 <details>
   <summary>What is commit in Git?</summary>
-    TODO: add answer @ShitalWarkhade
+   <ul>
+   <li>In Git, committing changes is similar to taking a current photo of your project.</li>
+   <li>All the changes and updates you made to your files are recorded and maintained in the Git repository.</li>
+   <li>So, to explain it simply, committing via Git is the same as recording and maintaining the current condition of your files at the time of the commit. </li>
+   </ul>
+
+<b>Staging Changes:</b>
+<br/>
+
+1. Before making a commit, you stage the changes using the `git add .` command.
+   <br/>
+   <b>Committing Changes:</b>
+   <br/>
+2. Once the changes are staged, you commit them using the `git commit ` command.
 </details>

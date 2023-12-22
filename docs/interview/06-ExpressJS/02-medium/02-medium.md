@@ -78,7 +78,7 @@ The server runs on a default port of 5000 but can use a different one if you wan
 
 **1. 1XX (Informational)📝**
 
-- `100 Continue:` The client should continue with its request.
+- `100 Continue:` The client should continue his request.
 
 **2. 2XX (Success)😀**
 
@@ -104,13 +104,15 @@ The server runs on a default port of 5000 but can use a different one if you wan
 
 - `500 Internal Server Error`: A generic error message returned when an unexpected condition was encountered by the server.
 - `502 Bad Gateway`: The server, while acting as a gateway or proxy, received an invalid response from an upstream server.
-- `503 Service Unavailable`: The server is not ready to handle the request. Common causes are a server that is down for maintenance or is overloaded.
+- `503 Service Unavailable`: The server is not ready to handle the request.
 
 </details>
 
 <details>
   <summary>How to return HTTP status code in API response?</summary>
-  Returning HTTP status codes in API responses is outcome of a request to the client.
+  HTTP status codes returns in API responses is outcome of a request to the client.
+
+**ex.1**
 
 ```js
 app.get("/api/health", (req, res) => {
@@ -119,5 +121,31 @@ app.get("/api/health", (req, res) => {
   });
 });
 ```
+
+Responce : `200` Status code send responce Request Succcesful. <br/>
+
+**ex.2**
+
+```js
+app.post("/api/users", (req, res) => {
+  res.status(401).json({
+    message: "Unauthorized user",
+  });
+});
+```
+
+Responce : `401` Status code send responce User not authorised. <br/>
+
+**ex.3**
+
+```js
+app.get("/api/orders", (req, res) => {
+  res.status(500).json({
+    message: "internal server error",
+  });
+});
+```
+
+Responce : `500` Status code send responce internal server error. <br/>
 
 </details>

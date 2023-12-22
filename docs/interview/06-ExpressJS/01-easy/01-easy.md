@@ -21,11 +21,14 @@ serve data to client (React) applications.
 
 <details>
   <summary>What is API?</summary>
-  TODO: add answer @PournimaAnjole
+
+**APIs:** API stands for "Application Programming Interface", is a set of rules and tools that allows different software applications to communicate with each other.
+An API is like a messenger between different computer programs. It helps them share information and work together smoothly.
+
 </details>
 
 <details>
-  <summary>What are the various HTTP methods?
+  <summary>What are the various HTTP methods?</summary>
   TODO: add answer @PournimaAnjole
 </details>
 

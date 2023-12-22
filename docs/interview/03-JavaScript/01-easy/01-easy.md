@@ -86,6 +86,11 @@ In above example In Line no. 7 we create one variable num1 and store 80 ,In Line
 </details>
 
 <details>
+  <summary>What are the events in JavaScript?</summary>
+  TODO: add answer @NitishKumar
+</details>
+
+<details>
   <summary>Difference between setTimeout() and setInterval()?</summary>
-  TODO: add answer @PrajaktaMhase
+  TODO: add answer @NitishKumar
 </details>

@@ -87,10 +87,47 @@ In above example In Line no. 7 we create one variable num1 and store 80 ,In Line
 
 <details>
   <summary>What are the events in JavaScript?</summary>
-  TODO: add answer @NitishKumar
+
+An event is an action that occurs as per the user's instruction as input and gives the output in response. We can consider different types of inputs, such as `clicking a button` , `moving the mouse` , `pressing a key` , and when users press tab and text box change
+
+**JavaScript has several built-in event objects.**
+
+`onclick()`
+`onchange()`
+`onkeypress()`
+`onkeyDown()`
+`onkeyUp()`
+`onmouseover()`
+`onDoubleClick()`
+`onMouseMove()`
+`onmouseout()`
+`onload()`
+
 </details>
 
 <details>
   <summary>Difference between setTimeout() and setInterval()?</summary>
-  TODO: add answer @NitishKumar
+
+`setTimeout()` and `setInterval()` are both functions in JavaScript used for executing code after a specified delay. However, they differ in terms of how they handle the timing of code execution
+
+In `setTimeout()`, you provide a function that will be executed after a specified delay, but only once. After the function finishes executing
+
+Syntax: `setTimeout(function, delay)`
+
+```js
+setTimeout(function () {
+  console.log("This code runs after a delay");
+}, 1000); // Executes after 1000 milliseconds (1 second)
+```
+
+In `setInterval()` is used to repeatedly execute a specified function or code snippet at defined intervals.
+
+Syntax: `setInterval(function, delay)`
+
+```js
+setInterval(function () {
+  console.log("This code runs repeatedly at a specified interval");
+}, 2000); // Executes every 2000 milliseconds (2 seconds)
+```
+
 </details>

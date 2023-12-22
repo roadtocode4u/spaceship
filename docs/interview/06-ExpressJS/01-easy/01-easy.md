@@ -25,7 +25,7 @@ serve data to client (React) applications.
 </details>
 
 <details>
-  <summary>What are the various HTTP methods?
+  <summary>What are the various HTTP methods? </summary>
   TODO: add answer @PournimaAnjole
 </details>
 

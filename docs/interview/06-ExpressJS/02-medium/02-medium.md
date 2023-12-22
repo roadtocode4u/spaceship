@@ -79,3 +79,122 @@ The server runs on a default port of 5000 but can use a different one if you wan
   <summary>How to return HTTP status code in API response?</summary>
   TODO: add answer @RahulJadhav
 </details>
+
+<details>
+  <summary>How to read data from the request query, params, body and headers?
+  
+  </summary>
+  The web framework and programming language you are using define how to read data from the request query, parameters (params), body, and headers. I will provide examples of specific common languages and frameworks:
+<br/><br/>
+
+**1. Reading Data from Request Query:**
+
+ <ul>
+ <li> Theory 📝 :</li>
+  <ul> 
+  <li>Query parameters are key-value pairs connects to the end of a URL. </li>
+  <li> They are typically used for GET requests.</li>
+  </ul>
+   <li> Example  🚀 : </li>
+
+```js showLineNumbers=true
+// Reading query parameters
+const queryParam = req.query.paramName;
+```
+
+ </ul>
+
+**2. Reading Data from URL Params (Route Params):**
+
+ <ul>
+ <li> Theory 📝 :</li>
+  <ul> 
+  <li>The URL path shows URL parameters, also known as route parameters. </li>
+  <li> They are specified in the route an explanation and can represent dynamic values.</li>
+  </ul>
+   <li> Example  🚀 : </li>
+
+```js showLineNumbers=true
+// Reading URL parameters
+const urlParam = req.params.id;
+```
+
+ </ul>
+
+**3. Reading Data from Request Body:**
+
+ <ul>
+ <li> Theory 📝 :</li>
+  <ul> 
+  <li>The request body contains data sent by the client in the HTTP request. </li>
+  <li> It's commonly used in POST requests to send data like JSON or form data.</li>
+  </ul>
+   <li> Example  🚀: </li>
+
+```js showLineNumbers=true
+// Middleware to parse JSON in the request body
+app.use(bodyParser.json());
+
+// Reading request body
+const bodyData = req.body;
+```
+
+ </ul>
+
+**4. Reading Data from Headers:**
+
+ <ul>
+ <li> Theory 📝:</li>
+  <ul> 
+  <li>HTTP headers provide additional information about the request or response. </li>
+  <li> Headers are key-value pairs in the request or response.</li>
+  </ul>
+   <li> Example  🚀: </li>
+
+```js showLineNumbers=true
+// Reading headers
+const headerValue = req.headers["header-name"];
+```
+
+ </ul>
+
+**Summary 🎉:**
+
+**Example:**
+
+```js showLineNumbers=true
+const express = require("express");
+const bodyParser = require("body-parser");
+
+const app = express();
+const port = 3000;
+
+// Middleware to parse JSON in the request body
+app.use(bodyParser.json());
+
+app.get("/endpoint/:id", (req, res) => {
+  // 1. Reading query parameters
+  const queryParam = req.query.paramName;
+
+  // 2. Reading URL parameters
+  const urlParam = req.params.id;
+
+  // 3. Reading request body
+  const bodyData = req.body;
+
+  // 4. Reading headers
+  const headerValue = req.headers["header-name"];
+
+  // Your logic here using the extracted data
+
+  res.send("Data read successfully!");
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
+```
+
+In this example, JSON contained in the request body is handled using middleware (body-parser). The methods req.query, req.params, req.body, and req.headers are used to access the several data sources (query, params, body, and headers), respectively. Based on the requirements and specific server configuration you have, modifies can be required.
+
+</details>

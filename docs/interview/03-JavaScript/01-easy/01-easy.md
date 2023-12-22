@@ -92,23 +92,38 @@ An event is an action that occurs as per the user's instruction as input and giv
 
 **JavaScript has several built-in event objects.**
 
-`onclick()`
-`onchange()`
-`onkeypress()`
-`onkeyDown()`
-`onkeyUp()`
-`onmouseover()`
-`onDoubleClick()`
-`onMouseMove()`
-`onmouseout()`
-`onload()`
+`onclick()`:The onclick event in Javascript occurs when the user clicks on an element.
+
+**For Example**
+
+```html
+<button onClick="alert('Call onClick Event')">Click Me</button>
+```
+
+`ondblclick()`:This event occurs when the user double-clicks on an element.
+
+`onchange()`: This event occurs when the value of an input field, select option, or textarea is changed.
+
+`onkeypress()`:This event occurs when the user presses a key down over an element.
+
+`onkeyDown()`:This event occurs when the user presses a key down over an element.
+
+`onkeyUp()`:This event occurs when the user releases a key which was pressed over an element.
+
+`onmouseover()`:This event occurs when the mouse pointer enters the active area of an element.
+
+`onMouseMove()`:This event occurs when the user moves the mouse over an element.
+
+`onmouseout()`:This event occurs when the mouse pointer exits the active area of an element.
+
+`onload()`:This event occurs when HTML document has finished loading.
 
 </details>
 
 <details>
   <summary>Difference between setTimeout() and setInterval()?</summary>
 
-`setTimeout()` and `setInterval()` are both functions in JavaScript used for executing code after a specified delay. However, they differ in terms of how they handle the timing of code execution
+Both `setTimeout()` and `setInterval()` are JavaScript functions used to delay the execution of code. They both allow you to specify a delay, which is the time you want to wait before the code is executed.
 
 In `setTimeout()`, you provide a function that will be executed after a specified delay, but only once. After the function finishes executing
 

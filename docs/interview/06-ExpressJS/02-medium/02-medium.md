@@ -72,10 +72,52 @@ The server runs on a default port of 5000 but can use a different one if you wan
 
 <details>
   <summary>What are the HTTP status codes? Give example of frequently used status codes.</summary>
-  TODO: add answer @RahulJadhav
+  HTTP status codes are three-digit numbers returned by a web server in response to a client's request made to the server. They indicate the success or failure of the request. <br/> <br/>
+
+#### Here the some example of HTTP status code ⬇
+
+**1. 1XX (Informational)📝**
+
+- `100 Continue:` The client should continue with its request.
+
+**2. 2XX (Success)😀**
+
+- `200 OK:` The request was successful.
+- `201 Created:` The request was successful, and a new resource was created.
+- `204 No Content:` The server successfully processed the request but there is no content to send in the response.
+
+**3. 3XX (Redirection)🎯**
+
+- `301 Moved Permanently`: The requested resource has been permanently moved to a new location.
+- `302 Found`: The requested resource has been temporarily moved to a different location.
+- `304 Not Modified`: Indicates that the resource has not been modified since the version specified by the request
+  headers.
+
+**4. 4XX (Client Error)❌**
+
+- `400 Bad Request`: The server cannot process the request due to a client error.
+- `401 Unauthorized`: The request requires authentication.
+- `403 Forbidden`: The server understood the request, but it refuses to authorize it.
+- `404 Not Found`: The requested resource could not be found on the server.
+
+**5. 5XX (Server Error)😱**
+
+- `500 Internal Server Error`: A generic error message returned when an unexpected condition was encountered by the server.
+- `502 Bad Gateway`: The server, while acting as a gateway or proxy, received an invalid response from an upstream server.
+- `503 Service Unavailable`: The server is not ready to handle the request. Common causes are a server that is down for maintenance or is overloaded.
+
 </details>
 
 <details>
   <summary>How to return HTTP status code in API response?</summary>
-  TODO: add answer @RahulJadhav
+  Returning HTTP status codes in API responses is outcome of a request to the client.
+
+```js
+app.get("/api/health", (req, res) => {
+  res.status(200).json({
+    message: "All Good",
+  });
+});
+```
+
 </details>

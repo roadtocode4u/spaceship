@@ -16,15 +16,15 @@ IThe `<iframe>` tag is used to embed content from another webpage or resource wi
 
 ### Explanation:
 
-* `src`: This attribute specifies the URL or source of the content you want to embed. It can be a webpage, an image, a video, or any other valid web resource.
+- `src`: This attribute specifies the URL or source of the content you want to embed. It can be a webpage, an image, a video, or any other valid web resource.
 
-* `height`: This attribute sets the height of the `iframe` in pixels or as a percentage of the parent container.
+- `height`: This attribute sets the height of the `iframe` in pixels or as a percentage of the parent container.
 
-* `width`: This attribute sets the width of the `iframe` in pixels or as a percentage of the parent container.
+- `width`: This attribute sets the width of the `iframe` in pixels or as a percentage of the parent container.
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -43,7 +43,7 @@ IThe `<iframe>` tag is used to embed content from another webpage or resource wi
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -73,7 +73,7 @@ The `_blank` attribute is used to open the linked document in a new tab or windo
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -101,7 +101,7 @@ In this example, an `iframe` is created with a name of `myscreen`. The `Contact`
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -129,7 +129,7 @@ In this example, an `iframe` is created with a name of `myscreen`. The `Contact`
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -169,7 +169,7 @@ The `<embed>` tag is used to embed non-HTML content, such as PDF files, within a
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>

@@ -2,7 +2,7 @@
 
 <details>
   <summary>What is MongoDB?</summary>
-  
+
   <p>
   1. MongoDB is the NoSQL database that provides to store large amount of unstructured data. <br/>
   2. It works over the Document and Collection concept. <br/>
@@ -13,12 +13,12 @@
 
 <details>
   <summary>What is BSON? and How it is different from JSON?</summary>
-  
-  BSON stands for Binary JSON (Javascript Object Notetion). It is used to transmit and store data across web based applications. It has similarities with JSON for instance BSON .
-<br/>
-  For Ex.
 
-```JS
+BSON stands for Binary JSON (Javascript Object Notetion). It is used to transmit and store data across web based applications. It has similarities with JSON for instance BSON .
+<br/>
+For Ex.
+
+```js showLineNumbers=true
 {
 "_id": ObjectId("5f5a8f8e8216b52e5e9a0374"),
 "name": "John Doe",
@@ -55,5 +55,36 @@ BSON :
  4. It Extends JSON with additional data types such as binary data, date, regular expression, ObjectId .
 
    </p>
+
+# <<<<<<< HEAD
+
+</details>
+
+<details>
+  <summary>What is ObjectId in MongoDB?</summary>
+
+In MongoDB, each document in a collection is required to have a unique identity known as "ObjectId".
+The \_id field is the key and used as the primary key for the documents in a collection.
+it is unique identifier for each document. an object id is 12 byte BSON type hexadecimal string having the structure as shown in example.
+
+```js
+_id : ObjectId(6009c0eee65f6dce28fb3e50)
+```
+
+</details>
+
+<details>
+  <summary>What is collection in MongoDB?</summary>
+
+In MongoDB, a collection is a group of MongoDB documents. It allow flexibility structure in stored documents.
+
+</details>
+
+<details>
+  <summary>What is document in MongoDB?</summary>
+
+It is a JSON-like BSON (Binary JSON) object that consists of key-value pairs. BSON is a binary representation of JSON-like documents. A document in MongoDB is essentially a set of key-value pairs, where the keys are strings (field names) and the values can be various data types value.
+
+> > > > > > > 570edb20551cb6ccd1a575c487ad8b0e1cc6ad13
 
 </details>

@@ -16,6 +16,9 @@
 <details>
 
   <summary>What is SPA?</summary>
-  SPA stand for <b>Single Page Application</b>. generally in react.js use one html file in public folder, in this file entire React application is run. After using SPA the entire web application doesn't refresh.
+
+- SPA stand for <b>Single Page Application</b>. generally in react.js use one html file in public folder, in this file entire React application is run. After using SPA the entire web application doesn't refresh.
+
+- This allows users to use website without loading whole new pages from the server, which can result gains and more dynamic experience.
 
 </details>

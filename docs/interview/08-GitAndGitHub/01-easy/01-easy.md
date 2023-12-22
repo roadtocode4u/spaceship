@@ -16,7 +16,7 @@
 
 <details>
   <summary>What is the difference between Git and GitHub?</summary>
-  
+
   <p>
 
 1.  Git is a version control system, while GitHub is a platform for hosting Git repositories.
@@ -27,4 +27,19 @@
 
 </p>
 
+</details>
+
+<details>
+  <summary>What is a repository in Git?</summary>
+  TODO: add answer @ShitalWarkhade
+</details>
+
+<details>
+  <summary>How to track changes in Git? And what is staging area?</summary>
+    TODO: add answer @ShitalWarkhade
+</details>
+
+<details>
+  <summary>What is commit in Git?</summary>
+    TODO: add answer @ShitalWarkhade
 </details>

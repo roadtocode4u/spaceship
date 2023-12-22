@@ -69,3 +69,13 @@ When you add a student, it says it worked and gives you some student details in 
 The server runs on a default port of 5000 but can use a different one if you want. It's the behind-the-scenes part that takes care of managing student data.
 
 </details>
+
+<details>
+  <summary>What are the HTTP status codes? Give example of frequently used status codes.</summary>
+  TODO: add answer @RahulJadhav
+</details>
+
+<details>
+  <summary>How to return HTTP status code in API response?</summary>
+  TODO: add answer @RahulJadhav
+</details>

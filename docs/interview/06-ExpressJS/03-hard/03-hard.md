@@ -85,3 +85,8 @@ app.post("/api/v2/buses", async (req, res) => {
 ```
 
 </details>
+
+<details>
+  <summary>How to read data from the request query, params, body and headers?</summary>
+  TODO: add answer @AbhijeetKokat
+</details>

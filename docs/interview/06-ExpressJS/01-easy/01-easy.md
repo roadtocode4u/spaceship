@@ -18,3 +18,18 @@ server that interacts with the MongoDB database to
 serve data to client (React) applications.
 
 </details>
+
+<details>
+  <summary>What is API?</summary>
+  TODO: add answer @PournimaAnjole
+</details>
+
+<details>
+  <summary>What are the various HTTP methods?
+  TODO: add answer @PournimaAnjole
+</details>
+
+<details>
+  <summary>What is middleware?</summary>
+  TODO: add answer @PournimaAnjole
+</details>

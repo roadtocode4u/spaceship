@@ -530,20 +530,25 @@ JSON.parse(localStorage.getItem("userdata"));
 
 <details>
   <summary>What are the various type of function in JavaScript?</summary>
+  TODO: add answers @ChandrajyotiAdil
 </details>
 
 <details>
   <summary>What is arrow function in JavaScript?</summary>
+  TODO: add answers @ChandrajyotiAdil
 </details>
 
 <details>
   <summary>What is callback function in JavaScript?</summary>
+  TODO: add answers @ChandrajyotiAdil
 </details>
 
 <details>
   <summary>What is higher order function in JavaScript?</summary>
+  TODO: add answers @ChandrajyotiAdil
 </details>
 
 <details>
   <summary>What is Immediate Invoked Function Expression(IIFE) in JavaScript?</summary>
+  TODO: add answers @ChandrajyotiAdil
 </details>

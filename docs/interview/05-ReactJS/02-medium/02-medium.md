@@ -23,5 +23,5 @@
 
 <details>
   <summary>What is named export and default export?</summary>
-    TODO: add answer @BhartiHarinkhede
+    TODO: add answer @ShwetaPund
 </details>

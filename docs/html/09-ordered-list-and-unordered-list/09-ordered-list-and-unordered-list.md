@@ -20,7 +20,7 @@ An unordered list is used to create a list of related items that have no specifi
 
 **Example :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -61,7 +61,7 @@ There are three types of unordered lists that you can use by specifying the type
 
 **Example :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -135,7 +135,7 @@ There are three types of unordered lists that you can use by specifying the type
 
 **Example :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -222,7 +222,7 @@ There are different types of ordered lists that you can specify using the type a
 
 **Example :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -258,7 +258,7 @@ There are different types of ordered lists that you can specify using the type a
 
 **Example :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -294,7 +294,7 @@ There are different types of ordered lists that you can specify using the type a
 
 **Example :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -330,7 +330,7 @@ There are different types of ordered lists that you can specify using the type a
 
 **Example :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -366,7 +366,7 @@ There are different types of ordered lists that you can specify using the type a
 
 **Example :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -406,7 +406,7 @@ In the example above, the ordered list `<ol>` starts at the number 2. The first 
 
 **Example :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>

@@ -26,7 +26,7 @@ In HTML **`<b>`** tag defines bold text.
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -55,7 +55,7 @@ In HTML **`<i>`** tag defines Italic text.
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -82,7 +82,7 @@ OR
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -112,7 +112,7 @@ In HTML **`<u>`** tag are used to underline a text.
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -139,7 +139,7 @@ It is used to mark a portion of text which has been deleted from the document.
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -167,7 +167,7 @@ Superscript is a number or letter that written above the normal text.
 
 **💻Example :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -193,7 +193,7 @@ H<sub>2</sub>O
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -216,7 +216,7 @@ H<sub>2</sub>O
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -256,7 +256,7 @@ Span Tag is a text inline selector it is used to select a particular Text. Span 
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>

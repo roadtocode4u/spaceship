@@ -18,7 +18,7 @@ The paragraph tag `<p>` is used to define a block of text in HTML as a paragraph
 
 **For example :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -53,7 +53,7 @@ The `align` attribute is used to specify the horizontal alignment of the text wi
 
 **Syntax :**
 
-```html
+```html showLineNumbers=true
 <p align="left">Text</p>
 <p align="center">Text</p>
 <p align="right">Text</p>
@@ -61,7 +61,7 @@ The `align` attribute is used to specify the horizontal alignment of the text wi
 
 **For example :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -91,7 +91,7 @@ The division tag `<div>` is used to create a division or section in an HTML docu
 
 **For example :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>

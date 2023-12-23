@@ -530,25 +530,70 @@ JSON.parse(localStorage.getItem("userdata"));
 
 <details>
   <summary>What are the various type of function in JavaScript?</summary>
-  TODO: add answers @ChandrajyotiAdil
+
+## Functions
+
+Functions are the reusable block of code in javascript. Which is executed when it called
+There are mainly five type of functions in javascript <br/>
+
+- Named Fuctions <br/>
+- Arrow Fuctions<br/>
+- Callback Fuctions <br/>
+- Higher Order Fuctions<br/>
+- IIFE Fuctions
+
 </details>
 
 <details>
   <summary>What is arrow function in JavaScript?</summary>
-  TODO: add answers @ChandrajyotiAdil
+  Arrow function is anonymous function that mean It doesn't have any name of identifier,arrow funtion allow  you to create function in a cleaner way compared to regular function.
+  syntax of arrow functions
+
+```js showLineNumbers=true
+() => expression;
+```
+
 </details>
 
 <details>
   <summary>What is callback function in JavaScript?</summary>
-  TODO: add answers @ChandrajyotiAdil
+ callback function in Javascript are the function who passed as parameter in another function.
+ example of callback functions is arrow fuctions
+
+```js showLineNumbers=true
+settimeout(() => {
+  console.log("hello world");
+}, 5000);
+```
+
+in above example arrow function which passed as parameter is callback function
+
 </details>
 
 <details>
   <summary>What is higher order function in JavaScript?</summary>
-  TODO: add answers @ChandrajyotiAdil
+  higher order fuctions are the fuctions in javascript who received another fuctions as parameter ,
+  example of higher order functions are settimeout, setinterval, map,foreach,filter etc.
+
+```js showLineNumbers=true
+const arr = [1, 2, 3, 4, 5, 6];
+arr.foreach((element) => {
+  console.log(element);
+});
+```
+
+above foreach function is higher order fuction because it is recieving arrow function as parameter
+
 </details>
 
 <details>
   <summary>What is Immediate Invoked Function Expression(IIFE) in JavaScript?</summary>
-  TODO: add answers @ChandrajyotiAdil
+  IIFE stands for Immediately Invoked Function Expression That means It got executed when it is initialized and IIFE fuctions are also anonymous function. it doesn't have any name or identifier
+
+```js showLineNumbers=true
+(function () {
+  console.log("hello world");
+})();
+```
+
 </details>

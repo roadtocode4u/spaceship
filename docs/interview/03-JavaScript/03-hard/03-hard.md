@@ -56,3 +56,8 @@ Then, there's another function called `performAsyncTask()`. This one uses the **
 It logs the `Start of async task`, waits for it to finish, and then logs the `result or an error`. Finally, it logs `End of async task"`.
 
 </details>
+
+<details>
+  <summary>What is Array and What are the different methods available in Array?</summary>
+    TODO: add answer @PournimaAnjole
+</details>

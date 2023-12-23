@@ -20,7 +20,7 @@ To use the video tag, follow this syntax:
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -60,7 +60,7 @@ Height and Width Attribute are used to provide height and width for video.
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -88,7 +88,7 @@ The muted attribute specifies the audio of your video is muted.
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -112,7 +112,7 @@ The poster attribute are used to show image to your video.
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -136,7 +136,7 @@ This attribute specifies that the video should automatically restart from the be
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -172,7 +172,7 @@ The audio tag also supports some attributes:
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>

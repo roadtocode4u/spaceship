@@ -20,6 +20,8 @@ Data types determine the kind of data that can be stored in a variable.
 
 **Character:** Used for single characters, e.g., 'a', 'z', 'v', 'b'. In C/C++, it is represented as `char`.
 
+**Boolean:** Used for Storing logical values, e.g., true or false. In C/C++ it is represented as `bool`.
+
 ## How to define variable
 
 To define a variable, you specify its data type followed by the variable name.

@@ -32,7 +32,7 @@ Attributes are used to describe tag or to provide more info to tag.
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -64,7 +64,7 @@ The Height attribute are used to give Height of an image, in pixels.
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -88,7 +88,7 @@ When you give both height and width to the image then image might lose its aspec
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -113,7 +113,7 @@ When you give both height and width to the image then image might lose its aspec
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -139,7 +139,7 @@ You can add a local image to your HTML page and then the first download or save 
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>

@@ -60,7 +60,7 @@ middleware functions often receive three parameters: req (request), res (respons
 **3.next:** This is a function that, when called, passes control to the next middleware in the chain. If next is not called within a middleware function, the request-response cycle may be terminated, and the response may be sent back to the client.
 
 ```js showLineNumbers=true
-const validprasam = (req, res, next) => {
+const validateParams = (req, res, next) => {
   const { title, description, price } = req.body;
   if (!title) {
     res.json({
@@ -86,7 +86,7 @@ const validprasam = (req, res, next) => {
   next();
 };
 
-app.post("/orders", validprasam, async (req, res) => {
+app.post("/orders", validateParams, async (req, res) => {
   const { title, description, price } = req.body;
   res.json({
     success: true,

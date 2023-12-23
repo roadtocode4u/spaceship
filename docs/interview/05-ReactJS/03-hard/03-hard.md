@@ -97,20 +97,20 @@ later also we can `customized some folder structure` like for `assets` for `view
 <details>
   <summary>What is useState? What is useEffect and difference between them?</summary>
 
-## UseState <br/>
+## useState <br/>
 
-usestate variable is mostly used hook in react . It allow us to store a values or data in fuctional component . It work like simple variable ,It provide us one variable and one setter method . using setter method we can change the value of usestate variable where ever it using . It work like pup sub model that mean When a user follows another user, they are subscribing to the recipes that the friend publishes.
+useState variable is mostly used hook in react . It allow us to store a values or data in fuctional component . It work like simple variable ,It provide us one variable and one setter method . using setter method we can change the value of useState variable where ever it using . It work like pup sub model that mean When a user follows another user, they are subscribing to the recipes that the friend publishes.
 
-**For using usestate hook we need to firstly import it in module**
+**For using useState hook we need to firstly import it in module**
 
 ```js
 import { useState } from "react";
 ```
 
-**code implementation of usestate hook**
+**code implementation of useState Hook**
 
 ```js showLineNumbers=true
-function Subscrib() {
+function Subscribe() {
   const [subscribe, setSubscribe] = useState(0);
 
   return (
@@ -122,22 +122,22 @@ function Subscrib() {
 }
 ```
 
-## useeffect
+## useEffect
 
-useeffect is also hook in react. useeffect generally perform a side effects. It is used to execute any perticular code that not related to reloading the web page. It mainly takes two parameter first one is a function that contain side effect code and second one is dependies. whenever the dependies change then a side effect code get executed .
+useEffect is also hook in react. useEffect generally perform a side effects. It is used to execute any perticular code that not related to reloading the web page. It mainly takes two parameter first one is a function that contain side Effect code and second one is dependies. whenever the dependies change then a side effect code get executed .
 
-**For using useeffect hook we need to firstly import it in module**
+**For using useEffect hook we need to firstly import it in module**
 
 ```js
-import { useeffect } from "react";
+import { useEffect } from "react";
 ```
 
-**code implementation of useeffect hook**
+**code implementation of useEffect Hook**
 
 ```js showLineNumbers=true
 function PrintHelloWorld() {
-  const [num, setNum] = usestate;
-  useeffect(() => {
+  const [num, setNum] = useState("");
+  useEffect(() => {
     console.log("hello world");
   }, [num]);
   return (
@@ -149,7 +149,7 @@ function PrintHelloWorld() {
 }
 ```
 
-## Difference between usestate and useeffect
+## Difference between useState and useEffect
 
 useState is used to manage state within a component, allowing you to store and update data. useEffect is used to perform side effects in a component, such as updating the document title, fetching data, or subscribing to events.
 

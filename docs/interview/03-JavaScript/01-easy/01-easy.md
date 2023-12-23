@@ -88,7 +88,7 @@ In above example In Line no. 7 we create one variable num1 and store 80 ,In Line
 <details>
   <summary>What are the events in JavaScript?</summary>
 
-An event is an action that occurs as per the user's instruction as input and gives the output in response. We can consider different types of inputs, such as `clicking a button` , `moving the mouse` , `pressing a key` , and when users press tab and text box change
+An event in JavaScript is basically something that happens when a user interacts with a webpage. It could be `clicking a button`, `moving the mouse` , or `pressing a key`. For example, when you press the "tab" key and a text box changes on a webpage, that's an event.
 
 **JavaScript has several built-in event objects.**
 
@@ -97,7 +97,7 @@ An event is an action that occurs as per the user's instruction as input and giv
 **For Example**
 
 ```html
-<button onClick="alert('Call onClick Event')">Click Me</button>
+<button onclick="alert('Call onClick Event')">Click Me</button>
 ```
 
 `ondblclick()`:This event occurs when the user double-clicks on an element.

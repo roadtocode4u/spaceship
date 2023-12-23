@@ -136,7 +136,7 @@ import { useEffect } from "react";
 
 ```js showLineNumbers=true
 function PrintHelloWorld() {
-  const [num, setNum] = useState("");
+  const [num, setNum] = useState(0);
   useEffect(() => {
     console.log("hello world");
   }, [num]);

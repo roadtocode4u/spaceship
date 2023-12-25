@@ -86,6 +86,63 @@ In above example In Line no. 7 we create one variable num1 and store 80 ,In Line
 </details>
 
 <details>
+  <summary>What are the events in JavaScript?</summary>
+
+An event in JavaScript is basically something that happens when a user interacts with a webpage. It could be `clicking a button`, `moving the mouse` , or `pressing a key`. For example, when you press the "tab" key and a text box changes on a webpage, that's an event.
+
+**JavaScript has several built-in event objects.**
+
+`onclick()`:The onclick event in Javascript occurs when the user clicks on an element.
+
+**For Example**
+
+```html
+<button onclick="alert('Call onClick Event')">Click Me</button>
+```
+
+`ondblclick()`:This event occurs when the user double-clicks on an element.
+
+`onchange()`: This event occurs when the value of an input field, select option, or textarea is changed.
+
+`onkeypress()`:This event occurs when the user presses a key down over an element.
+
+`onkeyDown()`:This event occurs when the user presses a key down over an element.
+
+`onkeyUp()`:This event occurs when the user releases a key which was pressed over an element.
+
+`onmouseover()`:This event occurs when the mouse pointer enters the active area of an element.
+
+`onMouseMove()`:This event occurs when the user moves the mouse over an element.
+
+`onmouseout()`:This event occurs when the mouse pointer exits the active area of an element.
+
+`onload()`:This event occurs when HTML document has finished loading.
+
+</details>
+
+<details>
   <summary>Difference between setTimeout() and setInterval()?</summary>
-  TODO: add answer @PrajaktaMhase
+
+Both `setTimeout()` and `setInterval()` are JavaScript functions used to delay the execution of code. They both allow you to specify a delay, which is the time you want to wait before the code is executed.
+
+In `setTimeout()`, you provide a function that will be executed after a specified delay, but only once. After the function finishes executing
+
+Syntax: `setTimeout(function, delay)`
+
+```js
+setTimeout(function () {
+  console.log("This code runs after a delay");
+}, 1000); // Executes after 1000 milliseconds (1 second)
+```
+
+In `setInterval()` is used to repeatedly execute a specified function or code snippet at defined intervals.
+
+Syntax: `setInterval(function, delay)`
+
+```js
+setInterval(function () {
+  console.log("This code runs repeatedly at a specified interval");
+}, 2000); // Executes every 2000 milliseconds (2 seconds)
+```
+
 </details>

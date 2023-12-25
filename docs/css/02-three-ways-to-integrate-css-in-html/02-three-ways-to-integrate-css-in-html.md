@@ -12,7 +12,7 @@ CSS can be implemented by three ways:
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -30,7 +30,7 @@ CSS can be implemented by three ways:
 
 2. **Document CSS :** Document CSS is embedded within the HTML document using the `<style>` tag. It is placed in the `<head>` section of the HTML document.
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -59,7 +59,7 @@ CSS can be implemented by three ways:
 
 ### **File Name : index.html**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -74,7 +74,7 @@ CSS can be implemented by three ways:
 
 ### **File Name : style.css**
 
-```css
+```css showLineNumbers=true
 h2 {
   color: tomato;
   background-color: "aqumarine";

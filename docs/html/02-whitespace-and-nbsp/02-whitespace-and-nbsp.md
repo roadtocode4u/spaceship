@@ -10,7 +10,7 @@ Whitespace refers to empty space around the content of a web page. By default, H
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -32,7 +32,7 @@ If you can Manually add empty spaces in your HTML code then you can use one Spec
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>

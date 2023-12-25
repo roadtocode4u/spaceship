@@ -400,3 +400,200 @@ Max value = 55
 ```
 
 </details>
+
+<details>
+  <summary>What is JSON ?</summary>
+
+- JSON stands for `JavaScript Object Notation.`
+- JSON is oriented from JavaScript Object and it representation is almost similar to js object.
+- It is mandatory to keep a key in String formate i.e`" "`
+- JSON is not only limited for JS is use in any other language also like Java,Kotlin ,etc..
+- JSON is build to support transfer data to all other language as well because of its popularity in API'S.
+
+Simple Example of JSON
+
+```json
+{
+  "name": "John",
+  "age": 30,
+  "Add": "Pune",
+  "Mobile No": 7878899889
+}
+```
+
+- In JSON object we can add another object(nested object) also. Let's see a simple example of JSON object having another object.
+
+```json
+{
+  "Institute Name": "Road To Code",
+  "address": {
+    "streetAddress": "Lotus Hospital,PlotNo-404,Pune",
+    "city": "Pune",
+    "state": "Maharastra",
+    "pin code": "412307"
+  }
+}
+```
+
+- In Array ,We can add JSON object.JSON array can store multiple values or multiple object also. It can store string, number, boolean or object in JSON array.
+
+```json
+
+const employees = [
+       {
+        "name":"Akash",
+        "age":23,
+        "email":"akash@gmail.com"
+       },
+        {
+        "name":"Ragini",
+        "age":22,
+         "email":"ragini@gmail.com"
+       },
+        {
+        "name":"Aakansha",
+        "age":21,
+         "email":"aakansha@gmail.com"
+       },
+        {
+        "name":"Shivani",
+        "age":21,
+         "email":"shivani@gmail.com"
+       }
+
+    ]
+
+```
+
+</details>
+
+<details>
+
+  <summary>What is localStorage in Javascript ?</summary>
+
+- localStorage is feature of web browser where we can store data permanantly even user closes or refreshes the web page.<br/>
+- Data can not be share between two browser. For Example if user store data in chrome browser it only visible for chrome not MicrosoftEdge.
+- In localStorage the value is store in key-value formate values in generic datatype like number,boolean,string.
+
+  <br/>
+
+**To Work With LocalStorage we have 4 Method :**
+
+**1.setItem(key,value) :** `setItem(key,value)` method is use for storing the data in localStorage. In this method their are two parameters : the `key` its represent the name of data and `value` it may be string, boolean, number or object.
+
+**code:**
+
+```js
+localStorage.setItem("user", "Akash");
+```
+
+**2.getItem(key) :** `getItem(key)` method is use for retriving the data from LocalStorage. It takes the key as a parameter and returns the corresponding value..
+
+**code:**
+
+```js
+localStorage.setItem("user");
+```
+
+**3.removeItem(key) :** `removeItem(key)` method is use to remove a specific item from localStorage. It takes the key of the item you want to remove from the localStorage.
+
+```js
+localStorage.removeItem("user");
+```
+
+**4.clear():**:`clearItem()` is used to remove all the data stored in localStorage.
+
+```js
+localStorage.clear();
+```
+
+To store complex object we need to use method of `JSON.Stringify()` and `JSON.parse()`
+
+</details>
+
+<details>
+<summary>What is use of JSON.stringify() and JSON.parse() ?</summary>
+
+**JSON.stringify():** `JSON.stringify()` convert javascript data which can be various datatype form like normal string, number, array, it can be object. Data of this format will be converted into proper string using ` JSON.stringify().`
+
+```js
+localStorage.setItem("userdata", JSON.stringify("gayatri"));
+```
+
+**JSON.parse():** When we apply `JSON.parse` this method will convert stringify data to in it's original form.
+
+```js
+JSON.parse(localStorage.getItem("userdata"));
+```
+
+</details>
+
+<details>
+  <summary>What are the various type of function in JavaScript?</summary>
+
+## Functions
+
+Functions are the reusable block of code in javascript. Which is executed when it called
+There are mainly five type of functions in javascript <br/>
+
+- Named Fuctions <br/>
+- Arrow Fuctions<br/>
+- Callback Fuctions <br/>
+- Higher Order Fuctions<br/>
+- IIFE Fuctions
+
+</details>
+
+<details>
+  <summary>What is arrow function in JavaScript?</summary>
+  Arrow function is anonymous function that mean It doesn't have any name of identifier,arrow funtion allow  you to create function in a cleaner way compared to regular function.
+  syntax of arrow functions
+
+```js showLineNumbers=true
+() => expression;
+```
+
+</details>
+
+<details>
+  <summary>What is callback function in JavaScript?</summary>
+ callback function in Javascript are the function who passed as parameter in another function.
+ example of callback functions is arrow fuctions
+
+```js showLineNumbers=true
+settimeout(() => {
+  console.log("hello world");
+}, 5000);
+```
+
+in above example arrow function which passed as parameter is callback function
+
+</details>
+
+<details>
+  <summary>What is higher order function in JavaScript?</summary>
+  higher order fuctions are the fuctions in javascript who received another fuctions as parameter ,
+  example of higher order functions are settimeout, setinterval, map,foreach,filter etc.
+
+```js showLineNumbers=true
+const arr = [1, 2, 3, 4, 5, 6];
+arr.foreach((element) => {
+  console.log(element);
+});
+```
+
+above foreach function is higher order fuction because it is recieving arrow function as parameter
+
+</details>
+
+<details>
+  <summary>What is Immediate Invoked Function Expression(IIFE) in JavaScript?</summary>
+  IIFE stands for Immediately Invoked Function Expression That means It got executed when it is initialized and IIFE fuctions are also anonymous function. it doesn't have any name or identifier
+
+```js showLineNumbers=true
+(function () {
+  console.log("hello world");
+})();
+```
+
+</details>

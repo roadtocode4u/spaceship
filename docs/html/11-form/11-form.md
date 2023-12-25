@@ -50,7 +50,7 @@ The `type="text"` attribute creates a text input field where users can enter sin
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -76,7 +76,7 @@ The `type="text"` attribute creates a text input field where users can enter sin
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -101,7 +101,7 @@ The `type="password"` attribute creates a password input field where entered cha
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -126,7 +126,7 @@ The `type="password"` attribute creates a password input field where entered cha
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -151,7 +151,7 @@ If we do not enter the proper email address then it will display error like this
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -217,7 +217,7 @@ If we do not enter the proper email address then it will display error like this
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -251,7 +251,7 @@ If we do not enter the proper email address then it will display error like this
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -273,7 +273,7 @@ If we do not enter the proper email address then it will display error like this
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -311,7 +311,7 @@ If we do not enter the proper email address then it will display error like this
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -341,7 +341,7 @@ If we do not enter the proper email address then it will display error like this
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -367,7 +367,7 @@ It can help the user, the user does not need to type the whole text data list ha
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -401,7 +401,7 @@ It can help the user, the user does not need to type the whole text data list ha
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -431,7 +431,7 @@ Checkbox have one `Checked = true` attribute & this attribute specifies input el
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -463,7 +463,7 @@ Checkbox have one `Checked = true` attribute & this attribute specifies input el
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -509,7 +509,7 @@ The accept attribute can only be used with file tag.
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -532,7 +532,7 @@ The accept attribute can only be used with file tag.
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -555,7 +555,7 @@ The accept attribute can only be used with file tag.
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -578,7 +578,7 @@ The accept attribute can only be used with file tag.
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -599,7 +599,7 @@ The accept attribute can only be used with file tag.
 
 - `application/*` = all type application
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -622,7 +622,7 @@ The accept attribute can only be used with file tag.
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -645,7 +645,7 @@ The accept attribute can only be used with file tag.
 
 **Code :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>

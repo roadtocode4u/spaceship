@@ -61,7 +61,7 @@ const FeatureList = [
   {
     title: "C++",
     imgSrc: "img/menu_icons/c++.svg",
-    path: "/docs/category/c++-programming",
+    path: "/docs/category/cpp-programming",
   },
   {
     title: "Python",
@@ -71,7 +71,7 @@ const FeatureList = [
   {
     title: "Data Structures",
     imgSrc: "img/menu_icons/dsa.png",
-    path: "/docs/category/dsa",
+    path: "/docs/category/data-structures",
   },
   {
     title: "TypeScript",

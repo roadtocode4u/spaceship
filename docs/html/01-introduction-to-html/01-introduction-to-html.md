@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
 ### What is HTML
 
-> HTML stands for **Hyper Text Markup Language**. It is the standard markup language used to create web pages. HTML provides a set of tags and attributes that define the structure and content of a webpage. It was created by Tim Berners-Lee and released in 1993.
+> HTML stands for **Hyper Text Markup Language**. It is the standard markup language used to create web pages. HTML provides a set of tags and attributes that define the structure and content of a webpage. It was created by **Tim Berners-Lee** and released in 1993.
 
 1. Editor: for writing code.
 2. Browser: for checking output from the code.
@@ -19,11 +19,13 @@ hide_table_of_contents: true
 
 Browsers are software applications used to access and view websites. Some popular browsers include Google Chrome, Safari, and Mozilla Firefox. When a user enters a URL or clicks on a link, the browser sends a request to the server where the website is hosted. The server responds with the webpage content, and the browser renders and displays it to the user.
 
+> > The first web browser is credited to Sir Tim Berners-Lee, he created the first web browser, called **WorldWideWeb** (later renamed Nexus), in 1990.
+
 ### Editor
 
 <img src="/html/01/vs-code.png" alt="chrome" width="50px"/>
 
-An editor is a software tool used for writing and editing code. In web development, an editor is used to create HTML files and other related files such as CSS and JavaScript. One commonly used editor is Visual Studio Code (VS Code). It provides features like syntax highlighting, code suggestions, and debugging capabilities, making it popular among web developers.
+An editor is a **software tool used for writing and editing code**. In web development, an editor is used to create HTML files and other related files such as CSS and JavaScript. One commonly used editor is Visual Studio Code (VS Code). It provides features like syntax highlighting, code suggestions, and debugging capabilities, making it popular among web developers.
 
 ### Steps to download VS Code
 

@@ -12,19 +12,19 @@ The CSS Box Model is a fundamental concept that describes how elements on a webp
 
 Padding refers to the space between an element's content and its border. It creates space within the element, inside any defined borders. The CSS properties used to control padding are:
 
-* **`padding-top`**: Specifies the padding on the top side of the element.
+- **`padding-top`**: Specifies the padding on the **top** side of the element.
 
-* **`padding-right`**: Specifies the padding on the right side of the element.
+- **`padding-right`**: Specifies the padding on the **right** side of the element.
 
-* **`padding-bottom`**: Specifies the padding on the bottom side of the element.
+- **`padding-bottom`**: Specifies the padding on the **bottom** side of the element.
 
-* **`padding-left`**: Specifies the padding on the left side of the element.
+- **`padding-left`**: Specifies the padding on the **left** side of the element.
 
 Here's an example of how padding can be applied to an element:
 
 **Example :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html>
   <head>
@@ -56,10 +56,9 @@ Here's an example of how padding can be applied to an element:
 
 ### Shorthand Padding
 
-Instead of specifying `padding` for each side individually, you can use the shorthand padding property to define padding for all four sides simultaneously. The values are specified in the following order: `top`, `right`, `bottom`, `left`.
+Instead of specifying `padding` for each side individually, you can use the shorthand padding property to define padding for all four sides simultaneously. The values are specified in the **following order** : `top`, `right`, `bottom`, `left`.
 
-
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -89,7 +88,7 @@ Instead of specifying `padding` for each side individually, you can use the shor
 
 ### We can apply padding on buttons:
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html lang="en">
   <head>

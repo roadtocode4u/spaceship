@@ -4,48 +4,47 @@ description: "Datatypes and Variables"
 hide_table_of_contents: true
 ---
 
- ## Primitive Data types
+## Primitive Data types
 
- 1. **String**
- 
+1.  **String**
+
 A string is a data type used to represent textual data. It consists of a sequence of characters enclosed within single ('') or double ("") quotation marks.
 
 **Example :**
 
->`"Hello, I'm a string"` <br/>
->`'Hello, How are you...'`
+> `"Hello, I'm a string"` <br/> >`'Hello, How are you...'`
 
- 2. **Int** 
- 
- Integers are whole numbers without decimal points.
+2.  **Int**
+
+Integers are whole numbers without decimal points.
 
 **Example :**
- 
->`123456`
 
- 3. **Float** 
- 
- Floats are numbers with decimal points.
+> `123456`
 
- > 8793.90 
+3.  **Float**
 
- 4. **Boolean** 
- 
- A boolean represents one of two possible values: `true` or `false`.
+Floats are numbers with decimal points.
 
- > `true or false`
+> 8793.90
+
+4.  **Boolean**
+
+A boolean represents one of two possible values: `true` or `false`.
+
+> `true or false`
 
 ## What is Javascript Engine?
- 
- A JavaScript engine is responsible for executing JavaScript code in a web browser. Browsers utilize engines like V8 (used in Chromium-based browsers), which compiles JavaScript code and produces the desired output.
+
+A JavaScript engine is responsible for executing JavaScript code in a web browser. Browsers utilize engines like V8 (used in Chromium-based browsers), which compiles JavaScript code and produces the desired output.
 
 ## Variables In Javascript
 
 A variable is used to store data. There are three keywords to declare variables:
 
-**`let`**, **`const`**, **`var`** 
+**`let`**, **`const`**, **`var`**
 
- **Synatx :**
+**Synatx :**
 
 `keyword valriableName;`
 
@@ -75,8 +74,7 @@ Variables defined using let Cannot be re-declared within the same scope.
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
+  <head> </head>
   <body>
     <script>
       let age = 20;
@@ -97,12 +95,11 @@ In the above example we can create one variable using `let` keyword name of that
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
+  <head> </head>
   <body>
-     <script>
+    <script>
       let age = 20;
-      console.log(age)
+      console.log(age);
       age = 50;
       console.log(age);
     </script>
@@ -122,14 +119,13 @@ In the above example we can create one variable using `let` keyword name of that
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
+  <head> </head>
   <body>
-     <script>
+    <script>
       let age = 20;
       let name = "Suraj";
-      console.log("Name:" ,name);
-      console.log("Age:" ,age);
+      console.log("Name:", name);
+      console.log("Age:", age);
     </script>
   </body>
 </html>
@@ -145,10 +141,9 @@ In the above example we can create one variable using `let` keyword name of that
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
+  <head> </head>
   <body>
-     <script>
+    <script>
       let age;
       console.log(age);
     </script>
@@ -158,7 +153,7 @@ In the above example we can create one variable using `let` keyword name of that
 
 **Output**
 
->undefined
+> undefined
 
 ## const
 
@@ -169,10 +164,9 @@ In the above example we can create one variable using `let` keyword name of that
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
+  <head> </head>
   <body>
-     <script>
+    <script>
       const age = 20;
       console.log(age);
     </script>
@@ -193,10 +187,9 @@ In the above example we can create one variable using `let` keyword name of that
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
+  <head> </head>
   <body>
-     <script>
+    <script>
       var age = 20;
       var age = 30;
       console.log(age);
@@ -211,12 +204,12 @@ In the above example we can create one variable using `let` keyword name of that
 
 ## Difference between var, let and const
 
-|                    |     var     |    let   |      const    |
-| -------------------| ----------- |----------- | ----------- |
-| **Scope**          |The scope of the var variable is the functional scope.|Let allow us to declare a variable that is limited to the scope of a block.|The scope of the const variable is block scope.|
-| **Updates**        |  It can be updated and re-declared in scope. |It Can be updated, but not re-declared within its scope. | Cannot be updated or re-declared after being defined. |
-| **Initialization** | Can be declared without being assigned a value. | Can be declared without being assigned a value. |Must be assigned a value when declared. |
-| **Access**         |It can be accessed without initialization because its default value is undefined. | It cannot accessed without initialization, or a "reference error" will be raised.| It cannot be accessed without initialization because it cannot be declared without initialization.  |
+|                    | var                                                                               | let                                                                               | const                                                                                              |
+| ------------------ | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **Scope**          | The scope of the var variable is the functional scope.                            | Let allow us to declare a variable that is limited to the scope of a block.       | The scope of the const variable is block scope.                                                    |
+| **Updates**        | It can be updated and re-declared in scope.                                       | It Can be updated, but not re-declared within its scope.                          | Cannot be updated or re-declared after being defined.                                              |
+| **Initialization** | Can be declared without being assigned a value.                                   | Can be declared without being assigned a value.                                   | Must be assigned a value when declared.                                                            |
+| **Access**         | It can be accessed without initialization because its default value is undefined. | It cannot accessed without initialization, or a "reference error" will be raised. | It cannot be accessed without initialization because it cannot be declared without initialization. |
 
 ## Rules to declare variables:
 
@@ -225,9 +218,17 @@ In the above example we can create one variable using `let` keyword name of that
 3. Variable names cannot be reserved keywords.
 4. Variable names are case-sensitive, which means `name` and `Name` are considered different variables.
 
+## Null and Undefined
 
+**Null:** Null means you want something to have no value on purpose.
 
+**Undefined:** Undefined means you forgot to give something a value, like having a box but not putting anything in it.
 
+## Difference between null and undefined
 
-
-
+|                          | null                                   | undefined                                  |
+| ------------------------ | -------------------------------------- | ------------------------------------------ |
+| **Definition**           | Empty or blank value                   | Variable declared but not assigned a value |
+| **type of Operator**     | Object                                 | Undefined                                  |
+| **Arithmetic Operation** | Converts to 0, then performs operation | Returns NaN                                |
+| **Assignment Value**     | Yes                                    | No                                         |

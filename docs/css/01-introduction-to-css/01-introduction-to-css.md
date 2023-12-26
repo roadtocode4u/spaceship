@@ -30,7 +30,7 @@ CSS of h1 tag 👉
 </style>
 ```
 
-![Alt text](image.png)
+![Tagname Selector](image.png)
 
 2. **Class Selector :**
    The class selector selects elements based on their class attribute. It is denoted by a dot (.) followed by the class name.
@@ -53,7 +53,7 @@ CSS of h1 tag 👉
 </style>
 ```
 
-![Alt text](image-1.png)
+![Tagname](image-1.png)
 
 ### 2. Classname
 
@@ -72,7 +72,7 @@ The `.class` selector selects elements with a specific class attribute.
   </style>
 ```
 
-![Alt text](image-2.png)
+![Classname](image-2.png)
 
 3. **ID Selector :** The ID selector selects elements based on their ID attribute. It is denoted by a hash (#) followed by the ID name
 
@@ -88,7 +88,7 @@ CSS of myheading id 👉
 </style>
 ```
 
-![Alt text](image-3.png)
+![ID Selector](image-3.png)
 
 ### Height, Width For Button
 

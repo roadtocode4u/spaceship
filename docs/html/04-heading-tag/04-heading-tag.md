@@ -6,11 +6,11 @@ hide_table_of_contents: true
 
 # Heading Tags
 
-In HTML, heading tags are used to define headings or titles for sections of a webpage. They provide a hierarchical structure to the content and help in organizing and formatting the text. There are six levels of heading tags available in HTML, ranging from `<h1>` to `<h6>`.
+In HTML, heading tags are **used to define headings or titles** for sections of a webpage. They provide a hierarchical structure to the content and help in organizing and formatting the text. There are six levels of heading tags available in HTML, ranging from `<h1>` to `<h6>`.
 
 The usage of heading tags is as follows:
 
-**.** `h1` : This is the highest level heading and represents the main heading of a webpage. It should be used once per page and usually describes the overall topic or purpose of the page.
+**.** `h1` : This is the highest level heading and **represents the main heading of a webpage**. It should be used once per page and usually describes the overall topic or purpose of the page.
 
 **.** `<h2>` to `<h6>` : These are lower-level headings that can be used to represent subheadings or sections within the page. `<h2>` is used for major sections, `<h3>` for subsections within those sections, and so on.
 

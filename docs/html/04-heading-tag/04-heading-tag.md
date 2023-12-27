@@ -38,3 +38,9 @@ It's important to note that the visual appearance of heading tags is typically d
 **Output :**
 
 <img src="/html/04/output-1.png" alt="output-1" width="600px"/>
+
+:::danger
+Do not use heading tags to set font size of your text. It will create negative impact on Search Engine Optimization(SEO).
+:::
+
+In later part we will learn how to change font size using CSS.

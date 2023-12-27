@@ -41,6 +41,11 @@ char          gender;
 float          weight;
 ```
 
+```c++
+<bool> <variable_name>;
+bool          flag;
+```
+
 **Declaring and Assigning Values**
 
 ```cpp showLineNumbers = "true"

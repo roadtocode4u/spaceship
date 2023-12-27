@@ -43,4 +43,6 @@ It's important to note that the visual appearance of heading tags is typically d
 Do not use heading tags to set font size of your text. It will create negative impact on Search Engine Optimization(SEO).
 :::
 
+:::info
 In later part we will learn how to change font size using CSS.
+:::

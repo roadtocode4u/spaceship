@@ -46,7 +46,3 @@ Do not use heading tags to set font size of your text. It will create negative i
 :::info
 In later part we will learn how to change font size using CSS.
 :::
-
-:::info
-In later part we will learn how to change font size using CSS.
-:::

@@ -157,3 +157,7 @@ The anchor tag `<a>` is used to create hyperlinks in HTML, allowing users to nav
 **Output :**
 
 <img src="/html/07/output-7.png" alt="output-7" width="600px"/>
+
+:::info
+Later, we will learn how to remove the default blue link color displayed due to the anchor tag in CSS using text-decoration.
+:::

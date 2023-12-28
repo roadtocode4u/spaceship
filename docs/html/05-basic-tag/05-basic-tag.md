@@ -14,6 +14,32 @@ This guide provides an overview of some basic HTML tags and how to use them effe
 
 The `<br>` tag is used to create line breaks or new lines within the content. It is an empty tag and does not require a closing tag.
 
+**syntax :**
+
+```html
+Text1 <br />
+Text2
+```
+
+**Code :**
+
+```html showLineNumbers=true
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic Tags</title>
+  </head>
+  <body>
+    Hello My Name is Jaadu <br />
+    I lost My Spaceship.
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/html/05/output-10.png" alt="output-10" width="600px"/>
+
 ### Bold Tag
 
 In HTML **`<b>`** tag defines bold text.

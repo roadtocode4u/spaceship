@@ -75,14 +75,14 @@ To `count` total elements in the array.
 **Example :**
 
 ```js
-let Friends = ["OM", "Sunny", "Naari", "Purush"];
-const count = Friends.length;
+let marks = [50, 45, 30, 20, 10];
+let count = marks.length;
 console.log(count);
 ```
 
 **Output :**
 
-> 4
+> 5
 
 In the above example, we defines an array called `marks` with five elements: `50`, `45`, `30`, `20`, and `10`.
 

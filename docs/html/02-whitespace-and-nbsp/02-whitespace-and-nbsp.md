@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 ### Whitespace
 
-Whitespace refers to empty space around the content of a web page. By default, HTML considers multiple spaces as a single space, and the browser ignores excess whitespace.
+Whitespace are more than one single space. This are the blank inserted after a single spaces or multiple spaces enterd in the line. By default, HTML considers multiple spaces as a single space, and the browser ignores excess whitespace.
 
 **Code :**
 

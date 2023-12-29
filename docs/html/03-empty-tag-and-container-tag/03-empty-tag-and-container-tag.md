@@ -6,15 +6,25 @@ hide_table_of_contents: true
 
 ### Types of Tags
 
-1. **Empty Tag**
+1. **Empty Tag** (Self-Closing Tag)
 
-An empty tag, also known as a **self-closing tag**, is an HTML tag that doesn't require a separate closing tag because it doesn't have any content or nested elements. These tags are used to insert specific elements or formatting into your HTML structure. One common example of an empty tag is the `<br>` tag, which is used to create a line break within the content. Here's an example:
+An empty tag is an HTML tag that doesn't require a separate closing tag because it doesn't have any content or nested elements. These tags are used to insert specific elements or formatting into your HTML structure. One common example of an empty tag is the `<br>` tag, which is used to create a line break within the content. Here's an example:
 
 ```html
-This is a paragraph.<br />This is a new line.
+My Name is Jadoo.<br />I Lost My Spaceship.
 ```
 
 In the above example, the `<br>` tag doesn't have a closing tag because it's an empty tag.
+
+**Empty Tag** is also known as a **self-closing tag** when they are used in the following syntax:
+
+```html
+My Name is Jadoo.<br />I Lost My Spaceship.
+```
+
+:::note
+The Output in both the cases will be same and unaffected.
+:::
 
 **Other examples of empty tags include:**
 

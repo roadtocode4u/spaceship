@@ -11,30 +11,30 @@ Single variable which can **store** multiple values. An array is a data structur
 **Example :**
 
 ```js
-const students = ['Harsh','Kashifa','Yogita','Ankita','Vrushali']
-console.log(students)
+const students = ["Harsh", "Kashifa", "Yogita", "Ankita", "Vrushali"];
+console.log(students);
 ```
 
 **Output :**
+
 > ['Harsh', 'Kashifa', 'Yogita', 'Ankita', 'Vrushali']
 
 In the above code, we defines an array called `students` with five elements: `Harsh`, `Kashifa`, `Yogita`, `Ankita`, and `Vrushali`.
 
 The `console.log()` function is then used to print the entire `students` array to the console.
 
-
 **You can access elements in an array using their index, which starts at `0`. For example, to access the first element in `students`, you would use:**
 
-```js 
+```js
 console.log(students[0]);
 ```
 
 ```js
-const students = ['Harsh','Kashifa','Yogita','Ankita','Vrushali']
+const students = ["Harsh", "Kashifa", "Yogita", "Ankita", "Vrushali"];
 
-const lastStudent = students[4]
+const lastStudent = students[4];
 
-console.log(lastStudent)
+console.log(lastStudent);
 ```
 
 **Output :**
@@ -55,11 +55,11 @@ students[3] = "four";
 **Example :**
 
 ```js
-const students = ['Harsh','Kashifa','Yogita','Ankita','Vrushali']
+const students = ["Harsh", "Kashifa", "Yogita", "Ankita", "Vrushali"];
 
-students[4] = "Vrushali Khedkar"
+students[4] = "Vrushali Khedkar";
 
-console.log(students)
+console.log(students);
 ```
 
 **Output :**
@@ -75,13 +75,14 @@ To `count` total elements in the array.
 **Example :**
 
 ```js
-let marks = [50,45,30,20,10]
-marks.length
+let Friends = ["OM", "Sunny", "Mruganka", "Purush", "Naari"];
+const count = Friends.length;
+console.log(count);
 ```
 
 **Output :**
 
->5
+> 5
 
 In the above example, we defines an array called `marks` with five elements: `50`, `45`, `30`, `20`, and `10`.
 
@@ -94,20 +95,19 @@ To `add` element from the end of array.
 **Example :**
 
 ```js
-const students = ["A","B","C","D"]
-console.log(students)
-students.push("E")
-console.log(students)
+const students = ["A", "B", "C", "D"];
+console.log(students);
+students.push("E");
+console.log(students);
 ```
 
 **Output :**
 
->['A','B','C','D'] <br/>
->['A','B','C','D','E]
+> ['A','B','C','D'] <br/> >['A','B','C','D','E]
 
 In the above example, we defines an array called `students` with four elements: `A`, `B`, `C`, and `D`.
 
-The first `console.log()` function is then used to print the entire students array to the console. 
+The first `console.log()` function is then used to print the entire students array to the console.
 
 The `push()` method is then called on the students array with the argument `E`. This adds the string `E` as a new element at the `end` of the students array.
 
@@ -120,16 +120,15 @@ To `remove` element from the end of array.
 **Example :**
 
 ```js
-const students = ["A","B","C","D"]
-console.log(students)
-students.pop()
-console.log(students)
+const students = ["A", "B", "C", "D"];
+console.log(students);
+students.pop();
+console.log(students);
 ```
 
 **Output :**
 
->['A','B','C','D'] <br/>
->['A','B','C']
+> ['A','B','C','D'] <br/> >['A','B','C']
 
 In the above example, we defines an array called `students` with four elements: `A`, `B`, `C`, and `D`.
 
@@ -146,16 +145,15 @@ To `insert` element from the start of array.
 **Example :**
 
 ```js
-const students = ["A","B","C","D"]
-console.log(students)
-students.unshift("E")
-console.log(students)
+const students = ["A", "B", "C", "D"];
+console.log(students);
+students.unshift("E");
+console.log(students);
 ```
 
 **Output :**
 
->['A','B','C','D'] <br/>
->['E','A','B','C','D']
+> ['A','B','C','D'] <br/> >['E','A','B','C','D']
 
 In the above example, we defines an array called `students` with four elements: `A`, `B`, `C`, and `D`.
 
@@ -163,7 +161,7 @@ The first `console.log()` function is then used to print the entire students arr
 
 The `unshift()` method is then called on the students array with the argument `E`. This `adds` the string `E` as a new element at the `beginning of the students array`.
 
-The second `console.log()` function is then used to print the updated students array to the console. 
+The second `console.log()` function is then used to print the updated students array to the console.
 
 **5. shift() :**
 
@@ -172,16 +170,15 @@ To `delete` elements from the start of array.
 **Example :**
 
 ```js
-const students = ["A","B","C","D"]
-console.log(students)
-students.shift()
-console.log(students)
+const students = ["A", "B", "C", "D"];
+console.log(students);
+students.shift();
+console.log(students);
 ```
 
 **Output :**
 
->['A','B','C','D'] <br/>
->['B','C','D']
+> ['A','B','C','D'] <br/> >['B','C','D']
 
 In the above example, we defines an array called `students` with four elements: `A`, `B`, `C`, and `D`.
 
@@ -204,16 +201,15 @@ splice(index, no.of elements to delete, elements to insert)
 **Example :**
 
 ```js
-const students = ["A","B","C","D","E","F"]
-console.log(students)
-students.splice(1, 2,"W","Q")
-console.log(students)
+const students = ["A", "B", "C", "D", "E", "F"];
+console.log(students);
+students.splice(1, 2, "W", "Q");
+console.log(students);
 ```
 
 **Output :**
 
->['A','B','C','D','E','F'] <br/>
->['A','W','Q','D','E','F']
+> ['A','B','C','D','E','F'] <br/> >['A','W','Q','D','E','F']
 
 In the above example, we can defines an array called `students` with six elements: `A`, `B`, `C`, `D`, `E`, and `F`.
 
@@ -221,11 +217,11 @@ The first `console.log()` function is then used to print the entire students arr
 
 The ``splice()` method is then called on the `students` array with the arguments `1`, `2`, `W`, and `Q`. This removes two elements starting from the index `1`, which removes `C` and `D`, and inserts two new elements `W` and `Q` in their place.
 
-The second `console.log()` function is then used to print the updated students array to the console. 
+The second `console.log()` function is then used to print the updated students array to the console.
 
 **7. join() :**
 
-Convert `array to string default` separator is `,` but we can change it. 
+Convert `array to string default` separator is `,` but we can change it.
 
 **Example :**
 
@@ -236,20 +232,19 @@ console.log(students.join())
 
 **Output :**
 
->['A','B','C','D','E','F'] <br/>
->A,B,C,D,E,F
+> ['A','B','C','D','E','F'] <br/>
+> A,B,C,D,E,F
 
 **Example :**
 
 ```js
-const students = ["A","B","C","D","E","F"]
-console.log(students.join("*"))
+const students = ["A", "B", "C", "D", "E", "F"];
+console.log(students.join("*"));
 ```
 
 **Output :**
 
->['A','B','C','D','E','F'] <br/>
->`A*B*C*D*E*F`
+> ['A','B','C','D','E','F'] <br/> >`A*B*C*D*E*F`
 
 **8. reverse() :**
 
@@ -258,14 +253,14 @@ Converts an array in `reverse` order or `decending` order.
 **Example :**
 
 ```js
-const arr = ["A","B","C","D"]
-arr.reverse()
-console.log(arr)
+const arr = ["A", "B", "C", "D"];
+arr.reverse();
+console.log(arr);
 ```
 
 **Output :**
 
->['D','C','B','A']
+> ['D','C','B','A']
 
 **9. sort() :**
 
@@ -274,24 +269,24 @@ Converts an array in `ascending` order.
 **Example of ascending order :**
 
 ```js
-const arr = ["Z","A","D","B"]
-arr.sort()
-console.log(arr)
+const arr = ["Z", "A", "D", "B"];
+arr.sort();
+console.log(arr);
 ```
 
 **Output :**
 
->['A','B','D','Z']
+> ['A','B','D','Z']
 
 **Example of descending order :**
 
 ```js
-const arr = ["Z","A","D","B"]
-arr.sort()
-console.log("Ascending :"+arr)
+const arr = ["Z", "A", "D", "B"];
+arr.sort();
+console.log("Ascending :" + arr);
 
-arr.reverse()
-console.log("Descending : "+arr)
+arr.reverse();
+console.log("Descending : " + arr);
 ```
 
 **Output :**
@@ -306,11 +301,11 @@ console.log("Descending : "+arr)
 **Example :**
 
 ```js
-const arr = ["Z","A","D","B"]
-const index = arr.indexOf("A")
-console.log(index)
+const arr = ["Z", "A", "D", "B"];
+const index = arr.indexOf("A");
+console.log(index);
 ```
 
 **Output :**
 
->1
+> 1

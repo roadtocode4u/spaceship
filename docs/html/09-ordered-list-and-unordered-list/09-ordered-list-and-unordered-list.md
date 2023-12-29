@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 ## Unordered List
 
-An unordered list is used to create a list of related items that have no specific order or sequence. It is represented by the `<ul>` tag in HTML.
+An unordered list is used to create a list of related items that have **no specific order or sequence**. It is represented by the `<ul>` tag in HTML.
 
 **Syntax :**
 
@@ -160,7 +160,7 @@ There are three types of unordered lists that you can use by specifying the type
 
 ### Ordered List
 
-An ordered list is used to create a list of related items that have a specific order or sequence. It is represented by the `<ol>` tag in HTML.
+An ordered list is used to create a list of related items that have a **specific order or sequence**. It is represented by the `<ol>` tag in HTML.
 
 Example :
 

@@ -8,19 +8,19 @@ hide_table_of_contents: true
 
 The `<table>` tag is used to create & Represents HTML table.
 
-Table tag allow us to arrange data into rows and columns.
+**Table tag allow us to arrange data into rows and columns.**
 
 ### Table Row
 
-The `<tr>` tag represents a row in a table. It should be placed within the `<table>` element.
+The `<tr>` tag represents a **row** in a table. It should be placed within the `<table>` element.
 
 ### Table Cell
 
-The` <td>` tag represents a cell in a table. It is used to define individual data cells within a row. Each `<td>` element should be placed within a `<tr>` element.
+The` <td>` tag represents a **cell** in a table. It is used to define individual data cells within a row. Each `<td>` element should be placed within a `<tr>` element.
 
 ### Header Cell
 
-The `<th>` tag is used to define header cells in a table. It represents the header row or column of the table. Typically, `<th>` elements are used within the `<thead>` section of the table.
+The `<th>` tag is used to define **header cells** in a table. It represents the header row or column of the table. Typically, `<th>` elements are used within the `<thead>` section of the table.
 
 **Syntax :**
 

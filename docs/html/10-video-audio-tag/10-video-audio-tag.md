@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 # Video Tag and Audio Tag
 
-The video tag in HTML is used to display videos on a web page, while the audio tag is used to play audio files. This guide will show you how to use these tags and their attributes.
+The video tag in HTML is used to **display videos** on a web page, while the audio tag is used to **play audio files**. This guide will show you how to use these tags and their attributes.
 
 **Syntax :**
 
@@ -52,7 +52,7 @@ The video tag supports various attributes to customize its behavior:
 
 ### Controls
 
-Controls attributes are used to show controls on video like Play, Pause, Volume, Fullscreen toggle.
+Controls attributes are used to **show controls** on video like Play, Pause, Volume, Fullscreen toggle.
 
 ### Height and Width
 

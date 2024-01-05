@@ -259,7 +259,7 @@ The minus equals to operator (`-=`) subtracts a value from the current value of 
 > Current Balance :500 <br/>
 > New Balance:350
 
-**4. multiplication equals to (*=)**
+**4. multiplication equals to (\*=)**
 
 The multiplication equals to operator (`*=`) multiplication a value from the current value of a variable.
 
@@ -350,15 +350,15 @@ The modulus equals to operator (`%=`) modulus a value from the current value of 
 
 Increment and decrement operators increase or decrease the value of a variable.
 
- ## Increment Operator
+## Increment Operator
 
-  There are two types of increment operators: The `pre-increment operator (++variable) ` and the `post-increment operator (variable++)`.
+There are two types of increment operators: The `pre-increment operator (++variable) ` and the `post-increment operator (variable++)`.
 
- 1. **Post-Increment Operator (variable++):**
+1.  **Post-Increment Operator (variable++):**
 
- > The post-increment operator (`variable++`) increases the value of a variable by `1`, returning the original value before the increment.
+> The post-increment operator (`variable++`) increases the value of a variable by `1`, returning the original value before the increment.
 
- **Code**
+**Code**
 
 ```html
 <!DOCTYPE html>
@@ -366,10 +366,10 @@ Increment and decrement operators increase or decrease the value of a variable.
   <head>
     <title>Post-Increment Operator</title>
     <script>
-     let num = 21;
-     let result = num++; 
-     console.log(result); 
-     console.log(num);   
+      let num = 21;
+      let result = num++;
+      console.log(result);
+      console.log(num);
     </script>
   </head>
   <body></body>
@@ -381,11 +381,11 @@ Increment and decrement operators increase or decrease the value of a variable.
 > 21 <br/>
 > 22
 
- 2. **Pre-Increment Operator (++variable):**
+2.  **Pre-Increment Operator (++variable):**
 
 The pre-increment operator (`++variable`) increases the value of a variable by `1`, returning the value after the increment.
 
- **Code**
+**Code**
 
 ```html
 <!DOCTYPE html>
@@ -393,10 +393,10 @@ The pre-increment operator (`++variable`) increases the value of a variable by `
   <head>
     <title>Pre-Increment Operator</title>
     <script>
-    let num = 21;
-    let result = ++num; 
-    console.log(result); 
-    console.log(num);     
+      let num = 21;
+      let result = ++num;
+      console.log(result);
+      console.log(num);
     </script>
   </head>
   <body></body>
@@ -416,7 +416,6 @@ There are two types of decrement operators: The `pre-decrement operator (--varia
 
 The post-decrement operator (`variable--`) decreases the value of a variable by `1`, returning the original value before the decrement.
 
-
 **Code**
 
 ```html
@@ -425,10 +424,10 @@ The post-decrement operator (`variable--`) decreases the value of a variable by 
   <head>
     <title>Post-Decrement Operator</title>
     <script>
-    let num = 21;
-    let result = num--; 
-    console.log(result); 
-    console.log(num);     
+      let num = 21;
+      let result = num--;
+      console.log(result);
+      console.log(num);
     </script>
   </head>
   <body></body>
@@ -452,10 +451,10 @@ The pre-decrement operator (`--variable`) decreases the value of a variable by `
   <head>
     <title>Pre-Decrement Operator</title>
     <script>
-    let num = 21;
-    let result = --num; 
-    console.log(result); 
-    console.log(num);     
+      let num = 21;
+      let result = --num;
+      console.log(result);
+      console.log(num);
     </script>
   </head>
   <body></body>
@@ -483,7 +482,7 @@ The comparison operator is used to compare two variable value and return a Boole
     <script>
       let a = 10;
       let b = 10;
-      document.write(a==b)
+      document.write(a == b);
     </script>
   </head>
   <body></body>
@@ -492,9 +491,10 @@ The comparison operator is used to compare two variable value and return a Boole
 
 **Output**
 
->true
+> true
 
-In above code will gives output `true` to the web page because the two variables `a` and `b` have the same value, which is `10`. The `==` operator is a comparison operator that checks if two values are equal to each other. 
+In above code will gives output `true` to the web page because the two variables `a` and `b` have the same value, which is `10`. The `==` operator is a comparison operator that checks if two values are equal to each other.
+<img src="/javascript/04/difference(=).png" alt="difference(=, ==, ===)" width="800px"/>
 
 **2. not equals to (!=)**
 
@@ -508,7 +508,7 @@ In above code will gives output `true` to the web page because the two variables
     <script>
       let a = 10;
       let b = 20;
-      document.write(a!=b)
+      document.write(a != b);
     </script>
   </head>
   <body></body>
@@ -517,7 +517,7 @@ In above code will gives output `true` to the web page because the two variables
 
 **Output**
 
->true
+> true
 
 In the above code will gives output `true` to the web page because the two variables `a` and `b` are not equal to each other. The `!=` operator is the `not equal` operator in JavaScript, and it checks if two values are not equal to each other.
 
@@ -534,9 +534,9 @@ In the above code will gives output `true` to the web page because the two varia
       let a = 5;
       let b = 10;
 
-      let res = a<b;
+      let res = a < b;
 
-      document.write(res)
+      document.write(res);
     </script>
   </head>
   <body></body>
@@ -545,11 +545,11 @@ In the above code will gives output `true` to the web page because the two varia
 
 **Output**
 
->true
+> true
 
 In the above code will gives output `true` to the web page because the variable res is assigned the value of the expression `a<b` , which is true because `a` is less than `b`.
 
-The `<` operator is the `less than` operator in JavaScript, and it checks if the value on the left is less than the value on the right. In this case, `a` has  value of `5` and `b` has value of `10`, so the expression `a<b` evaluates to true. The result of this expression is then assigned to the variable res.
+The `<` operator is the `less than` operator in JavaScript, and it checks if the value on the left is less than the value on the right. In this case, `a` has value of `5` and `b` has value of `10`, so the expression `a<b` evaluates to true. The result of this expression is then assigned to the variable res.
 
 **4. greater than (>)**
 
@@ -564,9 +564,9 @@ The `<` operator is the `less than` operator in JavaScript, and it checks if the
       let a = 50;
       let b = 10;
 
-      let res = a>b;
+      let res = a > b;
 
-      document.write(res)
+      document.write(res);
     </script>
   </head>
   <body></body>
@@ -575,11 +575,11 @@ The `<` operator is the `less than` operator in JavaScript, and it checks if the
 
 **Output**
 
->true
+> true
 
 In the above code will gives output `true` to the web page because the variable res is assigned the value of the expression `a>b` , which is true because `a` is greater than `b`.
 
-The `>` operator is the `greater than` operator in JavaScript, and it checks if the value on the left is greater than the value on the right. In this case, `a` has  value of `50` and `b` has value of `10`, so the expression `a>b` evaluates to true. The result of this expression is then assigned to the variable res.
+The `>` operator is the `greater than` operator in JavaScript, and it checks if the value on the left is greater than the value on the right. In this case, `a` has value of `50` and `b` has value of `10`, so the expression `a>b` evaluates to true. The result of this expression is then assigned to the variable res.
 
 **5. less than or equals to (<=)**
 
@@ -594,9 +594,9 @@ The `>` operator is the `greater than` operator in JavaScript, and it checks if 
       let a = 5;
       let b = 10;
 
-      let res = a<=b;
+      let res = a <= b;
 
-      document.write(res)
+      document.write(res);
     </script>
   </head>
   <body></body>
@@ -605,11 +605,11 @@ The `>` operator is the `greater than` operator in JavaScript, and it checks if 
 
 **Output**
 
->true
+> true
 
 In the above code will gives output `true` because the variable res is assigned the value of the expression `a<=b`, which is true because `a` is less than or equal to `b`.
 
-In this code, the `<=` operator is the `less than or equal to` operator in JavaScript, and it checks if the value on the left is less than or equal to the value on the right. In this case, `a` has  value of `5` and `b` has value of `10`, so the expression `a<=b` evaluates to true because `5` is less than or equal to `10`.
+In this code, the `<=` operator is the `less than or equal to` operator in JavaScript, and it checks if the value on the left is less than or equal to the value on the right. In this case, `a` has value of `5` and `b` has value of `10`, so the expression `a<=b` evaluates to true because `5` is less than or equal to `10`.
 
 **6. greater than or equals to (>=)**
 
@@ -624,9 +624,9 @@ In this code, the `<=` operator is the `less than or equal to` operator in JavaS
       let a = 50;
       let b = 10;
 
-      let res = a>=b;
+      let res = a >= b;
 
-      document.write(res)
+      document.write(res);
     </script>
   </head>
   <body></body>
@@ -635,17 +635,17 @@ In this code, the `<=` operator is the `less than or equal to` operator in JavaS
 
 **Output**
 
->true
+> true
 
 In the above code will gives output `true` because the variable res is assigned the value of the expression `a>=b`, which is true because `a` is greater than or equal to `b`.
 
-In this code, the `>=` operator is the `greater than or equal to` operator in JavaScript, and it checks if the value on the left is greater than or equal to the value on the right. In this case, `a` has  value of `50` and `b` has value of `10`, so the expression `a>=b` evaluates to true because `50` is greater than or equal to `10`.
+In this code, the `>=` operator is the `greater than or equal to` operator in JavaScript, and it checks if the value on the left is greater than or equal to the value on the right. In this case, `a` has value of `50` and `b` has value of `10`, so the expression `a>=b` evaluates to true because `50` is greater than or equal to `10`.
 
 ## Logical Operator
 
-In JavaScript, logical operators are used to evaluate logical expressions and return a Boolean value of `true` or `false`. 
+In JavaScript, logical operators are used to evaluate logical expressions and return a Boolean value of `true` or `false`.
 
-**1. AND operator(&&)** 
+**1. AND operator(&&)**
 
 This operator returns true if both operands are true, otherwise it returns false.
 
@@ -657,9 +657,9 @@ This operator returns true if both operands are true, otherwise it returns false
   <head>
     <title>Hello JS 💛</title>
     <script>
-      let res = 5>3 && 4>2
+      let res = 5 > 3 && 4 > 2;
 
-      document.write(res)
+      document.write(res);
     </script>
   </head>
   <body></body>
@@ -668,16 +668,15 @@ This operator returns true if both operands are true, otherwise it returns false
 
 **Output**
 
->true
-
+> true
 
 In the above code will gives output `true` This is because the `&&` (AND) operator evaluates both of its operands and returns true if both operands are true. In this case, the first operand `5 > 3` is `true`, and the second operand `4 > 2` is also `true`. Therefore, the expression `5 > 3 && 4 > 2` evaluates to `true` and is store to the variable `res`.
 
 **2. OR operator(||)**
 
- This operator returns true if at least one of the condition is true, otherwise it returns false.
+This operator returns true if at least one of the condition is true, otherwise it returns false.
 
- **Code**
+**Code**
 
 ```html
 <!DOCTYPE html>
@@ -685,9 +684,9 @@ In the above code will gives output `true` This is because the `&&` (AND) operat
   <head>
     <title>Hello JS 💛</title>
     <script>
-      let res = 5==5 || 4==2
+      let res = 5 == 5 || 4 == 2;
 
-      document.write(res)
+      document.write(res);
     </script>
   </head>
   <body></body>
@@ -696,15 +695,15 @@ In the above code will gives output `true` This is because the `&&` (AND) operat
 
 **Output**
 
->true
+> true
 
 In the above code will gives output `true` this is because the `||` (OR) operator evaluates both of its condition and returns `true` if at least one of the operands is `true`. In this case, the first operand `5 == 5` is `true`, and the second operand `4 == 2` is `false`. Therefore, the expression `5 == 5 || 4 == 2` evaluates to `true` and is store to the variable `res`.
- 
+
 **3. NOT operator (!)**
 
 If the operand is true, it returns false, and if the operand is false, it returns true.
 
- **Code**
+**Code**
 
 ```html
 <!DOCTYPE html>
@@ -712,7 +711,7 @@ If the operand is true, it returns false, and if the operand is false, it return
   <head>
     <title>Hello JS 💛</title>
     <script>
-      document.write((8!=5))
+      document.write(8 != 5);
     </script>
   </head>
   <body></body>
@@ -721,11 +720,11 @@ If the operand is true, it returns false, and if the operand is false, it return
 
 **Output**
 
->true
+> true
 
 In the above code will gives output `true` this is because the `!` (NOT) operator negates the boolean value of its operand. In this case, the operand is `8 == 5`, which evaluates to `false`. Therefore, the `!` operator negates this value to `true`.
 
-### Modulus Operators: 
+### Modulus Operators:
 
 The **modulus operator** is represented by the percent sign `%`. The modulus operator returns the `remainder` of a division operation. It is often used with integers, but it can also be used with floating-point numbers.
 
@@ -737,8 +736,8 @@ The **modulus operator** is represented by the percent sign `%`. The modulus ope
   <head>
     <title>Hello JS 💛</title>
     <script>
-     const result = 10 % 3;
-     document.write(result);
+      const result = 10 % 3;
+      document.write(result);
     </script>
   </head>
   <body></body>
@@ -747,14 +746,6 @@ The **modulus operator** is represented by the percent sign `%`. The modulus ope
 
 **Output**
 
->1
+> 1
 
 In this example, `10 % 3` is calculating the remainder when 10 is divided by 3. The result is 1 because 10 divided by 3 is 3 with a remainder of 1.
-
-
-
-
-
-
-
-

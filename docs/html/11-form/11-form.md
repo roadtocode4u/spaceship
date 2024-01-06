@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 # Forms
 
-Forms in HTML are used to collect input from users. They can include various elements such as text fields, checkboxes, radio buttons, dropdown menus, buttons, and more. In this guide, we'll explore the different form elements and their usage.
+Forms in HTML are used to **collect input from users**. They can include various elements such as text fields, checkboxes, radio buttons, dropdown menus, buttons, and more. In this guide, we'll explore the different form elements and their usage.
 
 ## Form Structure
 
@@ -36,7 +36,7 @@ A form is created using the `<form>` element. It serves as a container for form 
 
 ## Input Tag
 
-The `<input>` tag is used to create different types of input fields where users can enter data.
+The `<input>` tag is used to create different types of input fields where **users can enter data**.
 
 ### Text Input
 
@@ -213,7 +213,7 @@ If we do not enter the proper email address then it will display error like this
 
 ### required
 
-- The `required` attribute indicates that an input field must be filled out before submitting the form.
+- The `required` attribute indicates that an **input field must be filled** out before submitting the form.
 
 **Code :**
 

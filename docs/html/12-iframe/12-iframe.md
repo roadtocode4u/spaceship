@@ -16,7 +16,7 @@ IThe `<iframe>` tag is used to embed content from another webpage or resource wi
 
 ### Explanation:
 
-- `src`: This attribute specifies the URL or source of the content you want to embed. It can be a webpage, an image, a video, or any other valid web resource.
+- `src`: This attribute specifies the **URL or source of the conten**t you want to embed. It can be a webpage, an image, a video, or any other valid web resource.
 
 - `height`: This attribute sets the height of the `iframe` in pixels or as a percentage of the parent container.
 
@@ -155,7 +155,7 @@ In this example, an `iframe` is created with a name of `myscreen`. The `Contact`
 
 ## Embed Tag
 
-The `<embed>` tag is used to embed non-HTML content, such as PDF files, within an HTML document.
+The `<embed>` tag is used to **embed non-HTML content**, such as PDF files, within an HTML document.
 
 **Syntax :**
 

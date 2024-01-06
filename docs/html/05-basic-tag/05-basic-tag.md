@@ -12,7 +12,7 @@ This guide provides an overview of some basic HTML tags and how to use them effe
 
 **`<br>`** : Break Row
 
-The `<br>` tag is used to create line breaks or new lines within the content. It is an empty tag and does not require a closing tag.
+The `<br>` tag is used to create **line breaks or new lines** within the content. It is an empty tag and does not require a closing tag.
 
 **syntax :**
 
@@ -278,7 +278,7 @@ H<sub>2</sub>O
 <span> </span>
 ```
 
-Span Tag is a text inline selector it is used to select a particular Text. Span tag does not have any own effect.
+Span Tag is a text inline selector it is used to select a particular Text. **Span tag does not have any own effect**.
 
 **Code :**
 

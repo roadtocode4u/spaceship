@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
 ### Image Tag
 
-The Image tag is used to add an image in an HTML page.
+The Image tag is used to **add an image** in an HTML page.
 
 **Syntax:**
 
@@ -22,7 +22,7 @@ Attributes are used to describe tag or to provide more info to tag.
 
 1. **`src` Attribute :**
 
-`src` Attribute are used to provide source or path of the image.
+`src` Attribute are used **to provide source or path** of the image.
 
 **Syntax:**
 
@@ -52,9 +52,9 @@ Attributes are used to describe tag or to provide more info to tag.
 
 2. **`height` and `width` Attribute :**
 
-The width attribute are used to give width of an image, in pixels.
+The width attribute are used **to give width** of an image, in pixels.
 
-The Height attribute are used to give Height of an image, in pixels.
+The Height attribute are used **to give Height** of an image, in pixels.
 
 **Syntax:**
 

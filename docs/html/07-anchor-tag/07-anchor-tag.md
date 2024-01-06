@@ -4,7 +4,7 @@ description: "Anchor Tag"
 hide_table_of_contents: true
 ---
 
-The anchor tag `<a>` is used to create hyperlinks in HTML, allowing users to navigate from one page to another or open external resources. It is typically used within the body of an HTML document.
+The anchor tag `<a>` is used **to create hyperlinks** in HTML, allowing users to navigate from one page to another or open external resources. It is typically used within the body of an HTML document.
 
 **Syntax**
 

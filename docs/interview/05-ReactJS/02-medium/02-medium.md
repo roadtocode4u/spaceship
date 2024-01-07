@@ -22,6 +22,93 @@
 </details>
 
 <details>
-  <summary>What is named export and default export?</summary>
-    TODO: add answer @ShwetaPund
+<summary>What is named export and default export? </summary>
+
+**Two types of Export & Import in React:-**
+
+- `Default Export & Import:-` use for only one export.
+  - export default Component
+  - import Component from "path"
+
+**Ex:**
+
+```js title="src/components/Wishes.js"
+export default function Wishes() {
+  return (
+    <div>
+      <h1>Happy Christmas</h1>
+    </div>
+  );
+}
+```
+
+```js title="src/components/Home.js"
+import Wishes from "./Wishes";
+
+return (
+  <>
+    <Wishes />
+  </>
+);
+```
+
+- `Name Export & Import:-` use for Multiple export in one component/file
+  - export Component
+  - import { Component, Another Component} from 'path'
+
+**Ex:**
+
+```js title="src/components/Wishes.js"
+export function Wishes() {
+  return (
+    <div>
+      <h1>Happy Christmas</h1>
+    </div>
+  );
+}
+```
+
+```js title="src/views/Home.js"
+import { Wishes } from "./Wishes";
+
+return (
+  <>
+    <Wishes />
+  </>
+);
+```
+
+**Can i use default export along with name export?**<br/>
+**=>** yes, you can but default export is only one.
+
+**Ex:**
+
+```js title="src/components/Students.js"
+export default function Students() {
+  return (
+    <div>
+      <h1>Good morning Sir</h1>
+    </div>
+  );
+}
+export function Teacher() {
+  return (
+    <>
+      <h1>Hii Student</h1>
+    </>
+  );
+}
+```
+
+```js title="src/views/Home.js"
+import Students, { Teacher } from "./School";
+
+return (
+  <>
+    <Students />
+    <Teacher />
+  </>
+);
+```
+
 </details>

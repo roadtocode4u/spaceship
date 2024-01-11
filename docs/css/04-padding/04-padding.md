@@ -4,10 +4,6 @@ description: "Padding"
 hide_table_of_contents: true
 ---
 
-## Box-Model
-
-The CSS Box Model is a fundamental concept that describes how elements on a webpage are rendered and how their dimensions are calculated. It consists of four layers: `content`, `padding`, `margin`, and `border`. In this guide, we'll explore the concepts of `padding` and `margin`, and provide examples to illustrate their usage.
-
 ### Padding
 
 Padding refers to the space between an element's content and its border. It creates space within the element, inside any defined borders. The CSS properties used to control padding are:
@@ -32,20 +28,21 @@ Here's an example of how padding can be applied to an element:
     <style>
       .box {
         border: 3px solid black;
-        padding-left: 20px;
-        padding-top: 40px;
-        padding-right: 60px;
-        padding-bottom: 80px;
+        padding-left: 50px;
+        padding-top: 80px;
+        padding-right: 70px;
+        padding-bottom: 100px;
         width: 400px;
       }
     </style>
   </head>
   <body>
     <div class="box">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam impedit,
-      quia alias repudiandae, velit delectus doloremque omnis unde perferendis
-      dicta quo enim, quisquam reprehenderit fugit consectetur commodi corporis
-      rem pariatur.
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit Exite. Veniam
+      impedit, quia alias repudiandae, velit delectus rounde doloremque omnis
+      unde perferendis dicta quo enim, quisquam reprehenderit fugit consectetur
+      commodi corporis rem pariatur quisquam reprehenderit quisquam
+      reprehenderitquisquam .
     </div>
   </body>
 </html>
@@ -83,6 +80,9 @@ Instead of specifying `padding` for each side individually, you can use the shor
 </html>
 ```
 
+**Concept**
+<img src="/css/04/output-2-1.png" alt="output-2-1" width="600px"/>
+
 **Output**
 <img src="/css/04/output-2.png" alt="output-2" width="600px"/>
 
@@ -97,7 +97,6 @@ Instead of specifying `padding` for each side individually, you can use the shor
       .btn {
         background-color: pink;
         border: 3px solid black;
-        border-radius: 30px 0 30px 0;
         padding: 20px 40px;
       }
     </style>

@@ -98,8 +98,8 @@ In the above example, the CSS styles are defined in the style.css file and linke
 
 ### Limitations/Benifits of inline, internal, and external CSS.
 
-| CSS Implementation | Limitations                                                                                                          | Benifits                                                                                                       |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Inline CSS         | Not reusable, increases HTML file size, hard to maintain, breaks the principle of separation of concerns.            | Inline CSS's high specificity lets you quickly style each element individually.                                |
-| Internal CSS       | Not reusable across multiple documents, increases HTML file size, requires copying the same CSS rules on every page. | Balanced approach, styling within the document for better organization and maintainability.                    |
-| External CSS       | The whole CSS file is loaded everytime to every document, when linked to multiple Documents.                         | Centralized styling for the whole site, easy to maintain and promotes reusability with efficient page loading. |
+| CSS Implementation | Limitations                                                                                                               | Benifits                                                                                                       |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Inline CSS         | Not reusable, increases HTML file size, hard to maintain, breaks the principle of separation of concerns.                 | Inline CSS's high specificity lets you quickly style each element individually.                                |
+| Internal CSS       | Not reusable across multiple documents, increases HTML file size, requires copying the same CSS properties on every page. | Balanced approach, styling within the document for better organization and maintainability.                    |
+| External CSS       | The whole CSS file is loaded everytime to every document, when linked to multiple Documents.                              | Centralized styling for the whole site, easy to maintain and promotes reusability with efficient page loading. |

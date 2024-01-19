@@ -49,7 +49,7 @@ In CSS, there exist **five** fundamental font families, each with distinct chara
 
 **Example :**
 
-```html
+```html showLineNumbers=true
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -88,3 +88,49 @@ In CSS, there exist **five** fundamental font families, each with distinct chara
 **Output :**
 
 <img src="/css/05/output-12.png" alt="output-12" width="600px"/>
+
+### Importing Fonts using the Google Fonts
+
+**Step 1:**
+Go to https://fonts.google.com/ else search `Google Fonts` on web.
+<img src="/css/05/output-13.png" alt="output-13" width="600px"/>
+
+Visit the Google Fonts website to explore and select the fonts you want to use.
+
+<img src="/css/05/output-15.png" alt="output-15" width="600px"/>
+
+**Step 2:**
+Select the font and click on the import and copy the link and CSS rules.
+<img src="/css/05/output-16.png" alt="output-16" width="600px"/>
+
+**Step 3:**
+Paste the link into the CSS and use the CSS rule in any division or tag you want to apply the Font to.
+
+**Step 4:**
+
+**Example**
+
+```html showLineNumbers=true
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Font Style</title>
+  </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+    .text {
+      font-family: "Roboto", sans-serif;
+    }
+  </style>
+
+  <body>
+    <h1>Normal Text</h1>
+    <h1 class="text">Font-Family Example</h1>
+  </body>
+</html>
+```
+
+**Output**
+<img src="/css/05/output-17.png" alt="output-17" width="600px"/>

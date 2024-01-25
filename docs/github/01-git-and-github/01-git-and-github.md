@@ -80,13 +80,13 @@ It is recommended to keep your repository public.
 <img src="/icp/23/img-6.png" alt="img-6" width="600px"/>
 
 ```html
-git clone <repository-link>
+git clone <repository-link></repository-link>
 ```
 
 <img src="/icp/23/img-8.png" alt="img-8" width="600px"/>
 
 :::tip
-Replace `<repository-link>` with the actual link available on your repository 
+Replace `<repository-link>` with the actual link available on your repository
 :::
 
 7. You will see a new folder named **sample** on your desktop.
@@ -100,113 +100,13 @@ To set up your account credentials for Git, follow these steps:
 1. Open a terminal or command prompt.
 
 2. Set your username globally using the command:
- 
- ```html
+
+```html
 git config --global user.name "Your Username"
- ```
+```
 
 3. Set your email globally using the command:
 
- ```html
+```html
 git config --global user.email "your-email@example.com"
- ```
-
-## Git Commands
-
-1. `git init`
-
-The `git init` command is used to initialize a new Git repository in your project folder. This command is used once during the initial setup of a new repository.
-
-2. `git status`
-
-The `git status` command displays the status of your working project. It shows which files have been modified or staged and which files are untracked.
-
-3.  `git add <filename>`
-
-The `git add <filename>` command adds new or changed files in your working project to the Git staging area. You can add specific files by providing their filenames, or you can use `git add .` to add all changed files.
-
-4. `git commit`
-
-The `git commit` command is used to record the changes in the repository. Each commit includes a commit message that describes the changes made in that commit.
-
-**Syntax :**
-
-```html
-git commit -m "commit message"
 ```
-
-5. `git push`
-
-The `git push` command is used to upload local branch commits to GitHub. It pushes your local changes to the remote repository on GitHub.
-
-To push your code to GitHub using Git commands, follow these steps:
-
-### Pushing Existing Code to a Git Repository
-
-1. **Initialize a Git repository:** If you haven't already done so, navigate to the root directory of your project using a command-line interface, and run the following command to initialize a Git repository:
-
-```html
-git init
-```
-
-3. **Create a remote repository:** Create a new repository on a Git hosting platform such as GitHub Follow the platform's instructions to set it up.
-
-3. **Add a remote repository:** Link your local repository with the remote repository using the following command:
-
-```html
-git remote add origin <remote_repository_url>
-```
-
-Replace <remote_repository_url> with the URL of the remote repository you created.
-
-4. **Add files to the staging area:** Use the following command to add the existing code files to the staging area, which prepares them for committing:
-
-```html
-git add .
-```
-
-5. **Commit the changes:** Committing creates a new snapshot of the code in the Git history. Run the following command to commit the changes:
-
-```html
-git commit -m "Initial commit"
-```
-
-6. **Push the code:** Finally, push your code to the remote repository using the following command:
-
-```html
-git push
-```
-If you're using a branch other than `master`, replace `master` with the name of the branch.
-
-Congratulations! You have successfully pushed your existing code to a Git repository.
-
-### Pushing New Code Directly to a Git Repository
-
-1. **Clone the repository:** Start by cloning the existing repository to your local machine. Use the following command to clone the repository:
-
-```html
-git clone <repository_url>
-```
-Replace <repository_url> with the URL of the repository you want to clone.
-
-2. **Create or modify files:** Create new code files or modify existing ones using your preferred code editor or IDE.
-
-3. **Add files to the staging area:** Use the git add command to add the new or modified files to the staging area:
-
-```html
-git add .
-```
-4. **Commit the changes:** Commit the changes by running the following command:
-
-```html
-git commit -m "Commit message"
-```
-Replace **Commit message** with a descriptive message summarizing the changes made.
-
-5. **Push the code:** Finally, push the new code to the remote repository using the following command:
-
-```html
-git push
-```
-
-Great job! You have now successfully pushed your new code directly to the Git repository.

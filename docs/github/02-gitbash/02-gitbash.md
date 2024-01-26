@@ -43,13 +43,13 @@ Git Bash terminal will open in the same directory path.
 
 <img src="/icp/23/output-6.jpg" alt="img-2" width="600px"/>
 
-A. Set your username globally using the command:
+A. Set your **username** globally using the command:
 
 ```html
 git config --global user.name "Your-Github-Username"
 ```
 
-B. Set your email globally using the command:
+B. Set your **email** globally using the command:
 
 ```html
 git config --global user.email "your-email@example.com"

@@ -1,7 +1,11 @@
+// Importing necessary dependencies
 import React from "react";
 import clsx from "clsx";
+
+// Importing local CSS module for styling
 import styles from "./styles.module.css";
 
+// Data structure containing features to display on the homepage
 const FeatureList = [
   {
     title: "Learn from Scratch",
@@ -35,13 +39,16 @@ const FeatureList = [
   },
 ];
 
+// Functional component Feature for rendering individual features
 function Feature({ imgSrc, title, description }) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
+        {/* Rendering feature image */}
         <img src={imgSrc} className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
+        {/* Rendering feature title and description */}
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
@@ -49,11 +56,13 @@ function Feature({ imgSrc, title, description }) {
   );
 }
 
+// Functional component HomepageFeatures for rendering the entire features section
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
         <div className="row">
+          {/* Mapping through FeatureList and rendering each feature */}
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}

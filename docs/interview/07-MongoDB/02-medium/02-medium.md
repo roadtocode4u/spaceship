@@ -1,7 +1,13 @@
 ### MongoDB Medium
 
 <details>
+
+  <summary>
+  How to perform CURD operations from mongo shell?
+  </summary>
+
   <summary>How to perform CRUD operations from mongo shell?</summary>
+
 
 MongoDB supports the standard CRUD (Create, Read, Update, Delete) operations for manipulating data in a database. Here are the corresponding CRUD operations available in MongoDB:
 

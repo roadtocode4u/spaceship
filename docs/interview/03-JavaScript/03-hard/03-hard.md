@@ -59,5 +59,38 @@ It logs the `Start of async task`, waits for it to finish, and then logs the `re
 
 <details>
   <summary>What is Array and What are the different methods available in Array?</summary>
-    TODO: add answer @PournimaAnjole
+
+
+**Array:** an array is a data structure that allows you to store and organize multiple values in a single variable. It uses a numerical index to access and retrieve individual elements. Arrays are defined using square brackets `[]` and each element in the array is separated by a `comma` . Array index always start from `0`.
+
+```js
+const students = ["Harshali", "Chandani", "Rani", "Samiksha"];
+console.log(students)[
+  // output
+  ("Harshali", "Chandani", "Rani", "Samiksh")
+];
+```
+
+**Methods on Array:**
+
+**1.lenth:** length `represents` the number of elements in the array.
+
+**2.push():** To `add` element from the end of array.
+
+**3.pop():** To `remove` element from the end of array.
+
+**4.unshift():** To `insert` element from the start of array.
+
+**5.shift():** To `delete` elements from the start of array.
+
+**6.splice():** This function can perform `insertion` and `deletion` at once.
+
+**7.join():** Convert array to `string` default separator is` ,` but we can change it.
+
+**8.reverse():** Converts an array in` reverse` order or `decending` order.
+
+**9.indexOf( ):** indexOf() method is used to `find` an array of element.
+
+**10.sort():** Converts an array in `ascending` order.
+
 </details>

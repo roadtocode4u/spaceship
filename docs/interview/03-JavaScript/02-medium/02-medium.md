@@ -212,7 +212,7 @@ console.log(`Hello ${name}`);
 - `Math.max(x)`
 - `Math.sqrt(x)`
 
-**1.`toFixed()`**:- To format a number with a fixed number of decimal places and return it as a string, use the` toFixed()` method. By choosing how many decimal places to retain, you can adjust the precision of a floating-point number.
+**1.`toFixed()`**:- **toFixed()** method in JavaScript is used to format a number using fixed-point notation . By choosing how many decimal places to return, you can adjust the floating-point number.
 
 **Syntax :**
 

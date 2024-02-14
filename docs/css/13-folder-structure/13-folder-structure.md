@@ -16,6 +16,20 @@ A folder structure is a hierarchical system you use to organize your files. The 
 
 <img src="/css/13/tree-dia.png" alt="img-2" />
 
+## Folder Structure
+
+The folder structure in HTML is how you arrange the files and folders in your project.
+
+<img src="/icp/22/output-11.png" alt="output-11" width="600px"/>
+
+### Folder Structure in VS-code
+
+<img src="/icp/22/output-12.png" alt="output-12" width="600px"/>
+
+### After Exapanding folders
+
+<img src="/icp/22/output-13.png" alt="output-13" width="600px"/>
+
 ## Step:1
 
 Handeling vs-code for folder structure.

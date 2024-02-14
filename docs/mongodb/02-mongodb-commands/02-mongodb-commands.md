@@ -1,5 +1,5 @@
 ---
-title:  MongoDB Commands
+title: MongoDB Commands
 description: "MongoDB Commands"
 hide_table_of_contents: true
 ---
@@ -40,100 +40,110 @@ hide_table_of_contents: true
 
 10. `updateMany()`: Updates multiple documents in a collection that match a specified filter with the specified changes.
 ```
+
 These commands are essential for performing various Create, Read, Update, and Delete (CRUD) operations in a MongoDB database.
 
 ### insertOne()
 
 ```jsx
 db.courses.insertOne({
-    title: 'IGCP-1.0',
-    description: 'Full stack web development',
-    fees: 15000,
-    duration: '6 Months'
-})
+  title: "IGCP-1.0",
+  description: "Full stack web development",
+  fees: 15000,
+  duration: "6 Months",
+});
 ```
 
 **Output:**
->{ <br/>
-  acknowledged: true,<br/>
-  insertedId: ObjectId("652f7387434758e91eb89af4")<br/>
-}
+
+> { <br/>
+> acknowledged: true,<br/>
+> insertedId: ObjectId("652f7387434758e91eb89af4")<br/>
+> }
 
 ```jsx
 db.courses.insertOne({
-    title: 'Python Programming',
-    description: 'Python Programming for Beginners',
-    fees: 499,
-    duration: '2 Months'
-})  
+  title: "Python Programming",
+  description: "Python Programming for Beginners",
+  fees: 499,
+  duration: "2 Months",
+});
 ```
 
 **Output:**
->{<br/>
-  acknowledged: true,<br/>
-  insertedId: ObjectId("652f76ef434758e91eb89af5")<br/>
-}
+
+> {<br/>
+> acknowledged: true,<br/>
+> insertedId: ObjectId("652f76ef434758e91eb89af5")<br/>
+> }
 
 ### insertMany()
 
 ```jsx
 db.courses.insertMany([
-    {
-    title: 'C++',
-    description: 'C++ Programming with OOP's',
+  {
+    title: "C++",
+    description: "C++ Programming with OOPs",
     fees: 499,
-    duration: '3 Months'
-    },
-    {
-    title: 'Data structures',
-    description: 'Data Structures and Algorithms',
+    duration: "3 Months",
+  },
+  {
+    title: "Data structures",
+    description: "Data Structures and Algorithms",
     fees: 999,
-    duration: '6 Months'
-    },
-])
+    duration: "6 Months",
+  },
+]);
 ```
+
 **Output:**
->{ <br/>
-  acknowledged: true,<br/>
-  insertedIds: { <br/>
+
+> { <br/>
+> acknowledged: true,<br/>
+> insertedIds: { <br/>
+
     '0': ObjectId("652f7c19434758e91eb89af6"),<br/>
     '1': ObjectId("652f7c19434758e91eb89af7"),<br/>
-  }
 
+}
 
 ```jsx
 db.students.insertMany([
-    {
-        name: 'Anand',
-        age: 23,
-        city: 'Nagpur'
-    },
-    {
-        name: 'Vaishnavi',
-        age: 22,
-        city: 'Ahemadnagar'
-    },
-    {
-        name: 'Pinki',
-        age: 20,
-        city: 'Pune'
-    },
-    {
-        name: 'Suraj',
-        age: 23,
-        city: 'Bhandara'
-    }, 
-])
+  {
+    name: "Anand",
+    age: 23,
+    city: "Nagpur",
+  },
+  {
+    name: "Vaishnavi",
+    age: 22,
+    city: "Ahemadnagar",
+  },
+  {
+    name: "Pinki",
+    age: 20,
+    city: "Pune",
+  },
+  {
+    name: "Suraj",
+    age: 23,
+    city: "Bhandara",
+  },
+]);
 ```
+
 **Output:**
->{<br/>
-  acknowledged: true,<br/>
-  insertedIds: {<br/>
+
+> {<br/>
+> acknowledged: true,<br/>
+> insertedIds: {<br/>
+
     '0': ObjectId("652f7c19434758e91eb89af6"),<br/>
     '1': ObjectId("652f7c19434758e91eb89af7"),<br/>
     '2': ObjectId("652f7c19434758e91eb89af8"),<br/>
     '3': ObjectId("652f7c19434758e91eb89af9")<br/>
-  }<br/>
+
+}<br/>
 }
 
 ### find()
@@ -143,116 +153,127 @@ db.students.insertMany([
 ```
 
 **Output:**
->{ <br/>
-  _id: ObjectId("652f7c19434758e91eb89af6"),<br/>
-  name: 'Anand',<br/>
-  age: 23,<br/>
-  city: 'Nagpur'<br/>
-}<br/>
-{<br/>
-  _id: ObjectId("652f7c19434758e91eb89af7"),<br/>
-  name: 'Vaishnavi',<br/>
-  age: 22,<br/>
-  city: 'Ahemadnagar'<br/>
-}<br/>
-{<br/>
-  _id: ObjectId("652f7c19434758e91eb89af8"),<br/>
-  name: 'Pinki',<br/>
-  age: 20,<br/>
-  city: 'Pune'<br/>
-}<br/>
-{<br/>
-  _id: ObjectId("652f7c19434758e91eb89af9"),<br/>
-  name: 'Suraj',<br/>
-  age: 23,<br/>
-  city: 'Bhandara'<br/>
-}
+
+> { <br/>
+> \_id: ObjectId("652f7c19434758e91eb89af6"),<br/>
+> name: 'Anand',<br/>
+> age: 23,<br/>
+> city: 'Nagpur'<br/>
+> }<br/>
+> {<br/>
+> \_id: ObjectId("652f7c19434758e91eb89af7"),<br/>
+> name: 'Vaishnavi',<br/>
+> age: 22,<br/>
+> city: 'Ahemadnagar'<br/>
+> }<br/>
+> {<br/>
+> \_id: ObjectId("652f7c19434758e91eb89af8"),<br/>
+> name: 'Pinki',<br/>
+> age: 20,<br/>
+> city: 'Pune'<br/>
+> }<br/>
+> {<br/>
+> \_id: ObjectId("652f7c19434758e91eb89af9"),<br/>
+> name: 'Suraj',<br/>
+> age: 23,<br/>
+> city: 'Bhandara'<br/>
+> }
 
 ```jsx
 2. db.students.find({age: 23})
 ```
 
 **Output:**
->{ <br/>
-  _id: ObjectId("652f7c19434758e91eb89af6"),<br/>
-  name: 'Anand',<br/>
-  age: 23,<br/>
-  city: 'Nagpur'<br/>
-}<br/>
-{<br/>
-  _id: ObjectId("652f7c19434758e91eb89af9"),<br/>
-  name: 'Suraj',<br/>
-  age: 23,<br/>
-  city: 'Bhandara'<br/>
-}
+
+> { <br/>
+> \_id: ObjectId("652f7c19434758e91eb89af6"),<br/>
+> name: 'Anand',<br/>
+> age: 23,<br/>
+> city: 'Nagpur'<br/>
+> }<br/>
+> {<br/>
+> \_id: ObjectId("652f7c19434758e91eb89af9"),<br/>
+> name: 'Suraj',<br/>
+> age: 23,<br/>
+> city: 'Bhandara'<br/>
+> }
 
 ### findOne()
 
 ```jsx
 1. db.students.findOne({age: 23})
 ```
+
 **Output:**
->{ <br/>
-  _id: ObjectId("652f7c19434758e91eb89af6"),<br/>
-  name: 'Anand',<br/>
-  age: 23,<br/>
-  city: 'Nagpur'<br/>
-}
+
+> { <br/>
+> \_id: ObjectId("652f7c19434758e91eb89af6"),<br/>
+> name: 'Anand',<br/>
+> age: 23,<br/>
+> city: 'Nagpur'<br/>
+> }
 
 ```jsx
 2. db.courses.findOne({duration: '6 Months'})
 ```
-**Output:**
->{ <br/>
-  _id: ObjectId("652f7387434758e91eb89af4"),<br/>
-  title: 'IGCP-1.0',<br/>
-  description: 'Full stack web development',<br/>
-  fees: 15000,<br/>
-  duration: '6 Months'<br/>
-}
 
+**Output:**
+
+> { <br/>
+> \_id: ObjectId("652f7387434758e91eb89af4"),<br/>
+> title: 'IGCP-1.0',<br/>
+> description: 'Full stack web development',<br/>
+> fees: 15000,<br/>
+> duration: '6 Months'<br/>
+> }
 
 ### deleteOne()
 
 ```jsx
 1. db.courses.find()
 ```
+
 **Output:**
->{ <br/>
-  _id: ObjectId("652f7387434758e91eb89af4"),<br/>
-  title: 'IGCP-1.0',<br/>
-  description: 'Full stack web development',<br/>
-  fees: 15000,<br/>
-  duration: '6 Months'<br/>
-}<br/>
-{<br/>
-  _id: ObjectId("652f76ef434758e91eb89af5"),<br/>
-  title: 'Python Programming',<br/>
-  description: 'Python Programming for Beginners',<br/>
-  fees: 499,<br/>
-  duration: '2 Months'<br/>
-}
+
+> { <br/>
+> \_id: ObjectId("652f7387434758e91eb89af4"),<br/>
+> title: 'IGCP-1.0',<br/>
+> description: 'Full stack web development',<br/>
+> fees: 15000,<br/>
+> duration: '6 Months'<br/>
+> }<br/>
+> {<br/>
+> \_id: ObjectId("652f76ef434758e91eb89af5"),<br/>
+> title: 'Python Programming',<br/>
+> description: 'Python Programming for Beginners',<br/>
+> fees: 499,<br/>
+> duration: '2 Months'<br/>
+> }
 
 ```jsx
 2. db.courses.deleteOne({_id: ObjectId("652f7387434758e91eb89af4")})
 ```
+
 **Output:**
->{<br/>
-  acknowledged: true,<br/>
-  deletedCount: 1<br/>
-}
+
+> {<br/>
+> acknowledged: true,<br/>
+> deletedCount: 1<br/>
+> }
 
 ```jsx
 3. db.courses.find()
 ```
+
 **Output:**
->{<br/>
-  _id: ObjectId("652f76ef434758e91eb89af5"),<br/>
-  title: 'Python Programming',<br/>
-  description: 'Python Programming for Beginners',<br/>
-  fees: 499,<br/>
-  duration: '2 Months'<br/>
-}
+
+> {<br/>
+> \_id: ObjectId("652f76ef434758e91eb89af5"),<br/>
+> title: 'Python Programming',<br/>
+> description: 'Python Programming for Beginners',<br/>
+> fees: 499,<br/>
+> duration: '2 Months'<br/>
+> }
 
 Let's describe the example of using `deleteOne()` in MongoDB:
 
@@ -275,56 +296,61 @@ Let's describe the example of using `deleteOne()` in MongoDB:
 ```
 
 **Output:**
->{ <br/>
-  _id: ObjectId("652f7c19434758e91eb89af6"),<br/>
-  name: 'Anand',<br/>
-  age: 23,<br/>
-  city: 'Nagpur'<br/>
-}<br/>
-{<br/>
-  _id: ObjectId("652f7c19434758e91eb89af7"),<br/>
-  name: 'Vaishnavi',<br/>
-  age: 22,<br/>
-  city: 'Ahemadnagar'<br/>
-}<br/>
-{<br/>
-  _id: ObjectId("652f7c19434758e91eb89af8"),<br/>
-  name: 'Pinki',<br/>
-  age: 20,<br/>
-  city: 'Pune'<br/>
-}<br/>
-{<br/>
-  _id: ObjectId("652f7c19434758e91eb89af9"),<br/>
-  name: 'Suraj',<br/>
-  age: 23,<br/>
-  city: 'Bhandara'<br/>
-}
+
+> { <br/>
+> \_id: ObjectId("652f7c19434758e91eb89af6"),<br/>
+> name: 'Anand',<br/>
+> age: 23,<br/>
+> city: 'Nagpur'<br/>
+> }<br/>
+> {<br/>
+> \_id: ObjectId("652f7c19434758e91eb89af7"),<br/>
+> name: 'Vaishnavi',<br/>
+> age: 22,<br/>
+> city: 'Ahemadnagar'<br/>
+> }<br/>
+> {<br/>
+> \_id: ObjectId("652f7c19434758e91eb89af8"),<br/>
+> name: 'Pinki',<br/>
+> age: 20,<br/>
+> city: 'Pune'<br/>
+> }<br/>
+> {<br/>
+> \_id: ObjectId("652f7c19434758e91eb89af9"),<br/>
+> name: 'Suraj',<br/>
+> age: 23,<br/>
+> city: 'Bhandara'<br/>
+> }
 
 ```jsx
 2. db.students.deleteMany({age: 23})
 ```
+
 **Output:**
->{<br/>
-  acknowledged: true, <br/>
-  deletedCount: 2 <br/>
-}
+
+> {<br/>
+> acknowledged: true, <br/>
+> deletedCount: 2 <br/>
+> }
 
 ```jsx
 3. db.students.find()
 ```
+
 **Output:**
->{<br/>
-  _id: ObjectId("652f7c19434758e91eb89af7"),<br/>
-  name: 'Vaishnavi',<br/>
-  age: 22,<br/>
-  city: 'Ahemadnagar'<br/>
-}<br/>
-{<br/>
-  _id: ObjectId("652f7c19434758e91eb89af8"),<br/>
-  name: 'Pinki',<br/>
-  age: 20,<br/>
-  city: 'Pune'<br/>
-}
+
+> {<br/>
+> \_id: ObjectId("652f7c19434758e91eb89af7"),<br/>
+> name: 'Vaishnavi',<br/>
+> age: 22,<br/>
+> city: 'Ahemadnagar'<br/>
+> }<br/>
+> {<br/>
+> \_id: ObjectId("652f7c19434758e91eb89af8"),<br/>
+> name: 'Pinki',<br/>
+> age: 20,<br/>
+> city: 'Pune'<br/>
+> }
 
 Let's describe the example of using `deleteMany()` in MongoDB.
 
@@ -363,51 +389,58 @@ Let's describe the example of using `deleteMany()` in MongoDB.
 ```
 
 **Output:**
->{<br/>
-  acknowledged: true,<br/>
-  insertedIds: {<br/>
+
+> {<br/>
+> acknowledged: true,<br/>
+> insertedIds: {<br/>
+
     '0': ObjectId("652f89e7434758e91eb89afa"),<br/>
     '1': ObjectId("652f89e7434758e91eb89afb"),<br/>
     '2': ObjectId("652f89e7434758e91eb89afc")<br/>
-  }<br/>
+
+}<br/>
 }
 
 ```jsx
 2. db.teachers.find()
 ```
+
 **Output:**
->{ <br/>
-  _id: ObjectId("652f89e7434758e91eb89afa"),<br/>
-  name: 'Anand',<br/>
-  age: 20,<br/>
-  subject: [<br/>
+
+> { <br/>
+> \_id: ObjectId("652f89e7434758e91eb89afa"),<br/>
+> name: 'Anand',<br/>
+> age: 20,<br/>
+> subject: [<br/>
+
     'ICP',<br/>
     'Python',<br/>
     'IGCP'<br/>
-  ]<br/>
+
+]<br/>
 }<br/>
 {<br/>
-  _id: ObjectId("652f89e7434758e91eb89afb"),<br/>
-  name: 'Vaishnavi',<br/>
-  age: 24,<br/>
-  subject: [<br/>
-    'ICP',<br/>
-    'Python',<br/>
-    'IGCP',<br/>
-    'C++'<br/>
-  ]<br/>
+\_id: ObjectId("652f89e7434758e91eb89afb"),<br/>
+name: 'Vaishnavi',<br/>
+age: 24,<br/>
+subject: [<br/>
+'ICP',<br/>
+'Python',<br/>
+'IGCP',<br/>
+'C++'<br/>
+]<br/>
 }<br/>
 {<br/>
-  _id: ObjectId("652f89e7434758e91eb89afc"),<br/>
-  name: 'Pinki',<br/>
-  age: 24,<br/>
-  subject: [<br/>
-    'ICP',<br/>
-    'Python',<br/>
-    'IGCP',<br/>
-    'C++',<br/>
-    'Data Structure'<br/>
-  ]<br/>
+\_id: ObjectId("652f89e7434758e91eb89afc"),<br/>
+name: 'Pinki',<br/>
+age: 24,<br/>
+subject: [<br/>
+'ICP',<br/>
+'Python',<br/>
+'IGCP',<br/>
+'C++',<br/>
+'Data Structure'<br/>
+]<br/>
 }
 
 ```jsx
@@ -415,51 +448,55 @@ Let's describe the example of using `deleteMany()` in MongoDB.
 ```
 
 **Output:**
->{<br/>
-  acknowledged: true,<br/>
-  insertedId: null,<br/>
-  matchedCount: 1,<br/>
-  modifiedCount: 1,<br/>
-  upsertedCount: 0 <br/>
-}
+
+> {<br/>
+> acknowledged: true,<br/>
+> insertedId: null,<br/>
+> matchedCount: 1,<br/>
+> modifiedCount: 1,<br/>
+> upsertedCount: 0 <br/>
+> }
 
 ```jsx
 4. db.teachers.find()
 ```
 
 **Output:**
->{ <br/>
-  _id: ObjectId("652f89e7434758e91eb89afa"),<br/>
-  name: 'Anand',<br/>
-  age: 20,<br/>
-  subject: [<br/>
+
+> { <br/>
+> \_id: ObjectId("652f89e7434758e91eb89afa"),<br/>
+> name: 'Anand',<br/>
+> age: 20,<br/>
+> subject: [<br/>
+
     'ICP',<br/>
     'Python',<br/>
     'IGCP'<br/>
-  ]<br/>
+
+]<br/>
 }<br/>
 {<br/>
-  _id: ObjectId("652f89e7434758e91eb89afb"),<br/>
-  name: 'Vaishnavi',<br/>
-  age: 24,<br/>
-  subject: [<br/>
-    'ICP',<br/>
-    'Python',<br/>
-    'IGCP',<br/>
-    'C++'<br/>
-  ]<br/>
+\_id: ObjectId("652f89e7434758e91eb89afb"),<br/>
+name: 'Vaishnavi',<br/>
+age: 24,<br/>
+subject: [<br/>
+'ICP',<br/>
+'Python',<br/>
+'IGCP',<br/>
+'C++'<br/>
+]<br/>
 }<br/>
 {<br/>
-  _id: ObjectId("652f89e7434758e91eb89afc"),<br/>
-  name: 'Vaibhavi',<br/>
-  age: 24,<br/>
-  subject: [<br/>
-    'ICP',<br/>
-    'Python',<br/>
-    'IGCP',<br/>
-    'C++',<br/>
-    'Data Structure'<br/>
-  ]<br/>
+\_id: ObjectId("652f89e7434758e91eb89afc"),<br/>
+name: 'Vaibhavi',<br/>
+age: 24,<br/>
+subject: [<br/>
+'ICP',<br/>
+'Python',<br/>
+'IGCP',<br/>
+'C++',<br/>
+'Data Structure'<br/>
+]<br/>
 }
 
 Let's describe the example of using `updateOne()` in MongoDB.
@@ -483,106 +520,117 @@ Let's describe the example of using `updateOne()` in MongoDB.
 ```
 
 **Output:**
->{ <br/>
-  acknowledged: true,<br/>
-  insertedId: null,<br/>
-  matchedCount: 3,<br/>
-  modifiedCount: 3,<br/>
-  upsertedCount: 0<br/>
-}
+
+> { <br/>
+> acknowledged: true,<br/>
+> insertedId: null,<br/>
+> matchedCount: 3,<br/>
+> modifiedCount: 3,<br/>
+> upsertedCount: 0<br/>
+> }
 
 ```jsx
 2. db.teachers.find()
 ```
+
 **Output:**
->{ <br/>
-  _id: ObjectId("652f89e7434758e91eb89afa"),<br/>
-  name: 'Anand',<br/>
-  age: 20,<br/>
-  subject: [<br/>
+
+> { <br/>
+> \_id: ObjectId("652f89e7434758e91eb89afa"),<br/>
+> name: 'Anand',<br/>
+> age: 20,<br/>
+> subject: [<br/>
+
     'ICP',<br/>
     'Python',<br/>
     'IGCP'<br/>
-  ],<br/>
-  org: 'RTC'<br/>
+
+],<br/>
+org: 'RTC'<br/>
 }<br/>
 {<br/>
-  _id: ObjectId("652f89e7434758e91eb89afb"),<br/>
-  name: 'Vaishnavi',<br/>
-  age: 24,<br/>
-  subject: [<br/>
-    'ICP',<br/>
-    'Python',<br/>
-    'IGCP',<br/>
-    'C++'<br/>
-  ],<br/>
-  org: 'RTC'<br/>
+\_id: ObjectId("652f89e7434758e91eb89afb"),<br/>
+name: 'Vaishnavi',<br/>
+age: 24,<br/>
+subject: [<br/>
+'ICP',<br/>
+'Python',<br/>
+'IGCP',<br/>
+'C++'<br/>
+],<br/>
+org: 'RTC'<br/>
 }<br/>
 {<br/>
-  _id: ObjectId("652f89e7434758e91eb89afc"),<br/>
-  name: 'Vaibhavi',<br/>
-  age: 24,<br/>
-  subject: [<br/>
-    'ICP',<br/>
-    'Python',<br/>
-    'IGCP',<br/>
-    'C++',<br/>
-    'Data Structure'<br/>
-  ],<br/>
-  org: 'RTC'<br/>
+\_id: ObjectId("652f89e7434758e91eb89afc"),<br/>
+name: 'Vaibhavi',<br/>
+age: 24,<br/>
+subject: [<br/>
+'ICP',<br/>
+'Python',<br/>
+'IGCP',<br/>
+'C++',<br/>
+'Data Structure'<br/>
+],<br/>
+org: 'RTC'<br/>
 }
 
 ```jsx
 3. db.teachers.updateMany({org: 'RTC'},{$set: {org: 'Road To Code'}})
 ```
+
 **Output:**
->{<br/>
-  acknowledged: true,<br/>
-  insertedId: null,<br/>
-  matchedCount: 3,<br/>
-  modifiedCount: 3,<br/>
-  upsertedCount: 0<br/>
-}
+
+> {<br/>
+> acknowledged: true,<br/>
+> insertedId: null,<br/>
+> matchedCount: 3,<br/>
+> modifiedCount: 3,<br/>
+> upsertedCount: 0<br/>
+> }
 
 ```jsx
 4. db.teachers.find()
 ```
+
 **Output:**
->{ <br/>
-  _id: ObjectId("652f89e7434758e91eb89afa"),<br/>
-  name: 'Anand',<br/>
-  age: 20,<br/>
-  subject: [<br/>
+
+> { <br/>
+> \_id: ObjectId("652f89e7434758e91eb89afa"),<br/>
+> name: 'Anand',<br/>
+> age: 20,<br/>
+> subject: [<br/>
+
     'ICP',<br/>
     'Python',<br/>
     'IGCP'<br/>
-  ],<br/>
-  org: 'Road To Code'<br/>
+
+],<br/>
+org: 'Road To Code'<br/>
 }<br/>
 {<br/>
-  _id: ObjectId("652f89e7434758e91eb89afb"),<br/>
-  name: 'Vaishnavi',<br/>
-  age: 24,<br/>
-  subject: [<br/>
-    'ICP',<br/>
-    'Python',<br/>
-    'IGCP',<br/>
-    'C++'<br/>
-  ],<br/>
-  org: 'Road To Code'<br/>
+\_id: ObjectId("652f89e7434758e91eb89afb"),<br/>
+name: 'Vaishnavi',<br/>
+age: 24,<br/>
+subject: [<br/>
+'ICP',<br/>
+'Python',<br/>
+'IGCP',<br/>
+'C++'<br/>
+],<br/>
+org: 'Road To Code'<br/>
 }<br/>
 {<br/>
-  _id: ObjectId("652f89e7434758e91eb89afc"),<br/>
-  name: 'Vaibhavi',<br/>
-  age: 24,<br/>
-  subject: [<br/>
-    'ICP',<br/>
-    'Python',<br/>
-    'IGCP',<br/>
-    'C++',<br/>
-    'Data Structure'<br/>
-  ],<br/>
-  org: 'Road To Code'<br/>
+\_id: ObjectId("652f89e7434758e91eb89afc"),<br/>
+name: 'Vaibhavi',<br/>
+age: 24,<br/>
+subject: [<br/>
+'ICP',<br/>
+'Python',<br/>
+'IGCP',<br/>
+'C++',<br/>
+'Data Structure'<br/>
+],<br/>
+org: 'Road To Code'<br/>
 }
 
 Let's describe the example of using `updateMany()` in MongoDB.

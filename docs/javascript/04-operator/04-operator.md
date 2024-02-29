@@ -15,7 +15,6 @@ Operators are used to perform certain operations on one or more values or variab
 3. Increment & Decrement operators
 4. Comparison operators (<, >, <=, >=, ==, !=)
 5. Logical operators (&& (logical AND), || (logical OR), ! (logical NOT))
-6. Modulus operator
 
 ### Arithmetic Operators
 

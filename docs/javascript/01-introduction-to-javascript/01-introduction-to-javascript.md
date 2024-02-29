@@ -101,3 +101,7 @@ The message `Hey there` is provided as an argument to the `alert()` function. Wh
 **You can run JavaScript code directly in your web browser's developer `console`. The developer console is a tool that allows you to interact with and manipulate web pages, test code snippets, and debug your JavaScript code. It provides an environment where you can execute JavaScript commands and see their results immediately.**
 
 <img src="/javascript/01/output-3.png" alt="output-3" width="600px"/>
+
+```console.error("jhdfg")```
+
+### jhdfgfyug

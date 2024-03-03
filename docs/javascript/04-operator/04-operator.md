@@ -493,9 +493,35 @@ The comparison operator is used to compare two variable value and return a Boole
 > true
 
 In above code will gives output `true` to the web page because the two variables `a` and `b` have the same value, which is `10`. The `==` operator is a comparison operator that checks if two values are equal to each other.
+
+**2. strict equal to (===)**
+
+**Code**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello JS 💛</title>
+    <script>
+      let a = 10;
+      let b = 10;
+      document.write(a === b);
+    </script>
+  </head>
+  <body></body>
+</html>
+```
+
+**Output**
+
+> true
+
+With the === operator, the code will output true only if both a and b have the same value and are of the same type (in this case, both are numbers.
+
 <img src="/javascript/04/difference(=).png" alt="difference(=, ==, ===)" width="800px"/>
 
-**2. not equals to (!=)**
+**3. not equals to (!=)**
 
 **Code**
 
@@ -520,7 +546,7 @@ In above code will gives output `true` to the web page because the two variables
 
 In the above code will gives output `true` to the web page because the two variables `a` and `b` are not equal to each other. The `!=` operator is the `not equal` operator in JavaScript, and it checks if two values are not equal to each other.
 
-**3. less than (<)**
+**4. less than (<)**
 
 **Code**
 
@@ -550,7 +576,7 @@ In the above code will gives output `true` to the web page because the variable 
 
 The `<` operator is the `less than` operator in JavaScript, and it checks if the value on the left is less than the value on the right. In this case, `a` has value of `5` and `b` has value of `10`, so the expression `a<b` evaluates to true. The result of this expression is then assigned to the variable res.
 
-**4. greater than (>)**
+**5. greater than (>)**
 
 **Code**
 
@@ -580,7 +606,7 @@ In the above code will gives output `true` to the web page because the variable 
 
 The `>` operator is the `greater than` operator in JavaScript, and it checks if the value on the left is greater than the value on the right. In this case, `a` has value of `50` and `b` has value of `10`, so the expression `a>b` evaluates to true. The result of this expression is then assigned to the variable res.
 
-**5. less than or equals to (<=)**
+**6. less than or equals to (<=)**
 
 **Code**
 
@@ -610,7 +636,7 @@ In the above code will gives output `true` because the variable res is assigned 
 
 In this code, the `<=` operator is the `less than or equal to` operator in JavaScript, and it checks if the value on the left is less than or equal to the value on the right. In this case, `a` has value of `5` and `b` has value of `10`, so the expression `a<=b` evaluates to true because `5` is less than or equal to `10`.
 
-**6. greater than or equals to (>=)**
+**7. greater than or equals to (>=)**
 
 **Code**
 

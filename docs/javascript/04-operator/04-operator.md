@@ -10,11 +10,12 @@ Operators are used to perform certain operations on one or more values or variab
 
 **Some common types of operators include:**
 
-1. Arithmetic operators (+, -, \*, /)
+1. Arithmetic operators (+, -, \*, /, % )
 2. Assignment operators (=, +=, -=, \*=, /=)
 3. Increment & Decrement operators
 4. Comparison operators (<, >, <=, >=, ==, !=)
 5. Logical operators (&& (logical AND), || (logical OR), ! (logical NOT))
+6. Typeof operator
 
 ### Arithmetic Operators
 
@@ -774,3 +775,38 @@ The **modulus operator** is represented by the percent sign `%`. The modulus ope
 > 1
 
 In this example, `10 % 3` is calculating the remainder when 10 is divided by 3. The result is 1 because 10 divided by 3 is 3 with a remainder of 1.
+
+### TYPEOF Operator:
+
+This **typeof** operator helps us to know the type of data, whether it is boolean, string, number, etc.
+
+**Code**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Javascript</title>
+  </head>
+
+  <body>
+    <script>
+      var a = true;
+      var b = "Hello";
+      var c = 42;
+
+      console.log("The datatype of A is :- " + typeof a); // Output for: "boolean"
+      console.log("The datatype of B is :- " + typeof b); // Output for: "string"
+      console.log("The datatype of C is :- " + typeof c); // Output for: "number"
+    </script>
+  </body>
+</html>
+```
+
+**Output**
+
+> The datatype of A is :- boolean<br/>
+> The datatype of B is :- string<br/>
+> The datatype of C is :- number<br/>
+
+In this example, we are obtaining the datatype of variables by utilizing the typeof operator.

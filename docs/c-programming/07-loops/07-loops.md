@@ -152,14 +152,30 @@ int main() {
 
 While loop is **entry controlled** loop. It is **Pre-Tested** loop. If condition will false it will run zero times.
 
+### While-Loop controling concept
+
 **Syntax :**
 
 ```c
 while(condition)
 {
-
+ //your code here
 }
 ```
+
+#### while:
+
+This keyword is used to indicate the beginning of a `while` loop.
+
+#### condition:
+
+This is an expression that is evaluated before each iteration of the loop. If the condition evaluates to `True`, the loop body is executed. If it evaluates to `False`, the loop terminates, and program control moves to the next statement after the loop.
+
+#### {}: Curly braces
+
+These are used to enclose the block of code that will be executed repeatedly as long as the condition specified in the while statement is `true`. All statements within this block must be enclosed within these braces.
+
+#### Check the examples below 👇
 
 **Example :**
 

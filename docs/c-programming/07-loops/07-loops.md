@@ -16,6 +16,36 @@ hide_table_of_contents: true
 
 For loops are used when you have a block of code which you want to repeat a fixed number of times.
 
+### Loop controling concept
+
+#### Syntax of For-Loop
+
+```
+
+for (initialization; condition; increment/decrement)
+
+ {
+
+ // you can perform your code here in a loop
+
+ }
+
+```
+
+#### initialization:
+
+Typically initializes a loop control variable. It's executed once at the beginning of the loop.
+
+#### condition:
+
+It's a boolean expression that determines whether the loop should continue or not. If it evaluates to true, the loop continues; otherwise, the loop terminates.
+
+#### increment/decrement:
+
+Modifies the loop control variable to bring the loop closer to the termination condition. It's executed after each iteration of the loop.
+
+#### Check the examples below 👇
+
 💻**Example :**
 
 ```c

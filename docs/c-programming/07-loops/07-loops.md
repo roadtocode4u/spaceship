@@ -191,15 +191,36 @@ int main() {
 
 do-while loop is **exit-controlled** loop. It is **Post-Tested** loop. If condition will false it will run ones.
 
-**Syntax :**
+### Do-While-Loop controlling concept
 
-```c
-do
-{
+#### Syntax of Do-While-Loop
 
-}
-while(condition);
 ```
+
+do {
+
+    // code to be executed
+
+   }
+
+    while (condition);
+
+
+```
+
+do-while-loop can be classified in three points
+
+##### 1. exit control loop
+
+##### 2. post tested
+
+##### 3. if condition is False , still the loop runs for at least one time
+
+#### Explaination of Do-while-loop:
+
+The code inside the loop , is executed first , then it will check the condition and if the condition id `true` then the loop will `execute again` until the condition `false`
+
+#### Check the examples below 👇
 
 **Example :**
 

@@ -271,3 +271,4 @@ sayHello ('');
 
 **Exaplanation :**
  
+ In this above example function `sayHello(studentName='user')`, studentName is a parameter. The  `user`  is  a default value for the studentName parameter. This means that if no argument is passed when calling the function, studentName will default to `user`. When you call `sayHello('')`, you are passing an empty string as an argument , after calling  (even if it's an empty string), it overrides the default value and you set default value `studentName='user'` .  In `console.log` statement inside the function then prints `"Hello"` with parameter studentName, which is an empty string in this example. If you call `sayHello() without passing any arguments`, the default value `'user'` would be used, and the function will give output` "Hello user"`.

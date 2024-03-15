@@ -8,16 +8,23 @@ Events are actions or occurrences that happen in the browser, such as user inter
 
 **Events in javascript**
 
+### Click
 - `onclick()`
-- `onchange()`
+- `onDoubleClick()`
+
+### Keys
 - `onkeypress()`
 - `onkeyDown()`
 - `onkeyUp()`
+
+### Mouse
 - `onmouseover()`
-- `onDoubleClick()`
 - `onMouseMove()`
 - `onmouseout()`
+
+### General
 - `onload()`
+- `onchange()`
 
 ## onclick
 

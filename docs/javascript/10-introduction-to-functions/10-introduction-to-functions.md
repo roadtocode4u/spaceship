@@ -1,5 +1,5 @@
 ---
-title: Introduction to Functions
+title: Functions
 description: "Introduction to Functions"
 hide_table_of_contents: true
 ---
@@ -23,6 +23,8 @@ In JavaScript, inbuilt functions already have predefined meanings for various ta
 #### User Defined
 
 By using the `function` keyword, to create and define your own functions known as user-defined functions.
+
+#### 
 
 **Syntax :**
 
@@ -249,3 +251,24 @@ areaOfSquare();
 In the above example, we're creating a variable named `side` and setting its value to `10`. This value represents the length of one `side` of the square for which we want to calculate the `area`.
 
 We're defining a function called `areaOfSquare`. This function doesn't take any parameters. Inside the function, we calculate the area of the square by multiplying the `side*side`. Then, we're using the `console.log` function to display a message that includes the calculated `area`. So, if side is `10`, the calculated area is `100`, and the message will be A`rea of Square: 100`. This line prints the calculated area to the `console`. Finally, we're calling the `areaOfSquare` function. This function doesn't require any arguments because it's already using the side value that we set earlier. When the function is called, it calculates the area and displays it using the `console.log` statement inside the function.
+
+
+###  Default Argument
+
+**Example :**
+
+```js showLineNumbers="true"
+function sayHello(studentName='user')
+{
+  console.log(`Hello${studentName}`);
+}
+
+sayHello ('');
+```
+**Output :-**
+
+> Hello user
+
+**Exaplanation :**
+ 
+ In this above example function `sayHello(studentName='user')`, studentName is a parameter. The  `user`  is  a default value for the studentName parameter. This means that if no argument is passed when calling the function, studentName will default to `user`. When you call `sayHello('')`, you are passing an empty string as an argument , after calling  (even if it's an empty string), it overrides the default value and you set default value `studentName='user'` .  In `console.log` statement inside the function then prints `"Hello"` with parameter studentName, which is an empty string in this example. If you call `sayHello() without passing any arguments`, the default value `'user'` would be used, and the function will give output` "Hello user"`.

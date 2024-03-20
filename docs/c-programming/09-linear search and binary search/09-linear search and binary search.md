@@ -4,7 +4,11 @@ description: "Linear Search and Binary Search"
 hide_table_of_contents: true
 ---
 
-**Linear Search**  
+---
+
+## Linear Search
+
+**Defination :-**
 Linear search is a search that finds an element in the list by searching the element sequentially until the element is found in the list.
 
 **Example 1 :**
@@ -109,8 +113,102 @@ Enter value for index 4: 45
 Enter key: 98  
 98 found at 2 index
 
-**Binary Search**  
-Binary Search is a search algorithm that is used to find the position of an element in a sorted array.
+---
+
+## Binary Search
+
+**Defination :-**
+Binary Search is a search algorithm that is used to find the position of an element in a Sorted array.
+
+**_Important points to remmber about Binary Search 👇_**
+
+**1. Binary Search must be sorted ✔️**
+
+formula to find mid number 👇
+
+**2. mid = ( startindex + endindex ) / 2 ✔️**
+
+if target(key) is `Greater` than the mid value , then we have to change the `start index` {formula below}👇
+
+**3. startindex = midindex + 1 ✔️**
+
+if target(key) is `Smaller` than the mid value , then we have to change the `end index` {formula below}👇
+
+**4. endindex = midindex - 1 ✔️**
+
+**example below👇**
+
+```c
+#include <stdio.h>
+
+int main() {
+    int arr[] = {2, 4, 6, 8, 10};
+    int key = 6;
+    int start = 0;
+    int end = 4;
+     while (start <= end) {
+        int mid = (start + end) / 2;
+        if (arr[mid] == key) {
+            printf("Found the key at Index %d\n", mid);
+            return 0;
+        } else if (key > arr[mid]) {
+            start = mid + 1;
+        } else {
+            end = mid - 1;
+        }
+    }
+    printf("Key not found\n");
+    return 0;
+}
+
+```
+
+**Output :**
+
+```c
+Found the key at Index 2
+
+
+=== Code Execution Successful ===
+
+```
+
+**another example below👇**
+
+```c
+#include <stdio.h>
+
+int main() {
+    int arr[] = {2, 4, 6, 8, 10};
+    int key = 10;
+    int start = 0;
+    int end = 4;
+     while (start <= end) {
+        int mid = (start + end) / 2;
+        if (arr[mid] == key) {
+            printf("Found the key at Index %d\n", mid);
+            return 0;
+        } else if (key > arr[mid]) {
+            start = mid + 1;
+        } else {
+            end = mid - 1;
+        }
+    }
+    printf("Key not found\n");
+    return 0;
+}
+
+```
+
+**Output :**
+
+```c
+Found the key at Index 4
+
+
+=== Code Execution Successful ===
+
+```
 
 **Example :**
 

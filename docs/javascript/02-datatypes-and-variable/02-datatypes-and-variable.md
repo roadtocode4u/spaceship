@@ -24,13 +24,14 @@ A string is a data type used to represent textual data. It consists of a sequenc
 
 2.  **Number**
 
-In Number it can be of two types
+ It Represents numeric values, both integer and floating-point numbers.
+
 **_int_** &
 **_float _**
 
 **a. Int**
 
-Integers are whole numbers without decimal points.
+Integer numbers are whole numbers without  decimal point.
 
 **Example :**
 
@@ -38,13 +39,13 @@ Integers are whole numbers without decimal points.
 
 **b. Float**
 
-Floats are numbers with decimal points.
+Floats are numbers with decimal point. 
 
 > 8793.90
 
 3.  **Boolean**
 
-A boolean represents one of two possible values: `true` or `false`.
+A boolean represents  Logical values Like : `true` or `false`( one of two possible values).
 
 > `true or false`
 

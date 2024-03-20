@@ -26,12 +26,12 @@ A string is a data type used to represent textual data. It consists of a sequenc
 
  It Represents numeric values, both integer and floating-point numbers.
 
-**_int_** &
+**_int_** 
 **_float _**
 
 **a. Int**
 
-Integer numbers are whole numbers without  decimal point.
+Integer numbers are whole numbers without  decimal points.
 
 **Example :**
 
@@ -39,7 +39,7 @@ Integer numbers are whole numbers without  decimal point.
 
 **b. Float**
 
-Floats are numbers with decimal point. 
+Floats are numbers with decimal points. 
 
 > 8793.90
 

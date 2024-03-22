@@ -47,6 +47,44 @@ The paragraph tag `<p>` is used to **define a block of text** in HTML as a parag
 
 <img src="/html/08/output-1.png" alt="output-1" width="600px" height="300px"/>
 
+### Span Tag
+
+```html
+<span> </span>
+```
+
+Span Tag is a text inline selector it is used to select a particular Text. **Span tag does not have any own effect**.
+
+**Code :**
+
+```html showLineNumbers=true
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tag</title>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi culpa,
+      eveniet cum est quis atque possimus rerum officia perferendis quidem
+      mollitia ab, nulla animi, praesentium excepturi dolore illo iusto
+      suscipit.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi culpa,
+      eveniet cum est quis atque possimus rerum officia perferendis quidem
+      mollitia ab, nulla animi,
+      <span>praesentium excepturi dolore illo iusto suscipit.</span>
+    </p>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/html/05/output-9.png" alt="output-9" width="600px"/>
+
 ### Align
 
 The `align` attribute is used to specify the horizontal **alignment of the text** within a paragraph. It can be set to one of three values: `left`, `center`, or `right`.

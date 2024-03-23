@@ -10,6 +10,8 @@ hide_table_of_contents: true
 2.  **Number** **{int , float}**
 3.  **Boolean**
 
+<img src="/javascript/02/output-1.jpg" alt="output-1" width="600px"/>
+
 **_CHECK BELOW TO KNOW ALL THE DATA TYPES 👇 _**
 
 1. **String**
@@ -21,6 +23,8 @@ A string is a data type used to represent textual data. It consists of a sequenc
 > `"Hello, I'm a string"` <br/>
 
 `'Hello, How are you...'`
+
+<img src="/javascript/02/output-2.jpg" alt="output-2" width="600px"/>
 
 2.  **Number**
 
@@ -37,17 +41,23 @@ Integer numbers are whole numbers without  decimal points.
 
 > `123456`
 
+<img src="/javascript/02/output-3.jpg" alt="output-3" width="600px"/>
+
 **b. Float**
 
 Floats are numbers with decimal points. 
 
 > 8793.90
 
+<img src="/javascript/02/output-4.jpg" alt="output-4" width="600px"/>
+
 3.  **Boolean**
 
 A boolean represents  Logical values Like : `true` or `false`( one of two possible values).
 
 > `true or false`
+
+<img src="/javascript/02/output-5.jpg" alt="output-5" width="600px"/>
 
 ## What is Javascript Engine?
 

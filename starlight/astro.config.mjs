@@ -11,11 +11,10 @@ export default defineConfig({
       },
       sidebar: [
         {
-          label: "Guides",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: "Example Guide", link: "/guides/example/" },
-          ],
+          label: "C",
+          autogenerate: {
+            directory: "c",
+          },
         },
         {
           label: "Reference",
@@ -27,7 +26,6 @@ export default defineConfig({
           tag: "script",
           attrs: {
             src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1373341236327290",
-            crossorigin: "anonymous",
           },
         },
       ],

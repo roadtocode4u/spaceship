@@ -48,7 +48,7 @@ Element found at 2
 
 `line 7`: Here, we initialize a variable named `key` and assign it a value. This `key` variable holds the value that we are searching for within the given array.
 
-`line 9`: In this line we're starting our `for` loop and giving it condition that this `for loop` iterates through each element of the array , { `i` starts from 0 and goes up to 9 , because the array has 10 elements.}
+`line 9`: In this line we're starting our `for` loop and giving it condition that this `for loop` iterates through each element of the array , { `i` starts from 0 and goes up to 4 , because the array has 5 elements.}
 
 `line 11`: here we give a condition statement `if` , This `if` statement checks if the current element `(arr[i])` is equal to the value of `key.` If it is, it means the element has been found. .
 

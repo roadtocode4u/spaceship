@@ -19,37 +19,44 @@ Linear search is a search that finds an element in the list by searching the ele
 #include <stdio.h>
 
 int main() {
-int arr[10]={5, 6, 8, 78, 38, 33, 89, 98, 43, 24};
-int key = 89;
-for(int i=0; i<10; i++) {
-        if(arr[i]==key) {
+
+int arr[4]={10 , 20 , 30 , 40 , 50};
+
+int key = 30;
+
+for(int i=0; i<10; i++)
+{
+        if(arr[i]==key)
+         {
             printf("Element found at %d", i);
-            break; }}
+            break;
+         }
+}
     return 0;
 }
 ```
 
 **Output :**
 
-Element found at 6
+Element found at 2
 
 **Explanation of above code 👆:**
 
 `line 3 `: Execution of program starts from this line .
 
-`line 4`: In this line, we declare an array named `arr` with a size of `10` and initialize it with some values.
+`line 5`: In this line, we declare an array named `arr` with a size of `4` and initialize it with some values.
 
-`line 5`: Here, we initialize a variable named `key` and assign it a value. This `key` variable holds the value that we are searching for within the given array.
+`line 7`: Here, we initialize a variable named `key` and assign it a value. This `key` variable holds the value that we are searching for within the given array.
 
-`line 6`: In this line we're starting our `for` loop and giving it condition that this `for loop` iterates through each element of the array , { `i` starts from 0 and goes up to 9 , because the array has 10 elements.}
+`line 9`: In this line we're starting our `for` loop and giving it condition that this `for loop` iterates through each element of the array , { `i` starts from 0 and goes up to 9 , because the array has 10 elements.}
 
-`line 7`: here we give a condition statement `if` , This `if` statement checks if the current element `(arr[i])` is equal to the value of `key.` If it is, it means the element has been found. .
+`line 11`: here we give a condition statement `if` , This `if` statement checks if the current element `(arr[i])` is equal to the value of `key.` If it is, it means the element has been found. .
 
-`line 8`: if the key is found then it will print the element `printf("Element found at %d", i)`
+`line 13`: if the key is found then it will print the element `printf("Element found at %d", i)`
 
-`line 9`: And ,`break` will exit the loop .
+`line 14`: And ,`break` will exit the loop .
 
-`line 10` `return 0 ;` This is program the end of our program .
+`line 17` `return 0` This is program the end of our program .
 
 **another example below👇**
 

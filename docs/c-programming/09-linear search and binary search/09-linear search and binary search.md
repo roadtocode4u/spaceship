@@ -8,8 +8,10 @@ hide_table_of_contents: true
 
 ## Linear Search
 
-**Defination :-**
+**Definition :-**
 Linear search is a search that finds an element in the list by searching the element sequentially until the element is found in the list.
+
+<img src="/c/09/output-1.jpg" width="600px"/>
 
 **Example 1 :**
 
@@ -18,25 +20,45 @@ Linear search is a search that finds an element in the list by searching the ele
 
 int main() {
 
-    int arr[10]={5, 6, 8, 78, 38, 33, 89, 98, 43, 24};
+int arr[4]={10 , 20 , 30 , 40 , 50};
 
-    int key = 89;
+int key = 30;
 
-    for(int i=0; i<10; i++)
-    {
+for(int i=0; i<10; i++)
+{
         if(arr[i]==key)
-        {
+         {
             printf("Element found at %d", i);
             break;
-        }
-    }
+         }
+}
     return 0;
 }
 ```
 
 **Output :**
 
-Element found at 6
+Element found at 2
+
+**Explanation of above code 👆:**
+
+`line 3 `: Execution of program starts from this line .
+
+`line 5`: In this line, we declare an array named `arr` with a size of `4` and initialize it with some values.
+
+`line 7`: Here, we initialize a variable named `key` and assign it a value. This `key` variable holds the value that we are searching for within the given array.
+
+`line 9`: In this line we're starting our `for` loop and giving it condition that this `for loop` iterates through each element of the array , { `i` starts from 0 and goes up to 4 , because the array has 5 elements.}
+
+`line 11`: here we give a condition statement `if` , This `if` statement checks if the current element `(arr[i])` is equal to the value of `key.` If it is, it means the element has been found. .
+
+`line 13`: if the key is found then it will print the element `printf("Element found at %d", i)`
+
+`line 14`: And ,`break` will exit the loop .
+
+`line 17` `return 0` This is program the end of our program .
+
+**another example below👇**
 
 **Example 2 :**
 
@@ -117,7 +139,7 @@ Enter key: 98
 
 ## Binary Search
 
-**Defination :-**
+**Definition :-**
 Binary Search is a search algorithm that is used to find the position of an element in a Sorted array.
 
 **_Important points to remmber about Binary Search 👇_**
@@ -168,7 +190,7 @@ Found the key value at Index 2
 
 ```
 
-**Explaination of code :**
+**Explanation of code :**
 
 `line 4 `In this line we are declaring an integer array named `arr` containing the numbers 2, 4, 6, 8, and 10.
 

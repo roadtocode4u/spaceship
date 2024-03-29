@@ -47,3 +47,37 @@ It enables users to connect with colleagues, peers, employers, clients, and othe
 ### step 9: After this account created successfully
 
 <img src="/tip-and-tools/13/s8.png" alt="screenshot-1" width="600px"/>
+
+## How to post on linkedin
+
+### step 1: After creating account click on start a post 
+
+<img src="/tip-and-tools/13/s9.png" alt="screenshot-1" width="600px"/>
+
+### step 2: Write a description for the post
+
+<img src="/tip-and-tools/13/s10.png" alt="screenshot-1" width="600px"/>
+
+### step 3: Click on media icon to add media
+
+<img src="/tip-and-tools/13/s11.png" alt="screenshot-1" width="600px"/>
+
+### step 4: Click on upload button to upload media file 
+
+<img src="/tip-and-tools/13/s12.png" alt="screenshot-1" width="600px"/>
+
+### step 5: After adding media file click on next
+
+<img src="/tip-and-tools/13/s13.png" alt="screenshot-1" width="600px"/>
+
+### step 6: Click on post
+
+<img src="/tip-and-tools/13/s14.png" alt="screenshot-1" width="600px"/>
+
+### After this post will be successfully added 
+
+<img src="/tip-and-tools/13/s15.png" alt="screenshot-1" width="600px"/>
+
+
+
+

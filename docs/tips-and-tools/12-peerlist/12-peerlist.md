@@ -20,7 +20,7 @@ Peerlist is a community-led professional network for people in tech with powerfu
 
 <img src="/tip-and-tools/12/output-2.png" alt="screenshot-2" width="600px"/>
 
-### step 3: Your account is successfully created , now you are required to complete your profile 100% by filling in the empty requirements
+### step 3: Your account is successfully created , Now, please fill in more details in your profile to reach at least 70% completion before proceeding further .
 
 <img src="/tip-and-tools/12/output-3.png" alt="screenshot-3" width="600px"/>
 

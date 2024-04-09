@@ -39,9 +39,9 @@ int main() {
 
 **Output :**
 
-> Value of number: 0xa
-> Value of pointer: 0xa
-> Value of pointer: 10
+Value of number: 0xa  
+Value of pointer: 0xa  
+Value of pointer: 10
 
 ### Explaination of code
 

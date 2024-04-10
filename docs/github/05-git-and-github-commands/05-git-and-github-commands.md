@@ -44,43 +44,44 @@ If you haven't already done so, navigate to the root directory of your project u
 git init
 ```
 
-2. ### Create a remote repository:
+2. ### Check git status :
 
-   Create a new repository on a Git hosting platform such as GitHub Follow the platform's instructions to set it up.
-
-3. ### Add a remote repository:
-   Link your local repository with the remote repository using the following command:
+   By using given command chech the git status 
 
 ```html
- git clone <repository_url>
+git status
 ```
 
-Replace <remote_repository_url> with the URL of the remote repository you created.
-
-4. ### Add files to the staging area:
-   Use the following command to add the existing code files to the staging area, which prepares them for committing:
+3. ### Add a changes in file 
+   By usint given commands add changes in github repositary , changes can be add by two methods :
 
 ```html
-git add .
+git add .   or   git add <file name>
 ```
 
-5. ### Commit the changes:
-   Committing creates a new snapshot of the code in the Git history. Run the following command to commit the changes:
+4. ### Commit changes 
+   By using given command you can commit  the changes which occured in code  :
 
 ```html
-git commit -m "Initial commit"
+git commit -m "message "
 ```
 
-6. ### Push the code:
-   Finally, push your code to the remote repository using the following command:
+5. ### Push the changes:
+   By using given command you can push the changes :
 
 ```html
 git push
 ```
+After this error will come it will then we have to add github repositary where we have to add the code
 
-If you're using a branch other than `master`, replace `master` with the name of the branch.
+6. ### Create a repositary :
+   [click here](http://localhost:3000/docs/github/how-to-create-repository/)
+   to watch steps for creating repository
 
-Congratulations! You have successfully pushed your existing code to a Git repository.
+7. ### Copy link after creating repositary
+
+![link img](./s1.png)
+
 
 ## Connecting local Repository to Github Repository
 

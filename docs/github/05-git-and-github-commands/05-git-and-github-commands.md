@@ -52,7 +52,7 @@ git init
    Link your local repository with the remote repository using the following command:
 
 ```html
-git remote add origin <remote_repository_url></remote_repository_url>
+ git clone <repository_url></repository_url>
 ```
 
 Replace <remote_repository_url> with the URL of the remote repository you created.
@@ -82,13 +82,49 @@ If you're using a branch other than `master`, replace `master` with the name of 
 
 Congratulations! You have successfully pushed your existing code to a Git repository.
 
+## Connecting local Repository to Github Repository
+
+1. ### use the following command to connect local repo to github repo
+
+```html
+git remote add origin <repository url>
+```
+2. ### use follwing command to push code
+
+```html
+git push
+```
+3. ### copy the command from terminal
+
+```html
+git push --set-upstream origin master
+```
+4. ### After adding this command on terminal your code will be pushed on github Repository
+
+ Code added in Repositary  successfully.
+
+5. ### After adding file modified changes can be added by using:
+
+```html
+git add .
+git commit -m "changes message"
+```
+6. ### After adding and commiting changes push the changes
+
+```html
+git push
+``` 
+Then changes will be added successfully.
+
+
+
 ## Pushing New Code Directly to a Git Repository
 
 1. ### Clone the repository:
    Start by cloning the existing repository to your local machine. Use the following command to clone the repository:
 
 ```html
-git clone <repository_url></repository_url>
+git clone <repository_url>
 ```
 
 Replace <repository_url> with the URL of the repository you want to clone.

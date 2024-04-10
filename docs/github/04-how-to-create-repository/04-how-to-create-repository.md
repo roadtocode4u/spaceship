@@ -1,3 +1,9 @@
+---
+title: How to Create Repositary
+description: How to Create Repositary
+hide_table_of_contents: true
+---
+
 ### Steps to Create Repository
 
 1. On the GitHub page, click on the **+** drop-down menu in the upper-right corner and select **New repository**.

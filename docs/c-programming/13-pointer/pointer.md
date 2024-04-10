@@ -49,12 +49,12 @@ Value of pointer: 10
 
 `Line 5` We create a variable called `"number"` and put the value `10` inside it.
 
-`Line 6` We create a pointer variable called `"pointer"` and put the address of the `"number"` inside it.
+`Line 6` We create a pointer variable called `"pointer"` by using dereference operator to it (`*`) , which stores the address of `"number"` variable.
 
 `Line 8` Here, we print the address stored in the `"number"` variable.
 
 `Line 9` Here, we print the address stored in the `"pointer"` variable.
 
-`Line 11` Now, we print the value inside the box that `"pointer"` is pointing to.
+`Line 11` Now here as we used `Dereference operator` and it stores the address of assigned variable , this finds the address and print the value which is stored at that specific address .
 
 `Line 13` Code ends now

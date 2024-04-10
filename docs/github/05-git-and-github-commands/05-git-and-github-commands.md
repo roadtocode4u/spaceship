@@ -46,28 +46,34 @@ git init
 
 2. ### Check git status :
 
-   By using given command chech the git status 
+   This command is used to check the status of git repository  like if any nodification done then it will track it.
 
 ```html
 git status
 ```
 
 3. ### Add a changes in file 
-   By usint given commands add changes in github repositary , changes can be add by two methods :
+   By using given commands you can add changes in github repository , changes can be add by two methods :
+   1. `git add .` :- When more than one file is changed , this command is used.
+   2. `git add <file name>` :- When only one file change , this command is used.
 
 ```html
-git add .   or   git add <file name>
+git add .
+```
+
+```html
+git add <file name>
 ```
 
 4. ### Commit changes 
-   By using given command you can commit  the changes which occured in code  :
+   After changing or modifying any file we have to add code , after modifying code we have to add commit for showing what changes in repository
 
 ```html
-git commit -m "message "
+git commit -m "add a message "
 ```
 
 5. ### Push the changes:
-   By using given command you can push the changes :
+   By using this command code can be push in github repository after creating repository
 
 ```html
 git push
@@ -75,42 +81,40 @@ git push
 After this error will come it will then we have to add github repositary where we have to add the code
 
 6. ### Create a repositary :
-   [click here](http://localhost:3000/docs/github/how-to-create-repository/)
+   Create repository  if dont know how to create repository then [click here](http://localhost:3000/docs/github/how-to-create-repository/)
    to watch steps for creating repository
 
-7. ### Copy link after creating repositary
+7. ### Copy command lines 
 
 ![link img](./s1.png)
 
 
-## Connecting local Repository to Github Repository
-
-1. ### use the following command to connect local repo to github repo
+8. ### Use the following command to connect local repo to github repo
 
 ```html
 git remote add origin <repository url>
 ```
-2. ### use follwing command to push code
+9. ### Use follwing command to push code
 
 ```html
 git push
 ```
-3. ### copy the command from terminal
+10. ### Copy the command from terminal
 
 ```html
 git push --set-upstream origin master
 ```
-4. ### After adding this command on terminal your code will be pushed on github Repository
+11. ### After adding this command on terminal your code will be pushed on github Repository
 
  Code added in Repositary  successfully.
 
-5. ### After adding file modified changes can be added by using:
+12. ### After adding file modified changes can be added by using:
 
 ```html
 git add .
 git commit -m "changes message"
 ```
-6. ### After adding and commiting changes push the changes
+13. ### After adding and commiting changes push the changes
 
 ```html
 git push

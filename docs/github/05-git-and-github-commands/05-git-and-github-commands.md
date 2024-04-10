@@ -52,7 +52,7 @@ git init
    Link your local repository with the remote repository using the following command:
 
 ```html
- git clone <repository_url></repository_url>
+ git clone <repository_url>
 ```
 
 Replace <remote_repository_url> with the URL of the remote repository you created.

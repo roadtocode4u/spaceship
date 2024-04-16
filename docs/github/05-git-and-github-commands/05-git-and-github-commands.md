@@ -44,43 +44,84 @@ If you haven't already done so, navigate to the root directory of your project u
 git init
 ```
 
-2. ### Create a remote repository:
+2. ### Check git status :
 
-   Create a new repository on a Git hosting platform such as GitHub Follow the platform's instructions to set it up.
-
-3. ### Add a remote repository:
-   Link your local repository with the remote repository using the following command:
+   This command is used to check the status of git repository  like if any nodification done then it will track it.
 
 ```html
-git remote add origin <remote_repository_url></remote_repository_url>
+git status
 ```
 
-Replace <remote_repository_url> with the URL of the remote repository you created.
-
-4. ### Add files to the staging area:
-   Use the following command to add the existing code files to the staging area, which prepares them for committing:
+3. ### Add a changes in file 
+   By using given commands you can add changes in github repository , changes can be add by two methods :
+   1. `git add .` :- When more than one file is changed , this command is used.
+   2. `git add <file name>` :- When only one file change , this command is used.
 
 ```html
 git add .
 ```
 
-5. ### Commit the changes:
-   Committing creates a new snapshot of the code in the Git history. Run the following command to commit the changes:
-
 ```html
-git commit -m "Initial commit"
+git add <file name>
 ```
 
-6. ### Push the code:
-   Finally, push your code to the remote repository using the following command:
+4. ### Commit changes 
+   After changing or modifying any file we have to add code , after modifying code we have to add commit for showing what changes in repository
+
+```html
+git commit -m "add a message "
+```
+
+5. ### Push the changes:
+   By using this command code can be push in github repository after creating repository
 
 ```html
 git push
 ```
+After this error will come it will then we have to add github repositary where we have to add the code
 
-If you're using a branch other than `master`, replace `master` with the name of the branch.
+6. ### Create a repositary :
+   Create repository  if dont know how to create repository then [click here](http://localhost:3000/docs/github/how-to-create-repository/)
+   to watch steps for creating repository
 
-Congratulations! You have successfully pushed your existing code to a Git repository.
+7. ### Copy command lines 
+
+![link img](./s1.png)
+
+
+8. ### Use the following command to connect local repo to github repo
+
+```html
+git remote add origin <repository url>
+```
+9. ### Use follwing command to push code
+
+```html
+git push
+```
+10. ### Copy the command from terminal
+
+```html
+git push --set-upstream origin master
+```
+11. ### After adding this command on terminal your code will be pushed on github Repository
+
+ Code added in Repositary  successfully.
+
+12. ### After adding file modified changes can be added by using:
+
+```html
+git add .
+git commit -m "changes message"
+```
+13. ### After adding and commiting changes push the changes
+
+```html
+git push
+``` 
+Then changes will be added successfully.
+
+
 
 ## Pushing New Code Directly to a Git Repository
 
@@ -88,7 +129,7 @@ Congratulations! You have successfully pushed your existing code to a Git reposi
    Start by cloning the existing repository to your local machine. Use the following command to clone the repository:
 
 ```html
-git clone <repository_url></repository_url>
+git clone <repository_url>
 ```
 
 Replace <repository_url> with the URL of the repository you want to clone.

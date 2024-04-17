@@ -348,8 +348,8 @@ console.log(index);
 ```js
 const students = ['Sargam', 'Sumit', 'Vishal', 'Vaishnavi'];
 
-console.log(fruits.includes('Vishal')); // Output: true
-console.log(fruits.includes('prajyot')); // Output: false
+console.log(students.includes('Vishal')); // Output: true
+console.log(students.includes('prajyot')); // Output: false
 
 ```
 

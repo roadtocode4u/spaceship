@@ -339,5 +339,24 @@ console.log(index);
 
 > 1
 
+**11. includes() :**
+
+`.includes()` method is used when you need to check if an array contains a particular value before proceeding with further operations.
+
+**Example :**
+
+```js
+const students = ['Sargam', 'Sumit', 'Vishal', 'Vaishnavi'];
+
+console.log(fruits.includes('Vishal')); // Output: true
+console.log(fruits.includes('prajyot')); // Output: false
+
+```
+
+**Output :**
+
+> true
+
+> false
 
 

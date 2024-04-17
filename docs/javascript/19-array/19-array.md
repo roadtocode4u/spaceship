@@ -95,21 +95,21 @@ To `add` element from the end of array.
 **Example :**
 
 ```js
-const students = ["A", "B", "C", "D"];
+const students = ["Nikita", "Pratiksha", "Rutuja", "Rohan"];
 console.log(students);
-students.push("E");
+students.push("Aditi");
 console.log(students);
 ```
 
 **Output :**
 
-> ['A','B','C','D'] <br/> >['A','B','C','D','E]
+> ['Nikita','Pratiksha','Rutuja','Rohan'] <br/> >['Nikita','Pratiksha','Rutuja','Rohan','Aditi]
 
-In the above example, we defines an array called `students` with four elements: `A`, `B`, `C`, and `D`.
+In the above example, we defines an array called `students` with four elements: `Nikita`, `Pratiksha`, `Rutuja`, and `Rohan`.
 
 The first `console.log()` function is then used to print the entire students array to the console.
 
-The `push()` method is then called on the students array with the argument `E`. This adds the string `E` as a new element at the `end` of the students array.
+The `push()` method is then called on the students array with the argument `Aditi`. This adds the string `Aditi` as a new element at the `end` of the students array.
 
 The second `console.log()` function is then used to print the updated students array to the console.
 
@@ -120,7 +120,7 @@ To `remove` element from the end of array.
 **Example :**
 
 ```js
-const students = ["A", "B", "C", "D"];
+const students = ["Vaishnavi", "Aditya", "Dattatray", "Roshan"];
 console.log(students);
 students.pop();
 console.log(students);
@@ -128,13 +128,13 @@ console.log(students);
 
 **Output :**
 
-> ['A','B','C','D'] <br/> >['A','B','C']
+> ['Vaishnavi','Aditya','Dattatray','Roshan'] <br/> >['Vaishnavi','Aditya','Dattatray']
 
-In the above example, we defines an array called `students` with four elements: `A`, `B`, `C`, and `D`.
+In the above example, we defines an array called `students` with four elements: `Vaishnavi`, `Aditya`, `Dattatray`, and `Roshan`.
 
 The first `console.log()` function is then used to print the entire students array to the console.
 
-The `pop()` method is then called on the students array. This `removes` the last element `D` from the students array.
+The `pop()` method is then called on the students array. This `removes` the last element `Roshan` from the students array.
 
 The second `console.log()` function is then used to print the updated students array to the console
 
@@ -145,17 +145,17 @@ To `insert` element from the start of array.
 **Example :**
 
 ```js
-const students = ["A", "B", "C", "D"];
+const students = ["Yash", "Sakshi", "Sanket", "Siddhi"];
 console.log(students);
-students.unshift("E");
+students.unshift("Tejas");
 console.log(students);
 ```
 
 **Output :**
 
-> ['A','B','C','D'] <br/> >['E','A','B','C','D']
+> ['Yash','Sakshi','Sanket','Siddhi'] <br/> >['Tejas','Yash','Sakshi','Sanket','Siddhi']
 
-In the above example, we defines an array called `students` with four elements: `A`, `B`, `C`, and `D`.
+In the above example, we defines an array called `students` with four elements: `Yash`, `Sakshi`, `Sanket`, and `Siddhi`.
 
 The first `console.log()` function is then used to print the entire students array to the console.
 
@@ -170,7 +170,7 @@ To `delete` elements from the start of array.
 **Example :**
 
 ```js
-const students = ["A", "B", "C", "D"];
+const students = ["Chaitanya", "Akash", "Harshal", "Omkar"];
 console.log(students);
 students.shift();
 console.log(students);
@@ -178,13 +178,13 @@ console.log(students);
 
 **Output :**
 
-> ['A','B','C','D'] <br/> >['B','C','D']
+> ['Chaitanya','Akash','Harshal','Omkar'] <br/> >['Akash','Harshal','Omkar']
 
-In the above example, we defines an array called `students` with four elements: `A`, `B`, `C`, and `D`.
+In the above example, we defines an array called `students` with four elements: `Chaitanya`, `Akash`, `Harshal`, and `Omkar`.
 
 The first `console.log()` function is then used to print the entire students array to the console.
 
-The `shift()` method is then called on the `students` array. This `removes the first element A from the students array`.
+The `shift()` method is then called on the `students` array. This `removes the first element Chaitanya from the students array`.
 
 The second `console.log()` function is then used to print the updated students array to the console.
 
@@ -195,13 +195,13 @@ Queue is a line where we can perform various operation on Queue  like` push(), p
 
 **Example of train ticket booking**
 ```js
-const wl = ["Sahil", "Bhakti", "Sakshi"];
-console.log(wl);
-wl.push("Nikita");
-console.log(wl);
+const waiting_list = ["Sahil", "Bhakti", "Sakshi"];
+console.log(waiting_list);
+waiting_list.push("Nikita");
+console.log(waiting_list);
 
-wl.shift()
-console.log(wl)
+waiting_list.shift()
+console.log(waiting_list)
 ```
 **Output**
 
@@ -210,12 +210,12 @@ console.log(wl)
 >["Bhakti", "Sakshi". "Nikita"]
 
 
-`wl.push(" ")` used to add passenger name in queue.
-`wl.shift(" ")` used to remove or shift name from queue.
+`waiting_list.push(" ")` used to add passenger name in queue.
+`waiting_list.shift(" ")` used to remove or shift name from queue.
 
-In this program  `[0:Sahil, 1:Bhakti, 2:Sakshi, 3:Nikita ]` this are waiting list names, this names can be added by using `wl.push()`.
+In this program  `[0:Sahil, 1:Bhakti, 2:Sakshi, 3:Nikita ]` this are waiting list names, this names can be added by using `waiting_list.push()`.
 
-After this if the ticket is confirm of index number 1:sahil then it will be automatically shift by using `wl.shift()`,then the list will be `[0:Bhakti, 1:Sakshi, 2:Nikita]`.
+After this if the ticket is confirm of index number 1:sahil then it will be automatically shift by using `waiting_list.shift()`,then the list will be `[0:Bhakti, 1:Sakshi, 2:Nikita]`.
 
 **6. splice() :**
 
@@ -230,21 +230,21 @@ splice(index, no.of elements to delete, elements to insert)
 **Example :**
 
 ```js
-const students = ["A", "B", "C", "D", "E", "F"];
+const students = ["Gauri", "Bharti", "Aniket", "Kanchan", "Siddhi", "Tejas"];
 console.log(students);
-students.splice(1, 2, "W", "Q");
+students.splice(1, 2, "Prachi", "Sanjana");
 console.log(students);
 ```
 
 **Output :**
 
-> ['A','B','C','D','E','F'] <br/> >['A','W','Q','D','E','F']
+> ['Gauri','Bharti','Aniket','Kanchan','Siddhi','Tejas'] <br/> >['Gauri','Prachi','Sanjana','Kanchan','Siddhi','Tejas']
 
-In the above example, we can defines an array called `students` with six elements: `A`, `B`, `C`, `D`, `E`, and `F`.
+In the above example, we can defines an array called `students` with six elements: `Gauri`, `Bharti`, `Aniket`, `Kanchan`, `Siddhi`, and `Tejas`.
 
 The first `console.log()` function is then used to print the entire students array to the console.
 
-The ``splice()` method is then called on the `students` array with the arguments `1`, `2`, `W`, and `Q`. This removes two elements starting from the index `1`, which removes `C` and `D`, and inserts two new elements `W` and `Q` in their place.
+The ``splice()` method is then called on the `students` array with the arguments `1`, `2`, `Prachi`, and `Sanjana`. This removes two elements starting from the index `1`, which removes `Aniket` and `Kanchan`, and inserts two new elements `Prachi` and `Sanjana` in their place.
 
 The second `console.log()` function is then used to print the updated students array to the console.
 
@@ -255,25 +255,25 @@ Convert `array to string default` separator is `,` but we can change it.
 **Example :**
 
 ```js
-const students = ["A","B","C","D","E","F"]
+const students = ["Suraj","Vidhi","Nandini","Sarthak","Jayesh","Payal"]
 console.log(students.join())
 ```
 
 **Output :**
 
-> ['A','B','C','D','E','F'] <br/>
-> A,B,C,D,E,F
+> ['Suraj','Vidhi','Nandini','Sarthak','Jayesh','Payal'] <br/>
+> Suraj,Vidhi,Nandini,Sarthak,Jayesh,Payal
 
 **Example :**
 
 ```js
-const students = ["A", "B", "C", "D", "E", "F"];
+const students = ["Suraj", "Vidhi", "Nandini", "Sarthak", "Jayesh", "Payal"];
 console.log(students.join("*"));
 ```
 
 **Output :**
 
-> ['A','B','C','D','E','F'] <br/> >`A*B*C*D*E*F`
+> ['Suraj','Vidhi','Nandini','Sarthak','Jayesh','Payal'] <br/> >`Suraj*Vidhi*Nandini*Sarthak*Jayesh*Payal`
 
 **8. reverse() :**
 
@@ -282,14 +282,14 @@ Converts an array in `reverse` order or `decending` order.
 **Example :**
 
 ```js
-const arr = ["A", "B", "C", "D"];
+const arr = ["Atharva", "Bhakti", "Neha", "Rohini"];
 arr.reverse();
 console.log(arr);
 ```
 
 **Output :**
 
-> ['D','C','B','A']
+> ['Rohini','Neha','Bhakti','Atharva']
 
 **9. sort() :**
 
@@ -298,19 +298,19 @@ Converts an array in `ascending` order.
 **Example of ascending order :**
 
 ```js
-const arr = ["Z", "A", "D", "B"];
+const arr = ["Harshad", "Rutuja", "Prachi", "Siddhi"];
 arr.sort();
 console.log(arr);
 ```
 
 **Output :**
 
-> ['A','B','D','Z']
+> ['Harshad','Prachi','Rutuja','Siddhi']
 
 **Example of descending order :**
 
 ```js
-const arr = ["Z", "A", "D", "B"];
+const arr = ["Aman", "Sharmin", "Nupur", "Tanvi"];
 arr.sort();
 console.log("Ascending :" + arr);
 
@@ -320,8 +320,8 @@ console.log("Descending : " + arr);
 
 **Output :**
 
-> Ascending : A,B,D,Z <br/>
-> Descending : Z,D,B,A
+> Ascending : Aman,Nupur,Sharmin,Tanvi <br/>
+> Descending : Tanvi,Sharmin,Nupur,Aman
 
 **10. indexOf( ) :**
 
@@ -330,8 +330,8 @@ console.log("Descending : " + arr);
 **Example :**
 
 ```js
-const arr = ["Z", "A", "D", "B"];
-const index = arr.indexOf("A");
+const arr = ["Bushra", "Aakansha", "Sarita", "Akshada"];
+const index = arr.indexOf("Aakansha");
 console.log(index);
 ```
 

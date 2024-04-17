@@ -188,6 +188,35 @@ The `shift()` method is then called on the `students` array. This `removes the f
 
 The second `console.log()` function is then used to print the updated students array to the console.
 
+
+### Implementing Queue using Array
+
+Queue is a line where we can perform various operation on Queue  like` push(), pop(), unshift(), shift() `.
+
+**Example of train ticket booking**
+```js
+const wl = ["Sahil", "Bhakti", "Sakshi"];
+console.log(wl);
+wl.push("Nikita");
+console.log(wl);
+
+wl.shift()
+console.log(wl)
+```
+**Output**
+
+> ["Sahil", "Bhakti", "Sakshi"] <br/> >["Sahil", "Bhakti", "Sakshi". "Nikita"]
+
+>["Bhakti", "Sakshi". "Nikita"]
+
+
+`wl.push(" ")` used to add passenger name in queue.
+`wl.shift(" ")` used to remove or shift name from queue.
+
+In this program  `[0:Sahil, 1:Bhakti, 2:Sakshi, 3:Nikita ]` this are waiting list names, this names can be added by using `wl.push()`.
+
+After this if the ticket is confirm of index number 1:sahil then it will be automatically shift by using `wl.shift()`,then the list will be `[0:Bhakti, 1:Sakshi, 2:Nikita]`.
+
 **6. splice() :**
 
 This function can perform `insertion` and `deletion` at once.
@@ -226,7 +255,7 @@ Convert `array to string default` separator is `,` but we can change it.
 **Example :**
 
 ```js
-const students = ["A","B","C","D","E","F"] <br/>
+const students = ["A","B","C","D","E","F"]
 console.log(students.join())
 ```
 
@@ -309,3 +338,6 @@ console.log(index);
 **Output :**
 
 > 1
+
+
+

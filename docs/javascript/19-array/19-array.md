@@ -191,7 +191,11 @@ The second `console.log()` function is then used to print the updated students a
 
 ### Implementing Queue using Array
 
-Queue is a line where we can perform various operation on Queue  like` push(), pop(), unshift(), shift() `.
+A queue is a data structure that follows the `First In First Out (FIFO)` or `First Come First Serve (FCFS)` principle.
+
+The first element added to the queue is the first one to be removed. This is like being in a queue to get a movie ticket. The first one in the queue gets the ticket first.
+
+Queues can be implemented in JavaScript using either the `push and shift methods` or `unshift and pop methods` of the array object. Although this is a simple way to implement queues, it is very inefficient for large queues — because of the methods operate on arrays, the shift and unshift methods move every element in the array each time they are called.
 
 **Example of train ticket booking**
 ```js

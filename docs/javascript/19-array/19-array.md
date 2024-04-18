@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 ## Array in js
 
-Single variable which can **store** multiple values. An array is a data structure that allows you to store a **collection of elements**, such as **numbers, strings, objects**, or other arrays, in a `single variable`. Arrays are defined using square brackets `[]` and each element in the array is separated by a `comma`. Array index always start from `0`.
+Single variable which can **store** multiple values. An array is a data structure that allows you to store a **collection of elements**, such as **numbers, strings, objects**, or other arrays, in a `single variable`. Arrays are defined using square brackets `[]` this square brackets is known as `subscript`  and each element in the array is separated by a `comma`. Array index always start from `0`.
 
 **Example :**
 

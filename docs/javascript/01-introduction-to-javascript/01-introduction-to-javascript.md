@@ -10,7 +10,21 @@ JavaScript is a dynamic programming language, a scripting language used to devel
 
 > Brendan Eich invented JavaScript in 1995.
 
-### There are various way to link "JavaScript" with html
+## Where does JavaScript runs ?
+
+JavaScript mainly runs in web browsers that have built-in engines to interpret and execute JavaScript code. JavaScript isn't just for web browsers, it also runs in node js, It provides a runtime environment that allows JavaScript to run.
+
+### JavaScrip Engines with different browsers
+
+#### 1.Chrome uses V8 JavaScript engine and it is known for the speed and efficiency
+
+#### 2.Safari: Safari utilizes the JavaScriptCore engine, developed by Apple.
+
+#### 3.Mozilla Firefox: Firefox employs the SpiderMonkey JavaScript engine, developed by the Mozilla Foundation.
+
+#### 4.Microsoft Edge: Edge used the Chakra JavaScript engine, but with its transition to the Chromium-based engine, it now also relies on the V8 engine
+
+### Linking JavaScript with HTML
 
 ### 1. Internal
 

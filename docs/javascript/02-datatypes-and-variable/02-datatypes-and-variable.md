@@ -28,14 +28,14 @@ A string is a data type used to represent textual data. It consists of a sequenc
 
 2.  **Number**
 
- It Represents numeric values, both integer and floating-point numbers.
+It Represents numeric values, both integer and floating-point numbers.
 
-**_int_** 
+**_int_**
 **_float _**
 
 **a. Int**
 
-Integer numbers are whole numbers without  decimal points.
+Integer numbers are whole numbers without decimal points.
 
 **Example :**
 
@@ -45,7 +45,7 @@ Integer numbers are whole numbers without  decimal points.
 
 **b. Float**
 
-Floats are numbers with decimal points. 
+Floats are numbers with decimal points.
 
 > 8793.90
 
@@ -53,7 +53,7 @@ Floats are numbers with decimal points.
 
 3.  **Boolean**
 
-A boolean represents  Logical values Like : `true` or `false`( one of two possible values).
+A boolean represents Logical values Like : `true` or `false`( one of two possible values).
 
 > `true or false`
 
@@ -69,9 +69,9 @@ A variable is used to store data. There are three keywords to declare variables:
 
 **`let`**, **`const`**, **`var`**
 
-**Synatx :**
+**Syntax :**
 
-`keyword valriableName;`
+`keyword variableName;`
 
 **Example**
 
@@ -81,7 +81,7 @@ In The above example we can use `let` keyword and declare one variable name of t
 
 `age = 20;`
 
-In The above example we assign `20` value for `age` variable. This `20` value are store in `age` variable. This is assignment part of in the variable.
+In The above example we assign `20` value for `age` variable. This `20` value is stored in `age` variable. This is assignment part of in the variable.
 
 **Example**
 

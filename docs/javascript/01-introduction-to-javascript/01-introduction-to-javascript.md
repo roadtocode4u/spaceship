@@ -10,26 +10,46 @@ JavaScript is a dynamic programming language, a scripting language used to devel
 
 > Brendan Eich invented JavaScript in 1995.
 
-**You can Add JavaScript in Html elements then use this script tag. 👇**
+## Where does JavaScript runs ?
 
-```js
+JavaScript mainly runs in web browsers that have built-in engines to interpret and execute JavaScript code. JavaScript isn't just for web browsers, it also runs in node js, It provides a runtime environment that allows JavaScript to run.
+
+### JavaScrip Engines with different browsers
+
+#### 1.Chrome uses V8 JavaScript engine and it is known for the speed and efficiency
+
+#### 2.Safari: Safari utilizes the JavaScriptCore engine, developed by Apple.
+
+#### 3.Mozilla Firefox: Firefox employs the SpiderMonkey JavaScript engine, developed by the Mozilla Foundation.
+
+#### 4.Microsoft Edge: Edge used the Chakra JavaScript engine, but with its transition to the Chromium-based engine, it now also relies on the V8 engine
+
+### Linking JavaScript with HTML
+
+### 1. Internal
+
 <script></script>
-```
+
+**You can add JavaScript before the closing of the body tag in HTML elements, then use this script tag. 👇**
 
 **Code**
 
 ```js
+
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Javscript</title>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <title>JavaScript is ❤️</title>
+  </head>
+  <body>
+
     <script>
-        document.write("Hello World")
+      document.write("Hello World");
     </script>
-</body>
+
+  </body>
 </html>
+
 ```
 
 **Output**
@@ -41,6 +61,40 @@ Inside the `<script>` tag, you have the above JavaScript code `document.write("H
 
 - `document`: This is a built-in object in JavaScript that represents the web page/document.
 - `write()`: This is a method of the document object. It allows you to write content directly to the HTML document.
+
+### 2. External javascript
+
+#### HTML file
+
+```js
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript is ❤️</title>
+  </head>
+  <body>
+
+    <script src="scrip.js"></script>
+
+  </body>
+</html>
+
+```
+
+#### javascript file
+
+** While linking the JS file with HTML, always use the .js extension.
+This tells the browser to get and run the JavaScript code from a file called script.js
+**
+
+```js
+document.write("Hello World");
+```
+
+**Output**
+
+<img src="/javascript/01/output-1.jpg" alt="output-1" width="600px"/>
 
 **In JavaScript, you can use both single quotes (`'`) and double quotes (`"`) to define strings. Both serve the same purpose of representing textual data. The choice between single and double quotes often comes down to personal preference and specific use cases.**
 

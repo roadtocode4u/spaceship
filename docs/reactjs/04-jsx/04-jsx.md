@@ -10,6 +10,7 @@ hide_table_of_contents: true
 
 `JSX` is a syntax extension for JavaScript that allows developers to write **HTML-like code** in their JavaScript files. JSX syntax allows developers to write HTML-like code in their JavaScript files, making it easier to create complex user interfaces.
 
+`JSX` Is extension to javascript syntax where we can write `html &js ` at the same place
 ### How JSX Works
 
 Think of JSX as a special type of HTML, but with some rules:
@@ -34,3 +35,27 @@ Think of JSX as a special type of HTML, but with some rules:
 ```
 
 In this code, we're creating a component called `App`. Inside the `h1` tag, we have `Hello` and `{5 + 5}` inside curly braces. It's like saying, `Hello` and then calculating `5 + 5`, which is `10`, and adding it to our message. So, we get `Hello 10` as the final result.
+
+**JSX Important libraries**
+
+1. react
+2. react-dom
+3. react-script
+
+All this libraries must be installed 
+
+## What is SPA ??
+
+React is known as a `single page application` because it contain only one page and other pages include in it and it uses DOM manupulation for it.
+
+**ReactDom**
+ It is module in react libraries ,  ReactDOM specifically focuses on rendering React components to the DOM. 
+
+When you write a React application, you create components using React syntax. ReactDOM takes these components and renders them to the browser's DOM, updating them efficiently when the data changes. 
+
+```js
+import React from 'react';
+import ReactDOM from 'react-dom';
+```
+
+If the code written in `{ }` then that is evaluated as javascript and known as` JSX expression `.  If the code written in `[ ]` then this code is normal HTML code. 

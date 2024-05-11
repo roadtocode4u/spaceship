@@ -10,6 +10,7 @@ JavaScript functions that returns `jsx`.
 
 In React, a component is a reusable piece of code that defines the structure and behaviour of a part of a user interface. A component is typically written as a JavaScript function or class that returns a JSX element or a tree of elements.
 
+We write it in PascalCase.
 
 ```jsx title="src/index.js" showLineNumbers="true"
 import ReactDOM from 'react-dom/client';

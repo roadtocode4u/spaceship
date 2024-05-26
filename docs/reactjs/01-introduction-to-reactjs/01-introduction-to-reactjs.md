@@ -92,7 +92,7 @@ React is a JavaScript frontend library for building user interfaces. It is maint
 
 15. Next open terminal and install react scripts ` npm i react-scripts`
 
-16. Next write another script between the version and dependencies `"script":{       "start":"react-script start"}` This command installs react-scripts, which is essential for building and running React applications.
+16. Next write another script between the version and dependencies `"scripts":{       "start":"react-scripts start"}` This command installs react-scripts, which is essential for building and running React applications.
 
 17. Next in terminal write `npm start` after that it will ask "Would you like to add the defaults to your package.json" say `y` after that it will redirect to you on the browser and you see the output, with that it install the some of configuration for browserslist, which is a tool used to specify which browsers your project should support. In simpler terms, it tells browserslist which browser versions your project needs to work with in both production and development environments.
 

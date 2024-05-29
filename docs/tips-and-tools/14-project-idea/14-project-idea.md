@@ -53,4 +53,66 @@ Develop a basic front-end for an informative website, InfoHub, which provides us
 **Contact Page:**
 - Simple form for users to get in touch.
 
+### 3. Travel Guide Website
 
+Create a comprehensive travel guide website, Wanderlust, to provide users with detailed information on various travel destinations around the world. The website will feature destination guides, travel tips, user reviews, and an interactive map.
+
+#### Key Features:
+**Homepage:**
+- Welcome message and introduction to Wanderlust.
+- Featured destinations with images and brief descriptions.
+- Search bar for quick access to specific destinations.
+- Navigation menu (e.g., Home, Destinations, Travel Tips, Reviews, Contact).
+
+**Destination Pages:**
+- Detailed information about each destination, including top attractions, best times to visit, local cuisine, and cultural tips.
+- High-quality images and videos of the destination.
+- Map highlighting key attractions and points of interest.
+- User reviews and ratings.
+
+**Travel Tips Section:**
+- Articles on various travel-related topics (e.g., packing tips, safety tips, budget travel).
+- Guides for different types of travelers (e.g., solo travelers, family vacations, adventure seekers).
+
+**User Reviews:**
+- Section for users to leave reviews and ratings for destinations they have visited.
+- Display of recent reviews and top-rated destinations.
+
+**Interactive Map:**
+- Map with markers for all featured destinations.
+- Clicking on a marker provides a brief overview and a link to the full destination page.
+
+**Contact Page:**
+- Contact form for users to send inquiries or feedback.
+- Social media links and contact information.
+
+### 4. Educational Resources Website
+
+Create an educational resources website, EduGuide, to provide students, teachers, and lifelong learners with valuable study materials, lesson plans, interactive tools, and educational articles.
+
+#### Key Features:
+
+**Homepage:**
+- Welcome message and introduction to EduGuide.
+- Featured resources and latest updates.
+- Navigation menu (e.g., Home, Subjects, Lesson Plans, Study Guides, Interactive Tools, Contact).
+
+**Subject Pages:**
+- Organized sections for different subjects (e.g., Math, Science, History, Literature).
+- Articles and resources specific to each subject.
+
+**Lesson Plans:**
+- Detailed lesson plans and activities for teachers.
+- Search functionality to find lesson plans by grade level or topic.
+
+**Study Guides:**
+- Study materials and practice quizzes for students.
+- Downloadable PDFs and worksheets.
+
+**Interactive Tools:**
+- Educational games and interactive tools for learning.
+- Simulations and visualizations to aid understanding.
+
+**Contact Page:**
+- Contact form for users to send inquiries or feedback.
+- Social media links and contact information.

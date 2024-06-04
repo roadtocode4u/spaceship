@@ -202,4 +202,6 @@ In Line 3 ,it creates a root React element using ReactDOM.createRoot(). It speci
 
 In line 5 to 11 , it defines a functional React component StudentCard. It takes three props: name, city, and gender. Inside the component, it returns JSX, which represents the structure and content of the component.` The class name of the <div> element is conditionally set based on the gender prop.`
 
+
 In line 12 to 21 , it renders the root React element created earlier. Inside the root element, it renders a <div /> with the class name 'student-card-container', containing multiple StudentCard components with different props (name, city, gender).
+

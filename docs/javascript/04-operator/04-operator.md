@@ -8,6 +8,10 @@ hide_table_of_contents: true
 
 Operators are used to perform certain operations on one or more values or variables.
 
+# Operand 
+
+Operands are values or variables on which operation is performed.
+
 **Some common types of operators include:**
 
 1. Arithmetic operators (+, -, \*, /, % )
@@ -15,7 +19,7 @@ Operators are used to perform certain operations on one or more values or variab
 3. Increment & Decrement operators
 4. Comparison operators (<, >, <=, >=, ==, !=)
 5. Logical operators (&& (logical AND), || (logical OR), ! (logical NOT))
-6. Typeof operator
+6. other operators (typeof, Comma, String, Dot)
 
 ### Arithmetic Operators
 
@@ -731,7 +735,7 @@ If the operand is true, it returns false, and if the operand is false, it return
 
 **Code**
 
-```html
+ ```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -742,9 +746,9 @@ If the operand is true, it returns false, and if the operand is false, it return
   </head>
   <body></body>
 </html>
-```
 
-**Output**
+```
+**Output :**
 
 > true
 
@@ -776,7 +780,9 @@ The **modulus operator** is represented by the percent sign `%`. The modulus ope
 
 In this example, `10 % 3` is calculating the remainder when 10 is divided by 3. The result is 1 because 10 divided by 3 is 3 with a remainder of 1.
 
-### TYPEOF Operator:
+## Other operator
+
+**1. TYPEOF Operator:**
 
 This **typeof** operator helps us to know the type of data, whether it is boolean, string, number, etc.
 
@@ -810,3 +816,111 @@ This **typeof** operator helps us to know the type of data, whether it is boolea
 > The datatype of C is :- number<br/>
 
 In this example, we are obtaining the datatype of variables by utilizing the typeof operator.
+
+**2.Comma operator**
+
+This **comma operator** evaluates each of its operands (from left to right) and returns the value of the last operand. It is mainly used within a for loop to update multiple variables.
+
+**Code**
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript</title>
+  </head>
+
+  <body>
+    <script>
+      var x = 1, y = 2, z = 3;
+
+      var result = (x++, y++, z++);
+
+      console.log("Value of x is :- " + x); 
+      console.log("Value of y is :- " + y); 
+      console.log("Value of z is :- " + z); 
+    </script>
+  </body>
+</html>
+```
+**Output**
+
+> Value of x is :- 2<br/>
+> Value of y is :- 3<br/>
+> Value of z is :- 4<br/>
+
+In this example, the `comma operator` is used to evaluate the expressions x++, y++, and z++ sequentially.  The variables x, y, and z are all `incremented by 1` as part of the evaluation.
+
+**3. STRING Operator:**
+
+This **string operator** is primarily used for concatenation, which means joining two or more strings together. In JavaScript, the` + `operator is used for this purpose.
+
+**Code :** 
+
+```html 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript</title>
+  </head>
+
+  <body>
+    <script>
+      var str1 = "Hello";
+      var str2 = "World";
+      var str3 = "!";
+
+      var greeting = str1 + " " + str2 + str3;
+
+      console.log("Concatenated string is :- " + greeting); 
+    </script>
+  </body>
+</html>
+```
+
+**Output :**
+
+> Concatenated string is :- Hello World!<br/>
+
+In this example, the `+` operator is used to concatenate str1, str2, and str3 along with a space between str1 and str2. The final result is the concatenated string `"Hello World!"`.
+
+**4. DOT Operator:**
+
+This `dot operator (.)` is used to access properties and methods of an object in JavaScript.
+
+**Code :**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript</title>
+  </head>
+
+  <body>
+    <script>
+      var person = {
+        firstName: "Sujal",
+        lastName: "Ugle",
+        age: 20,
+        fullName: function() {
+          return this.firstName + " " + this.lastName;
+        }
+      };
+
+      console.log("First name is :- " + person.firstName);
+      console.log("Last name is :- " + person.lastName);   
+      console.log("Age is :- " + person.age);             
+      console.log("Full name is :- " + person.fullName());
+    </script>
+  </body>
+</html>
+```
+
+**Output :**
+
+First name is :- Sujal<br/>
+Last name is :- Ugle<br/>
+Age is :- 20<br/>
+Full name is :- Sujal Ugle<br/>

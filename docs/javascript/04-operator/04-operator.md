@@ -16,8 +16,8 @@ Operands are values or variables on which operation is performed.
 
 1. Arithmetic operators (+, -, \*, /, % )
 2. Assignment operators (=, +=, -=, \*=, /=)
-3. Increment & Decrement operators
-4. Comparison operators (<, >, <=, >=, ==, !=)
+3. Increment & Decrement operators(var++, ++var), (var--, --var)
+4. Comparison operators (<, >, <=, >=, ==, ===, != )
 5. Logical operators (&& (logical AND), || (logical OR), ! (logical NOT))
 6. other operators (typeof, Comma, String, Dot)
 
@@ -522,7 +522,7 @@ In above code will gives output `true` to the web page because the two variables
 
 > true
 
-With the === operator, the code will output true only if both a and b have the same value and are of the same type (in this case, both are numbers.
+With the === operator, the code will output true only if both a and b have the same value and are of the same type (in this case, both are numbers).
 
 <img src="/javascript/04/difference(=).png" alt="difference(=, ==, ===)" width="800px"/>
 

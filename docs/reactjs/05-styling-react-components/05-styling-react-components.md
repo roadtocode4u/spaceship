@@ -205,4 +205,4 @@ In line 5 to 11 , it defines a functional React component StudentCard. It takes 
 
 In line 12 to 21 , it renders the root React element created earlier. Inside the root element, it renders a <div /> with the class name 'student-card-container', containing multiple StudentCard components with different props (name, city, gender).
 
-
+routing-without-library

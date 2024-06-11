@@ -8,6 +8,15 @@ hide_table_of_contents: true
 
 In React, routing is used to switch between different components or views.
 
+## Implementing Basic Routing
+
+### There are two ways to implement Routing using core JavaScript.
+
+1. Using if else .
+2. Using switch case statement .
+
+#### 1 Using if else
+
 ## The `window.location.pathname` Property
 
 The `window.location.pathname` is a property of the `window` object that contains the current URL path. This path is everything in the URL after the domain name (e.g., `/about`, `/contact`, or `/`). Here's how you can use it:
@@ -18,9 +27,33 @@ const path = window.location.pathname;
 
 Now, the `path` variable will hold the current URL path as a string.
 
-## Implementing Basic Routing
-
 The code example you provided demonstrates how to implement basic routing in React using `window.location.pathname`. Let's break it down step by step:
+
+### Using if else conditionals.
+
+```jsx title="src/index.js" showLineNumbers
+import ReactDOM from "react-dom/client";
+
+import About from "./views/About/About";
+import Contact from "./views/Contact/Contact";
+import Home from "./views/Home/Home";
+
+function App() {
+  const path = window.location.pathname;
+
+  if (path == "/") {
+    root.render(<Home />);
+  } else if (path == "/contact") {
+    root.render(<Contact />);
+  } else if (path == "/about") {
+    root.render(<About />);
+  } else {
+    root.render(<h1>404 Not Found </h1>);
+  }
+}
+```
+
+### Using switch case statement.
 
 ```jsx title="src/index.js" showLineNumbers
 import ReactDOM from "react-dom/client";
@@ -59,8 +92,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
     {" "}
-    <App />
-    {" "}
+    <App />{" "}
   </>
 );
 ```

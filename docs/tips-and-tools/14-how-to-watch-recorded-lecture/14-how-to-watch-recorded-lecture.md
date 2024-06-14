@@ -29,3 +29,6 @@ hide_table_of_contents: true
 #### 7. You will see at right side lectures and assignment and notes accordingly.
 
 <img src="/tip-and-tools/14/6.png" alt="screenshot-1" width="600px"/>
+
+<!-- #### 8. This shine shows the video
+<img src="/tip-and-tools/14/7.png" alt="screenshot-1" width="600px"/> -->

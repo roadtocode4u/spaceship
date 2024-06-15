@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
 Operators are used to perform certain operations on one or more values or variables.
 
-# Operand 
+# Operand
 
 Operands are values or variables on which operation is performed.
 
@@ -735,7 +735,7 @@ If the operand is true, it returns false, and if the operand is false, it return
 
 **Code**
 
- ```html
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -746,8 +746,8 @@ If the operand is true, it returns false, and if the operand is false, it return
   </head>
   <body></body>
 </html>
-
 ```
+
 **Output :**
 
 > true
@@ -824,7 +824,6 @@ This **comma operator** evaluates each of its operands (from left to right) and 
 **Code**
 
 ```html
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -833,32 +832,35 @@ This **comma operator** evaluates each of its operands (from left to right) and 
 
   <body>
     <script>
-      var x = 1, y = 2, z = 3;
+      var x = 1,
+        y = 2,
+        z = 3;
 
       var result = (x++, y++, z++);
 
-      console.log("Value of x is :- " + x); 
-      console.log("Value of y is :- " + y); 
-      console.log("Value of z is :- " + z); 
+      console.log("Value of x is :- " + x);
+      console.log("Value of y is :- " + y);
+      console.log("Value of z is :- " + z);
     </script>
   </body>
 </html>
 ```
+
 **Output**
 
 > Value of x is :- 2<br/>
 > Value of y is :- 3<br/>
 > Value of z is :- 4<br/>
 
-In this example, the `comma operator` is used to evaluate the expressions x++, y++, and z++ sequentially.  The variables x, y, and z are all `incremented by 1` as part of the evaluation.
+In this example, the `comma operator` is used to evaluate the expressions x++, y++, and z++ sequentially. The variables x, y, and z are all `incremented by 1` as part of the evaluation.
 
 **3. STRING Operator:**
 
-This **string operator** is primarily used for concatenation, which means joining two or more strings together. In JavaScript, the` + `operator is used for this purpose.
+This **string operator** is primarily used for concatenation, which means joining two or more strings together. In JavaScript, the`+`operator is used for this purpose.
 
-**Code :** 
+**Code :**
 
-```html 
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -873,7 +875,7 @@ This **string operator** is primarily used for concatenation, which means joinin
 
       var greeting = str1 + " " + str2 + str3;
 
-      console.log("Concatenated string is :- " + greeting); 
+      console.log("Concatenated string is :- " + greeting);
     </script>
   </body>
 </html>
@@ -904,14 +906,14 @@ This `dot operator (.)` is used to access properties and methods of an object in
         firstName: "Sujal",
         lastName: "Ugle",
         age: 20,
-        fullName: function() {
+        fullName: function () {
           return this.firstName + " " + this.lastName;
-        }
+        },
       };
 
       console.log("First name is :- " + person.firstName);
-      console.log("Last name is :- " + person.lastName);   
-      console.log("Age is :- " + person.age);             
+      console.log("Last name is :- " + person.lastName);
+      console.log("Age is :- " + person.age);
       console.log("Full name is :- " + person.fullName());
     </script>
   </body>

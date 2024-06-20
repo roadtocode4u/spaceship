@@ -702,3 +702,77 @@ So, the final output of this code will be:
 ```js
 JEE MAIN Clear NAHI Hua...
 ```
+
+<img src="/react/05/screenshot3.png" alt="screenshot3.png" width="600px"/>
+
+**Example :for conditional rendering**
+
+```jsx title="src/index.js" showLineNumbers="true"
+import ReactDOM from 'react-dom/client';
+import './index.css';
+const root =ReactDOM.createRoot(document.getElementById("root"))
+
+function StudentCard({name,city,gender}){
+  return(
+    <div className={student-card ${gender == "female" ? "bg-female" : "bg-male"}}>
+      <h3 className='card-heading'>Hi I am {name} {gender}</h3>
+      <p className='card-subheading'>I am from {city}</p>
+    </div>
+  )
+}
+root.render(
+  <div className='student-card-container'>
+    <StudentCard name="Sakshi" city="Ahmednagar" gender="female"/>
+    <StudentCard name="Sneha" city="Pune" gender="female"/>
+    <StudentCard name="Neha" city="Ahmednagar" gender="female"/>
+    <StudentCard name="Ashish" city="Ahmednagar" gender="male"/>
+    <StudentCard name="Harshal" city="Pune" gender="male"/>
+    <StudentCard name="Omkar" city="Ahmednagar" gender="male"/>
+ </div>
+
+)
+
+```
+
+**File Name : index.css**
+
+```css
+.student-card-container {
+  display: flex;
+}
+
+.student-card {
+  padding-left: 20px;
+  border-radius: 5px;
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+}
+
+.bg-female {
+  background-color: rgb(231, 7, 26);
+}
+
+.bg-male {
+  background-color: aquamarine;
+}
+```
+
+**Output :**
+
+<img src="Screenshot condition.png" alt="screenshot FOR CONDITION.png" width="600px"/>
+
+**Explanation :**
+
+`This code demonstrates how to create and render a React component (StudentCard) multiple times with different props, and how to conditionally apply CSS classes based on prop values.`
+
+In line 1 and 2 ,code imports the ReactDOM module from 'react-dom/client' and an external CSS file './index.css'.
+
+In Line 3 ,it creates a root React element using ReactDOM.createRoot(). It specifies that the root element in the HTML document with the id "root" will be the container for rendering React elements.
+
+In line 5 to 11 , it defines a functional React component StudentCard. It takes three props: name, city, and gender. Inside the component, it returns JSX, which represents the structure and content of the component.` The class name of the <div> element is conditionally set based on the gender prop.`
+
+
+In line 12 to 21 , it renders the root React element created earlier. Inside the root element, it renders a <div /> with the class name 'student-card-container', containing multiple StudentCard components with different props (name, city, gender).
+
+routing-without-library

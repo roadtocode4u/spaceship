@@ -427,3 +427,53 @@ In the example above, the ordered list `<ol>` starts at the number 2. The first 
 **Output :**
 
 <img src="/html/09/output-6.png" alt="output-6" width="600px"/>
+
+## In Page Navigation
+
+In-page navigation, it allows users to jump to different sections of the same web page using links. This is particularly useful for long pages with a lot of content, like articles, documentation, or FAQs 😊
+
+**Example :**
+
+```html showLineNumbers=true
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In-Page Navigation Example</title>
+</head>
+<body>
+<h1> Road To Code</h1>
+    <nav>
+        <ul>
+            <li><a href="#section1">Features</a></li>
+            <li><a href="#section2">Achievements</a></li>
+            <li><a href="#section3">Courses Details</a></li>
+        </ul>
+    </nav>
+
+    <h2 id="section1">Features</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corporis ab veritatis sunt illum ducimus animi natus officia! Hic, ratione? Voluptate nihil repellendus perspiciatis quis ex vitae quo veritatis est.</p>
+    <hr/>
+    
+    <h2 id="section2">Achievements</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea asperiores optio fuga ad harum nobis quaerat vero minus eveniet. Inventore nam voluptatum illum expedita laboriosam, veniam totam atque in laudantium.</p>
+    <hr/>
+    
+    <h2 id="section3">Courses Details</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate at, provident ab officia perspiciatis delectus voluptatum, suscipit ullam qui numquam totam iste labore debitis, optio tenetur esse quas. Delectus, possimus!</p>
+    <hr/>
+</body>
+</html>
+```
+**Output :**
+
+<img src="inpagenav_op1.png" alt="inpagenav_main" width="600px"/>
+
+
+After clicking on `Achievement` you will go to section 2
+
+<img src="inpagenav_op3.png" alt="inpagenav_main" width="600px"/>
+
+**Explanation :**
+
+The main body of the example features a main heading "Road To Code" followed by a navigation menu `within a <nav> tag containing links to different sections of the page: "Features," "Achievements," and "Courses Details."` Each link uses an `anchor (href) pointing to corresponding sections identified by unique id attributes (#section1, #section2, #section3)`. The content sections each have a subheading `(<h2>)` with these id attributes, followed by paragraphs of placeholder text, and are visually separated by horizontal rules `(<hr/>).` This setup `allows users to click on the navigation links to quickly jump to the specific content` sections within the same page.

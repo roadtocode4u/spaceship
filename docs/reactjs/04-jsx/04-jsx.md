@@ -10,7 +10,7 @@ When JSX was created, it was referred to as JavaScript XML `eXtensible Markup La
 
 `JSX` is a syntax extension for JavaScript that allows developers to write **HTML-like code** in their JavaScript files. JSX syntax allows developers to write HTML-like code in their JavaScript files, making it easier to create complex user interfaces.
 
-`JSX` Is extension to javascript syntax where we can write `html &js ` at the same place
+`JSX` Is extension to javascript syntax where we can write `html & js ` at the same place
 
 ### How JSX Works
 

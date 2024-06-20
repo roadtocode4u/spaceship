@@ -133,6 +133,8 @@ root.render(
 
 **Output :**
 
+**Conditional Rendering**
+
 > <img src="/react/05/screenshot3.png" alt="screenshot3.png" width="600px"/>
 
 **Example :for conditions**

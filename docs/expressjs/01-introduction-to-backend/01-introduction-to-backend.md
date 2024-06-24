@@ -38,7 +38,7 @@ An API, or Application Programming Interface, is a set of rules and protocols th
  4. DELETE: Deletes a resource from a server.
  5. PATCH: Partially updates an existing resource on a server.
 
- <img src="/static/nodejs/backend/api-relation-dig.png" alt="output-10" width="600px"/>
+ <img src="/nodejs/backend/api-relation-dig.png" alt="output-10" width="600px"/>
 
 ### Example to explain the relation between api, frontend and backend :
 
@@ -57,4 +57,4 @@ An API, or Application Programming Interface, is a set of rules and protocols th
 
 In summary, the frontend is like the dining area where guests choose what they want to eat; it shows the menu and takes orders. The backend is like the kitchen where the chef prepares the meals; it handles all the cooking and preparation. The API is like the waiter who takes the guests' orders to the kitchen and brings the prepared food back to the guests. This shows how the frontend (dining area), backend (kitchen), and API (waiter) work together to serve the guests efficiently.
 
-<img src="/static/nodejs/backend/api-example-dig.png" alt="output-10" width="600px"/>
+<img src="/nodejs/backend/api-example-dig.png" alt="output-10" width="600px"/>

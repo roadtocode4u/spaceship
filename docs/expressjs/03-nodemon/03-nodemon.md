@@ -1,3 +1,9 @@
+---
+title: Introduction To Nodemon
+description: "Introduction To Nodemon "
+hide_table_of_contents: true
+---
+
 # Nodemon
 
 Nodemon is a tool that helps you develop `Node.js` applications. It watches the files you are working on, and whenever you make changes and save those files, Nodemon automatically restarts your application. This means you don't have to manually stop and start your server every time you make a change.
@@ -5,13 +11,14 @@ Nodemon is a tool that helps you develop `Node.js` applications. It watches the 
 
 ## Why Restarting the Server is Needed:
 
-1. See Your Changes:
-* When you change your code, such as fixing a bug or adding a new feature, you need to restart the server to see those changes in action.
-2. Update Settings:
-* If you change settings or configurations, the server needs to restart to apply these updates.
+1. **See Your Changes:**   
+ When you change your code, such as fixing a `bug `or adding a new feature, you need to restart the server to see those changes in action.
 
-3. Refresh Everything:
-* Sometimes, restarting the server helps clear out any leftover data or errors, giving your application a fresh start.
+2. **Update Settings:**  
+ If you change settings or configurations, the server needs to restart to apply these updates.
+
+3. **Refresh Everything:**  
+ Sometimes, restarting the server helps clear out any leftover data or errors, giving your application a fresh start.
 
 ## How Nodemon Helps:
 
@@ -23,9 +30,16 @@ Nodemon is a tool that helps you develop `Node.js` applications. It watches the 
 ```bash
 node app.js  # Start the server
 # Make changes to your code
+```
+This command runs the `app.js` file using` Node.js.` `app.js `typically contains the code to start your server, set up routes, connect to a database, and handle requests.  
+After that, Make changes in code . 
+
+```bash
 # Stop the server (Ctrl+C)
 node app.js  # Start the server again to see changes
 ```
+Pressing `Ctrl+C` in the terminal where the server is running stops the server. This is necessary because `Node.js` doesn't automatically detect changes in your code and restart the server.   
+Again, This command restarts your server. Now, the server runs with the updated code you have written. 
 
 * With Nodemon
 ```bash
@@ -65,8 +79,9 @@ yarn add -D nodemon
 
 ## Simple Steps to Use Nodemon:
 
-1. Install Nodemon Globally or Locally:
-* You can install Nodemon globally so it can be used across all your projects:
+1. **Install Nodemon Globally or Locally:**
+
+ You can install Nodemon globally so it can be used across all your projects:
 ```html
 npm install -g nodemon
 ```
@@ -79,7 +94,7 @@ npm install --save-dev nodemon
 
 <img src="/nodejs/nodemon/output-1.png" alt="screenshot-1" width="600px"/>
 
-2. Add a Start Script to `package.json`:
+2. **Add a Start Script to `package.json`:**
 * Update your `package.json` to add a script that uses Nodemon. If Nodemon is installed locally, you can refer to it directly within the script.
 
 - Using in package.json:
@@ -96,15 +111,16 @@ npm install --save-dev nodemon
     // your dependencies
   },
   "devDependencies": {
-    "nodemon": "^2.0.0"
+    "nodemon": "^3.1.4"
   }
 }
 
 ```
+<img src="/nodejs/nodemon/output-3.png" alt="screenshot-3" width="600px"/>
 
 Here, `"dev"`: `"nodemon index.js"` is the script that will run Nodemon. Replace `index.js` with the entry point of your application.
 
-3. Run Your Application with Nodemon:
+3. **Run Your Application with Nodemon:**
 
 Use the script you defined in package.json to start your application with Nodemon.
 

@@ -24,7 +24,7 @@ A `port` is a `number` that helps the `server` identify different services. It's
    <img src="/expressjs/02/1.png"  width="600px"/>
 
 4. it will create `package.json` file .
-5. Replace the `   "test": "echo \"Error: no test specified\" && exit 1"` script with "start": `"node index.js".` This sets the command to run when you execute `npm start` in your terminal. It runs the `index.js` file using `Node.js.`
+5. Replace the `   "test": "echo \"Error: no test specified\" && exit 1"` script with `"start": "node index.js".` This sets the command to run when you execute `npm start` in your terminal. It runs the `index.js` file using `Node.js.`
 
    <img src="/expressjs/02/5.png"  width="600px"/>
 

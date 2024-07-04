@@ -89,5 +89,20 @@ To create a MongoDB Atlas account and set up your database, follow these steps:
 
 15. Complete remaining steps as discussed in lecture.
 
+## Steps to install MongoDB Compass
 
+To install MongoDB Compass, you can follow these steps:
 
+1. Search for `MongoDB Compass` in your preferred search engine.
+<img src="/expressjs/05/output-15.png" alt="step-1" width="600px"/>
+
+2. Open the downloads page for MongoDB Compass.
+<img src="/expressjs/05/output-16.png" alt="step-1" width="600px"/>
+
+3. Complete the installation process as disscussed in lecture.
+<img src="/expressjs/05/output-17.png" alt="step-1" width="600px"/>
+
+4. Follow the on-screen instructions to install MongoDB Compass on your system. The installation process may vary depending on your operating system.
+
+5. After the installation is complete, you can launch MongoDB Compass from your applications or programs menu.
+<img src="/expressjs/05/output-18.png" alt="step-1" width="600px"/>

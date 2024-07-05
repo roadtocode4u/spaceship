@@ -16,7 +16,7 @@ Separating controllers in `Express.js` keeps the code `organized` and `easy to m
 
 2. next create a file by the name of `health.js` in controller .
    <img src="/expressjs/04-controller/2.png"  width="600px"/>
-3. Create a arrow function by the name of `getHealt` in `health.js`, and export it by `named export `
+3. Create a arrow function by the name of `getHealth` in `health.js`, and export it by `named export `
 
 ```js
 const getHealth = (req, res) => {
@@ -35,7 +35,7 @@ export { getHealth };
 import { getHealth } from "./controller/health.js";
 ```
 
-5. Open `index.js` file and create a `endpoin` by the name of `health` and call that `getHealth` function
+5. Open `index.js` file and create a `endpoint` by the name of `health` and call that `getHealth` function
 
 ```js
 app.get("/health", getHealth);

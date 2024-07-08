@@ -154,3 +154,28 @@ npm start
 * The users are then displayed in a list on the page.  
 
 By following these steps, you set up a backend server that serves data through an API and a frontend application that fetches and displays this data using Axios. This is a fundamental approach in modern web development to create dynamic and interactive user experiences.
+
+## Folder structure 
+
+**Backend Directory:**
+```
+backend/
+│
+├── server.js
+└── package.json
+```
+
+**Frontend Directory:**
+```
+frontend/
+│
+├── public/
+├── src/
+│   ├── App.css
+│   ├── App.js
+│   ├── index.css
+│   ├── index.js
+│   └── UsersList.js
+├── package.json
+└── README.md
+```

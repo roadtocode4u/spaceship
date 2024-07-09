@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 ## Array in js
 
-Single variable which can **store** multiple values. An array is a data structure that allows you to store a **collection of elements**, such as **numbers, strings, objects**, or other arrays, in a `single variable`. Arrays are defined using square brackets `[]` this square brackets is known as `subscript`  and each element in the array is separated by a `comma`. Array index always start from `0`.
+Single variable which can **store** multiple values. An array is a data structure that allows you to store a **collection of elements**, such as **numbers, strings, objects**, or other arrays, in a `single variable`. Arrays are defined using square brackets `[]` this square brackets is known as `subscript` and each element in the array is separated by a `comma`. Array index always start from `0`.
 
 **Example :**
 
@@ -67,6 +67,28 @@ console.log(students);
 > ['Harsh','Kashifa','Yogita','Ankita','Vrushali Khedkar']
 
 ## Methods On Array
+
+### 1. length
+
+### 2. push()
+
+### 3. pop()
+
+### 4. unshift()
+
+### 5. shift()
+
+### 6. slice()
+
+### 7. join()
+
+### 8. reverse()
+
+### 9. sort()
+
+### 10. indexOf()
+
+### 11. includes()
 
 **1. length :**
 
@@ -188,7 +210,6 @@ The `shift()` method is then called on the `students` array. This `removes the f
 
 The second `console.log()` function is then used to print the updated students array to the console.
 
-
 ### Implementing Queue using Array
 
 A queue is a data structure that follows the `First In First Out (FIFO)` or `First Come First Serve (FCFS)` principle.
@@ -198,26 +219,27 @@ The first element added to the queue is the first one to be removed. This is lik
 Queues can be implemented in JavaScript using either the `push and shift methods` or `unshift and pop methods` of the array object. Although this is a simple way to implement queues, it is very inefficient for large queues — because of the methods operate on arrays, the shift and unshift methods move every element in the array each time they are called.
 
 **Example of train ticket booking**
+
 ```js
 const waiting_list = ["Sahil", "Bhakti", "Sakshi"];
 console.log(waiting_list);
 waiting_list.push("Nikita");
 console.log(waiting_list);
 
-waiting_list.shift()
-console.log(waiting_list)
+waiting_list.shift();
+console.log(waiting_list);
 ```
+
 **Output**
 
 > ["Sahil", "Bhakti", "Sakshi"] <br/> >["Sahil", "Bhakti", "Sakshi". "Nikita"]
 
->["Bhakti", "Sakshi". "Nikita"]
-
+> ["Bhakti", "Sakshi". "Nikita"]
 
 `waiting_list.push(" ")` used to add passenger name in queue.
 `waiting_list.shift(" ")` used to remove or shift name from queue.
 
-In this program  `[0:Sahil, 1:Bhakti, 2:Sakshi, 3:Nikita ]` this are waiting list names, this names can be added by using `waiting_list.push()`.
+In this program `[0:Sahil, 1:Bhakti, 2:Sakshi, 3:Nikita ]` this are waiting list names, this names can be added by using `waiting_list.push()`.
 
 After this if the ticket is confirm of index number 1:sahil then it will be automatically shift by using `waiting_list.shift()`,then the list will be `[0:Bhakti, 1:Sakshi, 2:Nikita]`.
 
@@ -259,8 +281,8 @@ Convert `array to string default` separator is `,` but we can change it.
 **Example :**
 
 ```js
-const students = ["Suraj","Vidhi","Nandini","Sarthak","Jayesh","Payal"]
-console.log(students.join())
+const students = ["Suraj", "Vidhi", "Nandini", "Sarthak", "Jayesh", "Payal"];
+console.log(students.join());
 ```
 
 **Output :**
@@ -350,11 +372,10 @@ console.log(index);
 **Example :**
 
 ```js
-const students = ['Sargam', 'Sumit', 'Vishal', 'Vaishnavi'];
+const students = ["Sargam", "Sumit", "Vishal", "Vaishnavi"];
 
-console.log(students.includes('Vishal')); // Output: true
-console.log(students.includes('prajyot')); // Output: false
-
+console.log(students.includes("Vishal")); // Output: true
+console.log(students.includes("prajyot")); // Output: false
 ```
 
 **Output :**
@@ -363,4 +384,4 @@ console.log(students.includes('prajyot')); // Output: false
 
 > false
 
-
+### Happy Coding 🤖

@@ -35,3 +35,24 @@ console.log(waiting_list)
 In this program  `[0:Sahil, 1:Bhakti, 2:Sakshi, 3:Nikita ]` this are waiting list names, this names can be added by using `waiting_list.push()`.
 
 After this if the ticket is confirm of index number 1:sahil then it will be automatically shift by using `waiting_list.shift()`,then the list will be `[0:Bhakti, 1:Sakshi, 2:Nikita]`.
+
+
+**Example to find largest number from given array**
+
+```js
+const marks = [99, 50, 180, 70]
+let largest = marks[0]
+for (const num of marks)
+{
+    if(num>largest)
+    {
+        largest=num
+    }
+}
+console.log(largest)
+```
+**Output**  
+
+> 180   
+
+In this JavaScript code finds the largest number in an array. It initializes the `largest` variable with the first element of the `marks` array. It then iterates through each element, updating `largest `whenever it finds a larger number. After looping through all the elements, it prints the largest number. For the `array [99, 50, 180, 70],` the output is `180`.

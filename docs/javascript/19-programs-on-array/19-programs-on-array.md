@@ -77,3 +77,24 @@ console.log(smallest)
 > 40  
 
 In this JavaScript code finds the smallest number in an array. It initializes the `smallest` variable with the first element of the `marks` array. It then iterates through each element, updating `smallest `whenever it finds a larger number. After looping through all the elements, it prints the smallest number. For the `array [99, 50, 40, 180, 70],` the output is `40`.
+
+**Example to find sum of odd number from given array**
+
+```js
+const numbers = [5, 8, 10, 20, 7, 13]
+let sum = 0
+for (let i=0; i<numbers.length; i++)
+{
+    if(numbers[i] % 2 == 1)
+    {
+        sum+=numbers[i]
+    }
+}
+console.log(`sum: ${sum}`)
+```
+
+**output**
+
+>25
+
+In this javascript code it calculates the `sum `of all odd numbers in an `array`. It initializes `sum` to 0 and iterates over each element in the `numbers array`. If an element is odd `(checked using numbers[i] % 2 == 1)`, it adds that element to `sum`. Finally, it prints the total sum of the odd numbers. For the `array [5, 8, 10, 20, 7, 13]`, the output is `sum: 25`.

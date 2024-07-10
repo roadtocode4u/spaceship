@@ -98,3 +98,27 @@ console.log(`sum: ${sum}`)
 >25
 
 In this javascript code it calculates the `sum `of all odd numbers in an `array`. It initializes `sum` to 0 and iterates over each element in the `numbers array`. If an element is odd `(checked using numbers[i] % 2 == 1)`, it adds that element to `sum`. Finally, it prints the total sum of the odd numbers. For the `array [5, 8, 10, 20, 7, 13]`, the output is `sum: 25`.
+
+**Example to find sum of odd and even number from given array**
+
+```js
+const numbers = [5, 8, 10, 20, 7, 13];
+let sumOdd = 0;
+let sumEven = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 == 1) {
+        sumOdd += numbers[i];
+    } else {
+        sumEven += numbers[i];
+    }
+}
+
+console.log(`Sum of odd numbers: ${sumOdd}`);
+console.log(`Sum of even numbers: ${sumEven}`);
+```
+
+**Output:**
+
+>Sum of odd numbers: 25
+>Sum of even numbers: 38

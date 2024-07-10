@@ -56,3 +56,24 @@ console.log(largest)
 > 180   
 
 In this JavaScript code finds the largest number in an array. It initializes the `largest` variable with the first element of the `marks` array. It then iterates through each element, updating `largest `whenever it finds a larger number. After looping through all the elements, it prints the largest number. For the `array [99, 50, 180, 70],` the output is `180`.
+
+**Example to find smallest number from given array**
+
+```js
+const marks = [100, 50, 40, 180, 70, 181]
+let smallest = marks[0]
+for (const num of marks)
+{
+    if(num<smallest)
+    {
+        smallest=num
+    }
+}
+console.log(smallest)
+```
+
+**output**
+
+> 40  
+
+In this JavaScript code finds the smallest number in an array. It initializes the `smallest` variable with the first element of the `marks` array. It then iterates through each element, updating `smallest `whenever it finds a larger number. After looping through all the elements, it prints the smallest number. For the `array [99, 50, 40, 180, 70],` the output is `40`.

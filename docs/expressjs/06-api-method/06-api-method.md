@@ -273,3 +273,5 @@ app.put("/password", (req, res) => {
 ## Output
 
   <img src="/expressjs/06/8.png"  width="600px"/>
+
+### Happy Coding 🤖

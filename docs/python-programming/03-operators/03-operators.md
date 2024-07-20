@@ -393,3 +393,77 @@ In the above program variable `neet` equal to `530`, sets the variable `aiims` e
 The `or` operator evaluates to True if at least one of the expressions it connects is True. Since neither `neet > 520` nor `aiims > 220` is True so both condition are true.
 
 Therefore, the code will output `true`.
+
+## Assignment operators
+
+Assignment operators in Python are used to assign values to variables.
+
+1. Basic Assignment Operator (=)
+2. Addition Assignment Operator (+=)
+3. Subtraction Assignment Operator (-=)
+4. Multiplication Assignment Operator (\*=)
+5. Division Assignment Operator (/=)
+6. Modulus Assignment Operator (%=)
+
+#### Basic Assignment Operator `=`
+
+Assigns the value on the right to the variable on the left.
+
+```py
+x = 5
+```
+
+#### Addition Assignment Operator `+=`
+
+Adds the value on the right to the variable on the left and assigns the result to the variable on the left.
+
+```py
+x = 5
+x += 3
+print(x)
+  # Equivalent to x = x + 3  output=> 8
+```
+
+#### Subtraction Assignment Operator `-=`
+
+Subtracts the value on the right from the variable on the left and assigns the result to the variable on the left.
+
+```py
+x = 5
+x -= 3
+print(x)
+  # Equivalent to x = x - 3  output=> 2
+```
+
+#### Multiplication Assignment Operator `*=`
+
+Multiplies the variable on the left by the value on the right and assigns the result to the variable on the left.
+
+```py
+x = 5
+x *= 3
+print(x)
+  # Equivalent to x = x * 3  output=> 15
+```
+
+#### Division Assignment Operator `/=`
+
+Divides the variable on the left by the value on the right and assigns the result to the variable on the left.
+
+```py
+x = 5
+x /= 2
+  # Equivalent to x = x / 2  output => 2.5
+```
+
+#### Modulus Assignment Operator `%=`
+
+Takes the modulus of the variable on the left by the value on the right and assigns the result to the variable on the left.
+
+```py
+x = 5
+x %= 2
+  # Equivalent to x = x % 2  output => 1
+```
+
+## Happy Coding 🤖

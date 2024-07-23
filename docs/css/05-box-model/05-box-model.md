@@ -10,13 +10,17 @@ The CSS Box Model is a fundamental concept that describes how elements on a webp
 
 **Box Model Compoments**
 
-- **margin**: margin is used to leave space from the outside the box.
+- **content**: it specifies the data to be inserted, content is used to take space in output, without any content it will not show output.
 
-- **width**: specifies the size of the box.
+- **height**: specifies the height of the box.
+
+- **width**: specifies the width of the box.
+
+- **margin**: margin is used to leave space from the outside the box.
 
 - **padding**: Specifies the inner spacing from the box border.
 
-- **content**: it specifies the data to be inserted.
+- **border**: specifies the border size and colours.
 
 **🗃️BOX MODEL WITH DETAIL DESCRIPTION:**
 

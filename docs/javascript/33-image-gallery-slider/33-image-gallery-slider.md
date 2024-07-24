@@ -87,6 +87,14 @@ hide_table_of_contents: true
 </html>
 ```
 
+**Output :**
+
+<img src="/javascript/25/output-i1.png" alt="screenshot1" width="600px"/>
+
+After click on next button or sign another image will display.
+
+<img src="/javascript/25/output-i2.png" alt="screenshot1" width="600px"/>
+
 Explanation :
 
 In the above example ,  
@@ -106,6 +114,7 @@ In the above example ,
 `else { imgIndex++; }` Otherwise, increments `imgIndex` by `1`.  
 `imgElement.src = imagesArr[imgIndex];` It Updates the `src` attribute of `imgElement` to display the next image. 
 
+**Example without if else :**
 ```html
 <!DOCTYPE html>
 <html lang="en">

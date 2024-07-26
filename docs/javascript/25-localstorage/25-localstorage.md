@@ -59,4 +59,61 @@ localStorage.clear();
 **Output :**
 <img src="/javascript/25/screenshot4.png" alt="screenshot1.png" width="600px"/>
 
+**Example :**
 
+```html 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>localStorage</title>
+</head>
+<body>
+  <input type="text" id="name" placeholder="Enter your name">
+  <button id="save" onclick="save()">Save</button>
+  <button id="logout" onclick="logout()">Logout</button>
+  <p id="greeting">
+    Hello User
+  </p>
+
+  <script>
+    const nameElement = document.getElementById('name');
+    const greetingElement = document.getElementById('greeting');
+    const btnElement = document.getElementById('save');
+
+    function save(){
+      const userName = nameElement.value;
+
+      if(!userName){
+        alert('Please enter your name');
+        return;
+      }
+
+      localStorage.setItem('name', userName);
+      greetingElement.innerText = `Hello ${userName}`;
+      hideElements();
+    }
+
+    const userName = localStorage.getItem('name');
+
+    if(userName){
+      greetingElement.innerText = `Hello ${userName}`;
+      hideElements();
+    }
+
+    function hideElements(){
+      btnElement.style.display = 'none';
+      nameElement.style.display = 'none';
+    }
+
+    function logout(){
+      localStorage.removeItem('name');
+      window.location.reload();
+    }
+  </script>
+</body>
+</html>
+```
+
+**Output :**

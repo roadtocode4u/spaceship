@@ -117,6 +117,10 @@ localStorage.clear();
 ```
 
 **Output :**
+<img src="/javascript/25/op_local_1.png" alt="screenshot1" width="600px"/>  
+
+
+<img src="/javascript/25/op_local_2.png" alt="screenshot1" width="600px"/>  
 
 
 **Explanation :**

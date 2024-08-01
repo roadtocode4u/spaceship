@@ -38,7 +38,7 @@ Favicons enhance the user experience by helping users quickly identify and locat
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Favicon</title>
     <!-- Link to favicon in .PNG format -->
-    <link rel="favicon" href="c:./favicon.png" type="image/x-icon">
+    <link rel="favicon" href="favicon.png" type="image/x-icon">
 
 </head>
 <body>
@@ -49,5 +49,9 @@ Favicons enhance the user experience by helping users quickly identify and locat
 ```
 
 **OUTPUT :**  
+Before adding Favicon:
+<img src="/css/14/output-1.png" alt="output-5" width="600px"/>
 
+After adding Favicon:
+<img src="/css/14/output-2.png" alt="output-5" width="600px"/>
 

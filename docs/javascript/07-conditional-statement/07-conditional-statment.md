@@ -54,7 +54,7 @@ if (condition) {
 
 > You are eligible for voting...
 
-In the above code in JavaScript and is meant to be embedded within an HTML document using a `<script>` tag. 
+In the above code in JavaScript and is meant to be embedded within an HTML document using a `<script>` tag.
 
 `const age = 20;` : This line declares a constant variable named `age` and assigns the value `20` to it. This represents the age of a person.
 
@@ -90,7 +90,7 @@ In the above code in JavaScript and is meant to be embedded within an HTML docum
 
 > General Statement
 
-In the above code of two constant declarations and an `if` statement. 
+In the above code of two constant declarations and an `if` statement.
 
 `const a = 10;` and `const b = 20;`: These two lines declare two constant variables, `a` and `b`, and assign the values `10` and `20` to them, respectively.
 
@@ -131,7 +131,7 @@ In the above code of two constant declarations and an `if` statement.
 
 `const a = 30;` and `const b = 20;`: These two lines declare two constant variables, `a` and `b`, and assign the values `30` and `20` to them, respectively.
 
-`if (a > b) { ... }` : This is an `if` statement that checks whether the value of a (which is 30) is greater than the value of b (which is 20). Since `30` is indeed greater than `20`, the condition evaluates to `true`, and the code block within the curly braces` { ... } `will be executed.
+`if (a > b) { ... }` : This is an `if` statement that checks whether the value of a (which is 30) is greater than the value of b (which is 20). Since `30` is indeed greater than `20`, the condition evaluates to `true`, and the code block within the curly braces`{ ... }`will be executed.
 
 `console.log("True");`: This line is inside the code block of the if statement. Because the condition is `true`, this line will be executed, and the message `True` will be logged to the browser's console.
 
@@ -254,8 +254,9 @@ if (condition) {
 ```
 
 **Output :**
->Enter Number 1 : 89<br/>
->Enter Number 2 : 100 <br/>
+
+> Enter Number 1 : 89<br/>
+> Enter Number 2 : 100 <br/>
 > 100 is greater than 89
 
 <img src="/javascript/07/screenshot-7.png" alt="screenshot-7" width="600px"/>
@@ -273,7 +274,6 @@ if (condition) {
 `console.log(${num1} is greater than ${num2}.);`: If `num1` is indeed greater than `num2`, this line will execute, and it will log a message to the browser's console using the console.log function. The message will state that `num1` is greater than `num2`.
 
 `console.log(${num2} is greater than ${num1}.);`: If the condition in the if statement is `false`, meaning that `num1` is not greater than `num2`, this line will execute, and it will log a message stating that `num2` is greater than `num1`.
-
 
 **4. Write a Javascript program to find Discount.**
 
@@ -307,10 +307,11 @@ if (condition) {
 ```
 
 **Output :**
->Enter rate: 1000 <br/>
->Enter quantity: 5  <br/>
->Discount: 500 <br/>
->Payble amount: 4500
+
+> Enter rate: 1000 <br/>
+> Enter quantity: 5 <br/>
+> Discount: 500 <br/>
+> Payble amount: 4500
 
 <img src="/javascript/07/screenshot-10.png" alt="screenshot-10" width="600px"/>
 
@@ -345,15 +346,12 @@ if (condition) {
 ```js
 if (condition) {
   //Statement
-}
-else if(condition){
+} else if (condition) {
   //Statement
-}
-else if(condition){
+} else if (condition) {
   //Statement
-}
-else{
-   //Statement 
+} else {
+  //Statement
 }
 ```
 
@@ -391,7 +389,7 @@ else{
   }
   else{
      document.write('Invalid');
-  }   
+  }
    </script>
  </body>
 </html>
@@ -399,7 +397,7 @@ else{
 
 **Output**
 
->Three
+> Three
 
 `const number = 3;`: This line declares a constant variable named `number` and assigns it a value of `3`.
 
@@ -447,7 +445,7 @@ The next several lines follow a similar pattern, each checking for a different v
   }
   else{
      document.write('Invalid');
-  }   
+  }
    </script>
  </body>
 </html>
@@ -455,8 +453,8 @@ The next several lines follow a similar pattern, each checking for a different v
 
 **Output**
 
->Enter a number : 5 <br/>
->Five
+> Enter a number : 5 <br/>
+> Five
 
 The line `const number = parseInt(prompt('Enter a number'));` is asking the user to enter a number. The prompt function displays a dialog box where the user can type in a value. The entered value is then stored in the number variable after converting it to an integer using the `parseInt` function.
 
@@ -491,13 +489,13 @@ If none of the `if` or `else if` conditions are met, the code reaches the else s
   }
   else if(per >= 60){
     console.log('D')
-  } 
+  }
   else if(per >= 50){
     console.log('E ')
-  } 
+  }
   else{
     console.log('Fail')
-  } 
+  }
   </script>
  </body>
 </html>
@@ -505,8 +503,8 @@ If none of the `if` or `else if` conditions are met, the code reaches the else s
 
 **Output**
 
->Enter a number : 82 <br/>
->B
+> Enter a number : 82 <br/>
+> B
 
 In the above code, Line 8 declares a `constant` variable called `per`. The `const` keyword is used to define a variable that won't change its value once it's assigned. The value assigned to `per` comes from the result of the prompt function. This function displays a prompt box to the user with the message `Enter a number` and waits for the user to input something. The input provided by the user is then converted to an integer using `parseInt` and stored in the `per` variable.
 
@@ -514,7 +512,7 @@ Line 10 to 12, This `if` statement checks if the value of `per` is `greater than
 
 Line 13 to 15, This `else if` statement checks `if` the value of `per` is not `greater than or equal to 90`, but it is `greater than or equal to 80`. If this condition is `true`, the code inside this block is executed. It prints `B` to the console.
 
-Line 16 to 18, This `else if` statement checks if the value of `per` is `not greater than or equal to 90 or 80`, but it is  . If this condition is true, it prints `C` to the console.
+Line 16 to 18, This `else if` statement checks if the value of `per` is `not greater than or equal to 90 or 80`, but it is . If this condition is true, it prints `C` to the console.
 
 Line 19 to 21, This `else if` statement checks if the value of `per` is `not greater than or equal to 90, 80, or 70`, but it is `greater than or equal to 60`. If this condition is true, it prints `D` to the console.
 
@@ -534,7 +532,7 @@ Line 25 to 27, If none of the previous conditions are met (`meaning per is less 
  </head>
  <body>
   <script>
- const per = parseInt(prompt('Enter Percentage:')); 
+ const per = parseInt(prompt('Enter Percentage:'));
 
   if(per >= 50 && per<60){
     console.log('E')
@@ -550,10 +548,10 @@ Line 25 to 27, If none of the previous conditions are met (`meaning per is less 
   }
   else if(per >= 90 && per<=100){
     console.log('A')
-  } 
+  }
   else{
     console.log('Fail')
-  } 
+  }
   </script>
  </body>
 </html>
@@ -561,8 +559,8 @@ Line 25 to 27, If none of the previous conditions are met (`meaning per is less 
 
 **Output**
 
->Enter a number : 38 <br/>
->Fail
+> Enter a number : 38 <br/>
+> Fail
 
 In the above code, Line 8 declares a `constant` variable called `per`. The `const` keyword is used to define a variable that won't change its value once it's assigned. The value assigned to `per` comes from the result of the prompt function. This function displays a prompt box to the user with the message `Enter a number` and waits for the user to input something. The input provided by the user is then converted to an integer using `parseInt` and stored in the `per` variable.
 
@@ -581,6 +579,7 @@ Line 25 to 27, If none of the previous conditions are met (meaning the percentag
 ## 4. nested-if
 
 **Syntax:**
+
 ```js
 if (condition A){
    //statement
@@ -595,7 +594,6 @@ if (condition A){
       //statement
   }
 ```
-            
 
 **Code :**
 
@@ -633,8 +631,8 @@ if (condition A){
 
 **Output**
 
->JEE MAIN Claer Hua... <br/>
->JEE ADV Claer Hua...
+> JEE MAIN Claer Hua... <br/>
+> JEE ADV Claer Hua...
 
 In the above example `two variables`, `jeeMain and jeeAdv`, are declared and assign `values 130 and 150`.
 
@@ -645,10 +643,12 @@ Inside this block, it logs `"JEE MAIN Clear Hua..."` to the console using `conso
 Then, there's another `if statement nested`conditon. It checks whether `jeeAdv is greater than or equal to 120`. This condition is also true because `jeeAdv is 150`.
 
 So, the final output of this code will be:
+
 ```js
 JEE MAIN Clear Hua...
 JEE ADV Clear Hua...
 ```
+
 both conditions in the `nested if statements are true`, so both `"JEE MAIN Clear Hua..." `and `"JEE ADV Clear Hua..."` are printed to the `output`.
 
 **Code :**
@@ -687,13 +687,13 @@ both conditions in the `nested if statements are true`, so both `"JEE MAIN Clear
 
 **Output**
 
->JEE MAIN Claer NAHI Hua...
+> JEE MAIN Claer NAHI Hua...
 
 In the above example `two variables`, `jeeMain and jeeAdv`, are declared and assign `values 100 and 150`.
 
 The `if statement{ ... }` that checks the value of `jeeMain` against of 120.,Since `jeeMain (100) is less than 120`, the code proceeds to the `else block`.
 
-Inside the `else block`, the ` "JEE MAIN Clear NAHI Hua..." `to the console. This indicates that the `JEE MAIN exam was not cleared` because the `jeeMain` score did not matched the required minimum score of `120`.
+Inside the `else block`, the `"JEE MAIN Clear NAHI Hua..."`to the console. This indicates that the `JEE MAIN exam was not cleared` because the `jeeMain` score did not matched the required minimum score of `120`.
 
 The condition does not continue to check the `jeeAdv` score because it is `nested` within the `jeeMain` condition.
 
@@ -708,30 +708,20 @@ JEE MAIN Clear NAHI Hua...
 **Example :for conditional rendering**
 
 ```jsx title="src/index.js" showLineNumbers="true"
-import ReactDOM from 'react-dom/client';
-import './index.css';
-const root =ReactDOM.createRoot(document.getElementById("root"))
+import ReactDOM from "react-dom/client";
+import "./index.css";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-function StudentCard({name,city,gender}){
-  return(
-    <div className={student-card ${gender == "female" ? "bg-female" : "bg-male"}}>
-      <h3 className='card-heading'>Hi I am {name} {gender}</h3>
-      <p className='card-subheading'>I am from {city}</p>
-    </div>
-  )
-}
 root.render(
-  <div className='student-card-container'>
-    <StudentCard name="Sakshi" city="Ahmednagar" gender="female"/>
-    <StudentCard name="Sneha" city="Pune" gender="female"/>
-    <StudentCard name="Neha" city="Ahmednagar" gender="female"/>
-    <StudentCard name="Ashish" city="Ahmednagar" gender="male"/>
-    <StudentCard name="Harshal" city="Pune" gender="male"/>
-    <StudentCard name="Omkar" city="Ahmednagar" gender="male"/>
- </div>
-
-)
-
+  <div className="student-card-container">
+    <StudentCard name="Sakshi" city="Ahmednagar" gender="female" />
+    <StudentCard name="Sneha" city="Pune" gender="female" />
+    <StudentCard name="Neha" city="Ahmednagar" gender="female" />
+    <StudentCard name="Ashish" city="Ahmednagar" gender="male" />
+    <StudentCard name="Harshal" city="Pune" gender="male" />
+    <StudentCard name="Omkar" city="Ahmednagar" gender="male" />
+  </div>
+);
 ```
 
 **File Name : index.css**
@@ -771,7 +761,6 @@ In line 1 and 2 ,code imports the ReactDOM module from 'react-dom/client' and an
 In Line 3 ,it creates a root React element using ReactDOM.createRoot(). It specifies that the root element in the HTML document with the id "root" will be the container for rendering React elements.
 
 In line 5 to 11 , it defines a functional React component StudentCard. It takes three props: name, city, and gender. Inside the component, it returns JSX, which represents the structure and content of the component.` The class name of the <div> element is conditionally set based on the gender prop.`
-
 
 In line 12 to 21 , it renders the root React element created earlier. Inside the root element, it renders a <div /> with the class name 'student-card-container', containing multiple StudentCard components with different props (name, city, gender).
 

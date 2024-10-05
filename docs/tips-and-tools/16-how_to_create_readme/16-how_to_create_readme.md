@@ -22,22 +22,50 @@ README files are usually written in Markdown (.md), a lightweight markup languag
 Heading
 
 ```js
-# heading
+# heading 1
+## heading 2
+### heading 3
+#### heading 4
+##### heading 5
+###### heading 6
 
 ```
 
 Bold
 
 ```js
-** Bold **
+**Bold**
 
 ```
 
-Image
+Italic
 
 ```js
-![Project Logo](https://example.com/logo.png)
+*Italic*
 
+```
+
+Single line Highlight
+
+```js
+`highlighted` text
+
+
+```
+
+Multi line Highlight
+
+````js
+```Multi line highlight
+   in markdown
+
+```;
+````
+
+Image
+
+```markdown
+![Project Logo](https://example.com/logo.png)
 ```
 
 Links
@@ -50,8 +78,7 @@ Links
 
 List
 
-```js
-
+```markdown
 **Lists**
 
 1. Ordered item 1
@@ -60,7 +87,12 @@ List
 
 - Unordered item 1
 - Unordered item 2
+```
 
+Horizontal line
+
+```markdown
+---
 ```
 
 # Want to watch tutorial for more ..

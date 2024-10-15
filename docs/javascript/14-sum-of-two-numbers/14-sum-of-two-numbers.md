@@ -31,7 +31,7 @@ hide_table_of_contents: true
 
       function calculateSum() {
         const val1 = parseInt(inputBox1.value);
-        const val2 = parseInt(inputBox1.value);
+        const val2 = parseInt(inputBox2.value);
         const sum = val1 + val2;
         answertText.innerText = `Answer : ${sum}`;
       }

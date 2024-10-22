@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 # Introduction to HTML
 
-### What is HTML
+### WHAT IS HTML
 
 > HTML stands for **Hyper Text Markup Language**. It is the standard markup language used to create web pages. HTML provides a set of tags and attributes that define the structure and content of a webpage. It was created by **Tim Berners-Lee** and released in 1993.
 

@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
 ### WHAT IS HTML
 
-> HTML stands for **Hyper Text Markup Language**. It is the standard markup language used to create web pages. HTML provides a set of tags and attributes that define the structure and content of a webpage. It was created by **Tim Berners-Lee** and released in 1993.
+> HTML stands for Hyper Text Markup Language. It is the standard markup language used to create web pages. HTML provides a set of tags and attributes that define the structure and content of a webpage. It was created by **Tim Berners-Lee** and released in 1993.
 
 1. Editor: for writing code.
 2. Browser: for checking output from the code.

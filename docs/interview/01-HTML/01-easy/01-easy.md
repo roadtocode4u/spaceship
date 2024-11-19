@@ -12,7 +12,7 @@
 
 <details>
   <summary>What is DOCTYPE?</summary>
-  TODO: add answer @AratiMedhe
+  A doctype declaration is an instruction that tells the web browser about the markup language in which the current page is written. It lets the browser know about the version of or standard of HTML.
 </details>
 
 <details>

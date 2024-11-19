@@ -18,3 +18,16 @@ function test() {
 ```
 
 </details>
+<br>
+<details>
+<summary> What is the difference between inline elements and block elements?
+ </summary>
+ Inline Elements: Inline elements do not start on a new line and only take up as much width as necessary.
+
+For Example: `<span>, <a>, <strong>`
+
+Block Elements: Block elements start on a new line and take up the full width available.
+
+For Example: `<div>, <p>, <h1>`
+
+</details>

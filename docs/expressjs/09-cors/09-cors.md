@@ -8,6 +8,8 @@ hide_table_of_contents: true
 
 CORS (Cross-Origin Resource Sharing) is a web security feature that controls how resources like APIs or images are shared between different websites. It lets servers specify which websites are allowed to access their resources, using special HTTP headers. This ensures secure and controlled data sharing across different origins (URLs with different domains, protocols, or ports).
 
+<img src="/expressjs/07-cors/01.png"  width="700px"/>
+
 ## Origin refers
 
 #### **Protocol** (e.g., http, https)

@@ -518,7 +518,7 @@ Child items are evenly distributed in the line.It does not provide space in side
 
 **Output :**
 
-<img src="/icp/21/output-9.png" alt="output-9" width="600px"/>
+<img src="/icp/21/output-16.png" alt="output-9" width="600px"/>
 
 5. `justify-content: space-evenly;`
 
@@ -625,7 +625,7 @@ When the **flex-direction** is a **row** then **justify-content** control **hori
 
 Items are placed at the start of the Opposite (Y-axis) axis.
 
-<img src="/icp/21/img-13.png" alt="img-12" width="400px" />
+<img src="/icp/21/img-19.png" alt="img-12" width="400px" />
 
 **Code :**
 
@@ -673,7 +673,7 @@ Items are placed at the start of the Opposite (Y-axis) axis.
 
 Items are placed at the end of the Opposite (Y-axis) axis.
 
-<img src="/icp/21/img-14.png" alt="img-14" width="400px" />
+<img src="/icp/21/img-20.png" alt="img-14" width="400px" />
 
 **Code :**
 
@@ -725,7 +725,7 @@ Items are placed at the end of the Opposite (Y-axis) axis.
 
 Items are centered in the Opposite axis.
 
-<img src="/icp/21/img-15.png" alt="img-13" width="400px" />
+<img src="/icp/21/img-21.png" alt="img-13" width="400px" />
 
 **Code :**
 

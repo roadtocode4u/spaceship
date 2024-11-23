@@ -766,15 +766,143 @@ Items are centered in the Opposite axis.
 
 **Output :**
 
-<img src="/icp/21/output-13.png" alt="output-13" width="600px"/>
-
+<img src="/icp/21/output-13.png" alt="output-13" width="600px"/><br/>
 When the value of **flex-direction** is set to **column**, the **justify-content** property controls the vertical alignment of items. This refers to the Y axis, but you can also control the opposite axis (X axis) using the **align-items** property.
+
 
 <img src="/icp/21/img-16.png" alt="img-16" width="400px" /><br/>
 
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flex Box</title>
+    <style>
+      .item {
+        background-color: #b1dddf;
+        border-radius: 10px;
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        font-size: 50px;
+        padding: 10px;
+      }
+      .container {
+        background-color: #0cc0df;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        height: 500px;
+        border-radius: 5px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/21/output-16.png" alt="output-16" width="600px"/><br/><br/>
+
+
 <img src="/icp/21/img-17.png" alt="img-17" width="400px" /><br/>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flex Box</title>
+    <style>
+      .item {
+        background-color: #b1dddf;
+        border-radius: 10px;
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        font-size: 50px;
+        padding: 10px;
+      }
+      .container {
+        background-color: #0cc0df;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: 500px;
+        border-radius: 5px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/21/output-17.png" alt="output-17" width="600px"/><br/><br/>
+
 
 <img src="/icp/21/img-18.png" alt="img-18" width="400px" />
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flex Box</title>
+    <style>
+      .item {
+        background-color: #b1dddf;
+        border-radius: 10px;
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        font-size: 50px;
+        padding: 10px;
+      }
+      .container {
+        background-color: #0cc0df;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+        height: 500px;
+        border-radius: 5px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/icp/21/output-18.png" alt="output-17" width="600px"/><br/><br/>
+
 
 ### Flex-wrap
 

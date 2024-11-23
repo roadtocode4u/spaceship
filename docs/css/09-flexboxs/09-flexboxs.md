@@ -901,7 +901,7 @@ When the value of **flex-direction** is set to **column**, the **justify-content
 
 **Output :**
 
-<img src="/icp/21/output-18.png" alt="output-17" width="600px"/><br/><br/>
+<img src="/icp/21/output-18.png" alt="output-18" width="600px"/><br/><br/>
 
 
 ### Flex-wrap

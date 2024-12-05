@@ -8,9 +8,10 @@ Font Awesome is a valuable resource for developers and designer's seeking font i
 
 1. [Introduction](#introduction)
 2. [Why use Font-Awesome?](#why-use-font-awesome)
-3. [How to use Font-Awesome?](#how-to-use-font-awesome)
-4. [Downloading Icons](#downloading-icons)
-5. [Customizing Icons](#customizing-icons)
+3. [How to create account on font-Awesome?](#How-to-create-account-on-font-Awesome)
+4. [How to use Font-Awesome?](#how-to-use-font-awesome)
+5. [Downloading Icons](#downloading-icons)
+6. [Customizing Icons](#customizing-icons)
 
 ## Introduction
 
@@ -26,7 +27,42 @@ Font Awesome is a font icon and CSS kit that provides a collection of scalable v
 
 - **Customize!** There are a lot of different fonts.
 
-### How to use Font Awesome?
+## How to create account on font-Awesome?
+
+- visit to `https://fontawesome.com/`.
+
+- <img src="/tip-and-tools/01/01.png" alt="output-1" width="600px"/>
+- click on `profile icon`
+  <img src="/tip-and-tools/01/01.5.png" alt="output-1" width="600px"/>
+- click on `sign up and get started`
+
+<img src="/tip-and-tools/01/02.png" alt="output-1" width="600px"/>
+
+- enter your email and click on send kit embed code
+
+<img src="/tip-and-tools/01/03.png" alt="output-1" width="600px"/>
+
+- check your email you will get a confirmation mail,
+
+<img src="/tip-and-tools/01/04.png" alt="output-1" width="600px"/>
+
+- click on `finish setting up your account`, it will redirect to you on account setup page. create your password and click on `set password and continue`.
+
+<img src="/tip-and-tools/01/05.png" alt="output-1" width="600px"/>
+
+- fill the appropriate field, and click on all set. let's go.
+
+<img src="/tip-and-tools/01/06.png" alt="output-1" width="600px"/>
+
+- Next fill the field for `Give it a good name `, click on `make my kit`.
+
+<img src="/tip-and-tools/01/07.png" alt="output-1" width="600px"/>
+
+- Boom💥 you got your font-awesome kit just copy this and use in your project
+
+<img src="/tip-and-tools/01/08.png" alt="output-1" width="600px"/>
+
+## How to use Font Awesome?
 
 To use Font Awesome you can include the Font Awesome CSS stylesheet in your HTML file or add it to your project using CDN. Once you included the CSS stylesheet you can add the appropriate classes to HTML elements to display the icons.
 

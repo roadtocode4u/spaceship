@@ -37,11 +37,13 @@ hide_table_of_contents: true
 
 - Each cell has an onclick event listener. When clicked, it calls makeMove with the cell's index `(e.g., 0, 1, ..., 8)`.
 
-### **_NOTE:_** you can add provide css as you
+> ### 📝 _NOTE_ ...
+>
+> ### You can add css according to you
 
-## lets jump to the java-script part...
+## Lets jump to the java-script part...
 
-1. create an array
+### 1. create an array
 
 ```js
 const board = [-1, -1, -1, -1, -1, -1, -1, -1, -1];
@@ -51,7 +53,7 @@ const board = [-1, -1, -1, -1, -1, -1, -1, -1, -1];
 - The purpose of this array is to keep the track of the game state .
 - `-1` it defines the cell is empty
 
-2. create current player
+### 2. create current player
 
 ```js
 let currentPlayer = "1";
@@ -59,7 +61,7 @@ let currentPlayer = "1";
 
 - it track whose turn is to play.
 
-3. crate renderBoard function
+### 3. crate renderBoard function
 
 ```js
 const renderBoard = () => {
@@ -83,7 +85,7 @@ const renderBoard = () => {
 - `"1"`: Displays an image for Player 1.
 - `-1`: Clears the cell.
 
-4. Initial Render
+### 4. Initial Render
 
 ```js
 renderBoard();
@@ -91,7 +93,7 @@ renderBoard();
 
 - Calls renderBoard once to set up the board at the start of the game.
 
-5. makeMove Function
+### 5. makeMove Function
 
 ```js
 const makeMove = (index) => {
@@ -201,7 +203,6 @@ function checkWinner() {
 | Right Column     | [2, 5, 8]     | All cells in the third column.          |
 | Main Diagonal    | [0, 4, 8]     | Diagonal from top-left to bottom-right. |
 | Anti-Diagonal    | [2, 4, 6]     | Diagonal from top-right to bottom-left. |
-|                  |
 
 **For Player 1:**
 

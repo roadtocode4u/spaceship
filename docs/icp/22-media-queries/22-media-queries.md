@@ -56,9 +56,10 @@ The max-width are specifies the maximum width of a particular device.
     <title>Media Query</title>
     <style>
       .btn {
-        width: 400px;
-        height: 50px;
-        font-size: 20px;
+        width: 350px;
+        height: 60px;
+        font-size: 30px;
+        border-radius: 5px;
         background-color: tomato;
         color: white;
       }
@@ -66,9 +67,9 @@ The max-width are specifies the maximum width of a particular device.
       @media screen and (max-width: 500px) {
         .btn {
           background-color: blue;
-          width: 300px;
-          height: 80px;
-          font-size: 40px;
+          width: 150px;
+          height: 40px;
+          font-size: 15px;
         }
       }
     </style>
@@ -114,9 +115,10 @@ The min-width are specifies the `minimum` width of a particular device.
     <title>Media Query</title>
     <style>
       .btn {
-        width: 400px;
-        height: 50px;
-        font-size: 20px;
+        width: 350px;
+        height: 60px;
+        font-size: 30px;
+        border-radius: 5px;
         background-color: tomato;
         color: white;
       }
@@ -124,9 +126,9 @@ The min-width are specifies the `minimum` width of a particular device.
       @media screen and (min-width: 600px) {
         .btn {
           background-color: blue;
-          width: 300px;
-          height: 50px;
-          font-size: 40px;
+          width: 150px;
+          height: 40px;
+          font-size: 15px;
         }
       }
     </style>
@@ -142,11 +144,11 @@ The min-width are specifies the `minimum` width of a particular device.
 
 **Normal Screen**
 
-<img src="/icp/22/output-4.png" alt="output-4" width="600px"/>
+<img src="/icp/22/output-1.png" alt="output-1" width="600px"/>
 
 **Screen size is less than 600px**
 
-<img src="/icp/22/output-3.png" alt="output-3" width="600px"/>
+<img src="/icp/22/output-2.png" alt="output-2" width="600px"/>
 
 **Example explanation :**
 
@@ -165,18 +167,19 @@ In the above example, in the normal screen 1st output will display and if the sc
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Media Query</title>
     <style>
       .btn {
+        width: 350px;
+        height: 60px;
+        font-size: 30px;
+        border-radius: 5px;
         background-color: tomato;
-        width: 300px;
-        height: 80px;
-        font-size: 40px;
+        color: white;
       }
+
       /* Mobile Devices */
 
       @media screen and (min-width: 600px) and (max-width: 768px) {
@@ -215,11 +218,136 @@ In the above example, in the normal screen 1st output will display and if the sc
 
 **Screen size is less than 600px**
 
+<img src="/icp/22/output-23.png" alt="output-23" width="600px"/>
+
+**Screen size is less than 769px**
+
+<img src="/icp/22/output-22.png" alt="output-22" width="600px"/>
+
+**Screen size is less than 993px**
+
 <img src="/icp/22/output-21.png" alt="output-21" width="600px"/>
+
 
 **Example explanation :**
 
 In the above example, in the normal screen 1st output will display and if the screen size is less than 600px then the media query effects will apply then that's the time 2nd output will display on the screen.
+
+
+
+**Responsive Design:**
+
+At smaller screen sizes (max-width: 480px), only the emoji is visible.
+Other details heading, info and basic are hidden.
+
+
+**For example :**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 5px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            margin: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .emoji {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        .heading {
+            font-size: 20px;
+            color: black;
+            margin: 10px 0;
+        }
+
+        .info {
+            font-size: 15px;
+            color: gray;
+        }
+
+
+        @media (max-width: 480px) {
+            .card {
+                width: 100%;
+            }
+
+            .heading,
+            .info {
+                display: none;
+            }
+
+            .emoji {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="emoji">📱</div>
+            <h3 class="heading">Image Formats</h3>
+            <p class="info">Choose the right format for quality and size.</p>
+        </div>
+        <div class="card">
+            <div class="emoji">🎨</div>
+            <h3 class="heading">Image Editing</h3>
+            <p class="info">Enhance images with easy-to-use tools.</p>
+        </div>
+        <div class="card">
+            <div class="emoji">💻</div>
+            <h3 class="heading">Syntax</h3>
+            <p class="info">Ensure images look good on all devices.</p>
+        </div>
+        <div class="card">
+            <div class="emoji">🛠️</div>
+            <h3 class="heading">Tools</h3>
+            <p class="info">Reduce file size without losing quality.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+```
+
+**Output :**
+
+<img src="/icp/22/output-24.png" alt="output-24" width="600px"/>
+
+
+**Screen size is less than 480px**
+
+<img src="/icp/22/output-25.png" alt="output-25" width="600px"/>
+
+
+
 
 ## Colors in CSS
 

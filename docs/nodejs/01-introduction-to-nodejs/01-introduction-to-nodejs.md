@@ -4,7 +4,7 @@ description: "Introduction To NodeJs"
 hide_table_of_contents: true
 ---
 
-<img src="/nodejs/01/nodejs.png" alt="screenshot-1" width="100px"/>
+<img src="/nodejs/01/nodejs.png" alt="screenshot-1" width="200px"/>
 
 ## What is Node.js?
 
@@ -15,19 +15,6 @@ Node.js is a special environment that lets you run JavaScript code outside of we
 ## Frontend and Backend: Explained
 
 When you use JavaScript in a web browser to create interactive websites, that's called the `frontend` It's like the face of a website that you see and interact with. On the other hand, when you want to do things behind the scenes, like **handling data**, **storing information**, or **responding to user requests**, that's called the `backend`. Node.js helps you with these backend tasks, making your websites more powerful.
-
----
-
-### How Node.js Runs JavaScript Outside the Browser
-1. **V8 Engine**:  
-   - V8 is a powerful JavaScript engine developed by Google.  
-   - It converts JavaScript code into machine code (language the computer understands).
-2. **No Browser Needed**:  
-   - Browsers like Chrome or Firefox run JavaScript inside their own environment.  
-   - Node.js uses the V8 engine directly, so it doesn’t need a browser to run JavaScript.
-3. **System Interaction**:  
-   - Node.js provides tools (called APIs) to work with files, servers, and databases.  
-   - For example, you can write a file or create a server using JavaScript.
 
 ---
 

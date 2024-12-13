@@ -814,8 +814,8 @@ When the value of **flex-direction** is set to **column**, the **justify-content
 
 <img src="/icp/21/output-18.png" alt="output-18" width="600px"/><br/><br/>
 
-
 <img src="/icp/21/img-17.png" alt="img-17" width="400px" /><br/>
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -857,7 +857,6 @@ When the value of **flex-direction** is set to **column**, the **justify-content
 **Output :**
 
 <img src="/icp/21/output-19.png" alt="output-19" width="600px"/><br/><br/>
-
 
 <img src="/icp/21/img-18.png" alt="img-18" width="400px" />
 

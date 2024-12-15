@@ -4,66 +4,143 @@ description: "How to create react app."
 hide_table_of_contents: true
 ---
 
-### There are primarly two best way to create new react app.
+## Create React app
 
-1. Using CRA (create-react-app).
-2. Using vite
+1. Create a folder and named it (whatever name do you want to keep) First_Flight
+2. Open it in VS Code editor.
+3. Create a file with name of `package.json ` ( A "package" refers to a library, and it contains all the information about the library we're using.), It is the backbone of react project.
 
-** Both tools are popular and offer unique advantages for different project needs. **
+- `package.json` files contain name of your react project, version, entry-point, script, dependencies(package, library, dependency),browserslist
 
-### 1. Using create-react-app
+4. In package.json file we create an object "{}" as we know that in json file we feed the data in key-value pair we wright everything in double quote e.g. ("name":"first_flight")
 
-##### It was created and is maintained by Facebook's React team.
+5. first right the name of that project ` first_flight`
 
-#### It use webpack internally.
+```js
+{
+       "name":"first_flight",
+}
+```
 
-1. First and very important step, ensure that you have installed `node.js` in your machine .
-2. Open terminal or Git Bash, then type `npx create-react-app (name) foody`. (`npx`-Node Package Execute)
-3. It will take some time to create react app .
-4. It will install some packages `react`, `react-dom` and `react-script`.
-5. Close the terminal and open that folder into the vs-code.
-6. Open the terminal in vs-code .
-7. You see all the necessary folders and files are created .
-8. It will redirect to your default browser .
-   `Created git commit ` , it create first commit by default .
-9. Write this command `npm start ` This command is use to starts the development server.
-10. Opne package.json file you will see it install lots of extra libraries `@testing-library/jest-dom`, `@testing-library/react`, `@testing-library/user-event` etc.
+6. In the second line we write the version of that project `1.0.0 `
 
-<img src="/react/02/01-package.png" alt="screenshot1.png" width="600px"/>
+```js
+"version":"1.0.0",
+```
 
-11. `npm run build ` command is used to create a production-ready build of application.
+7. On the third line, we add a `description` field to provide a brief summary of the project:
 
-### 2. Using Vite
+```js
+"description":"this is my first ReactAPP"
 
-#### Vite is an open-source project created by Evan You, the creator of Vue.js.
+```
 
-#### It's a modern build tool that aims to provide a faster and more efficient development experience for frontend developers.
+8. Next, we add a `main` field, which specifies the `entry point` of the application. In the `root directory`, we create a folder named `src` to organize our source files. Inside the `src folder`, we create a file called `index.js`.
 
-#### It is lightning fast HMR (hot module reloding)
+```js
+"main":"index.js"
+```
 
-#### It come with lots of features, plugins
+9. Next, we add a `scripts object`. Inside it, we define a `script` called `start` and assign it the command `react-scripts start` to run the application:
 
-1. Open terminal and type ` npm create vite@latest.
-2. Next it will ask name to keep .
-3. Next it will ask to choose framework, choose React . ("to navigate the framework use arrow UP and arro down key)
-4. It will ask to choose variant, choose your favourite varient .
-5. Next close the terminal and open that folder in vs-code .
-6. After that open terminal in vs-code and type `npm i` this command install all the necessary libraries and dependencies .
+10. After that we write the **dependencies** it refer to external packages or libraries that your React
+    project relies on to function properly. These packages are necessary for your React application to run as expected.
 
-### vite folder structure
+```js
+"dependencies":{
 
-<img src="/react/02/02-vite-folder.png" alt="screenshot1.png" width="600px"/>
+}
+```
 
-### vite package.json file
+11. Then, we create a `public folder`, and inside it, we add a file named `index.html`. This will be the `only HTML` file in our entire React project, which is why React is referred to as a `Single Page Application (SPA) framework`.
 
-<img src="/react/02/03-vite-json.png" alt="screenshot1.png" width="600px"/>
+12. Next, we write the basic HTML structure. Inside the `<body>` tag, we add a `<div>` with the id `root`.
 
-7. The default behavior of `npm run dev` command is to start the development server using Vite. However, you can modify this behavior by editing the `package.json `file. In the scripts section, you'll find the first script labeled `"dev": "vite"`. You can change it to `"start"` if you want to use a different command for development.
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Flight</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+```
 
-8. To start your development server, run `npm run dev`. The server will start on a port different from the CRA default `(http://localhost:5173/)`. It won't automatically redirect you to the browser, so you'll need to click on the link displayed in the terminal after running the command to navigate there.
+13. Next we write the command in the terminal `npm i react` it will give all the `dependencies` of the react and you see another file with the name of `package-lock.json` and `node_modules`
 
-9. To create an optimized production build of your React application, run the build command:`npm run build`
+<img src="/react/01/command.png" alt="output-1" width="600px"/>
 
-10. This command will generate a `dist` folder containing your production-ready files.
+14. Open the `package.json` file, and you will see a new key-value pair under the `dependencies object`. This pair includes `react` as the key and its version `^19.0.0` as the value on the right side.
 
-11. After that, you are good to go for deployment.
+15. In the `package-lock.json` file, you can see the flow of `dependencies`, showing which library `depends` on which other `libraries` .
+
+16. Next we write another command **npm i react-dom** this is the dependencies which make virtual dom in react
+
+<img src="/react/01/command2.png" alt="output-1" width="600px"/>
+
+17. Next, open the terminal and `install react-scripts` by running the command:
+
+```js
+npm install react-scripts
+```
+
+This may take some time as `react-scripts` is larger than the other two dependencies.
+
+<img src="/react/01/command3.png" alt="output-1" width="600px"/>
+
+18. In index.js, we import ReactDOM from "react-dom/client" using the following line:
+
+```js
+import ReactDOM from "react-dom/client";
+```
+
+This is used to `create the root of our React application`.
+
+19. Then we create a root element
+
+<img src="/react/01/rootelement.png" alt="output-1" width="600px"/>
+
+20. Next in terminal write `npm start` after that it will ask "Would you like to add the defaults to your package.json" say `y` after that it will redirect to you on the browser and you see the output, with that it install the some of configuration for browserslist, which is a tool used to specify which browsers your project should support. In simpler terms, it tells browserslist which browser versions your project needs to work with in both production and development environments.
+
+#### package.json
+
+```js
+{
+  "name": "first_flight",
+  "version": "1.0.0",
+  "description": " this is my first ReactJS project",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+
+
+
+
+```
+
+<img src="/react/01/output.png" alt="output-1" width="600px"/>
+
+## Happy coding 🤖

@@ -46,20 +46,50 @@ In this code, we're creating a component called `App`. Inside the `h1` tag, we h
 2. react-dom
 3. react-script
 
-All this libraries must be installed 
+All this libraries must be installed
 
 ## What is SPA ??
 
 React is known as a `single page application` because it contain only one page and other pages include in it and it uses DOM manupulation for it.
 
 **ReactDom**
- It is module in react libraries ,  ReactDOM specifically focuses on rendering React components to the DOM. 
+It is module in react libraries , ReactDOM specifically focuses on rendering React components to the DOM.
 
-When you write a React application, you create components using React syntax. ReactDOM takes these components and renders them to the browser's DOM, updating them efficiently when the data changes. 
+When you write a React application, you create components using React syntax. ReactDOM takes these components and renders them to the browser's DOM, updating them efficiently when the data changes.
 
 ```js
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 ```
 
-If the code written in `{ }` then that is evaluated as javascript and known as` JSX expression `.  If the code written in `[ ]` then this code is normal HTML code. 
+If the code written in `{ }` then that is evaluated as javascript and known as`JSX expression`. If the code written in `[ ]` then this code is normal HTML code.
+
+## Why do we get this error ??
+
+<img src="/react/04/fragmenterror.png" alt="screenshot1.png" width="600px"/>
+
+# This error occurs if there is no parent container
+
+Solution 1:- Wrap it using jsx fragment
+
+```js
+root.render(
+  <>
+    <div>Content 1</div>
+    <div>Content 2</div>
+  </>
+);
+```
+
+Solution 2:- Wrap it using div
+
+```js
+
+
+root.render(
+  <div>
+   <div>Content 1</div>
+   <div>Content 2</div>
+  <div/>
+          )
+```

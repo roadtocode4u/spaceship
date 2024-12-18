@@ -63,8 +63,101 @@ Think of a locker key at a gym. Anyone can see the locker number, but only the c
 ### 1. install `jsonwebtoken`
 
 ```js
+
 npm install jsonwebtoken
 
 ```
 
 ### 2. Generate a JWT (Sign a Token)
+
+```js
+import jwt from jsonwebtoken
+
+const user = { id: 1, username: "mannu" };
+const secretKey = "aabra_ka_dabara"; // here you add your secrete key or fetch from the environment file.
+
+const token = jwt.sign(user, secretKey, { expiresIn: '1h' });
+res.setHeader( "Authorization", `Bearer ${token} ) .
+
+console.log("Generated Token:", token);
+
+```
+
+#### 1. Import the library:
+
+- It uses jsonwebtoken to work with JWTs.
+
+#### 2. Create user data:
+
+- The user object has some basic details, like ID and username.
+
+#### 3. Set a secret key:
+
+- The secretKey is like a password used to lock (sign) the token securely.
+
+#### 4. Generate the token:
+
+- The jwt.sign function creates a token containing the user info. It also sets an expiry time of 1 hour (expiresIn: '1h').
+
+#### 5. Add Token to Response Header:
+
+- The token is added to the Authorization header with the prefix Bearer, a convention used to indicate the token belongs to a specific user.
+
+### Verify JWT with `test` api.
+
+```js
+import jwt from "jsonwebtoken";
+
+server.get("/test", (req, res) => {
+  const token = req.headers.authorization;
+
+  if (!token) {
+    return res.status(401).json({
+      success: false,
+      message: "Authorization failed",
+    });
+  }
+
+  const tokenValue = token.split(" ")[1];
+
+  try {
+    const decoded = jwt.verify(tokenValue, "secrete_token");
+
+    return res.json({
+      success: true,
+      message: "Token is valid",
+    });
+  } catch (err) {
+    return res.status(401).json({
+      success: false,
+      message: "Token is invalid",
+    });
+  }
+});
+```
+
+### 1. JWT Import:
+
+- The jsonwebtoken library is imported to handle JWT operations.
+
+### 2. Defining the /test Endpoint:
+
+- A GET endpoint listens for requests at /test.
+
+### 3. Checking for Token:
+
+- The `Authorization` header is checked.
+- If it's missing, the server responds with a 401 `Unauthorized` and a failure message.
+
+### 4. Extracting the Token Value:
+
+- The token is typically sent as `Bearer` `token`.
+- The code `extracts` `token` by splitting the Authorization header on the space.
+
+### 5. Verifying the Token:
+
+- The `jwt.verify()` function checks the token against the secret key ("secrete_token").
+- If valid, a success `response is returned`.
+- If invalid, an error is caught, and the server `responds with 401` `Unauthorized` and an invalid token message.
+
+## Happy coding 🤖

@@ -10,6 +10,8 @@ Exploring **CSS Styling** Methods in React :
 2. Document CSS
 3. External CSS
 
+4. **Inline CSS :** In React, `inline CSS` refers to adding CSS styles directly to individual `JSX elements using the style attribut`e. It allows for unique and immediate styling of specific elements within a component.
+
 ```jsx title="src/index.js" showLineNumbers="true"
 import ReactDOM from "react-dom/client";
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -20,13 +22,15 @@ function Greeting(props) {
     <div
       style={{
         border: "5px double black",
-        backgroundColor: "lightblue",
+        backgroundColor: "aquamarine",
+        color: "black",
         borderRadius: "10px",
         padding: "10px",
         margin: "10px",
+        width: "50vw",
       }}
     >
-      <h1 style={{ color: "tomato" }}>
+      <h1 style={{ color: "black" }}>
         I am {name} from {city}. I am {age} years old.
       </h1>
     </div>
@@ -34,10 +38,8 @@ function Greeting(props) {
 }
 root.render(
   <>
-    <Greeting name="Anand" city="Nagpur" age="23" />
-    <Greeting name="Vaishnavi" city="Ahmednagar" age="22" />
-    <Greeting name="Suraj" city="Bhandara" age="23" />
-    <Greeting name="Pinki" city="Pune" age="20" />
+    <Greeting name="Mahesh" city="Ahmednagar" age="21" />
+    <Greeting name="Prathamesh" city="Nagpur" age="22" />
   </>
 );
 ```
@@ -54,14 +56,14 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const cardStyle = {
   border: "4px double black",
-  backgroundColor: "aqua",
   borderRadius: "10px",
+  width: "50vw",
   padding: "10px",
   margin: "10px",
 };
 
 const headingStyle = {
-  color: "tomato",
+  color: "CRIMSON",
 };
 
 function Greeting(props) {
@@ -74,19 +76,16 @@ function Greeting(props) {
     </div>
   );
 }
+
 root.render(
   <>
-    <Greeting name="Anand" city="Nagpur" age="23" />
-    <Greeting name="Vaishnavi" city="Ahmednagar" age="22" />
-    <Greeting name="Suraj" city="Bhandara" age="23" />
-    <Greeting name="Pinki" city="Pune" age="20" />
+    <Greeting name="Mahesh" city="Nagpur" age="21" />
+    <Greeting name="Prathamesh" city="Ahmednagar" age="22" />
   </>
 );
 ```
 
 `Note : in HTML we use class to take class but in react we have to use ClassName for that otherwise it will give warning.`
-
-1. **Inline CSS :** In React, `inline CSS` refers to adding CSS styles directly to individual `JSX elements using the style attribut`e. It allows for unique and immediate styling of specific elements within a component.
 
 **Output :**
 
@@ -111,11 +110,10 @@ function Greeting(props) {
 }
 root.render(
   <>
-    <Greeting name="Anand" city="Nagpur" age="23" />
-    <Greeting name="Vaishnavi" city="Ahmednagar" age="22" />
-    <Greeting name="Suraj" city="Bhandara" age="23" />
-    <Greeting name="Pinki" city="Pune" age="20" />
+    <Greeting name="Mahesh" city="Nagpur" age="21" />
+    <Greeting name="Prathamesh" city="Ahmednagar" age="22" />
   </>
+);
 );
 ```
 
@@ -126,6 +124,7 @@ root.render(
   border: 5px double black;
   border-radius: 10px;
   padding: 10px;
+  width: 50vw;
   margin: 10px;
   background-color: aquamarine;
 }
@@ -133,52 +132,66 @@ root.render(
 
 **Output :**
 
-**Conditional Rendering**
-
 > <img src="/react/05/screenshot3.png" alt="screenshot3.png" width="600px"/>
 
-**Example :for conditions**
+## **Conditional Rendering**
+
+**Example: Conditional Styling Based on Props**
 
 ```jsx title="src/index.js" showLineNumbers="true"
-import ReactDOM from 'react-dom/client';
-import './index.css';
-const root =ReactDOM.createRoot(document.getElementById("root"))
+import ReactDOM from "react-dom/client";
+import "./index.css";
 
-function StudentCard({name,city,gender}){
-  return(
-    <div className={student-card ${gender == "female" ? "bg-female" : "bg-male"}}>
-      <h3 className='card-heading'>Hi I am {name} {gender}</h3>
-      <p className='card-subheading'>I am from {city}</p>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+function StudentCard({ name, city, gender }) {
+  return (
+    <div
+      className={`student-card ${
+        gender === "female" ? "bg-female" : "bg-male"
+      }`}
+    >
+      <h3 className="card-heading">
+        Hi, I am {name} ({gender})
+      </h3>
+      <p className="card-subheading">I am from {city}</p>
     </div>
-  )
+  );
 }
+
 root.render(
-  <div className='student-card-container'>
-    <StudentCard name="Sakshi" city="Ahmednagar" gender="female"/>
-    <StudentCard name="Sneha" city="Pune" gender="female"/>
-    <StudentCard name="Neha" city="Ahmednagar" gender="female"/>
-    <StudentCard name="Ashish" city="Ahmednagar" gender="male"/>
-    <StudentCard name="Harshal" city="Pune" gender="male"/>
-    <StudentCard name="Omkar" city="Ahmednagar" gender="male"/>
- </div>
-
-)
-
+  <div className="student-card-container">
+    <StudentCard name="Sakshi" city="Ahmednagar" gender="female" />
+    <StudentCard name="Sneha" city="Pune" gender="female" />
+    <StudentCard name="Neha" city="Ahmednagar" gender="female" />
+    <StudentCard name="Ashish" city="Ahmednagar" gender="male" />
+    <StudentCard name="Harshal" city="Pune" gender="male" />
+    <StudentCard name="Omkar" city="Ahmednagar" gender="male" />
+  </div>
+);
 ```
 
-**File Name : index.css**
+**File Name: index.css**
 
 ```css
 .student-card-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .student-card {
-  padding-left: 20px;
+  padding: 20px;
   border-radius: 5px;
   margin: 10px;
   height: 200px;
   width: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
 .bg-female {
@@ -190,21 +203,18 @@ root.render(
 }
 ```
 
-**Output :**
+**Output:**
 
-<img src="Screenshot condition.png" alt="screenshot FOR CONDITION.png" width="600px"/>
+ <img src="/react/05/screenshot4.png" alt="screenshot3.png" width="600px"/>
 
-**Explanation :**
+**Explanation:**
 
-`This code demonstrates how to create and render a React component (StudentCard) multiple times with different props, and how to conditionally apply CSS classes based on prop values.`
+This code demonstrates how to create and render a React component (`StudentCard`) multiple times with different props, and how to conditionally apply CSS classes based on prop values.
 
-In line 1 and 2 ,code imports the ReactDOM module from 'react-dom/client' and an external CSS file './index.css'.
+- **Lines 1-2:** The code imports the `ReactDOM` module from `'react-dom/client'` and an external CSS file `index.css`.
 
-In Line 3 ,it creates a root React element using ReactDOM.createRoot(). It specifies that the root element in the HTML document with the id "root" will be the container for rendering React elements.
+- **Line 3:** Creates a root React element using `ReactDOM.createRoot()`. It specifies that the root element in the HTML document with the id `"root"` will be the container for rendering React elements.
 
-In line 5 to 11 , it defines a functional React component StudentCard. It takes three props: name, city, and gender. Inside the component, it returns JSX, which represents the structure and content of the component.` The class name of the <div> element is conditionally set based on the gender prop.`
+- **Lines 5-11:** Defines a functional React component `StudentCard`. It takes three props: `name`, `city`, and `gender`. Inside the component, it returns JSX that represents the structure and content of the component. The class name of the `<div>` element is conditionally set based on the `gender` prop.
 
-
-In line 12 to 21 , it renders the root React element created earlier. Inside the root element, it renders a <div/> with the class name 'student-card-container', containing multiple StudentCard components with different props (name, city, gender).
-
-
+- **Lines 12-21:** Renders the root React element created earlier. Inside the root element, it renders a `<div>` with the class name `'student-card-container'`, containing multiple `StudentCard` components with different props (`name`, `city`, `gender`).

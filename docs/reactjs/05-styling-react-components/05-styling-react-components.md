@@ -203,7 +203,7 @@ root.render(
 }
 ```
 
-**Output:**
+**Output: **
 
  <img src="/react/05/screenshot4.png" alt="screenshot3.png" width="600px"/>
 

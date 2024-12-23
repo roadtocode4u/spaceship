@@ -1,5 +1,5 @@
 ---
-title:  Default and Named Export
+title: Default and Named Export
 description: "Default and Named Export"
 hide_table_of_contents: true
 ---
@@ -14,14 +14,14 @@ Suppose you have a React component in a file called **GreetingCard.js**
 
 ```js
 export default function GreetingCard() {
-    // Component logic here
+  // Component logic here
 }
 ```
 
 In this case, **GreetingCard** is the default export. When you import it in another file, you can give it any name you prefer:
 
 ```js
-import CustomName from './GreetingCard';
+import CustomName from "./GreetingCard";
 ```
 
 This way, you can easily import the most important part of a module in other parts of your code.
@@ -29,42 +29,42 @@ This way, you can easily import the most important part of a module in other par
 **Examples:**
 
 ```jsx title="src/GreetingCard.js" showLineNumbers
-export default function GreetingCard(){
-    return(
-        <div>
-        <h1>Happy Birthday...!!</h1>
-        </div>
-    )
+export default function GreetingCard() {
+  return (
+    <div>
+      <h1>Happy Birthday...!!</h1>
+    </div>
+  );
 }
 ```
 
 In the above code, **export default:** This part of the code indicates that you are exporting something as the default export from this module. In this case, you're exporting a function named `GreetingCard` as the `default export`. This means that when another file imports this module, they can choose to give it any name they want.
 
-``function GreetingCard() {``: This is the start of a JavaScript function definition. You are defining a function called `GreetingCard` with an empty set of `parentheses ()`. This function doesn't take any parameters.
+`function GreetingCard() {`: This is the start of a JavaScript function definition. You are defining a function called `GreetingCard` with an empty set of `parentheses ()`. This function doesn't take any parameters.
 
 `return (`: This is the beginning of the function's return statement. It signifies that the function is going to return a value, which in this case is a `JSX` expression enclosed in parentheses.
 
 `<div>`: This is an opening JSX tag. JSX (JavaScript XML) allows you to write HTML-like code within your JavaScript functions. Here, you are creating an HTML `<div>` element.
 
-``<h1>Happy Birthday...!!</h1>``: This is another JSX element. Here, you're creating an `<h1>` (heading level 1) HTML element with the text `Happy Birthday...!!` inside it.
+`<h1>Happy Birthday...!!</h1>`: This is another JSX element. Here, you're creating an `<h1>` (heading level 1) HTML element with the text `Happy Birthday...!!` inside it.
 
-``</div>``: This is the closing JSX tag that matches the opening `<div>` tag.
+`</div>`: This is the closing JSX tag that matches the opening `<div>` tag.
 
-``)}``: This is the end of the return statement and the closing curly brace `}` of the GreetingCard function. It concludes the function definition.
+`)}`: This is the end of the return statement and the closing curly brace `}` of the GreetingCard function. It concludes the function definition.
 
 **File Name : index.js**
 
 ```jsx title="src/index.js" showLineNumbers
-import ReactDOM from 'react-dom/client';
-import GreetingCard from './GreetingCard';
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import ReactDOM from "react-dom/client";
+import GreetingCard from "./GreetingCard";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <>
- <GreetingCard />
- <GreetingCard />
+    <GreetingCard />
+    <GreetingCard />
   </>
-)
+);
 ```
 
 In the above code, `import ReactDOM from 'react-dom/client';`: This line imports the `ReactDOM` library from the `'react-dom/client'` module. ReactDOM is used for rendering React components into the `DOM` (Document Object Model) of a web page.
@@ -79,35 +79,38 @@ In the above code, `import ReactDOM from 'react-dom/client';`: This line imports
 
 **Output :**
 
->Happy Birthday...!! <br/>
->Happy Birthday...!!
+> Happy Birthday...!! <br/>
+> Happy Birthday...!!
 
 ```jsx title="src/GreetingCard.js" showLineNumbers
-export default function GreetingCard(){
+export default function GreetingCard() {
   const cardStyle = {
-  border: '4px double black',
-  backgroundColor: 'aqua',
-  borderRadius: '10px',
-  padding: '10px',
-  margin: '10px',
-}
+    border: "4px double black",
+    backgroundColor: "aqua",
+    borderRadius: "10px",
+    padding: "10px",
+    margin: "10px",
+  };
 
-const headingStyle = {
-  color: 'tomato'
-}
+  const headingStyle = {
+    color: "tomato",
+  };
 
-  return(
+  return (
     <div style={cardStyle}>
       <h1 style={headingStyle}>Happy Birthday...!!</h1>
     </div>
-  )
+  );
 }
 ```
+
 **Output :**
 
 <img src="/react/06/screenshot1.png" alt="screenshot1.png" width="600px"/>
 
-##  What is Named Export?
+---
+
+## What is Named Export?
 
 Named export allows you to export **multiple components**, **functions**, or **objects** from a module with specific names. This way, you can import and use them by their exact names in other parts of your React application.
 
@@ -116,23 +119,23 @@ Suppose you have a module called **Button.js** that exports multiple components:
 ```js showLineNumbers="true"
 // Exporting a default component
 export default function Button({ text }) {
-    // Component logic here
+  // Component logic here
 }
 
 // Exporting named components
 export function OutlineButton() {
-    // Component logic here
+  // Component logic here
 }
 
 export function LinkButton() {
-    // Component logic here
+  // Component logic here
 }
 ```
 
 In this example, `Button` is the default export, and `OutlineButton` and `LinkButton` are named exports. You can import and use them like this:
 
-```js  showLineNumbers="true"
-import Button, { OutlineButton, LinkButton } from './Button';
+```js showLineNumbers="true"
+import Button, { OutlineButton, LinkButton } from "./Button";
 ```
 
 Named exports are helpful for structuring and organizing your React code, allowing you to reference components, functions, or objects explicitly by their names.
@@ -140,82 +143,39 @@ Named exports are helpful for structuring and organizing your React code, allowi
 **Examples:**
 
 ```jsx title="src/Button.js" showLineNumbers="true"
-const buttonStyle = {
- padding: '10px 20px',
- margin: '10px',
- borderRadius: '5px',
- border: 'node',
- color: '#fff',
- fontSize: '16px',
- cursor: 'pointer',
- backgroundColor: '#6772e5'
+export default function Button({ text }) {
+  return <button>{text}</button>;
 }
 
-export default function Button({text}){
-  return(
-    <button style={buttonStyle}>{text}<button>
-  )
+export function OutlineButton() {
+  return <button>Outline Button</button>;
 }
 
-const outlinebuttonStyle = {
- padding: '10px 20px',
- margin: '10px',
- borderRadius: '5px',
- border: '2px solid #6772e5',
- color: '#6772e5',
- fontSize: '16px',
- cursor: 'pointer',
-}
-
-export function OutlineButton(){
-  return(
-    <button style={outlinebuttonStyle}>Outline Button</button>
-  )
-}
-
-const linkButtonStyle = {
- padding: '10px 20px',
- margin: '10px',
- borderRadius: '5px',
- border: 'none',
- color: '#6772e5',
- fontSize: '16px',
- cursor: 'pointer',
- backgroundColor: 'transparent'
-}
-
-export function LinkButton(){
-  return(
-    <button style={linkButtonStyle}>Link Button</button>
-  )
+export function LinkButton() {
+  return <button>Link Button</button>;
 }
 ```
 
-In the above code Line 12 to 16 , 
- 
-`export default function Button({ text }) {`: This line exports a default React functional component named `Button`. It takes an object with a `text` property as a parameter (props), which is expected to be passed when using the component.
+In the above, <br/>
 
-`<button style={buttonStyle}>`: This line renders a button element in JSX (JavaScript XML) and applies the buttonStyle object as inline CSS.
+This document provides details about three React functional components: `Button`, `OutlineButton`, and `LinkButton`. These components demonstrate the usage of default and named exports.
 
-`{text}`: This JSX expression inserts the value of the text property (passed as a parameter to the component) inside the button element.
+## Components Explanation
 
-`<button>`: This is a closing button tag.
+### 1. `Button`
 
-Line 28 to 32,
+- **Export Type**: Default Export
+- **Description**:  
+  This is a React functional component that takes an object with a `text` property as its parameter (props).  
+  The `text` property is expected to be passed when using this component.
 
-`export function OutlineButton() {`: This line exports a named React functional component named `OutlineButton`.
+#### Code:
 
-`<button style={outlinebuttonStyle}>`: This line renders a button element in JSX and applies the `outlinebuttonStyle` object as inline CSS.
+````jsx
+export default function Button({ text }) {
+  return <button>{text}</button>;
+}
 
-`Outline Button`: This is the text content of the button.
-
-Line 45 to 49, 
-
-`export function LinkButton() {:` This line exports a named React functional component named `LinkButton`.
-
-`<button style={linkButtonStyle}>:` This line renders a button element in JSX and applies the linkButtonStyle object as inline CSS.
-
-`Link Button`: This is the text content of the button.
 
 ```jsx title="src/index.js" showLineNumbers
 import ReactDOM from 'react-dom/client';
@@ -233,13 +193,13 @@ root.render(
  <LinkButton/>
   </>
 )
-```
+````
 
-In the above code Line 3, 
+In the above code Line 3,
 
 `import Button, {OutlineButton, LinkButton} from './Button';`: This line imports three components - `Button`, `OutlineButton`, and `LinkButton` - from a file named `Button` located in the same directory as this code. It uses both default and named exports from the `Button` module.
 
- Line 9 to 13,
+Line 9 to 13,
 
 `<GreetingCard />`: This JSX element renders the `GreetingCard` component twice. It's placed inside the JSX fragment.
 
@@ -253,4 +213,154 @@ In the above code Line 3,
 
 **Output :**
 
-><img src="/react/06/screenshot2.png" alt="screenshot2.png" width="600px"/>
+> <img src="/react/06/screenshot2.png" alt="screenshot2.png" width="600px"/>
+
+````
+
+---
+
+# When to Use Default vs Named Exports
+
+#### Choosing between default and named exports depends on how you plan to use your code.
+
+### Use Default Exports When:
+ **1. Single Component or Function per File :**
+If your file contains just one main thing, like a single React component, use a default export. <br/>
+
+Example:
+
+```jsx
+// GreetingCard.js
+export default function GreetingCard() {
+    return <h1>Happy Birthday!</h1>;
+}
+````
+
+Import it like this:
+
+```jsx
+import GreetingCard from "./GreetingCard";
+```
+
+**2. Flexibility in Naming:**
+You can import a default export with any name you like.<br/>
+
+Example:
+
+```jsx
+import MyCustomName from "./GreetingCard";
+```
+
+### Use Named Exports When:
+
+**1. Exporting Multiple Items from a Single File:**
+If your file has many components, functions, or constants, named exports are better. <br/>
+
+Example:
+
+```jsx
+export function Header() {
+  return <header>Header Content</header>;
+}
+export function Footer() {
+  return <footer>Footer Content</footer>;
+}
+```
+
+Import them like this:
+
+```jsx
+import { Header, Footer } from "./LayoutComponents";
+```
+
+**2. Clear Naming:**
+Named exports make it clear what you’re importing by enforcing the same names in both the export and import.
+
+---
+
+# Exporting Multiple Components in a Single File
+
+#### Sometimes, you might want to put several related components in one file. For example, in a file called `Buttons.js`:
+
+```jsx
+// Default export
+export default function PrimaryButton({ text }) {
+  return <button>{text}</button>;
+}
+
+// Named exports
+export function OutlineButton({ text }) {
+  return <button style={{ border: "2px solid black" }}>{text}</button>;
+}
+
+export function LinkButton({ text }) {
+  return (
+    <button style={{ background: "none", textDecoration: "underline" }}>
+      {text}
+    </button>
+  );
+}
+```
+
+Importing them:
+
+```jsx
+import PrimaryButton, { OutlineButton, LinkButton } from "./Buttons";
+
+function App() {
+  return (
+    <>
+      <PrimaryButton text="Click Me" />
+      <OutlineButton text="Outline" />
+      <LinkButton text="Learn More" />
+    </>
+  );
+}
+```
+
+---
+
+# Error Scenarios and Best Practices
+
+#### Common Pitfalls:
+
+**1 Forgetting Curly Braces for Named Exports:**
+
+Named exports must be imported using curly braces.<br/>
+
+Example:
+
+```jsx
+// Wrong
+import OutlineButton from "./Buttons"; // Error: OutlineButton is not a default export
+
+// Correct
+import { OutlineButton } from "./Buttons";
+```
+
+**2. Wrong Name for Default Export:**
+
+You can rename a default export, but if you use the wrong name for a named export, you’ll get an error.<br/>
+
+Example:
+
+```jsx
+// Buttons.js
+export function LinkButton() {}
+
+// Wrong
+import { LinkBtn } from "./Buttons"; // Error: LinkBtn is not exported
+
+// Correct
+import { LinkButton } from "./Buttons";
+```
+
+**3. Mixing Import Styles:**
+
+Be careful when combining default and named imports.<br/>
+
+Example:
+
+```jsx
+import { OutlineButton, PrimaryButton } from "./Buttons"; // Wrong if PrimaryButton is default
+```

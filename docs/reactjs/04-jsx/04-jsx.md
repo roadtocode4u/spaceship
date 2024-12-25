@@ -46,20 +46,34 @@ In this code, we're creating a component called `App`. Inside the `h1` tag, we h
 2. react-dom
 3. react-script
 
-All this libraries must be installed 
+All this libraries must be installed
 
-## What is SPA ??
+## Why do we get this error ??
 
-React is known as a `single page application` because it contain only one page and other pages include in it and it uses DOM manupulation for it.
+<img src="/react/04/fragmenterror.png" alt="screenshot1.png" width="600px"/>
 
-**ReactDom**
- It is module in react libraries ,  ReactDOM specifically focuses on rendering React components to the DOM. 
+### The most crucial part to understand is the error that occurs when you don't have a parent container in JSX. This is one of the fundamental rules of JSX - all elements must have a single parent wrapper.
 
-When you write a React application, you create components using React syntax. ReactDOM takes these components and renders them to the browser's DOM, updating them efficiently when the data changes. 
+Solution 1:- Wrap it using jsx fragment
 
 ```js
-import React from 'react';
-import ReactDOM from 'react-dom';
+root.render(
+  <>
+    <div>Content 1</div>
+    <div>Content 2</div>
+  </>
+);
 ```
 
-If the code written in `{ }` then that is evaluated as javascript and known as` JSX expression `.  If the code written in `[ ]` then this code is normal HTML code. 
+Solution 2:- Wrap it using div
+
+```js
+
+
+root.render(
+  <div>
+   <div>Content 1</div>
+   <div>Content 2</div>
+  <div/>
+          )
+```

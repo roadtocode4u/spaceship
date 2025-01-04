@@ -70,6 +70,10 @@ Availability Zones are the secret sauce of AWS reliability. Each Region has mult
 1. Cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing.
 2. Instead of buying, owning, and maintaining physical data centers and servers, you can access technology services, such as computing power, storage, and databases, on an as-needed basis from a cloud provider like Amazon Web Services (AWS).
 
+:::info
+For more information about AWS cloud computing, I recommend reading our introductory guide. The guide covers AWS fundamentals and is available at: https://medium.com/@Vaibhavihole31/introduction-to-aws-0aee1dbe0a41
+:::
+
 ## Benefits of cloud computing
 
 ### Financial Benefits:
@@ -144,7 +148,3 @@ think of it like this:
 ### Why did we choose AWS over other cloud providers?
 
 AWS holds 32% market share, has 200+ services, and offers the most mature cloud platform since 2006. Their global infrastructure and competitive pricing make them a reliable choice.
-
-:::info
-For more information about AWS cloud computing, I recommend reading our introductory guide. The guide covers AWS fundamentals and is available at: https://medium.com/@Vaibhavihole31/introduction-to-aws-0aee1dbe0a41
-:::

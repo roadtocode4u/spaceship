@@ -144,3 +144,7 @@ think of it like this:
 ### Why did we choose AWS over other cloud providers?
 
 AWS holds 32% market share, has 200+ services, and offers the most mature cloud platform since 2006. Their global infrastructure and competitive pricing make them a reliable choice.
+
+:::info
+For more information about AWS cloud computing, I recommend reading our introductory guide. The guide covers AWS fundamentals and is available at: https://medium.com/@Vaibhavihole31/introduction-to-aws-0aee1dbe0a41
+:::

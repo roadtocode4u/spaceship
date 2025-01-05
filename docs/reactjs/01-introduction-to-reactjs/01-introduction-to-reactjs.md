@@ -26,6 +26,8 @@ React is a JavaScript frontend library for building user interfaces. It is maint
 
 4. **JSX :** JSX stands for JavaScript XML. It's a syntax extension for JavaScript used in React to describe the structure and layout of user interfaces. JSX allows developers to write `HTML-like syntax which allows to write Js & Html at one place`. making it easier to define and render UI components in React applications.
 
+5. **SPA :** SPA stands for Single Page Application. It is a type of website that loads a single HTML page and updates content dynamically without refreshing the entire page. This makes the application faster and gives users a smooth experience.
+
 ### Some Handy Terms
 
 **`npm` (Node Package Manager)**: `npm` is like a super cool store for JavaScript code. You can find and install all sorts of helpful code packages there.

@@ -69,11 +69,11 @@ Common Mistakes
 
 :::
 
-### Always use git bash for starting the server or any of the task related to npm.
+1. ### Always use git bash for starting the server or any of the task related to npm command.
 
  <img src="/expressjs/02/common-pitfall2.png"  width="600px"/>
 
-### if you get error `Address already in use` :
+2. ### if you get error `Address already in use` :
 
  <img src="/expressjs/02/common-pitfall.png"  width="600px"/>
 

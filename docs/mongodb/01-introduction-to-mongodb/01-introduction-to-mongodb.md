@@ -448,3 +448,18 @@ db.actors.deleteMany({});
 This will return the following output:
 
 <img src="/icp/46/step-36.png" alt="step-36" width="600px"/>
+
+:::danger
+Common mistakes
+:::
+
+### setup your `atlas network access`
+
+**Edit IP Access List Entry**
+
+**Access List Entry:** `0.0.0.0`
+to access from anywhere from any network
+
+**comment**: anywhere
+
+<img src="/mongodb/pitfall.png" width="600" />

@@ -26,7 +26,20 @@ React is a JavaScript frontend library for building user interfaces. It is maint
 
 4. **JSX :** JSX stands for JavaScript XML. It's a syntax extension for JavaScript used in React to describe the structure and layout of user interfaces. JSX allows developers to write `HTML-like syntax which allows to write Js & Html at one place`. making it easier to define and render UI components in React applications.
 
-5. **SPA :** SPA stands for Single Page Application. It is a type of website that loads a single HTML page and updates content dynamically without refreshing the entire page. This makes the application faster and gives users a smooth experience.
+## What is SPA ??
+
+React is known as a `single page application` because it contain only one page and other pages include in it and it uses DOM manupulation for it.
+
+**ReactDom** It is module in react libraries , ReactDOM specifically focuses on rendering React components to the DOM.
+
+When you write a React application, you create components using React syntax. ReactDOM takes these components and renders them to the browser's DOM, updating them efficiently when the data changes.
+
+```js
+import React from "react";
+import ReactDOM from "react-dom";
+```
+
+If the code written in `{ }` then that is evaluated as javascript and known as`JSX expression`. If the code written in `[ ]` then this code is normal HTML code.
 
 ### Some Handy Terms
 

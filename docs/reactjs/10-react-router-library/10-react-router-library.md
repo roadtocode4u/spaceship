@@ -69,6 +69,10 @@ Wait, wait wait! We haven't actually implemented any routing yet. Let's do that 
 
 ## Navigating Between Routes
 
+:::danger
+Donot use `<a>` in react because default behavior of an `<a>` tag is to load the entire page again when you click on it. This interrupts how React apps usually work because React's react-router manages navigation without reloading the page.
+:::
+
 To navigate between routes in your application, you can use the `Link` component provided by `react-router-dom`. Here's an example of how to create a navigation bar with links to different routes:
 
 ```jsx title="src/components/Navbar/Navbar.js" showLineNumbers

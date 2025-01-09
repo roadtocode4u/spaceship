@@ -28,7 +28,7 @@ git config --list
 
 <img src="/github/git.webp" width="500px" />
 
-### 3. Always make sure you have saved all the changes then make `git pull`.
+### 3. Always make sure you have `committed` all the changes then make `git pull`.
 
 <img src="/github/gitpull.jpeg" width="500px" />
 

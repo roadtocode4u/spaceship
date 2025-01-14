@@ -69,7 +69,11 @@ Wait, wait wait! We haven't actually implemented any routing yet. Let's do that 
 
 ## Navigating Between Routes
 
-To navigate between routes in your application, you can use the `Link` component provided by `react-router-dom`. Here's an example of how to create a navigation bar with links to different routes:
+:::info
+Avoid using the `<a>` tag in React because its default behavior reloads the entire page when clicked. Instead, use the `Link` component, which allows navigation without reloading the page, providing a smoother user experience.
+:::
+
+The `Link` component is provided by `react-router-dom`. Here's an example of how to create a navigation bar with links to different routes:
 
 ```jsx title="src/components/Navbar/Navbar.js" showLineNumbers
 import { Link } from "react-router-dom";

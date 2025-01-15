@@ -87,6 +87,8 @@ You have successfully completed all the steps to create your account. 🎊
 
 We are excited to have you on board! Feel free to explore and enjoy the features we offer.
 
+![Exciting Animation](tenor.gif)
+
 ### Tip
 
 AWS offers free tier services. Monitor your usage to avoid unexpected charges.

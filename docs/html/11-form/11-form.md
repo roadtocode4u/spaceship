@@ -149,6 +149,53 @@ The `type="password"` attribute creates a password input field where entered cha
 If we do not enter the proper email address then it will display error like this
 :::
 
+## Button
+
+- There are two type of button <br />
+
+1. **Submit button :-** It is used to submit form data.
+2. **Button :-** It is used to trigger action.
+
+** Code :**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forms</title>
+  </head>
+  <body>
+    <form>
+      <input type="submit" value="Register Now" />
+    </form>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/html/11/output-5.png" alt="output-5" width="600px"/>
+
+** Code :**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forms</title>
+  </head>
+  <body>
+    <form>
+      <input type="Button" value="click me" />
+    </form>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/html/11/output-26.png" alt="output-5" width="600px"/>
+
 **Code :**
 
 ```html showLineNumbers=true
@@ -183,33 +230,6 @@ If we do not enter the proper email address then it will display error like this
 **Output :**
 
 <img src="/html/11/output-7.png" alt="output-7" width="600px"/>
-
-## Button
-
-- There are two type of button <br />
-
-1. **Submit button :-** It is used to submit form data.
-2. **Button :-** It is used to trigger action.
-
-**Code :**
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Forms</title>
-  </head>
-  <body>
-    <form>
-      <input type="submit" value="Register Now" />
-    </form>
-  </body>
-</html>
-```
-
-**Output :**
-
-<img src="/html/11/output-5.png" alt="output-5" width="600px"/>
 
 ### required
 

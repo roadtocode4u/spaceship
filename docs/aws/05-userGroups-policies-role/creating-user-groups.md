@@ -3,51 +3,49 @@
 The User group is a collection of IAM users. It let you to assign permissions for multiple users, which can make it easier to manage the permissions for those users. So, the users that require the same permissions can be grouped together.
 A user group can contain many users, and these users can also belong to multiple user groups. Changes made to a group are reflected to all users within that group.
 
-<img src="./user-groups-img.jpg" alt="user groups image" height="300" />
+![alt text](./user-groups-img.png)
+
 <br/><br/>
 
 **Let's learn how to create IAM user groups and how to add users to groups.**
 
-**Step 1:-**
+### Step 1: Go to the AWS Website
 
 - Open your favorite browser and navigate to AWS Login Page
-
-<img src="./step-1-img-1.png"  height="550" />
 
 - Then enter in your password and click submit. You have now successfully signed in to the AWS Management Console.
   <br/>
 
-**Step 2:-**
+### Step 2: Search for IAM
+
 In the search bar type IAM and click on IAM(Manage access to AWS resources) to navigate to IAM Dashboard.
 
-<img src="./step-2-img-1.jpg"  height="350" />
-<br/><br/>
+![alt text](./step-2-img-1.png)
+<br/>
 
-**Step 3:-**
+### Step 3: Start creating user groups
+
 On the left side of the page, you should see an option called **Users groups.**
 
-<img src="./step-3-img-1.jpg"  height="350" />
+![alt text](./step-3-img-1.png)
 
 - Click on that option, and you will be taken to the Users groups Page
   <br/>
 
-**Step 4:-**
-Click on **Add user** button to create a user
+### Step 4: Navigating
 
-<img src="./step-4-img-1.png"  height="350" />
-<br/><br/>
+Click on **create group** button to create a user
 
-**Step 5:-**
+![alt text](./step-4-img-1.png)
+<br/>
+
+### Step 5: Providing name and permissions
 
 - Provide a Group name
 - Select the Users who needed to be a part of the group.
 - Provide any permissions from existing policies
 
-<img src="./step-5-img-1.png"  height="350" />
-<br/><br/>
-
-<img src="./step-5-img-2.png"  height="350" />
-<br/><br/>
+![alt text](./step-5-img-1.png)
 
 - Scroll down and click on **Create group** button.
 
@@ -87,20 +85,17 @@ There are three main types of policies in **AWS:**
 
 - We’ll start from the AWS console, search up **IAM** and then select Policies. After that we’ll select **Create Policy.**
 
-<img src="./create-policy-1.png"  height="350" />
-<br/><br/>
+![alt text](./create-policy-1.png)
 
 - There are two ways to create policies in the console.
 - policies are essentially **JSON** documents, so we can just write it up.
 - Optionally we can use the **console’s** excellent policy maker:
 
-<img src="./create-policy-2.png"  height="350" />
-<br/><br/>
+![alt text](./create-policy-2.png)
 
 - After this step, we can add tags to make it easier to find our policy, and give it a name.
 
-<img src="./create-policy-3.png"  height="300" />
-<br/><br/>
+![alt text](./create-policy-3.png)
 
 - So we have our policy. Now we just need to attach it to an entity
   How do we do it?
@@ -108,10 +103,7 @@ There are three main types of policies in **AWS:**
 
 - Click on create policy.
 
-<img src="./create-policy-4.png"  height="350" />
-<br/>
-
-## and here we done 🥳
+## and here we done. 🥳
 
 ## Examples of IAM Policies
 
@@ -119,19 +111,19 @@ Here are some examples of simple IAM policies for common use cases:
 
 ### Allow read-only access to an S3 bucket
 
-<img src="./iam-role-example-img-1.png"  height="350" />
+![alt text](./iam-role-example-img-1.png)
 
 This policy allows a user to read objects from the `example-bucket` S3 bucket and list the contents of the bucket, but does not allow them to upload or modify objects.
 
 ### Allow read-only access to an RDS instance
 
-<img src="./iam-role-example-img-2.png"  height="350" />
+![alt text](./iam-role-example-img-2.png)
 
 This policy allows a user to view information about the mysql-db RDS instance and download log files, but does not allow them to perform any modifications.
 
 ### Allow full access to an EC2 instance
 
-<img src="./iam-role-example-img-3.png"  height="350" />
+![alt text](./iam-role-example-img-3.png)
 
 This policy allows a user to perform any action on any EC2 instance in the account.
 <br/><br/>
@@ -154,7 +146,7 @@ This way, you don't need to manage access keys for the Lambda function, and you 
 
 ### Main Elements of an IAM Role
 
-<img src="./iam-role-img-1.png"  height="350" />
+![alt text](./iam-role-img-1.png)
 
 ### Understanding AWS IAM Role Assumption
 

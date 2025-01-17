@@ -1,38 +1,36 @@
 # How to create ` IAM User`?
 
-## Step 1: Sign In to AWS Management Console
+### Step 1: Sign In to AWS Management Console
 
-<img src="./img1.png" width="600px"/>
+### Step 2: Search `IAM`
 
-## Step 2: Search `IAM`
+![alt text](img2.png)
 
-<img src="./img2.png" width="600px"/>
+### Step 3: Click on `users`
 
-## Step 3: Click on `users`
+![,p](img3.png)
 
-<img src="./img3.png" width="600px"/>
+### Step 4: Click on `create users`
 
-## Step 4: Click on `create users`
+![,p](img4.png)
 
-<img src="./img4.png" width="600px"/>
-
-## Step 5: Specify User Details
+### Step 5: Specify User Details
 
 1.Enter a user name
 
 2.Select i want to create IAM user
 
 3.Set Password
-<img src="./img5.png" width="600px"/>
+![,p](img5.png)
 
-## Step 6: Attach policies to user and click next buttonC
+### Step 6: Attach policies to user and click next button
 
-<img src="./img6.png" width="600px"/>
+![,p](img6.png)
 
-## Step 7: Review the details of the user and permissions.
+### Step 7: Review the details of the user and permissions.
 
-<img src="./img7.png" width="600px"/>
+![,p](img7.png)
 
-## Step 8: Save IAM Credentials.
+### Step 8: Save IAM Credentials.
 
-<img src="./img8.png" width="600px"/>
+![,p](img8.png)

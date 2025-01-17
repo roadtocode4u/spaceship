@@ -11,7 +11,10 @@ hide_table_of_contents: true
 ### Step:1. Login to `aws`
 
 - Open the browser and search https://aws.amazon.com/
-- Login with `root user`
+  - sign in to the console
+  - Next enter your email.
+  - Now fill the captcha if you are not able to see the captcha then click on speaker icon and then fill.
+  - Next enter your password
 
 ### Step:2. Finally you are on your dashboard
 

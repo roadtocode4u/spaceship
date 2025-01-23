@@ -103,6 +103,37 @@ The anchor tag `<a>` is used **to create hyperlinks** in HTML, allowing users to
 
 <img src="/html/07/output-4.png" alt="output-4" width="600px"/>
 
+### Opening Links in New Tab
+
+Some times we want to open the link in a new tab. We can do this by using the target attribute.
+We can use the target attribute with the value `_blank` to open the link in a new tab.
+
+**Syntax**
+
+```html
+<a href="url" target="_blank"> Visit RTC </a>
+```
+
+**Code**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anchor Tag</title>
+    <head>
+  <body>
+    <a href="https://www.roadtocode.org/" target="_blank">
+      Click here to visit Road To Code
+    </a>
+  </body>
+</html>
+```
+
+:::tip
+Use this when we want to keep the current page open and open the link in a new tab. So that the user can easily navigate back to the current page.
+:::
+
 **Using Anchor Tag Open Mail Address :**
 
 **Syntax**

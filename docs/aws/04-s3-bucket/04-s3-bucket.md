@@ -20,19 +20,6 @@ hide_table_of_contents: true
 
 - **Highly scalable**: S3 can store virtually unlimited amounts of data, making it ideal for growing applications or projects.
 
-- **Automatic Scaling**: S3 adjusts to your storage needs without requiring manual intervention.
-
-### Cost-Effectiveness:
-
-- **Cost-Effectiveness**: Pay-As-You-Go: Pay only for what you use, including storage, requests, and data transfer.
-
-- `Standard` for frequently accessed data.
-
-### Easy Integration:
-
-- Seamless Integration with AWS Services.
-- **SDks and APIs**: Developers can interact with S3 in many programming languages via AWS SDKs or REST APIs.
-
 ### How to create `s3 bucket`:
 
 - firstly login into aws.

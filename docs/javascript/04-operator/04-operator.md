@@ -15,7 +15,7 @@ Operands are values or variables on which operation is performed.
 **Some common types of operators include:**
 
 1. Arithmetic operators (+, -, \*, /, % )
-2. Assignment operators (=, +=, -=, \*=, /=)
+2. Assignment operators (=, +=, -=, \*=, /=, %=)
 3. Increment & Decrement operators(var++, ++var), (var--, --var)
 4. Comparison operators (<, >, <=, >=, ==, ===, != )
 5. Logical operators (&& (logical AND), || (logical OR), ! (logical NOT))

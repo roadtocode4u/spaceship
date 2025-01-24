@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
 Have you ever worked on a project and wished you could magically track every change you made? Or wanted to collaborate with teammates without the chaos of emailing files back and forth? That's where GitHub comes in!
 
-![vcs-image](https://bucket.roadtocode.org/ADB-JAN-25/ADB-Assignment-4/itspinki05@gmail.com/1737696166391-Designer.png)
+<img src="vcs.png" width="400px">
 
 ### Understanding Version Control System First
 

@@ -1,10 +1,16 @@
+---
+title: Version Control System
+description: Version Control System
+hide_table_of_contents: true
+---
+
 ## Hello Learners,
 
 Have you ever worked on a project and wished you could magically track every change you made? Or wanted to collaborate with teammates without the chaos of emailing files back and forth? That's where GitHub comes in!
 
-<img scr="./vcs.png" alt="vcs"  height="500px"/>
+![vcs-image](https://bucket.roadtocode.org/ADB-JAN-25/ADB-Assignment-4/itspinki05@gmail.com/1737696166391-Designer.png)
 
-### Understanding Version Control First
+### Understanding Version Control System First
 
 Version Control System (VCS) is like a time machine for your code. Instead of creating multiple copies of your files (project_v1, project_v2, project_final), VCS keeps track of all changes automatically. Think of it as an unlimited "undo" button for your entire project.
 

@@ -12,28 +12,14 @@ Git is a **version control system (VCS)** that helps developers track changes in
 
 > **Git is a software tool used for tracking changes in code.**
 
-### Key Features of Git
-
-- **Commit:** A commit is like taking a snapshot of your code at a particular moment, capturing the changes you've made.
-- **Branch:** Think of your code as a tree. A branch allows you to create a separate working area to make changes without affecting the main codebase.
-- **Merge:** Once your changes are complete and reviewed, merging combines them back into the main code.
-- **Track Changes:** Git helps you track what changes were made, who made them, and when
-
 ## What is GitHub?
 
 GitHub is a **web-based platform** that provides a centralized space to store, manage, and collaborate on code repositories. It offers features to review, contribute, and enhance projects in various programming languages.
 
 > **GitHub is an online platform for hosting Git repositories and facilitating teamwork.**
+> <br/><br/>
 
-### Key Features of GitHub
-
-- **Clone Repositories:** Download code from GitHub to your local machine using Git.
-- **Commit Changes:** Make modifications and save snapshots using Git.
-- **Push to GitHub:** Share your changes with others by uploading them to your repository.
-- **Collaboration:** GitHub enables team members to discuss issues, suggest improvements, and review code.
-  <br/><br/>
-
-  ## How to setup Git:
+## How to setup Git:
 
 - **1-Step** visit `https://git-scm.com/downloads`
 
@@ -95,21 +81,51 @@ GitHub`
 
 - **8-Step** Now you are ready to use Github.
 
-  - Now Click on your profile picture in the top right-top corner.
+- Now Click on your profile picture in the top right-top corner.
 
   <img src="/github/02-git-and-github-introduction/8.png"  width="800px"/>
+  <br/><br/>
 
-  ## How Git and GitHub Work Together
+# How to Connect Git Software and GitHub Account
+
+To work with Git and GitHub together, you need to connect your local Git software with your GitHub account. This allows you to easily manage your code, collaborate with others, and keep your projects organized.
+
+## Prerequisites
+
+Before starting, ensure you have:
+
+- **Git installed** on your computer. You can download it from [git-scm.com](https://git-scm.com/downloads).
+- A **GitHub account**. If you don't have one, sign up at [github.com](https://github.com).
+
+## Configure Git with Your GitHub Account
+
+After installing Git, you need to link it to your GitHub account by following these steps:
+
+1. **Open the terminal** (Git Bash)
+2. **Set your GitHub username** by running the command:
+
+   ```bash
+   git config --global user.name "YourGitHubUsername"
+   ```
+
+   This helps Git track who made changes in your projects.
+
+3. **Set your email address**, which should match your GitHub email:
+   ```bash
+   git config --global user.email "your-email@example.com"
+   ```
+   The email is used to identify you as the author of your changes.
+4. Verify your configuration to check if your username and email were added correctly:
+   ```bash
+   git config --global --list
+   ```
+   This command will display all the configured settings, including your username and email. If the correct values are shown, your Git is successfully configured.
+
+**Once these steps are completed, your Git software is successfully connected to your GitHub account. Now you can start tracking your projects, creating repositories, and collaborating with others.**
+
+## How Git and GitHub Work Together
 
 **Git helps you manage and track changes locally, while GitHub acts as a remote storage and collaboration hub. Together, they provide an efficient workflow for software development.**
-
-### Basic Workflow:
-
-1. **Clone:** Get a copy of the project from GitHub.
-2. **Edit:** Make your changes and save them with Git.
-3. **Commit:** Record the changes you made.
-4. **Push:** Upload your changes back to GitHub for others to see.
-5. **Collaborate:** Work with teammates to improve the project.
 
 ## Differences Between Git and GitHub
 

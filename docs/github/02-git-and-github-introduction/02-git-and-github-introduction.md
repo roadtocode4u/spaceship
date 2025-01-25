@@ -17,7 +17,6 @@ Git is a **version control system (VCS)** that helps developers track changes in
 GitHub is a **web-based platform** that provides a centralized space to store, manage, and collaborate on code repositories. It offers features to review, contribute, and enhance projects in various programming languages.
 
 > **GitHub is an online platform for hosting Git repositories and facilitating teamwork.**
-> <br/><br/>
 
 ## How to setup Git:
 
@@ -35,7 +34,7 @@ GitHub is a **web-based platform** that provides a centralized space to store, m
 
   - Install it into your system.
 
-  ## How to create Github account
+## How to create Github account
 
 - **1-Step** visit `https://github.com/`
 

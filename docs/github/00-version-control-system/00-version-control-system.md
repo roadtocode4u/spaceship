@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
 Have you ever worked on a project and wished you could magically track every change you made? Or wanted to collaborate with teammates without the chaos of emailing files back and forth? That's where GitHub comes in!
 
-<img src="vcs.png" width="400px">
+<img src="vcs.png" height="200px"/>
 
 ### Understanding Version Control System First
 

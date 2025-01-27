@@ -87,6 +87,8 @@ git push -u origin main
 
 #### Next you will see these interface in your browser:
 
-- Click on `Authorize git ecosystem ` button, after that your code will be successfully pushed to the github .
+- Click on `Authorize git ecosystem ` button.
 
 - <img src="/github/05/12.png"  width="800px" />
+
+### Congratulation you have successfully Pushed your code to your github repository.

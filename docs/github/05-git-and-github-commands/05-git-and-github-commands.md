@@ -1,164 +1,92 @@
 ---
 title: Git and Github Commands
-description: Git and Github Commands
+description: Git and Github Commands and Connecting Git and GitHub.
 hide_table_of_contents: true
 ---
 
-## Git Commands
+### How to create git repository and connect git repository to github repository:
 
-1. ### git init
+**1-Step**: Login to your github account.
 
-The `git init` command is used to **initialize a new Git repository** in your project folder. This command is used once during the initial setup of a new repository.
+**2-Step**: Click on your profile picture.
 
-2. ### git status
+- <img src="/github/05/01.png"  width="800px"/>
 
-The `git status` command **displays the status** of your working project. It shows which files have been modified or staged and which files are untracked.
+**2-Step**: Click on `Your repositories` section, After you will see your repositories. Click on `New repository` button or click on `+` sign.
 
-3.  ### git add
+- <img src="/github/05/02.png"  width="800px"/>
 
-The `git add <filename>` command **adds new or changed files** in your working project to the Git staging area. You can add specific files by providing their filenames, or you can use `git add .` to add all changed files.
+**3-Step**: Give a name to your repository, Provide a description (optional), want to keep your repository private or public select the option and click on `Create repository` button.
 
-4. ### git commit
+- <img src="/github/05/03.png"  width="800px"/>
 
-The `git commit` command is used to **record the changes** in the repository. Each commit includes a commit message that describes the changes made in that commit.
+**3-Step**: After you will see your repository page.
 
-**Syntax :**
+- <img src="/github/05/04.png"  width="800px"/>
+
+### Use the following command to connect local repo to github repository.
+
+**1-Step**: Go to your local folder and open that folder in `vs-code`.
+
+**2-Step**: Open terminal and use the following command to connect local repo to github repository.
+
+- **git init** : Initialize a new `Git repository` in your project folder. (It is used to convert your folder to a Git repository. This command is used once during the initial setup of a new repository. )
+
+- <img src="/github/05/05.png"  width="800px" />
+
+- **git status**: The `git status` command **displays the status** of your working project. It shows which files have been modified or staged and which files are untracked.
+
+- <img src="/github/05/06.png"  width="800px" />
+
+- ** git add **: Add new changes or changed file in git staging (keep track of changes) area, (if you want to see changes in staging area then use `git status` command it will show you the changes in green color).
+
+- <img src="/github/05/07.png"  width="800px" />
+
+- **git commit**: The `git commit -m "commit message"` command is used to **record the changes** in the repository. Each commit includes a commit message `message should be in double or single quotes` that describes the changes made in that commit.
+
+- <img src="/github/05/08.png"  width="800px" />
+
+- **git push**: The `git push` command is used to **upload local branch commits** to GitHub. It pushes your local changes to the remote repository on GitHub.(Before you push your code to the github repository you have to connect your local repository to github repository, if you push your code without connecting your local repository to github repository then it will not push your code to github repository it will show you warning).
+
+- <img src="/github/05/09.png"  width="800px" />
+
+- ** Go back to `Github repository` that you have created in **step 1\*\*, you will see your repository and two section of the instruction
+
+  - ...or create a new repository on the command line.
+  - or push an existing repository from the command line.
+
+- You have to copy each and every command from the 2nd section of the instruction.
+
+- <img src="/github/05/10.png"  width="800px" />
+
+- **git remote add origin "your repository link"**: The `git remote add origin "your repository link"` command is used to **add a remote repository** to your local repository.
 
 ```html
-git commit -m "commit message"
+git remote add origin "your repository link"
 ```
 
-5. ### git push
-
-The `git push` command is used to **upload local branch commits** to GitHub. It pushes your local changes to the remote repository on GitHub.
-
-To push your code to GitHub using Git commands, follow these steps:
-
-## Pushing Existing Code to a Git Repository
-
-1. ### Initialize a Git repository:
-
-If you haven't already done so, navigate to the root directory of your project using a command-line interface, and run the following command to initialize a Git repository:
+- **git branch -M main**: The `git branch -M main` command is used to **rename the default branch from master to main**.
 
 ```html
-git init
+git branch -M main
 ```
 
-2. ### Check git status :
-
-   This command is used to check the status of git repository  like if any nodification done then it will track it.
+- **git push -u origin main**: The `git push -u origin main` command is used to **push the local commits to the remote repository**.
 
 ```html
-git status
+git push -u origin main
 ```
 
-3. ### Add a changes in file 
-   By using given commands you can add changes in github repository , changes can be add by two methods :
-   1. `git add .` :- When more than one file is changed , this command is used.
-   2. `git add <file name>` :- When only one file change , this command is used.
+!
 
-```html
-git add .
-```
+#### If you are these all for the first time then you will see a pop up window like this:
 
-```html
-git add <file name>
-```
+- It ask you to sign in to your github account, click on `signin with your browser` button
 
-4. ### Commit changes 
-   After changing or modifying any file we have to add code , after modifying code we have to add commit for showing what changes in repository
+  - <img src="/github/05/11.png"  width="800px" />
 
-```html
-git commit -m "add a message "
-```
+#### Next you will see these interface in your browser:
 
-5. ### Push the changes:
-   By using this command code can be push in github repository after creating repository
+- Click on `Authorize git ecosystem ` button, after that your code will be successfully pushed to the github .
 
-```html
-git push
-```
-After this error will come it will then we have to add github repositary where we have to add the code
-
-6. ### Create a repositary :
-   Create repository  if dont know how to create repository then [click here](http://localhost:3000/docs/github/how-to-create-repository/)
-   to watch steps for creating repository
-
-7. ### Copy command lines 
-
-![link img](./s1.png)
-
-
-8. ### Use the following command to connect local repo to github repo
-
-```html
-git remote add origin <repository url>
-```
-9. ### Use follwing command to push code
-
-```html
-git push
-```
-10. ### Copy the command from terminal
-
-```html
-git push --set-upstream origin master
-```
-11. ### After adding this command on terminal your code will be pushed on github Repository
-
- Code added in Repositary  successfully.
-
-12. ### After adding file modified changes can be added by using:
-
-```html
-git add .
-git commit -m "changes message"
-```
-13. ### After adding and commiting changes push the changes
-
-```html
-git push
-``` 
-Then changes will be added successfully.
-
-
-
-## Pushing New Code Directly to a Git Repository
-
-1. ### Clone the repository:
-   Start by cloning the existing repository to your local machine. Use the following command to clone the repository:
-
-```html
-git clone <repository_url>
-```
-
-Replace <repository_url> with the URL of the repository you want to clone.
-
-2. ### Create or modify files:
-
-   Create new code files or modify existing ones using your preferred code editor or IDE.
-
-3. ### Add files to the staging area:
-   Use the git add command to add the new or modified files to the staging area:
-
-```html
-git add .
-```
-
-4. ### Commit the changes:
-   Commit the changes by running the following command:
-
-```html
-git commit -m "Commit message"
-```
-
-Replace **Commit message** with a descriptive message summarizing the changes made.
-
-5. ### Push the code:
-   Finally, push the new code to the remote repository using the following command:
-
-```html
-git push
-```
-
-Great job! You have now successfully pushed your new code directly to the Git repository.
+- <img src="/github/05/12.png"  width="800px" />

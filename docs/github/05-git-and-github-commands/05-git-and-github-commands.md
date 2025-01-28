@@ -4,7 +4,7 @@ description: Git and Github Commands and Connecting Git and GitHub.
 hide_table_of_contents: true
 ---
 
-### How to create git repository and connect git repository to github repository:
+### How to create git repository and connect local repository to github repository:
 
 **1-Step**: Login to your github account.
 

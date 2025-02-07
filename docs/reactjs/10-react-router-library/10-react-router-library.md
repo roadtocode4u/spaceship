@@ -1,66 +1,56 @@
 ---
-title: Routing with react-router-dom
-description: "Routing with react-router-dom"
+title: Routing with react-router
+description: "Routing with react-router"
 hide_table_of_contents: true
 ---
 
-## Introduction to react-router-dom
+## Introduction to react-router
 
-In the previous chapter, we implemented basic routing in React using `window.location.pathname`. In this chapter, we'll explore how to use the `react-router-dom` library for more advanced routing capabilities.
+In the previous chapter, we implemented basic routing in React using `window.location.pathname`. In this chapter, we'll explore how to use the `react-router` library for more advanced routing capabilities.
 
-## Installing react-router-dom
+## Installing react-router
 
-To get started with `react-router-dom`, you'll need to install it using npm:
+To get started with `react-router`, you'll need to install it using npm:
 
 ```bash
-npm install react-router-dom
+npm install react-router
 ```
 
 ## Setting Up Routing
 
-The react-router-dom library provides a `createBrowserRouter`, `RouterProvider` components that enables client-side routing. Here's how you can set it up:
+The react-router library provides a `BrowserRouter`, `Routes` and `Route` components that enables client-side routing. Here's how you can set it up:
 
 ### 1. Import Required Dependencies
 
-In your src/index.js file, import the necessary dependencies:
+In your src/main.jsx file, import the necessary dependencies:
 
-```jsx title="src/index.js" showLineNumbers
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-import About from "./views/About/About";
-import Contact from "./views/Contact/Contact";
-import Home from "./views/Home/Home";
+```jsx title="src/main.jsx" showLineNumbers
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, Route, Routes } from "react-router";
+import "./index.css";
+import Home from "./views/Home";
+import Contact from "./views/Contact";
+import About from "./views/About";
 ```
 
-### 2. Create a Router
+### 2. Setting up `BrowserRouter` component
 
-Next, create a router instance using the `createBrowserRouter` function and define the routes for your application:
+- **BrowserRouter**: The `BrowserRouter` component is used to wrap your application and enable client-side routing.
 
-```jsx title="src/index.js" showLineNumbersx
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
-]);
-```
+- **Routes**: The `Routes` component is used to define the routes for your application.
 
-### 3. Render the Router Provider
+- **Route**: The `Route` component is used to specify a route and its corresponding component.
 
-Finally, render the `RouterProvider` with your router instance to enable routing in your application:
-
-```jsx title="src/index.js" showLineNumbers
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={router} />);
+```jsx title="src/main.jsx"
+createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/about" element={<About />} />
+    </Routes>
+  </BrowserRouter>
+);
 ```
 
 Hurray! Now your React application is ready to handle client-side routing.
@@ -75,8 +65,8 @@ Avoid using the `<a>` tag in React because its default behavior reloads the enti
 
 The `Link` component is provided by `react-router-dom`. Here's an example of how to create a navigation bar with links to different routes:
 
-```jsx title="src/components/Navbar/Navbar.js" showLineNumbers
-import { Link } from "react-router-dom";
+```jsx title="src/components/Navbar/Navbar.jsx" showLineNumbers
+import { Link } from "react-router";
 
 function Navbar() {
   return (
@@ -99,12 +89,12 @@ export default Navbar;
 
 - If you use `a` tags, the page will reload every time you click on a link.
 
-### Hurray! You've successfully implemented routing in your React application using `react-router-dom` 🎉
+### Hurray! You've successfully implemented routing in your React application using `react-router` 🎉
 
 <img src="https://media.tenor.com/BGsAhrY5FMMAAAAd/great-job-yes.gif" alt="react-router-dom" width="30%" />
 
 <br /> <br />
 
 :::caution
-`react-router-dom` is a npm package and syntax might change over time. Make sure to check the [official documentation](https://reactrouter.com/web/guides/quick-start) for the latest updates.
+`react-router-dom` is a npm package and syntax might change over time. Make sure to check the [official documentation](https://reactrouter.com/home) for the latest updates.
 :::

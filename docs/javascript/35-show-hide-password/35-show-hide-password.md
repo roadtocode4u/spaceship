@@ -4,8 +4,6 @@ description: "Show & Hide Password funcnality using javascript"
 hide_table_of_contents: true
 ---
 
-# Show and Hide Password Functionality in JavaScript
-
 ## Introduction
 
 When entering a password on a website, the characters are hidden for security. However, users may want to see what they have typed to ensure it is correct. We can create a show and hide password feature using JavaScript, HTML, and CSS.
@@ -26,14 +24,6 @@ When entering a password on a website, the characters are hidden for security. H
 4. Update the eye icon image when toggling the password visibility.
 5. Style the input field and container using CSS for a good design.
 
-## Key JavaScript Functionality
-
-- Get the password input element using `document.getElementById()`.
-- Get the eye icon element.
-- Use an `if` condition to check if the input type is "password" or "text".
-- Change the input type accordingly.
-- Change the eye icon to match the state (show or hide).
-
 ## Code
 
 ```html
@@ -45,38 +35,33 @@ When entering a password on a website, the characters are hidden for security. H
     <title>Show & Hide Password</title>
     <style>
       body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
         margin: 0;
-        background: linear-gradient(to right, #74ebd5, #9face6);
+        padding: 0;
         font-family: Arial, sans-serif;
       }
 
       .main-container {
-        background: rgba(255, 255, 255, 0.2);
-        padding: 30px;
-        border-radius: 15px;
-        border: 2px solid rgba(255, 255, 255, 0.3);
+        background-color: #6b8cce;
+        width: 300px;
+        padding: 20px;
+        margin: 100px auto;
+        border-radius: 5px;
+        border: 2px solid #8aa7db;
       }
 
       .input-container {
+        background-color: whitesmoke;
+        padding: 10px;
+        border-radius: 5px;
         display: flex;
-        align-items: center;
-        background: rgba(255, 255, 255, 0.3);
-        padding: 10px 15px;
-        border-radius: 10px;
-        margin: 10px 0;
       }
 
       .user-input {
         border: none;
-        background: none;
-        font-size: 16px;
-        padding: 8px;
         width: 250px;
-        color: #333;
+        font-size: 14px;
+        background-color: #eef2f7;
+        color: #2d4063;
       }
 
       .user-input:focus {
@@ -84,10 +69,9 @@ When entering a password on a website, the characters are hidden for security. H
       }
 
       .view-icon {
-        height: 20px;
         width: 20px;
+        height: 20px;
         cursor: pointer;
-        margin-left: 10px;
       }
     </style>
   </head>
@@ -130,11 +114,11 @@ When entering a password on a website, the characters are hidden for security. H
 
 ## Output
 
-#### output- 1 (By default)
+output- 1 (By default)
 
 <img src="/javascript/27/output-1.png" alt="screenshot1" width="600px"/>
 
-#### output- 2 (When we click on eye icon)
+output- 2 (When we click on eye icon)
 
 <img src="/javascript/27/output-2.png" alt="screenshot1" width="600px"/>
 

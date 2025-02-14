@@ -1,6 +1,6 @@
 ---
 title: Show & Hide Password
-description: "Show & Hide Password funcnality using javascript"
+description: "Show & Hide Password Functionality Using Javascript"
 hide_table_of_contents: true
 ---
 

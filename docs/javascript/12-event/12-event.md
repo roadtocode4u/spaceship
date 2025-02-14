@@ -9,20 +9,25 @@ Events are actions or occurrences that happen in the browser, such as user inter
 **Events in javascript**
 
 ### Click Events
+
 - `onclick()`
 - `ondblclick()`
 
 ### Key Events
+
 - `onkeypress()`
 - `onkeydown()`
 - `onkeyup()`
 
 ### Mouse Events
+
 - `onmouseover()`
 - `onmousemove()`
 - `onmouseout()`
+- `onmouseup()`
 
 ### General Events
+
 - `onload()`
 - `onchange()`
 
@@ -40,9 +45,9 @@ The `onclick` event in Javascript occurs when the user `clicks` on an element.
   </head>
 
   <body>
-         <button onclick="console.log('Button1')">Button one</button>
+    <button onclick="console.log('Button1')">Button one</button>
 
-         <button onclick="console.log('Button2')">Button Two</button>
+    <button onclick="console.log('Button2')">Button Two</button>
   </body>
 </html>
 ```
@@ -53,7 +58,7 @@ The `onclick` event in Javascript occurs when the user `clicks` on an element.
 
 **Example explanation :**
 
-In the above example, we have created  two button `Button One` and `Button two`. When clicked a button one triggers a JavaScript `console.log` function with the message `Button1`. Similarly, when clicked a button two triggers a Javascript `console` function with the message `Button2`. This is a simple way to provide feedback to the user when they interact with the button.
+In the above example, we have created two button `Button One` and `Button two`. When clicked a button one triggers a JavaScript `console.log` function with the message `Button1`. Similarly, when clicked a button two triggers a Javascript `console` function with the message `Button2`. This is a simple way to provide feedback to the user when they interact with the button.
 
 ## onchange
 
@@ -69,11 +74,11 @@ The `onchange` event in JavaScript is triggered when the value of an element or 
   </head>
 
   <body>
-     <input type="text" onchange="change()" />
+    <input type="text" onchange="change()" />
     <script>
-       function change(){
-        console.log('change')
-       }
+      function change() {
+        console.log("change");
+      }
     </script>
   </body>
 </html>
@@ -88,12 +93,15 @@ The `onchange` event in JavaScript is triggered when the value of an element or 
 In the above example, we create a input box. when user enters the value of input in the input box the `onchange` event trigger.
 
 ## onkeypress
-The `onkeypress` event  is triggered when a user presses a key on the `keyboard`.
+
+The `onkeypress` event is triggered when a user presses a key on the `keyboard`.
 
 ## onkeydown
+
 The `onkeydown` event is activated when a key on the keyboard is pressed `down`.
 
 ## onkeyup
+
 The `keyup` event is triggered when a key on the keyboard is released after being `pressed`.
 
 **For example :**
@@ -102,25 +110,28 @@ The `keyup` event is triggered when a key on the keyboard is released after bein
 <!DOCTYPE html>
 <html>
   <head>
-    <title>onkeypress onkeydown onkeyup </title>
+    <title>onkeypress onkeydown onkeyup</title>
   </head>
 
   <body>
-     <input type="text" onkeypress="keyPress()" 
-     onkeydown="keyDown()"
-     onkeyup="keyUp()"/>
+    <input
+      type="text"
+      onkeypress="keyPress()"
+      onkeydown="keyDown()"
+      onkeyup="keyUp()"
+    />
     <script>
-       function keyPress(){
-        console.log('keyPress()')
-       }
+      function keyPress() {
+        console.log("keyPress()");
+      }
 
-       function keyDown(){
-        console.log('keyDown()')
-       }
+      function keyDown() {
+        console.log("keyDown()");
+      }
 
-       function keyUp(){ 
-        console.log('keyUp()')
-       }
+      function keyUp() {
+        console.log("keyUp()");
+      }
     </script>
   </body>
 </html>
@@ -143,12 +154,12 @@ The `onmouseover` event occurs when the pointer is moved onto an element.
     <title>onmouseover</title>
   </head>
   <body>
-    <img src="pizza.png" onmouseover="imageOver()"/>
+    <img src="pizza.png" onmouseover="imageOver()" />
 
     <script>
-        function imageOver(){
-            console.log("Image Over")
-        }
+      function imageOver() {
+        console.log("Image Over");
+      }
     </script>
   </body>
 </html>
@@ -175,12 +186,12 @@ The `onmouseout`event in JavaScript is triggered when the mouse pointer moves ou
     <title>onmouseout</title>
   </head>
   <body>
-    <img src="pizza.png" onmouseout="imageOut()"/>
+    <img src="pizza.png" onmouseout="imageOut()" />
 
     <script>
-        function imageOut(){
-            console.log("Image Out")
-        }
+      function imageOut() {
+        console.log("Image Out");
+      }
     </script>
   </body>
 </html>
@@ -208,16 +219,17 @@ The `onmousemove` event is triggered when the mouse pointer moves over an HTML e
   </head>
 
   <body>
-   <img src="/pizza.png" onmousemove="imageOver()"/>
-   <script>
-    function imageOver(){
+    <img src="/pizza.png" onmousemove="imageOver()" />
+    <script>
+      function imageOver() {
         const number = Math.random();
-        console.log(`Image Over: ${number}`); 
-    }
-   </script>
+        console.log(`Image Over: ${number}`);
+      }
+    </script>
   </body>
 </html>
 ```
+
 **Output :**
 
 <img src="/javascript/12/screenshot7.png" alt="screenshot7" width="600px"/>
@@ -225,6 +237,40 @@ The `onmousemove` event is triggered when the mouse pointer moves over an HTML e
 **Example explanation :**
 
 In the above example, when you hover the mouse pointer over this image, it triggers the `onmousemove` event. The `imageOver()` function, a random number between `0 and 1` is generated using `Math.random()`, and a message is logged to the console.
+
+## onmouseup
+
+The `onmouseup` event triggers when the mouse button is released after clicking on the image.
+When the user clicks and releases the mouse over the image, the function imageClickRelease() logs a random number to the console.
+
+**For example :**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>onmouseup</title>
+  </head>
+
+  <body>
+    <img src="/pizza.png" onmouseup="imageClickRelease()" />
+    <script>
+      function imageClickRelease() {
+        const number = Math.random();
+        console.log(`Mouse Released: ${number}`);
+      }
+    </script>
+  </body>
+</html>
+```
+
+**Output :**
+
+<img src="/javascript/12/screenshot11.png" alt="screenshot7" width="600px"/>
+
+**Example explanation :**
+
+In the following example, when you release the mouse button over the image, it triggers the `onmouseup` event. The `imageClickRelease()` function generates a random number between 0 and 1 using Math.random(), and a message is logged to the console.
 
 ## ondblclick
 
@@ -240,12 +286,12 @@ The `ondblclick` event is triggered when a user double-clicks on an HTML element
   </head>
 
   <body>
-   <img src="/pizza.png" ondblclick="dbl()"/>
-   <script>
-    function dbl(){
-       alert('Awesome'); 
-    }
-   </script>
+    <img src="/pizza.png" ondblclick="dbl()" />
+    <script>
+      function dbl() {
+        alert("Awesome");
+      }
+    </script>
   </body>
 </html>
 ```
@@ -258,38 +304,3 @@ The `ondblclick` event is triggered when a user double-clicks on an HTML element
 
 In the above example, when you load the web page in a browser, the image` "/pizza.png"` is displayed. if you `double-click` on the image, the `ondblclick` event is triggered.
 The `dbl()` function, an alert dialog open with the message `Awesome` is displayed.
-
-
-## onload
-
-When the webpage loads, the `onload` event is triggered.
-
-**For example :**
-
-```html
-<!DOCTYPE html> 
-<html>
-  <head>
-    <title>onload</title>
-  </head>
-  <body onload="load()">
-     <script>
-        function load(){
-            alert("Page Loading Completed...")
-        }
-     </script>
-  </body>
-</html>
-```
-
-**Output :**
-
-<img src="/javascript/12/screenshot6.png" alt="screenshot6" width="600px"/>
-
-
-**Example explanation :**
-
-In the above example, the `load` event is trigger when webpage is load.
-
-
-

@@ -24,7 +24,7 @@ hide_table_of_contents: true
 
 #### 5. Your batch will then show up on your dashboard, click on that.
 
-<img src="/tip-and-tools/14/6.png" alt="screenshot-1" width="600px"/>
+<img src="/tip-and-tools/14/6img.png" alt="screenshot-1" width="600px"/>
 
 #### 6. Accept the terms and conditions.
 

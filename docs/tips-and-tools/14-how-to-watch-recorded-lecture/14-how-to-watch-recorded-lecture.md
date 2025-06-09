@@ -22,17 +22,17 @@ hide_table_of_contents: true
 
 <img src="/tip-and-tools/14/4.jpg" alt="screenshot-1" width="600px"/>
 
-#### 5. Accept the terms and conditions.
-
-<img src="/tip-and-tools/14/5.jpg" alt="screenshot-1" width="600px"/>
-
 #### 5. Your batch will then show up on your dashboard, click on that.
 
-<img src="/tip-and-tools/14/select.jpg" alt="screenshot-1" width="600px"/>
+<img src="/tip-and-tools/14/6img.png" alt="screenshot-1" width="600px"/>
+
+#### 6. Accept the terms and conditions.
+
+<img src="/tip-and-tools/14/5.png" alt="screenshot-1" width="600px"/>
 
 #### 7. You will see at right side lectures and assignment and notes accordingly.
 
-<img src="/tip-and-tools/14/6.png" alt="screenshot-1" width="600px"/>
+<img src="/tip-and-tools/14/9.png" alt="screenshot-1" width="600px"/>
 
 ### Happy Coding 🤖
 

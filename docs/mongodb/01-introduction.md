@@ -240,4 +240,6 @@ Now that you understand what MongoDB is, let's learn about the key differences b
 - **Scalable and fast** - used by major companies
 - **Document = Row**, **Collection = Table**, **Database = Database**
 
-Ready to dive deeper? Let's explore [SQL vs NoSQL](./02-sql-vs-nosql) next! 🚀
+## 🎯 Next Steps
+
+Ready to dive deeper? Let's explore [SQL vs NoSQL](./sql-vs-nosql) next! 🚀

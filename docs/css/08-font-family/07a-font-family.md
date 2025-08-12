@@ -97,16 +97,25 @@ Go to https://fonts.google.com/ else search `Google Fonts` on web.
 
 Visit the Google Fonts website to explore and select the fonts you want to use.
 
-<img src="/css/05/output-15.png" alt="output-15" width="600px"/>
+<img src="/css/05/1.png" alt="output-15" width="600px"/>
 
 **Step 2:**
-Select the font and click on the import and copy the link and CSS rules.
-<img src="/css/05/output-16.png" alt="output-16" width="600px"/>
+Select the font and click on"Get Font".
+<img src="/css/05/2.png" alt="output-15" width="600px"/>
 
 **Step 3:**
-Paste the link into the CSS and use the CSS rule in any division or tag you want to apply the Font to.
+Then click on"Get embed code".
+<img src="/css/05/3.png" alt="output-15" width="600px"/>
 
 **Step 4:**
+You can use Google Fonts in two ways: with a `<link>` tag <b>OR</b> using `@import`.<b>Both Give Same Output📌</b> <br/>
+
+** 🔴By Using link **<br/>
+copy the link and CSS class for variable style.
+
+<img src="/css/05/4.png" alt="output-16" width="600px"/>
+
+Paste the link into the head and use the CSS class for variable style in any division or tag you want to apply the Font to.<br/>
 
 **Example**
 
@@ -114,23 +123,74 @@ Paste the link into the CSS and use the CSS rule in any division or tag you want
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Font Style</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-
     .text {
-      font-family: "Roboto", sans-serif;
+      font-family: "Edu NSW ACT Cursive", cursive;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
     }
   </style>
 
   <body>
-    <h1>Normal Text</h1>
-    <h1 class="text">Font-Family Example</h1>
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque excepturi
+      ipsa iure deserunt ex voluptates. Ratione voluptatum consequuntur nulla
+      fuga corporis atque tenetur dolorem at autem, officiis, magni totam ab.
+    </p>
+  </body>
+</html>
+```
+
+### OR
+
+** 🔴By Using @import.**<br/>
+another common way to use Google Fonts is by importing them directly in CSS instead of adding a `<link>` in HTML..
+copy the url and CSS class for a variable style
+
+<img src="/css/05/5.png" alt="output-16" width="600px"/>
+
+Paste the @import URL inside the `<style>` tag ( or for external CSS, you can directly add the `@import link` in the external CSS file ), use the CSS class for variable style in any division or tag you want to apply the Font to.<br/>
+
+```html showLineNumbers=true
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap");
+    .text {
+      font-family: "Edu NSW ACT Cursive", cursive;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
+    }
+  </style>
+  <body>
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque excepturi
+      ipsa iure deserunt ex voluptates. Ratione voluptatum consequuntur nulla
+      fuga corporis atque tenetur dolorem at autem, officiis, magni totam ab.
+    </p>
   </body>
 </html>
 ```
 
 **Output**
-<img src="/css/05/output-17.png" alt="output-17" width="600px"/>
+<img src="/css/05/6.png" alt="output-17" width="600px"/>

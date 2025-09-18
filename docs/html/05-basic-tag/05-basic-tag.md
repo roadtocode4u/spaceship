@@ -249,21 +249,15 @@ H<sub>2</sub>O
     <title>Tag</title>
   </head>
   <body>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi culpa,
-      eveniet cum est quis atque possimus rerum officia perferendis quidem
-      mollitia ab, nulla animi, praesentium excepturi dolore illo iusto
-      suscipit.
-    </p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi culpa,
+    eveniet cum est quis atque possimus rerum officia perferendis quidem
+    mollitia ab, nulla animi, praesentium excepturi dolore illo iusto suscipit.
 
     <hr />
 
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi culpa,
-      eveniet cum est quis atque possimus rerum officia perferendis quidem
-      mollitia ab, nulla animi, praesentium excepturi dolore illo iusto
-      suscipit.
-    </p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi culpa,
+    eveniet cum est quis atque possimus rerum officia perferendis quidem
+    mollitia ab, nulla animi, praesentium excepturi dolore illo iusto suscipit.
   </body>
 </html>
 ```
@@ -271,41 +265,3 @@ H<sub>2</sub>O
 **Output :**
 
 <img src="/html/05/output-8.png" alt="output-8" width="600px"/>
-
-### Span Tag
-
-```html
-<span> </span>
-```
-
-Span Tag is a text inline selector it is used to select a particular Text. **Span tag does not have any own effect**.
-
-**Code :**
-
-```html showLineNumbers=true
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Tag</title>
-  </head>
-  <body>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi culpa,
-      eveniet cum est quis atque possimus rerum officia perferendis quidem
-      mollitia ab, nulla animi, praesentium excepturi dolore illo iusto
-      suscipit.
-    </p>
-
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi culpa,
-      eveniet cum est quis atque possimus rerum officia perferendis quidem
-      mollitia ab, nulla animi,
-      <span>praesentium excepturi dolore illo iusto suscipit.</span>
-    </p>
-  </body>
-</html>
-```
-
-**Output :**
-
-<img src="/html/05/output-9.png" alt="output-9" width="600px"/>

@@ -705,8 +705,6 @@ db.students.find({ course: "Computer Science" });
 
 Now that you're comfortable with MongoDB Compass, let's explore advanced MongoDB concepts including aggregation pipelines, indexing strategies, and database design patterns.
 
-Next: [Advanced MongoDB Concepts](./06-advanced-concepts) 🚀
-
 ## Quick Recap
 
 - ✅ **Compass** - Official MongoDB GUI tool

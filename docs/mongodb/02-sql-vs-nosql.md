@@ -414,8 +414,6 @@ Ask yourself:
 
 Now that you understand the differences between SQL and NoSQL, let's get MongoDB set up on your system and start working with real data!
 
-Next: [Setting up MongoDB](./03-setup-installation) 🚀
-
 ## Quick Recap
 
 - **SQL**: Fixed structure, complex relationships, ACID transactions

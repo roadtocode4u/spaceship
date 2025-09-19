@@ -411,8 +411,6 @@ mongodb+srv://username:password@cluster.xyz.mongodb.net/database_name?options
 
 Great! Now you have MongoDB set up and sample data ready. Let's start learning how to perform CRUD operations (Create, Read, Update, Delete) with this data.
 
-Next: [CRUD Operations Basics](./04-crud-operations) 🚀
-
 ## Quick Recap
 
 - ✅ **MongoDB Atlas** - Best for beginners (cloud, free, easy)

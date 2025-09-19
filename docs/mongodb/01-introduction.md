@@ -239,5 +239,3 @@ Now that you understand what MongoDB is, let's learn about the key differences b
 - **Perfect for JavaScript developers** - same syntax
 - **Scalable and fast** - used by major companies
 - **Document = Row**, **Collection = Table**, **Database = Database**
-
-Ready to dive deeper? Let's explore [SQL vs NoSQL](./02-sql-vs-nosql) next! 🚀

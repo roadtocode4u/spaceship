@@ -639,8 +639,6 @@ db.students.deleteMany({ cgpa: { $lt: 5.0 } });
 
 Great! Now you know all basic CRUD operations. Next, let's explore MongoDB Compass in detail - the powerful GUI tool that makes database management much easier.
 
-Next: [MongoDB Compass Deep Dive](./05-mongodb-compass) 🚀
-
 ## Quick Recap
 
 - ✅ **CREATE**: `insertOne()`, `insertMany()`

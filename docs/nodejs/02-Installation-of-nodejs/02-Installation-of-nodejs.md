@@ -39,7 +39,7 @@ hide_table_of_contents: true
 
 9. **Completing the Node.js Setup Wizard :** Once the installation is complete, click `Finish` to close the installer.
 
-    <img src="/nodejs/02/screenshot-11.png" alt="screenshot-11" width="600px"/>
+<img src="/nodejs/02/screenshot-11.png" alt="screenshot-11" width="600px"/>
 
 10. **Verify Installation :** To verify that Node.js and npm (Node Package Manager) were installed correctly, open the Command Prompt or VS code terminal and run the following commands:
 

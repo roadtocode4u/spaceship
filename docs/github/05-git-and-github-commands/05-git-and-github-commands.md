@@ -1,94 +1,204 @@
+# 💻 Git and GitHub Commands
+
+Git and GitHub are powerful tools that help you **save your code**, **track changes**, and **share your projects online**.  
+This guide will help you understand and use the most common commands — step by step and in simple words.
+
 ---
-title: Git and Github Commands
-description: Git and Github Commands and Connecting Git and GitHub.
-hide_table_of_contents: true
+
+## 🧠 What is Git and GitHub?
+
+- **Git** → A software that helps you **track changes** in your code on your computer.
+- **GitHub** → A website where you can **store your Git projects online** and share them with others.
+
 ---
 
-### How to create git repository and connect local repository to github repository:
+## 🪜 Step 1: Open Your Project Folder
 
-**1-Step**: Login to your github account.
+Go to the folder where your project is saved.  
+Right-click inside the folder and choose **"Open Git Bash here"**  
+(or open the terminal in **VS Code** if you use it).
 
-**2-Step**: Click on your profile picture.
+---
 
-- <img src="/github/05/01.png"  width="800px"/>
+## 🪜 Step 2: Initialize Git (Start Tracking Your Project)
 
-**2-Step**: Click on `Your repositories` section, After you will see your repositories. Click on `New repository` button or click on `+` sign.
+This command tells Git to start watching your folder for changes.
 
-- <img src="/github/05/02.png"  width="800px"/>
-
-**3-Step**: Give a name to your repository, Provide a description (optional), want to keep your repository private or public select the option and click on `Create repository` button.
-
-- <img src="/github/05/03.png"  width="800px"/>
-
-**3-Step**: After you will see your repository page.
-
-- <img src="/github/05/04.png"  width="800px"/>
-
-### Use the following command to connect local repo to github repository.
-
-**1-Step**: Go to your local folder and open that folder in `vs-code`.
-
-**2-Step**: Open terminal and use the following command to connect local repo to github repository.
-
-- **git init** : Initialize a new `Git repository` in your project folder. (It is used to convert your folder to a Git repository. This command is used once during the initial setup of a new repository. )
-
-- <img src="/github/05/05.png"  width="800px" />
-
-- **git status**: The `git status` command **displays the status** of your working project. It shows which files have been modified or staged and which files are untracked.
-
-- <img src="/github/05/06.png"  width="800px" />
-
-- ** git add **: Add new changes or changed file in git staging (keep track of changes) area, (if you want to see changes in staging area then use `git status` command it will show you the changes in green color).
-
-- <img src="/github/05/07.png"  width="800px" />
-
-- **git commit**: The `git commit -m "commit message"` command is used to **record the changes** in the repository. Each commit includes a commit message `message should be in double or single quotes` that describes the changes made in that commit.
-
-- <img src="/github/05/08.png"  width="800px" />
-
-- **git push**: The `git push` command is used to **upload local branch commits** to GitHub. It pushes your local changes to the remote repository on GitHub.(Before you push your code to the github repository you have to connect your local repository to github repository, if you push your code without connecting your local repository to github repository then it will not push your code to github repository it will show you warning).
-
-- <img src="/github/05/09.png"  width="800px" />
-
-- ** Go back to `Github repository` that you have created in **step 1\*\*, you will see your repository and two section of the instruction
-
-  - ...or create a new repository on the command line.
-  - or push an existing repository from the command line.
-
-- You have to copy each and every command from the 2nd section of the instruction.
-
-- <img src="/github/05/10.png"  width="800px" />
-
-- **git remote add origin "your repository link"**: The `git remote add origin "your repository link"` command is used to **add a remote repository** to your local repository.
-
-```html
-git remote add origin "your repository link"
+```bash
+git init
 ```
 
-- **git branch -M main**: The `git branch -M main` command is used to **rename the default branch from master to main**.
+📝 **Note:** You only need to run this command **once per project**.
+After this, Git will create a hidden `.git` folder — that means Git is now working in your project.
 
-```html
+<img src="./05-images/git-init.png" width="800px"/>
+
+---
+
+## 🪜 Step 3: Check the Status of Your Files
+
+See which files are new, changed, or ready to be uploaded.
+
+```bash
+git status
+```
+
+- **Red text** → new or changed files (not added yet)
+- **Green text** → files ready to be saved (staged)
+
+<img src="./05-images/git-status.png" width="800px"/>
+
+---
+
+## 🪜 Step 4: Add Files to Git
+
+Before saving, you must tell Git which files you want to include.
+
+```bash
+git add .
+```
+
+✅ The `.` means **add all files**.
+
+You can also add just one file like this:
+
+```bash
+git add index.html
+```
+
+Now, if you run `git status` again — the files should turn **green**.
+
+<img src="./05-images/git-add.png" width="800px"/>
+
+---
+
+## 🪜 Step 5: Save Your Work (Commit)
+
+When your files are ready, you can **commit** them.
+A commit means saving a snapshot of your project with a small message.
+
+```bash
+git commit -m "First commit"
+```
+
+💡 Always write a short message in quotes explaining what you changed.
+
+<img src="./05-images/git-commit.png" width="800px"/>
+
+---
+
+## 🪜 Step 6: Push Your Code to GitHub
+
+Now it’s time to **upload your local project to GitHub** so it appears on your GitHub account.  
+We use the **`git push`** command for that.
+
+---
+
+### 🔹 What does `git push` do?
+
+The `git push` command sends (or uploads) your saved code changes from your computer to your GitHub repository (online).
+
+> ⚠️ Before using `git push`, make sure you have already **connected your local folder** to your **GitHub repository** using  
+> `git remote add origin "your-repository-link"`.
+>
+> If you skip this step, Git will show a warning and your code won’t be uploaded.
+
+<img src="./05-images/git-push.png" width="800px" />
+
+---
+
+### 🪜 Step 6.1: Go Back to Your GitHub Repository
+
+After creating your repository on GitHub, you’ll see two sections on the page:
+
+1. **“…or create a new repository on the command line.”**
+2. **“…or push an existing repository from the command line.”**
+
+👉 Choose the **second option** (push an existing repository) and copy the commands shown there.
+
+<img src="./05-images/github-repo-commnds.png" width="800px" />
+
+---
+
+### 🪜 Step 6.2: Run These Commands One by One
+
+#### 1️⃣ Connect your local folder to GitHub
+
+```bash
+git remote add origin "your-repository-link"
+```
+
+This command connects your project folder on your computer to your GitHub repository.
+(Replace `"your-repository-link"` with the actual link of your repo.)
+
+---
+
+#### 2️⃣ Rename your main branch (optional but recommended)
+
+```bash
 git branch -M main
 ```
 
-- **git push -u origin main**: The `git push -u origin main` command is used to **push the local commits to the remote repository**.
+Git used to call the main branch **master**,
+but now GitHub and most tools use **main** instead.
+This command renames it to keep everything consistent.
 
-```html
+---
+
+#### 3️⃣ Upload your project to GitHub
+
+```bash
 git push -u origin main
 ```
 
-!
+This command actually uploads all your commits (saved changes) to your GitHub repository.
+Once this runs successfully, your project will appear online 🎉
 
-#### If you are these all for the first time then you will see a pop up window like this:
+---
 
-- It ask you to sign in to your github account, click on `signin with your browser` button
+### 🟡 **Are you doing all these steps for the first time?**
 
-  - <img src="/github/05/11.png"  width="800px" />
+If yes, don’t worry! 😊  
+You might see a pop-up window asking you to **sign in to your GitHub account**.  
+Simply click on **“Sign in with your browser”** to continue.
 
-#### Next you will see these interface in your browser:
+1. Click **Sign in with your browser**
 
-- Click on `Authorize git ecosystem ` button.
+<img src="./05-images/signin-to-github.png" width="800px"/>
 
-- <img src="/github/05/12.png"  width="800px" />
+2. Then click **Authorize Git Credential Manager** in your browser.
 
-### Congratulation you have successfully Pushed your code to your github repository.
+<img src="./05-images/authorize.png" width="800px"/>
+
+✅ After signing in, your code will be uploaded to GitHub!
+
+## 🎯 Common Git Commands
+
+| Command                       | What It Does                               |
+| ----------------------------- | ------------------------------------------ |
+| `git init`                    | Start a new Git repository (**only once**) |
+| `git status`                  | Check which files are changed or new       |
+| `git add .`                   | Add all files to be saved                  |
+| `git commit -m "message"`     | Save your changes with a message           |
+| `git remote add origin <url>` | Connect your local project to GitHub       |
+| `git branch -M main`          | Rename main branch                         |
+| `git push -u origin main`     | Upload code to GitHub                      |
+| `git pull`                    | Get latest updates from GitHub             |
+| `git log`                     | Show all commits done so far               |
+
+---
+
+## 🎉 Congratulations!
+
+You’ve learned the basic Git and GitHub commands!
+Now you can easily upload your projects online and keep track of your work.
+
+Whenever you make changes, just repeat these three commands:
+
+```bash
+git add .
+git commit -m "Updated project"
+git push
+```
+
+## Your GitHub will always stay up to date 🚀

@@ -1,67 +1,97 @@
+# 🧱 How to Create a Repository on GitHub
+
+A **repository (repo)** is like a special folder on GitHub where you store your project files and track their changes.  
+You can think of it as your project’s **online home**.
+
+This guide will help you create a new repository on GitHub and connect it with Git on your computer.
+
+## 🚀 Steps to Create a Repository
+
+### 🪜 Step 1: Go to GitHub and Create a New Repository
+
+1. On the GitHub page, click the **+** icon in the upper-right corner and select **New repository**.  
+   <img src="./04-images/new-repository.png" alt="img-1" width="800px"/>
+
 ---
-title: How to Create Repositary
-description: How to Create Repositary
-hide_table_of_contents: true
+
+### 🪜 Step 2: Enter Repository Name
+
+2. Type a name for your repository — for example, **My_New_Repo**.  
+   <img src="./04-images/repository-name.png" alt="img-2" width="600px"/>
+
 ---
 
-### Steps to Create Repository
+### 🪜 Step 3: Choose Repository Visibility
 
-1. On the GitHub page, click on the **+** drop-down menu in the upper-right corner and select **New repository**.
+3. Choose whether your repository should be:
 
-<img src="/icp/23/img-1.png" alt="img-1" width="600px"/>
+   - **Public** – anyone can see your code
+   - **Private** – only you (and selected people) can access it
 
-2. Enter a name for your repository, for example, **sample**.
-
-<img src="/icp/23/img-2.png" alt="img-2" width="600px"/>
-
-3. Choose the visibility of your repository (private or public).
-
-<img src="/icp/23/img-3.png" alt="img-3" width="600px"/>
+   <img src="./04-images/public-mode.png" alt="img-3" width="600px"/>
 
 :::tip
-It is recommended to keep your repository public.
+💡 For learning or practice, it’s best to keep your repository **public**.
 :::
 
-4. Click the **Create repository** button to create your repository.
+---
 
-<img src="/icp/23/img-4.png" alt="img-4" width="600px"/>
+### 🪜 Step 4: Create the Repository
 
-5. You will see an empty repository page.
+4. Click the **Create repository** button to finish.  
+   <img src="./04-images//create-repository.png" alt="img-4" width="600px"/>
 
-<img src="/icp/23/img-5.png" alt="img-5" width="600px"/>
+You’ll now see an **empty repository page** on GitHub.  
+ <img src="./04-images/created-new-repo.png" alt="img-5" width="600px"/>
 
-6. Open your Git Bash (command line) and run the following command, replacing `<repository-link>` with the link available on your repository:
+---
 
-<img src="/icp/23/img-6.png" alt="img-6" width="600px"/>
+## 🔗 Step 5: Clone the Repository to Your Computer
 
-```html
-git clone <repository-link></repository-link>
+Cloning means downloading a copy of your GitHub repository to your local computer so you can work on it.
+
+1. Copy the repository link from GitHub.  
+   <img src="./04-images/repo-url.png" alt="img-6" width="600px"/>
+
+2. Open **Git Bash** on your computer and run the command below:
+
+```bash
+git clone <repository-link>
 ```
 
-<img src="/icp/23/img-8.png" alt="img-8" width="600px"/>
+🟢 Replace `<repository-link>` with your actual repository link.
 
-:::tip
-Replace `<repository-link>` with the actual link available on your repository
-:::
+**Example:**
 
-7. You will see a new folder named **sample** on your desktop.
-
-<img src="/icp/23/img-7.png" alt="img-7" width="600px"/>
-
-## Account Setup Credentials
-
-To set up your account credentials for Git, follow these steps:
-
-1. Open a terminal or command prompt.
-
-2. Set your username globally using the command:
-
-```html
-git config --global user.name "Your Username"
+```bash
+git clone https://github.com/siddhi-codes/My_New_Repo.git
 ```
 
-3. Set your email globally using the command:
+   <img src="./04-images/clone-to-desktop.png" alt="img-8" width="600px"/>
 
-```html
+3. After cloning, you’ll see a new folder (for example, **My_New_Repo**) on your computer. <img src="./04-images/cloned-on-desktop.png" alt="img-7" width="600px"/>
+
+---
+
+# ⚙️ Before You Create a Repository
+
+Before creating a repository on GitHub, make sure you have the following setup completed:
+
+✅ **1. GitHub Account:**
+You must have a registered account on [GitHub](https://github.com/).
+
+✅ **2. Git Installed on Your Computer:**
+Download and install Git from [https://git-scm.com/](https://git-scm.com/).
+You can verify it using this command:
+
+```bash
+git --version
+```
+
+✅ **3. Git Connected to GitHub:**
+Your Git software should be connected to your GitHub account using:
+
+```bash
+git config --global user.name "YourGitHubUsername"
 git config --global user.email "your-email@example.com"
 ```

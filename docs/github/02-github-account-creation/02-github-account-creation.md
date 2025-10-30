@@ -1,10 +1,4 @@
----
-title: Getting Started with GitHub
-description: Learn what GitHub is and how to create your first account.
-hide_table_of_contents: true
----
-
-# 🌐 Introduction to GitHub
+# Introduction to GitHub
 
 GitHub is a popular platform that allows developers to **store, manage, and share their code online**.  
 It works together with **Git**, a version control system that tracks changes in your code.  

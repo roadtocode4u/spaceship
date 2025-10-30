@@ -1,4 +1,4 @@
-# 🔗 How to Connect Git Software and GitHub Account
+# Connect Git Software and GitHub Account
 
 Git and GitHub work best when they are connected.  
 Connecting them helps you **save your projects online**, **work with others**, and **keep your code safe**.

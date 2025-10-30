@@ -1,4 +1,4 @@
-# 🧱 How to Create a Repository on GitHub
+# Create a Repository on GitHub
 
 A **repository (repo)** is like a special folder on GitHub where you store your project files and track their changes.  
 You can think of it as your project’s **online home**.

@@ -1,4 +1,4 @@
-# 💻 Git and GitHub Commands
+# Git and GitHub Commands
 
 Git and GitHub are powerful tools that help you **save your code**, **track changes**, and **share your projects online**.  
 This guide will help you understand and use the most common commands — step by step and in simple words.

@@ -5,7 +5,7 @@
 Have you ever made changes to a project and later wished you could go back to the previous version?  
 That’s exactly what a **Version Control System (VCS)** helps you do!
 
-<img src="what-is-version-control-1.avif" width="400px"/>
+<img src="/github/00-images/what-is-version-control-1.avif" width="700px"/>
 
 ---
 

@@ -80,7 +80,7 @@ git config --global --list
 
 You should see something like this:
 
-<img src="./03-images/username-email.png" width="800px"/>
+<img src="/github/03-images/username-email.png" width="800px"/>
 
 ✅ **If you see your username and email, your Git is now connected to your GitHub account! 🎉**
 

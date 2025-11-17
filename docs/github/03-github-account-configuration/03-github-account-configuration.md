@@ -1,4 +1,4 @@
-# 🔗 How to Connect Git Software and GitHub Account
+# Connect Git Software and GitHub Account
 
 Git and GitHub work best when they are connected.  
 Connecting them helps you **save your projects online**, **work with others**, and **keep your code safe**.
@@ -80,7 +80,7 @@ git config --global --list
 
 You should see something like this:
 
-<img src="./03-images/username-email.png" width="800px"/>
+<img src="/github/03-images/username-email.png" width="800px"/>
 
 ✅ **If you see your username and email, your Git is now connected to your GitHub account! 🎉**
 

@@ -1,10 +1,4 @@
----
-title: Getting Started with GitHub
-description: Learn what GitHub is and how to create your first account.
-hide_table_of_contents: true
----
-
-# 🌐 Introduction to GitHub
+# Introduction to GitHub
 
 GitHub is a popular platform that allows developers to **store, manage, and share their code online**.  
 It works together with **Git**, a version control system that tracks changes in your code.  
@@ -37,7 +31,7 @@ Go to [https://github.com/](https://github.com/)
 
 On the homepage, click the **Sign up for GitHub** button.
 
-<img src="./02-images/github1.png" width="800px"/>
+<img src="/github/02-images/github1.png" width="800px"/>
 
 ---
 
@@ -52,7 +46,7 @@ Enter the following details:
 
 Then click on the **Continue** button.
 
-<img src="./02-images/signup-to-github.png" width="800px"/>
+<img src="/github/02-images/signup-to-github.png" width="800px"/>
 
 ---
 
@@ -66,7 +60,7 @@ You can choose one of the two options:
 
 Here, we’ll use the **Visual puzzle** option.
 
-<img src="./02-images/visual-puzzle.png" width="800px"/>
+<img src="/github/02-images/visual-puzzle.png" width="800px"/>
 
 ---
 
@@ -74,7 +68,7 @@ Here, we’ll use the **Visual puzzle** option.
 
 Match the directions shown in the image and click **Submit**.
 
-<img src="./02-images/verify-account.png" width="800px"/>
+<img src="/github/02-images/verify-account.png" width="800px"/>
 
 ---
 
@@ -82,12 +76,12 @@ Match the directions shown in the image and click **Submit**.
 
 Next, you’ll see the **Email verification** page.
 
-<img src="./02-images/email-verification.png" width="800px"/>
+<img src="/github/02-images/email-verification.png" width="800px"/>
 
 Check your email inbox for a verification email from GitHub.  
 Enter the verification code you received.
 
-<img src="./02-images/check-email-code.png" width="800px"/>
+<img src="/github/02-images/check-email-code.png" width="800px"/>
 
 ---
 
@@ -96,7 +90,7 @@ Enter the verification code you received.
 Once your email is verified, GitHub will take you to the **Login page**.  
 Enter your **Username** and **Password**, then click on **Sign in**.
 
-<img src="./02-images/signin-to-github.png" width="800px"/>
+<img src="/github/02-images/signin-to-github.png" width="800px"/>
 
 ---
 
@@ -105,7 +99,7 @@ Enter your **Username** and **Password**, then click on **Sign in**.
 You’ve successfully created your GitHub account!  
 You’ll now see your **Dashboard**, where you can create repositories, explore other projects, and manage your profile.
 
-<img src="./02-images/github-dashboard.png" width="800px"/>
+<img src="/github/02-images/github-dashboard.png" width="800px"/>
 
 ---
 
@@ -113,7 +107,7 @@ You’ll now see your **Dashboard**, where you can create repositories, explore 
 
 Click your **profile picture** in the top-right corner to access your account settings, repositories, and activity.
 
-<img src="./02-images/create-new-repo.png" width="800px"/>
+<img src="/github/02-images/create-new-repo.png" width="800px"/>
 
 ---
 

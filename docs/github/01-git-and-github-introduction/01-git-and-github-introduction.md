@@ -47,7 +47,7 @@ Go to 👉 [https://git-scm.com/downloads](https://git-scm.com/downloads)
 
 Select the version that matches your operating system (Windows, macOS, or Linux).
 
-<img src="choose-os.png" width="800px"/>
+<img src="/github/01-images/choose-os.png" width="800px"/>
 
 ---
 
@@ -55,7 +55,7 @@ Select the version that matches your operating system (Windows, macOS, or Linux)
 
 Pick the correct version for your computer (for example, 64-bit Windows).
 
-<img src="choose-os-archi.png" width="800px"/>
+<img src="/github/01-images/choose-os-archi.png" width="800px"/>
 
 ---
 

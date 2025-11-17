@@ -1,4 +1,4 @@
-# 💻 Git and GitHub Commands
+# Git and GitHub Commands
 
 Git and GitHub are powerful tools that help you **save your code**, **track changes**, and **share your projects online**.  
 This guide will help you understand and use the most common commands — step by step and in simple words.
@@ -31,7 +31,7 @@ git init
 📝 **Note:** You only need to run this command **once per project**.
 After this, Git will create a hidden `.git` folder — that means Git is now working in your project.
 
-<img src="./05-images/git-init.png" width="800px"/>
+<img src="/github/05-images/git-init.png" width="800px"/>
 
 ---
 
@@ -46,7 +46,7 @@ git status
 - **Red text** → new or changed files (not added yet)
 - **Green text** → files ready to be saved (staged)
 
-<img src="./05-images/git-status.png" width="800px"/>
+<img src="/github/05-images/git-status.png" width="800px"/>
 
 ---
 
@@ -68,7 +68,7 @@ git add index.html
 
 Now, if you run `git status` again — the files should turn **green**.
 
-<img src="./05-images/git-add.png" width="800px"/>
+<img src="/github/05-images/git-add.png" width="800px"/>
 
 ---
 
@@ -83,7 +83,7 @@ git commit -m "First commit"
 
 💡 Always write a short message in quotes explaining what you changed.
 
-<img src="./05-images/git-commit.png" width="800px"/>
+<img src="/github/05-images/git-commit.png" width="800px"/>
 
 ---
 
@@ -103,7 +103,7 @@ The `git push` command sends (or uploads) your saved code changes from your comp
 >
 > If you skip this step, Git will show a warning and your code won’t be uploaded.
 
-<img src="./05-images/git-push.png" width="800px" />
+<img src="/github/05-images/git-push.png" width="800px" />
 
 ---
 
@@ -116,7 +116,7 @@ After creating your repository on GitHub, you’ll see two sections on the page:
 
 👉 Choose the **second option** (push an existing repository) and copy the commands shown there.
 
-<img src="./05-images/github-repo-commnds.png" width="800px" />
+<img src="/github/05-images/github-repo-commnds.png" width="800px" />
 
 ---
 
@@ -164,11 +164,11 @@ Simply click on **“Sign in with your browser”** to continue.
 
 1. Click **Sign in with your browser**
 
-<img src="./05-images/signin-to-github.png" width="800px"/>
+<img src="/github/05-images/signin-to-github.png" width="800px"/>
 
 2. Then click **Authorize Git Credential Manager** in your browser.
 
-<img src="./05-images/authorize.png" width="800px"/>
+<img src="/github/05-images/authorize.png" width="800px"/>
 
 ✅ After signing in, your code will be uploaded to GitHub!
 

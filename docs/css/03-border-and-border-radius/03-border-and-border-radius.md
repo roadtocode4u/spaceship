@@ -1,9 +1,3 @@
----
-title: Border and Border Radius
-description: "Border and Border Radius"
-hide_table_of_contents: true
----
-
 ## Border
 
 A border is a decorative or structural element that can be added to HTML elements to visually separate them from other elements. It is a line that surrounds the content of an element and can be customized in terms of color, width, and style.
@@ -36,7 +30,7 @@ The code you provided is used to style the border of an HTML element. It has thr
 
 **There are four types of border styles you can use:**
 
-1. **`solid` :** Creates a continuous line.👉**********\_\_\_**********
+1. **`solid` :** Creates a continuous line.👉****\*\*****\_\_\_****\*\*****
 
 2. **`double` :** Creates two parallel lines. 👉 **====**
 

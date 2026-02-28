@@ -4,29 +4,77 @@ description: Box Shadow
 hide_table_of_contents: true
 ---
 
+# 🌑 Box Shadow
+
 ## Box-Shadow
 
-The `box-shadow` property is used to add one or more shadows to an element. It allows you to create visually appealing effects, such as giving the illusion of depth or highlighting elements.
+The `box-shadow` property adds shadow effects around an element.  
+It helps create depth and improves the visual look of elements on a webpage.
 
-**The syntax for the box-shadow property is as follows:**
+---
 
-           h-shadow v-shadow  blur spread  color
-              |       |      |      |       |
+## Syntax:
+
+```
+
+box-shadow: h-shadow v-shadow blur spread color;
+
+```
+
+### Example:
+
+```
 
 box-shadow: 5px 5px 5px 2px #808080;
 
-- **`h-shadow`** : The horizontal offset of the shadow. A positive value puts the shadow on the right side of the box, and a negative value puts the shadow on the left side.
-- **`v-shadow`** : The vertical offset of the shadow. A positive value puts the shadow below the box, and a negative value puts the shadow above.
+```
 
-- **`blur`** : The blur radius. The higher the value, the more blurred the shadow will be.
+---
 
-- **`spread`** : The spread radius. A positive value increases the size of the shadow, and a negative value decreases the size.
+## Meaning of Each Value
 
-- **`color`** : The color of the shadow.
+### h-shadow
 
-**In the third example you provided, you want to add a box shadow to an image. Here's the code:**
+- Horizontal shadow position.
+- Positive value → Shadow moves right.
+- Negative value → Shadow moves left.
 
-**Code :**
+---
+
+### v-shadow
+
+- Vertical shadow position.
+- Positive value → Shadow moves down.
+- Negative value → Shadow moves up.
+
+---
+
+### blur
+
+- Controls how blurry the shadow is.
+- Higher value = more blur.
+- `0` means sharp shadow.
+
+---
+
+### spread
+
+- Controls the size of the shadow.
+- Positive value → Shadow becomes bigger.
+- Negative value → Shadow becomes smaller.
+
+---
+
+### color
+
+- Defines the color of the shadow.
+- You can use color name, HEX, or RGB values.
+
+---
+
+# 🖼️ Image Shadow Example
+
+## Code :
 
 ```html
 <!DOCTYPE html>
@@ -54,15 +102,37 @@ box-shadow: 5px 5px 5px 2px #808080;
 </html>
 ```
 
-**Output :**
+---
+
+## Output :
 
 <img src="/css/07/screenshot4.png" alt="screenshot4" width="600px"/>
 
-In this example, there is an image element with the class `img-tiger`. The CSS styles defined for the class `img-tiger` specify that the image should have a height of `300px`, a border-radius of `50px`, and a margin of `30px`. The `box-shadow` property is used to add a shadow to the image. The values `2px 2px 5px 10px` define the horizontal offset, vertical offset, blur radius, and spread radius of the shadow, respectively. The color of the shadow is specified as `rgb(138, 136, 136)`.
+---
 
-When you view this HTML page in a browser, the image will have a box shadow applied to it according to the styles defined by the `.img-tiger` class. When you move your mouse over the image, the border-radius will change to 20px with a transition effect, as defined by the `.img-tiger:hover` selector.
+## Explanation
 
-**Code :**
+- The image height is set to `300px`.
+- `border-radius: 50px;` gives rounded corners.
+- `margin: 30px;` creates space outside the image.
+- `box-shadow: 2px 2px 5px 10px rgb(138,136,136);` adds a shadow:
+
+  - `2px` → moves shadow right
+  - `2px` → moves shadow down
+  - `5px` → blur radius
+  - `10px` → spread size
+  - `rgb(138,136,136)` → gray color
+
+When you move the mouse over the image:
+
+- The border radius changes from `50px` to `20px`.
+- `transition: 2s;` makes the change smooth in 2 seconds.
+
+---
+
+# 🔘 Button Shadow Example
+
+## Code :
 
 ```html
 <!DOCTYPE html>
@@ -74,6 +144,7 @@ When you view this HTML page in a browser, the image will have a box shadow appl
         background-color: aquamarine;
         border-radius: 20px;
       }
+
       .btn:hover {
         box-shadow: 1px 1px 2px 2px gray;
       }
@@ -86,9 +157,24 @@ When you view this HTML page in a browser, the image will have a box shadow appl
 </html>
 ```
 
-**Output :**
+---
+
+## Output :
 
 <img src="/css/07/screenshot2.png" alt="screenshot2" width="600px"/>
 
-In this example, A button element with the class `"btn"` and the text `"Click Here"`. The `".btn"` class sets the button's background color to aquamarine and gives it rounded corners with a border-radius of 20 pixels.
-The `".btn:hover"` selector applies styles when the button is hovered over. It adds a gray box-shadow of 1 pixel horizontal and vertical offset, with a 2-pixel blur radius, creating a subtle `shadow` effect when the button is hovered.
+---
+
+## Explanation
+
+- The button background color is `aquamarine`.
+- `border-radius: 20px;` makes the button corners rounded.
+
+When you hover over the button:
+
+- A gray shadow appears.
+- `1px 1px` moves shadow slightly right and down.
+- `2px` blur makes it slightly soft.
+- `2px` spread increases shadow size slightly.
+
+This creates a simple shadow effect when the user moves the mouse over the button.

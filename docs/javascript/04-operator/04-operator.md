@@ -797,9 +797,9 @@ This **typeof** operator helps us to know the type of data, whether it is boolea
 
   <body>
     <script>
-      var a = true;
-      var b = "Hello";
-      var c = 42;
+      let a = true;
+      let b = "Hello";
+      let c = 42;
 
       console.log("The datatype of A is :- " + typeof a); // Output for: "boolean"
       console.log("The datatype of B is :- " + typeof b); // Output for: "string"
@@ -832,15 +832,16 @@ This **comma operator** evaluates each of its operands (from left to right) and 
 
   <body>
     <script>
-      var x = 1,
+      let  x = 1,
         y = 2,
         z = 3;
 
-      var result = (x++, y++, z++);
+      let result = (x++, y++, z++);
 
       console.log("Value of x is :- " + x);
       console.log("Value of y is :- " + y);
       console.log("Value of z is :- " + z);
+      console.log("Result is :- " + result);
     </script>
   </body>
 </html>
@@ -851,8 +852,11 @@ This **comma operator** evaluates each of its operands (from left to right) and 
 > Value of x is :- 2<br/>
 > Value of y is :- 3<br/>
 > Value of z is :- 4<br/>
+> output of result is :- 3<br/>
 
 In this example, the `comma operator` is used to evaluate the expressions x++, y++, and z++ sequentially. The variables x, y, and z are all `incremented by 1` as part of the evaluation.
+
+The value 3 is assigned to result because the `comma operator` evaluates all expressions from left to right and returns the value of the last expression. Since z++ is a post-increment operator, it returns the old value of z, which is 3.
 
 **3. STRING Operator:**
 
@@ -869,11 +873,11 @@ This **string operator** is primarily used for concatenation, which means joinin
 
   <body>
     <script>
-      var str1 = "Hello";
-      var str2 = "World";
-      var str3 = "!";
+      let str1 = "Hello";
+      let str2 = "World";
+      let str3 = "!";
 
-      var greeting = str1 + " " + str2 + str3;
+      let greeting = str1 + " " + str2 + str3;
 
       console.log("Concatenated string is :- " + greeting);
     </script>
